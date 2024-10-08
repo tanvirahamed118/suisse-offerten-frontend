@@ -144,6 +144,10 @@ const en = {
   verify_uid_warn: "Please wait to verify your UID by admin!",
   verify_address_warn:
     "Please complete your profile and verify your address,Otherwise your not able to purchased membership and applyany jobs!",
+  cancel_membership: "Did you want cancel your membership?",
+  warn_cencel: "If you cancel your membership, you have lost your all credits.",
+  exit: "Exit",
+  cancel_membership_btn: "Cancel Membership",
   // seller dasgboard
 
   // dashboard menu

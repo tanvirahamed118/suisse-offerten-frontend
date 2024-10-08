@@ -147,6 +147,11 @@ const sw = {
     "Bitte warten Sie, bis Ihre UID vom Administrator bestätigt wurde!",
   verify_address_warn:
     "Bitte vervollständigen Sie Ihr Profil und bestätigen Sie Ihre Adresse. Andernfalls können Sie keine Mitgliedschaft erwerben und sich nicht auf Jobs bewerben!",
+  cancel_membership: "Wollten Sie Ihre Mitgliedschaft kündigen?",
+  warn_cencel:
+    "Wenn Sie Ihre Mitgliedschaft kündigen, gehen sämtliche Credits verloren.",
+  exit: "Ausfahrt",
+  cancel_membership_btn: "Mitgliedschaft kündigen",
   // seller dasgboard
 
   // dashboard menu

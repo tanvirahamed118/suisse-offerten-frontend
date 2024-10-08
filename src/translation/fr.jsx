@@ -146,6 +146,11 @@ const en = {
     "Veuillez patienter pour que l'administrateur vérifie votre UID !",
   verify_address_warn:
     "Veuillez compléter votre profil et vérifier votre adresse, sinon vous ne pourrez pas acheter d'adhésion ni postuler à des emplois !",
+  cancel_membership: "Voulez-vous annuler votre abonnement ?",
+  warn_cencel:
+    "Si vous annulez votre abonnement, vous avez perdu tous vos crédits.",
+  exit: "Sortie",
+  cancel_membership_btn: "Annuler l'adhésion",
   // seller dasgboard
 
   // dashboard menu

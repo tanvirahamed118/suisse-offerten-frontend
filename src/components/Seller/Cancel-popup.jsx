@@ -53,17 +53,17 @@ function CancelPopup({ isShow, setIsShow }) {
         >
           <div className="flex flex-col gap-5">
             <h2 className="text-xl font-medium text-[#111111]">
-              Did you want cancel your membership?
+              {t("cancel_membership")}
             </h2>
             <p className="text-base font-medium text-red-500">
-              If you cancel your memebership, you have lost your all credits
+              {t("warn_cencel")}
             </p>
             <div className="flex gap-5 items-center">
               <button
                 onClick={() => setIsShow(false)}
                 className="flex gap-1 items-center text-white text-base font-normal bg-[#111111] py-2 w-full justify-center rounded-md"
               >
-                Exit
+                {t("exit")}
               </button>
               <button
                 onClick={handleSubmit}
@@ -88,7 +88,7 @@ function CancelPopup({ isShow, setIsShow }) {
                     <p>{t("loading")}</p>
                   </>
                 ) : (
-                  "Cancel Membership"
+                  t("cancel_membership_btn")
                 )}
               </button>
             </div>
