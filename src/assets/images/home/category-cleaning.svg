@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71" height="50" viewBox="0 0 71 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.87" y1="0.138" x2="0.003" y2="0.987" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3258a7" stop-opacity="0.302"/>
+      <stop offset="0.745" stop-color="#3258a7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="0.041" x2="0.5" y2="0.928" gradientUnits="objectBoundingBox">
+      <stop offset="0.255" stop-color="#3258a7"/>
+      <stop offset="1" stop-color="#3258a7" stop-opacity="0.302"/>
+    </linearGradient>
+  </defs>
+  <g id="Gruppe_267" data-name="Gruppe 267" transform="translate(-245 -1149)">
+    <g id="Icon-HG-Flaeche" transform="translate(245 1149)">
+      <rect id="Rechteck_81" data-name="Rechteck 81" width="71" height="50" fill="#fff"/>
+    </g>
+    <g id="Gruppe_225" data-name="Gruppe 225" transform="translate(0 -459.12)">
+      <path id="Pfad_1077" data-name="Pfad 1077" d="M1176.625,482.274,1160.3,503.593l16.323,21.32-21.32-16.323-21.319,16.323,16.323-21.32-16.323-21.319,21.319,16.323Z" transform="translate(-873.421 1128.895)" opacity="0.27" fill="url(#linear-gradient)"/>
+      <path id="Pfad_1078" data-name="Pfad 1078" d="M1156.049,498.973a6.113,6.113,0,0,1-1.833-4.23v-7.614h-5.076V494.6a6.114,6.114,0,0,1-1.833,4.23,14.747,14.747,0,0,0-4.23,10.293v11.609h17.2V509.126A14.669,14.669,0,0,0,1156.049,498.973Z" transform="translate(-869.694 1130.885)" fill="#fff"/>
+      <path id="Vereinigungsmenge_1" data-name="Vereinigungsmenge 1" d="M8.5,0C4.528,0,4.384,4.4,0,4.456V14.6H17.2V4.559C12.761,4.559,12.018,0,8.5,0Z" transform="translate(273.382 1637.021)" opacity="0.25" fill="url(#linear-gradient-2)"/>
+      <g id="Gruppe_215" data-name="Gruppe 215" transform="translate(273.383 1609.271)">
+        <path id="Pfad_1089" data-name="Pfad 1089" d="M1144.476,489.671h10.152l3.384-3.666h4.089v-5.076h-8.178S1144.476,480.929,1144.476,489.671Z" transform="translate(-1142.502 -480.929)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+        <path id="Pfad_1090" data-name="Pfad 1090" d="M1156.049,498.973a6.113,6.113,0,0,1-1.833-4.23v-7.614h-5.076V494.6a6.114,6.114,0,0,1-1.833,4.23,14.747,14.747,0,0,0-4.23,10.293v11.609h17.2V509.126A14.669,14.669,0,0,0,1156.049,498.973Z" transform="translate(-1143.076 -478.387)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+        <line id="Linie_93" data-name="Linie 93" x2="5.076" transform="translate(6.063 14.559)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+        <path id="Pfad_1091" data-name="Pfad 1091" d="M1153.876,484.929a14.962,14.962,0,0,0,2.82,7.332" transform="translate(-1138.647 -479.289)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+        <rect id="Rechteck_95" data-name="Rechteck 95" width="3.384" height="2.961" transform="translate(19.6 1.129)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      </g>
+      <line id="Linie_96" data-name="Linie 96" y2="10.713" transform="translate(274.428 1639.939)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+    </g>
+  </g>
+</svg>

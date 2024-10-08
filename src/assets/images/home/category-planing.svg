@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="48" viewBox="0 0 69 48">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.274" y1="0.277" x2="0.745" y2="0.668" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3258a7"/>
+      <stop offset="1" stop-color="#3258a7" stop-opacity="0.302"/>
+    </linearGradient>
+  </defs>
+  <g id="Gruppe_295" data-name="Gruppe 295" transform="translate(-384 -1377)">
+    <g id="Icon-HG-Flaeche" transform="translate(384 1377)">
+      <rect id="Rechteck_81" data-name="Rechteck 81" width="69" height="48" fill="#fff"/>
+    </g>
+    <g id="Gruppe_294" data-name="Gruppe 294" transform="translate(-782.067 774.646)">
+      <path id="Pfad_1148" data-name="Pfad 1148" d="M1188.234,610.636v.141l-.1-.141h.1v14.011l-4.3.053a3.865,3.865,0,0,0-2.854,2.354l-.468,1.921a4.281,4.281,0,0,1,.468-1.921l.049.052-.517,1.869a4.327,4.327,0,0,0,4.327,4.327h35.922V610.636Z" transform="translate(0 -0.651)" opacity="0.2" fill="url(#linear-gradient)"/>
+      <path id="Pfad_1149" data-name="Pfad 1149" d="M1180.61,628.324V609.057a4.327,4.327,0,0,1,4.327-4.327h3.3V624h-3.3a4.327,4.327,0,0,0,0,8.655h35.922V609.985h-32.624" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <path id="Pfad_1150" data-name="Pfad 1150" d="M1202.179,630.564l-10.04,19.47-1.613-9.086,6.906-12.833Z" transform="translate(-1.093 -2.578)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <circle id="Ellipse_116" data-name="Ellipse 116" cx="3.068" cy="3.068" r="3.068" transform="translate(1197.901 614.371)" fill="#fff"/>
+      <path id="Pfad_1151" data-name="Pfad 1151" d="M1203.493,626.443" transform="translate(-2.523 -2.394)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <circle id="Ellipse_117" data-name="Ellipse 117" cx="5.625" cy="5.625" r="5.625" transform="translate(1195.327 618.273)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <line id="Linie_101" data-name="Linie 101" y2="2.675" transform="translate(1200.97 616.552)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <path id="Pfad_1152" data-name="Pfad 1152" d="M1201.492,630.053l-10.549,20.43-.065-7.945,7.365-14.015Z" transform="translate(-1.132 -2.623)" fill="#fff" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <path id="Pfad_1153" data-name="Pfad 1153" d="M1203.362,630.564l10.04,19.47,1.613-9.086-6.907-12.833Z" transform="translate(-2.508 -2.578)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <path id="Pfad_1154" data-name="Pfad 1154" d="M1204.178,630.053l10.548,20.43.065-7.945-7.365-14.015Z" transform="translate(-2.598 -2.623)" fill="#fff" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <path id="Pfad_1155" data-name="Pfad 1155" d="M1190.028,640.231a16.4,16.4,0,0,0,23.954,0" transform="translate(-1.038 -3.914)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <circle id="Ellipse_118" data-name="Ellipse 118" cx="4.671" cy="4.671" r="4.671" transform="translate(1196.299 619.227)" fill="#fff" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+      <circle id="Ellipse_119" data-name="Ellipse 119" cx="1.201" cy="1.201" r="1.201" transform="translate(1199.769 622.697)" fill="#3258a7"/>
+      <path id="Pfad_1156" data-name="Pfad 1156" d="M1206.656,638.377l-2.694-5.6-2.28.524-1.951,4.577Z" transform="translate(-2.108 -3.091)" fill="#fff"/>
+      <path id="Pfad_1157" data-name="Pfad 1157" d="M1190.8,639.509a15.464,15.464,0,0,0,22.586,0" transform="translate(-1.123 -3.834)" fill="none" stroke="#3258a7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.05"/>
+    </g>
+  </g>
+</svg>
