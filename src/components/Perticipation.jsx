@@ -39,7 +39,7 @@ function Perticipation({ id }) {
         totalReview,
         reviewPercent,
         leagalForm,
-        sellerId,
+        _id,
         emailVerify,
         uidVerify,
         locationVerify,
@@ -65,7 +65,7 @@ function Perticipation({ id }) {
             <div className="flex flex-col">
               <span className="flex gap-2 items-center">
                 <Link
-                  to={`/seller-review-profile/${sellerId}`}
+                  to={`/seller-review-profile/${_id}`}
                   className="text-[#0050b2] text-xl font-medium hover:underline capitalize"
                 >
                   {username?.slice(0, 50)}
