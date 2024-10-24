@@ -1,6 +1,6 @@
 import disposalImg from "../../assets/images/request/disposal.png";
 import Other from "../../assets/images/request/other.png";
-import transportImg from "../../assets/images/request/transport.png";
+import transportImg from "../../assets/images/request/transport-small-transport.png";
 import disposal from "./disposal/disposal";
 import small from "./small/small";
 

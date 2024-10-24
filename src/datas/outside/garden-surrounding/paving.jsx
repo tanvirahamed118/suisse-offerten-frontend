@@ -48,18 +48,22 @@ const paving = [
       {
         des: "Up to 14 m2",
         label: "Small",
+        credit: 8,
       },
       {
         des: "15 to 99 m2",
         label: "Medium",
+        credit: 13,
       },
       {
         des: "100 to 249 m2",
         label: "Large",
+        credit: 18,
       },
       {
         des: "250 m2 and more",
         label: "Very large",
+        credit: 25,
       },
     ],
   },
@@ -71,18 +75,22 @@ const paving = [
       {
         des: "Up to 14 m2",
         label: "Small",
+        credit: 8,
       },
       {
         des: "15 to 99 m2",
         label: "Medium",
+        credit: 13,
       },
       {
         des: "100 to 249 m2",
         label: "Large",
+        credit: 18,
       },
       {
         des: "250 m2 and more",
         label: "Very large",
+        credit: 25,
       },
     ],
   },
@@ -94,18 +102,22 @@ const paving = [
       {
         des: "Up to 14 m2",
         label: "Small",
+        credit: 8,
       },
       {
         des: "15 to 99 m2",
         label: "Medium",
+        credit: 13,
       },
       {
         des: "100 to 249 m2",
         label: "Large",
+        credit: 18,
       },
       {
         des: "250 m2 and more",
         label: "Very large",
+        credit: 25,
       },
     ],
   },

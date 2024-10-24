@@ -17,12 +17,12 @@ const blindsRoller = [
       },
       {
         id: 912321654,
-        label: "repair",
+        label: "Repair",
         des: "Pull cord torn, replace sun blind fabric, crank/motor jammed, etc.",
       },
       {
         id: 700590038,
-        label: "cleaning",
+        label: "Cleaning",
         des: "Cleaning of sun blinds, slats, roller shutter boxes, etc.",
       },
       {
@@ -32,7 +32,8 @@ const blindsRoller = [
       },
       {
         id: 614798495,
-        label: "other",
+        label: "Other",
+        credit: 5,
       },
     ],
   },
@@ -98,7 +99,7 @@ const blindsRoller = [
   {
     id: 791979535,
     type: "checkbox",
-    label: "Clean blinds and windows ?",
+    label: "How many blinds / shutter should be cleaned ?",
     options: how_many_be_cleaned(502391050, 117385925, 685137619, 601813141),
   },
   {
@@ -159,7 +160,7 @@ const blindsRoller = [
   {
     id: 700590038,
     type: "checkbox",
-    label: "Clean blinds and windows ?",
+    label: "How many windows should be cleaned ?",
     options: [
       {
         id: 791979535,

@@ -67,6 +67,18 @@ body {
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: 4%;
 }
+.is-num-valid {
+  background-image: url("./assets/images/download.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 2%;
+}
+.is-num-not-valid {
+  background-image: url("./assets/images/check.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 2%;
+}
 .is-req-valid {
   background-image: url("./assets/images/download.svg");
   background-repeat: no-repeat;

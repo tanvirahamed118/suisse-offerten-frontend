@@ -12,10 +12,12 @@ const excavationEartworks = [
       {
         id: 943622027,
         label: "Foundations",
+        credit: 25,
       },
       {
         id: 170988534,
         label: "Other",
+        credit: 10,
       },
     ],
   },
@@ -27,18 +29,22 @@ const excavationEartworks = [
       {
         id: 181493541,
         label: "Excavations and canals",
+        credit: 25,
       },
       {
         id: 288144357,
         label: "Drilling",
+        credit: 15,
       },
       {
         id: 469645397,
         label: "Excavation",
+        credit: 35,
       },
       {
         id: 671878275,
         label: "Other",
+        credit: 10,
       },
     ],
   },
@@ -143,7 +149,7 @@ const excavationEartworks = [
   {
     id: 373088895,
     type: "multibox",
-    label: "What point foundation work do you need ?",
+    label: "Which floor slab or strip foundation work do you need ?",
     options: [
       {
         label: "Excavation for a pool",

@@ -13,14 +13,17 @@ const solarPhotovoltaics = [
       {
         id: 183630977,
         label: "Install solar/photovoltaic system",
+        credit: 80,
       },
       {
         id: 345298295,
         label: "Repair solar/photovoltaic system",
+        credit: 50,
       },
       {
         id: 218818167,
         label: "Other",
+        credit: 10,
       },
     ],
   },
@@ -29,12 +32,12 @@ const solarPhotovoltaics = [
     type: "inputBox",
     mainId: 706151230,
     label: "How many floors does the building have ?",
-    options: [{ label: "input" }],
+    options: [{ label: "m2" }],
   },
   {
     id: 706151230,
     type: "checkbox",
-    label: "When was the building built ?",
+    label: "What is the shape oft he roof ?",
     options: [
       {
         id: 446155837,
@@ -82,7 +85,7 @@ const solarPhotovoltaics = [
   {
     id: 446155837,
     type: "checkbox",
-    label: "When was the building built ?",
+    label: "What is the Material the roof is made of ?",
     options: what_shape_is_the_roof(
       448976889,
       716023639,
@@ -133,7 +136,7 @@ const solarPhotovoltaics = [
     type: "inputBox",
     mainId: 690514271,
     label: "How big is the roof area approximately ?",
-    options: [{ label: "input" }],
+    options: [{ label: "m2" }],
   },
   {
     id: 690514271,
@@ -240,7 +243,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -349,7 +352,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -458,7 +461,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -567,7 +570,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -676,7 +679,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -785,7 +788,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -894,7 +897,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -1003,7 +1006,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },
@@ -1112,7 +1115,7 @@ const solarPhotovoltaics = [
     options: [
       {
         id: 690514271,
-        label: "input",
+        label: "m2",
       },
     ],
   },

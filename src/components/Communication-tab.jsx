@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 import {
   useGetAllMessageQuery,
@@ -8,6 +9,7 @@ import toast, { Toaster } from "react-hot-toast";
 import MessageLoading from "./loading/message-loading";
 
 function CommunicationTab({ id, sellerId }) {
+  const { t } = useTranslation();
   const { data, isLoading, isError, error } = useGetAllMessageQuery();
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
@@ -79,7 +81,7 @@ function CommunicationTab({ id, sellerId }) {
     content = <p>{error}</p>;
   }
   if (!isLoading && !isError && data?.length === 0) {
-    content = <p>message not found!</p>;
+    content = <p>{t("no_data_found")}</p>;
   }
   if (!isLoading && !isError && data?.length > 0) {
     content = messages.map((msg, index) => {
@@ -153,17 +155,18 @@ function CommunicationTab({ id, sellerId }) {
     });
   }
 
-  return sellerData?.length > 0 && sellerData?.[0]?.status === "progress" ? (
+  return sellerData?.length > 0 &&
+    sellerData?.[0]?.status === "progress" &&
+    sellerData?.[0]?.offerRequest ? (
     <div className="mt-5">
       <div>
         <div className="bg-[#F3F8FA] border border-gray-300">
           <div className="bg-white p-5 border-b border-gray-300 flex flex-col gap-3">
             <h2 className="text-black text-2xl font-bold">
-              Previous communication history
+              {t("communication_history")}
             </h2>
             <p className="text-gray-400 font-normal text-base">
-              Comments and submitted offers are only visible to you and the
-              client. Information exchanged here is a binding part of the order.
+              {t("communication_note")}
             </p>
           </div>
           <div className="p-5 flex flex-col gap-5 overflow-y-auto h-[600px] ">
@@ -180,7 +183,7 @@ function CommunicationTab({ id, sellerId }) {
               onChange={(e) => setMessage(e.target.value)}
               id=""
               rows={5}
-              placeholder="enter you messsage here"
+              placeholder={t("enter_messsage_here")}
               className="rounded-lg outline-[#F3F8FA] p-3 focus:outline outline-4 w-full border border-gray-300"
             ></textarea>
             <button
@@ -208,10 +211,10 @@ function CommunicationTab({ id, sellerId }) {
                       d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
                     />
                   </svg>
-                  <p>Loading...</p>
+                  <p>{t("loading")}...</p>
                 </>
               ) : (
-                "Send"
+                t("send")
               )}
             </button>
           </form>

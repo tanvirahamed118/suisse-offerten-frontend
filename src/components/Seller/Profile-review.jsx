@@ -78,7 +78,7 @@ function ProfileReview() {
                     <h2 className="text-xl lg:text-4xl text-white font-bold capitalize">
                       {companyName}
                     </h2>
-                    <span className="flex gap-1 items-center">
+                    <span className="flex gap-1 items-center bg-white px-2 py-1 rounded-lg">
                       {emailVerify ? (
                         <i className="fa-solid fa-envelope-circle-check text-xm text-purple-500"></i>
                       ) : (

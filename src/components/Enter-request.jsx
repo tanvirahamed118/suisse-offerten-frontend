@@ -39,7 +39,7 @@ function EnterRequest() {
   const [currentId, setCurrentId] = useState(392164430);
   const percentage = (steps / 12) * 100;
   const [history, setHistory] = useState([currentId]);
-
+  const [isHas, setIsHas] = useState(false);
   const [hasOptions, setHasOptions] = useState(false);
   const [postalCodeValid, setIsPostalCodeValid] = useState(false);
   const [selectedOptions, setSelectedOptions] = useState({});
@@ -74,6 +74,10 @@ function EnterRequest() {
     username: "",
     password: "",
     jobSubCategories: [],
+    credits: 0,
+    firstname: "",
+    lastname: "",
+    phone: "",
   });
 
   useStepManager(steps, setSteps, currentQuestion, formData);
@@ -132,10 +136,13 @@ function EnterRequest() {
           if (previousQuestion.type === "radio") {
             updatedJobSubCategories.pop(); // Remove the last item added
           }
+          const updatedCredits =
+            prevFormData.credits > 0 ? 0 : prevFormData.credits;
           return {
             ...prevFormData,
             jobQuestions: updatedJobQuestions,
             jobSubCategories: updatedJobSubCategories,
+            credits: updatedCredits,
           };
         });
       }
@@ -410,7 +417,13 @@ function EnterRequest() {
                               handleChange={handleChange}
                               jobEmail={formData?.jobEmail}
                               username={formData?.username}
+                              firstname={formData?.firstname}
+                              lastname={formData?.lastname}
+                              phone={formData?.phone}
                               validateEmail={validateEmail}
+                              setFormData={setFormData}
+                              setIsHas={setIsHas}
+                              isHas={isHas}
                             />
                           ) : currentQuestion.type === "orderbox" ? (
                             <OrderBox
@@ -424,6 +437,7 @@ function EnterRequest() {
                               item={item}
                               handleNext={handleNext}
                               setFinalStep={setFinalStep}
+                              formData={formData}
                             />
                           ) : null}
                         </span>

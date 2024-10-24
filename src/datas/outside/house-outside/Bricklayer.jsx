@@ -43,7 +43,7 @@ const bricklayer = [
         label: "Joints",
       },
       {
-        label: "Joints",
+        label: "Rebuild",
       },
       {
         label: "Demolition / breakthrough",

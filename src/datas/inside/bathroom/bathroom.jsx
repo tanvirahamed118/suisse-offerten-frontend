@@ -1,6 +1,6 @@
 import plumbingImg from "../../../assets/images/request/car-painting.png";
 import slabsImg from "../../../assets/images/request/plates.png";
-import bathroomImg from "../../../assets/images/request/bathroom.png";
+import bathroomImg from "../../../assets/images/request/bathroom-renovation.png";
 import kitchenImg from "../../../assets/images/request/kitchen.png";
 import carpenterImg from "../../../assets/images/request/furniture.png";
 import foilsImg from "../../../assets/images/request/foils.png";

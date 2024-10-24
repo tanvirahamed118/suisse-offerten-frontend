@@ -1,37 +1,17 @@
-import { useEffect, useMemo, useState } from "react";
-import { useGetAllProposalsQuery } from "../redux/rtk/features/proposal/proposalApi";
 import PropTypes from "prop-types";
+import { useGetAllOfferQuery } from "../redux/rtk/features/offer/offerApi";
 
 function ConfirmOffer({ id, sellerId, sellerToken }) {
   const page = 1;
   const limit = 20;
-  const { data } = useGetAllProposalsQuery({ id: "", page, limit });
-  const [client, setClient] = useState(null);
-  const filterData = useMemo(() => {
-    return data?.proposals?.filter(
-      (item) => item?.sellerId === sellerId && item?.jobId === id
-    );
-  }, [data, sellerId, id]);
-  useEffect(() => {
-    if (filterData?.length > 0) {
-      fetch(
-        `${import.meta.env.VITE_APP_API_URL}/auth/client/${
-          filterData?.[0]?.clientId
-        }`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            token: `Bearer ${sellerToken}`,
-          },
-        }
-      )
-        .then((response) => response.json())
-        .then((data) => setClient(data));
-    }
-  }, [filterData, sellerToken]);
+  const { data } = useGetAllOfferQuery({ id: id, page, limit, sellerId });
 
-  return filterData?.status === "confirmed" && sellerToken ? (
+  const { clientData } = data?.offers?.[0] || {};
+  const { username, firstname, salutation, phone } = clientData || {};
+
+  return sellerToken &&
+    data?.offers?.length > 0 &&
+    data?.offers?.[0]?.offerAccepted ? (
     <div className="bg-[#FEF7E2] p-5 rounded-md flex flex-col gap-1">
       <h2 className="text-black text-lg font-bold">Offer has been confirmed</h2>
       <p className="text-black text-base font-normal">
@@ -44,23 +24,19 @@ function ConfirmOffer({ id, sellerId, sellerToken }) {
       <ul className="flex flex-col gap-1">
         <li className="flex items-center gap-1">
           <h5 className="text-base font-bold text-black">Salutaion:</h5>
-          <p className="text-black text-base font-normal">
-            {client?.salutation}
-          </p>
+          <p className="text-black text-base font-normal">{salutation}</p>
         </li>
         <li className="flex items-center gap-1">
           <h5 className="text-base font-bold text-black">First name:</h5>
-          <p className="text-black text-base font-normal">
-            {client?.firstname}
-          </p>
+          <p className="text-black text-base font-normal">{firstname}</p>
         </li>
         <li className="flex items-center gap-1">
           <h5 className="text-base font-bold text-black">Surname:</h5>
-          <p className="text-black text-base font-normal">{client?.username}</p>
+          <p className="text-black text-base font-normal">{username}</p>
         </li>
         <li className="flex items-center gap-1">
           <h5 className="text-base font-bold text-black">Phone:</h5>
-          <p className="text-black text-base font-normal">{client?.phone}</p>
+          <p className="text-black text-base font-normal">{phone}</p>
         </li>
       </ul>
     </div>

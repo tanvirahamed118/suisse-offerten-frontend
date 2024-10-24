@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-import Verify from "../../assets/verify.png";
-import {
-  useGetAllPerticipationByQuery,
-  useUpdatePerticipationByStatusMutation,
-} from "../../redux/rtk/features/perticipation/perticipation";
+
 import { Link, useParams } from "react-router-dom";
 import Pagination from "../Pagination";
 import StarRating from "../Star-rating";
@@ -12,48 +8,33 @@ import ProviderLoading from "../loading/Provider-loading";
 import ShortFilter from "./Short-filter";
 import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
-import toast, { Toaster } from "react-hot-toast";
+
 import { useTranslation } from "react-i18next";
+import { useGetAllOfferQuery } from "../../redux/rtk/features/offer/offerApi";
 
 function Rejected({ activeTab }) {
   const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const { offer } = useSelector((state) => state.offerFilter);
   const limit = 20;
-  const [load, setLoad] = useState(null);
+
   const params = useParams();
   const id = params.id;
   const jobId = id;
-  const status = "progress";
+
   const { data, isError, isLoading, isSuccess, error, refetch } =
-    useGetAllPerticipationByQuery({
+    useGetAllOfferQuery({
       page,
       limit,
-      id: id,
+      id: jobId,
     });
-  const [
-    updatePerticipationByStatus,
-    {
-      data: getData,
-      isError: getISError,
-      isLoading: getIdLoading,
-      isSuccess: getIsSuccess,
-      error: getError,
-    },
-  ] = useUpdatePerticipationByStatusMutation();
+
   const { rejectBid } = useSelector((state) => state.perticipation);
 
   useEffect(() => {
     refetch();
   }, [activeTab, refetch]);
-  const filterData = data?.participations?.filter(
-    (item) => item.status === "reject"
-  );
-  const handleStatus = (id) => {
-    const data = { status, jobId };
-    updatePerticipationByStatus({ data, id });
-    setLoad(id);
-  };
+
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
@@ -78,15 +59,6 @@ function Rejected({ activeTab }) {
   };
   const totalItems = data?.totalJobs || 0;
 
-  useEffect(() => {
-    if (getISError) {
-      toast.error(getError?.data?.message);
-    }
-    if (getIsSuccess) {
-      toast.success(getData?.message);
-    }
-  }, [getISError, getIsSuccess, getData, getError]);
-
   const filterBy = (a, b) => {
     if (offer === "time of receipt") {
       // Sort by creation date (most recent first)
@@ -100,7 +72,7 @@ function Rejected({ activeTab }) {
     }
     return 0; // No sorting if no filter is selected
   };
-
+  const filterData = data?.offers?.filter((item) => item.offerRejected);
   // decide what to show for jobs
   let content;
 
@@ -131,20 +103,24 @@ function Rejected({ activeTab }) {
         reviewPercent,
         location,
         createdAt,
+        emailVerify,
+        uidVerify,
+        locationVerify,
       } = item.sellerData || {};
+      const { bidMessage, _id: id } = item || {};
       return (
         <div
           key={_id}
           className="bg-[#F5F8FA] p-5 border border-gray-200 flex items-center justify-between rounded-md flex-col md:flex-row gap-5 md:gap-0"
         >
           <Link
-            to={`/proposal/seller/${_id}/${id}`}
+            to={`/proposal/seller/${_id}/${jobId}`}
             className="flex flex-col gap-2"
           >
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center flex-wrap">
                 <Link
-                  to={`/proposal/seller/${_id}/${id}`}
+                  to={`/proposal/seller/${_id}/${jobId}`}
                   className="hover:underline text-base font-bold text-[#3097d1] capitalize"
                 >
                   {companyName}
@@ -157,8 +133,22 @@ function Rejected({ activeTab }) {
                   ({totalReview ? totalReview : 0} reviews,{" "}
                   {reviewPercent ? reviewPercent : 0}% positive)
                 </Link>
-                <span className="flex items-center gap-1">
-                  <img src={Verify} alt="" className="w-24" />
+                <span className="flex gap-1 items-center">
+                  {emailVerify ? (
+                    <i className="fa-solid fa-envelope-circle-check text-xm text-purple-500"></i>
+                  ) : (
+                    <i className="fa-solid fa-envelope-circle-check text-xm text-gray-400"></i>
+                  )}
+                  {uidVerify ? (
+                    <i className="fa-solid fa-passport text-sm text-blue-500"></i>
+                  ) : (
+                    <i className="fa-solid fa-passport text-sm text-gray-400"></i>
+                  )}
+                  {locationVerify ? (
+                    <i className="fa-solid fa-location-dot text-sm text-[#FF00FE]"></i>
+                  ) : (
+                    <i className="fa-solid fa-location-dot text-sm text-gray-400"></i>
+                  )}
                 </span>
               </div>
               <p className="text-[#7f7f7f] text-base font-normal">
@@ -172,37 +162,17 @@ function Rejected({ activeTab }) {
                 </p>
               </span>
               <p className="text-[#7f7f7f] text-base font-normal w-9/12">
-                {item?.message.slice(0, 300)}
+                {bidMessage?.slice(0, 300)}
               </p>
             </div>
           </Link>
           <div className="flex flex-col gap-3 w-full md:w-auto">
-            <button
-              onClick={() => handleStatus(item?._id)}
-              className="bg-gray-500 hover:bg-gray-600 w-full md:w-52 py-2 rounded-md text-center text-white text-base font-normal flex gap-2 justify-center items-center"
+            <Link
+              to={`/proposal/seller/${_id}/${jobId}`}
+              className="bg-[#3056a7] hover:bg-[#274789] w-full md:w-52 py-2 rounded-md text-center text-white text-base font-normal"
             >
-              {load === item?._id && getIdLoading ? (
-                <>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-6 h-6 animate-spin"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-                    />
-                  </svg>
-                  <p>{t("loading")}</p>
-                </>
-              ) : (
-                t("undo_rejection")
-              )}
-            </button>
+              {t("view_details")}
+            </Link>
           </div>
         </div>
       );
@@ -221,7 +191,6 @@ function Rejected({ activeTab }) {
           itemsPerPage={limit}
         />
       )}
-      <Toaster />
     </div>
   );
 }

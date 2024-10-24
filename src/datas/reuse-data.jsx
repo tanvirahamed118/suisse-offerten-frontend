@@ -26,14 +26,35 @@ export const how_big_the_tree_one = [
   {
     label: "Small",
     des: "Up to 3 m",
+    credit: 5,
   },
   {
     label: "Medium",
     des: "4 to 7 m",
+    credit: 10,
   },
   {
     label: "Large",
     des: "8 m or more",
+    credit: 15,
+  },
+];
+export const How_large_is_to_be_covered = [
+  {
+    label: "Small",
+    credit: 5,
+  },
+  {
+    label: "Medium",
+    credit: 13,
+  },
+  {
+    label: "Large",
+    credit: 13,
+  },
+  {
+    label: "Very large",
+    credit: 20,
   },
 ];
 
@@ -41,33 +62,77 @@ export const how_big_the_tree_tow = [
   {
     label: "Small",
     des: "Up to 14 m²",
+    credit: 10,
   },
   {
     label: "Medium",
     des: "15 to 29 m²",
+    credit: 15,
   },
   {
     label: "Large",
     des: "30 to 59 m²",
+    credit: 20,
   },
   {
     label: "Very large",
     des: "60 m² or more",
+    credit: 25,
   },
 ];
 
 export const approximately_how_many_meters_fence = [
   {
     label: "Up to 9 m",
+    credit: 5,
   },
   {
     label: "10 to 24 m",
+    credit: 10,
   },
   {
     label: "25 to 34 m",
+    credit: 15,
   },
   {
     label: "35 m or more",
+    credit: 20,
+  },
+];
+export const approximately_how_many_meters_of_fence_is = [
+  {
+    label: "Up to 9 m",
+    credit: 8,
+  },
+  {
+    label: "10 to 24 m",
+    credit: 15,
+  },
+  {
+    label: "25 to 34 m",
+    credit: 25,
+  },
+  {
+    label: "35 m or more",
+    credit: 35,
+  },
+];
+export const approximately_how_many_meters_fence_is_it = [
+  {
+    label: "Up to 9 m",
+    credit: 8,
+  },
+  {
+    label: "10 to 24 m",
+    credit: 13,
+  },
+  {
+    label: "25 to 34 m",
+    credit: 18,
+  },
+  {
+    label: "35 m or more",
+    credit: 25,
   },
 ];
 export const How_big_is_total_approximately = [
@@ -101,18 +166,22 @@ export const how_large_garden_designed = [
   {
     label: "Small",
     des: "Up to 99 m²",
+    credit: 15,
   },
   {
     label: "Medium",
     des: "100 to 199 m²",
+    credit: 20,
   },
   {
     label: "Large",
     des: "200 to 399 m²",
+    credit: 25,
   },
   {
     label: "Very large",
     des: "400 m² or more",
+    credit: 35,
   },
 ];
 
@@ -165,18 +234,22 @@ export const how_trees_are_here = (id1, id2, id3, id4) => {
     {
       id: id1,
       label: "1",
+      credit: 2,
     },
     {
       id: id2,
       label: "2",
+      credit: 4,
     },
     {
       id: id3,
       label: "3",
+      credit: 6,
     },
     {
       id: id4,
       label: "4 or more",
+      credit: 8,
     },
   ];
 };
@@ -193,18 +266,22 @@ export const how_many_garage_doors = (id1, id2, id3, id4) => {
     {
       id: id1,
       label: "1",
+      credit: 8,
     },
     {
       id: id2,
       label: "2 - 3",
+      credit: 20,
     },
     {
       id: id3,
       label: "4 - 5",
+      credit: 30,
     },
     {
       id: id4,
       label: "6 or more",
+      credit: 40,
     },
   ];
 };
@@ -273,14 +350,17 @@ export const how_many_need_be_installed = (id1, id2, id3) => {
     {
       id: id1,
       label: "1",
+      credit: 5,
     },
     {
       id: id2,
       label: "2",
+      credit: 10,
     },
     {
       id: id3,
       label: "3 or more",
+      credit: 18,
     },
   ];
 };
@@ -306,14 +386,17 @@ export const what_performance_you_exactly_need = (id1, id2, id3) => {
     {
       id: id1,
       label: "Assembly of a ready-made kit (e.g. from the hardware store)",
+      credit: 25,
     },
     {
       id: id2,
       label: "Custom creation",
+      credit: 35,
     },
     {
       id: id3,
       label: "Don't know / need advice",
+      credit: 20,
     },
   ];
 };
@@ -449,26 +532,32 @@ export const what_type_do_you_need = (id1, id2, id3, id4, id5, id6) => {
     {
       id: id1,
       label: "General roof inspection",
+      credit: 10,
     },
     {
       id: id2,
       label: "small spot (one or more bricks)",
+      credit: 8,
     },
     {
       id: id3,
       label: "smaller part of the roof (or small roof)",
+      credit: 8,
     },
     {
       id: id4,
       label: "larger part of the roof",
+      credit: 20,
     },
     {
       id: id5,
       label: "whole roof",
+      credit: 30,
     },
     {
       id: id6,
       label: "Other",
+      credit: 10,
     },
   ];
 };
@@ -516,23 +605,32 @@ export const what_material_be_made_of = [
   },
 ];
 
-export const how_many_sides_the_building_should = (id1, id2, id3, id4) => {
+export const how_many_sides_the_building_should = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
       label: "1",
+      credit: 10,
     },
     {
       id: id2,
       label: "2",
+      credit: 15,
     },
     {
       id: id3,
       label: "3",
+      credit: 20,
     },
     {
       id: id4,
+      label: "4",
+      credit: 25,
+    },
+    {
+      id: id5,
       label: "All around",
+      credit: 30,
     },
   ];
 };
@@ -580,12 +678,15 @@ export const how_long_scaffolding_needed = [
 export const in_how_floor_insulated = [
   {
     label: "1 to 2 rooms",
+    credit: 8,
   },
   {
     label: "3 to 4 rooms",
+    credit: 15,
   },
   {
     label: "5 or more rooms",
+    credit: 20,
   },
 ];
 
@@ -593,18 +694,22 @@ export const how_large_is_approximately = [
   {
     des: "E.g. part of a wall etc.",
     label: "Small",
+    credit: 4,
   },
   {
     des: "E.g. whole wall, room, floor etc.",
     label: "Medium",
+    credit: 10,
   },
   {
     des: "E.g. garage, extension, basement, apartment etc.",
     label: "Large",
+    credit: 25,
   },
   {
     des: "E.g. whole house etc.",
     label: "Very large",
+    credit: 40,
   },
 ];
 export const how_big_is_approximately = (id1, id2, id3, id4) => {
@@ -613,21 +718,58 @@ export const how_big_is_approximately = (id1, id2, id3, id4) => {
       id: id1,
       des: "Up to 4 m",
       label: "Small",
+      credit: 3,
     },
     {
       id: id2,
       des: "5 to 9 m",
       label: "Medium",
+      credit: 8,
     },
     {
       id: id3,
       des: "10 to 24 m",
       label: "Large",
+      credit: 15,
     },
     {
       id: id4,
       des: "25 m or more",
       label: "Very large",
+      credit: 25,
+    },
+  ];
+};
+export const how_big_is_metal_structure_approximately = (
+  id1,
+  id2,
+  id3,
+  id4
+) => {
+  return [
+    {
+      id: id1,
+      des: "Up to 4 m",
+      label: "Small",
+      credit: 6,
+    },
+    {
+      id: id2,
+      des: "5 to 9 m",
+      label: "Medium",
+      credit: 15,
+    },
+    {
+      id: id3,
+      des: "10 to 24 m",
+      label: "Large",
+      credit: 20,
+    },
+    {
+      id: id4,
+      des: "25 m or more",
+      label: "Very large",
+      credit: 30,
     },
   ];
 };
@@ -644,30 +786,37 @@ export const how_many_goals = (id1, id2, id3, id4) => {
     {
       id: id1,
       label: "A small gate",
+      credit: 6,
     },
     {
       id: id2,
       label: "A normal gate",
+      credit: 15,
     },
     {
       id: id3,
       label: "2 to 3 goals",
+      credit: 25,
     },
     {
       id: id4,
       label: "4 goals or more",
+      credit: 30,
     },
   ];
 };
 export const how_many_blinds_shutters = [
   {
     label: "1",
+    credit: 5,
   },
   {
     label: "2 to 3",
+    credit: 10,
   },
   {
     label: "4 or more",
+    credit: 20,
   },
 ];
 export const what_type_blinds_are_they = [
@@ -690,15 +839,19 @@ export const what_type_blinds_are_they = [
 export const what_is_the_order = [
   {
     label: "Up to 4 m",
+    credit: 5,
   },
   {
     label: "5 to 14 m",
+    credit: 10,
   },
   {
     label: "15 to 24 m",
+    credit: 15,
   },
   {
     label: "25 m or more",
+    credit: 20,
   },
 ];
 
@@ -707,18 +860,22 @@ export const how_many_be_cleaned = (id1, id2, id3, id4) => {
     {
       id: id1,
       label: "1 to 2",
+      credit: 3,
     },
     {
       id: id2,
       label: "3 to 4",
+      credit: 6,
     },
     {
       id: id3,
       label: "5 to 9",
+      credit: 12,
     },
     {
       id: id4,
       label: "10 or more",
+      credit: 15,
     },
   ];
 };
@@ -726,18 +883,22 @@ export const ppproximately_how_big_is_covered_clad = [
   {
     des: "E.g. mailbox etc.",
     label: "Small",
+    credit: 3,
   },
   {
     des: "E.g. bicycle shelter, canopy etc.",
     label: "Medium",
+    credit: 10,
   },
   {
     des: "E.g. part of a house, shed etc.",
     label: "Large",
+    credit: 25,
   },
   {
     des: "E.g. whole house etc.",
     label: "Very large",
+    credit: 35,
   },
 ];
 export const what_shape_is_the_roof = (id1, id2, id3, id4, id5, id6) => {
@@ -847,21 +1008,25 @@ export const how_extensive_order_approximately = (id1, id2, id3, id4) => {
       id: id1,
       des: "E.g. fireplace, playhouse, etc.",
       label: "Small",
+      credit: 5,
     },
     {
       id: id2,
       des: "E.g. kitchen, bathroom, oil tank etc.",
       label: "Medium",
+      credit: 10,
     },
     {
       id: id3,
       des: "E.g. garage, extension, apartment etc.",
       label: "Large",
+      credit: 25,
     },
     {
       id: id4,
       des: "E.g. whole house, several properties, etc.",
       label: "Very large",
+      credit: 35,
     },
   ];
 };
@@ -923,18 +1088,22 @@ export const approximately_how_much_budget_for_this_project = (
     {
       id: id1,
       label: "Up to CHF 10,000",
+      credit: 40,
     },
     {
       id: id2,
       label: "CHF 10,000 to 100,000",
+      credit: 60,
     },
     {
       id: id3,
       label: "CHF 100,000 to 300,000",
+      credit: 90,
     },
     {
       id: id4,
       label: "CHF 300,000 or more",
+      credit: 120,
     },
   ];
 };

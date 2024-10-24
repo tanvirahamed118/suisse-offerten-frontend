@@ -1,58 +1,35 @@
 import { useTranslation } from "react-i18next";
-import PropTypes from "prop-types";
 import Pagination from "../Pagination";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import SellerPerticipateLoading from "../loading/Seller-participate-loading";
-import { useUpdateProposalStatusBySellerMutation } from "../../redux/rtk/features/proposal/proposalApi";
-import { useEffect, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import { useState } from "react";
 
-function AllPerticipation({
-  data,
-  isLoading,
-  isSuccess,
-  isError,
-  error,
-  setPage,
-  limit,
-  page,
-}) {
+import ArchivedPopup from "./Archived-popup";
+import { useGetAllOfferBySellerBothQuery } from "../../redux/rtk/features/offer/offerApi";
+
+function AllPerticipation() {
   const { t } = useTranslation();
+  const sellerAuth = localStorage.getItem("seller");
+  const seller = JSON.parse(sellerAuth);
+  const sellerId = seller?.seller?._id;
+  const [page, setPage] = useState(1);
+  const limit = 20;
+  const { data, isLoading, isSuccess, isError, error } =
+    useGetAllOfferBySellerBothQuery({
+      sellerId,
+      page,
+      limit,
+      status: ["pending", "request"],
+    });
+  const [isShow, setIsShow] = useState(false);
 
-  const [load, setLoad] = useState(null);
-  const totalItems = data?.totalProposal || 0;
+  const totalItems = data?.totalOffers || 0;
+
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
-  const filterData = data?.proposals.filter(
-    (item) => item.status !== "archived"
-  );
-  const [
-    updateProposalStatusBySeller,
-    {
-      data: statusData,
-      isLoading: statusLoading,
-      isSuccess: statusSuccess,
-      isError: statusIsError,
-      error: statusError,
-    },
-  ] = useUpdateProposalStatusBySellerMutation();
 
-  const handleStatus = (id) => {
-    const status = "archived";
-    const formData = { status, id };
-    updateProposalStatusBySeller(formData);
-    setLoad(id);
-  };
-  useEffect(() => {
-    if (statusIsError) {
-      toast.error(statusError?.data?.message);
-    }
-    if (statusSuccess) {
-      toast.success(statusData?.message);
-    }
-  }, [statusIsError, statusSuccess, statusData, statusError]);
   // decide what to show for jobs
   let content;
 
@@ -70,25 +47,19 @@ function AllPerticipation({
   if (isError) {
     content = <p>{error}</p>;
   }
-  if (!isLoading && !isError && filterData?.length === 0) {
+  if (!isLoading && !isError && data?.offers?.length === 0) {
     content = (
       <p className="text-black font-semibold text-xl py-5">
         {t("no_data_found")}
       </p>
     );
   }
-  if (!isLoading && !isError && isSuccess && filterData?.length > 0) {
-    content = filterData?.map((item) => {
-      const {
-        _id,
-        jobTitle,
-        jobNumber,
-        jobLocation,
-        createdAt,
-        status,
-        offerNote,
-        jobId,
-      } = item || {};
+  if (!isLoading && !isError && isSuccess && data?.offers?.length > 0) {
+    content = data?.offers?.map((item) => {
+      const { _id, bidMessage, createdAt, status, jobId, offerRequested } =
+        item || {};
+
+      const { jobTitle, jobNumber, jobLocation } = item.jobData || {};
       const formattedDate = moment(createdAt).format("MMMM D, YYYY");
       return (
         <tr className="striped border-b border-gray-300" key={_id}>
@@ -109,7 +80,7 @@ function AllPerticipation({
           <td className="p-5 align-top text-left">
             <div className="flex flex-col gap-2">
               <p className="text-black text-base font-normal">
-                {offerNote?.slice(0, 150)}...
+                {bidMessage?.slice(0, 150)}...
               </p>
               <p className="text-[#999] text-base font-normal">
                 {t("request_made_on")} {formattedDate}
@@ -121,59 +92,44 @@ function AllPerticipation({
           </td>
           <td className="p-5 align-top text-left">
             <div className="flex flex-col gap-3 items-end">
-              {status ===
-                "Client has received your offer but has not yet confirmed it" && (
-                <Link
-                  to={`/seller-dashboard/perticipation/${_id}`}
-                  className="bg-[#ff7100] py-3 w-full rounded-md text-center text-white font-normal text-base"
-                >
-                  {t("update_offer")}
-                </Link>
-              )}
               <Link
                 to={`/search-job/${jobId}`}
                 className="bg-white text-base py-3 w-52 rounded-md text-center text-black font-normal border border-gray-200 hover:border-gray-300"
               >
                 {t("view_advertisement")}
               </Link>
-
-              {status === "pending" && (
-                <button
-                  onClick={() => handleStatus(_id)}
-                  className="text-[#0050b2] text-base font-normal hover:underline flex gap-2 items-center"
-                >
-                  {load === item?._id && statusLoading ? (
-                    <>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        strokeWidth="1.5"
-                        stroke="currentColor"
-                        className="w-6 h-6 animate-spin"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
-                        />
-                      </svg>
-                      <p>{t("loading")}</p>
-                    </>
-                  ) : (
-                    t("archive")
-                  )}
-                </button>
+              {offerRequested && (
+                <>
+                  <span>
+                    <p className="text-[#111111] text-sm fotn-normal">
+                      {t("recive_request")}
+                    </p>
+                  </span>
+                  <Link
+                    to={`/search-job/prepard-bid/${jobId}`}
+                    className="text-white bg-[#19be10] py-2 text-center w-full rounded-md text-base font-normal hover:bg-[#16A60E] flex justify-center items-center gap-2"
+                  >
+                    {t("place_bid")}
+                  </Link>
+                </>
               )}
             </div>
           </td>
+          {isShow && (
+            <ArchivedPopup
+              isShow={isShow}
+              setIsShow={setIsShow}
+              id={_id}
+              jobId={jobId}
+            />
+          )}
         </tr>
       );
     });
   }
   return (
     <div className="text-black text-xl font-bold">
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto lg:overflow-x-clip">
         <table className="min-w-full divide-y divide-gray-200 w-[900px]">
           <thead>
             <tr className="border-b border-gray-300">
@@ -200,18 +156,8 @@ function AllPerticipation({
           itemsPerPage={limit}
         />
       )}
-      <Toaster />
     </div>
   );
 }
-AllPerticipation.propTypes = {
-  data: PropTypes.any,
-  isLoading: PropTypes.any,
-  isSuccess: PropTypes.any,
-  isError: PropTypes.any,
-  error: PropTypes.any,
-  setPage: PropTypes.any,
-  limit: PropTypes.any,
-  page: PropTypes.any,
-};
+
 export default AllPerticipation;

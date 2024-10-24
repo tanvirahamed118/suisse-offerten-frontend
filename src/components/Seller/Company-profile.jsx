@@ -3,6 +3,7 @@ import services from "../../datas/seller-info";
 import {
   useGetOneSellerQuery,
   useUpdateSellerCompanyMutation,
+  useUpdateSellerPicturesMutation,
 } from "../../redux/rtk/features/auth/seller/authApi";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
@@ -15,6 +16,17 @@ function CompanyProfile() {
   const { data } = useGetOneSellerQuery(_id);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [name, setName] = useState(null);
+  const [
+    updateSellerPictures,
+    {
+      data: delData,
+      isLoading: delLoading,
+      isError: delIsError,
+      isSuccess: delSuccess,
+      error: delError,
+    },
+  ] = useUpdateSellerPicturesMutation();
   const [
     updateSellerComany,
     { data: getData, isLoading, isSuccess, isError, error },
@@ -55,7 +67,7 @@ function CompanyProfile() {
   const handleChange = (e) => {
     const { name, checked } = e.target;
 
-    if (name === "companyTitle" || name === "companyDescription") {
+    if (name === "companyTitle") {
       setFormData((prevState) => ({
         ...prevState,
         [name]: e.target.value,
@@ -73,6 +85,19 @@ function CompanyProfile() {
         };
       });
     }
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: e.target.value,
+    }));
+  };
+
+  const handleDeletePictures = (item) => {
+    const id = data?._id;
+    const url = { item };
+    if (item) {
+      updateSellerPictures({ id, url });
+    }
+    setName(item);
   };
 
   // Handle file input changes
@@ -139,6 +164,15 @@ function CompanyProfile() {
       toast.success(getData?.message);
     }
   }, [getData, isSuccess, isError, error]);
+
+  useEffect(() => {
+    if (delIsError) {
+      toast.error(delError?.data?.message);
+    }
+    if (delSuccess) {
+      toast.success(delData?.message);
+    }
+  }, [delData, delSuccess, delIsError, delError]);
 
   return (
     <div className="">
@@ -222,13 +256,39 @@ function CompanyProfile() {
           <div className="flex flex-wrap gap-5 py-5">
             {data &&
               data?.companyPictures?.map((item, index) => (
-                <img
-                  key={index}
-                  src={item}
-                  alt=""
-                  className="w-2/12 h-36 object-cover rounded-md hover:cursor-pointer"
-                  onClick={() => handleImageClick(item)}
-                />
+                <div key={index} className="relative w-24 h-24">
+                  <img
+                    src={item}
+                    alt=""
+                    className="absolute w-full object-cover"
+                    onClick={() => handleImageClick(item)}
+                  />
+                  <p
+                    onClick={() => handleDeletePictures(item)}
+                    className="absolute top-[-10px] left-[-10px] p-1 w-5 h-5 text-[10px] text-white bg-black rounded-full cursor-pointer text-center"
+                  >
+                    {delLoading && name === item ? (
+                      <>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          className="w-3 h-3 animate-spin"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                          />
+                        </svg>
+                      </>
+                    ) : (
+                      "X"
+                    )}
+                  </p>
+                </div>
               ))}
           </div>
           {data && isPopupOpen && selectedImage && (

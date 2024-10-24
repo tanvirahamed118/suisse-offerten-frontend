@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import { useGetAllJobQuery } from "../redux/rtk/features/job/jobApi";
 import JobRecentlyLoading from "./loading/JobRecentlyLoading";
 function RecentlyJobs() {
+  const { t } = useTranslation();
   const { data, isLoading, isError, error, isSuccess } = useGetAllJobQuery({
     page: 1,
     limit: 20,
@@ -26,10 +28,10 @@ function RecentlyJobs() {
     content = <p>{error}</p>;
   }
   if (!isLoading && !isError && data?.jobs?.length === 0) {
-    content = <p>No Data Found!</p>;
+    content = <p>{t("no_data_found")}</p>;
   }
   if (!isLoading && !isError && isSuccess && data?.jobs?.length > 0) {
-    content = data?.jobs?.map((item) => {
+    content = data?.jobs?.slice(0, 10)?.map((item) => {
       const { _id, jobTitle, jobLocation, jobPostcode } = item || {};
       return (
         <li key={_id} className="py-5">
@@ -51,7 +53,9 @@ function RecentlyJobs() {
   }
   return (
     <div className="border border-gray-300 shadow-sm w-full p-8">
-      <h2 className="text-2xl text-black font-bold">Recently posted jobs</h2>
+      <h2 className="text-2xl text-black font-bold">
+        {t("recently_posted_jobs")}
+      </h2>
       <div>
         <ul className="recently">{content}</ul>
       </div>

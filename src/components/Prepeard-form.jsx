@@ -1,68 +1,51 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { useCreateProposalMutation } from "../redux/rtk/features/proposal/proposalApi";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
+import { useCreateOfferBidMutation } from "../redux/rtk/features/offer/offerApi";
 
 function PrepeardForm() {
   const { id } = useParams();
+  const { t } = useTranslation();
+  const navigate = useNavigate();
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const sellerId = seller?.seller?._id;
-  const sellerName = seller?.seller?.username;
-  const sellerphone = seller?.seller?.phone;
   const [showNotfi, setShowNoti] = useState(false);
   const [offerFiles, setOfferFiles] = useState([]);
-  const [createProposal, { data, isLoading, isError, isSuccess, error }] =
-    useCreateProposalMutation();
+  const [createOfferBid, { data, isLoading, isError, isSuccess, error }] =
+    useCreateOfferBidMutation();
   const fileRef = useRef();
-  const [formData, setFormData] = useState({
+  const [offerData, setOfferData] = useState({
     priceUnit: "",
     offerPrice: 0,
     offerNote: "",
     jobId: id,
     sellerId: sellerId,
-    sellerName: sellerName,
-    sellerPhone: sellerphone,
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
+    setOfferData({
+      ...offerData,
       [e.target.name]: e.target.value,
     });
   };
-  const { offerNote, priceUnit, offerPrice } = formData || {};
+  const { offerNote, priceUnit, offerPrice } = offerData || {};
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (offerNote.length > 0 && priceUnit.length > 0 && offerPrice > 0) {
-      const offerData = new FormData();
-      offerData.append("offerFiles", offerFiles[0]);
-      Object.keys(formData).forEach((key) => {
-        offerData.append(key, formData[key]);
+      const formData = new FormData();
+      formData.append("offerFiles", offerFiles[0]);
+      Object.keys(offerData).forEach((key) => {
+        formData.append(key, offerData[key]);
       });
-      createProposal(offerData);
-      setFormData({
-        offerNote: "",
-        offerPrice: 0,
-        priceUnit: "",
-        jobId: id,
-        sellerId: sellerId,
-        sellerName: sellerName,
-      });
-      clearFiles();
+      createOfferBid(formData);
     }
   };
 
   const handleFileChange = (e) => {
     setOfferFiles(e.target.files);
-  };
-
-  const clearFiles = () => {
-    setOfferFiles([]);
-    if (fileRef.current) {
-      fileRef.current.value = "";
-    }
   };
 
   useEffect(() => {
@@ -72,25 +55,43 @@ function PrepeardForm() {
     if (isSuccess) {
       toast.success(data?.message);
       setShowNoti(true);
+      setOfferData({
+        offerNote: "",
+        offerPrice: 0,
+        priceUnit: "",
+        jobId: id,
+        sellerId: sellerId,
+      });
+      clearFiles();
     }
-  }, [isError, isSuccess, data, error]);
+  }, [isError, isSuccess, data, error, id, sellerId]);
+
+  const clearFiles = () => {
+    setOfferFiles([]);
+    if (fileRef.current) {
+      fileRef.current.value = "";
+    }
+  };
+
+  const handleBack = () => {
+    navigate(-1);
+  };
 
   return (
     <section className="w-full py-10">
       <div className="container">
         <Link
-          to={`/search-job/${id}`}
+          onClick={handleBack}
           state={{ from: "proposal-form" }}
           className="text-white py-1 px-5 rounded-md text-base font-normal hover:underline bg-[#0050B2]"
         >
-          Back
+          {t("back")}
         </Link>
         {showNotfi && (
           <div className="bg-[#F5F6F7] p-5 rounded-md flex gap-2 items-center mt-5">
             <i className="fa-solid fa-circle-exclamation text-[#0050B2] text-2xl"></i>
             <p className="text-black font-normal text-base">
-              Thank you! Your application has been submitted. If interested, the
-              client will contact you and request a quote.
+              {t("prepeare_text1")}
             </p>
           </div>
         )}
@@ -98,7 +99,7 @@ function PrepeardForm() {
         <div className="bg-white shadow-lg p-5 w-full lg:w-7/12 flex flex-col gap-5 mt-5">
           <div>
             <h2 className="text-xl font-bold text-black border-b border-gray-300 pb-5 mb-5">
-              Your offer
+              {t("your_offer")}
             </h2>
           </div>
           <form
@@ -109,7 +110,7 @@ function PrepeardForm() {
             <div className="flex gap-5 flex-col md:flex-row">
               <div className="w-full flex flex-col gap-1">
                 <label htmlFor="" className="text-black text-base font-normal">
-                  Price Unit
+                  {t("price_unit")}
                 </label>
                 <select
                   name="priceUnit"
@@ -120,7 +121,7 @@ function PrepeardForm() {
                   className="md:w-full border border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
                 >
                   <option value="" className="text-black text-base font-normal">
-                    Please Select...
+                    {t("select_option")}...
                   </option>
                   <option value="fixed price">Fixed price</option>
                   <option value="per hour">Per hour</option>
@@ -134,7 +135,7 @@ function PrepeardForm() {
               </div>
               <div className="w-full flex flex-col gap-1">
                 <label htmlFor="" className="text-black text-base font-normal">
-                  Your offer (incl. VAT)
+                  {t("offer_price")}
                 </label>
                 <input
                   type="number"
@@ -149,10 +150,10 @@ function PrepeardForm() {
             </div>
             <div className="w-full flex flex-col gap-1">
               <label htmlFor="" className="text-black text-base font-normal">
-                Note on the offer
+                {t("note_on_offer")}
               </label>
               <p className="text-gray-400 pb-2 text-sm font-normal">
-                Optionally add a comment to your offer here.
+                {t("optional_offer")}
               </p>
               <textarea
                 name="offerNote"
@@ -171,7 +172,7 @@ function PrepeardForm() {
                 className="dropContainer cursor-pointer"
               >
                 <i className="fa-solid fa-upload"></i>
-                <p>Browse File</p>
+                <p>{t("browse_file")}</p>
                 <input
                   type="file"
                   ref={fileRef}
@@ -184,12 +185,10 @@ function PrepeardForm() {
             </div>
             <div className="flex flex-col gap-3">
               <h2 className="text-sm font-normal text-gray-400">
-                All entries (amount, text, documents) are only visible to you
-                and the client. Please select only one file.
+                {t("prepeare_text2")}
               </h2>
               <p className="text-sm font-bold text-[#6c757d ]">
-                If you already send message to the client, you can send a
-                proposal.
+                {t("prepeare_text3")}
               </p>
             </div>
             <div className="flex gap-3 items-center">
@@ -223,10 +222,10 @@ function PrepeardForm() {
                         d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
                       />
                     </svg>
-                    <p>Loading...</p>
+                    <p>{t("loading")}...</p>
                   </>
                 ) : (
-                  "Prepare offer"
+                  t("prepare_offer")
                 )}
               </button>
             </div>

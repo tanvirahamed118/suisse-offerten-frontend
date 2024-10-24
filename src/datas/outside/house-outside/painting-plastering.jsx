@@ -19,6 +19,7 @@ const paintingPlastering = [
       {
         id: 598432534,
         label: "Other",
+        credit: 5,
       },
     ],
   },
@@ -31,58 +32,70 @@ const paintingPlastering = [
       {
         id: 761250268,
         label: "Only a smaller area",
+        credit: 2,
       },
       {
         id: 734067304,
         label: "Up to 5 walls / ceilings",
+        credit: 7,
       },
       {
         id: 783577619,
         label: "6 to 10 walls / ceilings",
+        credit: 12,
       },
       {
         id: 460418116,
         label: "11 to 20 walls / ceilings",
+        credit: 17,
       },
       {
         id: 630867526,
         label: "21 to 30 walls / ceilings",
+        credit: 22,
       },
       {
         id: 206749297,
         label: "31 or more walls / ceilings",
+        credit: 35,
       },
     ],
   },
   {
     id: 761250268,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   {
     id: 734067304,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   {
     id: 783577619,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   {
     id: 460418116,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   {
     id: 630867526,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   {
     id: 206749297,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   //   inside
   // outside
@@ -106,6 +119,7 @@ const paintingPlastering = [
       {
         id: 562937386,
         label: "Other or more",
+        credit: 10,
       },
     ],
   },
@@ -118,22 +132,27 @@ const paintingPlastering = [
       {
         id: 464762570,
         label: "Only a smaller area",
+        credit: 2,
       },
       {
         id: 143484617,
         label: "Up to one page",
+        credit: 5,
       },
       {
         id: 844079067,
         label: "2 to 3 pages",
+        credit: 10,
       },
       {
         id: 576487974,
         label: "An entire single-family house",
+        credit: 35,
       },
       {
         id: 296294573,
         label: "An entire apartment building",
+        credit: 50,
       },
     ],
   },
@@ -154,13 +173,15 @@ const paintingPlastering = [
   },
   {
     id: 274954248,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   {
     id: 498603127,
-    type: "number",
+    type: "inputBox",
     label: "How large is the total area to be painted ?",
+    options: [{ label: "m2" }],
   },
   {
     id: 143484617,
@@ -272,14 +293,17 @@ const paintingPlastering = [
       {
         id: 970618046,
         label: "A window / a door",
+        credit: 2,
       },
       {
         id: 166780055,
         label: "2 to 5 windows / doors",
+        credit: 5,
       },
       {
         id: 293307341,
         label: "6 or more windows / doors",
+        credit: 10,
       },
     ],
   },
@@ -368,14 +392,17 @@ const paintingPlastering = [
       {
         id: 119723393,
         label: "On one side of the roof",
+        credit: 5,
       },
       {
         id: 374016662,
         label: "On 2 to 3 sides of the roof",
+        credit: 10,
       },
       {
         id: 786408353,
         label: "On all sides of the roof",
+        credit: 25,
       },
     ],
   },
@@ -467,7 +494,10 @@ const paintingPlastering = [
         label: "Medium (e.g. painting two complete rooms)",
       },
       {
-        label: "Large (e.g. single-family house, paint all interior walls)",
+        label: "Large (e.g. EFH point all interior walls)",
+      },
+      {
+        label: "Very Large (e.g. MFH facades completely paint)",
       },
     ],
   },
@@ -526,6 +556,7 @@ const paintingPlastering = [
       {
         id: 562937386,
         label: "Other or more",
+        credit: 5,
       },
     ],
   },
@@ -692,14 +723,17 @@ const paintingPlastering = [
       {
         id: 970618046,
         label: "A window / a door",
+        credit: 5,
       },
       {
         id: 166780055,
         label: "2 to 5 windows / doors",
+        credit: 10,
       },
       {
         id: 293307341,
         label: "6 or more windows / doors",
+        credit: 10,
       },
     ],
   },
@@ -788,14 +822,17 @@ const paintingPlastering = [
       {
         id: 119723393,
         label: "On one side of the roof",
+        credit: 5,
       },
       {
         id: 374016662,
         label: "On 2 to 3 sides of the roof",
+        credit: 10,
       },
       {
         id: 786408353,
         label: "On all sides of the roof",
+        credit: 25,
       },
     ],
   },

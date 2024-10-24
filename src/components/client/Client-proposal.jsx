@@ -1,44 +1,43 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import {
-  useGetOneProposalByClientQuery,
-  useUpdateProposalStatusByClientMutation,
-  useUpdateProposalViewMutation,
-} from "../../redux/rtk/features/proposal/proposalApi";
 import ProposalAdLoading from "../loading/Proposalad-loading";
 import { useTranslation } from "react-i18next";
+import {
+  useGetOneOfferByBothQuery,
+  useUpdateOfferRequestMutation,
+} from "../../redux/rtk/features/offer/offerApi";
 
 function ClientProposal({ jobId, sellerId }) {
   const { t } = useTranslation();
-  const { data, isLoading, isSuccess } = useGetOneProposalByClientQuery({
+  const { data, isLoading, isSuccess } = useGetOneOfferByBothQuery({
     sellerId,
     jobId,
   });
-  const [role, setRole] = useState(null);
   const [
-    updateProposalStatusByClient,
+    updateOfferRequest,
     {
       data: updateData,
       isLoading: updateLoading,
+      isSuccess: updateSuccess,
       isError: updateisError,
       error: updateError,
-      isSuccess: updateSuccess,
     },
-  ] = useUpdateProposalStatusByClientMutation();
-  const [updateProposalView] = useUpdateProposalViewMutation();
+  ] = useUpdateOfferRequestMutation();
+  const [role, setRole] = useState(null);
+
   const {
-    createdAt,
+    sellerData,
     offerNote,
-    sellerName,
     offerPrice,
     priceUnit,
-    jobTitle,
-    jobNumber,
-    status,
+    jobData,
     _id,
+    createdAt,
+    status,
   } = data || {};
-
+  const { companyName } = sellerData || {};
+  const { jobTitle, jobNumber } = jobData || {};
   const date = new Date(createdAt);
 
   // Extract day, month, and year
@@ -72,19 +71,16 @@ function ClientProposal({ jobId, sellerId }) {
     }
   }, [updateError, updateData, updateisError, updateSuccess]);
 
-  useEffect(() => {
-    const id = _id;
-    updateProposalView(id);
-  }, [updateProposalView, _id]);
-
   const handleReject = () => {
-    const formData = { sellerId: sellerId, jobId: jobId, status: "rejected" };
-    updateProposalStatusByClient(formData);
-    setRole("rejected");
+    const id = _id;
+    const formData = { sellerId: sellerId, jobId: jobId, status: "reject" };
+    updateOfferRequest({ formData, id });
+    setRole("reject");
   };
   const handleAccept = () => {
+    const id = _id;
     const formData = { sellerId: sellerId, jobId: jobId, status: "accept" };
-    updateProposalStatusByClient(formData);
+    updateOfferRequest({ formData, id });
     setRole("accept");
   };
 
@@ -103,7 +99,7 @@ function ClientProposal({ jobId, sellerId }) {
               {t("offer_creator_name")}
             </th>
             <td className="border border-gray-300 text-left px-4 py-2 text-red-500 font-bold text-xl capitalize">
-              {sellerName}
+              {companyName}
             </td>
           </tr>
           <tr>
@@ -146,7 +142,7 @@ function ClientProposal({ jobId, sellerId }) {
               {formattedDate}
             </td>
           </tr>
-          <tr>
+          <tr className="bg-gray-200">
             <th className="border border-gray-300 text-left px-4 py-2">
               {t("offer_note")}
             </th>
@@ -158,7 +154,13 @@ function ClientProposal({ jobId, sellerId }) {
             <th className="border border-gray-300 text-left px-4 py-2">
               {t("proposal_status")}
             </th>
-            <td className="border border-gray-300 text-left px-4 py-2 capitalize font-bold">
+            <td
+              className={
+                status === "accept"
+                  ? "border border-gray-300 text-left px-4 py-2 capitalize font-bold text-green-500"
+                  : "border border-gray-300 text-left px-4 py-2 capitalize font-bold text-red-500"
+              }
+            >
               {status}
             </td>
           </tr>
@@ -173,7 +175,7 @@ function ClientProposal({ jobId, sellerId }) {
         <div className="">
           <div className="bg-white p-5 border-b border-gray-300 flex flex-col gap-3">
             <h2 className="text-black text-2xl font-bold">
-              {t("recive_proposal")} {sellerName}
+              {t("recive_proposal")} {companyName}
             </h2>
             <p className="text-gray-400 font-normal text-base">
               {t("accept_condition")}
@@ -186,20 +188,11 @@ function ClientProposal({ jobId, sellerId }) {
           <div className="px-5 flex gap-5 items-center">
             <button
               onClick={handleAccept}
-              disabled={
-                status === "accept" ||
-                status === "close" ||
-                status === "archived" ||
-                status === "rejected"
-              }
+              disabled={status === "accept" || status === "reject"}
               className={
                 status === "accept"
                   ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : status === "close"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : status === "archived"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : status === "rejected"
+                  : status === "reject"
                   ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
                   : "bg-[#ff7100] w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2"
               }
@@ -228,25 +221,16 @@ function ClientProposal({ jobId, sellerId }) {
             </button>
             <button
               onClick={handleReject}
-              disabled={
-                status === "accept" ||
-                status === "close" ||
-                status === "archived" ||
-                status === "rejected"
-              }
+              disabled={status === "accept" || status === "reject"}
               className={
                 status === "accept"
                   ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : status === "close"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : status === "archived"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : status === "rejected"
+                  : status === "reject"
                   ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
                   : "bg-[#ff7100] w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2"
               }
             >
-              {updateLoading && role === "rejected" ? (
+              {updateLoading && role === "reject" ? (
                 <>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -18,6 +18,7 @@ const excavationEarthworks = [
       {
         id: 229540874,
         label: "Other",
+        credit: 20,
       },
     ],
   },
@@ -29,18 +30,22 @@ const excavationEarthworks = [
       {
         id: 427491911,
         label: "Excavations and canals",
+        credit: 25,
       },
       {
         id: 812661376,
         label: "Drilling",
+        credit: 20,
       },
       {
         id: 289520657,
         label: "Excavation",
+        credit: 30,
       },
       {
         id: 492119970,
         label: "Other",
+        credit: 20,
       },
     ],
   },
@@ -99,26 +104,29 @@ const excavationEarthworks = [
       {
         id: 108292907,
         label: "Point foundation",
+        credit: 10,
       },
       {
         id: 185206267,
         label: "Base plate, strip foundation",
+        credit: 20,
       },
       {
         label: "Other",
+        credit: 20,
       },
     ],
   },
   {
     id: 108292907,
     type: "multibox",
-    label: "What excavation work do you need ?",
+    label: "What point foundation work do you need ?",
     options: what_excavation_you_need,
   },
   {
     id: 185206267,
     type: "multibox",
-    label: "What excavation work do you need ?",
+    label: "What kind of slab or strip foundation work do you need ?",
     options: what_excavation_you_need,
   },
 ];

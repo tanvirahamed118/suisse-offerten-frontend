@@ -17,6 +17,7 @@ function ClientRegister() {
   const [placeholder, setPlaceholder] = useState("+41 123 45 64");
   const [isShow, setIsShow] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [isHas, setIsHas] = useState(false);
   const [tel, setTel] = useState("");
   const [client, setClient] = useState({
     salutation: "",
@@ -42,6 +43,7 @@ function ClientRegister() {
     referance,
     password,
     agreement,
+    phone,
   } = client || {};
 
   const countries = [
@@ -50,11 +52,24 @@ function ClientRegister() {
     { name: "France", code: "+33", flag: FRA },
     { name: "Switzerland", code: "+41", flag: SWIS },
   ];
-
+  const handleCodeChange = (e) => {
+    const phoneNumber = e.target.value;
+    if (!countryCode) {
+      setIsHas(true);
+      return;
+    } else {
+      setIsHas(false);
+    }
+    setTel(phoneNumber);
+  };
   const handleCountrySelect = (country) => {
     setCountryCode(country.code);
     setPlaceholder(`${country.code} 444 444 444`);
     setIsShow(false);
+    setClient((prevClient) => ({
+      ...prevClient,
+      phone: `${country.code}${tel}`, // Update formData to include the new country code
+    }));
   };
   useEffect(() => {
     setClient((prevClient) => ({
@@ -71,6 +86,10 @@ function ClientRegister() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (phone?.length <= 11) {
+      toast.error("Phone Number not valid");
+      return;
+    }
     if (password.length >= 6) {
       registerClient({ client });
 
@@ -198,17 +217,19 @@ function ClientRegister() {
                   type="tel"
                   placeholder={placeholder}
                   className={
-                    tel.length > 0
+                    tel.length > 8
                       ? "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-not-invalid"
                       : "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-invalid"
                   }
-                  onChange={(e) => setTel(e.target.value)}
+                  onChange={handleCodeChange}
                   value={tel}
                   required
                 />
-                <p className="text-gray-500 text-sm font-normal pt-1">
-                  {t("only_visible_select")}
-                </p>
+                {isHas ? (
+                  <p className="text-red-500 text-sm font-normal mt-3">
+                    {t("code_error")}
+                  </p>
+                ) : null}
               </span>
               <div
                 className="flex items-center gap-1 bg-white w-12 py-2 px-3 justify-center absolute top-[39px] left-1 cursor-pointer border-r border-gray-300"
@@ -378,7 +399,6 @@ function ClientRegister() {
                   className="mt-2"
                   onChange={handleChange}
                   checked={newsletter}
-                  required
                 />
                 <label
                   htmlFor="newsLetter"

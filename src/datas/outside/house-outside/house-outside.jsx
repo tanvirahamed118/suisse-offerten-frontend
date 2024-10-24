@@ -54,7 +54,7 @@ const houseOutside = [
       },
       {
         id: 126762922,
-        label: "Plumbing, sheet metal working",
+        label: "Tinsmithing, sheet metal working",
         img: Plumbing,
       },
       {
@@ -85,6 +85,7 @@ const houseOutside = [
       {
         label: "Other work",
         img: Other,
+        credit: 10,
       },
     ],
   },
@@ -106,14 +107,17 @@ const houseOutside = [
       {
         id: 335412947,
         label: "Clean roof or gutter",
+        credit: 15,
       },
       {
         id: 818282892,
         label: "Installing or replacing roof windows",
+        credit: 10,
       },
       {
         id: 406126319,
         label: "Other",
+        credit: 8,
       },
     ],
   },

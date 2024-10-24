@@ -1,5 +1,6 @@
 import {
   how_big_is_approximately,
+  how_big_is_metal_structure_approximately,
   how_many_goals,
   is_the_required_available,
 } from "../../reuse-data";
@@ -21,7 +22,7 @@ const metalConstruction = [
       },
       {
         id: 621442113,
-        label: "Goal",
+        label: "Gate",
       },
       {
         id: 409898095,
@@ -32,10 +33,12 @@ const metalConstruction = [
         id: 691649311,
         label: "Modification / Repair",
         des: "Welding, soldering, grinding, drilling etc.",
+        credit: 5,
       },
       {
         id: 943940507,
         label: "Other",
+        credit: 5,
       },
     ],
   },
@@ -43,7 +46,7 @@ const metalConstruction = [
   {
     id: 425432382,
     type: "checkbox",
-    label: "How large is the affected area approximately ?",
+    label: "How big is the stairs approximately ?",
     options: how_big_is_approximately(
       787637825,
       953594623,
@@ -80,7 +83,7 @@ const metalConstruction = [
   {
     id: 998833810,
     type: "checkbox",
-    label: "How large is the affected area approximately ?",
+    label: "How big is the stairs approximately ?",
     options: how_big_is_approximately(
       787637825,
       953594623,
@@ -149,8 +152,8 @@ const metalConstruction = [
   {
     id: 409898095,
     type: "checkbox",
-    label: "How large is the affected area approximately ?",
-    options: how_big_is_approximately(
+    label: "How big is the custom-made metal structure approximately ?",
+    options: how_big_is_metal_structure_approximately(
       787637825,
       953594623,
       880436176,

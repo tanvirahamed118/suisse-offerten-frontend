@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { useGetAllProposalsQuery } from "../../redux/rtk/features/proposal/proposalApi";
 import { useEffect, useState } from "react";
 import Pagination from "../Pagination";
 import { Link } from "react-router-dom";
 import ProposalLoading from "../loading/Proposal-loading";
 import { useCreateReviewMutation } from "../../redux/rtk/features/review/reviewApi";
 import toast, { Toaster } from "react-hot-toast";
+import { useGetAllOfferByClientQuery } from "../../redux/rtk/features/offer/offerApi";
 
 function ClientFeedback() {
   const { t } = useTranslation();
@@ -13,10 +13,17 @@ function ClientFeedback() {
   const limit = 20;
   const clientAuth = localStorage.getItem("client");
   const client = JSON.parse(clientAuth);
-  const id = client?.client?._id;
+  const clientId = client?.client?._id;
 
   const { data, isLoading, isSuccess, isError, error } =
-    useGetAllProposalsQuery({ id, page, limit });
+    useGetAllOfferByClientQuery({
+      clientId,
+      page,
+      limit,
+      reviewSubmited: "pending",
+      status: "accept",
+    });
+
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
@@ -25,6 +32,7 @@ function ClientFeedback() {
     review: "",
     rating: "",
     jobId: "",
+    offerId: "",
     sellerId: "",
     clientId: client?.client?._id,
   });
@@ -52,13 +60,14 @@ function ClientFeedback() {
       error: createEror,
     },
   ] = useCreateReviewMutation();
-  const totalItems = data?.totalProposal || 0;
+  const totalItems = data?.totalOffers || 0;
 
-  const handleCheck = (e, jobId, sellerId) => {
+  const handleCheck = (e, jobId, sellerId, _id) => {
     setReviewData({
       ...reviewData,
       sellerId: sellerId,
       jobId: jobId,
+      offerId: _id,
     });
   };
   const handleSubmit = (e) => {
@@ -86,10 +95,6 @@ function ClientFeedback() {
     }
   }, [createIsError, createSuccess, CreateData, createEror]);
 
-  const filterData = data?.proposals?.filter(
-    (item) => item.status === "accept"
-  );
-
   // decide what to show for jobs
   let content;
 
@@ -107,24 +112,19 @@ function ClientFeedback() {
   if (isError) {
     content = <p>{error}</p>;
   }
-  if (!isLoading && !isError && filterData?.length === 0) {
+  if (!isLoading && !isError && data?.offers?.length === 0) {
     content = (
       <p className="text-balck font-semibold text-lg py-5">
         {t("no_data_found")}
       </p>
     );
   }
-  if (!isLoading && !isError && isSuccess && filterData?.length > 0) {
-    content = filterData?.map((item) => {
-      const {
-        jobTitle,
-        sellerName,
-        sellerPhone,
-        jobId,
-        _id,
-        sellerId,
-        reviewRequest,
-      } = item || {};
+  if (!isLoading && !isError && isSuccess && data?.offers?.length > 0) {
+    content = data?.offers?.map((item) => {
+      const { _id, sellerId, reviewRequest } = item || {};
+
+      const { companyName, phone } = item.sellerData || {};
+      const { jobTitle, _id: jobId } = item.jobData || {};
       return (
         <tr className="striped" key={_id}>
           <td className="p-5 align-top border-b border-black text-left w-8/12">
@@ -134,7 +134,7 @@ function ClientFeedback() {
                 name="proposal"
                 id=""
                 className="mt-2 cursor-pointer"
-                onChange={(e) => handleCheck(e, jobId, sellerId)}
+                onChange={(e) => handleCheck(e, jobId, sellerId, _id)}
               />
               <div className="flex flex-col gap-2">
                 <Link
@@ -144,14 +144,12 @@ function ClientFeedback() {
                   {jobTitle}
                 </Link>
                 <p className="text-[#111111] font-normal text-base">
-                  {sellerName}
+                  {companyName}
                 </p>
-                <p className="text-[#111111] text-lg font-normal">
-                  {sellerPhone}
-                </p>
+                <p className="text-[#111111] text-lg font-normal">{phone}</p>
                 {reviewRequest && (
                   <p className="text-red-400 text-sm font-bold">
-                    {sellerName} {t("request_review")}
+                    {companyName} {t("request_review")}
                   </p>
                 )}
               </div>
@@ -236,8 +234,8 @@ function ClientFeedback() {
                     jobId.length > 0 &&
                     sellerId.length > 0 &&
                     review?.length > 0
-                      ? "bg-[#ff7100] py-2 px-5 rounded-md w-40 text-white font-normal text-base self-end flex gap-2 items-center justify-center"
-                      : "bg-gray-300 py-2 px-5 rounded-md w-40 text-white font-normal text-base self-end cursor-not-allowed flex justify-center"
+                      ? "bg-[#ff7100] py-2 px-5 rounded-md w-60 text-white font-normal text-base flex gap-2 items-center justify-center"
+                      : "bg-gray-300 py-2 px-5 rounded-md w-60 text-white font-normal text-base cursor-not-allowed flex justify-center"
                   }
                   disabled={
                     jobId?.length === 0 ||

@@ -53,6 +53,7 @@ const gardenMain = [
       {
         label: "Other work",
         img: other,
+        credit: 8,
       },
     ],
   },

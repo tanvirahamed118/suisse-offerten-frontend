@@ -19,6 +19,7 @@ const insulationSealing = [
       {
         id: 794760366,
         label: "Screed or roof",
+        credit: 25,
       },
       {
         id: 773220083,
@@ -31,6 +32,7 @@ const insulationSealing = [
       {
         id: 224629023,
         label: "Other or more of the above",
+        credit: 7,
       },
     ],
   },
@@ -47,12 +49,15 @@ const insulationSealing = [
     options: [
       {
         label: "A wall",
+        credit: 10,
       },
       {
         label: "Multiple walls",
+        credit: 25,
       },
       {
         label: "Whole house",
+        credit: 45,
       },
     ],
   },
@@ -63,12 +68,15 @@ const insulationSealing = [
     options: [
       {
         label: "1 to 2 doors / windows",
+        credit: 5,
       },
       {
         label: "3 to 4 doors / windows",
+        credit: 10,
       },
       {
         label: "5 or more doors / windows",
+        credit: 15,
       },
     ],
   },
@@ -79,21 +87,27 @@ const insulationSealing = [
     options: [
       {
         label: "A wall / ceiling / floor",
+        credit: 2,
       },
       {
         label: "A room",
+        credit: 3,
       },
       {
         label: "Multiple rooms",
+        credit: 6,
       },
       {
         label: "Whole house",
+        credit: 10,
       },
       {
         label: "Roof",
+        credit: 8,
       },
       {
         label: "Other",
+        credit: 5,
       },
     ],
   },

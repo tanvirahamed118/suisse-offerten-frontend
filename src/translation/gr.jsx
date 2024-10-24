@@ -139,7 +139,7 @@ const sw = {
   job_number: "Auftragsnummer",
   offer_unit: "Angebotseinheit",
   offer_note: "Angebotshinweis",
-  proposal_accepted: "Vorschlag angenommen",
+  offer_accept: "Angebot annehmen",
   proposal_rejcted: "Vorschlag abgelehnt",
   offer_created: "Angebot erstellen bei",
   proposal_status: "Vorschlagsstatus",
@@ -152,6 +152,47 @@ const sw = {
     "Wenn Sie Ihre Mitgliedschaft kündigen, gehen sämtliche Credits verloren.",
   exit: "Ausfahrt",
   cancel_membership_btn: "Mitgliedschaft kündigen",
+  update_address: "Aktualisieren Sie Ihre Standorte",
+  steet_address: "Ihre Anschrift",
+  post_code: "Ihre Postleitzahl",
+  your_country: "Dein Land",
+  verify_address: "Adresse bestätigen",
+  code_error: "Bitte wählen Sie zuerst eine Ländervorwahl",
+  error_perticipation:
+    "Sie besitzen weder eine Mitgliedschaft noch Credits. Bitte wählen Sie eine Mitgliedschaftsstufe oder holen Sie sich Credits, um teilnehmen zu können.",
+  already_join: "Nimm bereits teil",
+  archived_notify: "Möchten Sie, dass Ihr Angebot archiviert wird?",
+  archived_des:
+    "Wenn Sie Ihr Angebot archivieren, verfällt auch Ihr bestehendes Angebot. Sie können für diesen Job auch kein weiteres Angebot abgeben!",
+  participating_providers: "Teilnehmende Anbieter",
+  leagal_form: "Rechtsform",
+  recently_posted_jobs: "Kürzlich veröffentlichte Jobs",
+  communication_history: "Bisheriger Kommunikationsverlauf",
+  communication_note:
+    "Kommentare und abgegebene Angebote sind nur für Sie und den Auftraggeber sichtbar. Hier ausgetauschte Informationen sind verbindlicher Bestandteil der Bestellung.",
+  prepare_offer: "Angebot vorbereiten",
+  your_message_to: "Ihre Nachricht an",
+  your_message_note:
+    "Wir empfehlen Ihnen, auf die für die Aufgabe relevanten besonderen Qualifikationen und Stärken Ihres Unternehmens sowie auf etwaige Rückfragen und mögliche Varianten einzugehen.",
+  send_prepare_offer: "Angebot senden und vorbereiten",
+  lead_price: "Bleipreis",
+  pay_this_credit:
+    "Wenn Sie eine Nachricht senden, müssen Sie dieses Guthaben bezahlen",
+  pay_this_credit1: "Bitte geben Sie hier keine Preise oder Kontaktdaten ein.",
+  pay_this_credit2:
+    "Im nächsten Schritt kann ein Angebot erstellt werden. Der Auftraggeber fordert von maximal 5 Anbietern ein Angebot an.",
+  prepeare_text1:
+    "Vielen Dank! Ihre Bewerbung wurde übermittelt. Bei Interesse wird der Kunde Sie kontaktieren und ein Angebot anfordern.",
+  prepeare_text2:
+    "Alle Einträge (Betrag, Text, Dokumente) sind nur für Sie und den Auftraggeber sichtbar. Bitte wählen Sie nur eine Datei aus.",
+  prepeare_text3:
+    "Wenn Sie dem Kunden bereits eine Nachricht gesendet haben, können Sie einen Vorschlag senden.",
+  already_submited: "Bereits eingereicht",
+  offer_accepted: "Angebot angenommen",
+  wait_response: "Bitte warten Sie auf die Antwort des Clients",
+  recive_request: "Empfangsanfrage?",
+  place_bid: "Gebot abgeben",
+  offer_pending: "Angebot ausstehend",
   // seller dasgboard
 
   // dashboard menu
@@ -161,7 +202,7 @@ const sw = {
   personal_information: "Persönliche Angaben",
   new_leads: "Neue Leads",
   low_bid: "Niedrigstes Gebot",
-  participation_contact_requests: "Vorschläge und Kontaktanfragen",
+  participation_contact_requests: "Kontaktanfragen",
   offers: "Bietet an",
   open: "Offen",
   pending: "Ausstehend",
@@ -221,13 +262,13 @@ const sw = {
   update_offer: "Angebot aktualisieren",
   view_advertisement: "Anzeige ansehen",
   rating_not_yet: "Bewertungsnotizen sind weiterhin verfügbar",
-  rating_archived: "Bewertung noch nicht verfügbar",
-  competitor_offer: "Angebote der Mitbewerber",
+  rating_archived: "Angebot vom Kunden abgelehnt",
+  competitor_offer: "Wettbewerber",
   my_offers: "Meine Angebote",
   chf: "CHF",
-  orginally_published: "Ursprünglich veröffentlicht wurde:",
+  orginally_published: "veröffentlicht:",
   tast_completed: "Aufgabe erledigt?",
-  request_review: "Fordern Sie eine Überprüfung an",
+  request_review: "Bewertung anfordern",
   comment: "Kommentar",
   remove_observer: "Entfernen",
   observer_title: "Beobachterin",
@@ -297,8 +338,8 @@ const sw = {
   rating_text_7: "Fügen Sie Ihrer Bewertung einen Kommentar hinzu:",
   rating_text_8: "Bestätigen",
   rating_text_9: "Offene Bewertungen",
-  contact_person: "ANSPRECHPARTNER",
-  managing_director: "GESCHÄFTSFÜHRER",
+  contact_person: "Ansprechpartner",
+  managing_director: "Geschäftsführer",
   company_info: "FIRMENINFO",
   company_name: "Name der Firma",
   Submit_company_name_change: "Firmennamenänderung übermitteln",
@@ -492,7 +533,7 @@ const sw = {
   //  register page
   register_title: "Registrierung für Handwerker und Dienstleister",
   no_obligations:
-    "Keine Verpflichtungen. Probemitgliedschaft endet automatisch",
+    "Keine Verpflichtungen. Sie erhalten eine 7-tägige kostenlose Testmitgliedschaft.",
   salutation: "Anrede",
   mister: "Mister",
   woman: "Frau",

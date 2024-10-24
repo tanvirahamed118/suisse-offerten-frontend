@@ -1,57 +1,34 @@
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useGetOneJobQuery } from "../redux/rtk/features/job/jobApi";
 import { useEffect, useState } from "react";
-import { useCreateSellerMessageMutation } from "../redux/rtk/features/message/messageApi";
 import { useTranslation } from "react-i18next";
 import toast, { Toaster } from "react-hot-toast";
+import { useCreateOfferPerticipationMutation } from "../redux/rtk/features/offer/offerApi";
 
 function BiddingForm() {
   const { id } = useParams();
   const { data } = useGetOneJobQuery(id);
   const navigate = useNavigate();
   const [
-    createSellerMessage,
+    createOfferPerticipation,
     { data: createData, isLoading, isSuccess, error, isError },
-  ] = useCreateSellerMessageMutation();
-  const { jobUsername, requireCredit, jobEmail } = data || {};
+  ] = useCreateOfferPerticipationMutation();
+  const { jobUsername, jobEmail, credits } = data || {};
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const { t } = useTranslation();
-  const [client, setClient] = useState(null);
   const [sellerMessage, setsellerMessage] = useState("");
   const [validButton, setValidButton] = useState(false);
   const formData = {
-    sellerMessage,
+    bidMessage: sellerMessage,
     jobId: id,
-    jobTitle: data?.jobTitle,
     sellerId: seller?.seller?._id,
-    clientId: client?._id,
-    jobImage: data?.jobFiles[0],
-    jobDescription: data?.jobDescription,
+    jobCredit: credits,
   };
-
-  useEffect(() => {
-    if (jobEmail) {
-      fetch(
-        `${
-          import.meta.env.VITE_APP_API_URL
-        }auth/client/access/email?jobEmail=${jobEmail}`,
-        {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            token: `Bearer ${seller?.sellerToken}`,
-          },
-        }
-      )
-        .then((response) => response.json())
-        .then((data) => setClient(data));
-    }
-  }, [jobEmail]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createSellerMessage(formData);
+    createOfferPerticipation(formData);
     setsellerMessage("");
   };
 
@@ -83,18 +60,16 @@ function BiddingForm() {
           state={{ from: "bid-form" }}
           className="text-white py-1 px-5 rounded-md text-base font-normal hover:underline bg-[#0050B2]"
         >
-          Back
+          {t("back")}
         </Link>
         <div className="bg-white shadow-lg p-5 w-full lg:w-7/12 flex flex-col gap-5 mt-5">
           <div>
             <h2 className="text-xl font-bold text-black border-b border-gray-300 pb-5 mb-5">
-              Your message to {jobUsername}
+              {t("your_message_to")} {jobUsername}
             </h2>
 
             <p className="text-black text-base font-normal">
-              We recommend that you mention any special qualifications and
-              strengths of your company that are relevant to the assignment, as
-              well as any queries and possible variants.
+              {t("your_message_note")}
             </p>
           </div>
           <form
@@ -140,34 +115,33 @@ function BiddingForm() {
                     <p>{t("loading")}</p>
                   </>
                 ) : (
-                  "Send"
+                  t("send")
                 )}
               </button>
               <Link
                 to={`/search-job/prepard-bid/${id}`}
                 className="bg-[#3056a7] text-white font-normal rounded-md hover:bg-[#274789] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
               >
-                Send & Prepare offer
+                {t("send_prepare_offer")}
               </Link>
             </div>
           </form>
           <div className="bg-[#f0f9fc] py-3 px-5 flex flex-col gap-2 rounded-sm">
             <h2 className="text-sm font-bold text-black">
-              Lead Price:{" "}
+              {t("lead_price")}:{" "}
               <span className="text-[#ff7100] font-normal">
-                {requireCredit} credits
+                {credits} credits
               </span>
             </h2>
             <p className="text-xs font-normal text-[#6c757d ]">
-              When you send a message, you have to pay this credit
+              {t("pay_this_credit")}
             </p>
           </div>
           <div>
             <h3 className="text-black text-sm font-bold inline">
-              Please do not enter any prices or contact details here.
+              {t("pay_this_credit1")}
               <span className="text-black text-sm font-normal ml-2">
-                An offer can be prepared in the next step. The client requests
-                an offer from a maximum of 5 providers.
+                {t("pay_this_credit2")}
               </span>
             </h3>
           </div>

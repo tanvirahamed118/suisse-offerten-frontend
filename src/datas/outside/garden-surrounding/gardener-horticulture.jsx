@@ -8,6 +8,8 @@ import {
   how_large_garden_designed,
   how_big_the_tree_tow,
   input,
+  How_large_is_to_be_covered,
+  approximately_how_many_meters_fence_is_it,
 } from "../../reuse-data";
 
 const gardenerHorteulture = [
@@ -51,10 +53,12 @@ const gardenerHorteulture = [
       {
         id: 1049279012,
         label: "Unique",
+        credit: 3,
       },
       {
         id: 1050245854,
         label: "Recurring",
+        credit: 6,
       },
     ],
   },
@@ -90,18 +94,22 @@ const gardenerHorteulture = [
       {
         id: 1055563698,
         label: "Remove rootstock",
+        credit: 3,
       },
       {
         id: 1057316697,
         label: "Advice / Assessment",
+        credit: 3,
       },
       {
         id: 1059605046,
         label: "Shrubs or other gardening work",
+        credit: 6,
       },
       {
         id: 1060016865,
         label: "Other",
+        credit: 3,
       },
     ],
   },
@@ -114,29 +122,26 @@ const gardenerHorteulture = [
   {
     id: 1062502204,
     type: "checkbox",
-
     label: "How big is the tree ?",
     options: how_big_the_tree_one,
   },
   {
     id: 1063769131,
     type: "checkbox",
-
-    label: "How big is the tree ?",
+    label: "How big is the tallest tree?",
     options: how_big_the_tree_one,
   },
   {
     id: 1065965018,
     type: "checkbox",
-
-    label: "How big is the tree ?",
+    label: "How big is the tallest tree?",
     options: how_big_the_tree_one,
   },
   {
     id: 1066140720,
     type: "checkbox",
 
-    label: "How big is the tree ?",
+    label: "How big is the tallest tree?",
     options: how_big_the_tree_one,
   },
   {
@@ -154,19 +159,19 @@ const gardenerHorteulture = [
   {
     id: 1071292174,
     type: "checkbox",
-    label: "How big is the tree ?",
+    label: "How big is the tallest tree?",
     options: how_big_the_tree_one,
   },
   {
     id: 1075114987,
     type: "checkbox",
-    label: "How big is the tree ?",
+    label: "How big is the tallest tree?",
     options: how_big_the_tree_one,
   },
   {
     id: 1076154642,
     type: "checkbox",
-    label: "How big is the tree ?",
+    label: "How big is the tallest tree?",
     options: how_big_the_tree_one,
   },
 
@@ -199,8 +204,8 @@ const gardenerHorteulture = [
         label: "Garden design",
       },
       {
-        id: 1082529981,
         label: "Other",
+        credit: 15,
       },
     ],
   },
@@ -222,13 +227,13 @@ const gardenerHorteulture = [
   {
     id: 1082668570,
     type: "checkbox",
-    label: "How big is the tree ?",
+    label: "How big is the lawn?",
     options: how_big_the_tree_one,
   },
   {
     id: 1084026783,
     type: "checkbox",
-    label: "How big is the tree ?",
+    label: "How big is the lawn?",
     options: how_big_the_tree_one,
   },
 
@@ -243,14 +248,15 @@ const gardenerHorteulture = [
       },
       {
         label: "Repair existing terrace",
+        credit: 8,
       },
     ],
   },
   {
     id: 1085596934,
     type: "checkbox",
-    label: "How big is the tree ?",
-    options: how_big_the_tree_one,
+    label: "How large is the area to be covered?",
+    options: How_large_is_to_be_covered,
   },
   // fences
   {
@@ -273,13 +279,14 @@ const gardenerHorteulture = [
       {
         id: 1088253807,
         label: "repair",
+        credit: 7,
       },
     ],
   },
   {
     id: 1085611170,
     type: "checkbox",
-    label: "Approximately how many meters of fence is it ?",
+    label: "Approximately how many gates need to be installed?",
     options: approximately_how_many_meters_fence,
   },
   {
@@ -311,7 +318,7 @@ const gardenerHorteulture = [
     id: 1087358787,
     type: "checkbox",
     label: "Approximately how many meters of fence is it ?",
-    options: approximately_how_many_meters_fence,
+    options: approximately_how_many_meters_fence_is_it,
   },
   // Garden design
 
@@ -327,16 +334,18 @@ const gardenerHorteulture = [
       },
       {
         label: "Remodel or extend existing garden seating area",
+        credit: 20,
       },
       {
         label: "Repair existing garden seating area",
+        credit: 15,
       },
     ],
   },
   {
     id: 1093422821,
     type: "checkbox",
-    label: "How big is the tree ?",
+    label: "How big should the garden seating area be?",
     options: how_big_the_tree_tow,
   },
   // gerden seating area

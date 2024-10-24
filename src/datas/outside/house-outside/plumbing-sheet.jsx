@@ -25,10 +25,12 @@ const plumbingSheet = [
       {
         id: 371481781,
         label: "Fireplace / chimney",
+        credit: 10,
       },
       {
         id: 463565116,
         label: "other",
+        credit: 10,
       },
     ],
   },
@@ -98,7 +100,7 @@ const plumbingSheet = [
   {
     id: 497443654,
     type: "checkbox",
-    label: "What is the approximate length of the order ?",
+    label: "How large ist he structure that is to be covered approximately ?",
     options: ppproximately_how_big_is_covered_clad,
   },
 ];

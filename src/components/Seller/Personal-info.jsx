@@ -71,6 +71,7 @@ function PersonalInfo() {
     email,
     username,
     password,
+    phone,
   } = formData || {};
   const countries = [
     { name: "Austria", code: "+43", flag: AUST },
@@ -117,14 +118,16 @@ function PersonalInfo() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password !== confirmPass) {
-      toast.error("Password not match!");
-    } else if (password.length >= 6) {
-      updateSeller({ formData, id });
-      setTel("");
-    } else {
-      toast.error("Please use more then 6 character");
+    if (password) {
+      if (password !== confirmPass) {
+        toast.error("Password not match!");
+      } else if (password.length >= 6) {
+        setTel("");
+      } else {
+        toast.error("Please use more then 6 character");
+      }
     }
+    updateSeller({ formData, id });
   };
 
   return (
@@ -432,7 +435,7 @@ function PersonalInfo() {
             </p>
             <div className="relative flex flex-col gap-2">
               <label htmlFor="" className="text-black text-base font-normal">
-                {t("telephone_number")}:
+                {t("telephone_number")}: ({phone})
               </label>
               <span>
                 <input
@@ -445,7 +448,6 @@ function PersonalInfo() {
                   }
                   onChange={(e) => setTel(e.target.value)}
                   value={tel}
-                  required
                 />
                 <p className="text-gray-500 text-sm font-normal pt-1">
                   {t("only_visible_select")}
@@ -548,14 +550,13 @@ function PersonalInfo() {
             </div>
             <div>
               <label htmlFor="" className="text-black text-base font-normal">
-                {t("password")}
+                {t("password")} ({t("optional")})
               </label>
               <span className="relative">
                 <input
                   type={showPassword ? "text" : "password"}
                   name="password"
                   onChange={handleChange}
-                  required
                   className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
                 />
                 <i
@@ -573,7 +574,7 @@ function PersonalInfo() {
             </div>
             <div>
               <label htmlFor="" className="text-black text-base font-normal">
-                {t("Confirm_password")}
+                {t("Confirm_password")} ({t("optional")})
               </label>
               <input
                 type="password"
@@ -581,7 +582,6 @@ function PersonalInfo() {
                 onChange={(e) => setConfirmPass(e.target.value)}
                 className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
                 value={confirmPass}
-                required
               />
               <p className="text-gray-500 text-sm font-normal pt-1">
                 {t("password_conditon")}

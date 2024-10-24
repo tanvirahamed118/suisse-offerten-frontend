@@ -1,18 +1,19 @@
 import { Link, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useGetAllMessageByClientQuery } from "../../redux/rtk/features/message/messageApi";
-import { useGetAllProposalsDefaultQuery } from "../../redux/rtk/features/proposal/proposalApi";
+import { useGetAllOfferByClientQuery } from "../../redux/rtk/features/offer/offerApi";
 
 function ClientDashboard() {
   const { t } = useTranslation();
   const clientAuth = localStorage.getItem("client");
   const client = JSON.parse(clientAuth);
-  const id = client?.client?._id;
+  const clientId = client?.client?._id;
 
-  const { data } = useGetAllMessageByClientQuery(id);
-  const { data: getData } = useGetAllProposalsDefaultQuery();
-  const filterData = data?.filter((item) => item.view === "unseen");
-  const filterProp = getData?.filter((item) => item.status === "accept");
+  const { data } = useGetAllOfferByClientQuery({
+    clientId,
+    reviewSubmited: "pending",
+  });
+  const filterData = data?.offers?.filter((item) => item.view === "unseen");
+  const filterreview = data?.offers?.filter((item) => item.status === "accept");
 
   return (
     <section>
@@ -41,9 +42,9 @@ function ClientDashboard() {
                   className="text-black text-base font-normal hover:underline flex gap-1"
                 >
                   {t("reviews")}
-                  {filterProp?.length > 0 && (
+                  {filterreview?.length > 0 && (
                     <p className="text-white bg-red-400 w-4 h-4 text-sm flex justify-center items-center rounded-full">
-                      {filterProp?.length}
+                      {filterreview?.length}
                     </p>
                   )}
                 </Link>

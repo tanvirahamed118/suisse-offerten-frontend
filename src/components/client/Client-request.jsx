@@ -6,18 +6,21 @@ import { Link } from "react-router-dom";
 import moment from "moment";
 import RequestJobLoading from "../loading/RequestJob-loading";
 import {
-  useGetAllMessageByClientQuery,
-  useUpdateMessageViewMutation,
-} from "../../redux/rtk/features/message/messageApi";
+  useGetAllOfferByClientQuery,
+  useUpdateOfferViewMutation,
+} from "../../redux/rtk/features/offer/offerApi";
 
 function ClientRequest() {
   const { t } = useTranslation();
-  const [updateMessageView] = useUpdateMessageViewMutation();
+  const [updateOfferView] = useUpdateOfferViewMutation();
   const clientAuth = localStorage.getItem("client");
   const client = JSON.parse(clientAuth);
-  const id = client?.client?._id;
+  const clientId = client?.client?._id;
 
-  const { data: messageData } = useGetAllMessageByClientQuery(id);
+  const { data: offerData } = useGetAllOfferByClientQuery({
+    clientId,
+    reviewSubmited: "pending",
+  });
 
   const [page, setPage] = useState(1);
   const limit = 20;
@@ -45,8 +48,9 @@ function ClientRequest() {
   }
 
   const handleUpdate = (jobId) => {
-    const id = client?.client?._id;
-    updateMessageView({ id, jobId });
+    const clientId = client?.client?._id;
+    const data = { clientId, jobId };
+    updateOfferView(data);
   };
 
   // decide what to render
@@ -80,9 +84,10 @@ function ClientRequest() {
     content = data?.jobs?.map((item) => {
       const { jobTitle, createdAt, placeBid, status, _id, offerRequest } =
         item || {};
-      const filterData = messageData?.filter(
+      const filterData = offerData?.offers?.filter(
         (item) => item.jobId === _id && item.view === "unseen"
       );
+
       return (
         <tr key={_id} className="w-full">
           <td className="p-3 align-top w-6/12">
@@ -122,7 +127,7 @@ function ClientRequest() {
             </p>
             <p
               className={
-                offerRequest > 0
+                offerRequest > 0 && status === "active"
                   ? "text-base font-bold text-black"
                   : "text-base font-normal text-black"
               }

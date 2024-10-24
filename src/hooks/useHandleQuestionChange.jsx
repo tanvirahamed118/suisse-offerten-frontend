@@ -2,7 +2,7 @@ import { useCallback } from "react";
 
 const useQuestionChange = (setFormData, currentQuestion, handleNext) => {
   const handleQuestionChange = useCallback(
-    (key, value, id) => {
+    (key, value, id, credit) => {
       const keyname = key?.split(" ")?.join("_");
 
       setFormData((prevFormData) => {
@@ -34,7 +34,7 @@ const useQuestionChange = (setFormData, currentQuestion, handleNext) => {
         } else if (currentQuestion.type === "radio") {
           // Handle radio type question
           const updatevalue = value
-            .split(/\s*[,.&\s]+\s*/g)
+            .split(/\s*[,.\s]+\s*/g)
             .filter(Boolean)
             .join("_");
           updatedFormData.jobSubCategories = [
@@ -47,7 +47,9 @@ const useQuestionChange = (setFormData, currentQuestion, handleNext) => {
             [keyname]: value,
           };
         }
-
+        if (credit) {
+          updatedFormData.credits = credit;
+        }
         return updatedFormData;
       });
 

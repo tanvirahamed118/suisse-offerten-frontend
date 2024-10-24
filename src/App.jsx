@@ -25,7 +25,7 @@ import ClientRequest from "./components/client/Client-request";
 import ClientPersonalInfo from "./components/client/Client-personal-info";
 import NewLeads from "./components/Seller/New-leads";
 import Perticipation from "./components/Seller/Perticipation";
-import SellerOffer from "./components/Seller/Seller-offer";
+// import SellerOffer from "./components/Seller/Seller-offer";
 import Comments from "./components/Seller/Comments";
 import Observer from "./components/Seller/Observer";
 import SellerNews from "./components/Seller/Seller-news";
@@ -60,7 +60,6 @@ import ProposalProfile from "./pages/client/Proposal-profile";
 import ClientFeedback from "./components/client/client-feedback";
 import UpdateProposal from "./components/Seller/Update-proposal";
 import OfferOpen from "./components/Seller/Offer-open";
-import OfferPending from "./components/Seller/Offer-pending";
 import OfferComplete from "./components/Seller/Offer-complete";
 import OfferArchived from "./components/Seller/Offer-archived";
 import OfferInvitation from "./components/Seller/Offer-invitation";
@@ -75,6 +74,7 @@ import CreditPaymentSuccess from "./components/Seller/CreditPayment-success";
 import CreditPaymentFail from "./components/Seller/CreditPayment-fail";
 import { useEffect } from "react";
 import { useGetAllSettingQuery } from "./redux/rtk/features/setting/settingApi";
+import OfferWon from "./components/Seller/OfferWon";
 
 function App() {
   const { data, isLoading } = useGetAllSettingQuery();
@@ -83,7 +83,8 @@ function App() {
 
   useEffect(() => {
     if (isLoading) {
-      document.title = "...Loading";
+      document.title =
+        "Suisse Offerten || Kostenlose Handwerker-Angebote: Holen Sie sich";
     } else {
       document.title = heading;
     }
@@ -158,15 +159,12 @@ function App() {
               path="/seller-dashboard/perticipation/:id"
               element={<UpdateProposal />}
             />
-            <Route path="/seller-dashboard/offers" element={<SellerOffer />} />
             <Route
               path="/seller-dashboard/offers-open"
               element={<OfferOpen />}
             />
-            <Route
-              path="/seller-dashboard/offers-pending"
-              element={<OfferPending />}
-            />
+            <Route path="/seller-dashboard/offers-won" element={<OfferWon />} />
+
             <Route
               path="/seller-dashboard/offers-complete"
               element={<OfferComplete />}

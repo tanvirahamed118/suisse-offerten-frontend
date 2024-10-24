@@ -112,7 +112,7 @@ function ClientVerify() {
         </div>
         <p className="text-base font-normal text-[#111111] text-center pt-10">
           Did not receive an email? Check your spam folder or write to us at
-          info@mietexpress.ch
+          suisseofferten@gmail.com
         </p>
       </div>
       <Toaster />

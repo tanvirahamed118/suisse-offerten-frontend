@@ -138,7 +138,7 @@ const en = {
   job_number: "Numéro de travail",
   offer_unit: "Unité d'offre",
   offer_note: "Note d'offre",
-  proposal_accepted: "Proposition acceptée",
+  offer_accept: "Accepter l'offre",
   proposal_rejcted: "Proposition rejetée",
   offer_created: "Proposition Créer à",
   proposal_status: "Statut de la proposition",
@@ -151,6 +151,47 @@ const en = {
     "Si vous annulez votre abonnement, vous avez perdu tous vos crédits.",
   exit: "Sortie",
   cancel_membership_btn: "Annuler l'adhésion",
+  update_address: "Mettez à jour vos emplacements",
+  steet_address: "Votre adresse postale",
+  post_code: "Votre code postal",
+  your_country: "Votre pays",
+  verify_address: "Vérifier l'adresse",
+  code_error: "Veuillez d'abord sélectionner un code de pays",
+  error_perticipation:
+    "Vous n'avez pas d'abonnement ni de crédits. Veuillez sélectionner un niveau d'abonnement ou obtenir des crédits pour pouvoir participer.",
+  already_join: "Participez déjà",
+  archived_notify: "Souhaitez-vous que votre offre soit archivée?",
+  archived_des:
+    "Votre proposition existante est également éliminée si vous archivez votre offre. De plus, vous ne pouvez plus envoyer d'offre pour ce travail !",
+  participating_providers: "Fournisseurs participants",
+  leagal_form: "Forme juridique",
+  recently_posted_jobs: "Offres d'emploi récemment publiées",
+  communication_history: "Historique des communications antérieures",
+  communication_note:
+    "Les commentaires et les offres soumises ne sont visibles que par vous et le client. Les informations échangées ici font partie intégrante de la commande.",
+  prepare_offer: "Préparer une offre",
+  your_message_to: "Votre message à",
+  your_message_note:
+    "Nous vous recommandons de mentionner toutes les qualifications et points forts particuliers de votre entreprise qui sont pertinents pour la mission, ainsi que toutes les questions et variantes possibles.",
+  send_prepare_offer: "Envoyer et préparer l'offre",
+  lead_price: "Prix ​​du plomb",
+  pay_this_credit:
+    "Lorsque vous envoyez un message, vous devez payer ce crédit",
+  pay_this_credit1: "Veuillez ne pas indiquer de prix ni de coordonnées ici.",
+  pay_this_credit2:
+    "Une offre peut être préparée à l'étape suivante. Le client demande une offre à un maximum de 5 fournisseurs.",
+  prepeare_text1:
+    "Merci ! Votre demande a été envoyée. Si vous êtes intéressé, le client vous contactera et vous demandera un devis.",
+  prepeare_text2:
+    "Toutes les entrées (montant, texte, documents) ne sont visibles que par vous et le client. Veuillez sélectionner un seul fichier.",
+  prepeare_text3:
+    "Si vous avez déjà envoyé un message au client, vous pouvez envoyer une proposition.",
+  already_submited: "Déjà soumis",
+  offer_accepted: "Offer Accepted",
+  wait_response: "Veuillez attendre la réponse du client",
+  recive_request: "Recevoir une demande ?",
+  place_bid: "Placer une offre",
+  offer_pending: "Offre en attente",
   // seller dasgboard
 
   // dashboard menu
@@ -160,7 +201,7 @@ const en = {
   personal_information: "Personal Information",
   new_leads: "De nouvelles pistes",
   low_bid: "Offre basse",
-  participation_contact_requests: "Propositions et demandes de contact",
+  participation_contact_requests: "Demandes de contact",
   offers: "Des offres",
   open: "Ouvrir",
   pending: "En attente",
@@ -219,13 +260,13 @@ const en = {
   update_offer: "Offre de mise à jour",
   view_advertisement: "Voir l'annonce",
   rating_not_yet: "Les notes de notation sont toujours disponibles",
-  rating_archived: "Offre garçon vendeur archivée",
-  competitor_offer: "Offres concurrentes",
+  rating_archived: "Offre rejetée par le client",
+  competitor_offer: "Concurrentes",
   my_offers: "Mes offres",
   chf: "CHF",
-  orginally_published: "Publié à l'origine:",
+  orginally_published: "publié:",
   tast_completed: "Tâche terminée?",
-  request_review: "Demander un avis",
+  request_review: "Demande de révision",
   comment: "Commentaire",
   remove_observer: "Retirer",
   observer_title: "Observatrice",
@@ -296,8 +337,8 @@ const en = {
   rating_text_7: "Ajouter un commentaire à votre avis:",
   rating_text_8: "Confirmer",
   rating_text_9: "Avis ouverts",
-  contact_person: "PERSONNE DE CONTACT",
-  managing_director: "DIRECTEUR GÉNÉRAL",
+  contact_person: "Personne de contact",
+  managing_director: "Directeur général",
   company_info: "INFORMATIONS SUR LA SOCIÉTÉ",
   company_name: "Nom de l'entreprise",
   Submit_company_name_change: "Soumettre un changement de nom d'entreprise",
@@ -499,7 +540,7 @@ const en = {
   //  register page
   register_title: "Inscription pour les artisans et prestataires de services",
   no_obligations:
-    "Aucune obligation. L'abonnement d'essai prend fin automatiquement",
+    "Aucune obligation. Vous bénéficiez d'un essai gratuit de 7 jours.",
   salutation: "Salutation",
   mister: "Monsieur",
   woman: "Femme",

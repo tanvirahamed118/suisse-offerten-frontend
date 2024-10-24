@@ -98,7 +98,7 @@ function ProfileReviewList() {
               <span className="flex gap-2 items-center">
                 <span className="flex gap-1 items-center">
                   <i className="fa-solid fa-user-tie"></i>
-                  <p className="text-base text-black font-bold">
+                  <p className="text-base text-black font-bold capitalize">
                     {t("managing_director")} :
                   </p>
                 </span>

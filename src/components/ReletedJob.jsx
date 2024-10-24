@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useGetAllJobQuery } from "../redux/rtk/features/job/jobApi";
 import JobCategoryLoading from "./loading/JobCategoryLoading";
 import { useTranslation } from "react-i18next";
-// import { Link } from "react-router-dom";
+import Search from "../assets/images/search/cleaning_lady-ecbee0dc07f0ecb23aef.svg";
 
 function ReletedJob({ category, id }) {
   const { t } = useTranslation();
@@ -36,7 +36,7 @@ function ReletedJob({ category, id }) {
     !isError &&
     data?.jobs?.filter((item) => item._id !== id)?.length === 0
   ) {
-    content = <p>No Data Found!</p>;
+    content = <p>{t("no_data_found")}</p>;
   }
   if (
     !isLoading &&
@@ -45,6 +45,7 @@ function ReletedJob({ category, id }) {
     data?.jobs?.filter((item) => item._id !== id)?.length > 0
   ) {
     content = data?.jobs
+      ?.slice(0, 5)
       ?.filter((item) => item._id !== id)
       ?.map((item) => {
         const { jobFiles, jobTitle, jobLocation, jobPostcode, jobDescription } =
@@ -61,9 +62,9 @@ function ReletedJob({ category, id }) {
             <div className="flex md:flex-row flex-col gap-2 items-center pb-5">
               <div className="w-3/12">
                 <img
-                  src={jobFiles[0]}
+                  src={jobFiles?.length > 0 ? jobFiles[0] : Search}
                   alt=""
-                  className="w-full h-full min-h-[80px] min-w-[80px] object-cover rounded-lg"
+                  className="w-24 h-24 object-cover rounded-lg"
                 />
               </div>
               <div className="flex flex-col gap-2 items-start w-full md:w-8/12">
@@ -80,7 +81,7 @@ function ReletedJob({ category, id }) {
                   </p>
                 </span>
               </div>
-              <i className="fa-solid fa-angle-right w-1/12 self-end"></i>
+              <i className="fa-solid fa-angle-right w-1/12"></i>
             </div>
           </a>
         );

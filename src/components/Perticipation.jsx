@@ -1,17 +1,18 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { useGetAllPerticipationByQuery } from "../redux/rtk/features/perticipation/perticipation";
 import PerticipationLoading from "./loading/Perticipation-loading";
 import PropTypes from "prop-types";
+import { useGetAllOfferQuery } from "../redux/rtk/features/offer/offerApi";
 
 function Perticipation({ id }) {
+  const { t } = useTranslation();
   const limit = 5;
   const page = 1;
-  const { data, isError, isLoading, isSuccess, error } =
-    useGetAllPerticipationByQuery({
-      page,
-      limit,
-      id: id,
-    });
+  const { data, isError, isLoading, isSuccess, error } = useGetAllOfferQuery({
+    page,
+    limit,
+    id: id,
+  });
 
   //   decide what to render
   let content;
@@ -26,34 +27,34 @@ function Perticipation({ id }) {
   if (isError) {
     content = <p>{error}</p>;
   }
-  if (!isLoading && !isError && data?.participations?.length === 0) {
-    content = <p>No Data Found!</p>;
+  if (!isLoading && !isError && data?.offers?.length === 0) {
+    content = <p>{t("no_data_found")}</p>;
   }
-  if (!isLoading && !isError && isSuccess && data?.participations?.length > 0) {
-    content = data?.participations?.map((item) => {
+  if (!isLoading && !isError && isSuccess && data?.offers?.length > 0) {
+    content = data?.offers?.map((item) => {
       const {
-        profilePic,
+        companyLogo,
         username,
-        companyName,
         reviewRating,
         totalReview,
         reviewPercent,
         leagalForm,
-        _id,
+        sellerId,
         emailVerify,
         uidVerify,
         locationVerify,
-      } = item?.sellerData || {};
+        companyName,
+      } = item.sellerData || {};
 
       return (
         <div key={item._id} className="flex justify-between items-start">
           <div className="flex md:flex-row flex-col gap-5 items-center">
             <div>
-              {profilePic ? (
+              {companyLogo ? (
                 <img
-                  src={profilePic}
+                  src={companyLogo}
                   alt=""
-                  className="w-24 h-20 rounded-md "
+                  className="w-24 h-24 object-cover rounded-md "
                 />
               ) : (
                 <p className="text-5xl font-bold rounded-md uppercase bg-gray-100 w-24 h-24 flex justify-center items-center">
@@ -64,7 +65,7 @@ function Perticipation({ id }) {
             <div className="flex flex-col">
               <span className="flex gap-2 items-center">
                 <Link
-                  to={`/seller-review-profile/${_id}`}
+                  to={`/seller-review-profile/${sellerId}`}
                   className="text-[#0050b2] text-xl font-medium hover:underline capitalize"
                 >
                   {username?.slice(0, 50)}
@@ -96,39 +97,39 @@ function Perticipation({ id }) {
                 </span>
                 <i className="fa-solid fa-circle text-[4px]"></i>
                 <p className="text-base font-medium text-black">
-                  {totalReview ? totalReview : 0} reviews
+                  {totalReview ? totalReview : 0} {t("reviews")}
                 </p>
                 <i className="fa-solid fa-circle text-[4px]"></i>
                 <p className="text-base font-medium text-black">
                   {reviewPercent >= 80
-                    ? `${reviewPercent}% Positive`
+                    ? `${reviewPercent}% ${t("positive")}`
                     : reviewPercent >= 60
-                    ? `${reviewPercent}% Avarage`
-                    : `${reviewPercent}% Poor`}
+                    ? `${reviewPercent}% ${t("avarage")}`
+                    : `${reviewPercent}% ${t("poor")}`}
                 </p>
               </div>
               <p className="text-black text-base font-normal capitalize">
-                {companyName ? companyName : ""}
+                {companyName ? companyName : t("not_available")}
               </p>
             </div>
           </div>
           <p className="text-base font-medium text-black">
-            {leagalForm ? leagalForm : ""}
+            {leagalForm ? leagalForm : t("not_available")}
           </p>
         </div>
       );
     });
   }
   return (
-    data?.participations?.length > 0 && (
+    data?.offers?.length > 0 && (
       <div className="mt-5">
         <div className="w-full border border-gray-300 rounded-md p-5">
           <div className="flex justify-between items-center mb-5">
             <h2 className="text-md md:text-2xl text-black font-bold capitalize">
-              Participating providers
+              {t("participating_providers")}
             </h2>
             <h2 className="text-sm md:text-lg text-black font-bold capitalize">
-              Leagal Form
+              {t("leagal_form")}
             </h2>
           </div>
           <div className="flex flex-col gap-10 py-5">{content}</div>

@@ -4,13 +4,14 @@ import Rejected from "../../components/client/Rejected";
 import TabMenu from "../../components/client/Tab-menu";
 import Offering from "../../components/client/offering";
 import { Link, useParams } from "react-router-dom";
-import { useGetOneJobQuery } from "../../redux/rtk/features/perticipation/perticipation";
+
 import { useDispatch } from "react-redux";
 import {
   chosePlaceBid,
   choseRejectBid,
 } from "../../redux/rtk/features/filter/perticipationSlice";
 import { useTranslation } from "react-i18next";
+import { useGetOneJobQuery } from "../../redux/rtk/features/job/jobApi";
 
 function Proposal() {
   const [activeTab, setActiveTab] = useState("Offering");
@@ -23,6 +24,7 @@ function Proposal() {
 
   useEffect(() => {
     dispatch(chosePlaceBid(placeBid));
+
     dispatch(choseRejectBid(rejectBid));
   }, [dispatch, rejectBid, placeBid]);
 

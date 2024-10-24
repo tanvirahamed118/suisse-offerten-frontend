@@ -1,11 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { useGetOneSellerQuery } from "../../redux/rtk/features/auth/seller/authApi";
 import { Link } from "react-router-dom";
+import AddressPopup from "./Address-popup";
+import { useState } from "react";
 
 function VerifyDocuments() {
   const { t } = useTranslation();
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
+  const [isShow, setIsShow] = useState(false);
   const id = seller?.seller?._id;
   const { data } = useGetOneSellerQuery(id);
   const { emailVerify, uidVerify, locationVerify } = data || {};
@@ -66,7 +69,15 @@ function VerifyDocuments() {
                 {t("verify_document_text_3")}
               </p>
             </div>
-            <span>
+            <span className="flex gap-3 items-center">
+              {!locationVerify && (
+                <p
+                  className="text-[#3097d1] text-sm font-normal hover:underline cursor-pointer"
+                  onClick={() => setIsShow(true)}
+                >
+                  {t("verify_address")}
+                </p>
+              )}
               {locationVerify ? (
                 <i className=" fa-solid fa-circle-check text-2xl text-green-500"></i>
               ) : (
@@ -82,6 +93,9 @@ function VerifyDocuments() {
           {t("verify_document_text_6")}
         </Link>
       </p>
+      {isShow && (
+        <AddressPopup setIsShow={setIsShow} data={data} isShow={isShow} />
+      )}
     </div>
   );
 }

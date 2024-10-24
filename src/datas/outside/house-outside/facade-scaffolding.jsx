@@ -47,6 +47,7 @@ const facadeScaffolding = [
       {
         id: 509245653,
         label: "Other",
+        credit: 15,
       },
     ],
   },

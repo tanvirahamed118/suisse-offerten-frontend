@@ -28,6 +28,10 @@ function StepButtons({
     password,
     username,
     jobSubCategories,
+    credits,
+    firstname,
+    lastname,
+    phone,
   } = formData || {};
 
   const client = localStorage.getItem("client");
@@ -46,6 +50,7 @@ function StepButtons({
     ) {
       const formDataToSend = new FormData();
       formDataToSend.append("jobTitle", jobTitle);
+      formDataToSend.append("credits", credits);
       formDataToSend.append("clinetId", clinetId);
       formDataToSend.append("jobDescription", jobDescription);
       formDataToSend.append("jobCategoryCode", jobCategoryCode);
@@ -58,6 +63,9 @@ function StepButtons({
       formDataToSend.append("username", username);
       formDataToSend.append("password", password);
       formDataToSend.append("jobSubCategories", jobSubCategories);
+      formDataToSend.append("firstname", firstname);
+      formDataToSend.append("lastname", lastname);
+      formDataToSend.append("phone", phone);
       jobFiles.forEach((file) => {
         formDataToSend.append("jobFiles", file);
       });
@@ -112,13 +120,25 @@ function StepButtons({
       ) : finalStep && !clientAuth?.clientToken ? (
         <button
           className={
-            validateEmail(formData.jobEmail) && username
+            validateEmail(formData.jobEmail) &&
+            username &&
+            firstname &&
+            lastname &&
+            phone.length > 11
               ? "bg-[#ff7100] text-white font-normal rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
               : "bg-[#cccccc] text-[#666666] font-normal rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-not-allowed"
           }
           onClick={handleSubmit}
           type="button"
-          disabled={validateEmail(formData.jobEmail) ? false : true}
+          disabled={
+            validateEmail(formData.jobEmail) &&
+            username &&
+            firstname &&
+            lastname &&
+            phone.length > 11
+              ? false
+              : true
+          }
         >
           {loading ? (
             <>

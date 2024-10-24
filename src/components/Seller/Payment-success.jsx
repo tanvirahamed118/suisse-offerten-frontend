@@ -16,6 +16,7 @@ function PaymentSuccess() {
 
   useEffect(() => {
     const formData = { sellerId: id, status: "complete", credit: credit };
+
     if (memberShipStatus === "not-complete") {
       updatePaymentMembership(formData);
     }

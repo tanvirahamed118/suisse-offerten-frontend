@@ -9,7 +9,7 @@ function SingleCategory() {
   const { data, isLoading } = useGetOneCetagoryQuery(id);
 
   const { title, lists, logo, category, image } = data || {};
-  console.log(lists);
+
   let content;
   if (isLoading) {
     content = (

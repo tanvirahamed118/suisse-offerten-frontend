@@ -1,23 +1,20 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useGetAllProposalsDefaultQuery } from "../../redux/rtk/features/proposal/proposalApi";
 import { useGetAllOfferDefaultQuery } from "../../redux/rtk/features/offer/offerApi";
-import { useGetAllReviewDefaultQuery } from "../../redux/rtk/features/review/reviewApi";
 
 function DashboardNav() {
   const { t } = useTranslation();
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const id = seller?.seller?._id;
-  const { data } = useGetAllProposalsDefaultQuery();
-  const { data: offerData } = useGetAllOfferDefaultQuery();
-  const { data: reviewData } = useGetAllReviewDefaultQuery();
-  const filterPropsal = data?.filter(
-    (item) => item?.sellerId === id && item.status !== "close"
+  const { data } = useGetAllOfferDefaultQuery();
+
+  const filterRequest = data?.filter(
+    (item) => item?.offerRequestedNotify && item.sellerId === id
   );
-  const filterPropsalOf = data?.filter((item) => item?.sellerId === id);
-  const filterOffer = offerData?.filter((item) => item?.sellerId === id);
-  const filterReview = reviewData?.filter((item) => item?.sellerId === id);
+  const filterOpen = data?.filter(
+    (item) => item?.offerPlacedNotify && item.sellerId === id
+  );
 
   return (
     <ul className="flex flex-col gap-3 border border-gray-300 p-5">
@@ -37,9 +34,9 @@ function DashboardNav() {
           className="text-[#767676] text-base font-normal hover:underline flex gap-1"
         >
           {t("participation_contact_requests")}
-          {filterPropsal?.length > 0 && (
+          {filterRequest?.length > 0 && (
             <p className="text-white bg-red-400 w-4 h-4 text-sm flex justify-center items-center rounded-full">
-              {filterPropsal?.length}
+              {filterRequest?.length}
             </p>
           )}
         </Link>
@@ -47,39 +44,34 @@ function DashboardNav() {
       <li>
         <span className="flex gap-1 items-center">
           <i className="fa fa-file fa-fw text-[#000000] text-sm"></i>
-          <Link
-            to="/seller-dashboard/offers"
-            className="text-[#767676] text-base font-normal hover:underline flex gap-1"
-          >
-            {t("offers")}
-            {filterPropsalOf?.length > 0 && (
-              <p className="text-white bg-red-400 w-4 h-4 text-sm flex justify-center items-center rounded-full">
-                {filterPropsalOf?.length}
-              </p>
-            )}
-          </Link>
+          <li>
+            <Link
+              to="/seller-dashboard/offers-open"
+              className="text-[#767676] text-base font-normal hover:underline flex gap-1"
+            >
+              {t("open")}
+              {filterOpen?.length > 0 && (
+                <p className="text-white bg-red-400 w-4 h-4 text-sm flex justify-center items-center rounded-full">
+                  {filterOpen?.length}
+                </p>
+              )}
+            </Link>
+          </li>
         </span>
         <ul className="py-1 px-5 flex flex-col gap-2">
           <li>
             <Link
-              to="/seller-dashboard/offers-open"
-              className="text-[#767676] text-base font-normal hover:underline"
+              to="/seller-dashboard/offers-won"
+              className="text-[#767676] text-base font-normal hover:underline flex gap-1"
             >
-              {t("open")}
+              {t("won")}
             </Link>
           </li>
-          <li>
-            <Link
-              to="/seller-dashboard/offers-pending"
-              className="text-[#767676] text-base font-normal hover:underline"
-            >
-              {t("pending")}
-            </Link>
-          </li>
+
           <li>
             <Link
               to="/seller-dashboard/offers-complete"
-              className="text-[#767676] text-base font-normal hover:underline"
+              className="text-[#767676] text-base font-normal hover:underline flex gap-1"
             >
               {t("completed")}
             </Link>
@@ -93,19 +85,6 @@ function DashboardNav() {
               {t("archived")}
             </Link>
           </li>
-          <li>
-            <Link
-              to="/seller-dashboard/offers-invitation"
-              className="text-[#767676] text-base font-normal hover:underline flex gap-1"
-            >
-              {t("invitaion")}
-              {filterOffer?.length > 0 && (
-                <p className="text-white bg-red-400 w-4 h-4 text-sm flex justify-center items-center rounded-full">
-                  {filterOffer?.length}
-                </p>
-              )}
-            </Link>
-          </li>
         </ul>
       </li>
       <li className="flex gap-1 items-center">
@@ -115,11 +94,6 @@ function DashboardNav() {
           className="text-[#767676] text-base font-normal hover:underline flex gap-1"
         >
           {t("reviews")}
-          {filterReview?.length > 0 && (
-            <p className="text-white bg-red-400 w-4 h-4 text-sm flex justify-center items-center rounded-full">
-              {filterReview?.length}
-            </p>
-          )}
         </Link>
       </li>
       <li className="flex gap-1 items-center">

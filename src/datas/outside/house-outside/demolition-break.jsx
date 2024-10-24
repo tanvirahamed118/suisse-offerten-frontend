@@ -16,10 +16,12 @@ const demolitionBreak = [
       {
         id: 725123056,
         label: "Wall breakthrough",
+        credit: 20,
       },
       {
         id: 693242039,
         label: "Other",
+        credit: 10,
       },
     ],
   },
@@ -37,7 +39,7 @@ const demolitionBreak = [
   {
     id: 548050480,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     options: [
       {
         id: 487163933,
@@ -52,7 +54,7 @@ const demolitionBreak = [
   {
     id: 487163933,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,
@@ -60,7 +62,7 @@ const demolitionBreak = [
   {
     id: 633781436,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,
@@ -68,7 +70,7 @@ const demolitionBreak = [
   {
     id: 845101161,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     options: [
       {
         id: 487163933,
@@ -83,7 +85,7 @@ const demolitionBreak = [
   {
     id: 487163933,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,
@@ -91,7 +93,7 @@ const demolitionBreak = [
   {
     id: 633781436,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,
@@ -99,7 +101,7 @@ const demolitionBreak = [
   {
     id: 355907232,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     options: [
       {
         id: 487163933,
@@ -114,7 +116,7 @@ const demolitionBreak = [
   {
     id: 487163933,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,
@@ -122,7 +124,7 @@ const demolitionBreak = [
   {
     id: 633781436,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,
@@ -130,7 +132,7 @@ const demolitionBreak = [
   {
     id: 322138074,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     options: [
       {
         id: 487163933,
@@ -145,7 +147,7 @@ const demolitionBreak = [
   {
     id: 487163933,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,
@@ -153,7 +155,7 @@ const demolitionBreak = [
   {
     id: 633781436,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Are there dangerous goods ?",
     headline:
       "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
     options: can_you_access_inside,

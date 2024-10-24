@@ -1,5 +1,5 @@
 import carpenteryImg from "../../../assets/images/request/carpentry.png";
-import carpenterImg from "../../../assets/images/request/car-painting.png";
+import carpenterImg from "../../../assets/images/request/carpenter-furniture-interior-design.png";
 import upholsteryImg from "../../../assets/images/request/upholstery.png";
 import carpentry from "./carpentary";
 import carpenter from "./carpenter";

@@ -1,10 +1,9 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import StarRating from "../../components/Star-rating";
-
 import toast, { Toaster } from "react-hot-toast";
 import {
-  useCreateOfferMutation,
+  useCreateOfferRequestMutation,
   useGetOneOfferQuery,
 } from "../../redux/rtk/features/offer/offerApi";
 import { useTranslation } from "react-i18next";
@@ -13,16 +12,16 @@ import { useGetOneSellerQuery } from "../../redux/rtk/features/auth/seller/authA
 function OfferPopup({ setIsShow, data, id, isShow }) {
   const { t } = useTranslation();
   const [message, setMessage] = useState("");
-  const filterItem = data.participations.filter((item) => item._id === id);
-  const { jobId, sellerId, clientId, _id } = filterItem[0] || {};
+  const filterItem = data?.offers?.filter((item) => item._id === id);
+  const { jobId, sellerId, _id } = filterItem?.[0] || {};
   const { data: result } = useGetOneOfferQuery(_id);
   const { companyName, location, reviewRating } =
     filterItem?.[0].sellerData || {};
   const { data: sellerData } = useGetOneSellerQuery(sellerId);
   const [
-    createOffer,
+    createOfferRequest,
     { data: createData, isLoading, isSuccess, isError, error },
-  ] = useCreateOfferMutation();
+  ] = useCreateOfferRequestMutation();
 
   useEffect(() => {
     if (isShow) {
@@ -47,9 +46,8 @@ function OfferPopup({ setIsShow, data, id, isShow }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const perticipationId = _id;
-    const formData = { sellerId, clientId, jobId, perticipationId, message };
-    createOffer(formData);
+    const formData = { sellerId, jobId, offerMessage: message };
+    createOfferRequest({ formData, id });
     setMessage("");
   };
 
@@ -107,19 +105,19 @@ function OfferPopup({ setIsShow, data, id, isShow }) {
               cols="20"
               rows="5"
               value={message}
-              disabled={result?.perticipationId}
+              disabled={result?.offerRequested}
               onChange={(e) => setMessage(e.target.value)}
               className={
-                result?.perticipationId
+                result?.offerRequested
                   ? "border border-red-300 px-2 py-3 rounded-md text-black text-base font-normal md:px-4"
                   : "border border-gray-300 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-1 md:px-4"
               }
             ></textarea>
             <button
               type="submit"
-              disabled={result?.perticipationId}
+              disabled={result?.offerRequested}
               className={
-                !result?.perticipationId
+                !result?.offerRequested
                   ? "bg-[#ff7100] w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2"
                   : "bg-gray-300 w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
               }

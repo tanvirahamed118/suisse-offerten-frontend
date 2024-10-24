@@ -1,26 +1,34 @@
-import { useGetAllProposalsQuery } from "../redux/rtk/features/proposal/proposalApi";
 import PropTypes from "prop-types";
 import moment from "moment";
+import { useGetAllOfferQuery } from "../redux/rtk/features/offer/offerApi";
 
 function SellerOffer({ id, sellerId }) {
   const page = 1;
   const limit = 20;
-  const { data } = useGetAllProposalsQuery({ id: "", page, limit });
 
-  const filterData = data?.proposals?.filter(
-    (item) => item.sellerId === sellerId && item.jobId === id
-  );
-  const { sellerName, offerPrice, createdAt, priceUnit, offerNote, status } =
-    filterData?.[0] || {};
+  const { data } = useGetAllOfferQuery({ id: id, page, limit, sellerId });
+
+  const { sellerData, createdAt, offerPrice, priceUnit, offerNote } =
+    data?.offers?.[0] || {};
+  const { username, companyLogo } = sellerData || {};
+
   const lastDate = moment(createdAt).fromNow(true);
 
-  return filterData?.length > 0 && status === "confirmed" ? (
+  return data?.offers?.length > 0 && data?.offers?.[0]?.offerPlaced ? (
     <div className="border border-gray-300 p-5 mt-5">
       <div className="flex justify-between items-start">
         <div className="flex gap-5 items-center">
-          <h2 className="bg-[#FF7100] text-white font-bold text-3xl uppercase w-16 h-16 rounded-full flex items-center justify-center">
-            {sellerName.slice(0, 1)}
-          </h2>
+          {companyLogo ? (
+            <img
+              src={companyLogo}
+              alt=""
+              className="w-16 h-16 rounded-full object-cover"
+            />
+          ) : (
+            <h2 className="bg-[#FF7100] text-white font-bold text-3xl uppercase w-16 h-16 rounded-full flex items-center justify-center">
+              {username.slice(0, 1)}
+            </h2>
+          )}
           <span>
             <h2 className="text-black text-lg font-medium">My Offer</h2>
             <p className="text-sm text-gray-300 font-normal">

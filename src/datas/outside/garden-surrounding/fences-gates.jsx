@@ -1,5 +1,6 @@
 import {
   approximately_how_many_meters_fence,
+  approximately_how_many_meters_of_fence_is,
   how_many_need_be_installed,
   is_gate_be_installed_already,
 } from "../../reuse-data";
@@ -37,7 +38,7 @@ const fencesGates = [
     id: 1234897135,
     type: "checkbox",
     label: "Approximately how many meters of fence is it ?",
-    options: approximately_how_many_meters_fence,
+    options: approximately_how_many_meters_of_fence_is,
   },
   {
     id: 1235282252,
@@ -67,7 +68,7 @@ const fencesGates = [
   {
     id: 1235520413,
     type: "checkbox",
-    label: "Approximately how many meters of fence is it ?",
+    label: "Approximately how many gates need to be installed?",
     options: approximately_how_many_meters_fence,
   },
 ];

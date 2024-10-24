@@ -17,7 +17,8 @@ function CheckBox({ item, currentQuestion, handleQuestionChange, questions }) {
             handleQuestionChange(
               currentQuestion?.label,
               item.label,
-              existItems ? item.id : 611913870
+              existItems ? item.id : 611913870,
+              item.credit
             )
           }
           id={item.id}

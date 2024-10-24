@@ -1,32 +1,83 @@
 import moment from "moment";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Pagination from "../Pagination";
 import SellerOfferLoading from "../loading/Seller-offer-loading";
+import {
+  useGetAllOfferBySellerQuery,
+  useOfferArchiveRequestMutation,
+  useOfferReviewRequestMutation,
+} from "../../redux/rtk/features/offer/offerApi";
+import toast, { Toaster } from "react-hot-toast";
 
-import { useGetAllOfferBySellerQuery } from "../../redux/rtk/features/offer/offerApi";
-
-function OfferOpen() {
+function OfferWon() {
   const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const sellerId = seller?.seller?._id;
   const limit = 20;
-
+  const [load, setLoad] = useState(null);
   const { data, isLoading, isSuccess, isError, error } =
     useGetAllOfferBySellerQuery({
       sellerId,
       page,
       limit,
-      status: "submit",
+      status: "accept",
     });
-
+  const [
+    offerReviewRequest,
+    {
+      data: requestData,
+      isLoading: requestLoading,
+      isSuccess: requestSuccess,
+      isError: requestisError,
+      error: requestError,
+    },
+  ] = useOfferReviewRequestMutation();
+  const [
+    offerArchiveRequest,
+    {
+      data: archiveData,
+      isLoading: archiveLoading,
+      isSuccess: archivetSuccess,
+      isError: archiveisError,
+      error: archiveError,
+    },
+  ] = useOfferArchiveRequestMutation();
   const totalItems = data?.totalOffers || 0;
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
+  const handleRequest = (id) => {
+    offerReviewRequest(id);
+    setLoad(id);
+  };
+  const handleArchive = (id) => {
+    offerArchiveRequest(id);
+    setLoad(id);
+  };
+
+  useEffect(() => {
+    if (requestSuccess) {
+      toast.success(requestData?.message);
+    }
+    if (requestisError) {
+      toast.error(requestError.data.message);
+    }
+  }, [requestError, requestisError, requestSuccess, requestData]);
+
+  useEffect(() => {
+    if (archivetSuccess) {
+      toast.success(archiveData?.message);
+    }
+    if (archiveisError) {
+      toast.error(archiveError.data.message);
+    }
+  }, [archiveError, archiveisError, archivetSuccess, archiveData]);
+
+  const filterData = data?.offers?.filter((item) => !item.offerArchived);
 
   // decide what to show for jobs
   let content;
@@ -43,16 +94,17 @@ function OfferOpen() {
   if (isError) {
     content = <p>{error}</p>;
   }
-  if (!isLoading && !isError && data?.offers?.length === 0) {
+  if (!isLoading && !isError && filterData?.length === 0) {
     content = (
       <p className="text-black font-semibold text-xl py-5">
         {t("no_data_found")}
       </p>
     );
   }
-  if (!isLoading && !isError && isSuccess && data?.offers?.length > 0) {
-    content = data?.offers?.map((item) => {
-      const { _id, createdAt, status, jobId, offerPrice } = item || {};
+  if (!isLoading && !isError && isSuccess && filterData?.length > 0) {
+    content = filterData?.map((item) => {
+      const { _id, createdAt, status, jobId, offerPrice, reviewRequest } =
+        item || {};
 
       const { jobTitle, jobNumber, jobLocation, placeBid, rejectBid } =
         item.jobData || {};
@@ -84,7 +136,7 @@ function OfferOpen() {
                 {status}
               </p>
               <h3 className="text-[#19be10] text-sm font-normal">
-                {t("offer_pending")}
+                {t("offer_accepted")}
               </h3>
             </div>
           </td>
@@ -97,30 +149,80 @@ function OfferOpen() {
             </div>
           </td>
           <td className="p-5 align-top border-b border-black text-left">
-            <div className="flex flex-col gap-2 lg:items-end items-center">
+            <div className="flex flex-col gap-1 lg:items-end items-center">
               <Link
                 to={`/search-job/${jobId}`}
                 className="bg-white text-base py-3 w-60 rounded-md text-center text-black font-normal border border-gray-200 hover:border-gray-300"
               >
                 {t("view_advertisement")}
               </Link>
-              <Link
-                to={`/seller-dashboard/perticipation/${_id}`}
-                className="bg-[#ff7100] text-base py-3 w-60 rounded-md text-center text-white font-normal"
+
+              <button
+                onClick={() => handleRequest(_id)}
+                className={
+                  reviewRequest
+                    ? "text-black bg-gray-300 py-3 text-center w-60 rounded-md text-sm font-normal flex justify-center items-center gap-2"
+                    : "text-white bg-[#19be10] border border-[#19be10] py-3 text-center w-60 rounded-md text-sm font-normal hover:bg-[#16A60E] flex justify-center items-center gap-2"
+                }
+                disabled={reviewRequest}
               >
-                {t("update_offer")}
-              </Link>
+                {load === _id && requestLoading ? (
+                  <>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-6 h-6 animate-spin"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                      />
+                    </svg>
+                    <p>{t("loading")}...</p>
+                  </>
+                ) : (
+                  t("request_review")
+                )}
+              </button>
+
               <p className="text-black text-lg font-normal text-right">
                 CHF {offerPrice}
               </p>
-              <p className="text-[#999] text-base font-normal text-right">
-                {t("")}
+              <p className="text-black text-sm font-normal text-right">
+                {t("rating_not_yet")}
               </p>
               <p className="text-[#999] text-xs font-normal text-right">
                 {t("orginally_published")}: {formattedDate}
               </p>
-              <p className="text-[#999] text-xs font-normal text-right">
-                {t("wait_response")}
+              <p
+                onClick={() => handleArchive(_id)}
+                className="text-[#3097d1] hover:text-[#0050b2] text-base font-normal hover:underline cursor-pointer text-right flex gap-2 items-center"
+              >
+                {archiveLoading && load === _id ? (
+                  <>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-6 h-6 animate-spin"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                      />
+                    </svg>
+                    <p>{t("loading")}...</p>
+                  </>
+                ) : (
+                  t("archive")
+                )}
               </p>
             </div>
           </td>
@@ -162,7 +264,7 @@ function OfferOpen() {
 
       <div className="">
         <div className="flex gap-2 flex-wrap pt-5">
-          {data?.offers?.length > 20 && (
+          {filterData?.length > 20 && (
             <Pagination
               handlePageChange={handlePageChange}
               page={page}
@@ -172,8 +274,9 @@ function OfferOpen() {
           )}
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }
 
-export default OfferOpen;
+export default OfferWon;

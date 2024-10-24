@@ -1,19 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  useGetOneProposalQuery,
-  useUpdateProposalMutation,
-} from "../../redux/rtk/features/proposal/proposalApi";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
+import {
+  useGetOneOfferQuery,
+  useUpdateOfferDetailsMutation,
+} from "../../redux/rtk/features/offer/offerApi";
 
 function UpdateProposal() {
   const { id } = useParams();
   const { t } = useTranslation();
   const [offerFiles, setOfferFiles] = useState([]);
-  const [updateProposal, { data, isLoading, isError, isSuccess, error }] =
-    useUpdateProposalMutation();
-  const { data: proposalData } = useGetOneProposalQuery(id);
+  const [updateOfferDetails, { data, isLoading, isError, isSuccess, error }] =
+    useUpdateOfferDetailsMutation();
+  const { data: proposalData } = useGetOneOfferQuery(id);
 
   const fileRef = useRef();
   const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ function UpdateProposal() {
       Object.keys(formData).forEach((key) => {
         offerData.append(key, formData[key]);
       });
-      updateProposal({ offerData, id });
+      updateOfferDetails({ offerData, id });
       setFormData({
         offerNote: "",
         offerPrice: 0,

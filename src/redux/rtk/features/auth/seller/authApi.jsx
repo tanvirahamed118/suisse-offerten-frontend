@@ -40,6 +40,22 @@ export const sllerAuthApi = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ["update"],
     }),
+    updateSellerPictures: builder.mutation({
+      query: ({ id, url }) => ({
+        url: `/auth/seller/update/${id}`,
+        method: "PATCH",
+        body: url,
+      }),
+      invalidatesTags: ["update"],
+    }),
+    updateSellerAddress: builder.mutation({
+      query: ({ id, offerData }) => ({
+        url: `/auth/seller/upload/${id}`,
+        method: "PATCH",
+        body: offerData,
+      }),
+      invalidatesTags: ["update"],
+    }),
     updateSellerPass: builder.mutation({
       query: ({ user, id }) => ({
         url: `/auth/seller/password/${id}`,
@@ -141,6 +157,8 @@ export const {
   useCheckOTPSellerMutation,
   useChangeOTPSellerMutation,
   useUpdateSellerActivityMutation,
+  useUpdateSellerAddressMutation,
+  useUpdateSellerPicturesMutation,
   useUpdateSellerPassMutation,
   useUpdateSellerStatusMutation,
   useUpdateSellerCompanyMutation,

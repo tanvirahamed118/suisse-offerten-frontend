@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import date from "../assets/images/about/date.svg";
 import search from "../assets/images/about/search.svg";
 import JobQuestions from "./JobQuestions";
@@ -10,19 +10,20 @@ import OfferRequest from "./Offer-request";
 import RecentlyJobs from "./Recently-jobs";
 import SingleJobLoading from "./loading/single-job-loading";
 import Perticipation from "./Perticipation";
-import { useGetAllPerticipationQuery } from "../redux/rtk/features/perticipation/perticipation";
 import CommunicationTab from "./Communication-tab";
 import ConfirmOffer from "./Confirm-offer";
 import SellerOffer from "./Seller-offer";
 import jobTime from "../assets/images/about/time.svg";
 import Wishlist from "./Wishlist";
 import { useGetOneSellerQuery } from "../redux/rtk/features/auth/seller/authApi";
+import { useGetOneOfferByJobidQuery } from "../redux/rtk/features/offer/offerApi";
 
 function SingleOfferMoving({ data, isLoading }) {
   const { t } = useTranslation();
-  const id = data?._id;
+  const params = useParams();
+  const id = params.id;
   const location = useLocation();
-  const { data: getData } = useGetAllPerticipationQuery(id);
+
   const navigate = useNavigate();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -34,15 +35,16 @@ function SingleOfferMoving({ data, isLoading }) {
   const sellerId = seller?.seller?._id;
   const saverId = sellerId ? sellerId : clientId;
   const { data: sellerData } = useGetOneSellerQuery(sellerId);
+  const { data: getData } = useGetOneOfferByJobidQuery({ id, sellerId });
   const { credits } = sellerData || {};
   const [active, setActive] = useState(false);
   const handleImageClick = (imageUrl) => {
     setSelectedImage(imageUrl);
     setIsPopupOpen(true);
   };
-  const filterPerticipation = getData?.filter((item) => {
-    return item?.sellerId === seller?.seller?._id && item?.jobId === data?._id;
-  });
+
+  const findSellerOffer = getData?.sellerId === sellerId ? true : false;
+  const { offerPlaced } = getData || {};
 
   const handleClosePopup = () => {
     setIsPopupOpen(false);
@@ -123,12 +125,12 @@ function SingleOfferMoving({ data, isLoading }) {
             ))}
         </div>
         {data && isPopupOpen && selectedImage && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-10">
             <div className="relative w-11/12 md:w-10/12 xl:w-auto">
               <img
                 src={selectedImage}
                 alt="Full Size"
-                className="w-full xl:w-[1000px] h-auto rounded-md"
+                className="w-full xl:w-[1000px] h-[70vh] object-cover rounded-md"
               />
               <button
                 onClick={handleClosePopup}
@@ -171,57 +173,52 @@ function SingleOfferMoving({ data, isLoading }) {
           />
           <div className="flex md:flex-row flex-col w-full justify-start items-center py-5 gap-5">
             {seller && (
-              <button
-                disabled={credits === 0}
-                className={` ${
-                  credits === 0
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : filterPerticipation?.length > 0
-                    ? "cursor-pointer w-full"
-                    : "cursor-pointer"
-                }`}
-              >
-                {credits === 0 ? (
-                  <div
-                    className={
-                      filterPerticipation?.length > 0
-                        ? "bg-[#f5f8fa] px-10 py-3 rounded-md text-black text-base font-normal text-center cursor-not-allowed w-full"
-                        : "bg-[#ff7100] px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900] w-full"
-                    }
-                  >
-                    <p>
-                      {filterPerticipation?.length > 0
-                        ? "You perticipate"
-                        : t("participate_tender")}
-                    </p>
+              <div className="relative group w-6/12">
+                <button disabled={credits === 0} className="w-full">
+                  {findSellerOffer ? (
+                    <div
+                      className={
+                        findSellerOffer
+                          ? "bg-[#f5f8fa]  border border-gray-200 px-10 py-3 rounded-md text-black text-base font-normal text-center cursor-not-allowed w-full"
+                          : "bg-[#ff7100] px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900] w-full"
+                      }
+                    >
+                      <p>{t("already_join")}</p>
+                    </div>
+                  ) : credits > 0 ? (
+                    <Link
+                      to={`/search-job/send-bid/${data._id}`}
+                      className="bg-[#ff7100] px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900] block"
+                    >
+                      {t("participate_tender")}
+                    </Link>
+                  ) : (
+                    <div className="bg-[#f5f8fa] border border-gray-200 px-10 py-3 rounded-md text-black text-base font-normal text-center cursor-not-allowed block">
+                      {t("participate_tender")}
+                    </div>
+                  )}
+                </button>
+                {credits === 0 && (
+                  <div className="absolute w-full bottom-full mb-2 left-1/2 transform -translate-x-1/2 p-2 bg-[#F5F6F7] text-[#111] text-sm rounded-md opacity-0 transition-opacity duration-200 group-hover:opacity-100 flex gap-2">
+                    <i className="fa-solid fa-circle-exclamation text-red-500 text-sm"></i>{" "}
+                    {t("error_perticipation")}
                   </div>
-                ) : (
-                  <Link
-                    to={
-                      filterPerticipation?.length > 0
-                        ? null
-                        : `/search-job/send-bid/${data._id}`
-                    }
-                    className={
-                      filterPerticipation?.length > 0
-                        ? "bg-[#f5f8fa] px-10 py-3 rounded-md text-black text-base font-normal text-center cursor-not-allowed block"
-                        : "bg-[#ff7100] px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900] w-full"
-                    }
-                  >
-                    {filterPerticipation?.length > 0
-                      ? "You perticipate"
-                      : t("participate_tender")}
-                  </Link>
                 )}
-              </button>
+              </div>
             )}
-            {seller && filterPerticipation?.length > 0 ? (
-              <Link
-                to={`/search-job/prepard-bid/${data._id}`}
-                className="bg-[#ff7100] px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900] w-full"
-              >
-                Prepare offer
-              </Link>
+            {seller && findSellerOffer ? (
+              offerPlaced ? (
+                <div className="bg-[#f5f8fa] w-6/12 px-10 py-3 rounded-md text-black border border-gray-200 text-base font-normal text-center cursor-not-allowed">
+                  {t("already_submited")}
+                </div>
+              ) : (
+                <Link
+                  to={`/search-job/prepard-bid/${data._id}`}
+                  className="bg-[#ff7100] w-6/12 px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900]"
+                >
+                  {t("prepare_offer")}
+                </Link>
+              )
             ) : null}
           </div>
           <SellerOffer id={id} sellerId={seller?.seller?._id} />

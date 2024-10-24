@@ -183,6 +183,7 @@ const garageDoors = [
   {
     id: 1102166515,
     type: "checkbox",
+    label: "Are the opening mechanism of garage doors identical?",
     options: questionCheckboxItem(1133547612, 1133679253),
   },
   {
@@ -324,6 +325,7 @@ const garageDoors = [
   {
     id: 1104782313,
     type: "checkbox",
+    label: "Are the opening mechanism of garage doors identical?",
     options: questionCheckboxItem(1149463980, 1149517280),
   },
   {
@@ -464,6 +466,7 @@ const garageDoors = [
   {
     id: 1105833577,
     type: "checkbox",
+    label: "Are the opening mechanism of garage doors identical?",
     options: [
       {
         id: 1166252684,
@@ -762,6 +765,7 @@ const garageDoors = [
   {
     id: 1186015804,
     type: "checkbox",
+    label: "Are the drivers identical?",
     options: questionCheckboxItem(1197111346, 1197996241),
   },
   {
@@ -901,6 +905,7 @@ const garageDoors = [
   {
     id: 1186094710,
     type: "checkbox",
+    label: "Are the drivers identical?",
     options: questionCheckboxItem(1209520462),
   },
   {
@@ -1040,6 +1045,7 @@ const garageDoors = [
   {
     id: 1187577686,
     type: "checkbox",
+    label: "Are the drivers identical?",
     options: questionCheckboxItem(1222387584),
   },
   {
