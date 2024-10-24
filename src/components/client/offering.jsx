@@ -161,6 +161,7 @@ function Offering({ activeTab }) {
         offerPlaced,
         offerAccepted,
       } = item || {};
+      const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
       return (
         <div
           key={_id}
@@ -183,12 +184,12 @@ function Offering({ activeTab }) {
                   to={`/proposal/seller/${_id}/${jobId}`}
                   className="hover:underline text-base font-normal text-[#3097d1]"
                 >
-                  ({totalReview ? totalReview : 0} {t("reviews")},{" "}
-                  {reviewPercent >= 80
-                    ? `${reviewPercent}% ${t("positive")}`
-                    : reviewPercent >= 60
-                    ? `${reviewPercent}% ${t("avarage")}`
-                    : `${reviewPercent}% ${t("poor")}`}
+                  ({totalReview ? totalReview : 0} reviews,{" "}
+                  {floorReviewPercent >= 80
+                    ? `${floorReviewPercent}% ${t("positive")}`
+                    : floorReviewPercent >= 60
+                    ? `${floorReviewPercent}% ${t("avarage")}`
+                    : `${floorReviewPercent}% ${t("poor")}`}
                   )
                 </Link>
                 <span className="flex gap-1 items-center">

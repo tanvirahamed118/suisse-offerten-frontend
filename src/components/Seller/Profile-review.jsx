@@ -22,8 +22,9 @@ function ProfileReview() {
     uidVerify,
     locationVerify,
     reviewPercent,
+    reviewRating,
   } = data || {};
-
+  const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
   const handleBack = () => {
     if (location.state?.from === "seller-dashboard") {
       navigate("/seller-dashboard");
@@ -97,14 +98,14 @@ function ProfileReview() {
                     </span>
                   </div>
                   <a href="#" className="flex gap-2 md:flex-row flex-col">
-                    <StarRating rating={totalReview} />
+                    <StarRating rating={reviewRating} />
                     <h5 className="text-base text-white font-normal">
                       ({totalReview ? totalReview : 0} {t("reviews")},{" "}
-                      {reviewPercent >= 80
-                        ? `${reviewPercent}% ${t("positive")}`
-                        : reviewPercent >= 60
-                        ? `${reviewPercent}% ${t("avarage")}`
-                        : `${reviewPercent}% ${t("poor")}`}
+                      {floorReviewPercent >= 80
+                        ? `${floorReviewPercent}% ${t("positive")}`
+                        : floorReviewPercent >= 60
+                        ? `${floorReviewPercent}% ${t("avarage")}`
+                        : `${floorReviewPercent}% ${t("poor")}`}
                       )
                     </h5>
                   </a>

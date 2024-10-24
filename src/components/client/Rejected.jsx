@@ -107,6 +107,7 @@ function Rejected({ activeTab }) {
         uidVerify,
         locationVerify,
       } = item.sellerData || {};
+      const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
       const { bidMessage, _id: id } = item || {};
       return (
         <div
@@ -131,7 +132,12 @@ function Rejected({ activeTab }) {
                   className="hover:underline text-base font-normal text-[#3097d1]"
                 >
                   ({totalReview ? totalReview : 0} reviews,{" "}
-                  {reviewPercent ? reviewPercent : 0}% positive)
+                  {floorReviewPercent >= 80
+                    ? `${floorReviewPercent}% ${t("positive")}`
+                    : floorReviewPercent >= 60
+                    ? `${floorReviewPercent}% ${t("avarage")}`
+                    : `${floorReviewPercent}% ${t("poor")}`}
+                  )
                 </Link>
                 <span className="flex gap-1 items-center">
                   {emailVerify ? (

@@ -29,6 +29,7 @@ function ProposalProfile() {
     streetNo,
     companyLogo,
   } = data || {};
+  const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
 
   return (
     <section>
@@ -63,11 +64,11 @@ function ProposalProfile() {
                   <StarRating rating={reviewRating} />
                   <p className="text-sm text-black font-normal">
                     ({totalReview ? totalReview : 0} {t("reviews")},{" "}
-                    {reviewPercent >= 80
-                      ? `${reviewPercent}% ${t("positive")}`
-                      : reviewPercent >= 60
-                      ? `${reviewPercent}% ${t("avarage")}`
-                      : `${reviewPercent}% ${t("poor")}`}
+                    {floorReviewPercent >= 80
+                      ? `${floorReviewPercent}% ${t("positive")}`
+                      : floorReviewPercent >= 60
+                      ? `${floorReviewPercent}% ${t("avarage")}`
+                      : `${floorReviewPercent}% ${t("poor")}`}
                     )
                   </p>
                 </a>

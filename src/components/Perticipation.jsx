@@ -45,7 +45,7 @@ function Perticipation({ id }) {
         locationVerify,
         companyName,
       } = item.sellerData || {};
-
+      const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
       return (
         <div key={item._id} className="flex justify-between items-start">
           <div className="flex md:flex-row flex-col gap-5 items-center">
@@ -92,7 +92,8 @@ function Perticipation({ id }) {
                 <span className="flex gap-2 items-center">
                   <i className="fa-solid fa-star text-[#feb40a] text-xl"></i>
                   <p className="text-base font-medium text-black">
-                    {reviewRating ? reviewRating : 0} / 5
+                    {reviewRating ? parseFloat(reviewRating?.toFixed(1)) : 0} /
+                    5
                   </p>
                 </span>
                 <i className="fa-solid fa-circle text-[4px]"></i>
@@ -101,11 +102,11 @@ function Perticipation({ id }) {
                 </p>
                 <i className="fa-solid fa-circle text-[4px]"></i>
                 <p className="text-base font-medium text-black">
-                  {reviewPercent >= 80
-                    ? `${reviewPercent}% ${t("positive")}`
-                    : reviewPercent >= 60
-                    ? `${reviewPercent}% ${t("avarage")}`
-                    : `${reviewPercent}% ${t("poor")}`}
+                  {floorReviewPercent >= 80
+                    ? `${floorReviewPercent}% ${t("positive")}`
+                    : floorReviewPercent >= 60
+                    ? `${floorReviewPercent}% ${t("avarage")}`
+                    : `${floorReviewPercent}% ${t("poor")}`}
                 </p>
               </div>
               <p className="text-black text-base font-normal capitalize">
