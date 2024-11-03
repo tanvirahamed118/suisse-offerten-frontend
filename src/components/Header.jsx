@@ -52,7 +52,7 @@ function Header() {
   const handleLogout = () => {
     localStorage.clear();
     setTimeout(() => {
-      navigate("/seller-login");
+      navigate("/auth-login");
       toast.success("Logout Sucessfull");
     }, 1000);
     setMenu(false);
@@ -65,11 +65,7 @@ function Header() {
           <i className="fa-solid fa-bars"></i>
         </button>
         <Link to="/">
-          <img
-            src={headerlogo ? headerlogo : Logo}
-            alt=""
-            className="w-28 rounded-lg"
-          />
+          <img src={Logo} alt="" className="w-32 rounded-lg" />
         </Link>
         <select
           name=""
@@ -93,7 +89,7 @@ function Header() {
           <div className="container gap-4 items-center flex w-full justify-between h-full">
             <Link to="/">
               <img
-                src={headerlogo ? headerlogo : Logo}
+                src={Logo}
                 alt=""
                 className={i18n.languages[0] === "fr" ? "w-40" : "w-40 xl:w-60"}
               />
@@ -221,7 +217,7 @@ function Header() {
                     </li>
                     <li>
                       <Link
-                        to="/seller-login"
+                        to="/auth-login"
                         className={
                           i18n.languages[0] === "fr"
                             ? "text-black text-xs 2xl:text-sm font-semibold hover:underline"
@@ -257,7 +253,7 @@ function Header() {
         seller={seller}
         handleLogout={handleLogout}
         client={client}
-        headerlogo={headerlogo}
+        headerlogo={Logo}
       />
       <ProfileNav menu={search} setMenu={setSearch} menuref={searchref} />
       <Toaster />

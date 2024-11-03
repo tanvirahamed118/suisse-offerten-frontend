@@ -30,6 +30,7 @@ function Wishlist({ jobId, saverId }) {
     }
     refetch();
   }, [getData, refetch]);
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -39,6 +40,7 @@ function Wishlist({ jobId, saverId }) {
       refetch();
     }
   }, [data, isSuccess, isError, error, refetch]);
+
   useEffect(() => {
     if (deleteIsError) {
       toast.error(deleteError?.data?.message);
@@ -48,9 +50,11 @@ function Wishlist({ jobId, saverId }) {
       refetch();
     }
   }, [deleteData, deleteSuccess, deleteIsError, deleteError, refetch]);
+
   const handleSubmit = () => {
     createWishlist({ jobId, saverId });
   };
+
   const handleRemove = () => {
     const id = getData?._id;
     deleteWishlist(id);

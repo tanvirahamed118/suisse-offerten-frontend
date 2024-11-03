@@ -23,6 +23,7 @@ function DoubleBox({ item, setDoubleValue, doubleValue }) {
           }
           onChange={handleChange}
           value={width}
+          placeholder={item.placeOne}
         />
       </span>
       <span className="w-full">
@@ -38,6 +39,7 @@ function DoubleBox({ item, setDoubleValue, doubleValue }) {
           }
           onChange={handleChange}
           value={height}
+          placeholder={item.placeTow}
         />
       </span>
     </div>

@@ -21,6 +21,12 @@ function SellerCredits() {
   return (
     <div className="">
       <div className="py-10">
+        {memberShip && memberShipStatus === "not-complete" && (
+          <div className="flex gap-2 items-center w-full bg-[#FFFADF] p-5 rounded-md my-5">
+            <i className="fa-solid fa-circle-exclamation text-2xl text-red-500"></i>
+            <p className="text-sm text-[#111]">{t("membership_credit_fail")}</p>
+          </div>
+        )}
         <h2 className="text-black text-2xl font-bold border-b border-gray-500 pb-2">
           {t("member_cerdits_title")}
         </h2>
@@ -52,7 +58,7 @@ function SellerCredits() {
                     </div>
                   </td>
                   <td className="p-5 align-top border-b border-black text-left w-64">
-                    {memberShipStatus && memberShipStatus === "complete" ? (
+                    {memberShip ? (
                       <button
                         onClick={() => setIsShow(true)}
                         className="flex gap-1 items-center text-white text-base font-normal bg-[#111111] py-2 w-full justify-center rounded-md"
@@ -138,62 +144,64 @@ function SellerCredits() {
             {memberShip && (
               <div>
                 <table className="min-w-full border-collapse">
-                  <tr className="bg-gray-200">
-                    <th className="border border-gray-300 text-left px-4 py-2">
-                      {t("payment_status")}
-                    </th>
-                    <td className="border border-gray-300 text-left px-4 py-2 text-red-500 font-bold text-xl capitalize">
-                      {memberShipStatus}
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="border border-gray-300 text-left px-4 py-2">
-                      {t("membership_title")}
-                    </th>
-                    <td className="border border-gray-300 text-left px-4 py-2">
-                      {title}
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-200">
-                    <th className="border border-gray-300 text-left px-4 py-2">
-                      {t("membership_plan")}
-                    </th>
-                    <td className="border border-gray-300 text-left px-4 py-2">
-                      {plan}
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="border border-gray-300 text-left px-4 py-2">
-                      {t("membership_credits")}
-                    </th>
-                    <td className="border border-gray-300 text-left px-4 py-2">
-                      {credit}
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-200">
-                    <th className="border border-gray-300 text-left px-4 py-2">
-                      {t("membership_price")}
-                    </th>
-                    <td className="border border-gray-300 text-left px-4 py-2">
-                      ₣ {currentPrice}
-                    </td>
-                  </tr>
-                  <tr>
-                    <th className="border border-gray-300 text-left px-4 py-2">
-                      {t("membership_previous")}
-                    </th>
-                    <td className="border border-gray-300 text-left px-4 py-2">
-                      ₣ {existPrice}
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-200">
-                    <th className="border border-gray-300 text-left px-4 py-2">
-                      {t("membership_discount")}
-                    </th>
-                    <td className="border border-gray-300 text-left px-4 py-2">
-                      ₣ {savePrice}
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-300 text-left px-4 py-2">
+                        {t("payment_status")}
+                      </th>
+                      <td className="border border-gray-300 text-left px-4 py-2 text-red-500 font-bold text-xl capitalize">
+                        {memberShipStatus}
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="border border-gray-300 text-left px-4 py-2">
+                        {t("membership_title")}
+                      </th>
+                      <td className="border border-gray-300 text-left px-4 py-2">
+                        {title}
+                      </td>
+                    </tr>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-300 text-left px-4 py-2">
+                        {t("membership_plan")}
+                      </th>
+                      <td className="border border-gray-300 text-left px-4 py-2">
+                        {plan}
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="border border-gray-300 text-left px-4 py-2">
+                        {t("membership_credits")}
+                      </th>
+                      <td className="border border-gray-300 text-left px-4 py-2">
+                        {credit}
+                      </td>
+                    </tr>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-300 text-left px-4 py-2">
+                        {t("membership_price")}
+                      </th>
+                      <td className="border border-gray-300 text-left px-4 py-2">
+                        ₣ {currentPrice}
+                      </td>
+                    </tr>
+                    <tr>
+                      <th className="border border-gray-300 text-left px-4 py-2">
+                        {t("membership_previous")}
+                      </th>
+                      <td className="border border-gray-300 text-left px-4 py-2">
+                        ₣ {existPrice}
+                      </td>
+                    </tr>
+                    <tr className="bg-gray-200">
+                      <th className="border border-gray-300 text-left px-4 py-2">
+                        {t("membership_discount")}
+                      </th>
+                      <td className="border border-gray-300 text-left px-4 py-2">
+                        ₣ {savePrice}
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             )}

@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import OrderTitle from "../components/Order-title";
 import StepButtons from "../components/Step-buttons";
-import RightBar from "../components/Right-bar";
 import { useTranslation } from "react-i18next";
-import questions from "../datas/request-data";
+import questions from "../datas/germen/request-data";
 import OtherTextareaStep from "../components/Other-textarea-step";
 import PostalCode from "./Postal-code";
 import postalCode from "../datas/locations.json";
@@ -98,7 +97,9 @@ function EnterRequest() {
   const handleQuestionChange = useQuestionChange(
     setFormData,
     currentQuestion,
-    handleNext
+    handleNext,
+    formData,
+    questions
   );
 
   const handleChange = (e) => {
@@ -115,7 +116,7 @@ function EnterRequest() {
       const newHistory = [...history];
       newHistory.pop();
       const prevId = newHistory[newHistory.length - 1];
-      if (!currentQuestion.type === "emailbox") {
+      if (!currentQuestion?.type === "emailbox") {
         setSteps((prev) => prev - 1);
       }
 
@@ -127,6 +128,7 @@ function EnterRequest() {
       if (previousQuestion) {
         setFormData((prevFormData) => {
           const updatedJobQuestions = { ...prevFormData.jobQuestions };
+
           if (
             Object.prototype.hasOwnProperty.call(updatedJobQuestions, setLabel)
           ) {
@@ -134,15 +136,21 @@ function EnterRequest() {
           }
           let updatedJobSubCategories = [...prevFormData.jobSubCategories];
           if (previousQuestion.type === "radio") {
-            updatedJobSubCategories.pop(); // Remove the last item added
+            updatedJobSubCategories.pop();
+            // Remove the last item added
           }
           const updatedCredits =
             prevFormData.credits > 0 ? 0 : prevFormData.credits;
+          const updatedJobCategoryCode =
+            previousQuestion.label === "main_services_categories"
+              ? ""
+              : prevFormData.jobCategoryCode;
           return {
             ...prevFormData,
             jobQuestions: updatedJobQuestions,
             jobSubCategories: updatedJobSubCategories,
             credits: updatedCredits,
+            jobCategoryCode: updatedJobCategoryCode,
           };
         });
       }
@@ -169,7 +177,7 @@ function EnterRequest() {
       }
     }
     if (
-      currentQuestion.type === "questionBox" &&
+      currentQuestion?.type === "questionBox" &&
       formData.jobCompletionDate.length > 0
     ) {
       setFormData((prevFormData) => ({
@@ -178,7 +186,7 @@ function EnterRequest() {
       }));
     }
     if (
-      currentQuestion.type === "otherBox" &&
+      currentQuestion?.type === "otherBox" &&
       formData.jobDescription.length > 0
     ) {
       setFormData((prevFormData) => ({
@@ -234,18 +242,19 @@ function EnterRequest() {
     setHasOptions
   );
 
-  const { handlePostalCodeChange } = usePostalCode(
+  const { handleLocationChange, handlePostalCodeChange } = usePostalCode(
     postalCode,
     setFormData,
-    setIsPostalCodeValid
+    setIsPostalCodeValid,
+    formData
   );
-
+  console.log("grmform:", formData);
   useEffect(() => {
-    if (currentQuestion.type === "emailbox") {
+    if (currentQuestion?.type === "emailbox") {
       setFinalStep(true);
     }
     if (
-      currentQuestion.type === "imagebox" &&
+      currentQuestion?.type === "imagebox" &&
       clientAuth?.clientToken &&
       formData.jobFiles.length > 0
     ) {
@@ -277,9 +286,10 @@ function EnterRequest() {
       }, 2000);
     }
   }, [isError, isSuccess, data, error, navigate, clientAuth, hasShownSuccess]);
+
   return (
     <section>
-      <div className="container py-10">
+      <div className="w-11/12 xl:w-9/12 2xl:w-6/12 m-auto py-10">
         <div className="flex flex-col gap-2">
           <h2 className="text-black text-md md:text-xl font-bold">
             {t("enter_your_request")}
@@ -292,7 +302,7 @@ function EnterRequest() {
           <div className="w-full">
             <div className="w-full h-4 bg-[#d4dbe0] rounded-md overflow-hidden mb-5">
               <div
-                className="bg-[#3097d1] h-full transition-all rounded-md duration-300 ease-in-out"
+                className="bg-[#FFAA00] h-full transition-all rounded-md duration-300 ease-in-out"
                 style={{ width: `${percentage.toFixed(0)}%` }}
               ></div>
             </div>
@@ -335,83 +345,87 @@ function EnterRequest() {
                     {currentQuestion?.headline && (
                       <p className="py-2">{currentQuestion?.headline}</p>
                     )}
-                    {}
-                    {currentQuestion?.options?.map((item) => {
+
+                    {currentQuestion?.options?.map((item, index) => {
+                      const itemId = item.id ?? `fallback-key-${index}`;
+
                       return (
-                        <span key={item.id}>
-                          {currentQuestion.type === "orderTitle" ? (
+                        <span key={itemId}>
+                          {currentQuestion?.type === "orderTitle" ? (
                             <OrderTitle
                               handleChange={handleChange}
                               jobTitle={formData?.jobTitle}
+                              jobDes={currentQuestion.des}
                             />
-                          ) : currentQuestion.type === "radio" ? (
+                          ) : currentQuestion?.type === "radio" ? (
                             <RadioBox
                               item={item}
                               currentQuestion={currentQuestion}
                               handleQuestionChange={handleQuestionChange}
                             />
-                          ) : currentQuestion.type === "checkbox" ? (
+                          ) : currentQuestion?.type === "checkbox" ? (
                             <CheckBox
                               item={item}
                               currentQuestion={currentQuestion}
                               handleQuestionChange={handleQuestionChange}
                               questions={questions}
                             />
-                          ) : currentQuestion.type === "multibox" ? (
+                          ) : currentQuestion?.type === "multibox" ? (
                             <MultiBox
                               item={item}
                               currentQuestion={currentQuestion}
                               handleCheckboxChange={handleCheckboxChange}
                               selectedOptions={selectedOptions}
                             />
-                          ) : currentQuestion.type === "otherBox" ? (
+                          ) : currentQuestion?.type === "otherBox" ? (
                             <OtherTextareaStep
                               handleChange={handleChange}
                               jobDescription={formData?.jobDescription}
                             />
-                          ) : currentQuestion.type === "postBox" ? (
+                          ) : currentQuestion?.type === "postBox" ? (
                             <PostalCode
-                              handleChange={handlePostalCodeChange}
+                              handlePostalCodeChange={handlePostalCodeChange}
+                              handleLocationChange={handleLocationChange}
                               jobLocation={formData?.jobLocation}
                               jobPostcode={formData?.jobPostcode}
                               postalCodeValid={postalCodeValid}
                             />
-                          ) : currentQuestion.type === "inputBox" ? (
+                          ) : currentQuestion?.type === "inputBox" ? (
                             <InputBox
                               item={item}
                               setInputValue={setInputValue}
                             />
-                          ) : currentQuestion.type === "doubleInput" ? (
+                          ) : currentQuestion?.type === "doubleInput" ? (
                             <DoubleBox
                               item={item}
                               setDoubleValue={setDoubleValue}
                               doubleValue={doubleValue}
                             />
-                          ) : currentQuestion.type === "inputNumber" ? (
+                          ) : currentQuestion?.type === "inputNumber" ? (
                             <NumberBox
                               item={item}
                               setNumberValue={setNumberValue}
                             />
-                          ) : currentQuestion.type === "datebox" ? (
+                          ) : currentQuestion?.type === "datebox" ? (
                             <DateBox
                               currentQuestion={currentQuestion}
                               handleQuestionChange={handleQuestionChange}
                               setDateValue={setDateValue}
                             />
-                          ) : currentQuestion.type === "modelbox" ? (
+                          ) : currentQuestion?.type === "modelbox" ? (
                             <ModelBox
                               setModelValue={setModelValue}
                               modelValue={modelValue}
                             />
-                          ) : currentQuestion.type === "samplebox" ? (
+                          ) : currentQuestion?.type === "samplebox" ? (
                             <SampleBox
                               setSampleValue={setSampleValue}
                               currentQuestion={currentQuestion}
                               sampleValue={sampleValue}
                             />
-                          ) : currentQuestion.type === "imagebox" ? (
+                          ) : currentQuestion?.type === "imagebox" ? (
                             <ImageBox setFormData={setFormData} />
-                          ) : currentQuestion.type === "emailbox" ? (
+                          ) : currentQuestion?.type === "emailbox" ? (
                             <EmailBox
                               item={item}
                               handleChange={handleChange}
@@ -425,13 +439,13 @@ function EnterRequest() {
                               setIsHas={setIsHas}
                               isHas={isHas}
                             />
-                          ) : currentQuestion.type === "orderbox" ? (
+                          ) : currentQuestion?.type === "orderbox" ? (
                             <OrderBox
                               currentQuestion={currentQuestion}
                               handleQuestionChange={handleQuestionChange}
                               item={item}
                             />
-                          ) : currentQuestion.type === "questionBox" ? (
+                          ) : currentQuestion?.type === "questionBox" ? (
                             <QuestionBox
                               currentQuestion={currentQuestion}
                               item={item}
@@ -443,7 +457,7 @@ function EnterRequest() {
                         </span>
                       );
                     })}
-                    {currentQuestion.type === "selectbox" ? (
+                    {currentQuestion?.type === "selectbox" ? (
                       <select
                         onChange={(e) =>
                           handleQuestionChange(
@@ -457,13 +471,17 @@ function EnterRequest() {
                         }
                       >
                         <option disabled selected>
-                          Select a option
+                          {t("select_option")}
                         </option>
-                        {currentQuestion.options.map((optionItem) => (
-                          <option key={optionItem.id} value={optionItem.label}>
-                            {optionItem.label}
-                          </option>
-                        ))}
+                        {currentQuestion.options.map((optionItem, index) => {
+                          const itemId =
+                            optionItem.id ?? `fallback-key-${index}`;
+                          return (
+                            <option key={itemId} value={optionItem.label}>
+                              {optionItem.label}
+                            </option>
+                          );
+                        })}
                       </select>
                     ) : null}
                   </div>
@@ -483,7 +501,6 @@ function EnterRequest() {
               </form>
             </div>
           </div>
-          <RightBar />
         </div>
       </div>
       <Toaster />

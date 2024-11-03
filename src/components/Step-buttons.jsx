@@ -75,10 +75,10 @@ function StepButtons({
   };
 
   return (
-    <div className="flex gap-3 items-center mt-5">
+    <div className="flex gap-5 items-center mt-5 justify-center">
       {steps > 0 && (
         <button
-          className="bg-gray-400 text-white font-normal rounded-md hover:bg-gray-500 text-md py-3 px-5"
+          className="bg-gray-400 text-white font-bold rounded-md hover:bg-gray-500 text-md py-3 px-5"
           onClick={handlePrev}
         >
           {t("back")}
@@ -88,8 +88,8 @@ function StepButtons({
         <button
           className={
             finalStep
-              ? "bg-[#ff7100] text-white font-normal rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
-              : "bg-[#cccccc] text-[#666666] font-normal rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-not-allowed"
+              ? "bg-[#ff7100] text-white font-bold rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
+              : "bg-[#cccccc] text-[#666666] font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-not-allowed"
           }
           onClick={handleSubmit}
           type="button"
@@ -125,8 +125,8 @@ function StepButtons({
             firstname &&
             lastname &&
             phone.length > 11
-              ? "bg-[#ff7100] text-white font-normal rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
-              : "bg-[#cccccc] text-[#666666] font-normal rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-not-allowed"
+              ? "bg-[#FFAA00] text-[#111] font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
+              : "bg-[#cccccc] text-[#111] font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-not-allowed"
           }
           onClick={handleSubmit}
           type="button"
@@ -164,7 +164,7 @@ function StepButtons({
         </button>
       ) : (
         <button
-          className="bg-[#ff7100] text-white font-normal rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center"
+          className="bg-[#FFAA00] text-[#111] font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center"
           onClick={handleNext}
           type="button"
         >

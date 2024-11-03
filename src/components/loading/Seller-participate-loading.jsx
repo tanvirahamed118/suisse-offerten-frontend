@@ -9,11 +9,11 @@ function SellerPerticipateLoading() {
         </div>
       </td>
       <td className="flex justify-between w-full">
-        <td className="p-5 w-8/12 align-top flex flex-col gap-2">
+        <div className="p-5 w-8/12 align-top flex flex-col gap-2">
           <div className="animate-pulse bg-slate-200 h-5 rounded-md w-10/12"></div>
           <div className="animate-pulse bg-slate-200 h-5 rounded-md w-8/12"></div>
-        </td>
-        <td className="p-5 w-4/12 align-top flex flex-col gap-2">
+        </div>
+        <div className="p-5 w-4/12 align-top flex flex-col gap-2">
           <div className="animate-pulse bg-slate-200 h-8 rounded-md w-full"></div>
           <div className="animate-pulse bg-slate-200 h-8 rounded-md w-full"></div>
           <div className="w-full flex justify-end">
@@ -22,7 +22,7 @@ function SellerPerticipateLoading() {
           <div className="w-full flex justify-end">
             <div className="animate-pulse bg-slate-200 h-5 rounded-md w-4/12"></div>
           </div>
-        </td>
+        </div>
       </td>
     </tr>
   );

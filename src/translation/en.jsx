@@ -3,7 +3,7 @@ const en = {
   enter_new_job: "Enter new job",
   search_job: "Search job",
   cost_schedule: "Cost schedule",
-  register_as_client: "Register as client",
+  register_as_client: "Register as Client",
   register_as_company: "Register as company",
   login: "Login",
   logout: "Logout",
@@ -27,6 +27,10 @@ const en = {
   // footer menu
 
   // seller dasgboard
+  form_post_code: "Postal code",
+  image_mainnote:
+    "Select your files here to click browse file (Only Approve JPG, JPEG, PNG Format)",
+  image_sortNote: "Please upload only approved files and approve your job.",
   browse_file: "Browse File",
   optional_offer: "Optionally add a comment to your offer here.",
   note_on_offer: "Note on the offer",
@@ -113,6 +117,14 @@ const en = {
   profile: "Profile",
   proposal: "Proposal",
   membership_purchase: "Membership Purchase Successful",
+  membership_purchase_notify:
+    "Your payment status is complete once we receive it. Please await notification that the payment was successful. Once payment was successful, we will update your membership.",
+  membership_purchase_notify_fail:
+    "You have failed to purchase membership. Please try again and make another payment.",
+  membership_credit_fail:
+    "Your payment is not complete. Once it is complete, you have received credits.",
+  membership_credit_fail_notify:
+    "You have failed to purchase credits. Please try again and make another purchase credits.",
   you_have_chose: "You have chosen",
   plan: "Plan",
   payment_failed: "Payment Failed",
@@ -188,6 +200,14 @@ const en = {
   recive_request: "Receive Request?",
   place_bid: "Place Bid",
   offer_pending: "Offer Pending",
+  erro_title: "ERROR 404",
+  error_heading: "Page Not Found !",
+  error_des: "Sorry! The page you are looking for could not be found.",
+  limited_participation_offer: "Limited participation offer:",
+  offer_note_one: "1-5 Contractor (mx-5) can participate in this job.",
+  offer_note_tow:
+    "The lead price will be charged and you will revive the contact details.",
+  offer_note_three: "When the client asks you for an offer",
   // seller dasgboard
 
   // dashboard menu
@@ -390,62 +410,6 @@ const en = {
   category_text_ten: "Send a request",
   // main category
 
-  //  categories
-  inside_the_house: "Inside the house",
-  carpenter_furniture: "Carpenter, furniture, interior design",
-  fireplace_chimney: "Fireplace, fireplace, chimney",
-  kitchen_constructor: "Kitchen construction",
-  upholstery_saddlery: "Upholstery, saddlery",
-  house_technic: "House technic",
-  electrician_electrical_installation: "Electrician, electrical installation",
-  heating_ventilation: "Heating, ventilation, air conditioning, cooling",
-  plumbing_work_processing: "Plumbing work, sheet metal processing",
-  plumbing_work: "Plumbing work",
-  metal_construction_wood_construction:
-    "Metal construction & wood construction",
-  metal_construction_blacksmith_shop:
-    "Metal construction, metalworking, blacksmith shop",
-  carpentry_timber_construction: "Carpentry, timber construction",
-  garden_house_carport_sauna: "Garden house, carport, sauna",
-  outside_the_house: "Outside the house",
-  excavation_pit_earthworks_foundation:
-    "Excavation pit, earthworks, foundation",
-  fences_gates_privacy_screens: "Fences, gates, privacy screens",
-  garage_doors: "Garage doors",
-  isolation_sealing_insulation: "Isolation, sealing, insulation",
-  paving_work_paths_streets: "Paving work, paths, streets",
-  bricklayers_plastering_concrete_joints:
-    "Bricklayers, plastering, concrete, joints",
-  roofers_roofing: "Roofers, roofing",
-  scaffolding_scaffolding: "Scaffolding, scaffolding",
-  windows_Doors: "Windows & Doors",
-  locking_systems_alarm_systems: "Locking systems, alarm systems",
-  blinds_roller_shutters_awnings: "Blinds, roller shutters, awnings",
-  glass_construction_glazing: "Glass construction, glazing",
-  windows_doors: "Windows, doors",
-  conversion_total_renovation: "Conversion & total renovation",
-  demolition_breakthrough_dismantling: "Demolition, breakthrough, dismantling",
-  conversion_total_renovation_extension:
-    "Conversion, total renovation, extension",
-  cleaning_transport: "Cleaning & transport",
-  cleaning_staff_other_cleaning: "Cleaning staff, other cleaning",
-  disposal_clearing_out: "Disposal, clearing out",
-  final_cleaning_moving_cleaning: "Final cleaning, moving cleaning",
-  transport_small_transport: "Transport, small transport",
-  motor_vehicle: "Motor vehicle",
-  car_repair_car_service: "Car repair, car service",
-  foils_labels: "Foils, labels",
-  car_painting_smar_repair: "Car painting, smart repair",
-  consulting_Architecture: "Consulting & Architecture",
-  architecture_planning_statics: "Architecture, planning, statics",
-  telephone_Internet: "Telephone & Internet",
-  telephone_Internet_Multimedia: "Telephone, Internet, Multimedia",
-  renewable_energy: "Renewable energy",
-  solar_photovoltaics: "Solar, photovoltaics",
-  other_work: "Other work",
-  pest_control: "Pest control",
-  //  categories
-
   // home page
   are_looking_craftsman: "Are you looking for a craftsman?",
   receive_free_offers:
@@ -536,19 +500,23 @@ const en = {
   phone_2: "Phone 2:(optional)",
   email_address: "E-mail address:",
   prefered_username: "Prefered username:",
-  username_condition:
-    "Between 3 and 32 characters long. Only letters, numbers and are allowed.",
+  username_condition: "Only letters and number allowed. min 3 Characters",
+  number_condition: "First select country code",
+  seven_day_triel: "7 Days Free Trial",
   password: "Password",
   password_conditon: "Use 6 or more characters",
-  aware: "How did you become aware of Suisse-Offerten?",
+  aware: "How did you become aware of suisse-offerten.ch?",
   newsletter_con:
     "Suisse-Offerten newsletter: Would you like to be informed about savings tips, promotions and new functions?",
-  tearm_condition_1: "I accept the general",
+  tearm_condition_1:
+    "I accept the general terms and condition and data protection policy.",
+  free_100: "100% Free",
+  no_Obligation: "No Obligation",
   tearm_condition_2: "terms and condition",
   tearm_condition_3: "and",
   tearm_condition_4: "data pretection",
   tearm_condition_5: "policy .",
-  register_now_for_free: "Register now for free",
+  register_now: "Register now",
   must_add_UID: "Must Add UID Number",
   telephone_number: "Telephone number",
   further_information_title: "Further information: (optional)",
@@ -564,9 +532,9 @@ const en = {
   //  register page
 
   // login page
-  login_suisse_offerten: "Seller login to Suisse-Offerten",
-  login_suisse_offerten_client: "Client login to Suisse-Offerten",
-  email_or_username: "Email or Username",
+  login_suisse_offerten: "Login for Handworker",
+  login_suisse_offerten_client: "Login for Clients",
+  email_or_username: "Email / Username",
   login_with_email: "Login with email",
   we_will_immediate_login: "We will send you a link for immediate login.",
   alternatively: "Alternatively, you canlog in with Password.",
@@ -576,12 +544,12 @@ const en = {
   if_you_continue_Conditions_and_Privacy_Polic:
     "If you continue, you agree to Suisse-Offerten: ",
   regiter_now_without_login:
-    "No seller account? Register now without obligation.",
+    "No company account? Register now without obligation.",
   regiter_now_without_login_client:
     "No client account? Register now without obligation.",
   login_client: "Want to login your client account?",
   login_seller: "Want to login your seller account?",
-  reset_password: "Reset your password",
+  reset_password: "Password forgotten? Reset your password",
   // login page
 
   // reset page
@@ -722,6 +690,60 @@ const en = {
     "Suisse-Offerten receives new job inquiries every day. Above you will find an inquiry about disposing of trees. Various craftsmen from Reinach and the surrounding area responded to this request. Make a non-binding inquiry now and receive free offers from companies in your area!",
   similar_orders: "Similar orders",
   // single offer
+
+  // sub categories
+  outside: "Outside",
+  inside: "Inside",
+  planning_consulting: "Planning & Consulting",
+  car_vehicles: "Car / Vehicles",
+  transport_disposal: "Transport & Disposal",
+  gardener_horticulture: "Gardener, Horticulture",
+  paving_paths_roads: "Paving, paths, roads",
+  garage_doors: "Garage doors",
+  fences_gates_privacy_screens: "Fences, gates, privacy screens",
+  garden_house_carport_sauna: "Garden house, carport, sauna",
+  excavation_earthworks_foundation: "Excavation, earthworks, foundation",
+  roofers_roofing: "Roofers, roofing",
+  facade_scaffolding: "Facade & Scaffolding",
+  metal_construction_metalworking_blacksmithing:
+    "Metal construction, metalworking, blacksmithing",
+  blinds_roller_shutters_awnings: "Blinds, roller shutters, awnings",
+  tinsmithing_sheet_metal_working: "Tinsmithing, sheet metal working",
+  solar_photovoltaics: "Solar, photovoltaics",
+  glass_construction_glazing: "Glass construction, glazing",
+  demolition_breakthrough_dismantling: "Demolition, breakthrough, dismantling",
+  conversion_total_renovation_extension:
+    "Conversion, total renovation, extension",
+  painting_plastering: "Painting, plastering",
+  parquet_laminate_carpet: "Parquet, laminate, carpet",
+  windows_Doors: "Windows & Doors",
+  slabs_tiles_slabs: "Slabs, tiles, slabs",
+  bricklayer_plaster_concrete_joints: "Bricklayer, plaster, concrete, joints",
+  carpentry_timber_construction: "Carpentry, timber construction",
+  insulation_sealing_insulation: "Insulation, sealing, insulation",
+  plumbing_work: "Plumbing work",
+  bathroom_renovations: "Bathroom renovations",
+  kitchen_constructor: "Kitchen construction",
+  carpenter_furniture: "Carpenter, furniture, interior design",
+  foils_labels: "Foils, labels",
+  upholstery_saddlery: "Upholstery, saddlery",
+  electrician_electrical_installation: "Electrician, electrical installation",
+  heating_conditioning_refrigeration:
+    "Heating, ventilation, air conditioning, refrigeration",
+  locking_systems_alarm_systems: "Locking systems, alarm systems",
+  fireplace_chimney_fireplace: "Fireplace, Chimney, Fireplace",
+  pest_control: "Pest control",
+  architecture_planning_statics: "Architecture, planning, statics",
+  car_repair_car_service: "Car repair, car service",
+  motorcycle_vespa_scooter: "Motorcycle, Vespa, Scooter",
+  car_painting_smar_repair: "Car painting, smart repair",
+  transports_small_transports: "Transports, small transports",
+  moving_moving_house: "Moving, moving house",
+  final_cleaning_moving_cleaning: "Final cleaning, moving cleaning",
+  cleaner_other_cleaning: "Cleaner, other cleaning",
+  disposal_clearing_out: "Disposal, clearing out",
+  telephone_Internet_Multimedia: "Telephone, Internet, Multimedia",
+  // sub categories
 };
 
 export default en;

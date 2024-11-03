@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 
 function CheckBox({ item, currentQuestion, handleQuestionChange, questions }) {
   const existItems = questions.find((e) => e.id === item.id);
+
   return (
     <div className="h-full flex flex-col items-center w-full hover:transform hover:translate-y-[-5px] transition-all duration-[350ms] ease-[cubic-bezier(0,0,0.2,1)] delay-[2ms]">
       <p className="text-base text-black font-normal">{currentQuestion?.des}</p>
@@ -17,7 +18,7 @@ function CheckBox({ item, currentQuestion, handleQuestionChange, questions }) {
             handleQuestionChange(
               currentQuestion?.label,
               item.label,
-              existItems ? item.id : 611913870,
+              existItems && item.id ? item.id : 611913870,
               item.credit
             )
           }

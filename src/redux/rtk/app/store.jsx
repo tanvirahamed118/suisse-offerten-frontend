@@ -8,6 +8,7 @@ import perticipationSlice from "../features/filter/perticipationSlice";
 import offerSlice from "../features/filter/offerSlice";
 import reviewSlice from "../features/filter/reviewSlice";
 import leadFilterSlice from "../features/filter/leadFilterSlice";
+import formSlice from "../features/formReucer/formSlice";
 
 const store = configureStore({
   reducer: {
@@ -20,6 +21,7 @@ const store = configureStore({
     offerFilter: offerSlice,
     reviewFilter: reviewSlice,
     leadFilter: leadFilterSlice,
+    choseId: formSlice,
   },
   devTools: import.meta.env.NODE_ENV !== "production",
   middleware: (getDefaultMiddlware) =>

@@ -63,13 +63,23 @@ function Observer() {
     );
   }
   if (isError) {
-    content = <p>{error}</p>;
+    content = (
+      <tr>
+        <td colSpan="4" className="text-center">
+          <p>{error}</p>
+        </td>
+      </tr>
+    );
   }
   if (!isLoading && !isError && data?.wishlists?.length === 0) {
     content = (
-      <p className="text-black font-semibold text-xl py-5">
-        {t("no_data_found")}
-      </p>
+      <tr>
+        <td colSpan="4" className="text-center">
+          <p className="text-black font-semibold text-xl py-5">
+            {t("no_data_found")}
+          </p>
+        </td>
+      </tr>
     );
   }
   if (!isLoading && !isError && isSuccess && data?.wishlists?.length > 0) {

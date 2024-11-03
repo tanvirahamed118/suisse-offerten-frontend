@@ -41,26 +41,28 @@ function SellerLogin() {
     }
   }, [isError, isSuccess, data, error, navigate]);
   return (
-    <section>
-      <div className="container">
-        <div className="border p-6 border-gray-200 w-11/12 md:w-[400px] h-auto m-auto my-10 flex flex-col gap-5">
-          <h2 className="text-black text-xl font-bold">
+    <section className="w-10/12 lg:w-[400px] xl:w-[500px]">
+      <div className="w-full">
+        <div className="border p-10 border-gray-400 rounded-xl bg-[#EBEBEB] h-auto m-auto my-10 flex flex-col gap-5">
+          <h2 className="text-black text-xl font-bold text-center border-b-2 pb-3 border-gray-600">
             {t("login_suisse_offerten")}
           </h2>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-            <label htmlFor="" className="text-base text-black font-normal">
-              {t("email_or_username")}
-            </label>
-            <input
-              type="text"
-              name="input"
-              value={input}
-              onChange={handleChange}
-              required
-              className="border border-gray-200 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 w-full md:px-4"
-            />
-            <div>
-              <label htmlFor="" className="text-black text-base font-normal">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-5">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="" className="text-base text-black font-bold">
+                {t("email_or_username")}
+              </label>
+              <input
+                type="text"
+                name="input"
+                value={input}
+                onChange={handleChange}
+                required
+                className="border border-gray-400 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 w-full md:px-4"
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="" className="text-black text-base font-bold">
                 {t("password")}
               </label>
               <span className="relative">
@@ -70,27 +72,27 @@ function SellerLogin() {
                   value={password}
                   onChange={handleChange}
                   required
-                  className="w-full border border-gray-200 px-2 py-3 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
+                  className="w-full border border-gray-400 px-2 py-3 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
                 />
                 <i
                   onClick={() => setShowPassword(!showPassword)}
                   className={
                     showPassword
-                      ? "fa-solid fa-eye absolute right-0 top-[-14px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-3 py-[16px] cursor-pointer"
-                      : "fa-solid fa-eye-slash absolute right-0 top-[-14px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-3 py-[16px] cursor-pointer"
+                      ? "fa-solid fa-eye absolute right-[1px] top-[1px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-3 py-[16px] cursor-pointer"
+                      : "fa-solid fa-eye-slash absolute right-[1px] top-[1px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-3 py-[16px] cursor-pointer"
                   }
                 ></i>
               </span>
               <Link
                 to="/seller-reset"
-                className="text-[#3097d1] text-sm font-normal pt-1 hover:underline"
+                className="text-text-gray-500 text-sm font-normal pt-1 hover:underline"
               >
                 {t("reset_password")}
               </Link>
             </div>
             <button
               type="submit"
-              className="bg-[#ff730096] text-white font-normal rounded-md w-full hover:bg-[#F79359] text-md py-3 px-5 flex gap-2 justify-center"
+              className="bg-[#FFAA01] text-black font-bold rounded-md w-full text-md py-3 px-5 flex gap-2 justify-center"
             >
               {isLoading ? (
                 <>
@@ -116,33 +118,9 @@ function SellerLogin() {
             </button>
           </form>
 
-          <span>
-            <p className="text-black text-sm font-normal">
-              {t("if_you_continue_Conditions_and_Privacy_Polic")}
-              <a
-                href=""
-                className="text-[#3097d1] hover:underline hover:text-[#227aad]"
-              >
-                {t("term_condition") + " - "}
-              </a>
-              <a
-                href=""
-                className="text-[#3097d1] hover:underline hover:text-[#227aad]"
-              >
-                {t("privacy_policy")}
-              </a>
-              .
-            </p>
-          </span>
-          <Link
-            to="/client-login"
-            className="text-[#3097d1] text-sm font-normal hover:underline hover:text-[#227aad] text-center"
-          >
-            {t("login_client")}
-          </Link>
           <Link
             to="/company-register"
-            className="text-[#3097d1] text-sm font-normal hover:underline hover:text-[#227aad]"
+            className="text-gray-500 text-md font-normal hover:underline hover:text-[#227aad]"
           >
             {t("regiter_now_without_login")}
           </Link>

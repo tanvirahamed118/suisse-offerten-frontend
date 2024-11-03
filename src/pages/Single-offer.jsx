@@ -7,7 +7,7 @@ import { useGetOneJobQuery } from "../redux/rtk/features/job/jobApi";
 function SingleOffer() {
   const param = useParams();
   const id = param.id;
-  const { data, isLoading } = useGetOneJobQuery(id, {
+  const { data, isLoading, isSuccess } = useGetOneJobQuery(id, {
     refetchOnMountOrArgChange: true, // Automatically refetch on navigation or param change
   });
 
@@ -17,7 +17,11 @@ function SingleOffer() {
 
   return (
     <React.Fragment>
-      <SingleOfferMoving data={data} isLoading={isLoading} />
+      <SingleOfferMoving
+        data={data}
+        isLoading={isLoading}
+        isSuccess={isSuccess}
+      />
       {!seller?.sellerToken && <OfferTab />}
     </React.Fragment>
   );

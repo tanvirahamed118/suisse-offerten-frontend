@@ -88,18 +88,20 @@ function OfferItems() {
                 {jobDescription?.slice(0, 250)}...
               </p>
               <table>
-                <tr className="text-base text-gray-500 font-normal">
-                  <td className="pr-5">{t("published_on")}:</td>
-                  <td>{displayDate}</td>
-                </tr>
-                <tr className="text-base text-gray-500 font-normal">
-                  <td className="pr-5">{t("appointment_request")}:</td>
-                  <td>{jobCompletionDate}</td>
-                </tr>
-                <tr className="text-base text-gray-500 font-normal">
-                  <td className="pr-5">{t("place_of_execution")}:</td>
-                  <td>{jobPostcode + " " + jobLocation}</td>
-                </tr>
+                <tbody>
+                  <tr className="text-base text-gray-500 font-normal">
+                    <td className="pr-5">{t("published_on")}:</td>
+                    <td>{displayDate}</td>
+                  </tr>
+                  <tr className="text-base text-gray-500 font-normal">
+                    <td className="pr-5">{t("appointment_request")}:</td>
+                    <td>{jobCompletionDate}</td>
+                  </tr>
+                  <tr className="text-base text-gray-500 font-normal">
+                    <td className="pr-5">{t("place_of_execution")}:</td>
+                    <td>{jobPostcode + " " + jobLocation}</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

@@ -168,7 +168,7 @@ function MobileNav({
                 </li>
                 <li>
                   <Link
-                    to="/seller-login"
+                    to="/auth-login"
                     onClick={() => setMenu(false)}
                     className={
                       i18n.languages[0] === "fr"

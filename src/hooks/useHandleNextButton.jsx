@@ -1,4 +1,5 @@
 import { useCallback } from "react";
+import { useSelector } from "react-redux";
 
 const useHandleNextButton = ({
   questions,
@@ -25,6 +26,8 @@ const useHandleNextButton = ({
   setModelValue,
   setDoubleValue,
 }) => {
+  const state = useSelector((state) => state.choseId);
+
   const handleNextButton = useCallback(
     (e) => {
       e.preventDefault();
@@ -111,9 +114,7 @@ const useHandleNextButton = ({
           return;
         }
       }
-
       const nextQuestion = questions.find((q) => q.id === currentId);
-
       if (
         formData.jobTitle.trim().length > 0 ||
         formData.jobDescription.trim().length > 0
@@ -250,6 +251,9 @@ const useHandleNextButton = ({
       if (currentQuestion?.mainId && currentQuestion.type === "imagebox") {
         handleNext(currentQuestion.mainId);
       }
+      if (state.id && formData.jobTitle) {
+        handleNext(state.id);
+      }
 
       setFormData((prevFormData) => ({
         ...prevFormData,
@@ -283,6 +287,7 @@ const useHandleNextButton = ({
       setSampleValue,
       setModelValue,
       setDoubleValue,
+      state,
     ]
   );
 

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import questions from "../../datas/request-data";
+import questions from "../../datas/germen/request-data";
 import { useEffect, useState } from "react";
 import {
   useGetOneSellerQuery,
@@ -99,14 +99,16 @@ function SellerActivity() {
         <form onSubmit={handlesubmit}>
           <div className="flex justify-between mt-5 gap-5 lg:flex-row flex-col">
             <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-between gap-1">
-              {uniqueOptions.map((option) => {
+              {uniqueOptions.map((option, index) => {
                 const type = "acitivity";
                 const updatevalue = option.label
                   ?.split(/\s*[,.-\s]+\s*/g)
                   ?.filter(Boolean)
                   ?.join("_");
+                const itemId = option.id ?? `fallback-key-${index}`;
+
                 return (
-                  <li key={option.id} className="flex gap-2 items-start">
+                  <li key={itemId} className="flex gap-2 items-start">
                     <input
                       type="checkbox"
                       name={`option-${option.id}`}

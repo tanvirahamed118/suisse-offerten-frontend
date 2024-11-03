@@ -26,10 +26,9 @@ function OffersFilter() {
               id=""
               className="md:w-full border border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
               onChange={(e) => dispatch(choseCategory(e.target.value))}
+              defaultValue=""
             >
-              <option selected value="">
-                {t("select_option")}
-              </option>
+              <option value="">{t("select_option")}</option>
               <option value="Inside">Inside</option>
               <option value="Outside">Outside</option>
               <option value="Planning & Consulting">
@@ -46,6 +45,7 @@ function OffersFilter() {
               id=""
               className="border md:w-full border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
               onChange={(e) => dispatch(choseLocation(e.target.value))}
+              defaultValue=""
             >
               <option value="">{t("select_option")}</option>
               {[

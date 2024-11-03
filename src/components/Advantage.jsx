@@ -20,7 +20,7 @@ function Advantage() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className="py-10 m-auto w-full xl:w-[1230px] flex flex-col gap-10 items-center">

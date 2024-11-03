@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { useTranslation } from "react-i18next";
 
 function ImageBox({ setFormData }) {
+  const { t } = useTranslation();
   const [images, setImages] = useState([]);
   const [files, setFiles] = useState([]);
   const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
@@ -39,9 +41,7 @@ function ImageBox({ setFormData }) {
   return (
     <div className="bg-[#F4F4F4] p-5 w-full h-auto flex flex-col gap-3 items-center justify-center upContainer">
       <h2 className="text-sm md:text-xl font-normal text-black">
-        Drop/insert files here, or{" "}
-        <span className="text-[#1269cf]">import from</span> the following
-        sources:
+        {t("image_mainnote")}
       </h2>
       <label
         htmlFor="upproduct"
@@ -82,7 +82,7 @@ function ImageBox({ setFormData }) {
         ))}
       </div>
       <p className="text-xs mt-3 font-normal text-black">
-        You can add pictures, videos, or documents.
+        {t("image_sortNote")}
       </p>
       <Toaster />
     </div>

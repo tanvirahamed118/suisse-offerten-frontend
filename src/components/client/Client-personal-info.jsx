@@ -26,6 +26,8 @@ function ClientPersonalInfo() {
   const [showPassword, setShowPassword] = useState(false);
   const [tel, setTel] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
+  const [isHas, setIsHas] = useState(false);
+
   const [client, setClient] = useState({
     salutation: "",
     firstname: "",
@@ -59,13 +61,19 @@ function ClientPersonalInfo() {
     setCountryCode(country.code);
     setPlaceholder(`${country.code} 444 444 444`);
     setIsShow(false);
+    setClient((prevClient) => ({
+      ...prevClient,
+      phone: `${country.code}${tel}`,
+    }));
   };
+
   useEffect(() => {
     setClient((prevClient) => ({
       ...prevClient,
       phone: countryCode + tel,
     }));
   }, [countryCode, tel]);
+
   const handleChange = (e) => {
     const { name, type, checked, value } = e.target;
 
@@ -74,6 +82,7 @@ function ClientPersonalInfo() {
       [name]: type === "checkbox" ? checked : value, // Handle checkbox input correctly
     }));
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (password !== confirmPass) {
@@ -85,6 +94,7 @@ function ClientPersonalInfo() {
       toast.error("Please use more then 6 character");
     }
   };
+
   useEffect(() => {
     if (getData) {
       setClient((prevClient) => ({
@@ -101,6 +111,17 @@ function ClientPersonalInfo() {
       setToastShown(true);
     }
   }, [isError, isSuccess, data, error, getData, toastShown]);
+
+  const handleCodeChange = (e) => {
+    const phoneNumber = e.target.value;
+    if (!countryCode) {
+      setIsHas(true);
+      return;
+    } else {
+      setIsHas(false);
+    }
+    setTel(phoneNumber);
+  };
 
   return (
     <div className="container">
@@ -197,17 +218,22 @@ function ClientPersonalInfo() {
                 type="tel"
                 placeholder={placeholder}
                 className={
-                  tel.length > 0
-                    ? "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-not-invalid"
-                    : "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-invalid"
+                  tel.length > 8
+                    ? "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 client-not-valid"
+                    : "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 client-valid"
                 }
-                onChange={(e) => setTel(e.target.value)}
+                onChange={handleCodeChange}
                 value={tel}
                 required
               />
               <p className="text-gray-500 text-sm font-normal pt-1">
                 {t("only_visible_select")}
               </p>
+              {isHas ? (
+                <p className="text-red-500 text-sm font-normal mt-3">
+                  {t("code_error")}
+                </p>
+              ) : null}
             </span>
             <div
               className="flex items-center gap-1 bg-white w-12 py-2 px-3 justify-center absolute top-[39px] left-1 cursor-pointer border-r border-gray-300"

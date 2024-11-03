@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function OrderTitle({ jobTitle, handleChange }) {
+function OrderTitle({ jobTitle, handleChange, jobDes }) {
   return (
     <div className="flex flex-col gap-2">
       <span>
@@ -9,7 +9,7 @@ function OrderTitle({ jobTitle, handleChange }) {
           name="jobTitle"
           onChange={(e) => handleChange(e)}
           value={jobTitle}
-          placeholder="e.g.  B. Paint a 4.5 room apartment"
+          placeholder={jobDes}
           required
           className={
             jobTitle
@@ -24,6 +24,7 @@ function OrderTitle({ jobTitle, handleChange }) {
 
 OrderTitle.propTypes = {
   jobTitle: PropTypes.string,
+  jobDes: PropTypes.string,
   handleChange: PropTypes.func,
 };
 

@@ -7,13 +7,19 @@ import HowWorks from "../components/How-works";
 import SubscribeTab from "../components/Subscribe-tab";
 
 function Home() {
+  const sellerAuth = localStorage.getItem("seller");
+  const seller = JSON.parse(sellerAuth);
+  const token = seller?.sellerToken;
+  console.log(seller);
   return (
     <React.Fragment>
       <CallOfAction />
-      <Cetagories />
+      {!token && <Cetagories />}
+
       <Advantage />
       <HowWorks />
-      <AllCeatgories />
+      {!token && <AllCeatgories />}
+
       <SubscribeTab />
     </React.Fragment>
   );

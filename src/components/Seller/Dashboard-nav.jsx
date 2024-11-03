@@ -44,7 +44,7 @@ function DashboardNav() {
       <li>
         <span className="flex gap-1 items-center">
           <i className="fa fa-file fa-fw text-[#000000] text-sm"></i>
-          <li>
+          <div>
             <Link
               to="/seller-dashboard/offers-open"
               className="text-[#767676] text-base font-normal hover:underline flex gap-1"
@@ -56,7 +56,7 @@ function DashboardNav() {
                 </p>
               )}
             </Link>
-          </li>
+          </div>
         </span>
         <ul className="py-1 px-5 flex flex-col gap-2">
           <li>

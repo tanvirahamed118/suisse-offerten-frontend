@@ -66,13 +66,23 @@ function OfferComplete() {
     );
   }
   if (isError) {
-    content = <p>{error}</p>;
+    content = (
+      <tr>
+        <td colSpan="4" className="text-center">
+          <p>{error}</p>
+        </td>
+      </tr>
+    );
   }
   if (!isLoading && !isError && filterData?.length === 0) {
     content = (
-      <p className="text-black font-semibold text-xl py-5">
-        {t("no_data_found")}
-      </p>
+      <tr>
+        <td colSpan="4" className="text-center">
+          <p className="text-black font-semibold text-xl py-5">
+            {t("no_data_found")}
+          </p>
+        </td>
+      </tr>
     );
   }
   if (!isLoading && !isError && isSuccess && filterData?.length > 0) {
@@ -102,9 +112,9 @@ function OfferComplete() {
                   {t("order_number")}: {jobNumber}
                 </p>
                 <p className="text-[#000] text-base font-normal">{username}</p>
-                <p className="text-[#000] text-base font-normal hover:text-[#0050b2] hover:underline">
+                <span className="text-[#000] text-base font-normal hover:text-[#0050b2] hover:underline">
                   {phone}
-                </p>
+                </span>
               </div>
             </td>
             <td className="p-5 align-top border-b border-black text-left">
@@ -139,7 +149,7 @@ function OfferComplete() {
                 <p className="text-[#999] text-xs font-normal text-right">
                   {t("orginally_published")}: {formattedDate}
                 </p>
-                <p
+                <div
                   onClick={() => handleArchive(_id)}
                   className="text-[#3097d1] hover:text-[#0050b2] text-base font-normal hover:underline cursor-pointer text-right flex gap-2 items-center"
                 >
@@ -164,7 +174,7 @@ function OfferComplete() {
                   ) : (
                     t("archive")
                   )}
-                </p>
+                </div>
               </div>
             </td>
           </tr>

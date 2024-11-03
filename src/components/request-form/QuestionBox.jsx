@@ -1,21 +1,63 @@
 import PropTypes from "prop-types";
+import { useTranslation } from "react-i18next";
 
 function QuestionBox({ currentQuestion, handleNext, item, setFinalStep }) {
+  const { i18n } = useTranslation();
   const client = localStorage.getItem("client");
   const clientAuth = JSON.parse(client);
 
   const handleChange = (id) => {
-    if (item.label === "Yes") {
-      handleNext(id);
-      setFinalStep(false);
-    } else if (item.label === "No" && clientAuth?.clientToken) {
-      setFinalStep(true);
-    } else if (item.label === "Maybe later" && clientAuth?.clientToken) {
-      setFinalStep(true);
-    } else if (item.label === "No" && !clientAuth?.clientToken) {
-      handleNext(457325240);
-    } else if (item.label === "Maybe later" && !clientAuth?.clientToken) {
-      handleNext(457325240);
+    if (i18n.language === "gr") {
+      if (item.label === "Ja") {
+        handleNext(id);
+        setFinalStep(false);
+      } else if (item.label === "NEIN" && clientAuth?.clientToken) {
+        setFinalStep(true);
+      } else if (
+        item.label === "Vielleicht später" &&
+        clientAuth?.clientToken
+      ) {
+        setFinalStep(true);
+      } else if (item.label === "NEIN" && !clientAuth?.clientToken) {
+        handleNext(457325240);
+      } else if (
+        item.label === "Vielleicht später" &&
+        !clientAuth?.clientToken
+      ) {
+        handleNext(457325240);
+      }
+    } else if (i18n.language === "en") {
+      if (item.label === "Yes") {
+        handleNext(id);
+        setFinalStep(false);
+      } else if (item.label === "No" && clientAuth?.clientToken) {
+        setFinalStep(true);
+      } else if (item.label === "Maybe later" && clientAuth?.clientToken) {
+        setFinalStep(true);
+      } else if (item.label === "No" && !clientAuth?.clientToken) {
+        handleNext(457325240);
+      } else if (item.label === "Maybe later" && !clientAuth?.clientToken) {
+        handleNext(457325240);
+      }
+    } else {
+      if (item.label === "Oui") {
+        handleNext(id);
+        setFinalStep(false);
+      } else if (item.label === "Non" && clientAuth?.clientToken) {
+        setFinalStep(true);
+      } else if (
+        item.label === "Peut-être plus tard" &&
+        clientAuth?.clientToken
+      ) {
+        setFinalStep(true);
+      } else if (item.label === "Non" && !clientAuth?.clientToken) {
+        handleNext(457325240);
+      } else if (
+        item.label === "Peut-être plus tard" &&
+        !clientAuth?.clientToken
+      ) {
+        handleNext(457325240);
+      }
     }
   };
 

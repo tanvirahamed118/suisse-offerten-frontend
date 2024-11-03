@@ -6,6 +6,7 @@ const usePostalCode = (postalCode, setFormData, setIsPostalCodeValid) => {
     );
 
     if (postalCodeEntry) {
+      // Set form data with matched postal code, location, and city
       setFormData((prevFormData) => ({
         ...prevFormData,
         jobPostcode: postalCodeEntry.code,
@@ -14,16 +15,43 @@ const usePostalCode = (postalCode, setFormData, setIsPostalCodeValid) => {
       }));
       setIsPostalCodeValid(true);
     } else {
+      // Update jobPostcode only, leaving jobLocation untouched
       setFormData((prevFormData) => ({
         ...prevFormData,
         jobPostcode: postalCodeInput,
-        jobLocation: "",
       }));
       setIsPostalCodeValid(false);
     }
   };
+
+  const handleLocationChange = (e) => {
+    const locationInput = e.target.value;
+    const postalCodeEntry = postalCode?.locations.find(
+      (entry) => entry.Gemeinden.toString() === locationInput
+    );
+    // Update only jobLocation, leaving jobPostcode untouched
+    if (postalCodeEntry) {
+      // Set form data with matched postal code, location, and city
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        jobPostcode: postalCodeEntry.code,
+        jobLocation: postalCodeEntry.Gemeinden,
+        jobCity: postalCodeEntry.Kanton,
+      }));
+      setIsPostalCodeValid(true);
+    } else {
+      // Update jobPostcode only, leaving jobLocation untouched
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        jobLocation: locationInput,
+      }));
+      setIsPostalCodeValid(false);
+    }
+  };
+
   return {
     handlePostalCodeChange,
+    handleLocationChange,
   };
 };
 

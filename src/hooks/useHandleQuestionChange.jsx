@@ -1,6 +1,16 @@
 import { useCallback } from "react";
+import { choseId } from "../redux/rtk/features/formReucer/formSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-const useQuestionChange = (setFormData, currentQuestion, handleNext) => {
+const useQuestionChange = (
+  setFormData,
+  currentQuestion,
+  handleNext,
+  formData,
+  questions
+) => {
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state.choseId);
   const handleQuestionChange = useCallback(
     (key, value, id, credit) => {
       const keyname = key?.split(" ")?.join("_");
@@ -50,12 +60,32 @@ const useQuestionChange = (setFormData, currentQuestion, handleNext) => {
         if (credit) {
           updatedFormData.credits = credit;
         }
+        if (state.id) {
+          // Find the specific question and option by state.id
+          const filteredData = questions
+            .find((item) => item.label === "main_services_categories")
+            ?.options.find((option) => option.id === state.id);
+          if (filteredData) {
+            updatedFormData.jobCategoryCode = filteredData.label || "";
+          }
+        }
         return updatedFormData;
       });
 
       handleNext(id);
+      if (formData?.jobCategoryCode) {
+        dispatch(choseId(null));
+      }
     },
-    [setFormData, currentQuestion, handleNext]
+    [
+      setFormData,
+      currentQuestion,
+      handleNext,
+      formData,
+      dispatch,
+      questions,
+      state,
+    ]
   );
 
   return handleQuestionChange;

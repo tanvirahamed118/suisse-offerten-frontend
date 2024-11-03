@@ -40,7 +40,7 @@ function LeadsFilter({ setSortCriteria, sortCriteria, setJobNumber }) {
         />
         <button
           type="submit"
-          className="text-black border border-gray-200 px-2 py-1 text-base font-normal rounded-md bg-[#ECECEC]"
+          className="text-black border border-gray-200 px-2 py-1 text-md font-bold rounded-md bg-[#FFAA00]"
         >
           {t("seek")}
         </button>
@@ -51,10 +51,9 @@ function LeadsFilter({ setSortCriteria, sortCriteria, setJobNumber }) {
           id=""
           className="md:w-full border border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
           onChange={(e) => dispatch(choseCategory(e.target.value))}
+          defaultValue=""
         >
-          <option selected value="">
-            {t("select_option")}
-          </option>
+          <option value="">{t("select_option")}</option>
           <option value="Inside">Inside</option>
           <option value="Outside">Outside</option>
           <option value="Planning & Consulting">Planning & Consulting</option>
@@ -69,6 +68,7 @@ function LeadsFilter({ setSortCriteria, sortCriteria, setJobNumber }) {
           id=""
           className="border md:w-full border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
           onChange={(e) => dispatch(choseLocation(e.target.value))}
+          defaultValue=""
         >
           <option value="">{t("select_option")}</option>
           {[...new Set(postalCode.locations?.map((item) => item.Kanton))].map(
@@ -84,8 +84,8 @@ function LeadsFilter({ setSortCriteria, sortCriteria, setJobNumber }) {
         <button
           className={
             sortCriteria === "date"
-              ? "text-black bg-[#ECECEC] hover:bg-[#ECECEC] py-2 px-5 rounded-full"
-              : "text-black bg-[#f5f6f7] hover:bg-[#ECECEC] py-2 px-5 rounded-full"
+              ? "text-black bg-[#FFAA00] py-2 px-5 rounded-full text-md font-bold"
+              : "text-black bg-[#f5f6f7] py-2 px-5 rounded-full text-md font-bold"
           }
           onClick={handleDateSortToggle}
         >
@@ -94,8 +94,8 @@ function LeadsFilter({ setSortCriteria, sortCriteria, setJobNumber }) {
         <button
           className={
             sortCriteria === "bid"
-              ? "text-black bg-[#ECECEC] hover:bg-[#ECECEC] py-2 px-5 rounded-full"
-              : "text-black bg-[#f5f6f7] hover:bg-[#ECECEC] py-2 px-5 rounded-full"
+              ? "text-black bg-[#FFAA00] py-2 px-5 rounded-full text-md font-bold"
+              : "text-black bg-[#f5f6f7] py-2 px-5 rounded-full text-md font-bold"
           }
           onClick={handleBidSortToggle}
         >

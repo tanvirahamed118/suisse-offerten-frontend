@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import EnterCompany from "./pages/Enrer-company";
 import CostCalculator from "./pages/Cost-calculator";
 import SearchOrder from "./pages/Search-order";
-import EnterRequest from "./components/Enter-request";
 import About from "./pages/About";
 import Condition from "./pages/Condition";
 import Contact from "./pages/Contact";
@@ -41,8 +40,6 @@ import SellerRegister from "./pages/seller/Seller-register";
 import LoginForm from "./components/Login-form";
 import ClientRegister from "./pages/client/Client-register";
 import HowItWorksContractor from "./pages/How-it-works-contractor";
-import SellerLogin from "./pages/seller/Seller-Login";
-import ClientLogin from "./pages/client/Client-Login";
 import PrivateRoute from "./routes/Private-route";
 import PublicRoute from "./routes/Public-route";
 import SellerReset from "./pages/seller/Seller-reset";
@@ -62,19 +59,20 @@ import UpdateProposal from "./components/Seller/Update-proposal";
 import OfferOpen from "./components/Seller/Offer-open";
 import OfferComplete from "./components/Seller/Offer-complete";
 import OfferArchived from "./components/Seller/Offer-archived";
-import OfferInvitation from "./components/Seller/Offer-invitation";
 import SingleNews from "./components/Seller/Single-news";
 import EmailValidation from "./components/Email-validation";
 import Membership from "./pages/seller/Membership";
 import PaymentSuccess from "./components/Seller/Payment-success";
 import PaymentFail from "./components/Seller/Payment-fail";
 import ClinetVarify from "./pages/client/Clinet-varify";
-import SingleCategory from "./pages/Single-category";
 import CreditPaymentSuccess from "./components/Seller/CreditPayment-success";
 import CreditPaymentFail from "./components/Seller/CreditPayment-fail";
 import { useEffect } from "react";
 import { useGetAllSettingQuery } from "./redux/rtk/features/setting/settingApi";
 import OfferWon from "./components/Seller/OfferWon";
+import Error404 from "./pages/Error404";
+import CreateJob from "./pages/Create-job";
+import MainLogin from "./pages/Main-login";
 
 function App() {
   const { data, isLoading } = useGetAllSettingQuery();
@@ -108,8 +106,8 @@ function App() {
         <Route element={<PublicRoute />}>
           <Route path="/client-register" element={<ClientRegister />} />
           <Route path="/company-register" element={<SellerRegister />} />
-          <Route path="/seller-login" element={<SellerLogin />} />
-          <Route path="/client-login" element={<ClientLogin />} />
+          <Route path="/auth-login" element={<MainLogin />} />
+
           <Route path="/seller-reset" element={<SellerReset />} />
           <Route path="/seller-check-otp" element={<SellerCheckOTP />} />
           <Route
@@ -173,10 +171,7 @@ function App() {
               path="/seller-dashboard/offers-archived"
               element={<OfferArchived />}
             />
-            <Route
-              path="/seller-dashboard/offers-invitation"
-              element={<OfferInvitation />}
-            />
+
             <Route path="/seller-dashboard/comments" element={<Comments />} />
             <Route path="/seller-dashboard/observer" element={<Observer />} />
             <Route path="/seller-dashboard/news" element={<SellerNews />} />
@@ -269,10 +264,9 @@ function App() {
         <Route path="/location" element={<Location />} />
 
         <Route path="/seller-dashboard" element={<SellerDashboard />} />
-        <Route path="/service-category/:id" element={<SingleCategory />} />
 
         <Route element={<RequestRoute />}>
-          <Route path="/enter-request" element={<EnterRequest />} />
+          <Route path="/enter-request" element={<CreateJob />} />
         </Route>
 
         <Route element={<OfferRoute />}>
@@ -284,6 +278,7 @@ function App() {
         </Route>
 
         {/* public routes */}
+        <Route path="*" element={<Error404 />} />
       </Routes>
 
       <Footer />

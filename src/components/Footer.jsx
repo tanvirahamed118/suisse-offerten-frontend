@@ -14,11 +14,7 @@ function Footer() {
         <div className="flex lg:flex-row flex-col gap-8 lg:gap-20 justify-between">
           <div className="flex flex-col gap-4 w-full lg:w-[20%]">
             <Link to="/">
-              <img
-                src={footerlogo ? footerlogo : Logo}
-                alt=""
-                className="w-48"
-              />
+              <img src={Logo} alt="" className="w-48" />
             </Link>
             <h2 className="text-sm font-normal text-black">{footer}</h2>
           </div>

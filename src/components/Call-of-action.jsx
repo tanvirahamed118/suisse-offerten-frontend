@@ -7,7 +7,7 @@ function CallOfAction() {
   const seller = JSON.parse(sellerAuth);
 
   return (
-    <section className="custom-image w-full h-96 lg:h-[600px]">
+    <section className="custom-image w-full h-96 lg:h-[70vh]">
       <div className="hero flex items-center py-5 h-full">
         <div className="container flex flex-col gap-5 justify-center items-center h-full">
           <h2 className="text-3xl lg:text-[50px] text-white font-semibold leading-tight text-center">
@@ -17,9 +17,9 @@ function CallOfAction() {
             {t("receive_free_offers")}
           </p>
           {!seller?.sellerToken && (
-            <Link to="/enter-request" className="w-full md:w-4/12">
+            <Link to="/enter-request" className="w-full flex justify-center">
               <button
-                className="bg-[#FFAA00] text-black font-semibold rounded-2xl hover:bg-[#d6a135] text-xl md:text-3xl py-2 md:py-6 w-full"
+                className="bg-[#FFAA00] text-black font-semibold rounded-2xl hover:bg-[#d6a135] px-10 text-xl md:text-3xl py-2 md:py-6"
                 type="submit"
               >
                 {t("get_offer")}

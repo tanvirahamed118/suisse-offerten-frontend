@@ -27,6 +27,11 @@ const sw = {
   // footer menu
 
   // seller dasgboard
+  form_post_code: "Postleitzahl",
+  image_mainnote:
+    "Wählen Sie hier Ihre Dateien aus, um auf „Datei durchsuchen“ zu klicken (Nur JPG-, JPEG- und PNG-Format genehmigen).",
+  image_sortNote:
+    "Bitte laden Sie nur genehmigte Dateien hoch und genehmigen Sie Ihren Auftrag.",
   browse_file: "Datei durchsuchen",
   optional_offer:
     "Fügen Sie hier optional einen Kommentar zu Ihrem Angebot hinzu.",
@@ -115,6 +120,14 @@ const sw = {
   profile: "Profil",
   proposal: "Vorschlag",
   membership_purchase: "Mitgliedschaftskauf erfolgreich",
+  membership_purchase_notify:
+    "Ihr Zahlungsstatus ist abgeschlossen, sobald wir ihn erhalten haben. Bitte warten Sie auf die Benachrichtigung, dass die Zahlung erfolgreich war. Sobald die Zahlung erfolgreich war, aktualisieren wir Ihre Mitgliedschaft.",
+  membership_purchase_notify_fail:
+    "Der Erwerb der Mitgliedschaft ist fehlgeschlagen. Bitte versuchen Sie es erneut und tätigen Sie eine weitere Zahlung.",
+  membership_credit_fail:
+    "Ihre Zahlung ist noch nicht abgeschlossen. Sobald sie abgeschlossen ist, haben Sie Guthaben erhalten.",
+  membership_credit_fail_notify:
+    "Der Kauf von Credits ist fehlgeschlagen. Bitte versuchen Sie es erneut und kaufen Sie weitere Credits.",
   you_have_chose: "Sie haben gewählt",
   plan: "Planen",
   payment_failed: "Zahlung fehlgeschlagen",
@@ -193,6 +206,15 @@ const sw = {
   recive_request: "Empfangsanfrage?",
   place_bid: "Gebot abgeben",
   offer_pending: "Angebot ausstehend",
+  erro_title: "FEHLER 404",
+  error_heading: "Seite nicht gefunden!",
+  error_des: "Désolé ! La page que vous recherchez n'a pas pu être trouvée.",
+  limited_participation_offer: "Begrenztes Teilnahmeangebot:",
+  offer_note_one:
+    "1-5 Auftragnehmer (mx-5) können an diesem Auftrag teilnehmen.",
+  offer_note_tow:
+    "Es wird der Leadpreis verrechnet und die Kontaktdaten werden für Sie wieder aktiviert.",
+  offer_note_three: "Wenn der Kunde Sie um ein Angebot bittet",
   // seller dasgboard
 
   // dashboard menu
@@ -402,53 +424,43 @@ const sw = {
 
   //  categories
   inside_the_house: "Im Haus",
-  carpenter_furniture: "Tischlerei, Möbelbau, Innenausbau",
+
   fireplace_chimney: "Kamin, Kaminofen, Schornstein",
-  kitchen_constructor: "Küchenbau",
-  upholstery_saddlery: "Polsterei, Sattlerei",
+
   house_technic: "Haustechnik",
-  electrician_electrical_installation: "Elektriker, Elektroinstallation",
+
   heating_ventilation: "Heizung, Lüftung, Klima, Kühlung",
   plumbing_work_processing: "Klempnerarbeiten, Blechbearbeitung",
-  plumbing_work: "Klempnerarbeiten",
+
   metal_construction_wood_construction: "Metallbau & Holzbau",
   metal_construction_blacksmith_shop: "Metallbau, Schlosserei, Schmiede",
-  carpentry_timber_construction: "Zimmerei, Holzbau",
-  garden_house_carport_sauna: "Gartenhaus, Carport, Sauna",
+
   outside_the_house: "Außerhalb des Hauses",
   excavation_pit_earthworks_foundation: "Baugrube, Erdarbeiten, Fundament",
-  fences_gates_privacy_screens: "Zäune, Tore, Sichtschutz",
-  garage_doors: "Garagentore",
+
   isolation_sealing_insulation: "Isolierung, Abdichtung, Dämmung",
   paving_work_paths_streets: "Pflasterarbeiten, Wege, Straßen",
   bricklayers_plastering_concrete_joints: "Maurer, Verputzer, Beton, Fugen",
-  roofers_roofing: "Dachdecker, Dachdeckerarbeiten",
+
   scaffolding_scaffolding: "Gerüstbau, Gerüstbau",
-  windows_Doors: "Fenster & Türen",
-  locking_systems_alarm_systems: "Schließanlagen, Alarmanlagen",
-  blinds_roller_shutters_awnings: "Jalousien, Rollläden, Markisen",
-  glass_construction_glazing: "Glasbau, Verglasung",
+
   windows_doors: "Fenster, Türen",
   conversion_total_renovation: "Umbau & Gesamtsanierung",
-  demolition_breakthrough_dismantling: "Abbruch, Durchbruch, Demontage",
-  conversion_total_renovation_extension: "Umbau, Totalsanierung, Erweiterung",
+
   cleaning_transport: "Reinigung & Transport",
   cleaning_staff_other_cleaning: "Reinigungskräfte, sonstige Reinigungskräfte",
-  disposal_clearing_out: "Entsorgung, Entrümpelung",
-  final_cleaning_moving_cleaning: "Endreinigung, Umzugsreinigung",
+
   transport_small_transport: "Transport, Kleintransport",
   motor_vehicle: "Kraftfahrzeug",
-  car_repair_car_service: "Autoreparatur, Autoservice",
-  foils_labels: "Folien, Etiketten",
-  car_painting_smar_repair: "Autolackierung, Smart Repair",
+
   consulting_Architecture: "Beratung & Architektur",
-  architecture_planning_statics: "Architektur, Planung, Statik",
+
   telephone_Internet: "Telefon & Internet",
-  telephone_Internet_Multimedia: "Telefon, Internet, Multimedia",
+
   renewable_energy: "Erneuerbare Energie",
-  solar_photovoltaics: "Solar, Photovoltaik",
+
   other_work: "Andere Arbeit",
-  pest_control: "Schädlingsbekämpfung",
+
   //  categories
 
   // home page
@@ -544,19 +556,23 @@ const sw = {
   phone_2: "Telefon 2: (optional)",
   email_address: "E-Mail-Adresse:",
   prefered_username: "Bevorzugter Benutzername:",
-  username_condition:
-    "Zwischen 3 und 32 Zeichen lang. Erlaubt sind nur Buchstaben, Zahlen und .",
+  username_condition: "Nur Buchstaben und Zahlen erlaubt. Mindestens 3 Zeichen",
+  number_condition: "Wählen Sie zuerst die Landesvorwahl",
+  seven_day_triel: "7 Tage kostenlos testen",
   password: "Passwort",
   password_conditon: "Verwenden Sie 6 oder mehr Zeichen",
-  aware: "Wie sind Sie auf Suisse-Offerten aufmerksam geworden?",
+  aware: "Wie sind Sie auf suisse-offerten.ch aufmerksam geworden?",
   newsletter_con:
     "Suisse-Offerten Newsletter: Sie möchten über Spartipps, Aktionen und neue Funktionen informiert werden?",
-  tearm_condition_1: "Ich akzeptiere die allgemeinen",
+  tearm_condition_1:
+    "Ich akzeptiere die Allgemeinen Geschäftsbedingungen und Datenschutzbestimmungen.",
+  free_100: "100% kostenlos",
+  no_Obligation: "Keine Verpflichtung",
   tearm_condition_2: "Geschäftsbedingung",
   tearm_condition_3: "Und",
   tearm_condition_4: "Datenschutz",
   tearm_condition_5: "Politik .",
-  register_now_for_free: "Jetzt kostenlos registrieren",
+  register_now: "Jetzt registrieren",
   must_add_UID: "UID-Nummer muss hinzugefügt werden",
   telephone_number: "Telefonnummer",
   further_information_title: "Weitere Angaben: (optional)",
@@ -572,9 +588,9 @@ const sw = {
   //  register page
 
   // login page
-  login_suisse_offerten: "Verkäufer-Login bei Suisse-Offerten",
-  login_suisse_offerten_client: "Kundenlogin bei Suisse-Offerten",
-  email_or_username: "E-Mail Adresse oder Benutzername",
+  login_suisse_offerten: "Login für Handworker",
+  login_suisse_offerten_client: "Login für Kunden",
+  email_or_username: "E-Mail / Benutzername",
   login_with_email: "Mit E-Mail anmelden",
   we_will_immediate_login:
     "Wir senden Ihnen einen Link zur sofortigen Anmeldung zu.",
@@ -583,14 +599,14 @@ const sw = {
   if_you_continue_Conditions_and_Privacy_Polic:
     "Wenn Sie fortfahren, stimmen Sie den Allgemeinen Geschäftsbedingungen und der Datenschutzrichtlinie von Ofris zu.",
   regiter_now_without_login:
-    "Kein Verkäuferkonto? Melden Sie sich jetzt unverbindlich an.",
+    "Noch kein Firmenkonto? Jetzt unverbindlich registrieren.",
   regiter_now_without_login_client:
     "Kein Kundenkonto? Melden Sie sich jetzt unverbindlich an.",
   term_condition: "Teams und Zustand",
   privacy_policy: "Datenschutzrichtlinie",
   login_client: "Möchten Sie sich in Ihr Kundenkonto einloggen?",
   login_seller: "Möchten Sie sich in Ihrem Verkäuferkonto anmelden?",
-  reset_password: "Setzen Sie Ihr Passwort zurück",
+  reset_password: "Passwort vergessen? Setze dein Passwort zurück",
   // login page
 
   // reset page
@@ -731,6 +747,58 @@ const sw = {
     "Suisse-Offerten erhält täglich neue Jobanfragen. Oben finden Sie eine Anfrage zum Thema Baumentsorgung. Verschiedene Handwerker aus Reinach und Umgebung meldeten sich auf diese Anfrage. Stellen Sie jetzt eine unverbindliche Anfrage und erhalten Sie kostenlose Offerten von Firmen aus Ihrer Umgebung!",
   similar_orders: "Ähnliche Bestellungen",
   // single offer
+
+  // sub categories
+  outside: "Draußen",
+  inside: "Innen",
+  planning_consulting: "Planung & Beratung",
+  car_vehicles: "Auto / Fahrzeuge",
+  transport_disposal: "Transport & Entsorgung",
+  gardener_horticulture: "Gärtner, Gartenbau",
+  paving_paths_roads: "Pflaster, Wege, Straßen",
+  garage_doors: "Garagentore",
+  fences_gates_privacy_screens: "Zäune, Tore, Sichtschutz",
+  garden_house_carport_sauna: "Gartenhaus, Carport, Sauna",
+  excavation_earthworks_foundation: "Aushubarbeiten, Erdarbeiten, Fundamente",
+  roofers_roofing: "Dachdecker, Dachdeckerarbeiten",
+  facade_scaffolding: "Fassade & Gerüst",
+  metal_construction_metalworking_blacksmithing:
+    "Metallbau, Schlosserhandwerk, Schmiedehandwerk",
+  blinds_roller_shutters_awnings: "Jalousien, Rollläden, Markisen",
+  tinsmithing_sheet_metal_working: "Spenglerarbeiten, Blechbearbeitung",
+  solar_photovoltaics: "Solar, Photovoltaik",
+  glass_construction_glazing: "Glasbau, Verglasung",
+  demolition_breakthrough_dismantling: "Abbruch, Durchbruch, Demontage",
+  conversion_total_renovation_extension: "Umbau, Totalsanierung, Erweiterung",
+  painting_plastering: "Malerarbeiten, Verputzarbeiten",
+  parquet_laminate_carpet: "Parkett, Laminat, Teppich",
+  windows_Doors: "Fenster & Türen",
+  slabs_tiles_slabs: "Platten, Fliesen, Platten",
+  bricklayer_plaster_concrete_joints: "Maurer, Putz, Beton, Fugen",
+  carpentry_timber_construction: "Zimmerei, Holzbau",
+  insulation_sealing_insulation: "Dämmung, Abdichtung, Isolierung",
+  plumbing_work: "Klempnerarbeiten",
+  bathroom_renovations: "Badezimmerrenovierungen",
+  kitchen_constructor: "Küchenbau",
+  carpenter_furniture: "Tischlerei, Möbelbau, Innenausbau",
+  foils_labels: "Folien, Etiketten",
+  upholstery_saddlery: "Polsterei, Sattlerei",
+  electrician_electrical_installation: "Elektriker, Elektroinstallation",
+  heating_conditioning_refrigeration: "Heizung, Lüftung, Klima, Kälte",
+  locking_systems_alarm_systems: "Schließanlagen, Alarmanlagen",
+  fireplace_chimney_fireplace: "Kamin, Schornstein, Kamin",
+  pest_control: "Schädlingsbekämpfung",
+  architecture_planning_statics: "Architektur, Planung, Statik",
+  car_repair_car_service: "Autoreparatur, Autoservice",
+  motorcycle_vespa_scooter: "Motorrad, Vespa, Motorroller",
+  car_painting_smar_repair: "Autolackierung, Smart Repair",
+  transports_small_transports: "Transporte, Kleintransporte",
+  moving_moving_house: "Umzug, Wohnungswechsel",
+  final_cleaning_moving_cleaning: "Endreinigung, Umzugsreinigung",
+  cleaner_other_cleaning: "Reinigungskraft, sonstige Reinigung",
+  disposal_clearing_out: "Entsorgung, Entrümpelung",
+  telephone_Internet_Multimedia: "Telefon, Internet, Multimedia",
+  // sub categories
 };
 
 export default sw;

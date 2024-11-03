@@ -22,42 +22,44 @@ function SingleNews() {
     content = (
       <div className="p-5 bg-[#F5F8FA] border border-gray-200 rounded-md mt-5">
         <table>
-          <tr>
-            <td className="w-3/12 pr-10">
-              <h2 className="text-black text-base font-bold align-top">
-                {t("name_of_station")}
-              </h2>
-            </td>
-            <td>
-              <p className="text-black text-base font-normal align-top capitalize">
-                {nameOfStation}
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold align-top w-3/12">
-              {t("sender_email")}:
-            </td>
-            <td className="text-black text-base font-normal align-top">
-              {senderEmail}
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold align-top w-3/12">
-              {t("reference")}:
-            </td>
-            <td className="text-black text-base font-normal align-top">
-              {reference}
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold  align-top w-3/12">
-              {t("news")}:
-            </td>
-            <td className="text-black text-base font-normal align-top">
-              {news}
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="w-3/12 pr-10">
+                <h2 className="text-black text-base font-bold align-top">
+                  {t("name_of_station")}
+                </h2>
+              </td>
+              <td>
+                <p className="text-black text-base font-normal align-top capitalize">
+                  {nameOfStation}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold align-top w-3/12">
+                {t("sender_email")}:
+              </td>
+              <td className="text-black text-base font-normal align-top">
+                {senderEmail}
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold align-top w-3/12">
+                {t("reference")}:
+              </td>
+              <td className="text-black text-base font-normal align-top">
+                {reference}
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold  align-top w-3/12">
+                {t("news")}:
+              </td>
+              <td className="text-black text-base font-normal align-top">
+                {news}
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );

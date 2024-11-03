@@ -82,7 +82,7 @@ function SellerChangePassword() {
             </div>
             <button
               type="submit"
-              className="bg-[#ff730096] text-white font-normal rounded-md w-full hover:bg-[#F79359] text-md py-3 px-5 flex gap-2 justify-center"
+              className="bg-[#FFAA01] text-black font-bold rounded-md w-full text-md py-3 px-5 flex gap-2 justify-center"
             >
               {isLoading ? (
                 <>

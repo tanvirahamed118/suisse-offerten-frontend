@@ -129,7 +129,7 @@ function EmailBox({
             type="tel"
             placeholder={placeholder}
             className={
-              tel.length > 0
+              tel.length > 8
                 ? "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-num-not-valid"
                 : "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-num-valid"
             }

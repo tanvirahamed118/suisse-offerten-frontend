@@ -17,8 +17,10 @@ import jobTime from "../assets/images/about/time.svg";
 import Wishlist from "./Wishlist";
 import { useGetOneSellerQuery } from "../redux/rtk/features/auth/seller/authApi";
 import { useGetOneOfferByJobidQuery } from "../redux/rtk/features/offer/offerApi";
+import fetchCoordinates from "./maps/FetchCoordinates";
+import LocationMap from "./maps/Location-map";
 
-function SingleOfferMoving({ data, isLoading }) {
+function SingleOfferMoving({ data, isLoading, isSuccess }) {
   const { t } = useTranslation();
   const params = useParams();
   const id = params.id;
@@ -29,14 +31,15 @@ function SingleOfferMoving({ data, isLoading }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const clientAuth = localStorage.getItem("client");
   const sellerAuth = localStorage.getItem("seller");
-  const client = JSON.parse(clientAuth);
-  const seller = JSON.parse(sellerAuth);
+  const client = clientAuth ? JSON.parse(clientAuth) : null;
+  const seller = sellerAuth ? JSON.parse(sellerAuth) : null;
   const clientId = client?.client?._id;
   const sellerId = seller?.seller?._id;
+  const [coordinates, setCoordinates] = useState(null);
   const saverId = sellerId ? sellerId : clientId;
   const { data: sellerData } = useGetOneSellerQuery(sellerId);
   const { data: getData } = useGetOneOfferByJobidQuery({ id, sellerId });
-  const { credits } = sellerData || {};
+  const { credits: sellerCredit } = sellerData || {};
   const [active, setActive] = useState(false);
   const handleImageClick = (imageUrl) => {
     setSelectedImage(imageUrl);
@@ -44,7 +47,22 @@ function SingleOfferMoving({ data, isLoading }) {
   };
 
   const findSellerOffer = getData?.sellerId === sellerId ? true : false;
+
   const { offerPlaced } = getData || {};
+
+  const {
+    jobTitle,
+    jobUsername,
+    jobNumber,
+    jobFiles,
+    _id,
+    jobCompletionDate,
+    jobSiteVisitPossible,
+    jobLocation,
+    jobPostcode,
+    jobCategoryCode,
+    credits,
+  } = data || {};
 
   const handleClosePopup = () => {
     setIsPopupOpen(false);
@@ -75,16 +93,31 @@ function SingleOfferMoving({ data, isLoading }) {
     }
   };
 
+  useEffect(() => {
+    const getCoordinates = async () => {
+      try {
+        const coords = await fetchCoordinates(jobLocation, jobPostcode);
+        setCoordinates(coords);
+      } catch (error) {
+        console.error("Error fetching coordinates:", error);
+      }
+    };
+
+    if (isSuccess) {
+      getCoordinates();
+    }
+  }, [jobLocation, jobPostcode, isSuccess]);
+
   // decide what to render
   let content;
-  if (isLoading) {
+  if (!data || isLoading) {
     content = <SingleJobLoading />;
   }
   if (!isLoading && data) {
     content = (
       <div className="custom-shadow rounded-xl p-4 md:p-8">
         <h2 className="text-xl md:text-4xl font-bold text-black capitalize">
-          {data?.jobTitle}
+          {jobTitle}
         </h2>
         <div className="flex justify-between items-start md:items-center py-5 border-b border-gray-200 mb-5">
           <div className="flex flex-wrap gap-5 items-center">
@@ -95,26 +128,22 @@ function SingleOfferMoving({ data, isLoading }) {
               </h3>
             </span>
             <p className="text-[#0050b2] text-base font-normal">
-              {data?.jobUsername}
+              {jobUsername}
             </p>
             <p className="text-black text-base font-normal">
-              {t("order_number")}: {data?.jobNumber}
+              {t("order_number")}: {jobNumber}
             </p>
           </div>
           {seller?.sellerToken && (
-            <Wishlist
-              jobId={data?._id}
-              saverId={saverId}
-              setActive={setActive}
-            />
+            <Wishlist jobId={_id} saverId={saverId} setActive={setActive} />
           )}
         </div>
         <p className="text-base text-black font-normal">
           {data?.jobDescription}
         </p>
         <div className="flex flex-wrap gap-2 md:gap-5 py-5">
-          {data &&
-            data?.jobFiles?.map((item, index) => (
+          {Array.isArray(jobFiles) &&
+            jobFiles?.map((item, index) => (
               <img
                 key={index}
                 src={item}
@@ -148,57 +177,63 @@ function SingleOfferMoving({ data, isLoading }) {
             <span className="flex items-center gap-3">
               <img src={date} alt="" className="w-4" />
               <p className="text-black text-base font-normal">
-                {data?.jobCompletionDate}
+                {jobCompletionDate}
               </p>
             </span>
             <span className="flex items-center gap-3">
               <img src={search} alt="" className="w-4" />
               <p className="text-black text-base font-normal">
-                {data?.jobSiteVisitPossible === "yes"
+                {jobSiteVisitPossible === "yes"
                   ? "Visit possible"
                   : "Visit not possible"}
               </p>
             </span>
             <span className="flex items-center gap-3">
               <i className="fa-solid fa-location-dot text-[#999999]"></i>
-              <p className="text-black text-base font-normal capitalize">
-                {data?.jobPostcode + " " + data?.jobLocation}
+              <p className="text-[#0854B2] text-base font-bold capitalize">
+                {jobPostcode + " " + jobLocation}
               </p>
             </span>
+          </div>
+          {isSuccess && <LocationMap location={coordinates} />}
+          <div className="mt-5">
+            <p className="text-lg font-bold text-[#111111]">
+              {t("lead_price")} {credits} {t("credits")}:
+            </p>
           </div>
           <ConfirmOffer
             id={id}
             sellerId={seller?.seller?._id}
             sellerToken={seller?.sellerToken}
           />
-          <div className="flex md:flex-row flex-col w-full justify-start items-center py-5 gap-5">
+          <div className="flex md:flex-row flex-col w-full justify-center items-center py-5 gap-5">
             {seller && (
               <div className="relative group w-6/12">
-                <button disabled={credits === 0} className="w-full">
+                <button disabled={sellerCredit === 0} className="w-full">
                   {findSellerOffer ? (
                     <div
                       className={
                         findSellerOffer
-                          ? "bg-[#f5f8fa]  border border-gray-200 px-10 py-3 rounded-md text-black text-base font-normal text-center cursor-not-allowed w-full"
-                          : "bg-[#ff7100] px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900] w-full"
+                          ? "bg-[#f5f8fa]  border border-gray-200 px-10 py-4 rounded-lg text-black text-base font-normal text-center cursor-not-allowed w-full"
+                          : "bg-[#FFAA01] px-10 py-4 rounded-lg text-[#111111] text-base font-bold text-center hover:bg-[#ffaa01da] w-full"
                       }
                     >
                       <p>{t("already_join")}</p>
                     </div>
-                  ) : credits > 0 ? (
+                  ) : sellerCredit > 0 ? (
                     <Link
-                      to={`/search-job/send-bid/${data._id}`}
-                      className="bg-[#ff7100] px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900] block"
+                      to={`/search-job/send-bid/${_id}`}
+                      className="bg-[#FFAA01] px-10 py-4 rounded-lg text-[#111111] text-base font-bold text-center hover:bg-[#ffaa01da] block"
                     >
                       {t("participate_tender")}
                     </Link>
                   ) : (
-                    <div className="bg-[#f5f8fa] border border-gray-200 px-10 py-3 rounded-md text-black text-base font-normal text-center cursor-not-allowed block">
+                    <div className="bg-[#f5f8fa] border border-gray-200 px-10 py-4 rounded-lg text-black text-base font-normal text-center cursor-not-allowed block">
                       {t("participate_tender")}
                     </div>
                   )}
                 </button>
-                {credits === 0 && (
+                {sellerCredit === 0 && (
                   <div className="absolute w-full bottom-full mb-2 left-1/2 transform -translate-x-1/2 p-2 bg-[#F5F6F7] text-[#111] text-sm rounded-md opacity-0 transition-opacity duration-200 group-hover:opacity-100 flex gap-2">
                     <i className="fa-solid fa-circle-exclamation text-red-500 text-sm"></i>{" "}
                     {t("error_perticipation")}
@@ -208,18 +243,36 @@ function SingleOfferMoving({ data, isLoading }) {
             )}
             {seller && findSellerOffer ? (
               offerPlaced ? (
-                <div className="bg-[#f5f8fa] w-6/12 px-10 py-3 rounded-md text-black border border-gray-200 text-base font-normal text-center cursor-not-allowed">
+                <div className="bg-[#f5f8fa] w-6/12 px-10 py-4 rounded-lg text-black border border-gray-200 text-base font-normal text-center cursor-not-allowed">
                   {t("already_submited")}
                 </div>
               ) : (
                 <Link
                   to={`/search-job/prepard-bid/${data._id}`}
-                  className="bg-[#ff7100] w-6/12 px-10 py-3 rounded-md text-white text-base font-normal text-center hover:bg-[#F25900]"
+                  className="bg-[#FFAA01] w-6/12 px-10 py-4 rounded-lg text-[#111111] text-base font-bold text-center hover:bg-[#ffaa01da]"
                 >
                   {t("prepare_offer")}
                 </Link>
               )
             ) : null}
+          </div>
+          <div className="mt-5 flex flex-col gap-2">
+            <p className="text-lg font-bold text-[#111111]">
+              {t("limited_participation_offer")}
+            </p>
+            <p className="text-base font-normal text-[#111111]">
+              - {t("offer_note_one")}
+            </p>
+            <span className="">
+              <ul>
+                <li className="text-base font-normal text-[#111111]">
+                  - {t("offer_note_tow")}
+                </li>
+                <li className="text-base font-normal text-[#111111] pl-3">
+                  {t("offer_note_three")}
+                </li>
+              </ul>
+            </span>
           </div>
           <SellerOffer id={id} sellerId={seller?.seller?._id} />
         </div>
@@ -241,7 +294,7 @@ function SingleOfferMoving({ data, isLoading }) {
             <i className="fa-solid fa-angles-right text-xs text-black"></i>
           </li>
           <li>
-            <p className="text-base font-normal text-black">{data?.jobTitle}</p>
+            <p className="text-base font-normal text-black">{jobTitle}</p>
           </li>
         </ul>
         <div className="flex lg:flex-row flex-col gap-5 items-start ">
@@ -249,14 +302,14 @@ function SingleOfferMoving({ data, isLoading }) {
             <div>
               {content}
 
-              <div className="bg-[#fffadf] p-5 rounded-md my-5">
-                <p className="text-base font-normal text-black">
-                  {t("offer_short_except")}
-                </p>
+              <div className="my-10">
+                <ReletedJob category={jobCategoryCode} id={_id} />
+                {seller || client ? <Perticipation id={_id} /> : null}
+                <CommunicationTab
+                  id={data?._id}
+                  sellerId={seller?.seller?._id}
+                />
               </div>
-              <ReletedJob category={data?.jobCategoryCode} id={data?._id} />
-              {seller || client ? <Perticipation id={data?._id} /> : null}
-              <CommunicationTab id={data?._id} sellerId={seller?.seller?._id} />
             </div>
           </div>
           <div className="w-full lg:w-4/12 flex flex-col gap-5">
@@ -272,6 +325,7 @@ function SingleOfferMoving({ data, isLoading }) {
 SingleOfferMoving.propTypes = {
   data: PropTypes.object,
   isLoading: PropTypes.bool,
+  isSuccess: PropTypes.bool,
 };
 
 export default SingleOfferMoving;

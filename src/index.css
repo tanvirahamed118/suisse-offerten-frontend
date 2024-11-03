@@ -25,7 +25,7 @@ body {
   transition: 0.3s ease;
 }
 .custom-image {
-  background-image: url("./assets/images/home/banner.jpg");
+  background-image: url("./assets/Banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,6 +60,30 @@ body {
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: 4%;
+}
+.client-valid {
+  background-image: url("./assets/images/download.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 3%;
+}
+.client-not-valid {
+  background-image: url("./assets/images/check.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 3%;
+}
+.seller-valid {
+  background-image: url("./assets/images/download.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 3%;
+}
+.seller-not-valid {
+  background-image: url("./assets/images/check.svg");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: 3%;
 }
 .is-not-invalid {
   background-image: url("./assets/images/check.svg");

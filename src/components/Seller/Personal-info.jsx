@@ -27,6 +27,7 @@ function PersonalInfo() {
   const [showPassword, setShowPassword] = useState(false);
   const [tel, setTel] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
+  const [isHas, setIsHas] = useState(false);
   const [formData, setFormData] = useState({
     salutation: "",
     firstName: "",
@@ -50,6 +51,7 @@ function PersonalInfo() {
     email: "",
     username: "",
   });
+
   const {
     salutation,
     firstName,
@@ -73,29 +75,37 @@ function PersonalInfo() {
     password,
     phone,
   } = formData || {};
+
   const countries = [
     { name: "Austria", code: "+43", flag: AUST },
     { name: "Germany", code: "+49", flag: GER },
     { name: "France", code: "+33", flag: FRA },
     { name: "Switzerland", code: "+41", flag: SWIS },
   ];
+
   const handleCountrySelect = (country) => {
     setCountryCode(country.code);
     setPlaceholder(`${country.code} 444 444 444`);
     setIsShow(false);
+    setFormData((prevClient) => ({
+      ...prevClient,
+      phone: `${country.code}${tel}`,
+    }));
   };
+
   useEffect(() => {
     setFormData((prevClient) => ({
       ...prevClient,
       phone: countryCode + tel,
     }));
   }, [countryCode, tel]);
+
   const handleChange = (e) => {
     const { name, type, checked, value } = e.target;
 
     setFormData((prevClient) => ({
       ...prevClient,
-      [name]: type === "checkbox" ? checked : value, // Handle checkbox input correctly
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
@@ -128,6 +138,17 @@ function PersonalInfo() {
       }
     }
     updateSeller({ formData, id });
+  };
+
+  const handleCodeChange = (e) => {
+    const phoneNumber = e.target.value;
+    if (!countryCode) {
+      setIsHas(true);
+      return;
+    } else {
+      setIsHas(false);
+    }
+    setTel(phoneNumber);
   };
 
   return (
@@ -442,16 +463,21 @@ function PersonalInfo() {
                   type="tel"
                   placeholder={placeholder}
                   className={
-                    tel.length > 0
-                      ? "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-not-invalid"
-                      : "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 is-invalid"
+                    tel.length > 8
+                      ? "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 seller-not-valid"
+                      : "w-full border border-gray-200 px-2 pl-16 h-10 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 seller-valid"
                   }
-                  onChange={(e) => setTel(e.target.value)}
+                  onChange={handleCodeChange}
                   value={tel}
                 />
                 <p className="text-gray-500 text-sm font-normal pt-1">
                   {t("only_visible_select")}
                 </p>
+                {isHas ? (
+                  <p className="text-red-500 text-sm font-normal mt-3">
+                    {t("code_error")}
+                  </p>
+                ) : null}
               </span>
               <div
                 className="flex items-center gap-1 bg-white w-12 py-2 px-3 justify-center absolute top-[39px] left-1 cursor-pointer border-r border-gray-300"

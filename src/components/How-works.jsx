@@ -9,7 +9,7 @@ function HowWorks() {
   const sellerAuth = localStorage?.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   return (
-    <section className="bg-white py-20 border-b border-gray-400 mb-20">
+    <section className="bg-white py-20 mb-10">
       <div className="py-10 m-auto w-full xl:w-[1230px] flex flex-col gap-20 items-center">
         <h2 className="text-xl text-black font-bold text-center md:text-5xl">
           {t("how_works")}
