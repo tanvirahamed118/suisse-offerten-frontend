@@ -98,7 +98,6 @@ function FrenchForm() {
     setFormData,
     currentQuestion,
     handleNext,
-    formData,
     questions
   );
 

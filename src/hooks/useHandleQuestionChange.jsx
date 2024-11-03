@@ -6,7 +6,6 @@ const useQuestionChange = (
   setFormData,
   currentQuestion,
   handleNext,
-  formData,
   questions
 ) => {
   const dispatch = useDispatch();
@@ -63,7 +62,7 @@ const useQuestionChange = (
         if (state.id) {
           // Find the specific question and option by state.id
           const filteredData = questions
-            .find((item) => item.label === "main_services_categories")
+            ?.find((item) => item.label === "main_services_categories")
             ?.options.find((option) => option.id === state.id);
           if (filteredData) {
             updatedFormData.jobCategoryCode = filteredData.label || "";
@@ -73,19 +72,9 @@ const useQuestionChange = (
       });
 
       handleNext(id);
-      if (formData?.jobCategoryCode) {
-        dispatch(choseId(null));
-      }
+      dispatch(choseId(null));
     },
-    [
-      setFormData,
-      currentQuestion,
-      handleNext,
-      formData,
-      dispatch,
-      questions,
-      state,
-    ]
+    [setFormData, currentQuestion, handleNext, dispatch, questions, state]
   );
 
   return handleQuestionChange;

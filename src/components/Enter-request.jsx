@@ -98,7 +98,6 @@ function EnterRequest() {
     setFormData,
     currentQuestion,
     handleNext,
-    formData,
     questions
   );
 
