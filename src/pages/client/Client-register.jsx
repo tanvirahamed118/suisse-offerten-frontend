@@ -464,7 +464,7 @@ function ClientRegister() {
                     <p>{t("loading")}</p>
                   </>
                 ) : (
-                  t("register_now_for_free")
+                  t("register_now")
                 )}
               </button>
             </div>
