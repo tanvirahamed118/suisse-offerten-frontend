@@ -19,6 +19,7 @@ function CreditPaymentFail() {
       updatePaymentCredit(formData);
     }
   }, [pendingCredits, updatePaymentCredit, id]);
+
   return (
     <div className="w-full h-[500px] flex flex-col gap-5 justify-center items-center">
       <i className="fa-solid fa-circle-xmark text-[60px] text-red-500"></i>

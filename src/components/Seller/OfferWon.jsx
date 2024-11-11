@@ -162,7 +162,7 @@ function OfferWon() {
             <div className="flex flex-col gap-1 lg:items-end items-center">
               <Link
                 to={`/search-job/${jobId}`}
-                className="bg-white text-base py-3 w-60 rounded-md text-center text-black font-normal border border-gray-200 hover:border-gray-300"
+                className="bg-white text-base py-3 w-60 rounded-md text-center text-black font-bold border border-gray-200 hover:border-gray-300"
               >
                 {t("view_advertisement")}
               </Link>
@@ -171,8 +171,8 @@ function OfferWon() {
                 onClick={() => handleRequest(_id)}
                 className={
                   reviewRequest
-                    ? "text-black bg-gray-300 py-3 text-center w-60 rounded-md text-sm font-normal flex justify-center items-center gap-2"
-                    : "text-white bg-[#19be10] border border-[#19be10] py-3 text-center w-60 rounded-md text-sm font-normal hover:bg-[#16A60E] flex justify-center items-center gap-2"
+                    ? "text-black bg-gray-300 py-3 text-center w-60 rounded-md text-base font-bold flex justify-center items-center gap-2"
+                    : "text-black bg-[#FFAA00] border py-3 text-center w-60 rounded-md text-base font-bold flex justify-center items-center gap-2"
                 }
                 disabled={reviewRequest}
               >

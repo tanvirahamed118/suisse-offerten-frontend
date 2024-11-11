@@ -2,38 +2,38 @@ const foils = [
   {
     id: 364545179,
     type: "checkbox",
-    label: "What should be covered with foiling ?",
+    label: "Que faut-il recouvrir avec du papier d'aluminium ?",
     options: [
       {
         id: 368026323,
-        label: "car",
+        label: "Voiture",
       },
       {
-        label: "Kitchen",
+        label: "Cuisine",
         credit: 15,
       },
       {
-        label: "Shop window lettering",
+        label: "Lettrage de vitrine",
         credit: 10,
       },
       {
-        label: "Window / door glass film",
+        label: "Film pour vitres de portes et fenêtres",
         credit: 5,
       },
       {
         id: 679660316,
-        label: "Motorcycle / Scooter",
+        label: "Moto / Scooter",
       },
       {
         id: 301811620,
-        label: "Truck",
+        label: "Camion",
       },
       {
         id: 738723679,
-        label: "bus",
+        label: "Bus",
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 8,
       },
     ],
@@ -41,26 +41,26 @@ const foils = [
   {
     id: 368026323,
     type: "checkbox",
-    label: "What should be done  ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
         credit: 20,
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
         credit: 15,
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
         credit: 10,
       },
       {
-        label: "Label",
+        label: "Étiquette",
         credit: 10,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -68,26 +68,26 @@ const foils = [
   {
     id: 679660316,
     type: "checkbox",
-    label: "What should be done  ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
         credit: 20,
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
         credit: 15,
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
         credit: 10,
       },
       {
-        label: "Label",
+        label: "Étiquette",
         credit: 10,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -95,26 +95,26 @@ const foils = [
   {
     id: 301811620,
     type: "checkbox",
-    label: "What should be done  ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
         credit: 20,
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
         credit: 15,
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
         credit: 10,
       },
       {
-        label: "Label",
+        label: "Étiquette",
         credit: 10,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -122,26 +122,26 @@ const foils = [
   {
     id: 738723679,
     type: "checkbox",
-    label: "What should be done  ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
         credit: 20,
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
         credit: 15,
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
         credit: 10,
       },
       {
-        label: "Label",
+        label: "Étiquette",
         credit: 10,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],

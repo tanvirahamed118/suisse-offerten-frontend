@@ -190,7 +190,7 @@ function AddressPopup({ setIsShow, data, isShow }) {
               <div className="flex gap-3 items-center">
                 <button
                   type="submit"
-                  className="bg-[#ff7100] text-white font-normal rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
+                  className="bg-[#FFAA00] text-black font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
                 >
                   {" "}
                   {isLoading ? (

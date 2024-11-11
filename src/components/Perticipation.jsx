@@ -47,8 +47,8 @@ function Perticipation({ id }) {
       } = item.sellerData || {};
       const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
       return (
-        <div key={item._id} className="flex justify-between items-start">
-          <div className="flex md:flex-row flex-col gap-5 items-center">
+        <div key={item._id} className="flex justify-between items-center">
+          <div className="flex md:flex-row flex-col gap-5 items-start lg:items-center">
             <div>
               {companyLogo ? (
                 <img
@@ -62,7 +62,7 @@ function Perticipation({ id }) {
                 </p>
               )}
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col gap-2">
               <span className="flex gap-2 items-center">
                 <Link
                   to={`/seller-review-profile/${_id}`}
@@ -88,7 +88,7 @@ function Perticipation({ id }) {
                   )}
                 </span>
               </span>
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-3 items-center flex-wrap">
                 <span className="flex gap-2 items-center">
                   <i className="fa-solid fa-star text-[#feb40a] text-xl"></i>
                   <p className="text-base font-medium text-black">

@@ -10,7 +10,7 @@ function Home() {
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const token = seller?.sellerToken;
-  console.log(seller);
+
   return (
     <React.Fragment>
       <CallOfAction />

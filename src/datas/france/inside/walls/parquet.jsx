@@ -9,27 +9,27 @@ const parquet = [
   {
     id: 147450429,
     type: "checkbox",
-    label: "What kind of flooring work do you need ?",
+    label: "De quel type de travaux de revêtement de sol avez-vous besoin ?",
     options: [
       {
         id: 148083577,
-        label: "Embarrassed",
-        des: "Laying new wood floors, vinyl, carpet, etc.",
+        label: "Gênée",
+        des: "Pose de parquets neufs, vinyle, moquette, etc.",
       },
       {
         id: 647226157,
-        label: "Maintain",
-        des: "Sanding, sealing, oiling, cleaning, etc.",
+        label: "Maintenir",
+        des: "Ponçage, scellement, huilage, nettoyage, etc.",
       },
       {
         id: 374867792,
-        label: "Repair / adjust",
-        des: "Repair dents / scratches, repair water damage, trim carpet, etc.",
+        label: "Réparer / régler",
+        des: "Réparer les bosses/rayures, réparer les dégâts d'eau, tailler les tapis, etc.",
         credit: 10,
       },
       {
         id: 908792547,
-        label: "Other",
+        label: "Autre",
         credit: 8,
       },
     ],
@@ -37,7 +37,7 @@ const parquet = [
   {
     id: 148083577,
     type: "checkbox",
-    label: "What type of flooring should be laid ?",
+    label: "Quel type de revêtement de sol faut-il poser ?",
     options: what_type_should_be_laid(
       745644994,
       771636241,
@@ -51,49 +51,49 @@ const parquet = [
   {
     id: 745644994,
     type: "checkbox",
-    label: "Is the flooring already in place ?",
+    label: "Le revêtement de sol est-il déjà en place ?",
     options: is_the_flooring_already_in_place(685933575, 910471184),
   },
   {
     id: 771636241,
     type: "checkbox",
-    label: "Is the flooring already in place ?",
+    label: "Le revêtement de sol est-il déjà en place ?",
     options: is_the_flooring_already_in_place(685933575, 910471184),
   },
   {
     id: 505674779,
     type: "checkbox",
-    label: "Is the flooring already in place ?",
+    label: "Le revêtement de sol est-il déjà en place ?",
     options: is_the_flooring_already_in_place(685933575, 910471184),
   },
   {
     id: 155729722,
     type: "checkbox",
-    label: "Is the flooring already in place ?",
+    label: "Le revêtement de sol est-il déjà en place ?",
     options: is_the_flooring_already_in_place(685933575, 910471184),
   },
   {
     id: 627083597,
     type: "checkbox",
-    label: "Is the flooring already in place ?",
+    label: "Le revêtement de sol est-il déjà en place ?",
     options: is_the_flooring_already_in_place(685933575, 910471184),
   },
   {
     id: 252135875,
     type: "checkbox",
-    label: "Is the flooring already in place ?",
+    label: "Le revêtement de sol est-il déjà en place ?",
     options: is_the_flooring_already_in_place(685933575, 910471184),
   },
   {
     id: 274033257,
     type: "checkbox",
-    label: "Is the flooring already in place ?",
+    label: "Le revêtement de sol est-il déjà en place ?",
     options: is_the_flooring_already_in_place(685933575, 910471184),
   },
   {
     id: 685933575,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       614797205,
       119374264,
@@ -106,7 +106,7 @@ const parquet = [
   {
     id: 910471184,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       614797205,
       119374264,
@@ -120,64 +120,72 @@ const parquet = [
     id: 614797205,
     type: "inputNumber",
     mainId: 601072886,
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 119374264,
     type: "inputNumber",
     mainId: 601072886,
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 273307415,
     type: "inputNumber",
     mainId: 601072886,
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 656771972,
     type: "inputNumber",
     mainId: 601072886,
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 454792623,
     type: "inputNumber",
     mainId: 601072886,
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 317957200,
     type: "inputNumber",
     mainId: 601072886,
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 601072889,
     type: "checkbox",
-    label: "Should skirting boards also be installed ?",
+    label: "Faut-il également installer des plinthes ?",
     options: [
       {
-        label: "Yes, skirting boards should be installed in all rooms",
+        label:
+          "Oui, des plinthes doivent être installées dans toutes les pièces",
       },
       {
-        label: "Skirting boards are to be installed only in some of the rooms",
+        label:
+          "Les plinthes ne doivent être installées que dans certaines pièces",
       },
       {
-        label: "No, skirting boards are not required",
+        label: "Non, les plinthes ne sont pas nécessaires",
       },
     ],
   },
   {
     id: 647226157,
     type: "checkbox",
-    label: "What kind of service is needed ?",
+    label: "Quel type de service est nécessaire ?",
     options: [
       {
         id: 592344238,
@@ -185,15 +193,15 @@ const parquet = [
       },
       {
         id: 162668848,
-        label: "Solid wood",
+        label: "Bois massif",
       },
       {
         id: 418572376,
-        label: "Carpet",
+        label: "Tapis",
       },
 
       {
-        label: "Other",
+        label: "Autre",
         credit: 8,
       },
     ],
@@ -202,7 +210,7 @@ const parquet = [
   {
     id: 592344238,
     type: "checkbox",
-    label: "What kind of floor needs to be cared for ?",
+    label: "Quel type de sol faut-il entretenir ?",
     options: what_maintenance_work_is_required(
       786785618,
       362485650,
@@ -214,7 +222,7 @@ const parquet = [
   {
     id: 786785618,
     type: "checkbox",
-    label: "In how many rooms do you need the work to be done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -227,7 +235,7 @@ const parquet = [
   {
     id: 362485650,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -240,7 +248,7 @@ const parquet = [
   {
     id: 793550051,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -253,7 +261,7 @@ const parquet = [
   {
     id: 659741359,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -266,7 +274,7 @@ const parquet = [
   {
     id: 552234277,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -281,7 +289,7 @@ const parquet = [
   {
     id: 162668848,
     type: "checkbox",
-    label: "What kind of floor needs to be cared for ?",
+    label: "Quel type de sol faut-il entretenir ?",
     options: what_maintenance_work_is_required(
       786785618,
       362485650,
@@ -293,7 +301,7 @@ const parquet = [
   {
     id: 786785618,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -306,7 +314,7 @@ const parquet = [
   {
     id: 362485650,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -319,7 +327,7 @@ const parquet = [
   {
     id: 793550051,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -332,7 +340,7 @@ const parquet = [
   {
     id: 659741359,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -345,7 +353,7 @@ const parquet = [
   {
     id: 552234277,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -361,7 +369,7 @@ const parquet = [
   {
     id: 418572376,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       1952627539,
       2679416897,
@@ -374,43 +382,49 @@ const parquet = [
   {
     id: 1952627539,
     type: "inputNumber",
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 2679416897,
     type: "inputNumber",
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 6321692515,
     type: "inputNumber",
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 3968385664,
     type: "inputNumber",
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 9536568502,
     type: "inputNumber",
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 3148202811,
     type: "inputNumber",
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 362485650,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -423,7 +437,7 @@ const parquet = [
   {
     id: 793550051,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -436,7 +450,7 @@ const parquet = [
   {
     id: 659741359,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -449,7 +463,7 @@ const parquet = [
   {
     id: 552234277,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -460,11 +474,11 @@ const parquet = [
     ),
   },
   // carport
-  // other
+  // Autre
   {
     id: 348107495,
     type: "checkbox",
-    label: "What kind of floor needs to be cared for ?",
+    label: "Quel type de sol faut-il entretenir ?",
     options: what_maintenance_work_is_required(
       786785618,
       362485650,
@@ -476,7 +490,7 @@ const parquet = [
   {
     id: 786785618,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -489,7 +503,7 @@ const parquet = [
   {
     id: 362485650,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -502,7 +516,7 @@ const parquet = [
   {
     id: 793550051,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -515,7 +529,7 @@ const parquet = [
   {
     id: 659741359,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -528,7 +542,7 @@ const parquet = [
   {
     id: 552234277,
     type: "checkbox",
-    label: "In how many rooms do you need the work done ?",
+    label: "Dans combien de pièces souhaitez-vous effectuer des travaux ?",
     options: in_how_many_work_done(
       647726951,
       122085212,
@@ -538,32 +552,35 @@ const parquet = [
       308109075
     ),
   },
-  // other
+  // Autre
   {
     id: 647726951,
     type: "inputNumber",
     mainId: 601072886,
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
   {
     id: 601072886,
     type: "multibox",
-    label: "Characteristics of the installed floor",
+    label: "Caractéristiques du plancher installé",
     options: [
-      { label: "Damage (e.g. scratches, stains, discoloration)" },
-      { label: "Has been sanded in the past" },
-      { label: "Gaps between the individual elements" },
-      { label: "Missing elements" },
-      { label: "Wobbly or loose elements" },
-      { label: "Parquet has a high thickness" },
-      { label: "Uneven surface or raised sections of the flooring" },
+      { label: "Dommages (par exemple rayures, taches, décoloration)" },
+      { label: "A été poncé dans le passé" },
+      { label: "Écarts entre les éléments individuels" },
+      { label: "Éléments manquants" },
+      { label: "Éléments bancals ou lâches" },
+      { label: "Le parquet a une épaisseur élevée" },
+      {
+        label: "Surface irrégulière ou parties surélevées du revêtement de sol",
+      },
     ],
   },
   {
     id: 374867792,
     type: "checkbox",
-    label: "What kind of floor is it ?",
+    label: "De quel type de sol s'agit-il ?",
     options: what_type_should_be_laid(
       520684255,
       134165098,
@@ -577,8 +594,9 @@ const parquet = [
   {
     id: 520684255,
     type: "inputNumber",
-    label: "Approximately how large is the floor area required for the work ?",
-    options: [{ label: "Floor area in m²" }],
+    label:
+      "Quelle est approximativement la superficie de la surface au sol requise pour les travaux ?",
+    options: [{ label: "Surface habitable en m²" }],
   },
 ];
 

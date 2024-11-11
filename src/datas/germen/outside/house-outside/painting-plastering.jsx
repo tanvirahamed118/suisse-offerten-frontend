@@ -2883,6 +2883,10 @@ const paintingPlastering = [
       {
         label: "Groß (z.B. Einfamilienhaus, alle Innenwände streichen)",
       },
+      {
+        label:
+          "Sehr groß (z. B. komplette Fassadenbemalung von Mehrfamilienhäusern)",
+      },
     ],
   },
   // other

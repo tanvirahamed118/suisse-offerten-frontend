@@ -32,6 +32,7 @@ function StepButtons({
     firstname,
     lastname,
     phone,
+    jobCategoryId,
   } = formData || {};
 
   const client = localStorage.getItem("client");
@@ -66,6 +67,7 @@ function StepButtons({
       formDataToSend.append("firstname", firstname);
       formDataToSend.append("lastname", lastname);
       formDataToSend.append("phone", phone);
+      formDataToSend.append("jobCategoryId", jobCategoryId);
       jobFiles.forEach((file) => {
         formDataToSend.append("jobFiles", file);
       });

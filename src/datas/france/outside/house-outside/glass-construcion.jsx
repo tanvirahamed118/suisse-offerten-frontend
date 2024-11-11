@@ -378,9 +378,9 @@ const glassConstrucion = [
     label: "Où doit être installée la trappe pour animaux ?",
     options: [
       { id: 770964319, label: "Fenêtre" },
-      { label: "Porte" },
-      { label: "Mur" },
-      { label: "Autre part" },
+      { id: 942592026, label: "Porte" },
+      { id: 431772169, label: "Mur" },
+      { id: 794779735, label: "Autre part" },
     ],
   },
   // Fenêtre
@@ -393,18 +393,21 @@ const glassConstrucion = [
   {
     id: 230627422,
     type: "doubleInput",
+    mainId: 869431863,
     label: "De quel type de verre s'agit-il ?",
     options: [{ height: "Hauteur en cm", width: "Largeur en cm" }],
   },
   {
     id: 619966390,
     type: "doubleInput",
+    mainId: 869431863,
     label: "De quel type de verre s'agit-il ?",
     options: [{ height: "Hauteur en cm", width: "Largeur en cm" }],
   },
   {
     id: 992165658,
     type: "doubleInput",
+    mainId: 869431863,
     label: "De quel type de verre s'agit-il ?",
     options: [{ height: "Hauteur en cm", width: "Largeur en cm" }],
   },

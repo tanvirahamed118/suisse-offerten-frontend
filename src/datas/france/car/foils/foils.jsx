@@ -2,42 +2,42 @@ const foils = [
   {
     id: 842619002,
     type: "checkbox",
-    label: "What should be covered with foil ?",
+    label: "Que faut-il recouvrir de papier d'aluminium ?",
     options: [
       {
         id: 368026323,
-        label: "car",
+        label: "Voiture",
         credit: 5,
       },
       {
-        label: "Kitchen",
+        label: "Cuisine",
         credit: 5,
       },
       {
-        label: "Shop window lettering",
+        label: "Lettrage de vitrine",
         credit: 8,
       },
       {
-        label: "Window / door glass film",
+        label: "Film pour vitres de portes et fenêtres",
         credit: 10,
       },
       {
         id: 679660316,
-        label: "Motorcycle / Scooter",
+        label: "Moto / Scooter",
         credit: 4,
       },
       {
         id: 301811620,
-        label: "Truck",
+        label: "Camion",
         credit: 10,
       },
       {
         id: 738723679,
-        label: "bus",
+        label: "Bus",
         credit: 10,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -45,88 +45,88 @@ const foils = [
   {
     id: 368026323,
     type: "checkbox",
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
       },
       {
-        label: "Label",
+        label: "Étiquette",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 679660316,
     type: "checkbox",
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
       },
       {
-        label: "Label",
+        label: "Étiquette",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 301811620,
     type: "checkbox",
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
       },
       {
-        label: "Label",
+        label: "Étiquette",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 738723679,
     type: "checkbox",
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Complete foiling",
+        label: "Déjouage complet",
       },
       {
-        label: "Window tinting",
+        label: "Teinture de vitres",
       },
       {
-        label: "Only cover part of the foil",
+        label: "Couvrir seulement une partie de la feuille",
       },
       {
-        label: "Label",
+        label: "Étiquette",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },

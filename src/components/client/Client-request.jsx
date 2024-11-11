@@ -23,7 +23,7 @@ function ClientRequest() {
   });
 
   const [page, setPage] = useState(1);
-  const limit = 20;
+  const limit = 10;
   const email = client?.client?.email;
   const { data, isError, isLoading, isSuccess, error } =
     useGetAllJobsByClientQuery({ page, limit, email });
@@ -33,17 +33,11 @@ function ClientRequest() {
   const totalItems = data?.totalJobs || 0;
 
   function getTimeDifference(createdAt) {
-    // Convert the createdAt string to a Moment object
     const createdDate = moment(createdAt);
-    const now = moment(); // Current date and time as a Moment object
-
-    // Calculate the duration between the two dates
+    const now = moment();
     const duration = moment.duration(now.diff(createdDate));
-
-    // Extract days and hours from the duration
     const days = Math.floor(duration.asDays());
     const hours = duration.hours();
-
     return `${days} days ${hours} hours`;
   }
 
@@ -55,7 +49,6 @@ function ClientRequest() {
 
   // decide what to render
   let content;
-
   if (isLoading) {
     content = (
       <>
@@ -68,16 +61,26 @@ function ClientRequest() {
     );
   }
   if (isError) {
-    content = <p>{error}</p>;
+    content = (
+      <tr>
+        <td colSpan="4" className="text-center">
+          <p>{error}</p>
+        </td>
+      </tr>
+    );
   }
   if (!isLoading && !isError && data?.jobs?.length === 0) {
     content = (
-      <p className="text-black font-xl font-medium py-3 bg-white">
-        {t("not_create_job")},{" "}
-        <Link to="/enter-request" className="text-blue-400 hover:underline">
-          {t("create_new_job")}
-        </Link>
-      </p>
+      <tr>
+        <td>
+          <p className="text-black font-xl font-medium py-3 bg-white">
+            {t("not_create_job")},{" "}
+            <Link to="/enter-request" className="text-blue-400 hover:underline">
+              {t("create_new_job")}
+            </Link>
+          </p>
+        </td>
+      </tr>
     );
   }
   if (!isLoading && !isError && isSuccess && data?.jobs?.length > 0) {
@@ -165,7 +168,7 @@ function ClientRequest() {
           </tbody>
         </table>
       </div>
-      {totalItems > 20 && (
+      {totalItems > limit && (
         <Pagination
           handlePageChange={handlePageChange}
           page={page}

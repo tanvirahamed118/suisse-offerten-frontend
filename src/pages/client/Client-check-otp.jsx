@@ -9,21 +9,23 @@ function ClientCheckOTP() {
   const navigate = useNavigate();
   const [checkOTPClient, { data, isLoading, isError, isSuccess, error }] =
     useCheckOTPClientMutation();
-
   const [client, setClient] = useState({
     code: "",
   });
   const { code } = client || {};
+
   const handleChange = (e) => {
     setClient({
       ...client,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     checkOTPClient(client);
   };
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -38,6 +40,7 @@ function ClientCheckOTP() {
       }, 2000);
     }
   }, [isError, isSuccess, data, error, navigate]);
+
   return (
     <section>
       <div className="container">

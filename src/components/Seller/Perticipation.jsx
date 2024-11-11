@@ -15,11 +15,7 @@ function Perticipation() {
           {t("participation_contact_requests")}
         </h2>
         <PerticipationTab activeTab={activeTab} setActiveTab={setActiveTab} />
-
-        {/* <!-- All --> */}
         {activeTab === "all" && <AllPerticipation />}
-
-        {/* <!-- archived --> */}
         {activeTab === "reject" && <PerticipationArchived />}
       </div>
     </div>

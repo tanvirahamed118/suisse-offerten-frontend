@@ -374,9 +374,9 @@ const glassConstrucion = [
     label: "Wo soll die Tierklappe eingebaut werden ?",
     options: [
       { id: 770964319, label: "Fenster" },
-      { label: "Tür" },
-      { label: "Wand" },
-      { label: "Anderswo" },
+      { id: 942592026, label: "Tür" },
+      { id: 431772169, label: "Wand" },
+      { id: 794779735, label: "Anderswo" },
     ],
   },
   // window
@@ -389,18 +389,21 @@ const glassConstrucion = [
   {
     id: 230627422,
     type: "doubleInput",
+    mainId: 869431863,
     label: "Um was für ein Glas handelt es sich ?",
     options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
     id: 619966390,
     type: "doubleInput",
+    mainId: 869431863,
     label: "Um was für ein Glas handelt es sich ?",
     options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
     id: 992165658,
     type: "doubleInput",
+    mainId: 869431863,
     label: "Um was für ein Glas handelt es sich ?",
     options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
@@ -420,13 +423,13 @@ const glassConstrucion = [
     id: 363711932,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   {
     id: 511289464,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   // window
   // door
@@ -470,13 +473,13 @@ const glassConstrucion = [
     id: 363711932,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   {
     id: 511289464,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   // door
   // wall
@@ -520,13 +523,13 @@ const glassConstrucion = [
     id: 363711932,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   {
     id: 511289464,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   // wall
   // other
@@ -570,13 +573,13 @@ const glassConstrucion = [
     id: 363711932,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   {
     id: 511289464,
     type: "checkbox",
     label: "Für welches Tier ist die Tierklappe ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Andere" }],
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   // other
   // installation end

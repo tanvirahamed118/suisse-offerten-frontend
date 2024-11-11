@@ -44,11 +44,11 @@ function Proposal() {
               {jobTitle?.slice(0, 40)}
             </p>
           </div>
-          <div className="flex justify-between items-center">
-            <h2 className="text-black text-sm md:text-xl font-bold">
-              {jobTitle?.slice(0, 100)}
+          <div className="flex md:flex-row flex-col justify-between items-start gap-5 md:items-center">
+            <h2 className="text-black text-base md:text-xl font-bold">
+              {jobTitle?.slice(0, 80)}...
             </h2>
-            <h2 className="text-black text-sm md:text-xl font-bold">
+            <h2 className="text-black text-base md:text-xl font-bold">
               {t("order_number")}: {jobNumber}
             </h2>
           </div>

@@ -133,16 +133,16 @@ const excavationEartworks = [
     label: "Welche Punktfundamentarbeiten benötigen Sie ?",
     options: [
       {
-        label: "Aushubarbeiten für einen Pool",
+        label: "Gießen des Fundaments",
       },
       {
-        label: "Aushubarbeiten für ein weiteres Bauwerk",
+        label: "Ausheben der Erde für das Fundament",
       },
       {
-        label: "Entsorgung von Aushub",
+        label: "Aushub entsorgen",
       },
       {
-        label: "Andere",
+        label: "andere",
       },
     ],
   },
@@ -153,13 +153,16 @@ const excavationEartworks = [
       "Welche Bodenplatten- oder Streifenfundamentarbeiten benötigen Sie ?",
     options: [
       {
-        label: "Aushubarbeiten für einen Pool",
+        label: "Gießen des Fundaments",
       },
       {
-        label: "Aushubarbeiten für ein weiteres Bauwerk",
+        label: "Ausheben der Erde für das Fundament",
       },
       {
-        label: "Entsorgung von Aushub",
+        label: "Dämmung des Fundaments",
+      },
+      {
+        label: "Aushub entsorgen",
       },
       {
         label: "Andere",

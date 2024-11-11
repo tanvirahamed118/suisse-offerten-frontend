@@ -91,8 +91,8 @@ function BiddingForm() {
                 type="submit"
                 className={
                   validButton
-                    ? "bg-[#ff7100] text-white font-normal rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
-                    : "bg-[#747474] text-white font-normal rounded-md cursor-not-allowed text-md py-3 px-5 flex gap-2 items-center"
+                    ? "bg-[#FFAA00] text-black font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
+                    : "bg-[#747474] text-white font-bold rounded-md cursor-not-allowed text-md py-3 px-5 flex gap-2 items-center"
                 }
                 disabled={!validButton}
               >
@@ -120,16 +120,16 @@ function BiddingForm() {
               </button>
               <Link
                 to={`/search-job/prepard-bid/${id}`}
-                className="bg-[#3056a7] text-white font-normal rounded-md hover:bg-[#274789] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
+                className="bg-[#3056a7] text-white font-bold rounded-md hover:bg-[#274789] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
               >
                 {t("send_prepare_offer")}
               </Link>
             </div>
           </form>
           <div className="bg-[#f0f9fc] py-3 px-5 flex flex-col gap-2 rounded-sm">
-            <h2 className="text-sm font-bold text-black">
+            <h2 className="text-sm font-bold text-black flex gap-2 items-center">
               {t("lead_price")}:{" "}
-              <span className="text-[#ff7100] font-normal">
+              <span className="text-[#ff7100] font-bold text-xl">
                 {credits} credits
               </span>
             </h2>

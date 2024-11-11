@@ -7,6 +7,7 @@ import {
 } from "../../redux/rtk/features/auth/seller/authApi";
 import toast, { Toaster } from "react-hot-toast";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 function CompanyProfile() {
   const { t } = useTranslation();
@@ -31,14 +32,17 @@ function CompanyProfile() {
     updateSellerComany,
     { data: getData, isLoading, isSuccess, isError, error },
   ] = useUpdateSellerCompanyMutation();
+
   const handleImageClick = (imageUrl) => {
     setSelectedImage(imageUrl);
     setIsPopupOpen(true);
   };
+
   const handleClosePopup = () => {
     setIsPopupOpen(false);
     setSelectedImage(null);
   };
+
   const [formData, setFormData] = useState({
     companyDescription: "",
     companyTitle: "",
@@ -47,14 +51,16 @@ function CompanyProfile() {
     companyCover: null,
     companyPictures: [],
   });
+
   useEffect(() => {
     if (data) {
       setFormData({
         ...data,
-        companyInfo: data.companyInfo || [], // Ensure companyInfo is an array
+        companyInfo: data.companyInfo || [],
       });
     }
   }, [data]);
+
   const {
     companyDescription,
     companyTitle,
@@ -66,19 +72,16 @@ function CompanyProfile() {
 
   const handleChange = (e) => {
     const { name, checked } = e.target;
-
     if (name === "companyTitle") {
       setFormData((prevState) => ({
         ...prevState,
         [name]: e.target.value,
       }));
     } else {
-      // Toggle the companyInfo array based on the checkbox
       setFormData((prevState) => {
         const updatedCompanyInfo = checked
-          ? [...prevState.companyInfo, name] // Add item if checked
-          : prevState.companyInfo.filter((item) => item !== name); // Remove item if unchecked
-
+          ? [...prevState.companyInfo, name]
+          : prevState.companyInfo.filter((item) => item !== name);
         return {
           ...prevState,
           companyInfo: updatedCompanyInfo,
@@ -91,34 +94,32 @@ function CompanyProfile() {
     }));
   };
 
-  const handleDeletePictures = (item) => {
+  const handleDeletePictures = (item, role) => {
     const id = data?._id;
-    const url = { item };
+    const url = { item, role };
     if (item) {
       updateSellerPictures({ id, url });
     }
     setName(item);
   };
 
-  // Handle file input changes
   const handleFileChange = (e) => {
     const { name, files } = e.target;
-
     setFormData((prevState) => {
       if (name === "companyLogo") {
         return {
           ...prevState,
-          companyLogo: files[0], // Assuming single file upload
+          companyLogo: files[0],
         };
       } else if (name === "companyCover") {
         return {
           ...prevState,
-          companyCover: files[0], // Assuming single file upload
+          companyCover: files[0],
         };
       } else if (name === "companyPictures") {
         return {
           ...prevState,
-          companyPictures: Array.from(files), // Convert FileList to array
+          companyPictures: Array.from(files),
         };
       }
     });
@@ -126,15 +127,10 @@ function CompanyProfile() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const formData = new FormData();
     formData.append("companyDescription", companyDescription);
     formData.append("companyTitle", companyTitle);
-
-    // Append companyInfo array
     companyInfo.forEach((info) => formData.append("companyInfo[]", info));
-
-    // Append file inputs
     if (companyLogo) formData.append("companyLogo", companyLogo);
     if (companyCover) formData.append("companyCover", companyCover);
     companyPictures.forEach((picture) =>
@@ -142,7 +138,6 @@ function CompanyProfile() {
     );
     const id = _id;
     updateSellerComany({ formData, id });
-
     setFormData({
       companyDescription: "",
       companyTitle: "",
@@ -182,9 +177,12 @@ function CompanyProfile() {
         </h2>
         <p className="text-base text-black font-normal">
           {t("profile_des")}
-          <a href="" className="text-[#3097d1] hover:underline pl-2">
+          <Link
+            to={`/seller-review-profile/${_id}`}
+            className="text-[#3097d1] hover:underline pl-2"
+          >
             {t("view")}
-          </a>
+          </Link>
         </p>
       </div>
       <form
@@ -220,6 +218,62 @@ function CompanyProfile() {
             onChange={handleFileChange}
           />
         </div>
+        {data?.companyLogo && (
+          <div>
+            <div className="flex flex-wrap gap-5 py-5">
+              <div className="relative w-24 h-24">
+                <img
+                  src={companyLogo}
+                  alt=""
+                  className="absolute w-full object-cover"
+                  onClick={() => handleImageClick(companyLogo)}
+                />
+                <p
+                  onClick={() => handleDeletePictures(companyLogo, "logo")}
+                  className="absolute top-[-10px] left-[-10px] p-1 w-5 h-5 text-[10px] text-white bg-black rounded-full cursor-pointer text-center"
+                >
+                  {delLoading && name === companyLogo ? (
+                    <>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="w-3 h-3 animate-spin"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                        />
+                      </svg>
+                    </>
+                  ) : (
+                    "X"
+                  )}
+                </p>
+              </div>
+            </div>
+            {companyLogo && isPopupOpen && selectedImage && (
+              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+                <div className="relative w-10/12 xl:w-auto">
+                  <img
+                    src={selectedImage}
+                    alt="Full Size"
+                    className="w-full xl:w-[700px] h-auto rounded-md"
+                  />
+                  <button
+                    onClick={handleClosePopup}
+                    className="absolute top-[-10px] right-[-10px] p-1 w-10 h-10 text-white bg-black rounded-full"
+                  >
+                    ✕
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
         <div className="flex flex-col w-full gap-5">
           <label className="text-base font-bold text-black" htmlFor="">
             {t("cover_photo")}
@@ -234,6 +288,62 @@ function CompanyProfile() {
             onChange={handleFileChange}
           />
         </div>
+        {data?.companyCover && (
+          <div>
+            <div className="flex flex-wrap gap-5 py-5">
+              <div className="relative w-24 h-24">
+                <img
+                  src={companyCover}
+                  alt=""
+                  className="absolute w-full object-cover"
+                  onClick={() => handleImageClick(companyCover)}
+                />
+                <p
+                  onClick={() => handleDeletePictures(companyCover, "cover")}
+                  className="absolute top-[-10px] left-[-10px] p-1 w-5 h-5 text-[10px] text-white bg-black rounded-full cursor-pointer text-center"
+                >
+                  {delLoading && name === companyCover ? (
+                    <>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.5"
+                        stroke="currentColor"
+                        className="w-3 h-3 animate-spin"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                        />
+                      </svg>
+                    </>
+                  ) : (
+                    "X"
+                  )}
+                </p>
+              </div>
+            </div>
+            {companyCover && isPopupOpen && selectedImage && (
+              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
+                <div className="relative w-10/12 xl:w-auto">
+                  <img
+                    src={selectedImage}
+                    alt="Full Size"
+                    className="w-full xl:w-[700px] h-auto rounded-md"
+                  />
+                  <button
+                    onClick={handleClosePopup}
+                    className="absolute top-[-10px] right-[-10px] p-1 w-10 h-10 text-white bg-black rounded-full"
+                  >
+                    ✕
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
         <div className="flex flex-col w-full gap-1">
           <label htmlFor="" className="text-base font-bold text-black">
             {t("picture")}
@@ -245,7 +355,6 @@ function CompanyProfile() {
             type="file"
             name="companyPictures"
             id="companyPictures"
-            required
             multiple
             accept=".jpg, .jpeg, .png"
             className="border border-gray-200 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 md:px-4 w-full"
@@ -264,7 +373,7 @@ function CompanyProfile() {
                     onClick={() => handleImageClick(item)}
                   />
                   <p
-                    onClick={() => handleDeletePictures(item)}
+                    onClick={() => handleDeletePictures(item, "group")}
                     className="absolute top-[-10px] left-[-10px] p-1 w-5 h-5 text-[10px] text-white bg-black rounded-full cursor-pointer text-center"
                   >
                     {delLoading && name === item ? (
@@ -338,7 +447,7 @@ function CompanyProfile() {
                       name={item}
                       id={item}
                       className="mt-1.5"
-                      checked={companyInfo.includes(item)} // Check if item is in companyInfo array
+                      checked={companyInfo.includes(item)}
                       onChange={handleChange}
                     />
                     <label
@@ -355,7 +464,7 @@ function CompanyProfile() {
           <div>
             <button
               type="submit"
-              className="bg-[#f25900] hover:bg-[#cc5a00] py-2 px-16 rounded-md text-white text-base font-normal flex gap-2 items-center"
+              className="bg-[#FFAA00] py-2 px-16 rounded-md text-black text-base font-bold flex gap-2 items-center"
             >
               {isLoading ? (
                 <>

@@ -17,27 +17,27 @@ const carCat = [
     options: [
       {
         id: 897336554,
-        label: "Car repair, car service",
+        label: "Réparation de voiture, entretien de voiture",
         img: carRepairImg,
       },
       {
         id: 741892374,
-        label: "Motorcycle, Vespa, Scooter",
+        label: "Moto, Vespa, Scooter",
         img: motorcycleImg,
       },
       {
         id: 842619002,
-        label: "Foils, labels",
+        label: "Feuilles, étiquettes",
         img: foilsImg,
       },
       {
         id: 347333606,
-        label: "Car painting, Smart Repair",
+        label: "Peinture automobile, Smart Repair",
         img: carPaintingImg,
       },
       {
         id: 659664297,
-        label: "Transports, small transports",
+        label: "Les transports, les petits transports",
         img: transportImg,
       },
     ],

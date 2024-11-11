@@ -134,16 +134,16 @@ const excavationEartworks = [
     label: "De quels travaux de fondation avez-vous besoin ?",
     options: [
       {
-        label: "Excavation pour une piscine",
+        label: "couler les fondations",
       },
       {
-        label: "Excavation pour une autre structure",
+        label: "creuser la terre pour la fondation",
       },
       {
-        label: "Élimination des terres excavées",
+        label: "éliminer les terres excavées",
       },
       {
-        label: "Autre",
+        label: "autre",
       },
     ],
   },
@@ -154,16 +154,19 @@ const excavationEartworks = [
       "De quels travaux de dalle ou de fondation filante avez-vous besoin ?",
     options: [
       {
-        label: "Excavation pour une piscine",
+        label: "couler les fondations",
       },
       {
-        label: "Excavation pour une autre structure",
+        label: "creuser la terre pour la fondation",
       },
       {
-        label: "Élimination des terres excavées",
+        label: "isoler les fondations",
       },
       {
-        label: "Autre",
+        label: "éliminer les terres excavées",
+      },
+      {
+        label: "autre",
       },
     ],
   },

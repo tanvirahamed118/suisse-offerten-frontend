@@ -11,14 +11,12 @@ const useQuestionChange = (
   const dispatch = useDispatch();
   const state = useSelector((state) => state.choseId);
   const handleQuestionChange = useCallback(
-    (key, value, id, credit) => {
+    (key, value, id, credit, code) => {
       const keyname = key?.split(" ")?.join("_");
 
       setFormData((prevFormData) => {
         const updatedFormData = { ...prevFormData };
-
         if (key === "files") {
-          // Handle file upload
           updatedFormData.jobFiles = [...prevFormData.jobFiles, ...value];
         } else if (currentQuestion.label === "main_services_categories") {
           const updatevalue = value
@@ -26,6 +24,7 @@ const useQuestionChange = (
             .filter(Boolean)
             .join("_");
           updatedFormData.jobCategoryCode = updatevalue;
+          updatedFormData.jobCategoryId = code;
           if (value === "Moving, moving house") {
             const updatevalue = value
               .split(/\s*[,.&\s]+\s*/g)
@@ -41,7 +40,6 @@ const useQuestionChange = (
         } else if (currentQuestion.type === "selectbox") {
           updatedFormData.jobCompletionDate = value;
         } else if (currentQuestion.type === "radio") {
-          // Handle radio type question
           const updatevalue = value
             .split(/\s*[,.\s]+\s*/g)
             .filter(Boolean)
@@ -60,7 +58,6 @@ const useQuestionChange = (
           updatedFormData.credits = credit;
         }
         if (state.id) {
-          // Find the specific question and option by state.id
           const filteredData = questions
             ?.find((item) => item.label === "main_services_categories")
             ?.options.find((option) => option.id === state.id);

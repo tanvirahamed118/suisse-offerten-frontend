@@ -2,28 +2,28 @@ const electrician = [
   {
     id: 255079093,
     type: "checkbox",
-    label: "What services should be provided ?",
+    label: "Quels services devraient être fournis ?",
     options: [
       {
         id: 227970460,
-        label: "Installing/removing lamps",
-        des: "Lamps, ceiling lights, spots, etc.",
+        label: "Installation/retrait des lampes",
+        des: "Lampes, plafonniers, spots, etc.",
       },
       {
         id: 258158087,
-        label: "Electrical installations in general",
-        des: "Pulling in power cables, repairing light switches, moving sockets, etc.",
+        label: "Installations électriques en général",
+        des: "Tirer des câbles électriques, réparer des interrupteurs, déplacer des prises, etc.",
         credit: 20,
       },
       {
         id: 664443419,
-        label: "Set up Internet/TV/telephone",
-        des: "Connect to the Internet, lay fiber optic cables, replace Ethernet cables, etc.",
+        label: "Configurer Internet/TV/téléphone",
+        des: "Se connecter à Internet, poser des câbles à fibre optique, remplacer des câbles Ethernet, etc.",
         credit: 10,
       },
       {
         id: 236255198,
-        label: "Other",
+        label: "Autre",
         credit: 7,
       },
     ],
@@ -31,26 +31,26 @@ const electrician = [
   {
     id: 227970460,
     type: "checkbox",
-    label: "How many lamps need to be installed/removed ?",
+    label: "Combien de lampes faut-il installer/retirer ?",
     options: [
       {
         id: 448069443,
-        label: "1 to 3",
+        label: "1 à 3",
         credit: 5,
       },
       {
         id: 900518800,
-        label: "4 to 6",
+        label: "4 à 6",
         credit: 8,
       },
       {
         id: 669375973,
-        label: "7 to 9",
+        label: "7 à 9",
         credit: 13,
       },
       {
         id: 504909168,
-        label: "10 or more",
+        label: "10 ou plus",
         credit: 18,
       },
     ],
@@ -59,10 +59,10 @@ const electrician = [
     id: 448069443,
     type: "inputBox",
     mainId: 482438246,
-    label: "What is the heigt of the ceiling ?",
+    label: "Quelle est la hauteur du plafond ?",
     options: [
       {
-        label: "meter",
+        label: "mètre",
       },
     ],
   },
@@ -70,10 +70,10 @@ const electrician = [
     id: 900518800,
     type: "inputBox",
     mainId: 482438246,
-    label: "How high is the ceiling ?",
+    label: "Quelle est la hauteur du plafond ?",
     options: [
       {
-        label: "meter",
+        label: "mètre",
       },
     ],
   },
@@ -81,10 +81,10 @@ const electrician = [
     id: 669375973,
     type: "inputBox",
     mainId: 482438246,
-    label: "How high is the ceiling ?",
+    label: "Quelle est la hauteur du plafond ?",
     options: [
       {
-        label: "meter",
+        label: "mètre",
       },
     ],
   },
@@ -92,10 +92,10 @@ const electrician = [
     id: 504909168,
     type: "inputBox",
     mainId: 482438246,
-    label: "How high is the ceiling ?",
+    label: "Quelle est la hauteur du plafond ?",
     options: [
       {
-        label: "meter",
+        label: "mètre",
       },
     ],
   },
@@ -103,25 +103,25 @@ const electrician = [
     id: 482438246,
     type: "multibox",
     mainId: 521184054,
-    label: "What type of lamp is it ?",
+    label: "De quel type de lampe s'agit-il ?",
     options: [
-      { label: "Ceiling lamp" },
-      { label: "Wall light" },
-      { label: "Spotlights" },
-      { label: "Hanging lamp" },
-      { label: "chandelier" },
-      { label: "Floor lamp" },
-      { label: "Other" },
+      { label: "Lampe de plafond" },
+      { label: "Applique murale" },
+      { label: "Pleins feux" },
+      { label: "Lampe suspendue" },
+      { label: "Lustre" },
+      { label: "Lampadaire" },
+      { label: "Autre" },
     ],
   },
   {
     id: 521184054,
     type: "inputBox",
     label:
-      "In which year was the electrical installation installed in your house/apartment ?",
+      "En quelle année l'installation électrique a-t-elle été installée dans votre maison/appartement ?",
     options: [
       {
-        label: "input",
+        label: "saisir",
       },
     ],
   },
@@ -129,31 +129,31 @@ const electrician = [
     id: 258158087,
     type: "multibox",
     mainId: 801489988,
-    label: "What work exactly do you need ?",
+    label: "De quel travail avez-vous besoin exactement ?",
     options: [
       {
-        label: "Light switch",
+        label: "Interrupteur d'éclairage",
       },
-      { label: "Power outlet" },
-      { label: "Cable" },
-      { label: "Distributor" },
-      { label: "Other" },
+      { label: "Prise de courant" },
+      { label: "Câble" },
+      { label: "Distributrice" },
+      { label: "Autre" },
     ],
   },
   {
     id: 801489988,
     type: "checkbox",
-    label: "Do you want proof of safety at work ?",
+    label: "Voulez-vous une preuve de sécurité au travail ?",
     headline:
-      "A safety certificate certifies that the electrical installation complies with the requirements of the Low Voltage Installation Ordinance NIV Articles 3 and 4. The owner is responsible for having the safety certificate and keeping it up to date.",
+      "Un certificat de sécurité certifie que l'installation électrique est conforme aux exigences des articles 3 et 4 de l'ordonnance sur les installations à basse tension NIV. Le propriétaire est responsable de la possession du certificat de sécurité et de sa mise à jour.",
     options: [
       {
         id: 249091099,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 683520304,
-        label: "No",
+        label: "Non",
       },
     ],
   },
@@ -161,7 +161,7 @@ const electrician = [
     id: 249091099,
     type: "inputBox",
     label:
-      "In which year was the electrical installation installed in your house/apartment ?",
+      "En quelle année l'installation électrique a-t-elle été installée dans votre maison/appartement ?",
     options: [
       {
         label: "",
@@ -172,7 +172,7 @@ const electrician = [
     id: 683520304,
     type: "inputBox",
     label:
-      "In which year was the electrical installation installed in your house/apartment ?",
+      "En quelle année l'installation électrique a-t-elle été installée dans votre maison/appartement ?",
     options: [
       {
         label: "",
@@ -182,11 +182,11 @@ const electrician = [
   {
     id: 664443419,
     type: "checkbox",
-    label: "What work exactly do you need ?",
+    label: "De quel travail avez-vous besoin exactement ?",
     options: [
       {
         id: 279386903,
-        label: "Set up Internet or change Internet provider",
+        label: "Configurer Internet ou changer de fournisseur Internet",
       },
       {
         id: 513030561,
@@ -194,14 +194,14 @@ const electrician = [
       },
       {
         id: 451266050,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 279386903,
     type: "checkbox",
-    label: "Which provider are you switching to ?",
+    label: "Vers quel fournisseur allez-vous changer ?",
     options: [
       {
         id: 709365061,
@@ -261,7 +261,7 @@ const electrician = [
       },
       {
         id: 545733669,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -269,10 +269,10 @@ const electrician = [
     id: 709365061,
     type: "datebox",
     mainId: 793568090,
-    label: "On what date and at what time will the Internet be activated ?",
+    label: "A quelle date et à quelle heure Internet sera activé ?",
     options: [
       {
-        label: "input",
+        label: "saisir",
       },
     ],
   },
@@ -281,10 +281,10 @@ const electrician = [
     id: 793568090,
     type: "inputBox",
     mainId: 110857851,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
-        label: "input",
+        label: "saisir",
       },
     ],
   },
@@ -293,7 +293,7 @@ const electrician = [
     id: 830552512,
     type: "inputBox",
     mainId: 916413474,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -304,7 +304,7 @@ const electrician = [
     id: 528353797,
     type: "inputBox",
     mainId: 963002516,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -315,7 +315,7 @@ const electrician = [
     id: 182466259,
     type: "inputBox",
     mainId: 773423423,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -326,7 +326,7 @@ const electrician = [
     id: 845830979,
     type: "inputBox",
     mainId: 831515365,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -337,7 +337,7 @@ const electrician = [
     id: 457976675,
     type: "inputBox",
     mainId: 192110839,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -348,7 +348,7 @@ const electrician = [
     id: 460518748,
     type: "inputBox",
     mainId: 624915575,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -359,7 +359,7 @@ const electrician = [
     id: 313765898,
     type: "inputBox",
     mainId: 178694068,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -370,7 +370,7 @@ const electrician = [
     id: 451722020,
     type: "inputBox",
     mainId: 619942697,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -381,7 +381,7 @@ const electrician = [
     id: 775656622,
     type: "inputBox",
     mainId: 867192152,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -392,7 +392,7 @@ const electrician = [
     id: 374469056,
     type: "inputBox",
     mainId: 907636913,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -403,7 +403,7 @@ const electrician = [
     id: 748888770,
     type: "inputBox",
     mainId: 364814151,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -414,7 +414,7 @@ const electrician = [
     id: 573674877,
     type: "inputBox",
     mainId: 326025855,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -425,7 +425,7 @@ const electrician = [
     id: 584292744,
     type: "inputBox",
     mainId: 331559268,
-    label: "What is the terminal number ?",
+    label: "Quel est le numéro du terminal ?",
     options: [
       {
         label: "",
@@ -435,224 +435,224 @@ const electrician = [
   {
     id: 110857851,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 916413474,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 963002516,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 773423423,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 831515365,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 192110839,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 624915575,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 178694068,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 619942697,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 867192152,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 907636913,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 364814151,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 326025855,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },
   {
     id: 331559268,
     type: "checkbox",
-    label: "What kind of connection is it ?",
+    label: "De quel type de connexion s'agit-il ?",
     options: [
       {
-        label: "Copper connection",
+        label: "Connexion en cuivre",
       },
       {
-        label: "Fiber optic connection",
+        label: "Connexion fibre optique",
       },
       {
-        label: "not specified",
+        label: "Non spécifié",
       },
     ],
   },

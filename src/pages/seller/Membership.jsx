@@ -12,7 +12,6 @@ function Membership() {
   const { data, isLoading, isError, error } = useGetAllMembershipQuery();
   const [load, setLoad] = useState(null);
   const navigate = useNavigate();
-
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const id = seller?.seller?._id;
@@ -111,7 +110,7 @@ function Membership() {
           <div className="my-5 flex justify-center">
             <button
               onClick={() => handlePayment(item)}
-              className="bg-[#111111] text-white font-normal rounded-md text-md py-3 hover:scale-105 transition-all duration-[350ms] ease-[cubic-bezier(0,0,0.2,1)] delay-[2ms] w-full flex gap-2 justify-center"
+              className="bg-[#FFAA00] text-black font-bold rounded-md text-md py-3 hover:scale-105 transition-all duration-[350ms] ease-[cubic-bezier(0,0,0.2,1)] delay-[2ms] w-full flex gap-2 justify-center"
             >
               {load === _id && createLoading ? (
                 <>

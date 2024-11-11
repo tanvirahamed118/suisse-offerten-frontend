@@ -53,8 +53,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -66,28 +65,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -96,8 +95,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -109,28 +107,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -139,8 +137,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -152,28 +149,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -182,8 +179,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -195,28 +191,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -224,8 +220,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -237,28 +232,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 250 to
@@ -282,8 +277,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -295,28 +289,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -325,8 +319,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -338,28 +331,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -368,8 +361,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -381,28 +373,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -411,8 +403,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -424,28 +415,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -453,8 +444,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -466,28 +456,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 1 technical rooms end
@@ -509,8 +499,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -522,28 +511,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -552,8 +541,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -565,28 +553,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -595,8 +583,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -608,28 +595,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -638,8 +625,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -651,28 +637,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -680,8 +666,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -693,28 +678,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 2 technical rooms end
@@ -737,8 +722,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -750,28 +734,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -780,8 +764,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -793,28 +776,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -823,8 +806,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -836,28 +818,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -866,8 +848,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -879,28 +860,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -908,8 +889,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -921,28 +901,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 3 technical rooms end
@@ -964,8 +944,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -977,28 +956,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -1007,8 +986,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1020,28 +998,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -1050,8 +1028,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1063,28 +1040,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -1093,8 +1070,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1106,28 +1082,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -1135,8 +1111,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1148,28 +1123,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 4 technical rooms end
@@ -1209,8 +1184,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1222,28 +1196,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -1252,8 +1226,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1265,28 +1238,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -1295,8 +1268,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1308,28 +1280,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -1338,8 +1310,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1351,28 +1322,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -1380,8 +1351,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1393,28 +1363,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 250 to
@@ -1438,8 +1408,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1451,28 +1420,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -1481,8 +1450,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1494,28 +1462,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -1524,8 +1492,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1537,28 +1504,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -1567,8 +1534,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1580,28 +1546,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -1609,8 +1575,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1622,28 +1587,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 1 technical rooms end
@@ -1665,8 +1630,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1678,28 +1642,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -1708,8 +1672,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1721,28 +1684,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -1751,8 +1714,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1764,28 +1726,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -1794,8 +1756,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1807,28 +1768,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -1836,8 +1797,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1849,28 +1809,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 2 technical rooms end
@@ -1893,8 +1853,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1906,28 +1865,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -1936,8 +1895,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1949,28 +1907,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -1979,8 +1937,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -1992,28 +1949,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -2022,8 +1979,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2035,28 +1991,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -2064,8 +2020,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2077,28 +2032,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 3 technical rooms end
@@ -2120,8 +2075,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2133,28 +2087,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -2163,8 +2117,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2176,28 +2129,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -2206,8 +2159,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2219,28 +2171,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -2249,8 +2201,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2262,28 +2213,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -2291,8 +2242,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2304,28 +2254,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 4 technical rooms end
@@ -2365,8 +2315,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2378,28 +2327,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -2408,8 +2357,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2421,28 +2369,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -2451,8 +2399,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2464,28 +2411,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -2494,8 +2441,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2507,28 +2453,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -2536,8 +2482,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2549,28 +2494,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 250 to
@@ -2594,8 +2539,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2607,28 +2551,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -2637,8 +2581,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2650,28 +2593,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -2680,8 +2623,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2693,28 +2635,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -2723,8 +2665,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2736,28 +2677,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -2765,8 +2706,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2778,28 +2718,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 1 technical rooms end
@@ -2821,8 +2761,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2834,28 +2773,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -2864,8 +2803,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2877,28 +2815,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -2907,8 +2845,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2920,28 +2857,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -2950,8 +2887,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -2963,28 +2899,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -2992,8 +2928,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3005,28 +2940,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 2 technical rooms end
@@ -3049,8 +2984,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3062,28 +2996,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -3092,8 +3026,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3105,28 +3038,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -3135,8 +3068,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3148,28 +3080,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -3178,8 +3110,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3191,28 +3122,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -3220,8 +3151,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3233,28 +3163,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 3 technical rooms end
@@ -3276,8 +3206,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3289,28 +3218,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -3319,8 +3248,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3332,28 +3260,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -3362,8 +3290,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3375,28 +3302,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -3405,8 +3332,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3418,28 +3344,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -3447,8 +3373,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3460,28 +3385,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 4 technical rooms end
@@ -3521,8 +3446,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3534,28 +3458,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -3564,8 +3488,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3577,28 +3500,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -3607,8 +3530,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3620,28 +3542,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -3650,8 +3572,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3663,28 +3584,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -3692,8 +3613,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3705,28 +3625,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 250 to
@@ -3750,8 +3670,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3763,28 +3682,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -3793,8 +3712,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3806,28 +3724,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -3836,8 +3754,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3849,28 +3766,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -3879,8 +3796,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3892,28 +3808,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -3921,8 +3837,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3934,28 +3849,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 1 technical rooms end
@@ -3977,8 +3892,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -3990,28 +3904,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -4020,8 +3934,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4033,28 +3946,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -4063,8 +3976,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4076,28 +3988,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -4106,8 +4018,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4119,28 +4030,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -4148,8 +4059,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4161,28 +4071,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 2 technical rooms end
@@ -4205,8 +4115,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4218,28 +4127,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -4248,8 +4157,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4261,28 +4169,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -4291,8 +4199,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4304,28 +4211,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -4334,8 +4241,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4347,28 +4253,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -4376,8 +4282,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4389,28 +4294,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 3 technical rooms end
@@ -4432,8 +4337,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4445,28 +4349,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -4475,8 +4379,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4488,28 +4391,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -4518,8 +4421,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4531,28 +4433,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -4561,8 +4463,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4574,28 +4475,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -4603,8 +4504,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4616,28 +4516,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 4 technical rooms end
@@ -4677,8 +4577,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4690,28 +4589,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -4720,8 +4619,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4733,28 +4631,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -4763,8 +4661,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4776,28 +4673,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -4806,8 +4703,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4819,28 +4715,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -4848,8 +4744,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4861,28 +4756,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 250 to
@@ -4906,8 +4801,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4919,28 +4813,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -4949,8 +4843,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -4962,28 +4855,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -4992,8 +4885,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5005,28 +4897,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -5035,8 +4927,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5048,28 +4939,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -5077,8 +4968,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5090,28 +4980,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 1 technical rooms end
@@ -5133,8 +5023,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5146,28 +5035,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -5176,8 +5065,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5189,28 +5077,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -5219,8 +5107,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5232,28 +5119,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -5262,8 +5149,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5275,28 +5161,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -5304,8 +5190,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5317,28 +5202,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 2 technical rooms end
@@ -5361,8 +5246,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5374,28 +5258,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -5404,8 +5288,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5417,28 +5300,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -5447,8 +5330,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5460,28 +5342,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -5490,8 +5372,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5503,28 +5384,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -5532,8 +5413,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5545,28 +5425,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 3 technical rooms end
@@ -5588,8 +5468,7 @@ const towkitchens = [
   {
     id: 943529651,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5601,28 +5480,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   //   no end
@@ -5631,8 +5510,7 @@ const towkitchens = [
   {
     id: 760858854,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5644,28 +5522,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // up to 14
@@ -5674,8 +5552,7 @@ const towkitchens = [
   {
     id: 829545168,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5687,28 +5564,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 15 to
@@ -5717,8 +5594,7 @@ const towkitchens = [
   {
     id: 631927590,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5730,28 +5606,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   // 100 to
@@ -5759,8 +5635,7 @@ const towkitchens = [
   {
     id: 692562990,
     type: "checkbox",
-    label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+    label: "Quel est approximativement votre budget pour ce projet ?",
     options: approximately_how_much_budget_for_this_project(
       303424821,
       774189114,
@@ -5772,28 +5647,28 @@ const towkitchens = [
     id: 303424821,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 774189114,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 180670951,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
   {
     id: 886830737,
     type: "checkbox",
     label:
-      "Combien de locaux techniques (chaufferie, buanderie, etc.) sont concernés ?",
+      "Avez-vous déjà effectué une demande de permis de construire auprès de votre commune ?",
     options: have_you_already_contacted,
   },
 ];

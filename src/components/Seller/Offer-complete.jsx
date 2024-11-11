@@ -35,14 +35,17 @@ function OfferComplete() {
       error: archiveError,
     },
   ] = useOfferArchiveRequestMutation();
+
   const handleArchive = (id) => {
     offerArchiveRequest(id);
     setLoad(id);
   };
+
   const totalItems = data?.totalOffers || 0;
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
+
   useEffect(() => {
     if (archivetSuccess) {
       toast.success(archiveData?.message);
@@ -53,9 +56,9 @@ function OfferComplete() {
   }, [archiveError, archiveisError, archivetSuccess, archiveData]);
 
   const filterData = data?.offers?.filter((item) => !item.offerArchived);
+
   // decide what to show for jobs
   let content;
-
   if (isLoading) {
     content = (
       <>
@@ -136,7 +139,7 @@ function OfferComplete() {
               <div className="flex flex-col gap-1 lg:items-end items-center">
                 <Link
                   to={`/search-job/${jobId}`}
-                  className="bg-white text-base py-3 w-60 rounded-md text-center text-black font-normal border border-gray-200 hover:border-gray-300"
+                  className="bg-white text-base py-3 w-60 rounded-md text-center text-black font-bold border border-gray-200 hover:border-gray-300"
                 >
                   {t("view_advertisement")}
                 </Link>

@@ -6,9 +6,9 @@ function Pagination({ handlePageChange, page, totalItems, itemsPerPage }) {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
   return (
-    <div className="flex gap-2 flex-wrap">
+    <div className="flex gap-2 flex-wrap pt-8">
       <button
-        className="border border-gray-300 py-1 px-5 rounded-md text-[#3097D1] text-base font-normal hover:bg-[#D4DBE0]"
+        className="bg-gray-400 text-white font-bold rounded-md hover:bg-gray-500 text-base py-3 px-5"
         onClick={() => handlePageChange(page - 1)}
         disabled={page === 1}
       >
@@ -17,18 +17,19 @@ function Pagination({ handlePageChange, page, totalItems, itemsPerPage }) {
       {[...Array(totalPages).keys()].map((index) => (
         <button
           key={index}
-          className={`border border-gray-300 py-1 px-3 rounded-md text-[#3097D1] text-base font-normal hover:bg-[#D4DBE0] ${
-            page === index + 1 ? "bg-[#D4DBE0]" : ""
+          className={`border border-gray-300 py-2 px-5 text-center rounded-md text-[#111] text-base font-bold ${
+            page === index + 1 ? "bg-[#FFAA00] font-bold" : ""
           }`}
           onClick={() => handlePageChange(index + 1)}
         >
           {index + 1}
         </button>
       ))}
+
       <button
-        className="border border-gray-300 py-1 px-5 rounded-md text-[#3097D1] text-base font-normal hover:bg-[#D4DBE0]"
+        className="bg-gray-400 text-white font-bold rounded-md hover:bg-gray-500 text-base py-3 px-5"
         onClick={() => handlePageChange(page + 1)}
-        disabled={page === 1} // Example: disable if no more pages
+        disabled={page === totalPages || page * itemsPerPage >= totalItems}
       >
         {t("next")}
       </button>

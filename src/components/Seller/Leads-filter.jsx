@@ -23,6 +23,12 @@ function LeadsFilter({ setSortCriteria, sortCriteria, setJobNumber }) {
   const handleBidSortToggle = () => {
     setSortCriteria((prev) => (prev === "bid" ? "none" : "bid"));
   };
+  const filterValue = (value) => {
+    return value
+      ?.split(/\s*[,.&\s]+\s*/g)
+      .filter(Boolean)
+      .join("_");
+  };
   return (
     <div className="flex flex-col gap-5">
       <form
@@ -45,28 +51,34 @@ function LeadsFilter({ setSortCriteria, sortCriteria, setJobNumber }) {
           {t("seek")}
         </button>
       </form>
-      <div className="flex gap-5 w-full items-center md:w-8/12">
+      <div className="flex md:flex-row flex-col gap-5 w-full items-center md:w-8/12">
         <select
           name=""
           id=""
-          className="md:w-full border border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
+          className="w-full border border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
           onChange={(e) => dispatch(choseCategory(e.target.value))}
           defaultValue=""
         >
           <option value="">{t("select_option")}</option>
-          <option value="Inside">Inside</option>
-          <option value="Outside">Outside</option>
-          <option value="Planning & Consulting">Planning & Consulting</option>
-          <option value="Car/Vehicles">Car/Vehicles</option>
-          <option value="Moving, moving house">Moving, moving house</option>
-          <option value="Cleaning">Cleaning</option>
-          <option value="Transport & Disposal">Transport & Disposal</option>
-          <option value="Other">Other</option>
+          <option value={t("inside")}>{t("inside")}</option>
+          <option value={t("outside")}>{t("outside")}</option>
+          <option value={filterValue(t("planning_consulting"))}>
+            {t("planning_consulting")}
+          </option>
+          <option value={t("car_vehicles")}>{t("car_vehicles")}</option>
+          <option value={filterValue(t("moving_moving_house"))}>
+            {t("moving_moving_house")}
+          </option>
+          <option value={filterValue(t("cleaning"))}>{t("cleaning")}</option>
+          <option value={filterValue(t("transport_disposal"))}>
+            {t("transport_disposal")}
+          </option>
+          <option value={filterValue(t("other"))}>{t("other")}</option>
         </select>
         <select
           name=""
           id=""
-          className="border md:w-full border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
+          className="border w-full border-gray-200 py-2 px-3 rounded-md outline-[#C3DEED] focus:outline outline-4 text-base text-black font-normal"
           onChange={(e) => dispatch(choseLocation(e.target.value))}
           defaultValue=""
         >

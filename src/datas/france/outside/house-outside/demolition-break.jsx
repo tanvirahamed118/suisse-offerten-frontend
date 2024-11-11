@@ -39,7 +39,7 @@ const demolitionBreak = [
   {
     id: 548050480,
     type: "checkbox",
-    label: "Y a-t-il des marchandises dangereuses ?",
+    label: "Faut-il également le supprimer ?",
     options: [
       {
         id: 487163933,

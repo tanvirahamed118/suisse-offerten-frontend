@@ -2882,6 +2882,10 @@ const paintingPlastering = [
       {
         label: "Large (e.g. single-family house, paint all interior walls)",
       },
+      {
+        label:
+          "Très grand (par exemple peindre entièrement les façades d'immeubles d'habitation)",
+      },
     ],
   },
   // Autre

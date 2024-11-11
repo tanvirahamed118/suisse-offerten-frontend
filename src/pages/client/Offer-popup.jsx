@@ -118,8 +118,8 @@ function OfferPopup({ setIsShow, data, id, isShow }) {
               disabled={result?.offerRequested}
               className={
                 !result?.offerRequested
-                  ? "bg-[#ff7100] w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2"
-                  : "bg-gray-300 w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
+                  ? "bg-[#FFAA00] w-full md:w-60 px-10 py-3 rounded-md justify-center text-black text-base font-bold text-center flex items-center gap-2"
+                  : "bg-gray-300 w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
               }
             >
               {isLoading ? (

@@ -15,16 +15,19 @@ function SellerChangePassword() {
     password: "",
   });
   const { email, password } = seller || {};
+
   const handleChange = (e) => {
     setSeller({
       ...seller,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     changeOTPSeller(seller);
   };
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -36,10 +39,11 @@ function SellerChangePassword() {
         password: "",
       });
       setTimeout(() => {
-        navigate("/seller-dashboard");
+        navigate("/auth-login");
       }, 2000);
     }
   }, [isError, isSuccess, data, error, navigate]);
+
   return (
     <section>
       <div className="container">

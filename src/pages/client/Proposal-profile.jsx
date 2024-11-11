@@ -35,7 +35,7 @@ function ProposalProfile() {
     <section>
       <div className="container py-10">
         <div className="w-full">
-          <div className="pr-5 w-full">
+          <div className="w-full">
             <ul>
               <li className="text-sm font-normal text-[#7f7f7f]">
                 <i className="fa-solid fa-angles-left"></i>
@@ -94,7 +94,7 @@ function ProposalProfile() {
             <div className="flex flex-col gap-2">
               <span className="flex gap-2 items-center">
                 <i className="fa-solid fa-location-dot"></i>
-                <p className="text-black text-base font-medium">
+                <p className="text-black text-sm capitalize md:text-base font-medium">
                   {t("from")} -{" "}
                   {streetNo
                     ? streetNo + " " + postalCode + " - " + location

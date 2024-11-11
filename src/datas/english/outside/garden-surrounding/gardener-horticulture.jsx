@@ -9,7 +9,6 @@ import {
   how_big_the_tree_tow,
   input,
   How_large_is_to_be_covered,
-  approximately_how_many_meters_fence_is_it,
 } from "../../reuse-data";
 
 const gardenerHorteulture = [
@@ -318,7 +317,104 @@ const gardenerHorteulture = [
     id: 1087358787,
     type: "checkbox",
     label: "Approximately how many meters of fence is it ?",
-    options: approximately_how_many_meters_fence_is_it,
+    options: [
+      {
+        id: 3109247811,
+        label: "Up to 9 m",
+        credit: 8,
+      },
+      {
+        id: 1774524662,
+        label: "10 to 24 m",
+        credit: 13,
+      },
+      {
+        id: 9082473900,
+        label: "25 to 34 m",
+        credit: 18,
+      },
+      {
+        id: 8152952950,
+        label: "35 m or more",
+        credit: 25,
+      },
+    ],
+  },
+  {
+    id: 3109247811,
+    type: "checkbox",
+    label: "How many gates need to be installed ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 or more",
+        credit: 18,
+      },
+    ],
+  },
+  {
+    id: 1774524662,
+    type: "checkbox",
+    label: "How many gates need to be installed ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 or more",
+        credit: 18,
+      },
+    ],
+  },
+  {
+    id: 9082473900,
+    type: "checkbox",
+    label: "How many gates need to be installed ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 or more",
+        credit: 18,
+      },
+    ],
+  },
+  {
+    id: 8152952950,
+    type: "checkbox",
+    label: "How many gates need to be installed ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 or more",
+        credit: 18,
+      },
+    ],
   },
   // Garden design
 

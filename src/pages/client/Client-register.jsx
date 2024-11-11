@@ -50,6 +50,7 @@ function ClientRegister() {
     { name: "France", code: "+33", flag: FRA },
     { name: "Switzerland", code: "+41", flag: SWIS },
   ];
+
   const handleCodeChange = (e) => {
     const phoneNumber = e.target.value;
     if (!countryCode) {
@@ -60,21 +61,24 @@ function ClientRegister() {
     }
     setTel(phoneNumber);
   };
+
   const handleCountrySelect = (country) => {
     setCountryCode(country.code);
     setPlaceholder(`${country.code} 444 444 444`);
     setIsShow(false);
     setClient((prevClient) => ({
       ...prevClient,
-      phone: `${country.code}${tel}`, // Update formData to include the new country code
+      phone: `${country.code}${tel}`,
     }));
   };
+
   useEffect(() => {
     setClient((prevClient) => ({
       ...prevClient,
       phone: countryCode + tel,
     }));
   }, [countryCode, tel]);
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setClient({
@@ -82,6 +86,7 @@ function ClientRegister() {
       [name]: type === "checkbox" ? checked : value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (phone?.length <= 11) {
@@ -90,12 +95,12 @@ function ClientRegister() {
     }
     if (password.length >= 6) {
       registerClient({ client });
-
       setTel("");
     } else {
       toast.error("Please use more then 6 character");
     }
   };
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -119,6 +124,7 @@ function ClientRegister() {
       navigate("/verify-email");
     }
   }, [isError, isSuccess, data, error, navigate]);
+
   return (
     <section>
       <div className="container pb-10 ">

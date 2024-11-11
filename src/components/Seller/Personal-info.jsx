@@ -3,12 +3,13 @@ import {
   useGetOneSellerQuery,
   useUpdateSellerMutation,
 } from "../../redux/rtk/features/auth/seller/authApi";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import SWIS from "../../assets/images/register/swis.png";
 import AUST from "../../assets/images/register/austria.png";
 import GER from "../../assets/images/register/germany.png";
 import FRA from "../../assets/images/register/france.png";
 import toast, { Toaster } from "react-hot-toast";
+import UpdatePassword from "./Update-password";
 
 function PersonalInfo() {
   const { t } = useTranslation();
@@ -16,7 +17,6 @@ function PersonalInfo() {
   const seller = JSON.parse(sellerAuth);
   const id = seller?.seller?._id;
   const { data } = useGetOneSellerQuery(id);
-  const [toastShown, setToastShown] = useState(false);
   const [
     updateSeller,
     { data: updateData, isLoading, isError, isSuccess, error },
@@ -24,9 +24,7 @@ function PersonalInfo() {
   const [countryCode, setCountryCode] = useState("");
   const [placeholder, setPlaceholder] = useState("+41 123 45 64");
   const [isShow, setIsShow] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
   const [tel, setTel] = useState("");
-  const [confirmPass, setConfirmPass] = useState("");
   const [isHas, setIsHas] = useState(false);
   const [formData, setFormData] = useState({
     salutation: "",
@@ -46,8 +44,7 @@ function PersonalInfo() {
     location: "",
     phone: "",
     secondPhone: "",
-    password: "",
-    newsletter: "",
+    newsletter: false,
     email: "",
     username: "",
   });
@@ -72,16 +69,17 @@ function PersonalInfo() {
     newsletter,
     email,
     username,
-    password,
-    phone,
   } = formData || {};
 
-  const countries = [
-    { name: "Austria", code: "+43", flag: AUST },
-    { name: "Germany", code: "+49", flag: GER },
-    { name: "France", code: "+33", flag: FRA },
-    { name: "Switzerland", code: "+41", flag: SWIS },
-  ];
+  const countries = useMemo(
+    () => [
+      { name: "Austria", code: "+43", flag: AUST },
+      { name: "Germany", code: "+49", flag: GER },
+      { name: "France", code: "+33", flag: FRA },
+      { name: "Switzerland", code: "+41", flag: SWIS },
+    ],
+    []
+  );
 
   const handleCountrySelect = (country) => {
     setCountryCode(country.code);
@@ -102,7 +100,6 @@ function PersonalInfo() {
 
   const handleChange = (e) => {
     const { name, type, checked, value } = e.target;
-
     setFormData((prevClient) => ({
       ...prevClient,
       [name]: type === "checkbox" ? checked : value,
@@ -115,28 +112,28 @@ function PersonalInfo() {
         ...prevClient,
         ...data,
       }));
+      const phone = data?.phone || "";
+      const initialCode = phone.slice(0, 3);
+      const matchedCountry = countries.find(
+        (country) => country.code === initialCode
+      );
+      setCountryCode(matchedCountry ? matchedCountry.code : "+41");
+      setTel(phone.replace(initialCode, ""));
+      setFormData((prev) => ({ ...prev, phone }));
     }
+  }, [data, countries]);
+
+  useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
-      setToastShown(false);
     }
-    if (isSuccess && !toastShown) {
+    if (isSuccess) {
       toast.success(updateData?.message);
-      setToastShown(true);
     }
-  }, [data, updateData, isError, isSuccess, error, toastShown]);
+  }, [updateData, isError, isSuccess, error]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password) {
-      if (password !== confirmPass) {
-        toast.error("Password not match!");
-      } else if (password.length >= 6) {
-        setTel("");
-      } else {
-        toast.error("Please use more then 6 character");
-      }
-    }
     updateSeller({ formData, id });
   };
 
@@ -149,6 +146,10 @@ function PersonalInfo() {
       setIsHas(false);
     }
     setTel(phoneNumber);
+    setFormData((prevClient) => ({
+      ...prevClient,
+      phone: countryCode + phoneNumber,
+    }));
   };
 
   return (
@@ -456,7 +457,7 @@ function PersonalInfo() {
             </p>
             <div className="relative flex flex-col gap-2">
               <label htmlFor="" className="text-black text-base font-normal">
-                {t("telephone_number")}: ({phone})
+                {t("telephone_number")}:
               </label>
               <span>
                 <input
@@ -574,45 +575,6 @@ function PersonalInfo() {
                 {t("can_not_able")}
               </p>
             </div>
-            <div>
-              <label htmlFor="" className="text-black text-base font-normal">
-                {t("password")} ({t("optional")})
-              </label>
-              <span className="relative">
-                <input
-                  type={showPassword ? "text" : "password"}
-                  name="password"
-                  onChange={handleChange}
-                  className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
-                />
-                <i
-                  onClick={() => setShowPassword(!showPassword)}
-                  className={
-                    showPassword
-                      ? "fa-solid fa-eye absolute right-0 top-[-8px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-2 py-2.5 cursor-pointer"
-                      : "fa-solid fa-eye-slash absolute right-0 top-[-8px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-2 py-2.5 cursor-pointer"
-                  }
-                ></i>
-              </span>
-              <p className="text-gray-500 text-sm font-normal pt-1">
-                {t("password_conditon")}
-              </p>
-            </div>
-            <div>
-              <label htmlFor="" className="text-black text-base font-normal">
-                {t("Confirm_password")} ({t("optional")})
-              </label>
-              <input
-                type="password"
-                name="confirmPass"
-                onChange={(e) => setConfirmPass(e.target.value)}
-                className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
-                value={confirmPass}
-              />
-              <p className="text-gray-500 text-sm font-normal pt-1">
-                {t("password_conditon")}
-              </p>
-            </div>
           </div>
 
           <div className="flex flex-col gap-2">
@@ -635,7 +597,7 @@ function PersonalInfo() {
           </div>
           <button
             type="submit"
-            className="bg-[#ff7100] text-white font-normal w-full md:w-96 rounded-md hover:bg-[#F25900] text-md py-3 px-5 mt-5 flex gap-2 items-center justify-center"
+            className="bg-[#FFAA00] text-black font-bold w-full md:w-96 rounded-md text-md py-3 px-5 mt-5 flex gap-2 items-center justify-center capitalize"
           >
             {isLoading ? (
               <>
@@ -661,6 +623,7 @@ function PersonalInfo() {
           </button>
         </form>
       </div>
+      <UpdatePassword id={id} />
       <Toaster />
     </div>
   );

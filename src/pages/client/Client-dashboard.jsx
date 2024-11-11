@@ -20,12 +20,11 @@ function ClientDashboard() {
       <div className="container py-10">
         <div className="flex gap-5 lg:flex-row flex-col items-start">
           <div className="w-full lg:w-[30%]">
-            <ul className="flex flex-col gap-3 border border-gray-200 p-3">
+            <ul className="flex flex-col gap-3 border border-gray-200 p-5 rounded-xl">
               <li className="flex gap-2">
-                <i className="fa fa-file-alt fa-fw"></i>
                 <Link
                   to="/client-dashboard"
-                  className="text-black text-base font-normal hover:underline flex gap-1"
+                  className="text-black text-base font-bold hover:underline flex gap-1"
                 >
                   {t("requests")}
                   {filterData?.length > 0 && (
@@ -36,10 +35,9 @@ function ClientDashboard() {
                 </Link>
               </li>
               <li className="flex gap-2">
-                <i className="fa fa-star fa-fw"></i>
                 <Link
                   to="/client-dashboard/review"
-                  className="text-black text-base font-normal hover:underline flex gap-1"
+                  className="text-black text-base font-bold hover:underline flex gap-1"
                 >
                   {t("reviews")}
                   {filterreview?.length > 0 && (
@@ -50,10 +48,9 @@ function ClientDashboard() {
                 </Link>
               </li>
               <li className="flex gap-2">
-                <i className="fa fa-user fa-fw"></i>
                 <Link
                   to="/client-dashboard/profile"
-                  className="text-black text-base font-normal hover:underline"
+                  className="text-black text-base font-bold hover:underline"
                 >
                   {t("personal_information")}
                 </Link>

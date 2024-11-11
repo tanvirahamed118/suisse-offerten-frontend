@@ -15,14 +15,12 @@ function SellerNews() {
     limit,
   });
   const totalItems = data?.totalNews || 0;
-
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
 
   // decide what to show for jobs
   let content;
-
   if (isLoading) {
     content = (
       <>

@@ -19,32 +19,32 @@ const bathroomCat = [
     options: [
       {
         id: 243131485,
-        label: "Plumbing work",
+        label: "Travaux de plomberie",
         img: plumbingImg,
       },
       {
         id: 603134044,
-        label: "Slabs, tiles, slabs",
+        label: "Dalles, tuiles, dalles",
         img: slabsImg,
       },
       {
         id: 683493762,
-        label: "Bathroom renovations",
+        label: "Rénovations de salle de bain",
         img: bathroomImg,
       },
       {
         id: 348659292,
-        label: "Kitchen construction",
+        label: "Construction de cuisine",
         img: kitchenImg,
       },
       {
         id: 698157120,
-        label: "Carpenter, furniture, interior design",
+        label: "Menuisier, ameublement, décoration intérieure",
         img: carpenterImg,
       },
       {
         id: 364545179,
-        label: "Foils, labels",
+        label: "Feuilles, étiquettes",
         img: foilsImg,
       },
     ],

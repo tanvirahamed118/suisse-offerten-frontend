@@ -30,6 +30,7 @@ function Observer() {
       isLoading: deleteLoading,
     },
   ] = useDeleteWishlistMutation();
+
   useEffect(() => {
     if (deleteIsError) {
       toast.error(deleteError?.data?.message);
@@ -38,9 +39,11 @@ function Observer() {
       toast.success(deleteData?.message);
     }
   }, [deleteData, deleteSuccess, deleteIsError, deleteError]);
+
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
+
   const totalItems = data?.totalWishlists || 0;
 
   const handleRemove = (id) => {

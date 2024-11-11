@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Verify from "../assets/images/home/1-fe9230c82558b63f1f91.png";
-import Review from "../assets/images/home/2-57898db736a3a502dff8.png";
-import Offer from "../assets/images/home/3-c8ff5dd90ef09a1d6f8b.png";
+import Verify from "../assets/images/home/Question1.png";
+import Review from "../assets/images/home/Question2.png";
+import Offer from "../assets/images/home/Question3.png";
 import { useTranslation } from "react-i18next";
 
 function Advantage() {
@@ -12,16 +12,18 @@ function Advantage() {
   return (
     <section>
       <div className="bg-[#E9E9E9]">
-        <div className="md:w-full rounded-md bg-white py-20 flex justify-center">
-          <iframe
-            width="700"
-            height="400"
-            src="https://www.youtube.com/embed/yhaF89p3e-U?si=gNP7IA7-3ycITTUw"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+        <div className="w-full rounded-md bg-white py-20 flex justify-center">
+          <div className="lg:w-5/12 w-11/12 h-[300px] lg:h-[400px]">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/yhaF89p3e-U?si=gNP7IA7-3ycITTUw"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
         <div className="py-10 m-auto w-full xl:w-[1230px] flex flex-col gap-10 items-center">
           <h2 className="text-xl text-black font-bold text-center md:text-5xl">
@@ -30,7 +32,7 @@ function Advantage() {
           <div className="flex flex-col items-center px-2 mt-14 md:flex-row gap-10">
             <div className="flex flex-col gap-2 items-center">
               <a href="">
-                <img src={Verify} alt="" className="w-40" />
+                <img src={Verify} alt="" className="w-24" />
               </a>
               <h2 className="text-xl font-bold text-black text-center capitalize">
                 {t("reason_title_1")}
@@ -41,7 +43,7 @@ function Advantage() {
             </div>
             <div className="flex flex-col gap-2 items-center">
               <a href="">
-                <img src={Review} alt="" className="w-40" />
+                <img src={Review} alt="" className="w-24" />
               </a>
               <h2 className="text-xl font-bold text-black text-center capitalize">
                 {t("reason_title_2")}
@@ -52,7 +54,7 @@ function Advantage() {
             </div>
             <div className="flex flex-col gap-2 items-center">
               <a href="">
-                <img src={Offer} alt="" className="w-40" />
+                <img src={Offer} alt="" className="w-24" />
               </a>
               <h2 className="text-xl font-bold text-black text-center capitalize">
                 {t("reason_title_3")}

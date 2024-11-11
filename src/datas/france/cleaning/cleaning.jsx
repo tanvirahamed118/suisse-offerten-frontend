@@ -11,12 +11,12 @@ const cleaningCat = [
     options: [
       {
         id: 344685934,
-        label: "Final cleaning, moving cleaning",
+        label: "Nettoyage final, nettoyage de déménagement",
         img: cleaningImg,
       },
       {
         id: 638284007,
-        label: "Cleaner, other cleaning",
+        label: "Nettoyeur, autre nettoyage",
         img: cleanerImg,
       },
     ],

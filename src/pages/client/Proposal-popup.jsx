@@ -110,54 +110,56 @@ function ProposalPopup({ setIsShow, sellerId, isShow, jobId }) {
 
         <div className="flex flex-col gap-1">
           <table className="min-w-full border-collapse">
-            <tr className="bg-gray-200 ">
-              <th className="border border-gray-300 text-left px-4 py-2 w-52">
-                {t("offer_creator_name")}
-              </th>
-              <td className="border border-gray-300 text-left px-4 py-2 text-red-500 font-bold text-xl capitalize">
-                {username}
-              </td>
-            </tr>
-            <tr>
-              <th className="border border-gray-300 text-left px-4 py-2">
-                {t("job_title")}
-              </th>
-              <td className="border border-gray-300 text-left px-4 py-2">
-                {jobTitle}
-              </td>
-            </tr>
-            <tr className="bg-gray-200">
-              <th className="border border-gray-300 text-left px-4 py-2">
-                {t("job_number")}
-              </th>
-              <td className="border border-gray-300 text-left px-4 py-2">
-                {jobNumber}
-              </td>
-            </tr>
-            <tr>
-              <th className="border border-gray-300 text-left px-4 py-2">
-                {t("offer_unit")}
-              </th>
-              <td className="border border-gray-300 text-left px-4 py-2">
-                {priceUnit}
-              </td>
-            </tr>
-            <tr className="bg-gray-200">
-              <th className="border border-gray-300 text-left px-4 py-2">
-                {t("offer_price")}
-              </th>
-              <td className="border border-gray-300 text-left px-4 py-2">
-                {offerPrice}
-              </td>
-            </tr>
-            <tr>
-              <th className="border border-gray-300 text-left px-4 py-2">
-                {t("offer_note")}
-              </th>
-              <td className="border border-gray-300 text-left px-4 py-2">
-                {offerNote}
-              </td>
-            </tr>
+            <tbody>
+              <tr className="bg-gray-200 ">
+                <th className="border border-gray-300 text-left px-4 py-2 w-52">
+                  {t("offer_creator_name")}
+                </th>
+                <td className="border border-gray-300 text-left px-4 py-2 text-red-500 font-bold text-xl capitalize">
+                  {username}
+                </td>
+              </tr>
+              <tr>
+                <th className="border border-gray-300 text-left px-4 py-2">
+                  {t("job_title")}
+                </th>
+                <td className="border border-gray-300 text-left px-4 py-2">
+                  {jobTitle}
+                </td>
+              </tr>
+              <tr className="bg-gray-200">
+                <th className="border border-gray-300 text-left px-4 py-2">
+                  {t("job_number")}
+                </th>
+                <td className="border border-gray-300 text-left px-4 py-2">
+                  {jobNumber}
+                </td>
+              </tr>
+              <tr>
+                <th className="border border-gray-300 text-left px-4 py-2">
+                  {t("offer_unit")}
+                </th>
+                <td className="border border-gray-300 text-left px-4 py-2">
+                  {priceUnit}
+                </td>
+              </tr>
+              <tr className="bg-gray-200">
+                <th className="border border-gray-300 text-left px-4 py-2">
+                  {t("offer_price")}
+                </th>
+                <td className="border border-gray-300 text-left px-4 py-2">
+                  {offerPrice}
+                </td>
+              </tr>
+              <tr>
+                <th className="border border-gray-300 text-left px-4 py-2">
+                  {t("offer_note")}
+                </th>
+                <td className="border border-gray-300 text-left px-4 py-2">
+                  {offerNote}
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <button
@@ -165,8 +167,8 @@ function ProposalPopup({ setIsShow, sellerId, isShow, jobId }) {
           disabled={offerAccepted}
           className={
             offerAccepted
-              ? "bg-gray-400 w-full md:w-60 py-3 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center mt-5"
-              : "bg-[#ff7100] w-full md:w-60 py-3 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2 mt-5"
+              ? "bg-gray-400 w-full md:w-60 py-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center mt-5"
+              : "bg-[#FFAA00] w-full md:w-60 py-3 rounded-md justify-center text-black text-base font-bold text-center flex items-center gap-2 mt-5"
           }
         >
           {isLoading ? (

@@ -9,7 +9,6 @@ import {
   how_big_the_tree_tow,
   input,
   How_large_is_to_be_covered,
-  approximately_how_many_meters_fence_is_it,
 } from "../../reuse-data";
 
 const gardenerHorteulture = [
@@ -319,7 +318,104 @@ const gardenerHorteulture = [
     id: 1087358787,
     type: "checkbox",
     label: "Wie viele Meter Zaun sind es ungefähr ?",
-    options: approximately_how_many_meters_fence_is_it,
+    options: [
+      {
+        id: 9250085189,
+        label: "Bis zu 9 m²",
+        credit: 8,
+      },
+      {
+        id: 3813678767,
+        label: "10 Busse 24 m²",
+        credit: 13,
+      },
+      {
+        id: 5996228486,
+        label: "25 bis 34 m²",
+        credit: 18,
+      },
+      {
+        id: 2175594599,
+        label: "35 m² oder mehr",
+        credit: 25,
+      },
+    ],
+  },
+  {
+    id: 9250085189,
+    type: "checkbox",
+    label: "Wie viele Tore müssen installiert werden ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 oder mehr",
+        credit: 18,
+      },
+    ],
+  },
+  {
+    id: 3813678767,
+    type: "checkbox",
+    label: "Wie viele Tore müssen installiert werden ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 oder mehr",
+        credit: 18,
+      },
+    ],
+  },
+  {
+    id: 5996228486,
+    type: "checkbox",
+    label: "Wie viele Tore müssen installiert werden ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 oder mehr",
+        credit: 18,
+      },
+    ],
+  },
+  {
+    id: 2175594599,
+    type: "checkbox",
+    label: "Wie viele Tore müssen installiert werden ?",
+    options: [
+      {
+        label: "1",
+        credit: 5,
+      },
+      {
+        label: "2",
+        credit: 10,
+      },
+      {
+        label: "3 oder mehr",
+        credit: 18,
+      },
+    ],
   },
   // Garden design
 

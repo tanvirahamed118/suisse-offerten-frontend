@@ -201,8 +201,8 @@ function PrepeardForm() {
                 type="submit"
                 className={
                   offerNote.length > 0 && offerPrice > 0 && priceUnit.length > 0
-                    ? "bg-[#ff7100] text-white font-normal rounded-md hover:bg-[#F25900] text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
-                    : "bg-[#cccccc] text-[#666666] font-normal rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-not-allowed"
+                    ? "bg-[#FFAA00] text-black font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-pointer"
+                    : "bg-[#cccccc] text-[#666666] font-bold rounded-md text-md py-3 px-5 flex gap-2 items-center cursor-not-allowed"
                 }
               >
                 {" "}

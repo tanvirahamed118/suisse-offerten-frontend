@@ -1,228 +1,228 @@
 export const what_work_needs_done = [
   {
-    label: "mow the lawn",
+    label: "tondre la pelouse",
   },
   {
-    label: "Cleaning the terrace",
+    label: "Nettoyage de la terrasse",
   },
   {
-    label: "Weeding",
+    label: "Sarclage",
   },
   {
-    label: "Pruning trees/shrubs",
+    label: "Taille des arbres/arbustes",
   },
   {
-    label: "Remove/plant plants",
+    label: "Enlever/planter des plantes",
   },
   {
-    label: "Cleaning up the garden",
+    label: "Nettoyer le jardin",
   },
   {
-    label: "Other",
+    label: "Autre",
   },
 ];
 
 export const how_big_the_tree_one = [
   {
-    label: "Small",
-    des: "Up to 3 m",
+    label: "Petite",
+    des: "Jusqu'à 3 m",
     credit: 5,
   },
   {
-    label: "Medium",
-    des: "4 to 7 m",
+    label: "Moyen",
+    des: "4 à 7 m²",
     credit: 10,
   },
   {
-    label: "Large",
-    des: "8 m or more",
+    label: "Grande",
+    des: "8 m² ou plus",
     credit: 15,
   },
 ];
 export const How_large_is_to_be_covered = [
   {
-    label: "Small",
+    label: "Menue",
     credit: 5,
   },
   {
-    label: "Medium",
+    label: "Moyen",
     credit: 13,
   },
   {
-    label: "Large",
+    label: "Grande",
     credit: 13,
   },
   {
-    label: "Very large",
+    label: "Très grand",
     credit: 20,
   },
 ];
 
 export const how_big_the_tree_tow = [
   {
-    label: "Small",
-    des: "Up to 14 m²",
+    label: "Petite",
+    des: "Jusqu'à 14 m²",
     credit: 10,
   },
   {
-    label: "Medium",
-    des: "15 to 29 m²",
+    label: "Moyen",
+    des: "15 à 29 m²",
     credit: 15,
   },
   {
-    label: "Large",
-    des: "30 to 59 m²",
+    label: "Grande",
+    des: "30 à 59 m²",
     credit: 20,
   },
   {
-    label: "Very large",
-    des: "60 m² or more",
+    label: "Très grand",
+    des: "60 m² ou plus",
     credit: 25,
   },
 ];
 
 export const approximately_how_many_meters_fence = [
   {
-    label: "Up to 9 m",
+    label: "Jusqu'à 9 m²",
     credit: 5,
   },
   {
-    label: "10 to 24 m",
+    label: "10 à 24 m²",
     credit: 10,
   },
   {
-    label: "25 to 34 m",
+    label: "25 à 34 m²",
     credit: 15,
   },
   {
-    label: "35 m or more",
+    label: "35 m² ou plus",
     credit: 20,
   },
 ];
 export const approximately_how_many_meters_of_fence_is = [
   {
-    label: "Up to 9 m",
+    label: "Jusqu'à 9 m²",
     credit: 8,
   },
   {
-    label: "10 to 24 m",
+    label: "10 à 24 m²",
     credit: 15,
   },
   {
-    label: "25 to 34 m",
+    label: "25 à 34 m²",
     credit: 25,
   },
   {
-    label: "35 m or more",
+    label: "35 m² ou plus",
     credit: 35,
   },
 ];
 export const approximately_how_many_meters_fence_is_it = [
   {
-    label: "Up to 9 m",
+    label: "Jusqu'à 9 m²",
     credit: 8,
   },
   {
-    label: "10 to 24 m",
+    label: "10 à 24 m²",
     credit: 13,
   },
   {
-    label: "25 to 34 m",
+    label: "25 à 34 m²",
     credit: 18,
   },
   {
-    label: "35 m or more",
+    label: "35 m² ou plus",
     credit: 25,
   },
 ];
 export const How_big_is_total_approximately = [
   {
-    label: "Up to 9 m²",
+    label: "Jusqu'à 9 m²",
     credit: 10,
   },
   {
-    label: "10 to 19 m²",
+    label: "10 à 19 m²",
     credit: 20,
   },
   {
-    label: "20 to 39 m²",
+    label: "20 à 39 m²",
     credit: 30,
   },
   {
-    label: "40 or more m²",
+    label: "40 m² ou plus",
     credit: 50,
   },
   {
-    label: "I do not know",
+    label: "Je ne sais pas",
     credit: 8,
   },
 ];
 
 export const is_gate_be_installed_already = [
   {
-    label: "Yes, the gate is there",
+    label: "Oui, la porte est là",
   },
   {
-    label: "No, the gate still needs to be purchased",
+    label: "Non, la porte doit encore être achetée",
   },
 ];
 
 export const how_large_garden_designed = [
   {
-    label: "Small",
-    des: "Up to 99 m²",
+    label: "Petite",
+    des: "Jusqu'à 99 m²",
     credit: 15,
   },
   {
-    label: "Medium",
-    des: "100 to 199 m²",
+    label: "Moyen",
+    des: "100 à 199 m²",
     credit: 20,
   },
   {
-    label: "Large",
-    des: "200 to 399 m²",
+    label: "Grande",
+    des: "200 à 399 m²",
     credit: 25,
   },
   {
-    label: "Very large",
-    des: "400 m² or more",
+    label: "Très grand",
+    des: "400 m² ou plus",
     credit: 35,
   },
 ];
 
 export const what_does_service_require = [
   {
-    label: "Forecourt",
+    label: "Parvis",
   },
   {
-    label: "Parking space / parking space",
+    label: "Place de parking / place de parking",
   },
   {
-    label: "entrance",
+    label: "Entrée",
   },
   {
-    label: "Garden path",
+    label: "Chemin de jardin",
   },
   {
-    label: "terrace",
+    label: "Terrasse",
   },
   {
-    label: "Public road",
+    label: "Voie publique",
   },
   {
-    label: "Private road",
+    label: "Chemin privé",
   },
   {
-    label: "Other",
+    label: "Autre",
   },
 ];
 
 export const how_do_garage_door = [
   {
-    label: "Yes, it already exists",
+    label: "Oui, il existe déjà",
   },
   {
-    label: "No, it still needs to be procured",
+    label: "Non, il faut encore l'acquérir",
   },
 ];
 export const have_you_already_heating_system = [
@@ -230,7 +230,7 @@ export const have_you_already_heating_system = [
     label: "Yes, I have already obtained it.",
   },
   {
-    label: "No, it still needs to be procured.",
+    label: "Non, il faut encore l'acquérir.",
   },
 ];
 
@@ -253,7 +253,7 @@ export const how_trees_are_here = (id1, id2, id3, id4) => {
     },
     {
       id: id4,
-      label: "4 or more",
+      label: "4 ou plus",
       credit: 8,
     },
   ];
@@ -262,7 +262,7 @@ export const how_trees_are_here = (id1, id2, id3, id4) => {
 export const input = (id) => {
   return {
     id: id,
-    type: "input",
+    type: "saisir",
   };
 };
 
@@ -285,7 +285,7 @@ export const how_many_garage_doors = (id1, id2, id3, id4) => {
     },
     {
       id: id4,
-      label: "6 or more",
+      label: "6 ou plus",
       credit: 40,
     },
   ];
@@ -295,27 +295,27 @@ export const what_type_garage_door_it = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Rolling shutter",
-      des: "Garage door rolls up over the opening",
+      label: "Volet roulant",
+      des: "La porte de garage s'enroule sur l'ouverture",
     },
     {
       id: id2,
-      label: "Swing gate",
-      des: "Garage door slides upwards and stays straight",
+      label: "Portail battant",
+      des: "La porte de garage coulisse vers le haut et reste droite",
     },
     {
       id: id3,
-      label: "(Side) sectional door",
-      des: "Garage door rolls up or sideways around the corner, but is straight when fully opened",
+      label: "Porte sectionnelle (latérale)",
+      des: "La porte de garage s'enroule vers le haut ou sur le côté autour du coin, mais est droite lorsqu'elle est complètement ouverte",
     },
     {
       id: id4,
-      label: "Swing gate",
-      des: "Garage door opens like a normal door",
+      label: "Portail battant",
+      des: "La porte de garage s'ouvre comme une porte normale",
     },
     {
       id: id5,
-      label: "Other",
+      label: "Autre",
     },
   ];
 };
@@ -324,15 +324,15 @@ export const how_do_you_the_garage_door = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Only electric",
+      label: "Électrique uniquement",
     },
     {
       id: id2,
-      label: "Only by hand",
+      label: "Uniquement à la main",
     },
     {
       id: id3,
-      label: "Electric and manual",
+      label: "Électrique et manuel",
     },
   ];
 };
@@ -340,11 +340,11 @@ export const kit_already_available_carport = (id1, id2) => {
   return [
     {
       id: id1,
-      label: "Yes",
+      label: "Oui",
     },
     {
       id: id2,
-      label: "No, it still needs to be procured.",
+      label: "Non, il faut encore l'acquérir.",
     },
   ];
 };
@@ -353,11 +353,11 @@ export const questionCheckboxItem = (id1, id2) => {
   return [
     {
       id: id1,
-      label: "Yes",
+      label: "Oui",
     },
     {
       id: id2,
-      label: "no",
+      label: "Non",
     },
   ];
 };
@@ -376,7 +376,7 @@ export const how_many_need_be_installed = (id1, id2, id3) => {
     },
     {
       id: id3,
-      label: "3 or more",
+      label: "3 ou plus",
       credit: 18,
     },
   ];
@@ -386,15 +386,15 @@ export const does_the_subsurface_need_prepared = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Yes",
+      label: "Oui",
     },
     {
       id: id2,
-      label: "No",
+      label: "Non",
     },
     {
       id: id3,
-      label: "Don't know / need advice",
+      label: "Je ne sais pas / j'ai besoin de conseils",
     },
   ];
 };
@@ -402,17 +402,17 @@ export const what_performance_you_exactly_need = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Assembly of a ready-made kit (e.g. from the hardware store)",
+      label: "Montage d'un kit prêt à l'emploi (par exemple en quincaillerie)",
       credit: 25,
     },
     {
       id: id2,
-      label: "Custom creation",
+      label: "Création sur mesure",
       credit: 35,
     },
     {
       id: id3,
-      label: "Don't know / need advice",
+      label: "Je ne sais pas / j'ai besoin de conseils",
       credit: 20,
     },
   ];
@@ -421,11 +421,11 @@ export const is_the_kit_available = (id1, id2) => {
   return [
     {
       id: id1,
-      label: "Yes",
+      label: "Oui",
     },
     {
       id: id2,
-      label: "No, it still needs to be procured",
+      label: "Non, il faut encore l'acquérir",
     },
   ];
 };
@@ -433,15 +433,15 @@ export const where_should_carport_be_located = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Freestanding",
+      label: "Autoportante",
     },
     {
       id: id2,
-      label: "At the house",
+      label: "À la maison",
     },
     {
       id: id3,
-      label: "At the garage",
+      label: "Au garage",
     },
   ];
 };
@@ -449,19 +449,19 @@ export const what_kind_roof_shape_you_want = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      label: "Gable roof",
+      label: "Toit à pignon",
     },
     {
       id: id2,
-      label: "Flat roof",
+      label: "Toit plat",
     },
     {
       id: id3,
-      label: "Lean-to roof",
+      label: "Toiture en appentis",
     },
     {
       id: id4,
-      label: "Other",
+      label: "Autre",
     },
   ];
 };
@@ -469,50 +469,50 @@ export const do_you_need_additional_carport = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Storage space",
+      label: "Espace de stockage",
     },
     {
       id: id2,
-      label: "Photovoltaic system",
+      label: "Installation photovoltaïque",
     },
     {
       id: id3,
-      label: "Green roof",
+      label: "Toiture verte",
     },
     {
       id: id4,
-      label: "Other",
+      label: "Autre",
     },
     {
       id: id5,
-      label: "No, just need the carport",
+      label: "Non, j'ai juste besoin du carport",
     },
   ];
 };
 export const does_a_building_permit_submitted = [
   {
-    label: "Yes",
+    label: "Oui",
   },
   {
-    label: "No",
+    label: "Non",
   },
   {
-    label: "Don't know / need advice",
+    label: "Je ne sais pas / j'ai besoin de conseils",
   },
 ];
 
 export const what_excavation_you_need = [
   {
-    label: "Excavation for a pool",
+    label: "Excavation pour une piscine",
   },
   {
-    label: "Excavation for another structure",
+    label: "Excavation pour une autre structure",
   },
   {
-    label: "Disposal of excavated soil",
+    label: "Élimination des terres excavées",
   },
   {
-    label: "Other",
+    label: "Autre",
   },
 ];
 
@@ -520,27 +520,27 @@ export const what_type_want_to_install = (id1, id2, id3, id4, id5, id6) => {
   return [
     {
       id: id1,
-      label: "Flat roof",
+      label: "Toit plat",
     },
     {
       id: id2,
-      label: "Gable roof",
+      label: "Toit à pignon",
     },
     {
       id: id3,
-      label: "Hipped roof",
+      label: "Toit en croupe",
     },
     {
       id: id4,
-      label: "Mansard roof",
+      label: "Toit mansardé",
     },
     {
       id: id5,
-      label: "Lean-to roof",
+      label: "Toiture en appentis",
     },
     {
       id: id6,
-      label: "I'm not sure",
+      label: "Je ne suis pas sûr",
     },
   ];
 };
@@ -548,32 +548,32 @@ export const what_type_do_you_need = (id1, id2, id3, id4, id5, id6) => {
   return [
     {
       id: id1,
-      label: "General roof inspection",
+      label: "Inspection générale de la toiture",
       credit: 10,
     },
     {
       id: id2,
-      label: "small spot (one or more bricks)",
+      label: "Petite tache (une ou plusieurs briques)",
       credit: 8,
     },
     {
       id: id3,
-      label: "smaller part of the roof (or small roof)",
+      label: "Petite partie du toit (ou petit toit)",
       credit: 8,
     },
     {
       id: id4,
-      label: "larger part of the roof",
+      label: "Une plus grande partie du toit",
       credit: 20,
     },
     {
       id: id5,
-      label: "whole roof",
+      label: "Toiture entière",
       credit: 30,
     },
     {
       id: id6,
-      label: "Other",
+      label: "Autre",
       credit: 10,
     },
   ];
@@ -583,15 +583,15 @@ export const where_do_you_replace_the_roof = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Whole house",
+      label: "Maison entière",
     },
     {
       id: id2,
-      label: "Garage, extension or other part of the house",
+      label: "Garage, extension ou autre partie de la maison",
     },
     {
       id: id3,
-      label: "Veranda or outbuilding",
+      label: "Véranda ou dépendance",
     },
   ];
 };
@@ -599,46 +599,76 @@ export const what_performance_you_exactly_need_carport = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Assembly of a prefabricated carport kit",
+      label: "Montage d'un kit carport préfabriqué",
     },
     {
       id: id2,
-      label: "Construction of a new custom-made carport",
+      label: "Construction d'un nouveau carport sur mesure",
     },
     {
       id: id3,
-      label: "Don't know / need advice",
+      label: "Je ne sais pas / j'ai besoin de conseils",
     },
   ];
 };
 export const what_material_be_made_of = [
   {
-    label: "Clay bricks",
+    label: "Briques d'argile",
   },
   {
-    label: "Concrete roof tiles",
+    label: "Tuiles en béton",
   },
   {
-    label: "Fibre cement",
+    label: "Fibrociment",
   },
   {
-    label: "Metal covering",
+    label: "Revêtement métallique",
   },
   {
-    label: "slate",
+    label: "Ardoise",
   },
   {
-    label: "bitumen",
+    label: "Bitume",
   },
   {
-    label: "plastic",
+    label: "Plastique",
   },
   {
-    label: "Others, or I'm not sure",
+    label: "Others, or Je ne suis pas sûr",
   },
 ];
 
-export const how_many_sides_the_building_should = (id1, id2, id3, id4, id5) => {
+export const how_many_sides_the_building_should = (id1, id2, id3, id4) => {
+  return [
+    {
+      id: id1,
+      label: "1",
+      credit: 10,
+    },
+    {
+      id: id2,
+      label: "2",
+      credit: 15,
+    },
+    {
+      id: id3,
+      label: "3",
+      credit: 20,
+    },
+    {
+      id: id4,
+      label: "Tout autour",
+      credit: 30,
+    },
+  ];
+};
+export const how_many_sides_the_building_should_2 = (
+  id1,
+  id2,
+  id3,
+  id4,
+  id5
+) => {
   return [
     {
       id: id1,
@@ -662,7 +692,7 @@ export const how_many_sides_the_building_should = (id1, id2, id3, id4, id5) => {
     },
     {
       id: id5,
-      label: "All around",
+      label: "Tout autour",
       credit: 30,
     },
   ];
@@ -687,61 +717,61 @@ export const How_many_the_building_have = (id1, id2, id3, id4, id5) => {
     },
     {
       id: id5,
-      label: "5 or more",
+      label: "5 ou plus",
     },
   ];
 };
 export const how_long_scaffolding_needed = [
   {
-    label: "1 week",
+    label: "1 semaine",
   },
   {
-    label: "2 weeks",
+    label: "2 semaines",
   },
   {
-    label: "3 - 4 weeks",
+    label: "3 - 4 semaines",
   },
   {
-    label: "1 - 2 months",
+    label: "1 - 2 mois",
   },
   {
-    label: "3 months or longer",
+    label: "3 mois ou plus",
   },
 ];
 export const in_how_floor_insulated = [
   {
-    label: "1 to 2 rooms",
+    label: "1 à 2 pièces",
     credit: 8,
   },
   {
-    label: "3 to 4 rooms",
+    label: "1 à 2 pièces",
     credit: 15,
   },
   {
-    label: "5 or more rooms",
+    label: "5 ou plus rooms",
     credit: 20,
   },
 ];
 
 export const how_large_is_approximately = [
   {
-    des: "E.g. part of a wall etc.",
-    label: "Small",
+    des: "Par exemple une partie d’un mur, etc.",
+    label: "Petite",
     credit: 4,
   },
   {
-    des: "E.g. whole wall, room, floor etc.",
-    label: "Medium",
+    des: "Par exemple, un mur entier, une pièce, un sol, etc.",
+    label: "Moyen",
     credit: 10,
   },
   {
-    des: "E.g. garage, extension, basement, apartment etc.",
-    label: "Large",
+    des: "Par exemple, garage, extension, sous-sol, appartement, etc.",
+    label: "Grande",
     credit: 25,
   },
   {
-    des: "E.g. whole house etc.",
-    label: "Very large",
+    des: "Par exemple, toute la maison, etc.",
+    label: "Très grand",
     credit: 40,
   },
 ];
@@ -749,26 +779,26 @@ export const how_big_is_approximately = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      des: "Up to 4 m",
-      label: "Small",
+      des: "Jusqu'à 4 m²",
+      label: "Petite",
       credit: 3,
     },
     {
       id: id2,
-      des: "5 to 9 m",
-      label: "Medium",
+      des: "5 à 9 m²",
+      label: "Moyen",
       credit: 8,
     },
     {
       id: id3,
-      des: "10 to 24 m",
-      label: "Large",
+      des: "10 à 24 m²",
+      label: "Grande",
       credit: 15,
     },
     {
       id: id4,
-      des: "25 m or more",
-      label: "Very large",
+      des: "25 m² ou plus",
+      label: "Très grand",
       credit: 25,
     },
   ];
@@ -782,58 +812,58 @@ export const how_big_is_metal_structure_approximately = (
   return [
     {
       id: id1,
-      des: "Up to 4 m",
-      label: "Small",
+      des: "Jusqu'à 4 m²",
+      label: "Petite",
       credit: 6,
     },
     {
       id: id2,
-      des: "5 to 9 m",
-      label: "Medium",
+      des: "5 à 9 m²",
+      label: "Moyen",
       credit: 15,
     },
     {
       id: id3,
-      des: "10 to 24 m",
-      label: "Large",
+      des: "10 à 24 m²",
+      label: "Grande",
       credit: 20,
     },
     {
       id: id4,
-      des: "25 m or more",
-      label: "Very large",
+      des: "25 m² ou plus",
+      label: "Très grand",
       credit: 30,
     },
   ];
 };
 export const is_the_required_available = [
   {
-    label: "Yes, it already exists",
+    label: "Oui, il existe déjà",
   },
   {
-    label: "No, it still needs to be procured",
+    label: "Non, il faut encore l'acquérir",
   },
 ];
 export const how_many_goals = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      label: "A small gate",
+      label: "Une petite porte",
       credit: 6,
     },
     {
       id: id2,
-      label: "A normal gate",
+      label: "Une porte normale",
       credit: 15,
     },
     {
       id: id3,
-      label: "2 to 3 goals",
+      label: "2 à 3 buts",
       credit: 25,
     },
     {
       id: id4,
-      label: "4 goals or more",
+      label: "4 buts ou plus",
       credit: 30,
     },
   ];
@@ -844,46 +874,46 @@ export const how_many_blinds_shutters = [
     credit: 5,
   },
   {
-    label: "2 to 3",
+    label: "2 à 3",
     credit: 10,
   },
   {
-    label: "4 or more",
+    label: "4 ou plus",
     credit: 20,
   },
 ];
 export const what_type_blinds_are_they = [
   {
-    label: "Awnings / sun blinds made of fabric",
+    label: "Stores / stores pare-soleil en tissu",
   },
   {
-    label: "Blinds / roller shutters (inside)",
+    label: "Stores / volets roulants (intérieur)",
   },
   {
-    label: "Blinds / roller shutters (outside)",
+    label: "Stores / volets roulants (extérieur)",
   },
   {
-    label: "Window shutter (outside)",
+    label: "Volet de fenêtre (extérieur)",
   },
   {
-    label: "Other",
+    label: "Autre",
   },
 ];
 export const what_is_the_order = [
   {
-    label: "Up to 4 m",
+    label: "Jusqu'à 4 m²",
     credit: 5,
   },
   {
-    label: "5 to 14 m",
+    label: "5 à 14 m²",
     credit: 10,
   },
   {
-    label: "15 to 24 m",
+    label: "15 à 24 m²",
     credit: 15,
   },
   {
-    label: "25 m or more",
+    label: "25 m² ou plus",
     credit: 20,
   },
 ];
@@ -892,45 +922,45 @@ export const how_many_be_cleaned = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      label: "1 to 2",
+      label: "1 à 2",
       credit: 3,
     },
     {
       id: id2,
-      label: "3 to 4",
+      label: "3 à 4",
       credit: 6,
     },
     {
       id: id3,
-      label: "5 to 9",
+      label: "5 à 9",
       credit: 12,
     },
     {
       id: id4,
-      label: "10 or more",
+      label: "10 ou plus",
       credit: 15,
     },
   ];
 };
 export const ppproximately_how_big_is_covered_clad = [
   {
-    des: "E.g. mailbox etc.",
-    label: "Small",
+    des: "Par exemple, boîte aux lettres, etc.",
+    label: "Petite",
     credit: 3,
   },
   {
-    des: "E.g. bicycle shelter, canopy etc.",
-    label: "Medium",
+    des: "Par exemple, abri à vélos, auvent, etc.",
+    label: "Moyen",
     credit: 10,
   },
   {
-    des: "E.g. part of a house, shed etc.",
-    label: "Large",
+    des: "Par exemple, une partie d’une maison, un hangar, etc.",
+    label: "Grande",
     credit: 25,
   },
   {
-    des: "E.g. whole house etc.",
-    label: "Very large",
+    des: "Par exemple, toute la maison, etc.",
+    label: "Très grand",
     credit: 35,
   },
 ];
@@ -938,84 +968,98 @@ export const what_shape_is_the_roof = (id1, id2, id3, id4, id5, id6) => {
   return [
     {
       id: id1,
-      label: "Gable roof",
+      label: "Toit à pignon",
     },
     {
       id: id2,
-      label: "Flat roof",
+      label: "Toit plat",
     },
     {
       id: id3,
-      label: "Hipped roof",
+      label: "Toit en croupe",
     },
     {
       id: id4,
-      label: "Lean-to roof",
+      label: "Toiture en appentis",
     },
     {
       id: id5,
-      label: "Other",
+      label: "Autre",
     },
     {
       id: id6,
-      label: "I do not know",
+      label: "Je ne sais pas",
     },
   ];
 };
-export const what_material_roof_made_of = (id1) => {
+export const what_material_roof_made_of = (
+  id1,
+  id2,
+  id3,
+  id4,
+  id5,
+  id6,
+  id7
+) => {
   return [
     {
       id: id1,
-      label: "Clay bricks",
+      label: "Briques d'argile",
     },
     {
-      label: "bitumen",
+      id: id2,
+      label: "Bitume",
     },
     {
-      label: "Fibre cement",
+      id: id3,
+      label: "Fibrociment",
     },
     {
-      label: "plastic",
+      id: id4,
+      label: "Plastique",
     },
     {
-      label: "Metal covering",
+      id: id5,
+      label: "Revêtement métallique",
     },
     {
-      label: "Other",
+      id: id6,
+      label: "Autre",
     },
     {
-      label: "I do not know",
+      id: id7,
+      label: "Je ne sais pas",
     },
   ];
 };
 export const can_you_access_inside = [
   {
-    label: "Yes",
+    label: "Oui",
   },
   {
-    label: "No",
+    label: "Non",
   },
   {
-    label: "I do not know",
+    label: "Je ne sais pas",
   },
 ];
 export const what_kind_glass_it = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      label: "Double glazing",
+      label: "Double vitrage",
     },
     {
       id: id2,
-      label: "Triple glazing",
+      label: "Triple vitrage",
     },
     {
       id: id3,
-      label: "I do not know",
+      label: "Je ne sais pas",
     },
     {
       id: id4,
-      label: "Other glazing",
+      label: "Autre glazing",
     },
   ];
 };
@@ -1023,15 +1067,15 @@ export const what_kind_glass_is_it = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Double glazing",
+      label: "Double vitrage",
     },
     {
       id: id2,
-      label: "Triple glazing",
+      label: "Triple vitrage",
     },
     {
       id: id3,
-      label: "Other glazing",
+      label: "Autre glazing",
     },
   ];
 };
@@ -1039,26 +1083,26 @@ export const how_extensive_order_approximately = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      des: "E.g. fireplace, playhouse, etc.",
-      label: "Small",
+      des: "Par exemple, cheminée, maisonnette, etc.",
+      label: "Petite",
       credit: 5,
     },
     {
       id: id2,
-      des: "E.g. kitchen, bathroom, oil tank etc.",
-      label: "Medium",
+      des: "Par exemple, cuisine, salle de bain, réservoir à mazout, etc.",
+      label: "Moyen",
       credit: 10,
     },
     {
       id: id3,
-      des: "E.g. garage, extension, apartment etc.",
-      label: "Large",
+      des: "Par exemple garage, extension, appartement, etc.",
+      label: "Grande",
       credit: 25,
     },
     {
       id: id4,
-      des: "E.g. whole house, several properties, etc.",
-      label: "Very large",
+      des: "Par exemple, une maison entière, plusieurs propriétés, etc.",
+      label: "Très grand",
       credit: 35,
     },
   ];
@@ -1083,7 +1127,7 @@ export const how_many_bedrooms_are_affected = (id1, id2, id3, id4, id5) => {
     },
     {
       id: id5,
-      label: "4 or more",
+      label: "4 ou plus",
     },
   ];
 };
@@ -1091,23 +1135,23 @@ export const how_much_surrounding_area = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "No",
+      label: "Non",
     },
     {
       id: id2,
-      label: "Up to 14 m²",
+      label: "Jusqu'à 14 m²",
     },
     {
       id: id3,
-      label: "15 to 99 m²",
+      label: "15 à 99 m²",
     },
     {
       id: id4,
-      label: "100 to 249 m²",
+      label: "100 à 249 m²",
     },
     {
       id: id5,
-      label: "250 m² or more",
+      label: "250 m² ou plus",
     },
   ];
 };
@@ -1120,75 +1164,75 @@ export const approximately_how_much_budget_for_this_project = (
   return [
     {
       id: id1,
-      label: "Up to CHF 10,000",
+      label: "Jusqu'à CHF 10 000",
       credit: 40,
     },
     {
       id: id2,
-      label: "CHF 10,000 to 100,000",
+      label: "CHF 10 000 à 100 000",
       credit: 60,
     },
     {
       id: id3,
-      label: "CHF 100,000 to 300,000",
+      label: "CHF 100 000 à 300 000",
       credit: 90,
     },
     {
       id: id4,
-      label: "CHF 300,000 or more",
+      label: "CHF 300 000 ou plus",
       credit: 120,
     },
   ];
 };
 export const have_you_already_contacted = [
   {
-    label: "Yes, the building permit application has already been submitted",
+    label: "Oui, la demande de permis de construire a déjà été déposée",
   },
   {
     label:
-      "Yes, but the building permit application still needs to be submitted",
+      "Oui, mais la demande de permis de construire doit encore être déposée",
   },
   {
-    label: "Yes, but this project does not require a building permit",
+    label: "Oui, mais ce projet ne nécessite pas de permis de construire",
   },
   {
-    label: "No, I still need to contact the relevant municipality",
+    label: "Oui, mais ce projet ne nécessite pas de permis de construire",
   },
   {
     label:
-      "No, I know for sure that no building permit is required for this project",
+      "Non, je sais avec certitude qu'aucun permis de construire n'est requis pour ce projet",
   },
 ];
 export const approximately_how_be_painted = (id1, id2, id3, id4, id5, id6) => {
   return [
     {
       id: id1,
-      label: "Only a smaller area",
+      label: "Seulement une zone plus petite",
       credit: 5,
     },
     {
       id: id2,
-      label: "Up to 5 walls / ceilings",
+      label: "Jusqu'à 5 murs / plafonds",
       credit: 15,
     },
     {
       id: id3,
-      label: "6 to 10 walls / ceilings",
+      label: "6 à 10 murs/plafonds",
       credit: 25,
     },
     {
       id: id4,
-      label: "11 to 20 walls / ceilings",
+      label: "11 à 20 murs/plafonds",
       credit: 35,
     },
     {
       id: id5,
-      label: "21 to 30 walls / ceilings",
+      label: "21 à 30 murs/plafonds",
       credit: 45,
     },
     {
       id: id6,
-      label: "31 or more walls / ceilings",
+      label: "31 murs/plafonds ou plus",
       credit: 55,
     },
   ];
@@ -1197,27 +1241,27 @@ export const how_much_facade_should_be_painted = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Only a smaller area",
+      label: "Seulement une zone plus petite",
       credit: 5,
     },
     {
       id: id2,
-      label: "Up to one page",
+      label: "Jusqu'à une page",
       credit: 10,
     },
     {
       id: id3,
-      label: "2 to 3 pages",
+      label: "2 à 3 pages",
       credit: 20,
     },
     {
       id: id4,
-      label: "An entire single-family house",
+      label: "Une maison unifamiliale entière",
       credit: 45,
     },
     {
       id: id5,
-      label: "An entire apartment building",
+      label: "Un immeuble entier",
       credit: 65,
     },
   ];
@@ -1226,17 +1270,17 @@ export const how_windows_doors_be_painted = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "A window / a door",
+      label: "Une fenêtre / une porte",
       credit: 5,
     },
     {
       id: id2,
-      label: "2 to 5 windows / doors",
+      label: "2 à 5 fenêtres/portes",
       credit: 15,
     },
     {
       id: id3,
-      label: "6 or more windows / doors",
+      label: "6 ou plus fenêtres / portes",
       credit: 25,
     },
   ];
@@ -1245,17 +1289,17 @@ export const how_many_sides_roof_painted = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "On one side of the roof",
+      label: "D'un côté du toit",
       credit: 10,
     },
     {
       id: id2,
-      label: "On 2 to 3 sides of the roof",
+      label: "Sur 2 à 3 côtés du toit",
       credit: 30,
     },
     {
       id: id3,
-      label: "On all sides of the roof",
+      label: "Sur tous les côtés du toit",
       credit: 50,
     },
   ];
@@ -1264,19 +1308,19 @@ export const what_type_should_be_laid = (id1, id2, id3, id4, id5, id6, id7) => {
   return [
     {
       id: id1,
-      label: "parquet",
+      label: "Parquet",
     },
     {
       id: id2,
-      label: "Laminat",
+      label: "Stratifié",
     },
     {
       id: id3,
-      label: "Vinyl / Linoleum",
+      label: "Vinyle / Linoléum",
     },
     {
       id: id4,
-      label: "Carpet",
+      label: "Tapis",
     },
     {
       id: id5,
@@ -1284,11 +1328,11 @@ export const what_type_should_be_laid = (id1, id2, id3, id4, id5, id6, id7) => {
     },
     {
       id: id6,
-      label: "Solid wood",
+      label: "Bois massif",
     },
     {
       id: id7,
-      label: "Other",
+      label: "Autre",
       credit: 5,
     },
   ];
@@ -1297,32 +1341,32 @@ export const in_how_many_work_done = (id1, id2, id3, id4, id5, id6) => {
   return [
     {
       id: id1,
-      label: "1 room",
+      label: "1 chambre",
       credit: 8,
     },
     {
       id: id2,
-      label: "2 rooms",
+      label: "2 pièces",
       credit: 16,
     },
     {
       id: id3,
-      label: "3 rooms",
+      label: "3 pièces",
       credit: 24,
     },
     {
       id: id4,
-      label: "4 rooms",
+      label: "4 pièces",
       credit: 30,
     },
     {
       id: id5,
-      label: "5 or more rooms",
+      label: "5 ou plus rooms",
       credit: 40,
     },
     {
       id: id6,
-      label: "It is a commercial property",
+      label: "C'est une propriété commerciale",
       credit: 50,
     },
   ];
@@ -1331,23 +1375,23 @@ export const what_maintenance_work_is_required = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Sanding & sealing",
+      label: "Ponçage et scellement",
     },
     {
       id: id2,
-      label: "Sanding & oiling",
+      label: "Ponçage et huilage",
     },
     {
       id: id3,
-      label: "Clean & oil",
+      label: "Nettoyer et huiler",
     },
     {
       id: id4,
-      label: "Apply care oil",
+      label: "Appliquer l'huile de soin",
     },
     {
       id: id5,
-      label: "Other",
+      label: "Autre",
     },
   ];
 };
@@ -1355,20 +1399,20 @@ export const is_the_flooring_already_in_place = (id1, id2) => {
   return [
     {
       id: id1,
-      label: "Yes, already exists.",
+      label: "Oui, ça existe déjà.",
     },
     {
       id: id2,
-      label: "No, still needs to be procured.",
+      label: "Non, il faut encore l'acheter.",
     },
   ];
 };
 export const is_the_window_already_in_place = [
   {
-    label: "Yes, windows available",
+    label: "Oui, ça existe déjà.",
   },
   {
-    label: "No, still needs to be procured.",
+    label: "Non, il faut encore l'acheter.",
   },
 ];
 
@@ -1376,22 +1420,22 @@ export const how_many_installed_replaced = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      label: "1 to 2",
+      label: "1 à 2",
       credit: 4,
     },
     {
       id: id2,
-      label: "3 to 5",
+      label: "3 à 5",
       credit: 8,
     },
     {
       id: id3,
-      label: "6 to 9",
+      label: "6 à 9",
       credit: 15,
     },
     {
       id: id4,
-      label: "10 or more",
+      label: "10 ou plus",
       credit: 35,
     },
   ];
@@ -1409,35 +1453,35 @@ export const what_material_installed_made_of = (
   return [
     {
       id: id1,
-      label: "Double glazing",
+      label: "Double vitrage",
     },
     {
       id: id2,
-      label: "Triple glazing",
+      label: "Triple vitrage",
     },
     {
       id: id3,
-      label: "other glass",
+      label: "Autre verre",
     },
     {
       id: id4,
-      label: "Wood",
+      label: "Bois",
     },
     {
       id: id5,
-      label: "plastic",
+      label: "Plastique",
     },
     {
       id: id6,
-      label: "Masonry/Concrete",
+      label: "Maçonnerie/Béton",
     },
     {
       id: id7,
-      label: "I do not know",
+      label: "Je ne sais pas",
     },
     {
       id: id8,
-      label: "Other",
+      label: "Autre",
     },
   ];
 };
@@ -1445,68 +1489,68 @@ export const what_kind_of_glass_is_it = (id1, id2, id3, id4) => {
   return [
     {
       id: id1,
-      label: "Double glazing",
+      label: "Double vitrage",
     },
     {
       id: id2,
-      label: "Triple glazing",
+      label: "Triple vitrage",
     },
     {
       id: id3,
-      label: "I do not know",
+      label: "Je ne sais pas",
     },
     {
       id: id4,
-      label: "Other",
+      label: "Autre",
     },
   ];
 };
 export const what_material_frame_made_of = [
   {
-    label: "Wood",
+    label: "Bois",
   },
   {
-    label: "plastic",
+    label: "Plastique",
   },
   {
-    label: "metal",
+    label: "Métal",
   },
   {
-    label: "Wood/Metal",
+    label: "Bois/Métal",
   },
   {
-    label: "Plastic/Metal",
+    label: "Plastique/Métal",
   },
   {
-    label: "I do not know",
+    label: "Je ne sais pas",
   },
   {
-    label: "Other",
+    label: "Autre",
   },
 ];
 export const approximately_how_the_affected_area = [
   {
-    label: "Up to 2 m²",
+    label: "Jusqu'à 2 m²",
     credit: 4,
   },
   {
-    label: "3 to 14 m²",
+    label: "3 à 14 m²",
     credit: 9,
   },
   {
-    label: "15 to 30 m²",
+    label: "15 à 30 m²",
     credit: 14,
   },
   {
-    label: "31 to 50 m²",
+    label: "31 à 50 m²",
     credit: 20,
   },
   {
-    label: "51 or more m²",
+    label: "51 m² ou plus",
     credit: 25,
   },
   {
-    label: "I do not know",
+    label: "Je ne sais pas",
     credit: 8,
   },
 ];
@@ -1516,11 +1560,11 @@ export const how_manyshuttersare_there = [
     credit: 6,
   },
   {
-    label: "2 to 3",
+    label: "2 à 3",
     credit: 15,
   },
   {
-    label: "4 or more",
+    label: "4 ou plus",
     credit: 25,
   },
 ];
@@ -1528,17 +1572,17 @@ export const what_performance_do_you_exactly_need = (id1, id2, id3) => {
   return [
     {
       id: id1,
-      label: "Assembly of a prefabricated kit",
+      label: "Montage d'un kit préfabriqué",
       credit: 15,
     },
     {
       id: id2,
-      label: "Custom creation",
+      label: "Création sur mesure",
       credit: 25,
     },
     {
       id: id3,
-      label: "Don't know / need advice",
+      label: "Je ne sais pas / j'ai besoin de conseils",
       credit: 7,
     },
   ];
@@ -1548,27 +1592,27 @@ export const how_big_is_area_approximately = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Up to 14 m²",
+      label: "Jusqu'à 14 m²",
       credit: 8,
     },
     {
       id: id2,
-      label: "15 to 29 m²",
+      label: "15 à 29 m²",
       credit: 15,
     },
     {
       id: id3,
-      label: "30 to 59 m²",
+      label: "30 à 59 m²",
       credit: 25,
     },
     {
       id: id4,
-      label: "60 or more m²",
+      label: "60 m² ou plus",
       credit: 35,
     },
     {
       id: id5,
-      label: "I do not know",
+      label: "Je ne sais pas",
       credit: 5,
     },
   ];
@@ -1586,35 +1630,35 @@ export const what_do_use_for_heating = (
   return [
     {
       id: id1,
-      label: "oil",
+      label: "Huile",
     },
     {
       id: id2,
-      label: "gas",
+      label: "Gaz",
     },
     {
       id: id3,
-      label: "Heat pump (ground probe)",
+      label: "Pompe à chaleur (sonde de sol)",
     },
     {
       id: id4,
-      label: "Heat pump (air / water)",
+      label: "Pompe à chaleur (air/eau)",
     },
     {
       id: id5,
-      label: "Electric",
+      label: "Électrique",
     },
     {
       id: id6,
-      label: "Wood",
+      label: "Bois",
     },
     {
       id: id7,
-      label: "I do not know",
+      label: "Je ne sais pas",
     },
     {
       id: id8,
-      label: "Other",
+      label: "Autre",
     },
   ];
 };
@@ -1622,23 +1666,23 @@ export const what_do_you_the_water = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Electric boiler",
+      label: "Chaudière électrique",
     },
     {
       id: id2,
-      label: "Water pumps boiler",
+      label: "Pompes à eau chaudière",
     },
     {
       id: id3,
-      label: "Instantaneous water heater",
+      label: "Chauffe-eau instantané",
     },
     {
       id: id4,
-      label: "Other",
+      label: "Autre",
     },
     {
       id: id5,
-      label: "I do not know",
+      label: "Je ne sais pas",
     },
   ];
 };
@@ -1646,23 +1690,23 @@ export const what_system_distribute_the_heat = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Radiator / Heater",
+      label: "Radiateur / Chauffage",
     },
     {
       id: id2,
-      label: "Underfloor heating",
+      label: "Chauffage par le sol",
     },
     {
       id: id3,
-      label: "Both",
+      label: "Les deux",
     },
     {
       id: id4,
-      label: "Other",
+      label: "Autre",
     },
     {
       id: id5,
-      label: "I do not know",
+      label: "Je ne sais pas",
     },
   ];
 };
@@ -1670,45 +1714,45 @@ export const how_far_the_transport = (id1, id2, id3, id4, id5) => {
   return [
     {
       id: id1,
-      label: "Within the community",
+      label: "Au sein de la communauté",
     },
     {
       id: id2,
-      label: "Within the canton",
+      label: "Dans le canton",
     },
     {
       id: id3,
-      label: "Within Switzerland",
+      label: "En Suisse",
     },
     {
       id: id4,
-      label: "Within Europe",
+      label: "En Europe",
     },
     {
       id: id5,
-      label: "Outside Europe",
+      label: "Hors Europe",
     },
   ];
 };
 export const approximately_how_big_affected_structure = [
   {
-    label: "Small",
-    des: "E.g. a room, garden house etc.",
+    label: "Petite",
+    des: "Par exemple une pièce, une maison de jardin, etc.",
     credit: 15,
   },
   {
-    label: "Medium",
-    des: "E.g. a floor, an apartment, etc.",
+    label: "Moyen",
+    des: "Par exemple un étage, un appartement, etc.",
     credit: 25,
   },
   {
-    label: "Large",
-    des: "E.g. a single-family house etc.",
+    label: "Grande",
+    des: "Par exemple une maison unifamiliale, etc.",
     credit: 35,
   },
   {
-    label: "Very large",
-    des: "E.g. several single-family houses, an apartment building, etc.",
+    label: "Très grand",
+    des: "Par exemple plusieurs maisons unifamiliales, un immeuble d’appartements, etc.",
     credit: 50,
   },
 ];

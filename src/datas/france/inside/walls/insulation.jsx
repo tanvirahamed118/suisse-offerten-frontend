@@ -2,34 +2,34 @@ const insulation = [
   {
     id: 854277929,
     type: "checkbox",
-    label: "What do you need insulation for ?",
+    label: "Pourquoi avez-vous besoin d'isolation ?",
     options: [
       {
         id: 536262274,
-        label: "Floor",
-        des: "Basement floor, living room floor, etc.",
+        label: "Sol",
+        des: "Sous-sol, salon, etc.",
       },
       {
         id: 948721480,
-        label: "Wall",
-        des: "Facades, interior walls, etc.",
+        label: "Mur",
+        des: "Façades, murs intérieurs, etc.",
       },
       {
         id: 974052021,
-        label: "Screed or roof",
+        label: "Chape ou toiture",
         credit: 25,
       },
       {
         id: 811313434,
-        label: "Door / Window",
+        label: "Porte / Fenêtre",
       },
       {
         id: 312757265,
-        label: "Protection against sound / noise",
+        label: "Protection contre le bruit",
       },
       {
         id: 675895081,
-        label: "Other or more of the above",
+        label: "Autre ou plusieurs des réponses ci-dessus",
         credit: 7,
       },
     ],
@@ -37,18 +37,18 @@ const insulation = [
   {
     id: 536262274,
     type: "checkbox",
-    label: "In how many rooms should the floor be insulated ?",
+    label: "Dans combien de pièces faut-il isoler le sol ?",
     options: [
       {
-        label: "1 to 2 rooms",
+        label: "1 à 2 pièces",
         credit: 10,
       },
       {
-        label: "3 to 4 rooms",
+        label: "3 à 4 pièces",
         credit: 20,
       },
       {
-        label: "5 or more rooms",
+        label: "5 chambres ou plus",
         credit: 35,
       },
     ],
@@ -56,18 +56,18 @@ const insulation = [
   {
     id: 948721480,
     type: "checkbox",
-    label: "How many walls need to be insulated ?",
+    label: "Combien de murs faut-il isoler ?",
     options: [
       {
-        label: "A wall",
+        label: "Un mur",
         credit: 10,
       },
       {
-        label: "Multiple walls",
+        label: "Murs multiples",
         credit: 20,
       },
       {
-        label: "Whole house",
+        label: "Maison entière",
         credit: 45,
       },
     ],
@@ -75,18 +75,18 @@ const insulation = [
   {
     id: 811313434,
     type: "checkbox",
-    label: "How many doors and/or windows should be insulated in total ?",
+    label: "Combien de portes et/ou fenêtres doivent être isolées au total ?",
     options: [
       {
-        label: "1 to 2 doors / windows",
+        label: "1 à 2 portes/fenêtres",
         credit: 8,
       },
       {
-        label: "3 to 4 doors / windows",
+        label: "3 à 4 portes/fenêtres",
         credit: 16,
       },
       {
-        label: "5 or more doors / windows",
+        label: "5 portes/fenêtres ou plus",
         credit: 35,
       },
     ],
@@ -94,30 +94,30 @@ const insulation = [
   {
     id: 312757265,
     type: "checkbox",
-    label: "What needs to be soundproofed or noise-insulated ?",
+    label: "Qu'est-ce qui doit être insonorisé ou isolé du bruit ?",
     options: [
       {
-        label: "A wall / ceiling / floor",
+        label: "Un mur / plafond / sol",
         credit: 10,
       },
       {
-        label: "A room",
+        label: "Une chambre",
         credit: 5,
       },
       {
-        label: "Multiple rooms",
+        label: "Plusieurs pièces",
         credit: 10,
       },
       {
-        label: "Whole house",
+        label: "Maison entière",
         credit: 25,
       },
       {
-        label: "Roof",
+        label: "Toiture",
         credit: 25,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 7,
       },
     ],

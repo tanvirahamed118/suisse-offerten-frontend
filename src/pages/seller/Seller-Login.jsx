@@ -15,12 +15,14 @@ function SellerLogin() {
     password: "",
   });
   const { input, password } = seller || {};
+
   const handleChange = (e) => {
     setSeller({
       ...seller,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     loginSeller(seller);
@@ -40,6 +42,7 @@ function SellerLogin() {
       }, 2000);
     }
   }, [isError, isSuccess, data, error, navigate]);
+
   return (
     <section className="w-10/12 lg:w-[400px] xl:w-[500px]">
       <div className="w-full">

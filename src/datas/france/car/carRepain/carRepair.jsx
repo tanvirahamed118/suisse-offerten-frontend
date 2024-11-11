@@ -6,7 +6,7 @@ const carRepair = [
     id: 897336554,
     type: "inputBox",
     mainId: 610389522,
-    label: "Make and model",
+    label: "Marque et modèle",
     options: [{ label: "" }],
   },
 
@@ -14,9 +14,9 @@ const carRepair = [
     id: 610389522,
     type: "samplebox",
     mainId: 588584335,
-    label: "Type approval",
+    label: "Homologation de type",
     headline:
-      "The type certificate number can be found in the vehicle registration document under field 24",
+      "Le numéro de certificat de type se trouve dans le document d'immatriculation du véhicule sous le champ 24",
     img: SampleOne,
     options: [{ label: "" }],
   },
@@ -25,10 +25,10 @@ const carRepair = [
     id: 588584335,
     type: "samplebox",
     mainId: 527861383,
-    label: "Chassis number",
+    label: "Numéro de châssis",
     img: SampleTow,
     headline:
-      "The chassis number (vehicle identification number) can be found in the vehicle registration document in field 23. You only need to enter the first 17 characters.",
+      "Le numéro de châssis (numéro d'identification du véhicule) se trouve dans le document d'immatriculation du véhicule dans le champ 23. Vous n'avez besoin de saisir que les 17 premiers caractères.",
     options: [{ label: "" }],
   },
 
@@ -36,16 +36,16 @@ const carRepair = [
     id: 527861383,
     type: "datebox",
     mainId: 328089644,
-    label: "1. Placing on the market",
+    label: "1. Mise sur le marché",
     options: [{ label: "" }],
   },
 
   {
     id: 328089644,
     type: "checkbox",
-    label: "Gear shift",
+    label: "Changement de vitesse",
     options: [
-      { label: "Manually", id: 260455785, credit: 10 },
+      { label: "Manuellement", id: 260455785, credit: 10 },
       { label: "Machine", id: 153275411, credit: 10 },
     ],
   },
@@ -53,7 +53,7 @@ const carRepair = [
   {
     id: 260455785,
     type: "modelbox",
-    label: "Mileage",
+    label: "Kilométrage",
     headline: "km",
     options: [{ label: "" }],
   },
@@ -61,7 +61,7 @@ const carRepair = [
     id: 153275411,
     type: "modelbox",
     headline: "km",
-    label: "1. Placing on the market",
+    label: "1. Mise sur le marché",
     options: [{ label: "" }],
   },
 ];

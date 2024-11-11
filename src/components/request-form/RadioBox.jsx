@@ -15,7 +15,8 @@ function RadioBox({ item, currentQuestion, handleQuestionChange }) {
               currentQuestion?.label,
               item.label,
               item.id ? item.id : 611913870,
-              item.credit
+              item.credit,
+              item.mainCatId
             )
           }
         />

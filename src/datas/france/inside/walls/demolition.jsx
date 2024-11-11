@@ -4,20 +4,20 @@ const demolition = [
   {
     id: 329510117,
     type: "checkbox",
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
         id: 420597409,
-        label: "Demolition / Dismantling",
+        label: "Démolition / Démantèlement",
       },
       {
         id: 314038231,
-        label: "Wall breakthrough",
+        label: "Percée du mur",
         credit: 20,
       },
       {
         id: 482771364,
-        label: "Other",
+        label: "Autre",
         credit: 10,
       },
     ],
@@ -25,30 +25,31 @@ const demolition = [
   {
     id: 420597409,
     type: "checkbox",
-    label: "How comprehensive is the order approximately ?",
+    label:
+      "Dans quelle mesure la commande est-elle approximativement complète ?",
     options: [
       {
         id: 541297650,
-        des: "E.g. fireplace, playhouse, etc.",
-        label: "Small",
+        des: "Par exemple, cheminée, maisonnette, etc.",
+        label: "Petite",
         credit: 10,
       },
       {
         id: 967554274,
-        des: "E.g. kitchen, bathroom, oil tank etc.",
-        label: "Medium",
+        des: "Par exemple, cuisine, salle de bain, réservoir à mazout, etc.",
+        label: "Moyen",
         credit: 25,
       },
       {
         id: 926585133,
         des: "E.g. garage, extension, apartment etc.",
-        label: "Large",
+        label: "Grande",
         credit: 35,
       },
       {
         id: 902521810,
-        des: "E.g. whole house, several properties, etc.",
-        label: "Very Larg",
+        des: "Par exemple, une maison entière, plusieurs propriétés, etc.",
+        label: "Très grand",
         credit: 55,
       },
     ],
@@ -56,108 +57,108 @@ const demolition = [
   {
     id: 541297650,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     options: questionCheckboxItem(515319036, 408078507),
   },
   {
     id: 515319036,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
   {
     id: 408078507,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
   {
     id: 967554274,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     options: questionCheckboxItem(515319036, 408078507),
   },
   {
     id: 515319036,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
   {
     id: 408078507,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
   {
     id: 926585133,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     options: questionCheckboxItem(515319036, 408078507),
   },
   {
     id: 515319036,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
   {
     id: 408078507,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
   {
     id: 902521810,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     options: questionCheckboxItem(515319036, 408078507),
   },
   {
     id: 515319036,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
   {
     id: 408078507,
     type: "checkbox",
-    label: "Should it also be removed ?",
+    label: "Faut-il le supprimer également ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: can_you_access_inside,
   },
 
   {
     id: 314038231,
     type: "checkbox",
-    label: "What kind of wall is it ?",
+    label: "De quel type de mur s'agit-il ?",
     options: [
       {
-        label: "Stud wall",
+        label: "Cloison à ossature bois",
       },
       {
-        label: "Non-load-bearing wall",
+        label: "Mur non porteur",
       },
       {
-        label: "Load-bearing wall",
+        label: "Mur porteur",
       },
       {
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },

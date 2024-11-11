@@ -1,37 +1,37 @@
-const upholstery = [
+const Tapisserie = [
   {
     id: 896194815,
     type: "multibox",
     mainId: 145017484,
-    label: "What kind of objects are they ?",
+    label: "De quel genre d'objets s'agit-il ?",
     options: [
       {
-        label: "sofa",
+        label: "Canapé",
       },
       {
-        label: "Armchair",
+        label: "Fauteuil",
       },
       {
-        label: "Chair",
+        label: "Chaise",
       },
       {
-        label: "Bench",
+        label: "Banc",
       },
       {
-        label: "Car seat",
+        label: "Siège auto",
       },
       {
-        label: "steering wheel",
+        label: "Volant",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 145017484,
     type: "checkbox",
-    label: "How many objects are there in total ?",
+    label: "Combien d'objets y a-t-il au total ?",
     options: [
       {
         id: 700735159,
@@ -40,17 +40,17 @@ const upholstery = [
       },
       {
         id: 331608382,
-        label: "2 to 3",
+        label: "2 à 3",
         credit: 10,
       },
       {
         id: 541459681,
-        label: "4 to 6",
+        label: "4 à 6",
         credit: 15,
       },
       {
         id: 993543793,
-        label: "7 or more",
+        label: "7 ou plus",
         credit: 20,
       },
     ],
@@ -58,358 +58,342 @@ const upholstery = [
   {
     id: 700735159,
     type: "checkbox",
-    label:
-      "What service should be provided on these pieces of furniture etc. ?",
+    label: "Quel service faut-il prévoir sur ces meubles etc. ?",
     options: [
       {
         id: 167316703,
-        label: "(New) cover",
+        label: "(Nouvelle) couverture",
       },
       {
-        label: "Upholstery",
+        label: "Tapisserie",
       },
       {
         id: 510196641,
-        label: "Both",
+        label: "Les deux",
       },
     ],
   },
   {
     id: 167316703,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 304126914,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 510196641,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 331608382,
     type: "checkbox",
-    label:
-      "What service should be provided on these pieces of furniture etc. ?",
+    label: "Quel service faut-il prévoir sur ces meubles etc. ?",
     options: [
       {
         id: 167316703,
-        label: "(New) cover",
+        label: "(Nouvelle) couverture",
       },
       {
         id: 304126914,
-        label: "Upholstery",
+        label: "Tapisserie",
       },
       {
         id: 510196641,
-        label: "Both",
+        label: "Les deux",
       },
     ],
   },
   {
     id: 167316703,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 304126914,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 510196641,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 541459681,
     type: "checkbox",
-    label:
-      "What service should be provided on these pieces of furniture etc. ?",
+    label: "Quel service faut-il prévoir sur ces meubles etc. ?",
     options: [
       {
         id: 167316703,
-        label: "(New) cover",
+        label: "(Nouvelle) couverture",
       },
       {
         id: 304126914,
-        label: "Upholstery",
+        label: "Tapisserie",
       },
       {
         id: 510196641,
-        label: "Both",
+        label: "Les deux",
       },
     ],
   },
   {
     id: 167316703,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 304126914,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 510196641,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 993543793,
     type: "checkbox",
-    label:
-      "What service should be provided on these pieces of furniture etc. ?",
+    label: "Quel service faut-il prévoir sur ces meubles etc. ?",
     options: [
       {
         id: 167316703,
-        label: "(New) cover",
+        label: "(Nouvelle) couverture",
       },
       {
         id: 304126914,
-        label: "Upholstery",
+        label: "Tapisserie",
       },
       {
         id: 510196641,
-        label: "Both",
+        label: "Les deux",
       },
     ],
   },
   {
     id: 167316703,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 304126914,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 510196641,
     type: "checkbox",
-    label:
-      "What material should these pieces of furniture etc. be covered with ?",
+    label: "De quel matériau ces meubles etc. doivent-ils être recouverts ?",
     options: [
       {
-        label: "leather",
+        label: "Cuir",
       },
       {
-        label: "Artificial leather",
+        label: "Ajout artificiel",
       },
       {
-        label: "Material",
+        label: "Matérielle",
       },
       {
-        label: "I don't know / need advice",
+        label: "Je ne sais pas / j'ai besoin de conseils",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
 ];
 
-export default upholstery;
+export default Tapisserie;

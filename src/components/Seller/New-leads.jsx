@@ -7,6 +7,14 @@ import { useState } from "react";
 import { useGetAllJobsBySellerQuery } from "../../redux/rtk/features/job/jobApi";
 import LeadsFilter from "./Leads-filter";
 import { Link } from "react-router-dom";
+import outside from "../../assets/images/request/outside.png";
+import inside from "../../assets/images/request/inside.png";
+import planing from "../../assets/images/request/planing.png";
+import car from "../../assets/images/request/car.png";
+import moving from "../../assets/images/request/moving.png";
+import cleaning from "../../assets/images/request/cleaning.png";
+import transport from "../../assets/images/request/transport.png";
+import other from "../../assets/images/request/other.png";
 
 function NewLeads() {
   const { t } = useTranslation();
@@ -19,20 +27,15 @@ function NewLeads() {
   const [sortCriteria, setSortCriteria] = useState("");
   const [jobNumber, setJobNumber] = useState(null);
 
-  // Combination sort function
   const sortJobs = (jobs) => {
-    return jobs
-      ?.slice() // create a copy of the jobs array
-      .sort((a, b) => {
-        if (sortCriteria === "date") {
-          // Sort by date (newest first)
-          return new Date(b.createdAt) - new Date(a.createdAt);
-        } else if (sortCriteria === "bid") {
-          // Sort by lowest bid
-          return a.placeBid - b.placeBid;
-        }
-        return 0; // Default fallback
-      });
+    return jobs?.slice().sort((a, b) => {
+      if (sortCriteria === "date") {
+        return new Date(b.createdAt) - new Date(a.createdAt);
+      } else if (sortCriteria === "bid") {
+        return a.placeBid - b.placeBid;
+      }
+      return 0;
+    });
   };
 
   const { data, isLoading, isError, isSuccess, error } =
@@ -85,6 +88,7 @@ function NewLeads() {
         jobCompletionDate,
         jobLocation,
         jobPostcode,
+        jobCategoryCode,
         jobFiles,
         _id,
       } = item || {};
@@ -96,15 +100,57 @@ function NewLeads() {
         <Link
           to={`/search-job/${_id}`}
           key={_id}
-          className="flex flex-col gap-2 border border-gray-200 rounded-sm p-5 hover:cursor-pointer custom-hover"
+          className="group flex flex-col gap-2 border-2 border-gray-100 rounded-md p-5 hover:cursor-pointer custom-hover overflow-hidden"
         >
-          <h5 className="text-xl text-black font-bold">{jobTitle}</h5>
+          <h5 className="text-xl text-black font-bold group-hover:underline">
+            {jobTitle}
+          </h5>
           <div className="flex flex-col gap-2 items-center md:flex-row md:gap-5">
-            <div className="border-gray-300 p-3 border w-36 md:w-60 h-36">
+            <div className="border-gray-300 p-3 border w-60 h-36">
               <img
-                src={jobFiles?.length > 0 ? jobFiles[0] : Search}
+                src={
+                  jobFiles?.length > 0
+                    ? jobFiles[0]
+                    : jobCategoryCode === "Draußen" ||
+                      jobCategoryCode === "Outside" ||
+                      jobCategoryCode === "Dehors"
+                    ? outside
+                    : jobCategoryCode === "Innen" ||
+                      jobCategoryCode === "Inside" ||
+                      jobCategoryCode === "À_l'intérieur"
+                    ? inside
+                    : jobCategoryCode === "Planung_Beratung" ||
+                      jobCategoryCode === "Planning_Consulting" ||
+                      jobCategoryCode === "Planification_et_conseil"
+                    ? planing
+                    : jobCategoryCode === "Auto_/_Fahrzeuge" ||
+                      jobCategoryCode === "Car_/_Vehicles" ||
+                      jobCategoryCode === "Voiture_/_Véhicules"
+                    ? car
+                    : jobCategoryCode === "Umzug_Wohnungswechsel" ||
+                      jobCategoryCode === "Moving_moving_house" ||
+                      jobCategoryCode === "Déménager_déménager"
+                    ? moving
+                    : jobCategoryCode === "Reinigung" ||
+                      jobCategoryCode === "Cleaning" ||
+                      jobCategoryCode === "Nettoyage"
+                    ? cleaning
+                    : jobCategoryCode === "Transport_Entsorgung" ||
+                      jobCategoryCode === "Transport_Disposal" ||
+                      jobCategoryCode === "Transport_et_élimination"
+                    ? transport
+                    : jobCategoryCode === "Andere" ||
+                      jobCategoryCode === "Other" ||
+                      jobCategoryCode === "Autre"
+                    ? other
+                    : Search
+                }
                 alt=""
-                className="rounded-md object-cover w-52 max-w-52 h-full"
+                className={
+                  jobFiles?.length > 0
+                    ? "rounded-md object-cover w-52 max-w-52 h-full"
+                    : "rounded-md object-contain w-52 max-w-52 h-full"
+                }
               />
             </div>
             <div>

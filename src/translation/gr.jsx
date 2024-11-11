@@ -67,7 +67,7 @@ const sw = {
   not_available: "nicht verfügbar",
   name: "Name",
   location: "Standort",
-  vat_number: "Umsatzsteuer-Identifikationsnummer",
+  vat_number: "Umsatzsteuer",
   verifications: "Überprüfungen",
   preview_profile: "Profilvorschau",
   can_not_able: "kann nicht ändern",
@@ -215,6 +215,10 @@ const sw = {
   offer_note_tow:
     "Es wird der Leadpreis verrechnet und die Kontaktdaten werden für Sie wieder aktiviert.",
   offer_note_three: "Wenn der Kunde Sie um ein Angebot bittet",
+  reset_otp_warn:
+    "Wenn Sie keine E-Mail erhalten, verlassen Sie diese Seite bitte nicht und laden Sie sie nicht neu. Sie können den OTP-Code nach 2 Minuten erneut senden.",
+  reset_otp: "OTP erneut senden",
+  recive_email: "E-Mail erhalten?, OTP prüfen",
   // seller dasgboard
 
   // dashboard menu
@@ -494,7 +498,7 @@ const sw = {
   work_des_3:
     "Wählen Sie jetzt den Handwerker mit dem Angebot aus, der zu Ihrem Budget und Ihren Vorstellungen passt.",
   enter_now_your_request: "Geben Sie jetzt Ihre Anfrage ein",
-  all_categories: "Alle Kategorien",
+  all_categories: "Alle Standortlisten",
   show_more: "Zeig mehr",
   get_multiple_offers: "Erhalten Sie mehrere Angebote",
   free_non_binding: "kostenlos & unverbindlich",
@@ -503,18 +507,21 @@ const sw = {
 
   //   search job page
   home: "Heim",
-  fill_your_order: "Füllen Sie jetzt Ihr Auftragsbuch!",
+  fill_your_order: "Suchen Sie nach einem Job in einer bestimmten Kategorie?",
+  fill_your_order_2: "Oder in einer bestimmten Region?",
   fill_order_des:
-    "Bei Ofri erwarten dich jeden Monat neue Aufträge. Einfach registrieren, Wunschstandort angeben und wir zeigen dir passende Jobs in deiner Nähe.",
+    "Mit Suisse-Offerten finden Sie immer den passenden Job für sich!",
+  fill_order_des_2: "Du bist Handwerker/in und noch nicht registriert?",
   learn_more: "Erfahren Sie mehr",
-  on_this_page_craftsmen_the_area:
-    "Auf dieser Seite finden Handwerker Jobs in der Umgebung",
+  on_this_page_craftsmen_the_area: "Suche nach Jobs in:",
   seek: "Suchen",
   active_order_only: "Nur aktive Bestellung",
   order_only_des:
     "Auf Ofri finden Handwerker Jobs in der Schweiz. Hier kannst du ganz einfach nach Aufträgen in deiner Kategorie und den jeweiligen Kantonen suchen und Anfragen von potentiellen Auftraggebern einsehen.",
   find_orders_in_Switzerland:
     "Aufträge in der Schweiz finden – jetzt aktiv werden!",
+  your_category: "Ihre Kategorie:",
+  your_location: "Ihr Standort:",
   total_orders: "Arbeitsplätze insgesamt",
   next: "Nächste",
   back: "zurück",
@@ -693,46 +700,52 @@ const sw = {
   how_it_work_client_des_4:
     "Nach der Fertigstellung der Arbeiten können Sie den ausgewählten Auftragnehmer bewerten. Dies erleichtert unseren Mitgliedern die Suche und Auswahl guter Anbieter.",
   client_start: "Start",
+
   // how it works client
 
   // imprint page
   imprint_title: "Impressum",
-  imprint_text_1: "Verantwortlich für den Inhalt dieser Website:",
+  imprint_text_1: "Postanschrift:",
   imprint_text_2: "Suisse-Offerten GmbH",
   imprint_text_3: "Hauptstrasse 22",
   imprint_text_4: "4562 Biberist",
   imprint_text_5: "+41 77 942 59 44",
   imprint_text_6: "info@suisse-offerten.ch",
-  imprint_text_7: "Vertreten durch:",
+  imprint_text_7: "Umsatzsteuer-Identifikationsnummer:",
   imprint_text_8: "Mehmet Küçük",
-  imprint_text_9: "Anmeldung:",
-  imprint_text_10: "[Handelsregisternummer]",
-  imprint_text_11: "[Registergericht]",
-  imprint_text_12: "[Umsatzsteuer-Identifikationsnummer]",
-  imprint_text_13: "Haftungshinweis:",
+  imprint_text_9:
+    "Suisse-Offerten.ch unternimmt grosse Anstrengungen, aktuelle und korrekte Informationen auf dieser Web-Seite zur Verfügung zu stellen. ",
+  imprint_text_10:
+    "Suisse-Offerten.ch gibt jedoch keine Versicherung, Garantie oder Zusage im Hinblick auf Richtigkeit, Genauigkeit, Aktualität oder Vollständigkeit der gegebenen Informationen und Links.",
+  imprint_text_11:
+    "Suisse-Offerten.ch kann keine Verantwortung für Inhalte übernehmen, die von dritter Seite, einschliesslich Kunden von Suisse Offerten, zur Verfügung gestellt werden.",
+  imprint_text_12: "Irrtümer und Druckfehler vorbehalten.",
+  imprint_text_13: "Copyright",
   imprint_text_14:
-    "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.",
-  imprint_text_15: "Urheberrechtshinweis:",
+    "Die gesamte Website unterliegt der schweizerischen und internationalen Gesetzgebung zum Urheberrecht und zum geistigen Eigentum.",
+  imprint_text_15: "Alle Vervielfältigungsrechte sind vorbehalten.",
   imprint_text_16:
-    "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
-  imprint_text_17: "Datenschutz:",
-  imprint_text_18:
-    "Informationen zum Datenschutz finden Sie in unserer Datenschutzerklärung",
+    "Dies gilt sowohl für die auf der Website verfügbaren Dokumente als auch für die darin enthaltenen Abbildungen und Bilder.",
+  imprint_text_17:
+    "Die Reproduktion der gesamten Seite oder auch nur eines Teils davon auf einem elektronischen Datenträger ist strengstens untersagt, sofern sie nicht ausdrücklich von Suisse Offerten genehmigt wurde.",
+  imprint_text_18: "Notiz:",
   // imprint page
 
   // locations page
-  location_title: "Finden Sie lokale Handwerker",
-  location_text_1:
-    "Auf Ofri finden Sie schnell passende und zertifizierte Handwerker in Ihrer Nähe. Stellen Sie eine Anfrage und erhalten Sie unverbindlich und kostenlos mehrere Angebote.",
-  location_text_2: "Was soll getan werden?",
-  location_text_3: "Geben Sie eine kostenlose Anfrage ein",
-  location_text_4: "Gefragte Dienstleistungen",
+  location_title:
+    "Suchen Sie einen Handwerker/Betrieb in einer bestimmten Kategorie?",
+  location_text_1: "oder in einer bestimmten Region?",
+  location_text_2:
+    "Mit Suisse-Offerten finden Sie immer den besten Handwerker/Betrieb für sich!",
+  location_text_3: "Sie möchten eine kostenlose Anfrage eingeben?",
+  location_text_4: "Anfrage eingeben und Angebot erhaltenn",
   location_text_5: "Katzenklappe installieren",
   location_text_6: "Lampen installieren",
   location_text_7: "Gartenfliesen verlegen",
   location_text_8: "Malerarbeiten",
   location_text_9: "Katzenklappe installieren",
   location_text_10: "Setzt",
+  latest_review: "Letzte Bewertung",
   // locations page
 
   // single offer
@@ -799,6 +812,292 @@ const sw = {
   disposal_clearing_out: "Entsorgung, Entrümpelung",
   telephone_Internet_Multimedia: "Telefon, Internet, Multimedia",
   // sub categories
+
+  // order aggrement page
+  order_aggrement: "Bestellvereinbarung",
+  order_aggrement_title_1: "Auftragsverarbeitungsvertrag:",
+  order_aggrement_title_2:
+    "Suisse Offerten Internet GmbH, Hauptstrasse 22 4562 Biberist (nachfolgend Auftragsnehmer)",
+  order_aggrement_title_3: "1. Gegenstand und Begriffe",
+  order_aggrement_title_4: "2. Art & Zweck der Verarbeitung",
+  order_aggrement_title_5: "3. Pflichten des Auftragnehmers",
+  order_aggrement_title_6: "4. Technische Massnahmen",
+  order_aggrement_title_7: "5. Berichtigung & Personendaten",
+  order_aggrement_title_8: "6. Unterauftragsverarbeiterinnen",
+  order_aggrement_title_9: "7. Mitteilungspflichten",
+  order_aggrement_title_10: "8. Rechte und Pflichten des Auftraggebers",
+  order_aggrement_title_11: "9. Haftung & Schadenersatz",
+  order_aggrement_title_12: "10. Beendigung",
+  order_aggrement_title_13: "11. Sonstige Bestimmungen",
+  order_aggrement_des_1:
+    "Dieser Vertrag regelt die Rechte und Pflichten von Auftraggeber und Auftragnehmer (nachfolgend gemeinsam als „Parteien“ bezeichnet) im Zusammenhang mit der Auftragsbearbeitung oder Auftragsverarbeitung (nachfolgend einheitlich „Auftragsverarbeitung“ oder „Verarbeitung“) von personenbezogenen Daten (nachfolgend einheitlich „Personendaten“).",
+  order_aggrement_des_2:
+    "Der Auftragnehmer verarbeitet Personendaten gemäss einem bestehenden oder gleichzeitig mit diesem Auftragsverarbeitungsvertrag abzuschliessenden Vertrag – insbesondere auf Grundlage der Allgemeinen Geschäftsbedingungen (AGB), wie sie auf der Website des Auftragnehmers veröffentlicht sind – mit dem Auftraggeber (nachfolgend „Hauptvertrag“). Die Verarbeitung erfolgt auch gemäss sonstigen vertraglichen Vereinbarungen zwischen den Parteien im Zusammenhang mit der Handwerkerbörse des Auftragnehmers. Die Verarbeitung erfolgt auf unbestimmte Zeit bis zur Kündigung dieses Vertrages oder des Hauptvertrages.",
+  order_aggrement_des_3:
+    "Dieser Vertrag gilt für alle Tätigkeiten, bei denen der Auftragnehmer Personendaten im Auftrag des Auftraggebers verarbeitet oder verarbeiten lässt. Der Auftraggeber wird datenschutzrechtlich als Verantwortlicher betrachtet. Dieser Vertrag findet keine Anwendung auf Tätigkeiten, bei denen der Auftragnehmer allein über Mittel und Zwecke der Verarbeitung von Personendaten entscheidet, sodass keine Auftragsverarbeitung vorliegt.",
+  order_aggrement_des_4:
+    "Die Verarbeitung kann insbesondere folgende Kategorien von Personendaten umfassen: Angebotsdaten, Auftragsdaten, Bankdaten, Bewertungsdaten, Kontaktdaten, Kommunikationsdaten, Protokolldaten, Stammdaten, Vertragsdaten, Vertragssteuerungsdaten und Zahlungsdaten.",
+  order_aggrement_des_5:
+    "Die Verarbeitung umfasst jeden Umgang mit Personendaten, unabhängig von den verwendeten Mitteln und Verfahren. Dazu gehören insbesondere das Archivieren, Aufbewahren, Bekanntgeben, Beschaffen, Umarbeiten, Vernichten und Verwenden von Personendaten.",
+  order_aggrement_des_6:
+    "Die Verarbeitung kann insbesondere folgende Kategorien von betroffenen Personen umfassen: Ansprechpartner, Kunden sowie potenzielle Kunden, Geschäftspartner, Interessenten, Lieferanten und Mitarbeiter.",
+  order_aggrement_des_7:
+    "Auskünfte an Behörden, betroffene Personen oder Dritte darf der Auftragnehmer nur mit vorheriger Zustimmung des Auftraggebers erteilen. Auskünfte, die aufgrund zwingenden Rechts ohne vorherige Zustimmung des Auftraggebers erteilt werden müssen, bleiben hiervon unberührt. Direkt an den Auftragnehmer gerichtete Anfragen, die die Auftragsverarbeitung betreffen, leitet der Auftragnehmer an den Auftraggeber weiter.",
+  order_aggrement_des_8:
+    "Der Auftragnehmer verpflichtet sich, bei der Verarbeitung die Vertraulichkeit zu wahren. Personen, die Zugang zu den im Auftrag verarbeiteten Personendaten erhalten, müssen sich zur Vertraulichkeit verpflichten, sofern sie nicht bereits gesetzlich einer entsprechenden Geheimhaltungspflicht unterliegen.",
+  order_aggrement_des_9:
+    "Der Auftragnehmerin bestätigt, dass ihm die anwendbaren datenschutzrechtlichen Vorschriften in der Schweiz bekannt sind. Er beachtet insbesondere die allgemeinen datenschutzrechtlichen Grundsätze für die Verarbeitung von Personendaten gemäss Art. 4, 5 und 7 des Datenschutzgesetzes (DSG).",
+  order_aggrement_des_10:
+    "Der Auftragnehmer verarbeitet Personendaten ausschliesslich gemäss den vertraglichen Vereinbarungen mit dem Auftraggeber oder wie vom Auftraggeber angeordnet, es sei denn, der Auftragnehmer ist gesetzlich zu einer bestimmten Verarbeitung verpflichtet. Der Auftragnehmer verwendet die zur Verarbeitung überlassenen Personendaten nicht für andere Zwecke, insbesondere nicht für eigene Zwecke.",
+  order_aggrement_des_11:
+    "Wird der Auftraggeber von Aufsichtsbehörden oder anderen zuständigen Stellen kontrolliert oder machen betroffene Personen datenschutzrechtliche Ansprüche geltend, verpflichtet sich die Auftragnehmerin, den Auftraggeber im erforderlichen Umfang zu unterstützen, sofern die Auftragsverarbeitung betroffen ist. Die entsprechenden Kosten der Auftragnehmerin für diese Unterstützung trägt der Auftraggeber.",
+  order_aggrement_des_12:
+    "Der Auftragnehmer sichert zu, dass die Personen, die bei ihm zur Verarbeitung eingesetzt werden, vor Beginn der Verarbeitung mit den anwendbaren datenschutzrechtlichen Vorschriften und den wesentlichen Bestimmungen dieses Vertrages vertraut gemacht wurden. Der Auftragnehmer sorgt dafür, dass diese Personen in Bezug auf die Einhaltung der relevanten datenschutzrechtlichen Vorschriften angemessen geschult und überwacht werden.",
+  order_aggrement_des_13:
+    "Im Zusammenhang mit der beauftragten Verarbeitung unterstützt der Auftragnehmer den Auftraggeber bei der Erstellung und Aktualisierung eines möglicherweise erforderlichen Verzeichnisses der Verarbeitungstätigkeiten sowie bei der Durchführung einer eventuell notwendigen Datenschutz-Folgenabschätzung im erforderlichen Umfang. Die Kosten für diese Unterstützung trägt der Auftraggeber.",
+  order_aggrement_des_14:
+    "Die Auftragsverarbeitung erfolgt in der Schweiz sowie in Liechtenstein. Jegliche Verarbeitung in anderen Staaten darf nur mit Zustimmung des Auftraggebers erfolgen und muss insbesondere die Bedingungen gemäss Art. 6 DSG sowie die Bestimmungen dieses Vertrages einhalten.",
+  order_aggrement_des_15:
+    "Sofern gesetzlich erforderlich, bestellt der Auftragnehmer eine fachkundige und zuverlässige Person als Datenschutzbeauftragten. Es ist sicherzustellen, dass keine Interessenskonflikte bei dem Datenschutzbeauftragten bestehen. In Zweifelsfällen kann sich der Auftraggeber direkt an den Datenschutzbeauftragten wenden. Der Auftragnehmer informiert den Auftraggeber über die Kontaktdaten des bestellten Datenschutzbeauftragten. Änderungen in der Person oder den Aufgaben des Datenschutzbeauftragten teilt der Auftragnehmer dem Auftraggeber unverzüglich mit. Falls kein Datenschutzbeauftragter bestellt wurde, übermittelt der Auftragnehmer dem Auftraggeber die Kontaktdaten eines Ansprechpartners im Zusammenhang mit der Auftragsverarbeitung.",
+  order_aggrement_des_16:
+    "Kopien werden ohne Wissen des Auftraggebers nicht erstellt. Ausgenommen sind Vervielfältigungen, die aus technischen, gesetzlichen oder regulatorischen Gründen, gemäss diesem Vertrag oder zur Vertragserfüllung zwischen den Parteien notwendig sind, sofern solche Kopien nicht zu einer Beeinträchtigung der Datensicherheit führen.",
+  order_aggrement_des_17:
+    "Der Auftragnehmer stellt sicher, dass Personendaten durch geeignete technische und organisatorische Massnahmen geschützt werden. Diese Massnahmen müssen kontinuierlich an die fortlaufende technische und organisatorische Entwicklung angepasst werden. Erforderliche Schritte zur Wahrung der Datensicherheit sind vom Auftragnehmer umgehend umzusetzen.",
+  order_aggrement_des_18:
+    "Der Auftragnehmer garantiert, dass Personendaten, die im Rahmen des Auftrags verarbeitet werden, von anderen Datenbeständen getrennt gehalten werden.",
+  order_aggrement_des_19:
+    "Der Auftragnehmer dokumentiert die Erfüllung seiner datenschutzrechtlichen Verpflichtungen, insbesondere den Schutz von Personendaten, durch entsprechende technische und organisatorische Massnahmen gemäss Art. 7 DSG und Art. 8 ff. VDSG.",
+  order_aggrement_des_20:
+    "Der Auftragnehmer wird den Anweisungen des Auftraggebers jederzeit Folge leisten, auch nach Beendigung dieses Vertrages. Alle damit verbundenen Kosten, auch nach Vertragsbeendigung, trägt der Auftraggeber.",
+  order_aggrement_des_21:
+    "Innerhalb der Auftragsverarbeitung wird der Auftragnehmer Personendaten nur gemäss den vertraglichen Vereinbarungen oder nach Anweisungen des Auftraggebers berichtigen, löschen oder sperren.",
+  order_aggrement_des_22:
+    "Falls der Auftragnehmer Unterauftragsverarbeiter einsetzt, ist es seine Aufgabe, diesen die datenschutzrechtlichen Verpflichtungen aus diesem Vertrag aufzuerlegen.",
+  order_aggrement_des_23:
+    "Der Auftraggeber stimmt allgemein zu, dass der Auftragnehmer Unterauftragsverarbeiter hinzuziehen darf. Der Auftragnehmer wählt Unterauftragsverarbeiter unter Berücksichtigung der Eignung der von ihnen getroffenen technischen und organisatorischen Massnahmen sorgfältig aus.",
+  order_aggrement_des_24:
+    "Der Auftragnehmer informiert den Auftraggeber im Voraus über die geplante Hinzuziehung oder Ersetzung von Unterauftragsverarbeitern. Der Auftraggeber kann der geplanten Hinzuziehung oder Ersetzung – innerhalb einer angemessenen, gegebenenfalls vom Auftragnehmer gesetzten Frist – aus wichtigem Grund widersprechen. Erfolgt innerhalb dieser Frist kein Widerspruch, gilt die Zustimmung zur geplanten Hinzuziehung oder Ersetzung als erteilt. Liegt ein wichtiger datenschutzrechtlicher Grund vor und ist keine einvernehmliche Klärung zwischen den Parteien möglich, wird dem Auftraggeber das Recht eingeräumt, diesen Vertrag sofort zu kündigen.",
+  order_aggrement_des_25:
+    "Der Auftragnehmer wird den Auftraggeber umgehend über wesentliche Störungen bei der Auftragsverarbeitung sowie über Verstösse seinerseits oder durch seine Mitarbeiter gegen datenschutzrechtliche Vorschriften oder diesen Vertrag informieren.",
+  order_aggrement_des_26:
+    "Der Auftragnehmer wird den Auftraggeber sofort nach Kenntnisnahme über Verstösse gegen den Schutz von Personendaten informieren. Auch begründete Verdachtsfälle müssen gemeldet werden, wobei die Mitteilung alle erforderlichen Informationen enthalten muss.",
+  order_aggrement_des_27:
+    "Der Auftragnehmer wird, soweit gesetzlich erlaubt, den Auftraggeber unverzüglich über Kontrollen oder andere Massnahmen von Aufsichtsbehörden oder Dritten informieren, die mit der Auftragsverarbeitung in Zusammenhang stehen.",
+  order_aggrement_des_28:
+    "Der Auftragnehmer informiert – sofern gesetzlich zulässig – den Auftraggeber umgehend über Anfragen von Behörden, die die Herausgabe oder Übermittlung von Personendaten betreffen, wenn diese im Zusammenhang mit der Auftragsverarbeitung stehen. Sollte eine solche Information aufgrund zwingenden Rechts nicht oder vorübergehend nicht möglich sein, trifft der Auftragnehmer angemessene Schutzmassnahmen im Interesse des Auftraggebers und im Rahmen dieses Vertrages.",
+  order_aggrement_des_29:
+    "Der Auftragnehmer teilt dem Auftraggeber mit, wenn er der Auffassung ist, dass eine Weisung gegen das anwendbare Datenschutzrecht verstösst. Der Auftragnehmer ist berechtigt, die Ausführung einer solchen Weisung auszusetzen, bis der Auftraggeber diese ausdrücklich und in Schriftform bestätigt oder ändert.",
+  order_aggrement_des_30:
+    "Der Auftragnehmer sichert zu, den Auftraggeber bei dessen datenschutzrechtlichen Meldepflichten im erforderlichen Umfang zu unterstützen. Die Kosten für diese Unterstützung trägt der Auftraggeber.",
+  order_aggrement_des_31:
+    "Der Auftraggeber ist verpflichtet, den Auftragnehmer unverzüglich zu informieren, wenn er Fehler oder Unregelmässigkeiten bei der Auftragsverarbeitung feststellt.",
+  order_aggrement_des_32:
+    "Allein der Auftraggeber ist für die Beurteilung der Zulässigkeit der Auftragsverarbeitung und die Wahrung der Rechte betroffener Personen verantwortlich.",
+  order_aggrement_des_33:
+    "Der Auftraggeber behält sich ein umfassendes Weisungsrecht hinsichtlich der Auftragsverarbeitung vor. Alle Aufträge, Teilaufträge und Weisungen sind in dokumentierter Form zu erteilen, sodass ein Nachweis durch Text möglich ist. In dringenden Fällen können Weisungen mündlich erteilt werden; solche Weisungen sind vom Auftraggeber unverzüglich schriftlich zu bestätigen.",
+  order_aggrement_des_34:
+    "Der Auftraggeber ist berechtigt, die Einhaltung der Datenschutzvorschriften und dieses Vertrages bei dem Auftragnehmer in angemessenem Umfang selbst oder durch Dritte zu überprüfen. Dies kann durch das Einholen von Auskünften, Einsichtnahme in gespeicherte Personendaten und Verarbeitungsprogramme sowie durch andere Kontrollen vor Ort erfolgen. Kontrollen sind vom Auftraggeber rechtzeitig anzumelden. Der Auftragnehmer hat den mit der Kontrolle betrauten Personen – sofern erforderlich – Zugang zu gewähren. Der Auftragnehmer ist verpflichtet, notwendige Auskünfte zu erteilen, Abläufe zu demonstrieren und Nachweise zu führen, die für die Durchführung der Kontrolle erforderlich sind. Die Kosten für solche Kontrollen trägt der Auftraggeber.",
+  order_aggrement_des_35:
+    "Der Auftragnehmer haftet ausschliesslich für Schäden, die er verursacht hat, weil er seinen gesetzlichen Pflichten als Auftragsverarbeiter nicht nachgekommen ist, rechtmässig erteilte Weisungen des Auftraggebers nicht beachtet hat oder gegen Weisungen des Auftraggebers verstossen hat. Die Haftung des Auftragnehmers entfällt, wenn er nachweisen kann, dass er in keiner Weise für den Umstand verantwortlich ist, der zu einem solchen Schaden geführt hat.",
+  order_aggrement_des_36:
+    "Sonstige Vereinbarungen zu Haftung und Schadenersatz im Hauptvertrag sowie in anderen vertraglichen Vereinbarungen gelten auch für die Auftragsverarbeitung.",
+  order_aggrement_des_37:
+    "Bei Beendigung dieses Vertrages oder des Hauptvertrages sowie auf Verlangen des Auftraggebers hat der Auftragnehmer die im Auftrag verarbeiteten Personendaten einschliesslich aller Kopien entweder zu vernichten oder dem Auftraggeber zu übergeben, es sei denn, der Auftragnehmer ist gesetzlich oder regulatorisch zur Aufbewahrung verpflichtet.",
+  order_aggrement_des_38:
+    "Dieser Vertrag wird auf unbestimmte Zeit geschlossen. Er endet mit dem Hauptvertrag oder kann mit einer Frist von einem Monat zum Monatsende gekündigt werden. Beide Parteien haben das Recht, diesen Vertrag sofort zu kündigen, wenn ein wichtiger Grund vorliegt, wie insbesondere ein schwerwiegender Verstoss gegen das Datenschutzrecht oder gegen diesen Vertrag.",
+  order_aggrement_des_39:
+    "Bei Beendigung dieses Vertrages ist der Auftragnehmer verpflichtet, unverzüglich die Löschung oder Rückgabe der Personendaten sicherzustellen, auch bei Unterauftragsverarbeitern, es sei denn, eine gesetzliche oder regulatorische Aufbewahrungspflicht besteht.",
+  order_aggrement_des_40:
+    "Die Dokumentation, die den Nachweis der ordnungsgemässen Verarbeitung erbringt, ist durch den Auftragnehmer gemäss den jeweiligen Aufbewahrungsfristen auch nach Beendigung dieses Vertrages für mindestens fünf Jahre aufzubewahren. Der Auftragnehmer kann diese Dokumentation zur Entlastung jederzeit dem Auftraggeber übergeben.",
+  order_aggrement_des_41:
+    "Sollten einzelne Teile dieses Vertrages unwirksam sein, so bleibt die Wirksamkeit des übrigen Vertrages davon unberührt.",
+  order_aggrement_des_42:
+    "Die Parteien können diesen Vertrag durch Anhänge ergänzen, die Details zu den Kategorien von verarbeiteten Personendaten und betroffenen Personen, den erforderlichen technischen und organisatorischen Massnahmen sowie den eingesetzten Unterauftragsverarbeitern enthalten. Diese Anhänge werden Bestandteil dieses Vertrages, sofern sie ausdrücklich darauf Bezug nehmen.",
+  order_aggrement_des_43:
+    "Die Parteien sind verpflichtet, alle im Rahmen dieses Vertrages erlangten Kenntnisse über Datensicherheitsmassnahmen und Geschäftsgeheimnisse der jeweils anderen Partei auch nach Beendigung dieses Vertrages vertraulich zu behandeln. Bestehen Zweifel, ob eine Information der Geheimhaltungspflicht unterliegt, ist sie bis zur ausdrücklichen Freigabe durch die jeweils andere Partei als vertraulich zu behandeln. Dies gilt auch für Informationen, die einer Partei bereits vor Unterzeichnung dieses Vertrages bekannt waren oder die öffentlich zugänglich sind.",
+  order_aggrement_des_44:
+    "Für diesen Vertrag gilt das schweizerische Recht, insbesondere das Bundesgesetz über den Datenschutz (DSG). Ausschliesslicher Gerichtsstand ist am Sitz des Auftragnehmers.",
+  // order aggrement page
+
+  // condition page
+  condition_title_1: "Bedingungen",
+  condition_title_2: "Allgemeine Geschäfts¬bedingungen (AGB)",
+  condition_title_3: "1. Suisse Offerten Plattform",
+  condition_title_4: "2. Nutzung der Plattform",
+  condition_title_5: "3. Ausschreibungen und sonstige Inhalte",
+  condition_title_6: "4. Bewertungen",
+  condition_title_7: "5. Pflichten von Nutzerinnen und Nutzern",
+  condition_title_8: "6. Datenschutz & Datensicherheit",
+  condition_title_9: "7. Haftung<",
+  condition_title_10: "8. Schlussbestimmungen",
+  condition_des_1:
+    "Suisse Offerten (Betreiber) ist eine in der Schweiz sesshaftes Unternehmen und bietet ein Web-Portal für die Ausschreibung und Vermittlung von Auftragen bzw. Handwerkern. Auftraggeber können Angebote für Produkte und Dienstleistungen von registrierten Auftragnehmern einholen, annehmen und ausführen lassen. ",
+  condition_des_2:
+    "Die nachfolgenden Allgemeinen Geschäftsbedingungen (AGB) gelten für das Vertragsverhältnis zwischen Suisse Offerten und den Nutzern (Auftraggeber und Auftragnehmer) des Portals. Die AGB gelten jedoch nicht für das Vertragsverhältnis zwischen den Auftraggebern und den Auftragnehmern.",
+  condition_des_3:
+    "Für einzelne und/oder zusätzliche Funktionen und Leistungen können besondere und/oder ergänzende Bedingungen gelten. ",
+  condition_des_4:
+    "Alle verwendeten Begriffe gelten unabhängig von der Sprachform sowohl für weibliche, als auch für männliche Nutzer.",
+  condition_des_5:
+    "Der Betreiber ermöglicht es den Nutzerinnen und Nutzern, die Plattform zur Ausschreibung von Leistungen von Handwerkern und anderen Dienstleistern zu nutzen. Die Nutzerinnen und Nutzer können eigenständig Verträge untereinander abschliessen, wobei sie allein für diese Verträge verantwortlich sind und die Erfüllung dieser Verträge in ihrem eigenen Ermessen liegt. Benachrichtigungen auf der Plattform bezüglich Ausschreibungen /Verträgen dienen ausschliesslich der Information der betroffenen Nutzerinnen und Nutzer.",
+  condition_des_6:
+    "Suisse Offerten ermöglicht es, über die Plattform gezielt Anfragen von Auftraggebern an geeignete Auftragnehmer für die gewünschten Dienstleistungen oder Produkte zu vermitteln. Dadurch sollen die Nutzer einen effizienten Preisvergleich durchführen können.",
+  condition_des_7:
+    "Der Betreiber ist nicht an den Verträgen beteiligt und fungiert auch nicht als Vertreterin in Vertragsangelegenheiten. Es wird insbesondere keine Gewähr dafür übernommen, dass Nutzerinnen und Nutzer ihren möglichen vertraglichen Verpflichtungen untereinander nachkommen. Die Abwicklung und Durchsetzung von Verträgen liegen allein in der Verantwortung der Nutzer. Der Betreiber bietet keineswegs damit verbundene Dienstleistungen wie Inkasso/Betreibung oder Streitschlichtung an.",
+  condition_des_8:
+    "Der Betreiber übernimmt keinerlei Gewähr für die Angaben (berufliche Fähigkeiten, Identität, Versicherungen, etc.) von Nutzern. Zudem wird keine Gewähr übernommen, dass die vom Betreiber initial verifizierten Angaben, zu späterem Zeitpunkt noch zutreffend sind. Die Nutzer sind verpflichtet, Ausschreibungen und sonstige Inhalte anderer Nutzer im Zweifelsfall eigenständig zu überprüfen. Der Betreiber ist nicht dazu verpflichtet, das Verhalten der Nutzer auf der Plattform zu überwachen. Zudem obliegt es ihm nicht, Ausschreibungen und sonstige Inhalte der Nutzer auf ihre Rechtmässigkeit oder sonstige Zulässigkeit hin zu überprüfen.",
+  condition_des_9: `Der Betreiber bietet auf der Plattform verschiedene Funktionen (sowohl kostenfreie als auch kostenpflichtige) an. Die aktuellen Funktions- und Leistungsumfänge sowie gegebenenfalls anfallende Gebühren werden von ihm auf der Plattform veröffentlicht.
+ Der Betreiber behält sich das Recht vor, den Funktionsumfang sowie die Gebühren zu beliebiger Zeit zu ändern. Für bereits laufende kostenpflichtige Funktionen und Leistungen treten solche Änderungen erst ab einer eventuellen erneuten Laufzeit in Kraft. Die Nutzer werden auf angemessener Weise über derartige Änderungen informiert.
+ `,
+  condition_des_10:
+    "Die Voraussetzung für die Nutzung der Suisse Offerten Plattform ist die Registrierung aller Nutzer mit vollständigen und wahrheitsgetreuen Angaben. Die Registrierung steht nur unbeschränkt handlungsfähigen, natürlichen oder juristischen Personen mit Wohnsitz oder Sitz in der Schweiz offen. Nach erfolgreicher Registrierung erhalten Nutzer ein eigenes Nutzerprofil und können die Plattform entweder als Auftraggeber oder Auftragnehmer nutzen.",
+  condition_des_11:
+    "Die Registrierung mit nicht richtigen Angaben ist untersagt. Jede natürliche oder juristische Person darf sich nur einmal registrieren. Die bereitgestellten Informationen der Nutzer müssen auch nach erfolgreicher Registrierung stets vollständig und korrekt sein. Der Betreiber behält sich das Recht vor, die Angaben der Nutzer (auch nachträglich) zu überprüfen, entweder selbst oder durch Dritte, und gegebenenfalls zusätzliche Informationen von den Nutzern anzufordern. Der Betreiberin ist berechtigt, jederzeit die Registrierung (auch nachträglich) ohne Angabe von Gründen abzulehnen.",
+  condition_des_12:
+    "Registrierte Nutzer dürfen die Plattform lediglich für ihren eigenen oder gewerblichen Gebrauch nutzen. Sie verpflichten sich, ihre Zugangsdaten vertraulich zu behandeln und ausschliesslich für sich selbst zu verwenden. Jegliches Weitergeben der Zugangsdaten an Dritte, sei es direkt oder indirekt, ist untersagt. Der Betreiber behält sich das Recht vor, Nutzern den Zugang zur Plattform jederzeit und ohne Angabe von Gründen zu verweigern. Falls der Zugriff aufgrund einer Verletzung dieser Nutzungsbedingungen verweigert wird, bleiben eventuelle Gebühren geschuldet. Nutzer sind darüber hinaus verpflichtet, etwaigen vertraglichen Verpflichtungen untereinander oder gegenüber dem Betreiber nachzukommen.",
+  condition_des_13:
+    "Die Plattform bietet eine Kommunikationsmöglichkeit unter den Nutzern an. Diese Kommunikation ist lediglich im Zusammenhang mit Ausschreibungen zulässig und darf keine unerwünschte Werbung oder Beleidigungen umfassen.",
+  condition_des_14:
+    "Die Nutzung der Plattform kann vorübergehend, teilweise oder vollständig, aus technischen Gründen eingeschränkt sein. Der Betreiber übernimmt keine Gewährleistung für die Verfügbarkeit der Plattform sowie für die Aktualität, Richtigkeit oder Vollständigkeit der Ausschreibungen.",
+  condition_des_15:
+    "Der Betreiber hat das Recht, Ausschreibungen jederzeit und ohne Angabe von Gründen sowie auch nachträglich abzulehnen oder zu löschen. Sie kann Ausschreibungen mit Metadaten versehen und nach eigenem Ermessen, ohne vorherige Rücksprache, anpassen, insbesondere um das Erscheinungsbild, die Formatierung und/oder die Lesbarkeit zu verbessern.",
+  condition_des_16:
+    "Es ist untersagt, Ausschreibungen in Verbindung mit Betäubungsmitteln, Eigenwerbung, erotischen oder finanziellen Dienstleistungen, Glücksspielen, Heimarbeiten, Leistungen durch Dritte oder für Dritte, Netzwerk-Marketing, Pyramiden- und Schneeballsystemen, Schenkkreisen oder sexuellen Dienstleistungen zu erfassen. Ebenso ist es verboten, Inhalte für Ausschreibungen zu erfassen, die Immaterialgüterrechte, Persönlichkeitsrechte oder andere Rechte Dritter verletzen.",
+  condition_des_17:
+    "Auftraggeber können auf der Plattform Ausschreibungen für Leistungen von Handwerkern und anderen Dienstleistern erfassen. Mit der Erfassung stimmen die Auftraggeber der Veröffentlichung auf der Plattform sowie der Nutzung weiterer Kommunikationskanäle der Betreiberin zu. Sie erteilen der Betreiberin ein nicht-exklusives, örtlich und zeitlich unbegrenztes sowie übertragbares Nutzungsrecht für alle Inhalte der Ausschreibungen, einschliesslich marken- und urheberrechtlich geschützter Inhalte.",
+  condition_des_18:
+    "Auftraggeber verpflichten sich, auf der Plattform nur rechtskonforme Ausschreibungen zu erfassen. Insbesondere verpflichten sich Auftraggeber, keine Inhalte für Ausschreibungen zu erfassen, die anstössig, diskriminierend, persönlichkeitsverletzend, pornografisch, rassistisch, schädlich, unsicher oder unsittlich sind. Weiterhin verpflichten sich Auftraggeber, keine Inhalte zu erfassen, die falsche, irreführende und/oder mangelhafte Angaben enthalten oder bewilligungspflichtige Arbeitsvermittlung beziehungsweise bewilligungspflichtigen Personalverleih ohne vorhandene Bewilligung oder Schwarzarbeit betreffen.",
+  condition_des_19:
+    "Die oben genannten Bestimmungen zu den Inhalten von Ausschreibungen gelten ebenso für alle anderen Inhalte auf der Plattform, wie beispielsweise Bewertungen und Profile von Nutzerinnen und Nutzern.",
+  condition_des_20:
+    "Bewertungen, die personenbezogene Daten oder Werbung enthalten, sind verboten. Es ist ausserdem untersagt, das Bewertungssystem zu missbrauchen, zu manipulieren oder für unlautere Zwecke zu verwenden. Die Betreiberin hat das Recht, Bewertungen jederzeit – auch nachträglich und ohne Rücksprache – sowie ohne Angabe von Gründen nach eigenem Ermessen anzupassen oder zu löschen.",
+  condition_des_21:
+    "Anbieter sind verpflichtet, Bewertungen, die sie betreffen und die sie ausserhalb der Plattform veröffentlichen oder veröffentlichen lassen, mit einem Weblink zur Plattform (https://www.suisseofferten.ch/) zu versehen. Die Betreiberin kann zusätzliche Bedingungen für die Veröffentlichung von Bewertungen der Plattform festlegen. Die Anbieter werden in geeigneter Weise über solche Bedingungen informiert.",
+  condition_des_22:
+    "Der Betreiber stellt auf der Plattform ein Bewertungssystem bereit, mit dem sich die Nutzerinnen und Nutzer gegenseitig bewerten können. Die Nutzerinnen und Nutzer verpflichten sich, nur sachliche und wahrheitsgetreue Bewertungen abzugeben.",
+  condition_des_23:
+    "Jede sonstige Veröffentlichung von Bewertungen der Plattform durch Dritte ist ohne ausdrückliche Genehmigung der Betreiberin untersagt. Die Betreiberin behält sich das Recht vor, gegen nicht genehmigte Veröffentlichungen von Bewertungen der Plattform rechtliche Schritte einzuleiten.",
+  condition_des_24:
+    "Nutzerinnen und Nutzer verpflichten sich, sämtlichen Verpflichtungen gegenüber der Betreiberin fristgerecht und vollständig nachzukommen. Insbesondere verpflichten sich die Nutzerinnen und Nutzer, eventuelle Gebühren rechtzeitig zu bezahlen. Die Betreiberin ist berechtigt, kostenpflichtige Funktionen und Leistungen von der Vorauszahlung oder Anzahlung der Gebühren abhängig zu machen.",
+  condition_des_25:
+    "Eventuelle Gebühren sind sofort fällig, es sei denn, die Betreiberin gewährt eine Zahlungsfrist. Bei nicht fristgerechter Bezahlung geraten Nutzerinnen und Nutzer ohne Zahlungserinnerung in Verzug. Im Falle des Verzugs ist die Betreiberin berechtigt, einen Verzugszins von 5,0 % pro Jahr sowie eine Gebühr von jeweils bis zu CHF 40.00 für etwaige Zahlungserinnerungen zu berechnen. Zudem ist die Betreiberin berechtigt, säumigen Nutzerinnen und Nutzern den Zugang zur Plattform zu verweigern und Forderungen an Dritte abzutreten.",
+  condition_des_26:
+    "Nutzerinnen und Nutzer verpflichten sich, Verträge, die aufgrund von Ausschreibungen auf der Plattform zustande kommen, ausschliesslich über die Plattform abzuschliessen. Anbieter sind verpflichtet, ihre Angebote stets auch über die entsprechenden Funktionen der Plattform verbindlich an Auftraggeber zu übermitteln. Auftraggeber müssen für den Vertragsschluss ebenfalls die entsprechenden Funktionen der Plattform nutzen. Abgesehen davon sind Nutzerinnen und Nutzer berechtigt, auch ausserhalb der Plattform zu kommunizieren.",
+  condition_des_27:
+    "Nutzerinnen und Nutzer verpflichten sich, der Betreiberin auf Anfrage jederzeit vollständige und wahrheitsgemässe Auskunft über den aktuellen Stand einer Ausschreibung sowie über alle vertraglichen Vereinbarungen im Zusammenhang mit einer Ausschreibung zu geben.",
+  condition_des_28:
+    "Nutzerinnen und Nutzer sind verpflichtet, ihre Tätigkeit im Zusammenhang mit den Anfragen stets fachmännisch auszuführen und alle relevanten Rechte einzuhalten.",
+  condition_des_29:
+    "Wenn eine Nutzerin oder ein Nutzer wiederholt negativ auffällt, kann sie oder er von Suisse Offerten ohne Angabe von Gründen von der weiteren Nutzung ausgeschlossen werden.",
+  condition_des_30:
+    "Nutzerinnen und Nutzer verpflichten sich, bei der Nutzung von Suisse Offerten das aktuelle Schweizer Datenschutzrecht einzuhalten, insbesondere keine Daten weiterzuverkaufen, zu vervielfältigen oder zu veröffentlichen. Sie garantieren, nur seriöse Geschäfte auszuüben und die vermittelten Nutzer gemäss den aktuellen Richtlinien der jeweiligen Branche zu beraten sowie über ihre Tätigkeit und ihre Firma zu informieren.",
+  condition_des_31:
+    "Sollten Anhaltspunkte dafür bestehen, dass ein Anbieter gegen geltendes Recht, die vorliegenden AGB, vereinbarte Verpflichtungen von Suisse Offerten oder Rechte Dritter verstösst, wird Suisse Offerten den Anbieter von der Nutzung der Plattform ausschliessen.",
+  condition_des_32:
+    "Der Betreiber ist berechtigt, registrierten Nutzerinnen und Nutzern auf der Plattform personalisierte Werbung anzuzeigen oder anzeigen zu lassen.",
+  condition_des_33:
+    "Der Betreiber und die Plattform unterliegen insbesondere dem schweizerischen Datenschutzrecht. Die Betreiberin trifft angemessene organisatorische und technische Massnahmen, um die Datensicherheit zu gewährleisten. ",
+  condition_des_34: "Für Anbieter bildet der",
+  condition_des_35: "Auftragsverarbeitungsvertrag",
+  condition_des_36: "des Betreibers Bestandteil dieser AGB.",
+  condition_des_37: "Im Übrigen gilt die",
+  condition_des_38: "Datenschutzerklärung",
+  condition_des_39:
+    "des Betreibers. Nutzerinnen und Nutzer können sich bei Anfragen im Zusammenhang mit dem Datenschutz per E-Mail an suisseofferten@gmail.com oder über andere Kontaktadressen an den Betreiber wenden",
+  condition_des_40:
+    "Nutzerinnen und Nutzer haften gegenüber dem Betreiber und eventuell betroffenen Dritten ausdrücklich und vollumfänglich für sämtliche direkten und indirekten Kosten sowie für Schäden, die aufgrund von Verletzungen dieser AGB oder im Zusammenhang mit der Plattform entstehen, unabhängig vom Verschulden.",
+  condition_des_41:
+    "Der Betreiber haftet nur für direkte Schäden, die durch grobfahrlässige oder vorsätzliche eigene Handlungen des Betreibers verursacht wurden. Jegliche weitergehende Haftung des Betreibers für direkte Schäden ist ausdrücklich und vollständig ausgeschlossen.",
+  condition_des_42:
+    "Der Betreiber lehnt jegliche Haftung für temporäre Unerreichbarkeit der Plattform sowie Einschränkungen einzelner Funktionen vollständig ab. Jegliche Haftung des Betreibers für direkte sowie indirekte Schäden, Mangelfolgeschäden, Ansprüche anderer Nutzerinnen und Nutzer oder Dritter sowie für entgangenen Gewinn ist ausdrücklich und vollständig ausgeschlossen. Eine Haftung für Hilfspersonen wird ebenfalls ausgeschlossen.",
+  condition_des_43:
+    "Die Schadloshaltung umfasst auch Ansprüche anderer Nutzerinnen und Nutzer oder Dritter. Die betreffenden Nutzerinnen und Nutzer stellen den Betreiber von sämtlichen Ansprüchen anderer Nutzerinnen und Nutzer sowie Dritter frei und verpflichten sich, alle damit verbundenen Kosten, einschliesslich Anwalts- und Gerichtskosten, sowie Schäden des Betreibers zu tragen.",
+  condition_des_44:
+    "Der automatisierte Zugriff auf die Plattform, etwa durch Bots, Skripte oder vergleichbare Mittel, ist stets untersagt.",
+  condition_des_45:
+    "Grundlage für sämtliche Zeitangaben ist die Lokalzeit am Sitz des Betreibers. Im Zweifelsfall sind die auf der Plattform veröffentlichten Zeitangaben verbindlich, auch wenn sie von der Lokalzeit am Sitz des Betreibers abweichen. Der Betreiber ist berechtigt, den Betrieb der Plattform jederzeit, dauerhaft oder vorübergehend, ganz oder teilweise ohne Ankündigung und ohne Angabe von Gründen einzustellen.",
+  condition_des_46:
+    "Der Betreiber ist berechtigt, einzelne oder alle Rechte und Pflichten aus diesen AGB durch Dritte ausüben zu lassen oder an Dritte zu übertragen. Rechte und Pflichten der Nutzerinnen und Nutzer sind nicht übertragbar.",
+  condition_des_47:
+    "Formen der Übermittlung, die den Nachweis durch Text ermöglichen, sind der Schriftform gleichgestellt. Der Betreiber ist berechtigt, diese AGB jederzeit und ohne Angabe von Gründen zu ändern. Nutzerinnen und Nutzer werden in geeigneter Weise über Änderungen dieser AGB informiert.",
+  condition_des_48:
+    "Diese AGB unterstehen dem schweizerischen Recht mit Erfüllungsort und Gerichtsstand am Sitz des Betreibers.",
+  // condition page
+
+  // data protection page
+  data_protection_title_1: "Datenschutzbestimmungen",
+  data_protection_title_2: "Allgemeine Bestimmungen",
+  data_protection_title_3: "1.Gesetzliche Grundlagen, Änderungen",
+  data_protection_title_4: "2. Welche Daten werden erhoben?",
+  data_protection_title_5: "3. Wie werden diese Daten bearbeitet?",
+  data_protection_title_6: "4. Werden Daten an Dritte weitergegeben?",
+  data_protection_title_7: "5. Wo und wie werden die Daten aufbewahrt?",
+  data_protection_title_8: "6. Newsletter, kommerzielle Kommunikation",
+  data_protection_title_9:
+    "7. Fragen und Anregungen, Auskunfts-, Berichtigungs- undLöschgesuche",
+  data_protection_des_1:
+    "Die Plattform Suisse-Offerten.ch verbindet in verschiedenen Geschäftsbereichen Interessenten und Anbieter und benötigt hierfür persönliche und unpersönliche Daten der Interessenten. Diese Datenschutzerklärung erläutert, welche Daten Suisse-Offerten.ch verarbeitet und zu welchen Zwecken, soweit dies nicht aus den Umständen bereits ersichtlich ist.",
+  data_protection_des_2:
+    "Suisse-Offerten.ch hält sich bei der Bearbeitung von personenbezogenen Daten ihrer Nutzer an die vorliegende Datenschutzerklärung sowie an die geltende Gesetzgebung, insbesondere an das schweizerische Datenschutzgesetz (DSG). Auch ihre Mitarbeiter und Firmen, die in ihrem Auftrag Daten der Nutzer bearbeiten, sind entsprechend verpflichtet.",
+  data_protection_des_3:
+    "Da das Angebot von Suisse-Offerten.ch kontinuierlich erweitert wird und sich auch andere Umstände ändern können, behält sich Suisse-Offerten.ch das Recht vor, die Datenschutzerklärung jederzeit ohne Vorankündigung und Mitteilung anzupassen. Es gilt stets die aktuelle Fassung, die auf der Website www.suisse-offerten.ch veröffentlicht ist.",
+  data_protection_des_4:
+    "Suisse-Offerten.ch sammelt alle personenbezogenen Daten, die im Rahmen der Nutzung ihrer Dienstleistungen (wie Websites und Apps) und im Kontakt mit Suisse-Offerten.ch entstehen. Dazu gehören insbesondere:",
+  data_protection_des_5:
+    "Daten, die Nutzer durch Online-Formulare oder Apps bereitstellen oder auf andere Weise im Zusammenhang mit der Nutzung der Dienste von Suisse-Offerten.ch mitteilen, wie Name, Adresse, Telefonnummer, E-Mail-Adresse, Geburtsdatum, Geschlecht und Zahlungsmethoden.",
+  data_protection_des_6:
+    "Automatisch gesammelte Nutzungsdaten, wie die Nutzungshäufigkeit, Zeitstempel, vorherige und besuchte Seiten, IP-Adresse, Browserdaten, Geräte-Kennung und Standort (sofern freigegeben). Auch Interaktionsdaten wie Mausbewegungen, Klicks und Tastatureingaben auf der Website können erfasst werden, wenn dies ohne zusätzliche Software möglich ist.",
+  data_protection_des_7:
+    "Personalisierte Daten, die von Suisse-Offerten.ch oder Dritten erstellt werden, wie Identifikatoren und massgeschneiderte Angebote, die den Nutzern bereitgestellt werden.",
+  data_protection_des_8:
+    "Kommunikationsdaten, einschliesslich E-Mails und Telefonate.",
+  data_protection_des_9:
+    "Diese Informationen können zusammengeführt werden, auch über mehrere Besuche hinweg, wenn Nutzer durch Identifikatoren wie Benutzernamen, E-Mail-Adressen, Geräte-Kennungen oder gespeicherte Cookies wiedererkannt werden. ",
+  data_protection_des_10:
+    "Cookies sind kleine Datenmengen, die von der Website an den Browser des Nutzers gesendet und dort gespeichert werden. Suisse-Offerten.ch verwendet sowohl temporäre Cookies („Session Cookies“) als auch dauerhafte Cookies. Dauerhafte Cookies helfen dabei, die Werbung auf der Website zu verwalten, die Nutzung zu analysieren und die Website zu personalisieren. Nutzer können in ihrem Browser Einstellungen vornehmen, um permanente Cookies zu löschen, zu begrenzen oder zu blockieren. Das Blockieren von Session Cookies kann die Nutzung der Website beeinträchtigen. Durch das Zulassen von Cookies erklärt sich der Nutzer mit deren Einsatz einverstanden.",
+  data_protection_des_11:
+    "Auf ihrer Website und in ihren Apps verwendet Suisse-Offerten.ch gelegentlich Dienste und Elemente von Dritten, die dazu beitragen, Nutzungsstatistiken zu erstellen, Werbung anzuzeigen oder den Zugang zu sozialen Netzwerken und anderen Angeboten zu ermöglichen. Diese Dritten können in begrenztem Umfang eigene personenbezogene Daten über Nutzer erheben, oft durch eigene Cookies oder Logins. Zu den Dritten gehören u.a. Facebook, Twitter, Google (AdWords, Google+, YouTube, DoubleClick) und Analytics. Suisse-Offerten.ch respektiert die Datenschutzeinstellungen des Browsers, die Tracking verhindern. Wenn ein Nutzer auf Werbung oder Links von externen Angeboten klickt, verlässt er den Einflussbereich von Suisse-Offerten.ch, und die weitere Datensammlung kann nicht mehr kontrolliert werden. Der Nutzer sollte sich in diesem Fall an den jeweiligen Dritten wenden.",
+  data_protection_des_12:
+    "Suisse-Offerten.ch nutzt die von ihr oder in ihrem Auftrag gesammelten Nutzerdaten für folgende Zwecke:",
+  data_protection_des_13:
+    "•	Bereitstellung der angebotenen Dienstleistungen: Zur Erfüllung der vertraglichen Verpflichtungen und zur Bereitstellung der Dienste von Suisse-Offerten.ch.",
+  data_protection_des_14:
+    "•	Statistikerstellung: Zur Erstellung von Statistiken über Nutzerinteressen, wie z.B. zu Produkten und Dienstleistungen, und zur Analyse der Nutzung von Angeboten von Suisse-Offerten.ch.",
+  data_protection_des_15:
+    "•	Entwicklung und Verbesserung: Zur Weiterentwicklung und Verbesserung der Dienstleistungen und Angebote von Suisse-Offerten.ch.",
+  data_protection_des_16:
+    "•	Qualitätskontrolle und Schulung: Für interne Schulungszwecke und zur Überprüfung der Dienstleistungsqualität.",
+  data_protection_des_17:
+    "•	Kundenbeziehungsmanagement: Zur Pflege und Verbesserung der Kundenbeziehungen, einschliesslich des Versands von Newslettern.",
+  data_protection_des_18:
+    "•	Werbung und Abrechnung: Zur Steuerung der Werbung, zur Abrechnung von Anzeigen (sowohl für Anzeigen bei Suisse-Offerten.ch als auch für Anzeigen bei Dritten).",
+  data_protection_des_19:
+    "•	Sicherheits- und Systemüberwachung: Zur Sicherstellung der Sicherheit und Verfügbarkeit der Systeme und Daten von Suisse-Offerten.ch und deren Dienstleistern.",
+  data_protection_des_20:
+    "•	Unternehmenstransaktionen: Im Rahmen von Unternehmensgeschäften, die Nutzerdaten betreffen könnten, wie z.B. die Übertragung von Geschäftseinheiten an Tochtergesellschaften oder Dritte.",
+  data_protection_des_21:
+    "•	Missbrauchsbekämpfung: Zur Verhinderung, Erkennung und Bekämpfung von Missbrauch.",
+  data_protection_des_22:
+    "•	Rechtsstreitigkeiten und behördliche Anfragen: Zur Beantwortung berechtigter behördlicher Anfragen oder zur Klärung von Rechtsstreitigkeiten, in die Suisse-Offerten.ch verwickelt ist.",
+  data_protection_des_23:
+    "Zusätzliche Nutzungszwecke können sich aus den Umständen oder gesetzlichen Anforderungen ergeben, die bei der Erhebung der Daten ersichtlich sind.",
+  data_protection_des_24:
+    "Suisse-Offerten.ch gibt grundsätzlich keine personenbezogenen Daten an Dritte weiter, es sei denn, in folgenden Fällen:",
+  data_protection_des_25:
+    "•	Auftragsverarbeitung durch Dritte: Suisse-Offerten.ch kann Dritte einbinden, die personenbezogenen Daten in ihrem Auftrag und ausschliesslich für die Zwecke von Suisse-Offerten.ch verarbeiten. In diesen Fällen sorgt Suisse-Offerten.ch angemessen dafür, dass diese Dritten die Daten nur in dem Umfang und zu den Zwecken verarbeiten, wie es auch Suisse-Offerten.ch erlaubt ist.",
+  data_protection_des_26:
+    "•	Nutzerwünsche und Erbringung von Dienstleistungen: Personenbezogene Daten können an Dritte weitergegeben werden, wenn der Nutzer dies ausdrücklich wünscht (z.B. bei Angebotsanfragen, Anmeldungen) oder wenn es zur Erfüllung der vom Nutzer gewünschten Dienstleistungen erforderlich ist. In aussergewöhnlichen Fällen, wie etwa bei Verdacht auf Missbrauch, kann eine Weitergabe der Daten auch für andere Zwecke erfolgen, die in dieser Datenschutzerklärung beschrieben oder gesetzlich vorgesehen sind. Suisse-Offerten.ch kann nicht garantieren, dass diese Dritten die Datenschutzbestimmungen von Suisse-Offerten.ch einhalten; sie nutzen die Daten zu ihren eigenen Zwecken und möglicherweise auch im Ausland, wo andere Datenschutzgesetze gelten könnten.",
+  data_protection_des_27:
+    "•	Anonymisierte Daten: Suisse-Offerten.ch kann Dritten anonymisierte Nutzerdaten zur Verfügung stellen, bei denen keine Rückschlüsse auf die Identität der Nutzer möglich sind.",
+  data_protection_des_28:
+    "Suisse-Offerten.ch bearbeitet grundsätzlich alle erhobenen Daten in Europa und speichert sie auf Systemen innerhalb von Europa. In Fällen, in denen externe Dienstleister hinzugezogen werden, kann es jedoch vorkommen, dass bestimmte Nutzerdaten auch im Ausland bearbeitet werden. Dies kann insbesondere bei der Weitergabe von Daten an Dritte erfolgen, etwa wenn über die Angebote von Suisse-Offerten.ch soziale Netzwerke oder andere Drittangebote genutzt werden.",
+  data_protection_des_29:
+    "Suisse-Offerten.ch ergreift angemessene technische und organisatorische Massnahmen, um unbefugte Zugriffe und sonstige unbefugte Bearbeitungen der Nutzerdaten zu verhindern. Nichtsdestotrotz wird darauf hingewiesen, dass jederzeit potentielle Sicherheitslücken vorhanden sein können und ein vollständig lückenloser Schutz der Daten vor dem Zugriff durch Dritte (Bspw. bei Kommunikation per E-Mail) nicht möglich ist.  ",
+  data_protection_des_30:
+    "Suisse-Offerten.ch kann allen Nutzern, die sich mit einer E-Mail-Adresse, einer anderen elektronischen Adresse oder einer Mobiltelefonnummer registrieren oder eine App von Suisse-Offerten.ch installieren, gelegentlich Newsletter oder andere Inhalte, einschliesslich kommerzieller Mitteilungen, im Zusammenhang mit den Angeboten von Suisse-Offerten.ch senden. Mit der Registrierung oder Installation der App stimmt der Nutzer dem Empfang solcher Mitteilungen zu. Der Nutzer kann die Zusendung oder Anzeige dieser Mitteilungen jedoch jederzeit und kostenlos abbestellen. Weitere Informationen zur Abbestellung finden sich am Ende jeder Mitteilung.",
+  data_protection_des_31:
+    "Fragen, Kommentare, Anregungen oder Kritik zur Verarbeitung von Personendaten sind bei Suisse-Offerten.ch willkommen. Der Kundendienst steht für weitere Auskünfte zur Verfügung. Auskunfts-, Berichtigungs- und Löschgesuche können von Nutzern, die über ein Benutzerkonto verfügen, direkt online gestellt werden. In anderen Fällen sind solche Gesuche schriftlich einzureichen, zusammen mit einer Kopie des Ausweises zur sicheren Identifikation, und an die folgende Postadresse zu senden: suisseofferten@gmail.com.",
+  // data protection page
 };
 
 export default sw;

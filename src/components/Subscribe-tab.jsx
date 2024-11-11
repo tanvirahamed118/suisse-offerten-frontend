@@ -5,6 +5,7 @@ function SubscribeTab() {
   const { t } = useTranslation();
   const sellerAuth = localStorage?.getItem("seller");
   const seller = JSON.parse(sellerAuth);
+
   return (
     <div className="flex justify-center flex-col py-10 md:pt-20 gap-5 items-center border-t border-gray-300">
       <h2 className="text-black text-base font-normal text-center capitalize">

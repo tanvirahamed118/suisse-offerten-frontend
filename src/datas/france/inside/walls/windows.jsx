@@ -11,26 +11,26 @@ const windows = [
   {
     id: 591422399,
     type: "checkbox",
-    label: "What services should be provided ?",
+    label: "Quels services devraient être fournis ?",
     options: [
       {
         id: 943709669,
-        label: "Installation of windows/doors",
-        des: "Installation or replacement of windows or doors",
+        label: "Installation de fenêtres/portes",
+        des: "Installation ou remplacement de fenêtres ou de portes",
       },
       {
         id: 368707516,
-        label: "Installation of animal flaps",
-        des: "Installation or replacement of cat, dog and other animal flaps",
+        label: "Installation de trappes pour animaux",
+        des: "Installation ou remplacement de chatières, de chatières pour chiens et autres animaux",
       },
       {
         id: 906534352,
-        label: "Installation of glass panes",
-        des: "Installation or replacement of glass panes",
+        label: "Pose de vitres",
+        des: "Pose ou remplacement de vitres",
       },
       {
         id: 963901589,
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -38,26 +38,26 @@ const windows = [
   {
     id: 943709669,
     type: "checkbox",
-    label: "How many windows should be installed or replaced ?",
+    label: "Combien de fenêtres faut-il installer ou remplacer ?",
     options: [
       {
         id: 154976061,
-        label: "Window",
+        label: "Fenêtre",
       },
       {
         id: 562115506,
-        label: "Door",
+        label: "Porte",
       },
       {
         id: 855845855,
-        label: "Windows and doors",
+        label: "Fenêtres et portes",
       },
     ],
   },
   {
     id: 154976061,
     type: "checkbox",
-    label: "What needs to be installed or replaced ?",
+    label: "Que faut-il installer ou remplacer ?",
     options: how_many_installed_replaced(
       634805499,
       881236497,
@@ -68,32 +68,32 @@ const windows = [
   {
     id: 634805499,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 881236497,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 231306793,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 356459869,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
 
   {
     id: 562115506,
     type: "checkbox",
-    label: "How many doors should be installed or replaced ?",
+    label: "Combien de portes faut-il installer ou remplacer ?",
     options: [
       {
         id: 592931443,
@@ -112,7 +112,7 @@ const windows = [
       },
       {
         id: 979626402,
-        label: "4 or more",
+        label: "4 ou plus",
         credit: 35,
       },
     ],
@@ -120,32 +120,32 @@ const windows = [
   {
     id: 592931443,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 953421574,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 495350087,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 979626402,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
 
   {
     id: 855845855,
     type: "checkbox",
-    label: "How many windows should be installed or replaced ?",
+    label: "Combien de fenêtres faut-il installer ou remplacer ?",
     options: how_many_installed_replaced(
       7741150106,
       8581468693,
@@ -156,7 +156,7 @@ const windows = [
   {
     id: 7741150106,
     type: "checkbox",
-    label: "How many doors should be installed or replaced ?",
+    label: "Combien de portes faut-il installer ou remplacer ?",
     options: [
       {
         id: 592931443,
@@ -172,14 +172,14 @@ const windows = [
       },
       {
         id: 979626402,
-        label: "4 or more",
+        label: "4 ou plus",
       },
     ],
   },
   {
     id: 8581468693,
     type: "checkbox",
-    label: "How many doors should be installed or replaced ?",
+    label: "Combien de portes faut-il installer ou remplacer ?",
     options: [
       {
         id: 592931443,
@@ -195,14 +195,14 @@ const windows = [
       },
       {
         id: 979626402,
-        label: "4 or more",
+        label: "4 ou plus",
       },
     ],
   },
   {
     id: 7404219931,
     type: "checkbox",
-    label: "How many doors should be installed or replaced ?",
+    label: "Combien de portes faut-il installer ou remplacer ?",
     options: [
       {
         id: 592931443,
@@ -218,14 +218,14 @@ const windows = [
       },
       {
         id: 979626402,
-        label: "4 or more",
+        label: "4 ou plus",
       },
     ],
   },
   {
     id: 2721396346,
     type: "checkbox",
-    label: "How many doors should be installed or replaced ?",
+    label: "Combien de portes faut-il installer ou remplacer ?",
     options: [
       {
         id: 592931443,
@@ -241,7 +241,7 @@ const windows = [
       },
       {
         id: 979626402,
-        label: "4 or more",
+        label: "4 ou plus",
       },
     ],
   },
@@ -249,45 +249,45 @@ const windows = [
   {
     id: 881236497,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 231306793,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
   {
     id: 356459869,
     type: "checkbox",
-    label: "Are the doors to be installed already there ?",
+    label: "Les portes à installer sont-elles déjà là ?",
     options: is_the_window_already_in_place,
   },
 
   {
     id: 368707516,
     type: "checkbox",
-    label: "Where should the animal flap be installed ?",
+    label: "Où doit être installée la trappe pour animaux ?",
     options: [
       {
         id: 141307514,
-        label: "Window",
+        label: "Fenêtre",
         credit: 5,
       },
       {
         id: 278377893,
-        label: "Door",
+        label: "Porte",
         credit: 7,
       },
       {
         id: 708722645,
-        label: "Wall",
+        label: "Mur",
         credit: 8,
       },
       {
         id: 198441917,
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -296,7 +296,7 @@ const windows = [
     id: 141307514,
     type: "checkbox",
     label:
-      "What material is the area in which the flap should be installed made of ?",
+      "De quel matériau est fait la zone dans laquelle le volet doit être installé ?",
     options: what_material_installed_made_of(
       217063871,
       776888704,
@@ -312,7 +312,7 @@ const windows = [
     id: 278377893,
     type: "checkbox",
     label:
-      "What material is the area in which the flap should be installed made of ?",
+      "De quel matériau est fait la zone dans laquelle le volet doit être installé ?",
     options: what_material_installed_made_of(
       217063871,
       776888704,
@@ -328,7 +328,7 @@ const windows = [
     id: 708722645,
     type: "checkbox",
     label:
-      "What material is the area in which the flap should be installed made of ?",
+      "De quel matériau est fait la zone dans laquelle le volet doit être installé ?",
     options: what_material_installed_made_of(
       217063871,
       776888704,
@@ -344,7 +344,7 @@ const windows = [
     id: 198441917,
     type: "checkbox",
     label:
-      "What material is the area in which the flap should be installed made of ?",
+      "De quel matériau est fait la zone dans laquelle le volet doit être installé ?",
     options: what_material_installed_made_of(
       217063871,
       776888704,
@@ -360,31 +360,31 @@ const windows = [
     id: 217063871,
     type: "doubleInput",
     mainId: 272228053,
-    label: "Approximate dimensions of the glass pane (without frame)",
-    options: [{ width: "Width in cm", height: "Height in cm" }],
+    label: "Dimensions approximatives de la vitre (sans cadre)",
+    options: [{ width: "Largeur en cm", height: "Hauteur en cm" }],
   },
   {
     id: 776888704,
     type: "doubleInput",
     mainId: 272228053,
-    label: "Approximate dimensions of the glass pane (without frame)",
-    options: [{ width: "Width in cm", height: "Height in cm" }],
+    label: "Dimensions approximatives de la vitre (sans cadre)",
+    options: [{ width: "Largeur en cm", height: "Hauteur en cm" }],
   },
   {
     id: 384652415,
     type: "doubleInput",
     mainId: 272228053,
-    label: "Approximate dimensions of the glass pane (without frame)",
-    options: [{ width: "Width in cm", height: "Height in cm" }],
+    label: "Dimensions approximatives de la vitre (sans cadre)",
+    options: [{ width: "Largeur en cm", height: "Hauteur en cm" }],
   },
   {
     id: 527860570,
     type: "checkbox",
-    label: "Is the animal flap to be installed already in place ?",
+    label: "La trappe pour animaux à installer est-elle déjà en place ?",
     options: [
-      { label: "Yes, the animal flap is already there", id: 383250887 },
+      { label: "Oui, la trappe pour animaux est déjà là", id: 383250887 },
       {
-        label: "No, the animal flap still needs to be purchased",
+        label: "Non, la trappe pour animaux doit toujours être achetée",
         id: 971808347,
       },
     ],
@@ -392,11 +392,11 @@ const windows = [
   {
     id: 706429911,
     type: "checkbox",
-    label: "Is the animal flap to be installed already in place ?",
+    label: "La trappe pour animaux à installer est-elle déjà en place ?",
     options: [
-      { label: "Yes, the animal flap is already there", id: 383250887 },
+      { label: "Oui, la trappe pour animaux est déjà là", id: 383250887 },
       {
-        label: "No, the animal flap still needs to be purchased",
+        label: "Non, la trappe pour animaux doit toujours être achetée",
         id: 971808347,
       },
     ],
@@ -404,11 +404,11 @@ const windows = [
   {
     id: 237538847,
     type: "checkbox",
-    label: "Is the animal flap to be installed already in place ?",
+    label: "La trappe pour animaux à installer est-elle déjà en place ?",
     options: [
-      { label: "Yes, the animal flap is already there", id: 383250887 },
+      { label: "Oui, la trappe pour animaux est déjà là", id: 383250887 },
       {
-        label: "No, the animal flap still needs to be purchased",
+        label: "Non, la trappe pour animaux doit toujours être achetée",
         id: 971808347,
       },
     ],
@@ -416,11 +416,11 @@ const windows = [
   {
     id: 673054258,
     type: "checkbox",
-    label: "Is the animal flap to be installed already in place ?",
+    label: "La trappe pour animaux à installer est-elle déjà en place ?",
     options: [
-      { label: "Yes, the animal flap is already there", id: 383250887 },
+      { label: "Oui, la trappe pour animaux est déjà là", id: 383250887 },
       {
-        label: "No, the animal flap still needs to be purchased",
+        label: "Non, la trappe pour animaux doit toujours être achetée",
         id: 971808347,
       },
     ],
@@ -428,11 +428,11 @@ const windows = [
   {
     id: 622437047,
     type: "checkbox",
-    label: "Is the animal flap to be installed already in place ?",
+    label: "La trappe pour animaux à installer est-elle déjà en place ?",
     options: [
-      { label: "Yes, the animal flap is already there", id: 383250887 },
+      { label: "Oui, la trappe pour animaux est déjà là", id: 383250887 },
       {
-        label: "No, the animal flap still needs to be purchased",
+        label: "Non, la trappe pour animaux doit toujours être achetée",
         id: 971808347,
       },
     ],
@@ -440,11 +440,11 @@ const windows = [
   {
     id: 272228053,
     type: "checkbox",
-    label: "Is the animal flap to be installed already in place ?",
+    label: "La trappe pour animaux à installer est-elle déjà en place ?",
     options: [
-      { label: "Yes, the animal flap is already there", id: 383250887 },
+      { label: "Oui, la trappe pour animaux est déjà là", id: 383250887 },
       {
-        label: "No, the animal flap still needs to be purchased",
+        label: "Non, la trappe pour animaux doit toujours être achetée",
         id: 971808347,
       },
     ],
@@ -452,28 +452,28 @@ const windows = [
   {
     id: 383250887,
     type: "checkbox",
-    label: "What kind of animal is the flap for ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Other" }],
+    label: "A quel type d'animal est destiné le rabat ?",
+    options: [{ label: "Chatte" }, { label: "Chienne" }, { label: "Autre" }],
   },
   {
     id: 971808347,
     type: "checkbox",
-    label: "What kind of animal is the flap for ?",
-    options: [{ label: "Cat" }, { label: "Dog" }, { label: "Other" }],
+    label: "A quel type d'animal est destiné le rabat ?",
+    options: [{ label: "Chatte" }, { label: "Chienne" }, { label: "Autre" }],
   },
   {
     id: 906534352,
     type: "checkbox",
-    label: "How many panes of glass should be installed or replaced ?",
+    label: "Combien de vitres faut-il installer ou remplacer ?",
     options: [
       { label: "1", id: 913388258, credit: 6 },
       {
-        label: "2 to 3",
+        label: "2 à 3",
         id: 211449697,
         credit: 15,
       },
       {
-        label: "4 or more",
+        label: "4 ou plus",
         id: 815354554,
         credit: 25,
       },
@@ -482,7 +482,7 @@ const windows = [
   {
     id: 913388258,
     type: "checkbox",
-    label: "What is the material the frame is made of ?",
+    label: "De quel matériau est fait le cadre ?",
     options: what_kind_of_glass_is_it(
       550666794,
       457499850,
@@ -493,37 +493,37 @@ const windows = [
   {
     id: 550666794,
     type: "checkbox",
-    label: "What is the material the frame is made of ?",
+    label: "De quel matériau est fait le cadre ?",
     options: what_material_frame_made_of,
   },
   {
     id: 457499850,
     type: "checkbox",
-    label: "What is the material the frame is made of ?",
+    label: "De quel matériau est fait le cadre ?",
     options: what_material_frame_made_of,
   },
   {
     id: 688333930,
     type: "checkbox",
-    label: "What is the material the frame is made of ?",
+    label: "De quel matériau est fait le cadre ?",
     options: what_material_frame_made_of,
   },
   {
     id: 344349515,
     type: "checkbox",
-    label: "What is the material the frame is made of ?",
+    label: "De quel matériau est fait le cadre ?",
     options: what_material_frame_made_of,
   },
   {
     id: 211449697,
     type: "checkbox",
-    label: "Are all panes identical ?",
+    label: "Est-ce que tous les panneaux sont identiques ?",
     options: questionCheckboxItem(898716305, 376748465),
   },
   {
     id: 898716305,
     type: "checkbox",
-    label: "What kind of glass is it ?",
+    label: "De quel type de verre s'agit-il ?",
     options: what_kind_of_glass_is_it(
       550666794,
       457499850,
@@ -534,7 +534,7 @@ const windows = [
   {
     id: 376748465,
     type: "checkbox",
-    label: "What kind of glass is it ?",
+    label: "De quel type de verre s'agit-il ?",
     options: what_kind_of_glass_is_it(
       550666794,
       457499850,
@@ -545,13 +545,13 @@ const windows = [
   {
     id: 815354554,
     type: "checkbox",
-    label: "Are all panes identical ?",
+    label: "Est-ce que tous les panneaux sont identiques ?",
     options: questionCheckboxItem(898716305, 376748465),
   },
   {
     id: 898716305,
     type: "checkbox",
-    label: "What kind of glass is it ?",
+    label: "De quel type de verre s'agit-il ?",
     options: what_kind_of_glass_is_it(
       550666794,
       457499850,
@@ -562,7 +562,7 @@ const windows = [
   {
     id: 376748465,
     type: "checkbox",
-    label: "What kind of glass is it ?",
+    label: "De quel type de verre s'agit-il ?",
     options: what_kind_of_glass_is_it(
       550666794,
       457499850,

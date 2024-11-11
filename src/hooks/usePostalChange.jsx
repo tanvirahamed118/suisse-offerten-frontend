@@ -6,7 +6,6 @@ const usePostalCode = (postalCode, setFormData, setIsPostalCodeValid) => {
     );
 
     if (postalCodeEntry) {
-      // Set form data with matched postal code, location, and city
       setFormData((prevFormData) => ({
         ...prevFormData,
         jobPostcode: postalCodeEntry.code,
@@ -15,7 +14,6 @@ const usePostalCode = (postalCode, setFormData, setIsPostalCodeValid) => {
       }));
       setIsPostalCodeValid(true);
     } else {
-      // Update jobPostcode only, leaving jobLocation untouched
       setFormData((prevFormData) => ({
         ...prevFormData,
         jobPostcode: postalCodeInput,
@@ -29,9 +27,7 @@ const usePostalCode = (postalCode, setFormData, setIsPostalCodeValid) => {
     const postalCodeEntry = postalCode?.locations.find(
       (entry) => entry.Gemeinden.toString() === locationInput
     );
-    // Update only jobLocation, leaving jobPostcode untouched
     if (postalCodeEntry) {
-      // Set form data with matched postal code, location, and city
       setFormData((prevFormData) => ({
         ...prevFormData,
         jobPostcode: postalCodeEntry.code,
@@ -40,7 +36,6 @@ const usePostalCode = (postalCode, setFormData, setIsPostalCodeValid) => {
       }));
       setIsPostalCodeValid(true);
     } else {
-      // Update jobPostcode only, leaving jobLocation untouched
       setFormData((prevFormData) => ({
         ...prevFormData,
         jobLocation: locationInput,

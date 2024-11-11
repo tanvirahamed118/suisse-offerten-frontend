@@ -16,9 +16,8 @@ import toast, { Toaster } from "react-hot-toast";
 
 function ClientReview({ sellerId }) {
   const { t } = useTranslation();
-  const limit = 20;
+  const limit = 10;
   const [page, setPage] = useState(1);
-
   const { star, category } = useSelector((state) => state.reviewFilter);
   const { data, isLoading, isError, isSuccess, error } = useGetAllReviewQuery({
     limit,
@@ -34,7 +33,8 @@ function ClientReview({ sellerId }) {
       error: usefulError,
     },
   ] = useUpdateReviewUsefulMutation();
-  const totalItems = data?.totalJobs || 0;
+
+  const totalItems = data?.totalreviews || 0;
   const handlePageChange = (newPage) => {
     setPage(newPage);
   };
@@ -195,7 +195,7 @@ function ClientReview({ sellerId }) {
       </h2>
       <ReviewFilter />
       <div className="flex flex-col gap-4">{content}</div>
-      {totalItems > 0 && (
+      {totalItems > limit && (
         <div className="mt-5">
           <Pagination
             handlePageChange={handlePageChange}

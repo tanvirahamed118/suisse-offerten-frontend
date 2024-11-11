@@ -25,12 +25,10 @@ function ShortFilter({ bid, type }) {
         <select
           name=""
           onChange={(e) => dispatch(choseOffer(e.target.value))}
-          id=""
+          defaultValue=""
           className="border border-gray-200 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 md:px-4"
         >
-          <option value="" selected>
-            {t("select_option")}
-          </option>
+          <option value="">{t("select_option")}</option>
           <option value="time of receipt">Time of receipt</option>
           <option value="best rating">Best rating</option>
           <option value="most review">Most Review</option>

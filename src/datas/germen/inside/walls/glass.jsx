@@ -1,589 +1,600 @@
-import { questionCheckboxItem, what_kind_glass_it } from "../../reuse-data";
+import { what_kind_glass_is_it, what_kind_glass_it } from "../../reuse-data";
 
-const glass = [
+const glassConstrucion = [
   {
     id: 364958112,
     type: "checkbox",
     label: "Welche Leistungen sollen erbracht werden ?",
     options: [
       {
-        id: 674971520,
+        id: 626292318,
         label: "Einbau oder Austausch von Glasscheiben",
         des: "Z.B. für Fenster, Türen usw.",
       },
       {
-        id: 418964952,
+        id: 659731144,
         label: "Bau einer Glaskonstruktion",
         des: "Z.B. für Geländer, Wände, Raumteiler, Balkone, Terrassen, Wintergärten, Überdachungen etc.",
       },
       {
-        id: 677791754,
+        id: 487244186,
         label: "Einbau einer Tierklappe",
-      },
-      {
-        id: 872235413,
-        label: "Glasschneiden",
-        credit: 8,
-      },
-      {
-        id: 360147334,
-        label: "Andere",
-        credit: 5,
-      },
-    ],
-  },
-  {
-    id: 674971520,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: [
-      {
-        id: 111602414,
-        label: "1",
-        credit: 6,
-      },
-      {
-        id: 562318016,
-        label: "2 bis 3",
-        credit: 12,
-      },
-      {
-        id: 939918080,
-        label: "4 oder mehr",
-        credit: 18,
-      },
-    ],
-  },
-  {
-    id: 111602414,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
-  },
-  {
-    id: 111602414,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
-  },
-  {
-    id: 339687385,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 215763667,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 669030860,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 335413326,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 562318016,
-    type: "checkbox",
-    label: "Sind die Glasscheiben identisch ?",
-    options: questionCheckboxItem(380687428, null),
-  },
-  {
-    id: 380687428,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
-  },
-  {
-    id: 339687385,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 215763667,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 669030860,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 335413326,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 871275869,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
-  },
-  {
-    id: 339687385,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 215763667,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 669030860,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 335413326,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 939918080,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: questionCheckboxItem(380687428, null),
-  },
-  {
-    id: 380687428,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
-  },
-  {
-    id: 339687385,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 215763667,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 669030860,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 335413326,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 871275869,
-    type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
-  },
-  {
-    id: 339687385,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 215763667,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 669030860,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 335413326,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-
-  // construction of glass
-  {
-    id: 418964952,
-    type: "checkbox",
-    label: "Was für eine Glasstruktur ?",
-    options: [
-      {
-        id: 649582213,
-        label: "Geländer",
         credit: 10,
       },
       {
-        id: 483870645,
-        label: "Wand / Raumteiler",
-        credit: 15,
+        id: 566800064,
+        label: "Glasschneiden",
+        credit: 10,
       },
       {
-        label: "Balkon / Terrasse / Wintergarten",
-        credit: 15,
-      },
-      {
-        id: 246136841,
-        label: "canopy",
-        credit: 25,
-      },
-      {
-        id: 936541274,
+        id: 963442728,
         label: "Andere",
-        credit: 8,
+        credit: 10,
       },
     ],
   },
   {
-    id: 649582213,
+    id: 626292318,
     type: "checkbox",
-    label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
-  },
-  {
-    id: 339687385,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 215763667,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 669030860,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 335413326,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 483870645,
-    type: "checkbox",
-    label: "Verfügt die Wand über ein Schiebeelement ?",
+    label: "Wie viele Glasscheiben müssen eingebaut bzw. ausgetauscht werden ?",
     options: [
       {
-        id: 8539217833,
-        label: "Ja",
+        id: 954851093,
+        label: "1",
+        credit: 5,
       },
       {
-        label: "NEIN",
+        id: 907349252,
+        label: "2 bis 3",
+        credit: 10,
+      },
+      {
+        id: 473639302,
+        label: "4 oder mehr",
+        credit: 15,
       },
     ],
   },
+  //   1 start
   {
-    id: 8539217833,
+    id: 954851093,
     type: "checkbox",
     label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
   },
   {
-    id: 339687385,
+    id: 717058743,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 215763667,
+    id: 933359243,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 669030860,
+    id: 330440496,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 335413326,
+    id: 418110905,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  //   1 end
+  //   2 start
+  {
+    id: 907349252,
+    type: "checkbox",
+    label: "Sind die Glasscheiben identisch (in Größe und Verglasung) ?",
+    options: [{ label: "Ja", id: 613446522 }, { label: "NEIN" }],
   },
   {
-    id: 434878142,
+    id: 613446522,
     type: "checkbox",
     label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
   },
   {
-    id: 339687385,
+    id: 717058743,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 215763667,
+    id: 933359243,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 669030860,
+    id: 330440496,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 335413326,
+    id: 418110905,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 246136841,
+    id: 487854228,
     type: "checkbox",
     label: "Um was für ein Glas handelt es sich ?",
-    options: what_kind_glass_it(339687385, 215763667, 669030860, 335413326),
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
   },
   {
-    id: 339687385,
+    id: 717058743,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 215763667,
+    id: 933359243,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 669030860,
+    id: 330440496,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
   {
-    id: 335413326,
+    id: 418110905,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
-  // construction of glass
+  //   2 end
+  //   4 start
+  {
+    id: 473639302,
+    type: "checkbox",
+    label: "Sind die Glasscheiben identisch (in Größe und Verglasung) ?",
+    options: [{ label: "Ja", id: 613446522 }, { label: "NEIN" }],
+  },
+  {
+    id: 613446522,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
+  },
+  {
+    id: 717058743,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 933359243,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 330440496,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 418110905,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 487854228,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
+  },
+  {
+    id: 717058743,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 933359243,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 330440496,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 418110905,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
 
-  // installation of an animal flap
+  //  constructions start
   {
-    id: 677791754,
+    id: 659731144,
+    type: "checkbox",
+    label: "Was für eine Glasstruktur ?",
+    options: [
+      { id: 944845095, label: "Geländer", credit: 15 },
+      { id: 569325115, label: "Wand / Raumteiler", credit: 15 },
+      { id: 883145416, label: "Balkon / Terrasse / Wintergarten", credit: 15 },
+      { id: 725047458, label: "Dach", credit: 20 },
+      { id: 950374485, label: "Andere", credit: 10 },
+    ],
+  },
+  {
+    id: 944845095,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
+  },
+  {
+    id: 717058743,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 933359243,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 330440496,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 418110905,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 569325115,
+    type: "checkbox",
+    label: "Verfügt es über ein Schiebeelement ?  ?",
+    options: [
+      { label: "Ja", id: 613446522 },
+      { label: "NEIN", id: 487854228 },
+    ],
+  },
+  {
+    id: 613446522,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
+  },
+  {
+    id: 717058743,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 933359243,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 330440496,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 418110905,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 487854228,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
+  },
+  {
+    id: 717058743,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 933359243,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 330440496,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 418110905,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 725047458,
+    type: "checkbox",
+    label: "Verfügt es über ein Schiebeelement ?",
+    options: what_kind_glass_it(717058743, 933359243, 330440496, 418110905),
+  },
+  {
+    id: 717058743,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 933359243,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 330440496,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 418110905,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  //  constructions end
+
+  //   installation start
+  {
+    id: 487244186,
     type: "checkbox",
     label: "Wo soll die Tierklappe eingebaut werden ?",
     options: [
-      {
-        id: 943974459,
-        label: "Fenster",
-        credit: 6,
-      },
-      {
-        id: 498687716,
-        label: "Tür",
-        credit: 8,
-      },
-      {
-        id: 782946941,
-        label: "Wand",
-        credit: 13,
-      },
-      {
-        id: 620875582,
-        label: "Anderswo",
-        credit: 8,
-      },
+      { id: 770964319, label: "Fenster" },
+      { id: 942592026, label: "Tür" },
+      { id: 431772169, label: "Wand" },
+      { id: 794779735, label: "Anderswo" },
     ],
   },
+  // window
   {
-    id: 943974459,
+    id: 770964319,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_is_it(230627422, 619966390, 992165658),
+  },
+  {
+    id: 230627422,
+    type: "doubleInput",
+    mainId: 869431863,
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 619966390,
+    type: "doubleInput",
+    mainId: 869431863,
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 992165658,
+    type: "doubleInput",
+    mainId: 869431863,
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 869431863,
     type: "checkbox",
     label: "Um was für ein Glas handelt es sich ?",
     options: [
+      { id: 363711932, label: "Ja, the animal flap is already there" },
       {
-        id: 331202180,
-        label: "Doppelverglasung",
-      },
-      {
-        id: 798133671,
-        label: "Dreifachverglasung",
-      },
-      {
-        id: 972174489,
-        label: "Andere Verglasungen",
+        id: 511289464,
+        label: "NEIN, the animal flap still needs to be purchased",
       },
     ],
   },
   {
-    id: 331202180,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 798133671,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 972174489,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 498687716,
+    id: 363711932,
     type: "checkbox",
-    label: "Was für eine Glasstruktur ?",
-    options: [
-      {
-        id: 331202180,
-        label: "Doppelverglasung",
-      },
-      {
-        id: 798133671,
-        label: "Dreifachverglasung",
-      },
-      {
-        id: 972174489,
-        label: "Andere Verglasungen",
-      },
-    ],
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   {
-    id: 331202180,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 798133671,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 972174489,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 782946941,
+    id: 511289464,
     type: "checkbox",
-    label: "Was für eine Glasstruktur ?",
-    options: [
-      {
-        id: 331202180,
-        label: "Doppelverglasung",
-      },
-      {
-        id: 798133671,
-        label: "Dreifachverglasung",
-      },
-      {
-        id: 972174489,
-        label: "Andere Verglasungen",
-      },
-    ],
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
+  // window
+  // door
   {
-    id: 331202180,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 798133671,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 972174489,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
-  },
-  {
-    id: 620875582,
+    id: 942592026,
     type: "checkbox",
-    label: "Was für eine Glasstruktur ?",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_is_it(230627422, 619966390, 992165658),
+  },
+  {
+    id: 230627422,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 619966390,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 992165658,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 869431863,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
     options: [
+      { id: 363711932, label: "Ja, the animal flap is already there" },
       {
-        id: 331202180,
-        label: "Doppelverglasung",
-      },
-      {
-        id: 798133671,
-        label: "Dreifachverglasung",
-      },
-      {
-        id: 972174489,
-        label: "Andere Verglasungen",
+        id: 511289464,
+        label: "NEIN, the animal flap still needs to be purchased",
       },
     ],
   },
   {
-    id: 331202180,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    id: 363711932,
+    type: "checkbox",
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
   },
   {
-    id: 798133671,
-    type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    id: 511289464,
+    type: "checkbox",
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
+  },
+  // door
+  // wall
+  {
+    id: 431772169,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_is_it(230627422, 619966390, 992165658),
   },
   {
-    id: 972174489,
+    id: 230627422,
     type: "doubleInput",
-    label: "Ungefähre Maße des Glases (ohne Rahmen)",
-    options: [{ width: "Breite in cm", height: "Höhe in cm" }],
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
   },
-  // installation of an animal flap
+  {
+    id: 619966390,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 992165658,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 869431863,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [
+      { id: 363711932, label: "Ja, the animal flap is already there" },
+      {
+        id: 511289464,
+        label: "NEIN, the animal flap still needs to be purchased",
+      },
+    ],
+  },
+  {
+    id: 363711932,
+    type: "checkbox",
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
+  },
+  {
+    id: 511289464,
+    type: "checkbox",
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
+  },
+  // wall
+  // other
+  {
+    id: 794779735,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: what_kind_glass_is_it(230627422, 619966390, 992165658),
+  },
+  {
+    id: 230627422,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 619966390,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 992165658,
+    type: "doubleInput",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [{ height: "Höhe in cm", width: "Breite in cm" }],
+  },
+  {
+    id: 869431863,
+    type: "checkbox",
+    label: "Um was für ein Glas handelt es sich ?",
+    options: [
+      { id: 363711932, label: "Ja, the animal flap is already there" },
+      {
+        id: 511289464,
+        label: "NEIN, the animal flap still needs to be purchased",
+      },
+    ],
+  },
+  {
+    id: 363711932,
+    type: "checkbox",
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
+  },
+  {
+    id: 511289464,
+    type: "checkbox",
+    label: "Für welches Tier ist die Tierklappe ?",
+    options: [{ label: "Katze" }, { label: "Hund" }, { label: "Andere" }],
+  },
+  // other
+  // installation end
 
   // glass cutting
   {
-    id: 872235413,
+    id: 566800064,
     type: "checkbox",
     label: "Liegt das zu schneidende Glas schon vor ?",
     options: [
-      {
-        label: "Ja, das Glas ist schon da",
-      },
-      {
-        label: "NEIN, Ich benötige Glas mit genauen Maßen",
-      },
+      { label: "Ja, das Glas ist schon da" },
+      { label: "NEIN, ich brauche Glas mit genauen Maßen" },
     ],
   },
   // glass cutting
 ];
 
-export default glass;
+export default glassConstrucion;

@@ -5,21 +5,20 @@ function JobQuestions({ data }) {
   if (data) {
     jobDes = JSON.parse(data?.jobQuestions);
   }
+
   return (
     <ul className="p-5 border border-gray-200 rounded-md flex flex-col gap-6 question-list">
       {data &&
         Object.entries(jobDes).map(([key, value], index) => {
           let displayValue;
-
-          // Check the type of value to handle arrays and objects
           if (Array.isArray(value)) {
-            displayValue = value.join(", "); // Join array values with a comma
+            displayValue = value.join(", ");
           } else if (typeof value === "object" && value !== null) {
             displayValue = Object.entries(value).map(([subKey, subValue]) => (
               <div key={subKey}>{`${subKey}: ${subValue}`}</div>
             ));
           } else {
-            displayValue = value; // Handle string or number
+            displayValue = value;
           }
 
           return (

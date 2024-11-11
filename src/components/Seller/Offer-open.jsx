@@ -110,13 +110,13 @@ function OfferOpen() {
             <div className="flex flex-col gap-2 lg:items-end items-center">
               <Link
                 to={`/search-job/${jobId}`}
-                className="bg-white text-base py-3 w-60 rounded-md text-center text-black font-normal border border-gray-200 hover:border-gray-300"
+                className="bg-white text-base py-3 w-60 rounded-md text-center text-black font-bold border border-gray-200 hover:border-gray-300"
               >
                 {t("view_advertisement")}
               </Link>
               <Link
                 to={`/seller-dashboard/perticipation/${_id}`}
-                className="bg-[#ff7100] text-base py-3 w-60 rounded-md text-center text-white font-normal"
+                className="bg-[#FFAA00] text-base py-3 w-60 rounded-md text-center text-black font-bold"
               >
                 {t("update_offer")}
               </Link>

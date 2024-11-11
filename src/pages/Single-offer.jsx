@@ -8,11 +8,9 @@ function SingleOffer() {
   const param = useParams();
   const id = param.id;
   const { data, isLoading, isSuccess } = useGetOneJobQuery(id, {
-    refetchOnMountOrArgChange: true, // Automatically refetch on navigation or param change
+    refetchOnMountOrArgChange: true,
   });
-
   const sellerAuth = localStorage.getItem("seller");
-
   const seller = JSON.parse(sellerAuth);
 
   return (

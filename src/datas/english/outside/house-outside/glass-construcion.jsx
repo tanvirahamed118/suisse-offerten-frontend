@@ -374,9 +374,9 @@ const glassConstrucion = [
     label: "Where should the animal flap be installed ?",
     options: [
       { id: 770964319, label: "Window" },
-      { label: "door" },
-      { label: "Wall" },
-      { label: "Elsewhere" },
+      { id: 942592026, label: "door" },
+      { id: 431772169, label: "Wall" },
+      { id: 794779735, label: "Elsewhere" },
     ],
   },
   // window
@@ -389,18 +389,21 @@ const glassConstrucion = [
   {
     id: 230627422,
     type: "doubleInput",
+    mainId: 869431863,
     label: "What kind of glass it is ?",
     options: [{ height: "Height in cm", width: "Width in cm" }],
   },
   {
     id: 619966390,
     type: "doubleInput",
+    mainId: 869431863,
     label: "What kind of glass it is ?",
     options: [{ height: "Height in cm", width: "Width in cm" }],
   },
   {
     id: 992165658,
     type: "doubleInput",
+    mainId: 869431863,
     label: "What kind of glass it is ?",
     options: [{ height: "Height in cm", width: "Width in cm" }],
   },

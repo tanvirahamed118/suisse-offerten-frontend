@@ -2,35 +2,35 @@ const pastcontroll = [
   {
     id: 996551091,
     type: "checkbox",
-    label: "What should be fought against ?",
+    label: "Contre quoi faut-il lutter ?",
     options: [
       {
         id: 460221921,
-        label: "Wasps / Wasp nest",
+        label: "Guêpes / Nid de guêpes",
       },
       {
         id: 824119494,
-        label: "Woodworm",
+        label: "Ver à bois",
       },
       {
         id: 357291539,
-        label: "Insect protection screen required",
+        label: "Moustiquaire anti-insectes obligatoire",
       },
       {
         id: 527974923,
-        label: "Mold",
+        label: "Moule",
       },
       {
         id: 883379111,
-        label: "Mice / Rats",
+        label: "Souris / Rats",
       },
       {
         id: 288744219,
-        label: "Garden / Plant Pests",
+        label: "Parasites du jardin et des plantes",
       },
       {
         id: 126409890,
-        label: "Other",
+        label: "Autre",
         credit: 8,
       },
     ],
@@ -38,19 +38,19 @@ const pastcontroll = [
   {
     id: 460221921,
     type: "checkbox",
-    label: "How far has the damage spread ?",
+    label: "Jusqu’où les dégâts se sont-ils propagés ?",
     options: [
       {
-        label: "An object / room / location",
+        label: "Un objet / une pièce / un lieu",
         credit: 8,
       },
       {
         id: 758390859,
-        label: "Multiple properties / rooms / locations",
+        label: "Plusieurs propriétés / chambres / emplacements",
         credit: 25,
       },
       {
-        label: "Different",
+        label: "Différente",
         credit: 8,
       },
     ],
@@ -58,35 +58,35 @@ const pastcontroll = [
   {
     id: 758390859,
     type: "checkbox",
-    label: "How many ?",
+    label: "Combien ?",
     options: [
       {
         label: "2",
       },
       {
-        label: "3 to 4",
+        label: "3 à 4",
       },
       {
-        label: "5 or more",
+        label: "5 ou plus",
       },
     ],
   },
   {
     id: 824119494,
     type: "checkbox",
-    label: "How far has the damage spread ?",
+    label: "Jusqu’où les dégâts se sont-ils propagés ?",
     options: [
       {
-        label: "An object / room / location",
+        label: "Un objet / une pièce / un lieu",
         credit: 8,
       },
       {
         id: 758390859,
-        label: "Multiple properties / rooms / locations",
+        label: "Plusieurs propriétés / chambres / emplacements",
         credit: 25,
       },
       {
-        label: "Different",
+        label: "Différente",
         credit: 8,
       },
     ],
@@ -94,35 +94,35 @@ const pastcontroll = [
   {
     id: 758390859,
     type: "checkbox",
-    label: "How many ?",
+    label: "Combien ?",
     options: [
       {
         label: "2",
       },
       {
-        label: "3 to 4",
+        label: "3 à 4",
       },
       {
-        label: "5 or more",
+        label: "5 ou plus",
       },
     ],
   },
   {
     id: 357291539,
     type: "checkbox",
-    label: "How far has the damage spread ?",
+    label: "Jusqu’où les dégâts se sont-ils propagés ?",
     options: [
       {
-        label: "An object / room / location",
+        label: "Un objet / une pièce / un lieu",
         credit: 8,
       },
       {
         id: 758390859,
-        label: "Multiple properties / rooms / locations",
+        label: "Plusieurs propriétés / chambres / emplacements",
         credit: 25,
       },
       {
-        label: "Different",
+        label: "Différente",
         credit: 8,
       },
     ],
@@ -130,35 +130,35 @@ const pastcontroll = [
   {
     id: 758390859,
     type: "checkbox",
-    label: "How many ?",
+    label: "Combien ?",
     options: [
       {
         label: "2",
       },
       {
-        label: "3 to 4",
+        label: "3 à 4",
       },
       {
-        label: "5 or more",
+        label: "5 ou plus",
       },
     ],
   },
   {
     id: 527974923,
     type: "checkbox",
-    label: "How far has the damage spread ?",
+    label: "Jusqu’où les dégâts se sont-ils propagés ?",
     options: [
       {
-        label: "An object / room / location",
+        label: "Un objet / une pièce / un lieu",
         credit: 8,
       },
       {
         id: 758390859,
-        label: "Multiple properties / rooms / locations",
+        label: "Plusieurs propriétés / chambres / emplacements",
         credit: 25,
       },
       {
-        label: "Different",
+        label: "Différente",
         credit: 8,
       },
     ],
@@ -166,35 +166,35 @@ const pastcontroll = [
   {
     id: 758390859,
     type: "checkbox",
-    label: "How many ?",
+    label: "Combien ?",
     options: [
       {
         label: "2",
       },
       {
-        label: "3 to 4",
+        label: "3 à 4",
       },
       {
-        label: "5 or more",
+        label: "5 ou plus",
       },
     ],
   },
   {
     id: 883379111,
     type: "checkbox",
-    label: "How far has the damage spread ?",
+    label: "Jusqu’où les dégâts se sont-ils propagés ?",
     options: [
       {
-        label: "An object / room / location",
+        label: "Un objet / une pièce / un lieu",
         credit: 8,
       },
       {
         id: 758390859,
-        label: "Multiple properties / rooms / locations",
+        label: "Plusieurs propriétés / chambres / emplacements",
         credit: 25,
       },
       {
-        label: "Different",
+        label: "Différente",
         credit: 8,
       },
     ],
@@ -202,35 +202,35 @@ const pastcontroll = [
   {
     id: 758390859,
     type: "checkbox",
-    label: "How many ?",
+    label: "Combien ?",
     options: [
       {
         label: "2",
       },
       {
-        label: "3 to 4",
+        label: "3 à 4",
       },
       {
-        label: "5 or more",
+        label: "5 ou plus",
       },
     ],
   },
   {
     id: 288744219,
     type: "checkbox",
-    label: "How far has the damage spread ?",
+    label: "Jusqu’où les dégâts se sont-ils propagés ?",
     options: [
       {
-        label: "An object / room / location",
+        label: "Un objet / une pièce / un lieu",
         credit: 8,
       },
       {
         id: 758390859,
-        label: "Multiple properties / rooms / locations",
+        label: "Plusieurs propriétés / chambres / emplacements",
         credit: 25,
       },
       {
-        label: "Different",
+        label: "Différente",
         credit: 8,
       },
     ],
@@ -238,16 +238,16 @@ const pastcontroll = [
   {
     id: 758390859,
     type: "checkbox",
-    label: "How many ?",
+    label: "Combien ?",
     options: [
       {
         label: "2",
       },
       {
-        label: "3 to 4",
+        label: "3 à 4",
       },
       {
-        label: "5 or more",
+        label: "5 ou plus",
       },
     ],
   },

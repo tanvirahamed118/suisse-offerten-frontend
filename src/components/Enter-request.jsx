@@ -62,6 +62,7 @@ function EnterRequest() {
     jobTitle: "",
     jobDescription: "",
     jobCategoryCode: "",
+    jobCategoryId: "",
     jobQuestions: {},
     jobPostcode: "",
     jobLocation: "",
@@ -136,7 +137,6 @@ function EnterRequest() {
           let updatedJobSubCategories = [...prevFormData.jobSubCategories];
           if (previousQuestion.type === "radio") {
             updatedJobSubCategories.pop();
-            // Remove the last item added
           }
           const updatedCredits =
             prevFormData.credits > 0 ? 0 : prevFormData.credits;
@@ -247,7 +247,7 @@ function EnterRequest() {
     setIsPostalCodeValid,
     formData
   );
-  console.log("grmform:", formData);
+
   useEffect(() => {
     if (currentQuestion?.type === "emailbox") {
       setFinalStep(true);

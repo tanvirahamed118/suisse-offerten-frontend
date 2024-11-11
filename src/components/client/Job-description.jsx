@@ -65,78 +65,79 @@ function JobDescription({ data }) {
       </div>
       <div className="flex flex-col gap-5 bg-[#F5F8FA] p-5 border border-gray-200 rounded-md overflow-x-auto">
         <table className="w-[900px]">
-          <tr>
-            <td className="w-3/12">
-              <h2 className="text-black text-base font-bold p-4 align-top">
-                {t("order_title")}
-              </h2>
-            </td>
-            <td>
-              <p className="text-black text-base font-normal p-4 align-top capitalize">
-                {jobTitle}
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold p-4 align-top w-3/12">
-              {t("description")}
-            </td>
-            <td className="text-black text-base font-normal p-4 align-top">
-              {jobDescription}
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold p-4 align-top w-3/12">
-              {t("questions")}:
-            </td>
-            <td className="text-black text-base font-normal p-4 align-top">
-              <JobQuestions data={data} />
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold p-2 align-top w-3/12">
-              {t("category")}
-            </td>
-            <td className="text-black text-base font-normal p-2 align-top">
-              {jobCategoryCode}
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold p-2 align-top w-3/12">
-              {t("place_of_execution")}*
-            </td>
-            <td className="text-black text-base font-normal p-2 align-top">
-              {t("postal_code")}: ({jobPostcode}) - {t("location")}: (
-              {jobLocation})
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold p-2 align-top w-3/12">
-              {t("possible_to_visit")}?*
-            </td>
-            <td className="text-black text-base font-normal p-2 align-top">
-              {jobSiteVisitPossible}
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold p-2 align-top w-3/12">
-              {t("duration_of_tender")}
-            </td>
-            <td className="text-black text-base font-normal p-2 align-top">
-              {moment(createdAt).fromNow()}
-            </td>
-          </tr>
-          <tr>
-            <td className="text-black text-base font-bold p-2 align-top w-3/12">
-              {t("desired_start_of_work")}
-            </td>
-            <td className="text-black text-base font-normal p-2 align-top">
-              {jobCompletionDate}
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td className="w-3/12">
+                <h2 className="text-black text-base font-bold p-4 align-top">
+                  {t("order_title")}
+                </h2>
+              </td>
+              <td>
+                <p className="text-black text-base font-normal p-4 align-top capitalize">
+                  {jobTitle}
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold p-4 align-top w-3/12">
+                {t("description")}
+              </td>
+              <td className="text-black text-base font-normal p-4 align-top">
+                {jobDescription}
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold p-4 align-top w-3/12">
+                {t("questions")}:
+              </td>
+              <td className="text-black text-base font-normal p-4 align-top">
+                <JobQuestions data={data} />
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold p-2 align-top w-3/12">
+                {t("category")}
+              </td>
+              <td className="text-black text-base font-normal p-2 align-top">
+                {jobCategoryCode}
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold p-2 align-top w-3/12">
+                {t("place_of_execution")}*
+              </td>
+              <td className="text-black text-base font-normal p-2 align-top">
+                {t("postal_code")}: ({jobPostcode}) - {t("location")}: (
+                {jobLocation})
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold p-2 align-top w-3/12">
+                {t("possible_to_visit")}?*
+              </td>
+              <td className="text-black text-base font-normal p-2 align-top">
+                {jobSiteVisitPossible}
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold p-2 align-top w-3/12">
+                {t("duration_of_tender")}
+              </td>
+              <td className="text-black text-base font-normal p-2 align-top">
+                {moment(createdAt).fromNow()}
+              </td>
+            </tr>
+            <tr>
+              <td className="text-black text-base font-bold p-2 align-top w-3/12">
+                {t("desired_start_of_work")}
+              </td>
+              <td className="text-black text-base font-normal p-2 align-top">
+                {jobCompletionDate}
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
-      {/* job description */}
     </div>
   );
 }

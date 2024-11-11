@@ -130,7 +130,7 @@ const blindsRoller = [
   {
     id: 403175916,
     type: "checkbox",
-    label: "Clean blinds and windows ?",
+    label: "How many windows should be cleaned ?",
     options: how_many_be_cleaned(502391050, 117385925, 685137619, 601813141),
   },
   {

@@ -10,6 +10,7 @@ function SellerDashboard() {
   const id = seller?.seller?._id;
   const { data, isLoading } = useGetOneSellerQuery(id);
   const { uidVerify, locationVerify } = data || {};
+
   return (
     <section>
       <div className="container py-5">

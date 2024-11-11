@@ -638,7 +638,37 @@ export const what_material_be_made_of = [
   },
 ];
 
-export const how_many_sides_the_building_should = (id1, id2, id3, id4, id5) => {
+export const how_many_sides_the_building_should = (id1, id2, id3, id4) => {
+  return [
+    {
+      id: id1,
+      label: "1",
+      credit: 10,
+    },
+    {
+      id: id2,
+      label: "2",
+      credit: 15,
+    },
+    {
+      id: id3,
+      label: "3",
+      credit: 20,
+    },
+    {
+      id: id4,
+      label: "All around",
+      credit: 30,
+    },
+  ];
+};
+export const how_many_sides_the_building_should_2 = (
+  id1,
+  id2,
+  id3,
+  id4,
+  id5
+) => {
   return [
     {
       id: id1,
@@ -962,28 +992,42 @@ export const what_shape_is_the_roof = (id1, id2, id3, id4, id5, id6) => {
     },
   ];
 };
-export const what_material_roof_made_of = (id1) => {
+export const what_material_roof_made_of = (
+  id1,
+  id2,
+  id3,
+  id4,
+  id5,
+  id6,
+  id7
+) => {
   return [
     {
       id: id1,
       label: "Clay bricks",
     },
     {
+      id: id2,
       label: "bitumen",
     },
     {
+      id: id3,
       label: "Fibre cement",
     },
     {
+      id: id4,
       label: "plastic",
     },
     {
+      id: id5,
       label: "Metal covering",
     },
     {
+      id: id6,
       label: "Other",
     },
     {
+      id: id7,
       label: "I do not know",
     },
   ];

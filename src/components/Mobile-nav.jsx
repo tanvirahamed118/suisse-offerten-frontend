@@ -29,7 +29,7 @@ function MobileNav({
             <img
               src={headerlogo ? headerlogo : Logo}
               alt=""
-              className="w-24"
+              className="w-36"
               onClick={() => setMenu(false)}
             />
           </Link>
@@ -68,7 +68,7 @@ function MobileNav({
                 {t("search_job")}
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/cost-calculator"
                 onClick={() => setMenu(false)}
@@ -80,7 +80,7 @@ function MobileNav({
               >
                 {t("cost_schedule")}
               </Link>
-            </li>
+            </li> */}
 
             {seller?.sellerToken ? (
               <>

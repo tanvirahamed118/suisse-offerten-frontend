@@ -4,25 +4,25 @@ const slabs = [
   {
     id: 563723534,
     type: "checkbox",
-    label: "Where should the plates be installed ?",
+    label: "Où doivent être installées les plaques ?",
     options: [
       {
         id: 477111188,
-        label: "Laying / replacing panels",
+        label: "Pose / remplacement de panneaux",
         credit: 20,
       },
       {
         id: 491847277,
-        label: "Repairing plates",
+        label: "Réparation des plaques",
         credit: 15,
       },
       {
         id: 514373759,
-        label: "Renew joints",
+        label: "Renouveler les articulations",
         credit: 5,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -30,31 +30,31 @@ const slabs = [
   {
     id: 477111188,
     type: "checkbox",
-    label: "What services should be provided ?",
+    label: "Quels services devraient être fournis ?",
     options: [
       {
         id: 440239138,
-        label: "Bathroom / Toilet",
+        label: "Salle de bain / Toilettes",
       },
       {
         id: 404925801,
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
         id: 209253756,
-        label: "Veranda",
+        label: "Véranda",
       },
       {
         id: 319057527,
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
         id: 212845915,
-        label: "Fireplace / fireplace",
+        label: "Cheminée / foyer",
       },
       {
         id: 360223002,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -62,22 +62,22 @@ const slabs = [
     id: 440239138,
     type: "multibox",
     mainId: 915998113,
-    label: "Are the tiles/plates to be installed already there ?",
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Bath",
+        label: "Bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -85,16 +85,16 @@ const slabs = [
     id: 404925801,
     type: "multibox",
     mainId: 915998113,
-    label: "Approximately how large is the affected area ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
         label: "Soil",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -102,22 +102,22 @@ const slabs = [
     id: 209253756,
     type: "multibox",
     mainId: 915998113,
-    label: "Are the tiles/plates to be installed already there ?",
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Bath",
+        label: "Bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -125,22 +125,22 @@ const slabs = [
     id: 319057527,
     type: "multibox",
     mainId: 915998113,
-    label: "Are the tiles/plates to be installed already there ?",
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Bath",
+        label: "Bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -148,22 +148,22 @@ const slabs = [
     id: 212845915,
     type: "multibox",
     mainId: 915998113,
-    label: "Are the tiles/plates to be installed already there ?",
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Bath",
+        label: "Bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -171,22 +171,22 @@ const slabs = [
     id: 360223002,
     type: "multibox",
     mainId: 915998113,
-    label: "Are the tiles/plates to be installed already there ?",
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Bath",
+        label: "Bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -194,28 +194,28 @@ const slabs = [
   {
     id: 915998113,
     type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
+    label: "Où dans la salle de bain / WC faut-il poser du carrelage ?",
     options: [
       {
         id: 576329979,
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
         id: 724147813,
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 576329979,
     type: "checkbox",
-    label: "Approximately how large is the affected area ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: approximately_how_the_affected_area,
   },
   {
     id: 724147813,
     type: "checkbox",
-    label: "Approximately how large is the affected area ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: approximately_how_the_affected_area,
   },
 ];

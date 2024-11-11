@@ -9,7 +9,7 @@ const repair = [
   {
     id: 128976166,
     type: "checkbox",
-    label: "Welche Art von Dach möchten Sie installieren ?",
+    label: "Welche Art von Dach möchten Sie reparieren ?",
     options: what_type_want_to_install(
       234305256,
       378755402,

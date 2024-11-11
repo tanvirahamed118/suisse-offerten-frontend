@@ -4,289 +4,218 @@ const slabs = [
   {
     id: 603134044,
     type: "checkbox",
-    label: "What kind of tiling services do you need ?",
+    label: "Où doivent être installées les plaques ?",
     options: [
       {
-        id: 6449724186,
-        label: "Laying / replacing panels",
+        id: 5547535016,
+        label: "Pose / remplacement de panneaux",
+        credit: 20,
       },
       {
-        id: 491847277,
-        label: "Repairing plates",
-        credit: 10,
+        id: 2526937070,
+        label: "Réparation des plaques",
+        credit: 15,
       },
       {
-        id: 514373759,
-        label: "Renew joints",
+        id: 5099030183,
+        label: "Renouveler les articulations",
         credit: 5,
       },
       {
-        id: 176014696,
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
   },
   {
-    id: 6449724186,
+    id: 5547535016,
     type: "checkbox",
-    label: "Where should the panels be laid ?",
+    label: "Quels services devraient être fournis ?",
     options: [
       {
-        id: 7492094461,
-        label: "Bathroom / Toilet",
+        id: 9067936961,
+        label: "Salle de bain / Toilettes",
       },
       {
-        id: 7246032159,
-        label: "Winter garden",
+        id: 9323433727,
+        label: "Jardin d'hiver",
       },
       {
-        id: 1241477312,
-        label: "veranda",
+        id: 5384571451,
+        label: "Véranda",
       },
       {
-        id: 1181416948,
-        label: "Balcony / Terrace",
+        id: 9268724068,
+        label: "Balcon / Terrasse",
       },
       {
-        id: 7728965234,
-        label: "Fireplace / fireplace",
+        id: 9936143821,
+        label: "Cheminée / foyer",
       },
       {
-        id: 8531777232,
-        label: "Other",
+        id: 5480689074,
+        label: "Autre",
       },
     ],
   },
   {
-    id: 7492094461,
+    id: 9067936961,
     type: "multibox",
-    mainId: 2168682727,
-    label: "Where in the bathroom / toilet should tiles be laid ?",
+    mainId: 3573189789,
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Bath",
+        label: "Bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
-    id: 2168682727,
-    type: "checkbox",
-    label: "Are the plates already there ?",
-    options: [
-      {
-        id: 576329979,
-        label: "Yes, it already exists",
-      },
-      {
-        id: 724147813,
-        label: "No, it still needs to be procured",
-      },
-    ],
-  },
-  {
-    id: 576329979,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 724147813,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 7246032159,
+    id: 9323433727,
     type: "multibox",
-    mainId: 2168682727,
-    label: "Where in the bathroom / toilet should tiles be laid ?",
+    mainId: 3573189789,
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Soil",
       },
       {
-        label: "Shower",
-      },
-      {
-        label: "Bath",
-      },
-      {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
-    id: 2168682727,
-    type: "checkbox",
-    label: "Are the plates already there ?",
-    options: [
-      {
-        id: 576329979,
-        label: "Yes, it already exists",
-      },
-      {
-        id: 724147813,
-        label: "No, it still needs to be procured",
-      },
-    ],
-  },
-  {
-    id: 576329979,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 724147813,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 1241477312,
+    id: 5384571451,
     type: "multibox",
-    mainId: 2168682727,
-    label: "Where in the bathroom / toilet should tiles be laid ?",
+    mainId: 3573189789,
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        label: "Walls",
+        label: "Murs",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Bath",
+        label: "Bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
-    id: 2168682727,
-    type: "checkbox",
-    label: "Are the plates already there ?",
+    id: 9268724068,
+    type: "multibox",
+    mainId: 3573189789,
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        id: 576329979,
-        label: "Yes, it already exists",
+        label: "Murs",
       },
       {
-        id: 724147813,
-        label: "No, it still needs to be procured",
+        label: "Sol",
+      },
+      {
+        label: "Douche",
+      },
+      {
+        label: "Bain",
+      },
+      {
+        label: "Autre",
       },
     ],
   },
   {
-    id: 576329979,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 724147813,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 1181416948,
-    type: "checkbox",
-    label: "Are the plates already there ?",
+    id: 9936143821,
+    type: "multibox",
+    mainId: 3573189789,
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        id: 576329979,
-        label: "Yes, it already exists",
+        label: "Murs",
       },
       {
-        id: 724147813,
-        label: "No, it still needs to be procured",
+        label: "Sol",
+      },
+      {
+        label: "Douche",
+      },
+      {
+        label: "Bain",
+      },
+      {
+        label: "Autre",
       },
     ],
   },
   {
-    id: 576329979,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 724147813,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 7728965234,
-    type: "checkbox",
-    label: "Are the plates already there ?",
+    id: 5480689074,
+    type: "multibox",
+    mainId: 3573189789,
+    label: "Les tuiles/plaques à installer sont-elles déjà là ?",
     options: [
       {
-        id: 576329979,
-        label: "Yes, it already exists",
+        label: "Murs",
       },
       {
-        id: 724147813,
-        label: "No, it still needs to be procured",
+        label: "Sol",
+      },
+      {
+        label: "Douche",
+      },
+      {
+        label: "Bain",
+      },
+      {
+        label: "Autre",
+      },
+    ],
+  },
+
+  {
+    id: 3573189789,
+    type: "checkbox",
+    label: "Où dans la salle de bain / WC faut-il poser du carrelage ?",
+    options: [
+      {
+        id: 6339163582,
+        label: "Oui, il existe déjà",
+      },
+      {
+        id: 9317025591,
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
-    id: 576329979,
+    id: 6339163582,
     type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: approximately_how_the_affected_area,
   },
   {
-    id: 724147813,
+    id: 9317025591,
     type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 8531777232,
-    type: "checkbox",
-    label: "Are the plates already there ?",
-    options: [
-      {
-        id: 576329979,
-        label: "Yes, it already exists",
-      },
-      {
-        id: 724147813,
-        label: "No, it still needs to be procured",
-      },
-    ],
-  },
-  {
-    id: 576329979,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
-    options: approximately_how_the_affected_area,
-  },
-  {
-    id: 724147813,
-    type: "checkbox",
-    label: "Where in the bathroom / toilet should tiles be laid ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: approximately_how_the_affected_area,
   },
 ];

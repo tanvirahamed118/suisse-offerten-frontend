@@ -7,27 +7,27 @@ const movingCat = [
   {
     id: 3290426656,
     type: "checkbox",
-    label: "How far is the move ?",
+    label: "Jusqu'où s'étend le déménagement ?",
     options: [
       {
         id: 1459730702,
-        label: "Within the community",
+        label: "Au sein de la communauté",
       },
       {
         id: 6792756807,
-        label: "Within the canton",
+        label: "Dans le canton",
       },
       {
         id: 3414387464,
-        label: "Within Switzerland",
+        label: "En Suisse",
       },
       {
         id: 1479083434,
-        label: "Within Europe",
+        label: "En Europe",
       },
       {
         id: 1569163849,
-        label: "Outside Europe",
+        label: "Hors Europe",
       },
     ],
   },
@@ -35,13 +35,13 @@ const movingCat = [
     id: 1459730702,
     type: "doubleInput",
     mainId: 1934954891,
-    label: "Where is the transport from and to ?",
+    label: "D'où partent les transports et où vont-ils ?",
     options: [
       {
-        width: "From:",
-        height: "Until:",
-        placeTow: "ZB 8003 Zurich",
-        placeOne: "ZB 3011 Bern",
+        width: "Depuis:",
+        height: "Jusqu'à:",
+        placeTow: "Par exemple 8003 Zurich",
+        placeOne: "Par exemple 3011 Berne",
       },
     ],
   },
@@ -49,38 +49,38 @@ const movingCat = [
     id: 1934954891,
     type: "multibox",
     mainId: 7066446326,
-    label: "On which floors is the current space ?",
+    label: "A quels étages se situe l'espace actuel ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 7066446326,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 8839120147 },
-      { label: "No", id: 9417832555 },
+      { label: "Oui", id: 8839120147 },
+      { label: "Non", id: 9417832555 },
     ],
   },
   {
@@ -90,60 +90,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 4003460057 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 4003460057 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 4003460057,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -151,26 +151,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 9185699424,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 9185699424,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 9185699424,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -182,60 +182,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -243,26 +243,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -271,13 +271,13 @@ const movingCat = [
     id: 6792756807,
     type: "doubleInput",
     mainId: 268310504,
-    label: "Where is the transport from and to ?",
+    label: "D'où partent les transports et où vont-ils ?",
     options: [
       {
-        width: "From:",
-        height: "Until:",
-        placeTow: "ZB 8003 Zurich",
-        placeOne: "ZB 3011 Bern",
+        width: "Depuis:",
+        height: "Jusqu'à:",
+        placeTow: "Par exemple 8003 Zurich",
+        placeOne: "Par exemple 3011 Berne",
       },
     ],
   },
@@ -285,38 +285,38 @@ const movingCat = [
     id: 268310504,
     type: "multibox",
     mainId: 7066446326,
-    label: "On which floors is the current space ?",
+    label: "A quels étages se situe l'espace actuel ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 7066446326,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 8839120147 },
-      { label: "No", id: 9417832555 },
+      { label: "Oui", id: 8839120147 },
+      { label: "Non", id: 9417832555 },
     ],
   },
   {
@@ -326,60 +326,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -387,26 +387,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -418,60 +418,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -479,26 +479,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -507,13 +507,13 @@ const movingCat = [
     id: 3414387464,
     type: "doubleInput",
     mainId: 268310504,
-    label: "Where is the transport from and to ?",
+    label: "D'où partent les transports et où vont-ils ?",
     options: [
       {
-        width: "From:",
-        height: "Until:",
-        placeTow: "ZB 8003 Zurich",
-        placeOne: "ZB 3011 Bern",
+        width: "Depuis:",
+        height: "Jusqu'à:",
+        placeTow: "Par exemple 8003 Zurich",
+        placeOne: "Par exemple 3011 Berne",
       },
     ],
   },
@@ -521,38 +521,38 @@ const movingCat = [
     id: 268310504,
     type: "multibox",
     mainId: 7066446326,
-    label: "On which floors is the current space ?",
+    label: "A quels étages se situe l'espace actuel ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 7066446326,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 8839120147 },
-      { label: "No", id: 9417832555 },
+      { label: "Oui", id: 8839120147 },
+      { label: "Non", id: 9417832555 },
     ],
   },
   {
@@ -562,60 +562,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -623,26 +623,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -654,60 +654,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -715,26 +715,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -743,13 +743,13 @@ const movingCat = [
     id: 1479083434,
     type: "doubleInput",
     mainId: 268310504,
-    label: "Where is the transport from and to ?",
+    label: "D'où partent les transports et où vont-ils ?",
     options: [
       {
-        width: "From:",
-        height: "Until:",
-        placeTow: "ZB 8003 Zurich",
-        placeOne: "ZB 3011 Bern",
+        width: "Depuis:",
+        height: "Jusqu'à:",
+        placeTow: "Par exemple 8003 Zurich",
+        placeOne: "Par exemple 3011 Berne",
       },
     ],
   },
@@ -757,38 +757,38 @@ const movingCat = [
     id: 268310504,
     type: "multibox",
     mainId: 7066446326,
-    label: "On which floors is the current space ?",
+    label: "A quels étages se situe l'espace actuel ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 7066446326,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 8839120147 },
-      { label: "No", id: 9417832555 },
+      { label: "Oui", id: 8839120147 },
+      { label: "Non", id: 9417832555 },
     ],
   },
   {
@@ -798,60 +798,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -859,26 +859,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -890,60 +890,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -951,26 +951,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -979,13 +979,13 @@ const movingCat = [
     id: 1569163849,
     type: "doubleInput",
     mainId: 268310504,
-    label: "Where is the transport from and to ?",
+    label: "D'où partent les transports et où vont-ils ?",
     options: [
       {
-        width: "From:",
-        height: "Until:",
-        placeTow: "ZB 8003 Zurich",
-        placeOne: "ZB 3011 Bern",
+        width: "Depuis:",
+        height: "Jusqu'à:",
+        placeTow: "Par exemple 8003 Zurich",
+        placeOne: "Par exemple 3011 Berne",
       },
     ],
   },
@@ -993,38 +993,38 @@ const movingCat = [
     id: 268310504,
     type: "multibox",
     mainId: 7066446326,
-    label: "On which floors is the current space ?",
+    label: "A quels étages se situe l'espace actuel ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 7066446326,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 8839120147 },
-      { label: "No", id: 9417832555 },
+      { label: "Oui", id: 8839120147 },
+      { label: "Non", id: 9417832555 },
     ],
   },
   {
@@ -1034,60 +1034,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -1095,26 +1095,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -1126,60 +1126,60 @@ const movingCat = [
     label: "On which floors is the new space ?",
     options: [
       {
-        label: "cellar",
+        label: "cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
-        label: "5th floor or higher",
+        label: "5e étage ou plus",
       },
     ],
   },
   {
     id: 1916689810,
     type: "checkbox",
-    label: "Is there an elevator available in the new premises ?",
+    label: "Y a-t-il un ascenseur disponible dans les nouveaux locaux ?",
     options: [
-      { label: "Yes", id: 221818400 },
-      { label: "No", id: 1591236716 },
+      { label: "Oui", id: 221818400 },
+      { label: "Non", id: 1591236716 },
     ],
   },
   {
     id: 221818400,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],
@@ -1187,26 +1187,26 @@ const movingCat = [
   {
     id: 1591236716,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 9185699424,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 8222222426,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 2162331403,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 13,
       },
       {
         id: 6018510549,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 25,
       },
     ],

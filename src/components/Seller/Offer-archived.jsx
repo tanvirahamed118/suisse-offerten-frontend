@@ -13,7 +13,6 @@ function OfferArchived() {
   const seller = JSON.parse(sellerAuth);
   const sellerId = seller?.seller?._id;
   const limit = 20;
-
   const { data, isLoading, isSuccess, isError, error } =
     useGetAllOfferBySellerQuery({
       sellerId,

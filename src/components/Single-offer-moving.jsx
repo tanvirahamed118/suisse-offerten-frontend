@@ -19,13 +19,13 @@ import { useGetOneSellerQuery } from "../redux/rtk/features/auth/seller/authApi"
 import { useGetOneOfferByJobidQuery } from "../redux/rtk/features/offer/offerApi";
 import fetchCoordinates from "./maps/FetchCoordinates";
 import LocationMap from "./maps/Location-map";
+import { skipToken } from "@reduxjs/toolkit/query";
 
 function SingleOfferMoving({ data, isLoading, isSuccess }) {
   const { t } = useTranslation();
   const params = useParams();
   const id = params.id;
   const location = useLocation();
-
   const navigate = useNavigate();
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -37,8 +37,12 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
   const sellerId = seller?.seller?._id;
   const [coordinates, setCoordinates] = useState(null);
   const saverId = sellerId ? sellerId : clientId;
-  const { data: sellerData } = useGetOneSellerQuery(sellerId);
-  const { data: getData } = useGetOneOfferByJobidQuery({ id, sellerId });
+  const { data: sellerData } = useGetOneSellerQuery(
+    sellerId ? sellerId : skipToken
+  );
+  const { data: getData } = useGetOneOfferByJobidQuery(
+    sellerId ? { id, sellerId } : skipToken
+  );
   const { credits: sellerCredit } = sellerData || {};
   const [active, setActive] = useState(false);
   const handleImageClick = (imageUrl) => {
@@ -47,9 +51,7 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
   };
 
   const findSellerOffer = getData?.sellerId === sellerId ? true : false;
-
   const { offerPlaced } = getData || {};
-
   const {
     jobTitle,
     jobUsername,
@@ -68,9 +70,11 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
     setIsPopupOpen(false);
     setSelectedImage(null);
   };
+
   useEffect(() => {
     setActive(true);
   }, [active]);
+
   const createdDate = new Date(data?.createdAt);
   const currentDate = new Date();
   const diffInMs = currentDate - createdDate;
@@ -78,6 +82,7 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
   const diffInHours = Math.floor(
     (diffInMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
   );
+
   const formattedDateDifference = `${diffInDays
     .toString()
     .padStart(2, "0")}D ${diffInHours.toString().padStart(2, "0")}h`;
@@ -97,6 +102,7 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
     const getCoordinates = async () => {
       try {
         const coords = await fetchCoordinates(jobLocation, jobPostcode);
+
         setCoordinates(coords);
       } catch (error) {
         console.error("Error fetching coordinates:", error);
@@ -148,7 +154,7 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
                 key={index}
                 src={item}
                 alt=""
-                className="w-5/12 md:w-3/12 h-24 md:h-36 object-cover rounded-md hover:cursor-pointer"
+                className="w-4/12 md:w-3/12 h-24 md:h-36 object-cover rounded-md hover:cursor-pointer"
                 onClick={() => handleImageClick(item)}
               />
             ))}
@@ -159,7 +165,7 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
               <img
                 src={selectedImage}
                 alt="Full Size"
-                className="w-full xl:w-[1000px] h-[70vh] object-cover rounded-md"
+                className="w-full xl:w-[1000px] h-full xl:h-[70vh] object-cover rounded-md"
               />
               <button
                 onClick={handleClosePopup}
@@ -201,14 +207,16 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
               {t("lead_price")} {credits} {t("credits")}:
             </p>
           </div>
-          <ConfirmOffer
-            id={id}
-            sellerId={seller?.seller?._id}
-            sellerToken={seller?.sellerToken}
-          />
+          {seller && (
+            <ConfirmOffer
+              id={id}
+              sellerId={seller?.seller?._id}
+              sellerToken={seller?.sellerToken}
+            />
+          )}
           <div className="flex md:flex-row flex-col w-full justify-center items-center py-5 gap-5">
             {seller && (
-              <div className="relative group w-6/12">
+              <div className="relative group w-full md:w-6/12">
                 <button disabled={sellerCredit === 0} className="w-full">
                   {findSellerOffer ? (
                     <div
@@ -243,38 +251,40 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
             )}
             {seller && findSellerOffer ? (
               offerPlaced ? (
-                <div className="bg-[#f5f8fa] w-6/12 px-10 py-4 rounded-lg text-black border border-gray-200 text-base font-normal text-center cursor-not-allowed">
+                <div className="bg-[#f5f8fa] w-full md:w-6/12 px-10 py-4 rounded-lg text-black border border-gray-200 text-base font-normal text-center cursor-not-allowed">
                   {t("already_submited")}
                 </div>
               ) : (
                 <Link
                   to={`/search-job/prepard-bid/${data._id}`}
-                  className="bg-[#FFAA01] w-6/12 px-10 py-4 rounded-lg text-[#111111] text-base font-bold text-center hover:bg-[#ffaa01da]"
+                  className="bg-[#FFAA01] w-full md:w-6/12 px-10 py-4 rounded-lg text-[#111111] text-base font-bold text-center hover:bg-[#ffaa01da]"
                 >
                   {t("prepare_offer")}
                 </Link>
               )
             ) : null}
           </div>
-          <div className="mt-5 flex flex-col gap-2">
-            <p className="text-lg font-bold text-[#111111]">
-              {t("limited_participation_offer")}
-            </p>
-            <p className="text-base font-normal text-[#111111]">
-              - {t("offer_note_one")}
-            </p>
-            <span className="">
-              <ul>
-                <li className="text-base font-normal text-[#111111]">
-                  - {t("offer_note_tow")}
-                </li>
-                <li className="text-base font-normal text-[#111111] pl-3">
-                  {t("offer_note_three")}
-                </li>
-              </ul>
-            </span>
-          </div>
-          <SellerOffer id={id} sellerId={seller?.seller?._id} />
+          {seller && (
+            <div className="mt-5 flex flex-col gap-2">
+              <p className="text-lg font-bold text-[#111111]">
+                {t("limited_participation_offer")}
+              </p>
+              <p className="text-base font-normal text-[#111111]">
+                - {t("offer_note_one")}
+              </p>
+              <span className="">
+                <ul>
+                  <li className="text-base font-normal text-[#111111]">
+                    - {t("offer_note_tow")}
+                  </li>
+                  <li className="text-base font-normal text-[#111111] pl-3">
+                    {t("offer_note_three")}
+                  </li>
+                </ul>
+              </span>
+            </div>
+          )}
+          {seller && <SellerOffer id={id} sellerId={seller?.seller?._id} />}
         </div>
       </div>
     );
@@ -283,7 +293,7 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
   return (
     <section>
       <div className="container py-5">
-        <ul className="flex gap-2 pb-2">
+        <ul className="flex items-start gap-2 pb-2">
           <li className="flex gap-3 items-center">
             <button
               className="text-base font-normal text-[#3097d1] hover:underline capitalize"
@@ -305,10 +315,12 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
               <div className="my-10">
                 <ReletedJob category={jobCategoryCode} id={_id} />
                 {seller || client ? <Perticipation id={_id} /> : null}
-                <CommunicationTab
-                  id={data?._id}
-                  sellerId={seller?.seller?._id}
-                />
+                {seller && (
+                  <CommunicationTab
+                    id={data?._id}
+                    sellerId={seller?.seller?._id}
+                  />
+                )}
               </div>
             </div>
           </div>

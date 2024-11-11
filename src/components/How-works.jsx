@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import Verify from "../assets/images/home/1-fe9230c82558b63f1f91.png";
-import Review from "../assets/images/home/2-57898db736a3a502dff8.png";
-import Offer from "../assets/images/home/3-c8ff5dd90ef09a1d6f8b.png";
+import Verify from "../assets/images/home/works1.png";
+import Review from "../assets/images/home/works2.png";
+import Offer from "../assets/images/home/works3.png";
 import { useTranslation } from "react-i18next";
 
 function HowWorks() {
   const { t } = useTranslation();
   const sellerAuth = localStorage?.getItem("seller");
   const seller = JSON.parse(sellerAuth);
+
   return (
     <section className="bg-white py-20 mb-10">
       <div className="py-10 m-auto w-full xl:w-[1230px] flex flex-col gap-20 items-center">
@@ -17,7 +18,7 @@ function HowWorks() {
         <div className="flex flex-col gap-5 items-center px-2 mt-14 md:flex-row md:gap-10">
           <div className="flex flex-col gap-2 items-center">
             <a href="">
-              <img src={Verify} alt="" className="w-40" />
+              <img src={Verify} alt="" className="w-24" />
             </a>
             <h2 className="text-xl font-bold text-black text-center capitalize">
               {t("work_title_1")}
@@ -28,7 +29,7 @@ function HowWorks() {
           </div>
           <div className="flex flex-col gap-2 items-center">
             <a href="">
-              <img src={Review} alt="" className="w-40" />
+              <img src={Review} alt="" className="w-24" />
             </a>
             <h2 className="text-xl font-bold text-black text-center capitalize">
               {t("work_title_2")}
@@ -39,7 +40,7 @@ function HowWorks() {
           </div>
           <div className="flex flex-col gap-2 items-center">
             <a href="">
-              <img src={Offer} alt="" className="w-40" />
+              <img src={Offer} alt="" className="w-24" />
             </a>
             <h2 className="text-xl font-bold text-black text-center capitalize">
               {t("work_title_3")}

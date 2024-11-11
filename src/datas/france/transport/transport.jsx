@@ -12,16 +12,16 @@ const transportCat = [
     options: [
       {
         id: 1529840539,
-        label: "Transports, small transports",
+        label: "Les transports, les petits transports",
         img: transportImg,
       },
       {
         id: 428497448,
-        label: "Disposal, clearing out",
+        label: "Élimination, évacuation",
         img: disposalImg,
       },
       {
-        label: "Other work",
+        label: "Autres travaux",
         img: Other,
         credit: 7,
       },

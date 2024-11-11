@@ -8,7 +8,6 @@ function CreditPaymentSuccess() {
   const seller = JSON.parse(sellerAuth);
   const id = seller?.seller?._id;
   const { data } = useGetOneSellerQuery(id);
-
   const { pendingCredits, credits } = data || {};
 
   return (

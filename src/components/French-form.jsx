@@ -136,7 +136,6 @@ function FrenchForm() {
           let updatedJobSubCategories = [...prevFormData.jobSubCategories];
           if (previousQuestion.type === "radio") {
             updatedJobSubCategories.pop();
-            // Remove the last item added
           }
           const updatedCredits =
             prevFormData.credits > 0 ? 0 : prevFormData.credits;
@@ -247,7 +246,7 @@ function FrenchForm() {
     setIsPostalCodeValid,
     formData
   );
-  console.log("frnform:", formData);
+
   useEffect(() => {
     if (currentQuestion?.type === "emailbox") {
       setFinalStep(true);
@@ -300,7 +299,7 @@ function FrenchForm() {
           <div className="w-full">
             <div className="w-full h-4 bg-[#d4dbe0] rounded-md overflow-hidden mb-5">
               <div
-                className="bg-[#3097d1] h-full transition-all rounded-md duration-300 ease-in-out"
+                className="bg-[#FFAA00] h-full transition-all rounded-md duration-300 ease-in-out"
                 style={{ width: `${percentage.toFixed(0)}%` }}
               ></div>
             </div>
@@ -468,7 +467,7 @@ function FrenchForm() {
                         }
                       >
                         <option disabled selected>
-                          Select a option
+                          {t("select_option")}
                         </option>
                         {currentQuestion.options.map((optionItem, index) => {
                           const itemId =

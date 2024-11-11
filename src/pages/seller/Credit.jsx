@@ -12,16 +12,16 @@ function Credit() {
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const id = seller?.seller?._id;
+
   const handlePayment = (item) => {
-    // Create a new object with sellerId added
     const updatedItem = {
       ...item,
-      sellerId: id, // or assign a value from somewhere else if needed
+      sellerId: id,
     };
-
     createCreditsPayment(updatedItem);
     setLoad(item.id);
   };
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -30,6 +30,7 @@ function Credit() {
       window.location.href = data.pageUrl;
     }
   }, [isError, isSuccess, data, error]);
+
   return (
     <section>
       <div className=" py-10">
@@ -68,7 +69,7 @@ function Credit() {
                 </h2>
                 <button
                   onClick={() => handlePayment(item)}
-                  className="bg-[#f25900] py-2 w-full text-center flex gap-2 items-center justify-center text-white rounded-md"
+                  className="bg-[#FFAA00] py-2 w-full text-center flex gap-2 items-center justify-center text-black rounded-md font-bold"
                 >
                   {load === id && isLoading ? (
                     <>

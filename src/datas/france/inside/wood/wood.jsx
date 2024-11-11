@@ -13,17 +13,17 @@ const woodCat = [
     options: [
       {
         id: 6680802649,
-        label: "Carpentry, timber construction",
+        label: "Charpenterie, construction en bois",
         img: carpenteryImg,
       },
       {
         id: 213801317,
-        label: "Carpenter, furniture, interior design",
+        label: "Menuisier, ameublement, décoration intérieure",
         img: carpenterImg,
       },
       {
         id: 896194815,
-        label: "Upholstery, saddlery",
+        label: "Tapisserie, sellerie",
         img: upholsteryImg,
       },
     ],

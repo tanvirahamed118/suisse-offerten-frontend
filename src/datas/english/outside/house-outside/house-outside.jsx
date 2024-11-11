@@ -54,7 +54,7 @@ const houseOutside = [
       },
       {
         id: 126762922,
-        label: "Tinsmithing, sheet metal working",
+        label: "Plumbing, sheet metal working",
         img: Plumbing,
       },
       {

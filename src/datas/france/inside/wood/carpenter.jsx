@@ -2,873 +2,903 @@ const carpenter = [
   {
     id: 213801317,
     type: "checkbox",
-    label: "In which area do you need carpentry services ?",
+    label: "Dans quel secteur avez-vous besoin de services de menuiserie ?",
     options: [
       {
-        id: 6842066448,
-        label: "Furniture",
-        des: "Custom-made furniture, furniture restoration, assembly of ready-made furniture (IKEA, etc.)",
+        id: 1151915930,
+        label: "Meubles",
+        des: "Meubles sur mesure, restauration de meubles, montage de meubles prêts à poser (IKEA, etc.)",
       },
       {
-        id: 5664928063,
-        label: "Windows / Doors / Floors",
-        des: "Installing or repairing doors / windows / floors",
+        id: 2962828362,
+        label: "Fenêtres / Portes / Planchers",
+        des: "Installation ou réparation de portes / fenêtres / sols",
       },
       {
-        id: 9746607194,
-        label: "Kitchens",
-        des: "Kitchen construction, kitchen assembly, kitchen modules, worktops",
+        id: 5974517553,
+        label: "Cuisines",
+        des: "Construction de cuisine, montage de cuisine, modules de cuisine, plans de travail",
       },
       {
-        label: "Other carpentry work",
-        des: "Partition walls, wooden ceilings, plasterboard, roof dormers, stairs, handrails, etc.",
+        label: "Autres travaux de menuiserie",
+        des: "Cloisons de séparation, plafonds en bois, plaques de plâtre, lucarnes, escaliers, rampes, etc.",
+        credit: 10,
+      },
+    ],
+  },
+  {
+    id: 1151915930,
+    type: "checkbox",
+    label:
+      "De quel type de service de menuiserie de meubles avez-vous besoin ?",
+    options: [
+      {
+        id: 7150672984,
+        label: "Meubles sur mesure",
+        des: "Armoire intégrée, table, lit, étagère, buffet, etc.",
+        credit: 15,
+      },
+      {
+        id: 3691775056,
+        label: "Restauration/réparation de meubles",
+        des: "Ponçage, huilage, vernissage, placage, raccourcissement, etc.",
+        credit: 10,
+      },
+      {
+        id: 266431996,
+        label: "Montage / installation de meubles",
+        des: "Montage de meubles préfabriqués (IKEA, USM, etc.)",
         credit: 15,
       },
     ],
   },
   {
-    id: 6842066448,
+    id: 7150672984,
     type: "checkbox",
-    label: "What type of furniture carpentry service do you need ?",
+    label: "De quel type de meuble sur mesure avez-vous besoin ?",
     options: [
       {
-        id: 2797419531,
-        label: "Custom-made furniture",
-        des: "Built-in wardrobe, table, bed, shelf, sideboard, etc.",
+        id: 8458679060,
+        label: "Meubles de rangement",
+        des: "Placards intégrés, penderies, étagères, etc.",
       },
       {
-        id: 4117026822,
-        label: "Restoration / repair of furniture",
-        des: "Sanding, oiling, varnishing, veneering, shortening, etc.",
+        id: 655611146,
+        label: "Modules de cuisine",
+        des: "Armoires, façades, carcasses, etc.",
       },
       {
-        label: "Assembly / installation of furniture",
-        des: "Assembly of ready-made furniture (IKEA, USM, etc.)",
-        credit: 13,
+        id: 843086607,
+        label: "Autres meubles / objets sur mesure",
+        des: "Table, banc, lit, bureau d'accueil, etc.",
       },
     ],
   },
   {
-    id: 2797419531,
+    id: 8458679060,
     type: "checkbox",
-    label: "What type of custom-made furniture do you need ?",
+    label: "De quel type de Meubles de rangement avez-vous besoin ?",
     options: [
       {
-        id: 8002983921,
-        label: "Storage furniture",
-        des: "Built-in cupboards, wardrobes, shelves, etc.",
-        credit: 25,
+        label: "Placard intégré",
       },
       {
-        label: "Kitchen modules",
-        des: "Cabinets, fronts, carcasses, etc.",
-        credit: 20,
+        label: "Étagère",
       },
       {
-        label: "Other furniture / custom-made items",
-        des: "Table, bench, bed, reception desk, etc.",
-        credit: 15,
+        label: "Buffet",
+      },
+      {
+        label: "Buffet",
+      },
+      {
+        label: "Autre ou plusieurs des réponses ci-dessus",
       },
     ],
   },
   {
-    id: 8002983921,
+    id: 3691775056,
     type: "checkbox",
-    label: "What type of storage furniture do you need ?",
+    label: "S'agit-il d'un petit ou d'un gros travail de réparation ?",
     options: [
       {
-        label: "Built-in closet",
+        label: "Petite réparation",
+        des: "Un outil polyvalent pourrait également faire l'affaire (stabiliser une table bancale, enlever de petites rayures, réparer une charnière déchirée, etc.)",
       },
       {
-        label: "shelf",
-      },
-      {
-        label: "Dresser",
-      },
-      {
-        label: "Sideboard",
-      },
-      {
-        label: "Other or more of the above",
-      },
-    ],
-  },
-  {
-    id: 4117026822,
-    type: "checkbox",
-    label: "Is it a small or large repair job ?",
-    options: [
-      {
-        label: "Small repair",
-        des: "An all-rounder could also do the job (stabilize a wobbly table, remove small scratches, repair a torn hinge, etc.)",
-        credit: 8,
-      },
-      {
-        label: "Major repair / restoration",
-        des: "I need a professional carpenter (sanding and oiling a solid wood table, replacing a broken chair leg, restoring antique furniture, etc.)",
-        credit: 15,
+        label: "Réparation/restauration majeure",
+        des: "",
       },
     ],
   },
   //   window
   {
-    id: 5664928063,
+    id: 2962828362,
     type: "checkbox",
-    label: "In which area do you need the service ?",
+    label: "Dans quelle zone avez-vous besoin du service ?",
     options: [
       {
-        id: 7261522584,
-        label: "Doors",
+        id: 5603212423,
+        label: "Portes",
       },
       {
-        id: 5149360031,
-        label: "Frames",
+        id: 5786790231,
+        label: "Cadres",
       },
       {
-        id: 6633063876,
-        label: "Window",
+        id: 4184456961,
+        label: "Fenêtre",
       },
       {
-        id: 1782405401,
-        label: "Floors",
-        credit: 13,
+        id: 6422566276,
+        label: "Planchers",
       },
       {
-        label: "Something else, or several of the above",
+        id: 174907062,
+        label: "Autre chose, ou plusieurs des éléments ci-dessus",
         credit: 7,
       },
     ],
   },
   {
-    id: 7261522584,
+    id: 5603212423,
     type: "checkbox",
-    label: "What door services do you need ?",
+    label: "De quels services de porte avez-vous besoin ?",
     options: [
       {
-        id: 4887983061,
-        label: "Installing doors",
+        id: 9913834126,
+        label: "Installation de portes",
       },
       {
-        label: "Repair or adjust doors",
-        credit: 5,
+        id: 582400275,
+        label: "Réparer ou régler les portes",
+        credit: 8,
       },
       {
-        label: "Other",
+        id: 236858189,
+        label: "Autre",
         credit: 8,
       },
     ],
   },
   {
-    id: 4887983061,
+    id: 9913834126,
     type: "checkbox",
-    label: "How many doors are there ?",
+    label: "Combien y a-t-il de portes ?",
     options: [
       {
-        id: 170406791,
-        label: "1 door",
-        credit: 8,
+        id: 1725651380,
+        label: "1 porte",
+        credit: 10,
       },
       {
-        id: 307972501,
-        label: "2 to 3 doors",
-        credit: 25,
-      },
-      {
-        id: 444388335,
-        label: "4 or more doors",
-        credit: 35,
-      },
-    ],
-  },
-  {
-    id: 170406791,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 307972501,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 444388335,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 5149360031,
-    type: "checkbox",
-    label: "How many doors are there ?",
-    options: [
-      {
-        label: "1 door",
-        credit: 8,
-      },
-      {
-        label: "2 to 3 doors",
-        credit: 25,
-      },
-      {
-        label: "4 or more doors",
-        credit: 35,
-      },
-    ],
-  },
-  {
-    id: 6633063876,
-    type: "checkbox",
-    label: "What door services do you need ?",
-    options: [
-      {
-        id: 602639592,
-        label: "Installing or replacing windows",
-      },
-      {
-        label: "Repairing or customizing windows",
-        credit: 13,
-      },
-      {
-        label: "Other",
-        credit: 8,
-      },
-    ],
-  },
-  {
-    id: 602639592,
-    type: "checkbox",
-    label: "How many windows are there ?",
-    options: [
-      {
-        id: 653395436,
-        label: "1 to 2 windows",
+        id: 7868185975,
+        label: "2 à 3 portes",
         credit: 20,
       },
       {
-        id: 477359243,
-        label: "3 to 5 windows",
-        credit: 30,
+        id: 8045008460,
+        label: "4 portes ou plus",
+        credit: 40,
+      },
+    ],
+  },
+  {
+    id: 1725651380,
+    type: "checkbox",
+    label: "Les portes sont déjà là ?",
+    options: [
+      {
+        label: "Oui, ça existe déjà.",
       },
       {
-        id: 393536330,
-        label: "6 to 9 windows",
+        label: "Non, il faut encore se le procurer.",
+      },
+    ],
+  },
+  {
+    id: 7868185975,
+    type: "checkbox",
+    label: "Les portes sont déjà là ?",
+    options: [
+      {
+        label: "Oui, ça existe déjà.",
+      },
+      {
+        label: "Non, il faut encore se le procurer.",
+      },
+    ],
+  },
+  {
+    id: 8045008460,
+    type: "checkbox",
+    label: "Les portes sont déjà là ?",
+    options: [
+      {
+        label: "Oui, ça existe déjà.",
+      },
+      {
+        label: "Non, il faut encore se le procurer.",
+      },
+    ],
+  },
+  {
+    id: 5786790231,
+    type: "checkbox",
+    label: "Combien y a-t-il de portes ?",
+    options: [
+      {
+        label: "1 porte",
+        credit: 10,
+      },
+      {
+        label: "2 à 3 portes",
+        credit: 20,
+      },
+      {
+        label: "4 portes ou plus",
+        credit: 40,
+      },
+    ],
+  },
+  {
+    id: 4184456961,
+    type: "checkbox",
+    label: "De quels services de fenêtres avez-vous besoin ?",
+    options: [
+      {
+        id: 9054054687,
+        label: "Installation ou remplacement de fenêtres",
+      },
+      {
+        label: "Réparation ou personnalisation de fenêtres",
+      },
+      {
+        label: "Autre",
+      },
+    ],
+  },
+  {
+    id: 9054054687,
+    type: "checkbox",
+    label: "Est-ce que les fenêtres sont déjà là ?",
+    options: [
+      {
+        id: 9390956103,
+        label: "1 à 2 fenêtres",
+        credit: 8,
+      },
+      {
+        id: 8563194684,
+        label: "3 à 5 fenêtres",
+        credit: 20,
+      },
+      {
+        id: 3307431627,
+        label: "6 à 9 fenêtres",
+        credit: 27,
+      },
+      {
+        id: 6294089866,
+        label: "10 fenêtres ou plus",
         credit: 45,
       },
+    ],
+  },
+  {
+    id: 9390956103,
+    type: "checkbox",
+    label: "Les portes sont déjà là ?",
+    options: [
       {
-        id: 956030516,
-        label: "10 or more windows",
-        credit: 80,
+        label: "Oui, ça existe déjà.",
+      },
+      {
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 653395436,
+    id: 8563194684,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Le matériel pour le sol est-il déjà disponible ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 477359243,
+    id: 3307431627,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Le matériel pour le sol est-il déjà disponible ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 393536330,
+    id: 6294089866,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 956030516,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
 
   {
-    id: 1782405401,
+    id: 6422566276,
     type: "checkbox",
-    label: "What flooring services do you need ?",
+    label: "De quels services de revêtement de sol avez-vous besoin ?",
     options: [
       {
-        id: 377750590,
-        label: "Laying the floor",
+        id: 3109985509,
+        label: "Pose du sol",
       },
       {
-        id: 269830556,
-        label: "Sanding / oiling / sealing floors",
+        id: 9966689785,
+        label: "Ponçage / huilage / vitrification des sols",
       },
       {
-        id: 941261816,
-        label: "Repair / adjust floor",
+        id: 2525069146,
+        label: "Réparer/ajuster le sol",
+        credit: 10,
       },
       {
         id: 223056452,
-        label: "Other",
+        label: "Autre",
+        credit: 7,
       },
     ],
   },
   //   laying
   {
-    id: 377750590,
+    id: 3109985509,
     type: "checkbox",
-    label: "What kind of floor is it ?",
+    label: "De quel type de sol s'agit-il ?",
     options: [
       {
-        id: 269499636,
-        label: "Solid wood floorboards",
+        id: 7176056078,
+        label: "Planchers en bois massif",
       },
       {
-        id: 946739860,
-        label: "parquet",
+        id: 4937604124,
+        label: "Parquet",
       },
       {
-        id: 799417592,
-        label: "Other",
+        id: 7630332618,
+        label: "Autre",
+        credit: 7,
       },
     ],
   },
   {
-    id: 269499636,
+    id: 7176056078,
     type: "checkbox",
-    label: "How many rooms are there ?",
+    label: "Combien y a-t-il de pièces ?",
+    options: [
+      {
+        id: 9485893692,
+        label: "1 à 2 pièces",
+        credit: 15,
+      },
+      {
+        id: 1304372495,
+        label: "3 à 4 pièces",
+        credit: 25,
+      },
+      {
+        id: 7955048509,
+        label: "5 chambres ou plus",
+        credit: 35,
+      },
+      {
+        id: 4040558049,
+        label: "C'est une propriété commerciale",
+        credit: 40,
+      },
+    ],
+  },
+  {
+    id: 9485893692,
+    type: "checkbox",
+    label: "Le matériel pour le sol est-il déjà disponible ?",
+    options: [
+      {
+        label: "Oui, ça existe déjà.",
+      },
+      {
+        label: "Non, il faut encore se le procurer.",
+      },
+    ],
+  },
+  {
+    id: 1304372495,
+    type: "checkbox",
+    label: "Le matériel pour le sol est-il déjà disponible ?",
+    options: [
+      {
+        label: "Oui, ça existe déjà.",
+      },
+      {
+        label: "Non, il faut encore se le procurer.",
+      },
+    ],
+  },
+  {
+    id: 7955048509,
+    type: "checkbox",
+    label: "Le matériel pour le sol est-il déjà disponible ?",
+    options: [
+      {
+        label: "Oui, ça existe déjà.",
+      },
+      {
+        label: "Non, il faut encore se le procurer.",
+      },
+    ],
+  },
+  {
+    id: 4040558049,
+    type: "checkbox",
+    label: "Le matériel pour le sol est-il déjà disponible ?",
+    options: [
+      {
+        label: "Oui, ça existe déjà.",
+      },
+      {
+        label: "Non, il faut encore se le procurer.",
+      },
+    ],
+  },
+  {
+    id: 4937604124,
+    type: "checkbox",
+    label: "Combien y a-t-il de pièces ?",
     options: [
       {
         id: 885796561,
-        label: "1 to 2 rooms",
+        label: "1 à 2 pièces",
+        credit: 15,
       },
       {
-        id: 441659568,
-        label: "3 to 4 rooms",
+        id: 1304372495,
+        label: "3 à 4 pièces",
+        credit: 25,
       },
       {
-        id: 829910918,
-        label: "5 or more rooms",
+        id: 7955048509,
+        label: "5 chambres ou plus",
+        credit: 35,
       },
       {
-        id: 695487785,
-        label: "It is a commercial property",
+        id: 4040558049,
+        label: "C'est une propriété commerciale",
+        credit: 40,
       },
     ],
   },
   {
     id: 885796561,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Le matériel pour le sol est-il déjà disponible ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 441659568,
+    id: 1304372495,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 829910918,
+    id: 7955048509,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 695487785,
+    id: 4040558049,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 946739860,
-    type: "checkbox",
-    label: "How many rooms are there ?",
-    options: [
-      {
-        id: 885796561,
-        label: "1 to 2 rooms",
-      },
-      {
-        id: 441659568,
-        label: "3 to 4 rooms",
-      },
-      {
-        id: 829910918,
-        label: "5 or more rooms",
-      },
-      {
-        id: 695487785,
-        label: "It is a commercial property",
-      },
-    ],
-  },
-  {
-    id: 885796561,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 441659568,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 829910918,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
-      },
-    ],
-  },
-  {
-    id: 695487785,
-    type: "checkbox",
-    label: "Are the doors already there ?",
-    options: [
-      {
-        label: "Yes, already exists.",
-      },
-      {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   //   laying
   // sending
   {
-    id: 269830556,
+    id: 9966689785,
     type: "checkbox",
-    label: "What kind of floor is it ?",
+    label: "De quel type de sol s'agit-il ?",
     options: [
       {
-        id: 269499636,
-        label: "Solid wood floorboards",
+        id: 7176056078,
+        label: "Planchers en bois massif",
       },
       {
-        id: 946739860,
+        id: 4937604124,
         label: "parquet",
       },
       {
-        id: 799417592,
-        label: "Other",
+        id: 7630332618,
+        label: "Autre",
+        credit: 7,
       },
     ],
   },
   {
-    id: 269499636,
+    id: 7176056078,
     type: "checkbox",
-    label: "How many rooms are there ?",
+    label: "Combien y a-t-il de pièces ?",
     options: [
       {
         id: 885796561,
-        label: "1 to 2 rooms",
+        label: "1 à 2 pièces",
+        credit: 15,
       },
       {
-        id: 441659568,
-        label: "3 to 4 rooms",
+        id: 1304372495,
+        label: "3 à 4 pièces",
+        credit: 25,
       },
       {
-        id: 829910918,
-        label: "5 or more rooms",
+        id: 7955048509,
+        label: "5 chambres ou plus",
+        credit: 35,
       },
       {
-        id: 695487785,
-        label: "It is a commercial property",
+        id: 4040558049,
+        label: "C'est une propriété commerciale",
+        credit: 40,
       },
     ],
   },
   {
     id: 885796561,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 441659568,
+    id: 1304372495,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 829910918,
+    id: 7955048509,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 695487785,
+    id: 4040558049,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 946739860,
+    id: 4937604124,
     type: "checkbox",
-    label: "How many rooms are there ?",
+    label: "Combien y a-t-il de pièces ?",
     options: [
       {
         id: 885796561,
-        label: "1 to 2 rooms",
+        label: "1 à 2 pièces",
+        credit: 15,
       },
       {
-        id: 441659568,
-        label: "3 to 4 rooms",
+        id: 1304372495,
+        label: "3 à 4 pièces",
+        credit: 25,
       },
       {
-        id: 829910918,
-        label: "5 or more rooms",
+        id: 7955048509,
+        label: "5 chambres ou plus",
+        credit: 35,
       },
       {
-        id: 695487785,
-        label: "It is a commercial property",
+        id: 4040558049,
+        label: "C'est une propriété commerciale",
+        credit: 40,
       },
     ],
   },
   {
     id: 885796561,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 441659568,
+    id: 1304372495,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 829910918,
+    id: 7955048509,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 695487785,
+    id: 4040558049,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   // sending
   // repire
   {
-    id: 941261816,
+    id: 2525069146,
     type: "checkbox",
-    label: "What kind of floor is it ?",
+    label: "De quel type de sol s'agit-il ?",
     options: [
       {
-        id: 269499636,
-        label: "Solid wood floorboards",
+        id: 7176056078,
+        label: "Planchers en bois massif",
       },
       {
-        id: 946739860,
+        id: 4937604124,
         label: "parquet",
       },
       {
-        id: 799417592,
-        label: "Other",
+        id: 7630332618,
+        label: "Autre",
+        credit: 7,
       },
     ],
   },
   {
-    id: 269499636,
+    id: 7176056078,
     type: "checkbox",
-    label: "How many rooms are there ?",
+    label: "Combien y a-t-il de pièces ?",
     options: [
       {
         id: 885796561,
-        label: "1 to 2 rooms",
+        label: "1 à 2 pièces",
+        credit: 15,
       },
       {
-        id: 441659568,
-        label: "3 to 4 rooms",
+        id: 1304372495,
+        label: "3 à 4 pièces",
+        credit: 25,
       },
       {
-        id: 829910918,
-        label: "5 or more rooms",
+        id: 7955048509,
+        label: "5 chambres ou plus",
+        credit: 35,
       },
       {
-        id: 695487785,
-        label: "It is a commercial property",
+        id: 4040558049,
+        label: "C'est une propriété commerciale",
+        credit: 40,
       },
     ],
   },
   {
     id: 885796561,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 441659568,
+    id: 1304372495,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 829910918,
+    id: 7955048509,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 695487785,
+    id: 4040558049,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 946739860,
+    id: 4937604124,
     type: "checkbox",
-    label: "How many rooms are there ?",
+    label: "Combien y a-t-il de pièces ?",
     options: [
       {
         id: 885796561,
-        label: "1 to 2 rooms",
+        label: "1 à 2 pièces",
+        credit: 15,
       },
       {
-        id: 441659568,
-        label: "3 to 4 rooms",
+        id: 1304372495,
+        label: "3 à 4 pièces",
+        credit: 25,
       },
       {
-        id: 829910918,
-        label: "5 or more rooms",
+        id: 7955048509,
+        label: "5 chambres ou plus",
+        credit: 35,
       },
       {
-        id: 695487785,
-        label: "It is a commercial property",
+        id: 4040558049,
+        label: "C'est une propriété commerciale",
+        credit: 40,
       },
     ],
   },
   {
     id: 885796561,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 441659568,
+    id: 1304372495,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 829910918,
+    id: 7955048509,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
-    id: 695487785,
+    id: 4040558049,
     type: "checkbox",
-    label: "Are the doors already there ?",
+    label: "Les portes sont déjà là ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
@@ -877,58 +907,58 @@ const carpenter = [
 
   // kitchen
   {
-    id: 9746607194,
+    id: 5974517553,
     type: "checkbox",
-    label: "What kitchen carpentry services do you need ?",
+    label: "De quels services de menuiserie de cuisine avez-vous besoin ?",
     options: [
       {
         id: 816112159,
-        label: "Assembly of a prefabricated kitchen",
-        credit: 25,
-      },
-      {
-        label: "Restoring or adapting a kitchen",
+        label: "Montage d'une cuisine préfabriquée",
         credit: 20,
       },
       {
-        label: "Custom-made kitchen furniture or worktops",
-        credit: 15,
+        label: "Restaurer ou adapter une cuisine",
+        credit: 20,
       },
       {
-        label: "Kitchen planning",
+        label: "Restaurer ou adapter une cuisine",
+        credit: 35,
+      },
+      {
+        label: "Planification de cuisine",
         credit: 45,
       },
       {
-        label: "Other",
-        credit: 15,
+        label: "Autre",
+        credit: 8,
       },
     ],
   },
   {
     id: 816112159,
-    type: "checkbox",
-    label: "What services should be provided during assembly ?",
+    type: "multibox",
+    label: "Quels services doivent être fournis lors du montage ?",
     options: [
       {
-        label: "Assembly of a prefabricated kitchen",
+        label: "Montage d'une cuisine préfabriquée",
       },
       {
-        label: "Adjust / assemble worktop",
+        label: "Ajuster/assembler le plan de travail",
       },
       {
-        label: "Dismantling old kitchen",
+        label: "Démontage d'une ancienne cuisine",
       },
       {
-        label: "Disposal of old kitchen",
+        label: "Élimination de l'ancienne cuisine",
       },
       {
-        label: "Transport of the kitchen",
+        label: "Transport de la cuisine",
       },
       {
-        label: "Installation and connection of electrical appliances",
+        label: "Installation et raccordement d'appareils électriques",
       },
       {
-        label: "Dismantling and disconnecting electrical devices",
+        label: "Démontage et déconnexion des appareils électriques",
       },
     ],
   },

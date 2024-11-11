@@ -15,16 +15,19 @@ function ClientChangePassword() {
     password: "",
   });
   const { email, password } = client || {};
+
   const handleChange = (e) => {
     setClient({
       ...client,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     changeOTPClient(client);
   };
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -36,10 +39,11 @@ function ClientChangePassword() {
         password: "",
       });
       setTimeout(() => {
-        navigate("/seller-dashboard");
+        navigate("/auth-login");
       }, 2000);
     }
   }, [isError, isSuccess, data, error, navigate]);
+
   return (
     <section>
       <div className="container">

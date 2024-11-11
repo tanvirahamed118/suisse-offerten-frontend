@@ -4,34 +4,34 @@ const metalWorking = [
   {
     id: 759709724,
     type: "checkbox",
-    label: "What does a service require ?",
+    label: "Que nécessite un service ?",
     options: [
       {
         id: 9064676601,
-        label: "railing",
-        des: "E.g. for stairs, balconies etc.",
+        label: "Balustrade",
+        des: "Par exemple pour les escaliers, les balcons, etc.",
       },
       {
         id: 4173396498,
-        label: "Stairs",
+        label: "Escaliers",
       },
       {
         id: 4716963594,
-        label: "Goal",
+        label: "But",
       },
       {
         id: 7255343011,
-        label: "Custom-made metal structure",
-        des: "E.g. bicycle shelter, substructure, furniture, mailbox etc.",
+        label: "Structure métallique sur mesure",
+        des: "Par exemple, abri à vélos, sous-structure, mobilier, boîte aux lettres, etc.",
       },
       {
         id: 7528094474,
-        label: "Modification / Repair",
-        des: "Welding, soldering, grinding, drilling etc.",
+        label: "Modification / Réparation",
+        des: "Soudage, brasage, meulage, perçage, etc.",
         credit: 10,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 10,
       },
     ],
@@ -40,30 +40,30 @@ const metalWorking = [
   {
     id: 9064676601,
     type: "checkbox",
-    label: "How large is the affected area approximately ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: [
       {
         id: 787637825,
-        des: "Up to 4 m",
-        label: "Small",
+        des: "Jusqu'à 4 m2",
+        label: "Petite",
         credit: 20,
       },
       {
         id: 953594623,
-        des: "5 to 9 m",
-        label: "Medium",
+        des: "5 à 9 m2",
+        label: "Moyen",
         credit: 30,
       },
       {
         id: 880436176,
-        des: "10 to 24 m",
-        label: "Large",
+        des: "10 à 24 m2",
+        label: "Grande",
         credit: 40,
       },
       {
         id: 649566233,
-        des: "25 m or more",
-        label: "Very large",
+        des: "25 m2 ou plus",
+        label: "Très grand",
         credit: 50,
       },
     ],
@@ -71,25 +71,25 @@ const metalWorking = [
   {
     id: 787637825,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 953594623,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 880436176,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 649566233,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   //   raling
@@ -97,30 +97,30 @@ const metalWorking = [
   {
     id: 4173396498,
     type: "checkbox",
-    label: "How large is the affected area approximately ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: [
       {
         id: 787637825,
-        des: "Up to 4 m",
-        label: "Small",
+        des: "Jusqu'à 4 m2",
+        label: "Petite",
         credit: 10,
       },
       {
         id: 953594623,
-        des: "5 to 9 m",
-        label: "Medium",
+        des: "5 à 9 m2",
+        label: "Moyen",
         credit: 30,
       },
       {
         id: 880436176,
-        des: "10 to 24 m",
-        label: "Large",
+        des: "10 à 24 m2",
+        label: "Grande",
         credit: 50,
       },
       {
         id: 649566233,
-        des: "25 m or more",
-        label: "Very large",
+        des: "25 m2 ou plus",
+        label: "Très grand",
         credit: 60,
       },
     ],
@@ -128,25 +128,25 @@ const metalWorking = [
   {
     id: 787637825,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 953594623,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 880436176,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 649566233,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   //   stairs
@@ -158,7 +158,7 @@ const metalWorking = [
     options: [
       {
         id: 787637825,
-        label: "A small gate",
+        label: "A Petite gate",
         credit: 15,
       },
       {
@@ -181,25 +181,25 @@ const metalWorking = [
   {
     id: 787637825,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 953594623,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 880436176,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 649566233,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   // goal
@@ -211,26 +211,26 @@ const metalWorking = [
     options: [
       {
         id: 787637825,
-        des: "Up to 4 m",
-        label: "Small",
+        des: "Jusqu'à 4 m2",
+        label: "Petite",
         credit: 10,
       },
       {
         id: 953594623,
-        des: "5 to 9 m",
-        label: "Medium",
+        des: "5 à 9 m2",
+        label: "Moyen",
         credit: 30,
       },
       {
         id: 880436176,
-        des: "10 to 24 m",
-        label: "Large",
+        des: "10 à 24 m2",
+        label: "Grande",
         credit: 50,
       },
       {
         id: 649566233,
-        des: "25 m or more",
-        label: "Very large",
+        des: "25 m2 ou plus",
+        label: "Très grand",
         credit: 60,
       },
     ],
@@ -238,25 +238,25 @@ const metalWorking = [
   {
     id: 787637825,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 953594623,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 880436176,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   {
     id: 649566233,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: is_the_required_available,
   },
   // custom
@@ -264,19 +264,19 @@ const metalWorking = [
   {
     id: 7528094474,
     type: "checkbox",
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Welding",
+        label: "Soudage",
       },
       {
-        label: "Solder",
+        label: "Souder",
       },
       {
-        label: "Flexing",
+        label: "Fléchissement",
       },
       {
-        label: "Drill",
+        label: "Percer",
       },
     ],
   },

@@ -26,6 +26,7 @@ export const userAuthApi = apiSlice.injectEndpoints({
       }),
       providesTags: ["update"],
     }),
+
     registerClient: builder.mutation({
       query: ({ client }) => ({
         url: "/auth/client/register",
@@ -103,6 +104,13 @@ export const userAuthApi = apiSlice.injectEndpoints({
         body: client,
       }),
     }),
+    updatePasswordClient: builder.mutation({
+      query: ({ client, id }) => ({
+        url: `/auth/client/change/password/${id}`,
+        method: "PATCH",
+        body: client,
+      }),
+    }),
   }),
 });
 
@@ -118,4 +126,5 @@ export const {
   useChangeOTPClientMutation,
   useUpdateClientMutation,
   useDeleteClientMutation,
+  useUpdatePasswordClientMutation,
 } = userAuthApi;

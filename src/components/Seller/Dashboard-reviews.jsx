@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useGetAllReviewQuery } from "../../redux/rtk/features/review/reviewApi";
 import Pagination from "../Pagination";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import StarRating from "../Star-rating";
 import moment from "moment";
 import ReviewLoading from "../loading/ReviewLoading";
@@ -14,9 +14,11 @@ function DashboardReviews() {
   const { t } = useTranslation();
   const limit = 20;
   const [page, setPage] = useState(1);
+  const params = useParams();
+  const id = params.id;
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
-  const sellerId = seller?.seller?._id;
+  const sellerId = seller ? seller?.seller?._id : id;
   const { star, category } = useSelector((state) => state.reviewFilter);
   const { data, isLoading, isError, isSuccess, error } = useGetAllReviewQuery({
     limit,
@@ -112,12 +114,12 @@ function DashboardReviews() {
             className="border border-gray-200 relative custom-content"
           >
             <div className="p-5">
-              <a href="" className="flex gap-2">
+              <span className="flex gap-2">
                 <StarRating rating={rating} />
                 <p className="text-sm text-black font-normal">
                   {moment(createdAt).format("DD.MM.YYYY")}
                 </p>
-              </a>
+              </span>
               <h2 className="text-black text-base font-bold">
                 {clinetName}(client)
               </h2>

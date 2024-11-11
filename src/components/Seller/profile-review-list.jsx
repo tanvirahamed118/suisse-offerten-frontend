@@ -28,6 +28,7 @@ function ProfileReviewList() {
     locationVerify,
     companyTitle,
   } = data || {};
+
   return (
     <section>
       <div className="container py-10">

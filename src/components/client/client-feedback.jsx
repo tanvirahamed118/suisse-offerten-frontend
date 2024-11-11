@@ -10,7 +10,7 @@ import { useGetAllOfferByClientQuery } from "../../redux/rtk/features/offer/offe
 function ClientFeedback() {
   const { t } = useTranslation();
   const [page, setPage] = useState(1);
-  const limit = 20;
+  const limit = 10;
   const clientAuth = localStorage.getItem("client");
   const client = JSON.parse(clientAuth);
   const clientId = client?.client?._id;
@@ -43,7 +43,7 @@ function ClientFeedback() {
 
     setReviewData((prevData) => ({
       ...prevData,
-      [name]: value, // Dynamically update the field (rating or review)
+      [name]: value,
     }));
 
     if (value === reviewData.rating) {
@@ -110,13 +110,23 @@ function ClientFeedback() {
     );
   }
   if (isError) {
-    content = <p>{error}</p>;
+    content = (
+      <tr>
+        <td colSpan="4" className="text-center">
+          <p>{error}</p>
+        </td>
+      </tr>
+    );
   }
   if (!isLoading && !isError && data?.offers?.length === 0) {
     content = (
-      <p className="text-balck font-semibold text-lg py-5">
-        {t("no_data_found")}
-      </p>
+      <tr>
+        <td colSpan="4" className="text-center">
+          <p className="text-black font-semibold text-xl py-5">
+            {t("no_data_found")}
+          </p>
+        </td>
+      </tr>
     );
   }
   if (!isLoading && !isError && isSuccess && data?.offers?.length > 0) {
@@ -234,8 +244,8 @@ function ClientFeedback() {
                     jobId.length > 0 &&
                     sellerId.length > 0 &&
                     review?.length > 0
-                      ? "bg-[#ff7100] py-2 px-5 rounded-md w-60 text-white font-normal text-base flex gap-2 items-center justify-center"
-                      : "bg-gray-300 py-2 px-5 rounded-md w-60 text-white font-normal text-base cursor-not-allowed flex justify-center"
+                      ? "bg-[#FFAA00] py-2 px-5 rounded-md w-60 text-black font-bold text-base flex gap-2 items-center justify-center"
+                      : "bg-gray-300 py-2 px-5 rounded-md w-60 text-white font-bold text-base cursor-not-allowed flex justify-center"
                   }
                   disabled={
                     jobId?.length === 0 ||
@@ -296,7 +306,7 @@ function ClientFeedback() {
               </table>
             </div>
           </div>
-          {totalItems > 20 && (
+          {totalItems > limit && (
             <div className="mt-10">
               <Pagination
                 handlePageChange={handlePageChange}

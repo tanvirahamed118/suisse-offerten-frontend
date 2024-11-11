@@ -132,7 +132,7 @@ const blindsRoller = [
   {
     id: 403175916,
     type: "checkbox",
-    label: "Nettoyer les stores et les fenêtres ?",
+    label: "Combien de fenêtres faut-il nettoyer ?",
     options: how_many_be_cleaned(502391050, 117385925, 685137619, 601813141),
   },
   {

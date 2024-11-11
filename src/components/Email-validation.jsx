@@ -9,7 +9,6 @@ function EmailValidation() {
     useSellerEmailValidateQuery(token);
 
   // decide what to render
-
   let content;
   if (isLoading) content = <EmailVerifyLoading />;
   if (isError)

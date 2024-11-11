@@ -14,22 +14,17 @@ function CancelPopup({ isShow, setIsShow }) {
 
   useEffect(() => {
     if (isShow) {
-      // Disable scrolling and scroll to top
       document.body.style.overflow = "hidden";
       window.scrollTo(0, 0);
     } else {
-      // Enable scrolling when popup is closed
       document.body.style.overflow = "auto";
     }
-
-    // Cleanup to re-enable scrolling when component is unmounted
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [isShow]);
-  useEffect(() => {
-    // Trigger animation on mount
 
+  useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
     }
@@ -61,13 +56,13 @@ function CancelPopup({ isShow, setIsShow }) {
             <div className="flex gap-5 items-center">
               <button
                 onClick={() => setIsShow(false)}
-                className="flex gap-1 items-center text-white text-base font-normal bg-[#111111] py-2 w-full justify-center rounded-md"
+                className="flex gap-1 items-center text-black text-base font-bold bg-[#FFAA00] py-2 w-full justify-center rounded-md"
               >
                 {t("exit")}
               </button>
               <button
                 onClick={handleSubmit}
-                className="flex gap-1 items-center text-white text-base font-normal bg-[#111111] py-2 w-full justify-center rounded-md"
+                className="flex gap-1 items-center text-black text-base font-bold bg-[#FFAA00] py-2 w-full justify-center rounded-md"
               >
                 {isLoading ? (
                   <>

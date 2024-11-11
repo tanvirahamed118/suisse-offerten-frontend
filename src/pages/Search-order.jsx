@@ -7,8 +7,10 @@ function SearchOrder() {
   return (
     <React.Fragment>
       <OrderBook />
-      <OffersFilter />
-      <OfferItems />
+      <div className="flex lg:flex-row flex-col gap-0 lg:gap-10 container pt-10">
+        <OffersFilter />
+        <OfferItems />
+      </div>
     </React.Fragment>
   );
 }

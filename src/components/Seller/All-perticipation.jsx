@@ -94,7 +94,7 @@ function AllPerticipation() {
             <div className="flex flex-col gap-3 items-end">
               <Link
                 to={`/search-job/${jobId}`}
-                className="bg-white text-base py-3 w-52 rounded-md text-center text-black font-normal border border-gray-200 hover:border-gray-300"
+                className="bg-white text-base py-3 w-52 rounded-md text-center text-black font-bold border border-gray-200 hover:border-gray-300"
               >
                 {t("view_advertisement")}
               </Link>
@@ -107,7 +107,7 @@ function AllPerticipation() {
                   </span>
                   <Link
                     to={`/search-job/prepard-bid/${jobId}`}
-                    className="text-white bg-[#19be10] py-2 text-center w-full rounded-md text-base font-normal hover:bg-[#16A60E] flex justify-center items-center gap-2"
+                    className="text-black bg-[#FFAA00] py-2 text-center w-full rounded-md text-base font-bold flex justify-center items-center gap-2"
                   >
                     {t("place_bid")}
                   </Link>

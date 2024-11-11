@@ -10,12 +10,12 @@ function ReviewFilter() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-center gap-3 py-2">
+    <div className="flex items-center gap-3 py-2 w-full md:w-6/12">
       <select
         name=""
         id=""
         onChange={(e) => dispatch(choseStar(e.target.value))}
-        className="border border-gray-200 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-2 md:px-4"
+        className="border border-gray-200 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-2 md:px-4 w-6/12"
       >
         <option value="">{t("all_star")}</option>
         <option value="5">5 {t("star")}</option>
@@ -28,7 +28,7 @@ function ReviewFilter() {
         name=""
         id=""
         onChange={(e) => dispatch(choseCategory(e.target.value))}
-        className="border border-gray-200 w-72 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-2 md:px-4"
+        className="border border-gray-200 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-2 px-4 w-6/12"
       >
         <option value="">{t("all_category")}</option>
         <option value="inside">Inside</option>

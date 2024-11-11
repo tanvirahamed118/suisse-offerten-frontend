@@ -2,49 +2,49 @@ const final = [
   {
     id: 344685934,
     type: "checkbox",
-    label: "What needs to be cleaned ?",
+    label: "Que faut-il nettoyer ?",
     options: [
       {
         id: 737012641,
-        label: "Apartment",
+        label: "Appartement",
       },
       {
         id: 631828173,
-        label: "House",
+        label: "Maison",
       },
       {
         id: 524789739,
-        label: "Office",
+        label: "Bureau",
       },
       {
         id: 507727587,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 737012641,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 463374138,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 619793940,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 935161936,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 10,
       },
       {
         id: 422490719,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 15,
       },
     ],
@@ -53,34 +53,34 @@ const final = [
     id: 463374138,
     type: "multibox",
     mainId: 148568160,
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -88,35 +88,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -124,15 +121,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -147,130 +144,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -278,130 +275,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -409,130 +406,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -540,158 +537,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 619793940,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -699,35 +696,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -735,15 +729,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -758,130 +752,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -889,130 +883,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -1020,130 +1014,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -1151,158 +1145,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 935161936,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -1310,35 +1304,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -1346,15 +1337,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -1369,130 +1360,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -1500,130 +1491,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -1631,130 +1622,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -1762,158 +1753,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 422490719,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -1921,35 +1912,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -1957,15 +1945,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -1980,130 +1968,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -2111,130 +2099,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -2242,130 +2230,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -2373,149 +2361,149 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 631828173,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 463374138,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 619793940,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 935161936,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 10,
       },
       {
         id: 422490719,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 15,
       },
     ],
@@ -2524,34 +2512,34 @@ const final = [
     id: 463374138,
     type: "multibox",
     mainId: 148568160,
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -2559,35 +2547,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -2595,15 +2580,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -2618,130 +2603,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -2749,130 +2734,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -2880,130 +2865,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -3011,158 +2996,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 619793940,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -3170,35 +3155,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -3206,15 +3188,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -3229,130 +3211,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -3360,130 +3342,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -3491,130 +3473,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -3622,158 +3604,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 935161936,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -3781,35 +3763,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -3817,15 +3796,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -3840,130 +3819,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -3971,130 +3950,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -4102,130 +4081,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -4233,158 +4212,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 422490719,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -4392,35 +4371,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -4428,15 +4404,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -4451,130 +4427,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -4582,130 +4558,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -4713,130 +4689,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -4844,149 +4820,149 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 524789739,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 463374138,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 619793940,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 935161936,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 10,
       },
       {
         id: 422490719,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 15,
       },
     ],
@@ -4995,34 +4971,34 @@ const final = [
     id: 463374138,
     type: "multibox",
     mainId: 148568160,
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -5030,35 +5006,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -5066,15 +5039,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -5089,130 +5062,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -5220,130 +5193,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -5351,130 +5324,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -5482,158 +5455,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 619793940,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -5641,35 +5614,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -5677,15 +5647,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -5700,130 +5670,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -5831,130 +5801,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -5962,130 +5932,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -6093,158 +6063,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 935161936,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -6252,35 +6222,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -6288,15 +6255,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -6311,130 +6278,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -6442,130 +6409,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -6573,130 +6540,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -6704,158 +6671,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 422490719,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -6863,35 +6830,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -6899,15 +6863,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -6922,130 +6886,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -7053,130 +7017,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -7184,130 +7148,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -7315,149 +7279,149 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 507727587,
     type: "checkbox",
-    label: "How big are the rooms ?",
+    label: "Quelle est la taille des chambres ?",
     options: [
       {
         id: 463374138,
-        label: "Up to 1.5 rooms",
+        label: "Jusqu'à 1,5 pièces",
         credit: 5,
       },
       {
         id: 619793940,
-        label: "2 to 3.5 rooms",
+        label: "2 à 3.5 pièces",
         credit: 8,
       },
       {
         id: 935161936,
-        label: "4 to 5.5 rooms",
+        label: "4 à 5.5 pièces",
         credit: 10,
       },
       {
         id: 422490719,
-        label: "6 or more rooms",
+        label: "6 chambres ou plus",
         credit: 15,
       },
     ],
@@ -7466,34 +7430,34 @@ const final = [
     id: 463374138,
     type: "multibox",
     mainId: 148568160,
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -7501,35 +7465,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -7537,15 +7498,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -7560,130 +7521,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -7691,130 +7652,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -7822,130 +7783,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -7953,158 +7914,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 619793940,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -8112,35 +8073,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -8148,15 +8106,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -8171,130 +8129,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -8302,130 +8260,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -8433,130 +8391,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -8564,158 +8522,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 935161936,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -8723,35 +8681,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -8759,15 +8714,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -8782,130 +8737,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -8913,130 +8868,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -9044,130 +8999,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -9175,158 +9130,158 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 422490719,
     type: "multibox",
-    label: "What needs to be cleaned within the premises ?",
+    label: "Que faut-il nettoyer dans les locaux ?",
     options: [
       {
         id: 148568160,
-        label: "All rooms, kitchen and bathroom",
+        label: "Toutes les chambres, cuisine et salle de bain",
       },
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Screed",
+        label: "Chape",
       },
       {
-        label: "garage",
+        label: "Garage",
       },
       {
-        label: "Winter garden",
+        label: "Jardin d'hiver",
       },
       {
-        label: "Balcony / Terrace",
+        label: "Balcon / Terrasse",
       },
       {
-        label: "Fireplace / Chimney",
+        label: "Cheminée / Cheminée",
       },
       {
-        label: "Carpet",
+        label: "Tapis",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -9334,35 +9289,32 @@ const final = [
     id: 148568160,
     type: "multibox",
     mainId: 351262418,
-    label: "What applies to the premises ?",
+    label: "Qu'est-ce qui s'applique aux locaux ?",
     options: [
       {
-        label: "Built-in cupboards (outside the kitchen)",
+        label: "Placards intégrés (à l'extérieur de la cuisine)",
       },
       {
-        label: "Strongly hardened dirt",
+        label: "Saleté fortement durcie",
       },
       {
-        label: "Mold on window frames",
+        label: "Moisissure sur les cadres de fenêtres",
       },
       {
-        label: "Washing tower",
+        label: "Tour de lavage",
       },
       {
-        label: "Pet ownership",
+        label: "Meublé au moment du nettoyage",
       },
       {
-        label: "Furnished at the time of cleaning",
-      },
-      {
-        label: "None of this",
+        label: "Rien de tout cela",
       },
     ],
   },
   {
     id: 351262418,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 492337426,
@@ -9370,15 +9322,15 @@ const final = [
       },
       {
         id: 506947864,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 650727907,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 291101358,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
@@ -9393,130 +9345,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 506947864,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -9524,130 +9476,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 650727907,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -9655,130 +9607,130 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 291101358,
     type: "checkbox",
-    label: "How many windows need to be cleaned ?",
+    label: "Combien de fenêtres doivent être nettoyées ?",
     options: [
       {
         id: 485541194,
@@ -9786,124 +9738,124 @@ const final = [
       },
       {
         id: 511164765,
-        label: "1 to 9",
+        label: "1 à 9",
       },
       {
         id: 827836558,
-        label: "10 to 19",
+        label: "10 à 19",
       },
       {
         id: 433049592,
-        label: "20 or more",
+        label: "20 ou plus",
       },
     ],
   },
   {
     id: 485541194,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 511164765,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 827836558,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 433049592,
     type: "checkbox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [
       {
         id: 192824357,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 965477989,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 192824357,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
   {
     id: 965477989,
     type: "datebox",
-    label: "Do you need an acceptance guarantee ?",
+    label: "Avez-vous besoin d'une garantie de réception ?",
     options: [{ label: "" }],
   },
 ];

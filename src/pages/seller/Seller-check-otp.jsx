@@ -14,16 +14,19 @@ function SellerCheckOTP() {
     code: "",
   });
   const { code } = seller || {};
+
   const handleChange = (e) => {
     setSeller({
       ...seller,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     checkOTPSeller(seller);
   };
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -38,6 +41,7 @@ function SellerCheckOTP() {
       }, 2000);
     }
   }, [isError, isSuccess, data, error, navigate]);
+
   return (
     <section>
       <div className="container">

@@ -14,21 +14,21 @@ const otherCat = [
     options: [
       {
         id: 824814971,
-        label: "Telephone, Internet, Multimedia",
+        label: "Téléphone, Internet, Multimédia",
         img: telephoneImg,
       },
       {
         id: 9531832783,
-        label: "Glass construction, glazing",
+        label: "Construction en verre, vitrage",
         img: glassImg,
       },
       {
         id: 521411467,
-        label: "Foils, labels",
+        label: "Feuilles, étiquettes",
         img: foilsImg,
       },
       {
-        label: "Other work",
+        label: "Autres travaux",
         img: otherImg,
         credit: 6,
       },

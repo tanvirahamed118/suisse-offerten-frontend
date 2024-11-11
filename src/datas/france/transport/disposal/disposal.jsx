@@ -2,30 +2,30 @@ const disposal = [
   {
     id: 428497448,
     type: "checkbox",
-    label: "How extensive is this assignment approximately ?",
+    label: "Quelle est l’étendue approximative de cette mission ?",
     options: [
       {
         id: 235640884,
-        label: "Small",
-        des: "A car load",
+        label: "Petite",
+        des: "Une voiture pleine",
         credit: 3,
       },
       {
         id: 159927885,
-        label: "Medium",
-        des: "A transporter load",
+        label: "Moyen",
+        des: "Une charge de transport",
         credit: 6,
       },
       {
         id: 474349382,
-        label: "Large",
-        des: "Multiple van loads",
+        label: "Grande",
+        des: "Plusieurs chargements de fourgonnettes",
         credit: 10,
       },
       {
         id: 601054789,
-        label: "Very large",
-        des: "E.g. whole house",
+        label: "Très grand",
+        des: "Par exemple, toute la maison",
         credit: 15,
       },
     ],
@@ -33,72 +33,72 @@ const disposal = [
   {
     id: 235640884,
     type: "checkbox",
-    label: "Are there any dangerous goods ?",
+    label: "Y a-t-il des marchandises dangereuses ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: [
       {
-        label: "Yes",
+        label: "Oui",
       },
       {
-        label: "No",
+        label: "Non",
       },
       {
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },
   {
     id: 159927885,
     type: "checkbox",
-    label: "Are there any dangerous goods ?",
+    label: "Y a-t-il des marchandises dangereuses ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: [
       {
-        label: "Yes",
+        label: "Oui",
       },
       {
-        label: "No",
+        label: "Non",
       },
       {
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },
   {
     id: 474349382,
     type: "checkbox",
-    label: "Are there any dangerous goods ?",
+    label: "Y a-t-il des marchandises dangereuses ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: [
       {
-        label: "Yes",
+        label: "Oui",
       },
       {
-        label: "No",
+        label: "Non",
       },
       {
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },
   {
     id: 601054789,
     type: "checkbox",
-    label: "Are there any dangerous goods ?",
+    label: "Y a-t-il des marchandises dangereuses ?",
     headline:
-      "Examples: oil tank/used oil, chemicals, fireworks, paints, pesticides, batteries, electrical/electronic devices, spray cans, medicines.",
+      "Exemples : réservoir d’huile/huile usagée, produits chimiques, feux d’artifice, peintures, pesticides, piles, appareils électriques/électroniques, bombes aérosols, médicaments.",
     options: [
       {
-        label: "Yes",
+        label: "Oui",
       },
       {
-        label: "No",
+        label: "Non",
       },
       {
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },

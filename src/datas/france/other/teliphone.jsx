@@ -2,47 +2,47 @@ const teliphones = [
   {
     id: 824814971,
     type: "checkbox",
-    label: "Where do you need a service ?",
+    label: "Où avez-vous besoin d'un service ?",
     options: [
       {
         id: 748988738,
-        label: "Connecting to Internet / TV / Telephone",
-        des: "E.g. setting up Internet, digital TV or telephone connection",
+        label: "Connexion à Internet / TV / Téléphone",
+        des: "Par exemple, la configuration d'une connexion Internet, de télévision numérique ou téléphonique",
         credit: 4,
       },
       {
         id: 846424479,
-        label: "WLAN / Network / Cable",
-        des: "E.g. setting up a router, installing a telephone system, setting up a home network, etc.",
+        label: "WLAN / Réseau / Câble",
+        des: "Par exemple, la configuration d'un routeur, l'installation d'un système téléphonique, la configuration d'un réseau domestique, etc..",
         credit: 4,
       },
       {
         id: 137996772,
-        label: "TV / Audio / Home Cinema",
-        des: "E.g. setting up a Smart TV, installing a satellite system, installing a projector",
+        label: "TV / Audio / Home Cinéma",
+        des: "Par exemple, la configuration d'une Smart TV, l'installation d'un système satellite, l'installation d'un projecteur",
         credit: 5,
       },
       {
         id: 808157001,
-        label: "Computers & Software",
-        des: "E.g. installing Windows, setting up printers, setting up software, upgrades, cloud solutions, etc.",
+        label: "Ordinateurs et logiciels",
+        des: "Par exemple, l'installation de Windows, la configuration d'imprimantes, la configuration de logiciels, les mises à niveau, les solutions cloud, etc.",
         credit: 7,
       },
       {
         id: 510517012,
-        label: "Repair of electrical appliances",
-        des: "E.g. TV, tablet, smartphone, etc.",
+        label: "Réparation d'appareils électriques",
+        des: "Par exemple, télévision, tablette, smartphone, etc.",
         credit: 7,
       },
       {
         id: 108868283,
-        label: "Smarthome",
-        des: "E.g. home control, Google Home, etc.",
+        label: "Maison intelligente",
+        des: "Par exemple, le contrôle de la maison, Google Home, etc.",
         credit: 5,
       },
       {
         id: 938596085,
-        label: "Other or more of the above",
+        label: "Autre ou plusieurs des réponses ci-dessus",
         credit: 4,
       },
     ],
@@ -50,7 +50,7 @@ const teliphones = [
   {
     id: 510517012,
     type: "checkbox",
-    label: "Which device ?",
+    label: "Quel appareil ?",
     options: [
       {
         id: 407676395,
@@ -58,141 +58,140 @@ const teliphones = [
       },
       {
         id: 942681280,
-        label: "smartphones",
+        label: "Smartphones",
       },
       {
         id: 955390127,
-        label: "Laptop / Computer",
+        label: "Ordinateur portable/ordinateur",
       },
       {
         id: 484172037,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 407676395,
     type: "checkbox",
-    label: "What needs to be repaired ?",
+    label: "Qu'est-ce qui doit être réparé ?",
     options: [
       {
-        label: "Screen",
+        label: "Écran",
       },
       {
-        label: "software",
+        label: "Logiciel",
       },
       {
-        label: "mechanics",
+        label: "Mécanique",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 942681280,
     type: "checkbox",
-    label: "What needs to be repaired ?",
+    label: "Qu'est-ce qui doit être réparé ?",
     options: [
       {
-        label: "Screen",
+        label: "Écran",
       },
       {
-        label: "software",
+        label: "Logiciel",
       },
       {
-        label: "mechanics",
+        label: "Mécanique",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 955390127,
     type: "checkbox",
-    label: "What needs to be repaired ?",
+    label: "Qu'est-ce qui doit être réparé ?",
     options: [
       {
-        label: "Screen",
+        label: "Écran",
       },
       {
-        label: "software",
+        label: "Logiciel",
       },
       {
-        label: "mechanics",
+        label: "Mécanique",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 484172037,
     type: "checkbox",
-    label: "What needs to be repaired ?",
+    label: "Qu'est-ce qui doit être réparé ?",
     options: [
       {
-        label: "Screen",
+        label: "Écran",
       },
       {
-        label: "software",
+        label: "Logiciel",
       },
       {
-        label: "mechanics",
+        label: "Mécanique",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 846424479,
     type: "checkbox",
-
-    label: "What does a service require ?",
+    label: "Que nécessite un service ?",
     options: [
       {
         id: 367131319,
-        label: "WiFi",
+        label: "Wi-Fi",
       },
       {
         id: 658627804,
-        label: "network",
+        label: "Réseau",
       },
       {
         id: 604937806,
-        label: "Cable",
+        label: "Câble",
       },
       {
         id: 178283679,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 367131319,
     type: "checkbox",
-    label: "What kind of network ?",
+    label: "Quel type de réseau ?",
     options: [
       {
         id: 501522055,
-        label: "copper",
+        label: "Cuivre",
       },
       {
         id: 767106828,
-        label: "Fiber optic",
+        label: "Fibre optique",
       },
       {
         id: 802919843,
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },
   {
     id: 501522055,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -202,7 +201,7 @@ const teliphones = [
   {
     id: 767106828,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -212,7 +211,7 @@ const teliphones = [
   {
     id: 802919843,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -222,26 +221,26 @@ const teliphones = [
   {
     id: 658627804,
     type: "checkbox",
-    label: "What kind of network ?",
+    label: "Quel type de réseau ?",
     options: [
       {
         id: 501522055,
-        label: "copper",
+        label: "Cuivre",
       },
       {
         id: 767106828,
-        label: "Fiber optic",
+        label: "Fibre optique",
       },
       {
         id: 802919843,
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },
   {
     id: 501522055,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -251,7 +250,7 @@ const teliphones = [
   {
     id: 767106828,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -261,7 +260,7 @@ const teliphones = [
   {
     id: 802919843,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -271,26 +270,26 @@ const teliphones = [
   {
     id: 604937806,
     type: "checkbox",
-    label: "What kind of network ?",
+    label: "Quel type de réseau ?",
     options: [
       {
         id: 501522055,
-        label: "copper",
+        label: "Cuivre",
       },
       {
         id: 767106828,
-        label: "Fiber optic",
+        label: "Fibre optique",
       },
       {
         id: 802919843,
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },
   {
     id: 501522055,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -300,7 +299,7 @@ const teliphones = [
   {
     id: 767106828,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -310,7 +309,7 @@ const teliphones = [
   {
     id: 802919843,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -320,26 +319,26 @@ const teliphones = [
   {
     id: 178283679,
     type: "checkbox",
-    label: "What kind of network ?",
+    label: "Quel type de réseau ?",
     options: [
       {
         id: 501522055,
-        label: "copper",
+        label: "Cuivre",
       },
       {
         id: 767106828,
-        label: "Fiber optic",
+        label: "Fibre optique",
       },
       {
         id: 802919843,
-        label: "I do not know",
+        label: "Je ne sais pas",
       },
     ],
   },
   {
     id: 501522055,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -349,7 +348,7 @@ const teliphones = [
   {
     id: 767106828,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -359,7 +358,7 @@ const teliphones = [
   {
     id: 802919843,
     type: "modelbox",
-    label: "Approximate length of the network:",
+    label: "Longueur approximative du réseau :",
     options: [
       {
         label: "",
@@ -370,26 +369,26 @@ const teliphones = [
     id: 748988738,
     type: "multibox",
     mainId: 399454871,
-    label: "What service do you need regarding activation ?",
+    label: "De quel service avez-vous besoin concernant l'activation ?",
     options: [
       {
-        label: "Internet connection",
+        label: "Connexion Internet",
       },
       {
-        label: "TV connection",
+        label: "Connexion TV",
       },
       {
-        label: "Telephone connection",
+        label: "Connexion téléphonique",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 399454871,
     type: "checkbox",
-    label: "Which provider ?",
+    label: "Quel prestataire ?",
     options: [
       {
         id: 814129570,
@@ -449,98 +448,98 @@ const teliphones = [
       },
       {
         id: 291692695,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 814129570,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 375789978,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 950027940,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 166037260,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 484310437,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 853966767,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 141424718,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 344343911,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 566798271,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 215497643,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 601635317,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 798822688,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 652278149,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 686031692,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
   {
     id: 291692695,
     type: "datebox",
-    label: "When is the activation date ?",
+    label: "Quelle est la date d'activation ?",
     options: [{ label: "" }],
   },
 ];

@@ -15,16 +15,19 @@ function ClientLogin() {
     password: "",
   });
   const { input, password } = client || {};
+
   const handleChange = (e) => {
     setClient({
       ...client,
       [e.target.name]: e.target.value,
     });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     loginClient(client);
   };
+
   useEffect(() => {
     if (isError) {
       toast.error(error?.data?.message);
@@ -40,6 +43,7 @@ function ClientLogin() {
       }, 2000);
     }
   }, [isError, isSuccess, data, error, navigate]);
+
   return (
     <section className="w-10/12 lg:w-[400px] xl:w-[500px]">
       <div className="w-full">

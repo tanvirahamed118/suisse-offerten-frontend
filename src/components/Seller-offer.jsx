@@ -5,13 +5,10 @@ import { useGetAllOfferQuery } from "../redux/rtk/features/offer/offerApi";
 function SellerOffer({ id, sellerId }) {
   const page = 1;
   const limit = 20;
-
   const { data } = useGetAllOfferQuery({ id: id, page, limit, sellerId });
-
   const { sellerData, createdAt, offerPrice, priceUnit, offerNote } =
     data?.offers?.[0] || {};
   const { username, companyLogo } = sellerData || {};
-
   const lastDate = moment(createdAt).fromNow(true);
 
   return data?.offers?.length > 0 && data?.offers?.[0]?.offerPlaced ? (

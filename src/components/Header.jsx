@@ -1,11 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../assets/Logo-text.png";
+import Logo from "../assets/suisse-offerten-logo.png";
 import MobileNav from "./Mobile-nav";
 import { useEffect, useRef, useState } from "react";
 import ProfileNav from "./Profile-nav";
 import { useTranslation } from "react-i18next";
 import toast, { Toaster } from "react-hot-toast";
-import { useGetAllSettingQuery } from "../redux/rtk/features/setting/settingApi";
 
 function Header() {
   const { t, i18n } = useTranslation();
@@ -18,9 +17,7 @@ function Header() {
   const [search, setSearch] = useState(false);
   const menuref = useRef();
   const searchref = useRef();
-  const { data } = useGetAllSettingQuery();
 
-  const { headerlogo } = data || {};
   useEffect(() => {
     let handeler = (e) => {
       if (menuref.current !== null) {
@@ -36,6 +33,7 @@ function Header() {
     };
     document.addEventListener("mousedown", handeler);
   }, []);
+
   const handleLanguageChange = (e) => {
     const lng = e.target.value;
     if (lng === "en") {
@@ -65,7 +63,7 @@ function Header() {
           <i className="fa-solid fa-bars"></i>
         </button>
         <Link to="/">
-          <img src={Logo} alt="" className="w-32 rounded-lg" />
+          <img src={Logo} alt="" className="w-48 sm:w-60 rounded-lg" />
         </Link>
         <select
           name=""
@@ -86,12 +84,18 @@ function Header() {
         }
       >
         <div className="fixed w-full h-20 bg-white shadow-md z-10">
-          <div className="container gap-4 items-center flex w-full justify-between h-full">
+          <div
+            className={
+              i18n.languages[0] === "fr"
+                ? "w-9/12 gap-4 items-center flex justify-between h-full m-auto"
+                : "container gap-4 items-center flex w-full justify-between h-full"
+            }
+          >
             <Link to="/">
               <img
                 src={Logo}
                 alt=""
-                className={i18n.languages[0] === "fr" ? "w-40" : "w-40 xl:w-60"}
+                className={i18n.languages[0] === "fr" ? "w-60" : "w-40 xl:w-60"}
               />
             </Link>
             <div className="">
@@ -122,7 +126,7 @@ function Header() {
                     {t("search_job")}
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     to="/cost-calculator"
                     className={
@@ -133,7 +137,7 @@ function Header() {
                   >
                     {t("cost_schedule")}
                   </Link>
-                </li>
+                </li> */}
 
                 {seller?.sellerToken ? (
                   <>

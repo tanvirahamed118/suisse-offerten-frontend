@@ -39,7 +39,7 @@ const demolitionBreak = [
   {
     id: 548050480,
     type: "checkbox",
-    label: "Are there dangerous goods ?",
+    label: "Should it also be removed ?",
     options: [
       {
         id: 487163933,

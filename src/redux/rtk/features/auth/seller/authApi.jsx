@@ -19,10 +19,20 @@ export const sllerAuthApi = apiSlice.injectEndpoints({
       providesTags: ["update"],
     }),
     getAllSeller: builder.query({
-      query: () => ({
-        url: "/auth/seller",
-        method: "GET",
-      }),
+      query: ({ page, limit, category, location }) => {
+        const queryParams = [
+          category && `category=${category}`,
+          location && `location=${location}`,
+          `page=${page}`,
+          `limit=${limit}`,
+        ]
+          .filter(Boolean)
+          .join("&");
+        return {
+          url: `/auth/seller?${queryParams}`,
+          method: "GET",
+        };
+      },
       providesTags: ["update"],
     }),
     registerSeller: builder.mutation({
@@ -61,6 +71,14 @@ export const sllerAuthApi = apiSlice.injectEndpoints({
         url: `/auth/seller/password/${id}`,
         method: "PATCH",
         body: user,
+      }),
+      invalidatesTags: ["update"],
+    }),
+    updatePassword: builder.mutation({
+      query: ({ seller, id }) => ({
+        url: `/auth/seller/change/password/${id}`,
+        method: "PATCH",
+        body: seller,
       }),
       invalidatesTags: ["update"],
     }),
@@ -160,6 +178,7 @@ export const {
   useUpdateSellerAddressMutation,
   useUpdateSellerPicturesMutation,
   useUpdateSellerPassMutation,
+  useUpdatePasswordMutation,
   useUpdateSellerStatusMutation,
   useUpdateSellerCompanyMutation,
   useUpdateSellerMutation,

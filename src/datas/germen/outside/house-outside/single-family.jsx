@@ -2,6 +2,7 @@ import {
   how_many_sides_the_building_should,
   How_many_the_building_have,
   how_long_scaffolding_needed,
+  how_many_sides_the_building_should_2,
 } from "../../reuse-data";
 
 const singleFamily = [
@@ -38,7 +39,6 @@ const singleFamily = [
       220450825,
       364088778,
       917890565,
-      912398338,
       5362038862
     ),
   },
@@ -269,11 +269,12 @@ const singleFamily = [
     id: 139820526,
     type: "checkbox",
     label: "Um was für ein Dach handelt es sich ?",
-    options: how_many_sides_the_building_should(
+    options: how_many_sides_the_building_should_2(
       220450825,
       364088778,
       917890565,
-      912398338
+      912398338,
+      5362038862
     ),
   },
   //   1 start

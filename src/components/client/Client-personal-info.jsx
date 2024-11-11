@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import toast, { Toaster } from "react-hot-toast";
 import SWIS from "../../assets/images/register/swis.png";
@@ -9,25 +9,21 @@ import {
   useGetOneClientByIdQuery,
   useUpdateClientMutation,
 } from "../../redux/rtk/features/auth/client/authApi";
+import SwepPassword from "./Swep-password";
 
 function ClientPersonalInfo() {
   const { t } = useTranslation();
-
   const clientAuth = localStorage.getItem("client");
-  const clientData = JSON.parse(clientAuth);
+  const clientData = clientAuth ? JSON.parse(clientAuth) : null;
   const id = clientData?.client?._id;
   const { data: getData } = useGetOneClientByIdQuery(id);
   const [updateClient, { data, isLoading, isError, isSuccess, error }] =
     useUpdateClientMutation();
-  const [toastShown, setToastShown] = useState(false);
   const [countryCode, setCountryCode] = useState("");
   const [placeholder, setPlaceholder] = useState("+41 123 45 64");
   const [isShow, setIsShow] = useState(false);
-  const [showPassword, setShowPassword] = useState(false);
   const [tel, setTel] = useState("");
-  const [confirmPass, setConfirmPass] = useState("");
   const [isHas, setIsHas] = useState(false);
-
   const [client, setClient] = useState({
     salutation: "",
     firstname: "",
@@ -37,8 +33,8 @@ function ClientPersonalInfo() {
     secondPhone: "",
     username: "",
     newsletter: false,
-    password: "",
   });
+
   const {
     salutation,
     firstname,
@@ -47,15 +43,17 @@ function ClientPersonalInfo() {
     secondPhone,
     username,
     newsletter,
-    password,
   } = client || {};
 
-  const countries = [
-    { name: "Austria", code: "+43", flag: AUST },
-    { name: "Germany", code: "+49", flag: GER },
-    { name: "France", code: "+33", flag: FRA },
-    { name: "Switzerland", code: "+41", flag: SWIS },
-  ];
+  const countries = useMemo(
+    () => [
+      { name: "Austria", code: "+43", flag: AUST },
+      { name: "Germany", code: "+49", flag: GER },
+      { name: "France", code: "+33", flag: FRA },
+      { name: "Switzerland", code: "+41", flag: SWIS },
+    ],
+    []
+  );
 
   const handleCountrySelect = (country) => {
     setCountryCode(country.code);
@@ -76,23 +74,16 @@ function ClientPersonalInfo() {
 
   const handleChange = (e) => {
     const { name, type, checked, value } = e.target;
-
     setClient((prevClient) => ({
       ...prevClient,
-      [name]: type === "checkbox" ? checked : value, // Handle checkbox input correctly
+      [name]: type === "checkbox" ? checked : value,
     }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password !== confirmPass) {
-      toast.error("Password not match!");
-    } else if (password.length >= 6) {
-      updateClient({ client, id });
-      setTel("");
-    } else {
-      toast.error("Please use more then 6 character");
-    }
+    updateClient({ client, id });
+    setTel("");
   };
 
   useEffect(() => {
@@ -101,16 +92,16 @@ function ClientPersonalInfo() {
         ...prevClient,
         ...getData,
       }));
+      const phone = getData?.phone || "";
+      const initialCode = phone.slice(0, 3);
+      const matchedCountry = countries.find(
+        (country) => country.code === initialCode
+      );
+      setCountryCode(matchedCountry ? matchedCountry.code : "+41");
+      setTel(phone.replace(initialCode, ""));
+      setClient((prev) => ({ ...prev, phone }));
     }
-    if (isError) {
-      toast.error(error?.data?.message);
-      setToastShown(false);
-    }
-    if (isSuccess && !toastShown) {
-      toast.success(data?.message);
-      setToastShown(true);
-    }
-  }, [isError, isSuccess, data, error, getData, toastShown]);
+  }, [getData, countries]);
 
   const handleCodeChange = (e) => {
     const phoneNumber = e.target.value;
@@ -122,6 +113,15 @@ function ClientPersonalInfo() {
     }
     setTel(phoneNumber);
   };
+
+  useEffect(() => {
+    if (isError) {
+      toast.error(error?.data?.message);
+    }
+    if (isSuccess) {
+      toast.success(data?.message);
+    }
+  }, [data, isError, isSuccess, error]);
 
   return (
     <div className="container">
@@ -180,7 +180,7 @@ function ClientPersonalInfo() {
               <input
                 type="text"
                 className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
-                value={firstname}
+                value={firstname || ""}
                 onChange={handleChange}
                 name="firstname"
                 required
@@ -198,7 +198,7 @@ function ClientPersonalInfo() {
               <input
                 type="text"
                 className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
-                value={lastname}
+                value={lastname || ""}
                 onChange={handleChange}
                 name="lastname"
                 required
@@ -294,7 +294,7 @@ function ClientPersonalInfo() {
               type="tel"
               name="secondPhone"
               className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
-              value={secondPhone}
+              value={secondPhone || ""}
               onChange={handleChange}
             />
             <p className="text-gray-500 text-sm font-normal pt-1">
@@ -310,7 +310,7 @@ function ClientPersonalInfo() {
               name="email"
               className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
               onChange={handleChange}
-              value={email}
+              value={email || ""}
               disabled
             />
             <p className="text-gray-500 text-sm font-normal pt-1">
@@ -325,51 +325,13 @@ function ClientPersonalInfo() {
               type="text"
               className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
               onChange={handleChange}
-              value={username}
+              value={username || ""}
               name="username"
               disabled
             />
             <p className="text-gray-500 text-sm font-normal pt-1">
               {t("username_condition")}
             </p>
-          </div>
-          <div>
-            <label htmlFor="" className="text-black text-base font-normal">
-              {t("password")}
-            </label>
-            <span className="relative">
-              <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                onChange={handleChange}
-                className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
-                required
-              />
-              <i
-                onClick={() => setShowPassword(!showPassword)}
-                className={
-                  showPassword
-                    ? "fa-solid fa-eye absolute right-0 top-[-8px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-2 py-2.5 cursor-pointer"
-                    : "fa-solid fa-eye-slash absolute right-0 top-[-8px] rounded-tr-md rounded-br-md bg-[#D4DBE0] px-2 py-2.5 cursor-pointer"
-                }
-              ></i>
-            </span>
-            <p className="text-gray-500 text-sm font-normal pt-1">
-              {t("password_conditon")}
-            </p>
-          </div>
-          <div>
-            <label htmlFor="" className="text-black text-base font-normal">
-              {t("Confirm_password")}
-            </label>
-            <input
-              type="password"
-              name="confirmPass"
-              onChange={(e) => setConfirmPass(e.target.value)}
-              className="w-full border border-gray-200 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
-              required
-              value={confirmPass}
-            />
           </div>
 
           <div className="flex flex-col gap-2">
@@ -380,7 +342,7 @@ function ClientPersonalInfo() {
                 id="newsLetter"
                 className="mt-2"
                 onChange={handleChange}
-                checked={newsletter}
+                checked={newsletter || ""}
               />
               <label
                 htmlFor="newsLetter"
@@ -392,7 +354,7 @@ function ClientPersonalInfo() {
           </div>
           <button
             type="submit"
-            className="bg-[#FFAA00] text-white font-normal w-auto rounded-md hover:bg-[#ffba31] text-md py-3 px-5 mt-5 flex gap-2 justify-center"
+            className="bg-[#FFAA00] text-black font-bold w-auto rounded-md text-md py-3 px-5 mt-5 flex gap-2 justify-center"
           >
             {isLoading ? (
               <>
@@ -418,6 +380,7 @@ function ClientPersonalInfo() {
           </button>
         </form>
       </div>
+      <SwepPassword id={id} />
       <Toaster />
     </div>
   );

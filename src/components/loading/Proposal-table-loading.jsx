@@ -7,31 +7,33 @@ function ProposalTableLoading() {
         <div className="bg-slate-200 rounded-md h-5 w-full"></div>
         <div className="bg-slate-200 rounded-md h-5 w-full"></div>
       </div>
-      <table className="animate-pulse flex flex-col gap-3">
-        <tr className="flex gap-5">
-          <th className="bg-slate-200 rounded-md h-10 w-full"></th>
-          <td className="bg-slate-200 rounded-md h-10 w-full"></td>
-        </tr>
-        <tr className="flex gap-5">
-          <th className="bg-slate-200 rounded-md h-10 w-full"></th>
-          <td className="bg-slate-200 rounded-md h-10 w-full"></td>
-        </tr>
-        <tr className="flex gap-5">
-          <th className="bg-slate-200 rounded-md h-10 w-full"></th>
-          <td className="bg-slate-200 rounded-md h-10 w-full"></td>
-        </tr>
-        <tr className="flex gap-5">
-          <th className="bg-slate-200 rounded-md h-10 w-full"></th>
-          <td className="bg-slate-200 rounded-md h-10 w-full"></td>
-        </tr>
-        <tr className="flex gap-5">
-          <th className="bg-slate-200 rounded-md h-10 w-full"></th>
-          <td className="bg-slate-200 rounded-md h-10 w-full"></td>
-        </tr>
-        <tr className="flex gap-5">
-          <th className="bg-slate-200 rounded-md h-10 w-full"></th>
-          <td className="bg-slate-200 rounded-md h-10 w-full"></td>
-        </tr>
+      <table>
+        <tbody className="animate-pulse flex flex-col gap-3">
+          <tr className="flex gap-5">
+            <th className="bg-slate-200 rounded-md h-10 w-full"></th>
+            <td className="bg-slate-200 rounded-md h-10 w-full"></td>
+          </tr>
+          <tr className="flex gap-5">
+            <th className="bg-slate-200 rounded-md h-10 w-full"></th>
+            <td className="bg-slate-200 rounded-md h-10 w-full"></td>
+          </tr>
+          <tr className="flex gap-5">
+            <th className="bg-slate-200 rounded-md h-10 w-full"></th>
+            <td className="bg-slate-200 rounded-md h-10 w-full"></td>
+          </tr>
+          <tr className="flex gap-5">
+            <th className="bg-slate-200 rounded-md h-10 w-full"></th>
+            <td className="bg-slate-200 rounded-md h-10 w-full"></td>
+          </tr>
+          <tr className="flex gap-5">
+            <th className="bg-slate-200 rounded-md h-10 w-full"></th>
+            <td className="bg-slate-200 rounded-md h-10 w-full"></td>
+          </tr>
+          <tr className="flex gap-5">
+            <th className="bg-slate-200 rounded-md h-10 w-full"></th>
+            <td className="bg-slate-200 rounded-md h-10 w-full"></td>
+          </tr>
+        </tbody>
       </table>
       <div className="animate-pulse w-3/12">
         <div className=" bg-slate-200 rounded-md h-10 w-full justify-self-end"></div>

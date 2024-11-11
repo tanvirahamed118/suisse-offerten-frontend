@@ -39,8 +39,6 @@ function ClientProposal({ jobId, sellerId }) {
   const { companyName } = sellerData || {};
   const { jobTitle, jobNumber } = jobData || {};
   const date = new Date(createdAt);
-
-  // Extract day, month, and year
   const day = date.getUTCDate();
   const monthNames = [
     "Jan",
@@ -58,8 +56,6 @@ function ClientProposal({ jobId, sellerId }) {
   ];
   const month = monthNames[date.getUTCMonth()];
   const year = date.getUTCFullYear();
-
-  // Format the date
   const formattedDate = `${day} ${month} ${year}`;
 
   useEffect(() => {
@@ -77,6 +73,7 @@ function ClientProposal({ jobId, sellerId }) {
     updateOfferRequest({ formData, id });
     setRole("reject");
   };
+
   const handleAccept = () => {
     const id = _id;
     const formData = { sellerId: sellerId, jobId: jobId, status: "accept" };
@@ -94,76 +91,78 @@ function ClientProposal({ jobId, sellerId }) {
     content = (
       <div className="flex flex-col gap-1">
         <table className="min-w-full border-collapse">
-          <tr className="bg-gray-200 ">
-            <th className="border border-gray-300 text-left px-4 py-2 w-72">
-              {t("offer_creator_name")}
-            </th>
-            <td className="border border-gray-300 text-left px-4 py-2 text-red-500 font-bold text-xl capitalize">
-              {companyName}
-            </td>
-          </tr>
-          <tr>
-            <th className="border border-gray-300 text-left px-4 py-2">
-              {t("job_title")}
-            </th>
-            <td className="border border-gray-300 text-left px-4 py-2">
-              {jobTitle}
-            </td>
-          </tr>
-          <tr className="bg-gray-200">
-            <th className="border border-gray-300 text-left px-4 py-2">
-              {t("job_number")}
-            </th>
-            <td className="border border-gray-300 text-left px-4 py-2">
-              {jobNumber}
-            </td>
-          </tr>
-          <tr>
-            <th className="border border-gray-300 text-left px-4 py-2">
-              {t("offer_unit")}
-            </th>
-            <td className="border border-gray-300 text-left px-4 py-2">
-              {priceUnit}
-            </td>
-          </tr>
-          <tr className="bg-gray-200">
-            <th className="border border-gray-300 text-left px-4 py-2">
-              {t("offer_price")}
-            </th>
-            <td className="border border-gray-300 text-left px-4 py-2">
-              {offerPrice}
-            </td>
-          </tr>
-          <tr>
-            <th className="border border-gray-300 text-left px-4 py-2">
-              {t("offer_created")}
-            </th>
-            <td className="border border-gray-300 text-left px-4 py-2">
-              {formattedDate}
-            </td>
-          </tr>
-          <tr className="bg-gray-200">
-            <th className="border border-gray-300 text-left px-4 py-2">
-              {t("offer_note")}
-            </th>
-            <td className="border border-gray-300 text-left px-4 py-2">
-              {offerNote}
-            </td>
-          </tr>
-          <tr>
-            <th className="border border-gray-300 text-left px-4 py-2">
-              {t("proposal_status")}
-            </th>
-            <td
-              className={
-                status === "accept"
-                  ? "border border-gray-300 text-left px-4 py-2 capitalize font-bold text-green-500"
-                  : "border border-gray-300 text-left px-4 py-2 capitalize font-bold text-red-500"
-              }
-            >
-              {status}
-            </td>
-          </tr>
+          <tbody>
+            <tr className="bg-gray-200 ">
+              <th className="border border-gray-300 text-left px-4 py-2 w-72">
+                {t("offer_creator_name")}
+              </th>
+              <td className="border border-gray-300 text-left px-4 py-2 text-red-500 font-bold text-xl capitalize">
+                {companyName}
+              </td>
+            </tr>
+            <tr>
+              <th className="border border-gray-300 text-left px-4 py-2">
+                {t("job_title")}
+              </th>
+              <td className="border border-gray-300 text-left px-4 py-2">
+                {jobTitle}
+              </td>
+            </tr>
+            <tr className="bg-gray-200">
+              <th className="border border-gray-300 text-left px-4 py-2">
+                {t("job_number")}
+              </th>
+              <td className="border border-gray-300 text-left px-4 py-2">
+                {jobNumber}
+              </td>
+            </tr>
+            <tr>
+              <th className="border border-gray-300 text-left px-4 py-2">
+                {t("offer_unit")}
+              </th>
+              <td className="border border-gray-300 text-left px-4 py-2">
+                {priceUnit}
+              </td>
+            </tr>
+            <tr className="bg-gray-200">
+              <th className="border border-gray-300 text-left px-4 py-2">
+                {t("offer_price")}
+              </th>
+              <td className="border border-gray-300 text-left px-4 py-2">
+                {offerPrice}
+              </td>
+            </tr>
+            <tr>
+              <th className="border border-gray-300 text-left px-4 py-2">
+                {t("offer_created")}
+              </th>
+              <td className="border border-gray-300 text-left px-4 py-2">
+                {formattedDate}
+              </td>
+            </tr>
+            <tr className="bg-gray-200">
+              <th className="border border-gray-300 text-left px-4 py-2">
+                {t("offer_note")}
+              </th>
+              <td className="border border-gray-300 text-left px-4 py-2">
+                {offerNote}
+              </td>
+            </tr>
+            <tr>
+              <th className="border border-gray-300 text-left px-4 py-2">
+                {t("proposal_status")}
+              </th>
+              <td
+                className={
+                  status === "accept"
+                    ? "border border-gray-300 text-left px-4 py-2 capitalize font-bold text-green-500"
+                    : "border border-gray-300 text-left px-4 py-2 capitalize font-bold text-red-500"
+                }
+              >
+                {status}
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     );
@@ -173,7 +172,7 @@ function ClientProposal({ jobId, sellerId }) {
     <div className="mt-5">
       <div>
         <div className="">
-          <div className="bg-white p-5 border-b border-gray-300 flex flex-col gap-3">
+          <div className="bg-white py-5 border-b border-gray-300 flex flex-col gap-3">
             <h2 className="text-black text-2xl font-bold">
               {t("recive_proposal")} {companyName}
             </h2>
@@ -181,20 +180,20 @@ function ClientProposal({ jobId, sellerId }) {
               {t("accept_condition")}
             </p>
           </div>
-          <div className="p-5 flex flex-col gap-5 overflow-y-auto">
-            {content}
-          </div>
+          <div className="flex flex-col gap-5 overflow-y-auto">{content}</div>
 
-          <div className="px-5 flex gap-5 items-center">
+          <div className="py-5 flex gap-5 items-center">
             <button
               onClick={handleAccept}
-              disabled={status === "accept" || status === "reject"}
+              disabled={status !== "submit"}
               className={
                 status === "accept"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
+                  ? "bg-gray-300 w-full md:w-60 p-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
                   : status === "reject"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : "bg-[#ff7100] w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2"
+                  ? "bg-gray-300 w-full md:w-60 p-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
+                  : status === "pending"
+                  ? "bg-gray-300 w-full md:w-60 p-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
+                  : "bg-[#FFAA00] w-full md:w-60 p-3 rounded-md justify-center text-black text-base font-bold text-center flex items-center gap-2"
               }
             >
               {updateLoading && role === "accept" ? (
@@ -221,13 +220,15 @@ function ClientProposal({ jobId, sellerId }) {
             </button>
             <button
               onClick={handleReject}
-              disabled={status === "accept" || status === "reject"}
+              disabled={status !== "submit"}
               className={
                 status === "accept"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
+                  ? "bg-gray-300 w-full md:w-60 p-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
                   : status === "reject"
-                  ? "bg-gray-300 w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
-                  : "bg-[#ff7100] w-full md:w-60 p-2 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2"
+                  ? "bg-gray-300 w-full md:w-60 p-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
+                  : status === "pending"
+                  ? "bg-gray-300 w-full md:w-60 p-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
+                  : "bg-[#FFAA00] w-full md:w-60 p-3 rounded-md justify-center text-black text-base font-bold text-center flex items-center gap-2"
               }
             >
               {updateLoading && role === "reject" ? (

@@ -39,7 +39,7 @@ const demolitionBreak = [
   {
     id: 548050480,
     type: "checkbox",
-    label: "Handelt es sich um Gefahrgut ?",
+    label: "Soll es auch entfernt werden ?",
     options: [
       {
         id: 487163933,

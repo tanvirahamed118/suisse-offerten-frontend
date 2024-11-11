@@ -10,23 +10,17 @@ function ClientVerify() {
   const [verifyClient, { data, isSuccess, isError, error, isLoading }] =
     useVerifyClientMutation();
   const navigate = useNavigate();
-
-  // Handle input change and move to the next box automatically
   const handleInputChange = (e, index) => {
     const value = e.target.value;
     const newCode = [...code];
-
-    // If the input field is cleared, go to the previous field
     if (value === "") {
-      newCode[index] = ""; // Clear current value
+      newCode[index] = "";
       setCode(newCode);
       if (index > 0) {
-        inputsRef.current[index - 1].focus(); // Move focus to the previous field
+        inputsRef.current[index - 1].focus();
       }
       return;
     }
-
-    // If a valid number is entered, move to the next input field
     if (!isNaN(value) && value.length === 1) {
       newCode[index] = value;
       setCode(newCode);
@@ -36,7 +30,6 @@ function ClientVerify() {
     }
   };
 
-  // Handle backspace to move to the previous field if necessary
   const handleKeyDown = (e, index) => {
     if (e.key === "Backspace" && !code[index] && index > 0) {
       inputsRef.current[index - 1].focus(); // Move focus to the previous field

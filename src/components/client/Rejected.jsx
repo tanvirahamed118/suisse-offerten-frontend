@@ -16,8 +16,7 @@ function Rejected({ activeTab }) {
   const { t } = useTranslation();
   const [page, setPage] = useState(1);
   const { offer } = useSelector((state) => state.offerFilter);
-  const limit = 20;
-
+  const limit = 10;
   const params = useParams();
   const id = params.id;
   const jobId = id;
@@ -40,39 +39,34 @@ function Rejected({ activeTab }) {
   };
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-
-    // Get date in the format MM/DD/YYYY
     const formattedDate = date.toLocaleDateString("en-US", {
       month: "numeric",
       day: "numeric",
       year: "numeric",
     });
-
-    // Get time in the format HH:MM
     const formattedTime = date.toLocaleTimeString("en-US", {
       hour: "2-digit",
       minute: "2-digit",
-      hour12: false, // Use `true` if you want 12-hour format with AM/PM
+      hour12: false,
     });
-
     return `${formattedDate} ${formattedTime}`;
   };
-  const totalItems = data?.totalJobs || 0;
+
+  const totalItems = data?.totalOffers || 0;
 
   const filterBy = (a, b) => {
     if (offer === "time of receipt") {
-      // Sort by creation date (most recent first)
       return new Date(b?.createdAt) - new Date(a?.createdAt);
     } else if (offer === "best review") {
-      // Sort by the total number of reviews (most reviews first)
       return b?.seller?.totalReview - a?.seller?.totalReview;
     } else if (offer === "best rating") {
-      // Sort by the best rating (highest rating first)
       return b?.seller?.reviewRating - a?.seller?.reviewRating;
     }
-    return 0; // No sorting if no filter is selected
+    return 0;
   };
+
   const filterData = data?.offers?.filter((item) => item.offerRejected);
+
   // decide what to show for jobs
   let content;
 
@@ -108,7 +102,7 @@ function Rejected({ activeTab }) {
         locationVerify,
       } = item.sellerData || {};
       const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
-      const { bidMessage, _id: id } = item || {};
+      const { bidMessage } = item || {};
       return (
         <div
           key={_id}
@@ -120,17 +114,11 @@ function Rejected({ activeTab }) {
           >
             <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center flex-wrap">
-                <Link
-                  to={`/proposal/seller/${_id}/${jobId}`}
-                  className="hover:underline text-base font-bold text-[#3097d1] capitalize"
-                >
+                <p className=" text-base font-bold text-[#3097d1] capitalize">
                   {companyName}
-                </Link>
+                </p>
                 <StarRating rating={reviewRating} />
-                <Link
-                  to={`/proposal/seller/${_id}/${id}`}
-                  className="hover:underline text-base font-normal text-[#3097d1]"
-                >
+                <p className="text-base font-normal text-[#3097d1]">
                   ({totalReview ? totalReview : 0} reviews,{" "}
                   {floorReviewPercent >= 80
                     ? `${floorReviewPercent}% ${t("positive")}`
@@ -138,7 +126,7 @@ function Rejected({ activeTab }) {
                     ? `${floorReviewPercent}% ${t("avarage")}`
                     : `${floorReviewPercent}% ${t("poor")}`}
                   )
-                </Link>
+                </p>
                 <span className="flex gap-1 items-center">
                   {emailVerify ? (
                     <i className="fa-solid fa-envelope-circle-check text-xm text-purple-500"></i>
@@ -189,7 +177,7 @@ function Rejected({ activeTab }) {
     <div>
       <ShortFilter bid={rejectBid} type={"Rejected"} />
       <div className="flex flex-col gap-5 py-5">{content}</div>
-      {totalItems?.length > 20 && (
+      {totalItems > limit && (
         <Pagination
           handlePageChange={handlePageChange}
           page={page}

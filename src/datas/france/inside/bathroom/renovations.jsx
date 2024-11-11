@@ -2,31 +2,32 @@ const renovations = [
   {
     id: 683493762,
     type: "checkbox",
-    label: "What work needs to be done ?",
+    label: "Quels travaux faut-il réaliser ?",
     options: [
       {
         id: 780693030,
-        label: "Renovation / installation of a bathroom",
-        des: "Complete change of a bathroom, or replacing a bathroom and renovating",
+        label: "Quels travaux faut-il réaliser ?",
+        des: "Rénovation / installation d'une salle de bain",
       },
       {
         id: 677229573,
-        label: "Installing or replacing a fitting",
-        des: "e.g. replacing a shower, bathtub, toilet, sink, etc.",
+        label:
+          "Changement complet d'une salle de bain, ou remplacement d'une salle de bain et rénovation",
+        des: "par exemple remplacer une douche, une baignoire, des toilettes, un lavabo, etc.",
       },
       {
         id: 265742934,
-        label: "repair",
-        des: "e.g. pipelines, leaks, sewage, panels, etc.",
+        label: "Réparation",
+        des: "Par exemple, canalisations, fuites, eaux usées, panneaux, etc.",
       },
       {
         id: 324202133,
-        label: "Plates",
-        des: "Only tile the floors or walls",
+        label: "Plaques",
+        des: "Carreler uniquement les sols ou les murs",
       },
       {
         id: 163437092,
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -34,7 +35,7 @@ const renovations = [
   {
     id: 780693030,
     type: "checkbox",
-    label: "How many bathrooms need to be renovated/installed ?",
+    label: "Combien de salles de bain doivent être rénovées/installées ?",
     options: [
       {
         id: 328244547,
@@ -42,7 +43,7 @@ const renovations = [
       },
       {
         id: 953718027,
-        label: "2 or more",
+        label: "2 ou plus",
       },
     ],
   },
@@ -50,23 +51,23 @@ const renovations = [
   {
     id: 328244547,
     type: "checkbox",
-    label: "What kind of bathroom ?",
+    label: "Quel type de salle de bain ?",
     options: [
       {
         id: 458925628,
-        label: "Main bathroom",
+        label: "Salle de bain principale",
       },
       {
         id: 880710682,
-        label: "private bathroom",
+        label: "salle de bain privée",
       },
       {
         id: 884608829,
-        label: "Guest bathroom",
+        label: "Salle de bain pour invités",
       },
       {
         id: 797322370,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -74,22 +75,22 @@ const renovations = [
   {
     id: 458925628,
     type: "checkbox",
-    label: "How extensive is the work ?",
+    label: "Quelle est l'ampleur des travaux ?",
     options: [
       {
         id: 146207066,
-        label: "Comprehensive bathroom renovation",
-        des: "Replace the bathroom and everything associated with it (e.g. tiles, floor, ceiling, electrics)",
+        label: "Rénovation complète de salle de bain",
+        des: "Remplacer la salle de bain et tout ce qui y est associé (par exemple, le carrelage, le sol, le plafond, l'électricité)",
       },
       {
         id: 941557853,
-        label: "Replacing a bathroom",
-        des: "Replace the bathroom without tiles, floor, electrics, etc.",
+        label: "Remplacement d'une salle de bain",
+        des: "Remplacer la salle de bain sans carrelage, plancher, électricité, etc.",
       },
       {
         id: 413876972,
-        label: "Smaller jobs",
-        des: "Replace only one fitting, e.g. shower or bathtub",
+        label: "Petits travaux",
+        des: "Remplacer un seul équipement, par exemple une douche ou une baignoire",
       },
     ],
   },
@@ -97,40 +98,40 @@ const renovations = [
   {
     id: 146207066,
     type: "checkbox",
-    label: "Are the Materials all already available ?",
+    label: "Est-ce que tous les matériaux sont déjà disponibles ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -138,7 +139,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -146,10 +147,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -157,7 +158,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -165,25 +166,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -191,7 +192,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -199,10 +200,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -210,7 +211,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -220,40 +221,40 @@ const renovations = [
   {
     id: 941557853,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -261,7 +262,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -269,10 +270,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -280,7 +281,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -288,25 +289,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -314,7 +315,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -322,10 +323,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -333,7 +334,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -343,40 +344,40 @@ const renovations = [
   {
     id: 413876972,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -384,7 +385,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -392,10 +393,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -403,7 +404,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -411,25 +412,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -437,7 +438,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -445,10 +446,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -456,7 +457,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -467,22 +468,22 @@ const renovations = [
   {
     id: 880710682,
     type: "checkbox",
-    label: "How extensive is the work ?",
+    label: "Quelle est l'ampleur des travaux ?",
     options: [
       {
         id: 146207066,
-        label: "Comprehensive bathroom renovation",
-        des: "Replace the bathroom and everything associated with it (e.g. tiles, floor, ceiling, electrics)",
+        label: "Rénovation complète de salle de bain",
+        des: "Remplacer la salle de bain et tout ce qui y est associé (par exemple, le carrelage, le sol, le plafond, l'électricité)",
       },
       {
         id: 941557853,
-        label: "Replacing a bathroom",
-        des: "Replace the bathroom without tiles, floor, electrics, etc.",
+        label: "Remplacement d'une salle de bain",
+        des: "Remplacer la salle de bain sans carrelage, plancher, électricité, etc.",
       },
       {
         id: 413876972,
-        label: "Smaller jobs",
-        des: "Replace only one fitting, e.g. shower or bathtub",
+        label: "Petits travaux",
+        des: "Remplacer un seul équipement, par exemple une douche ou une baignoire",
       },
     ],
   },
@@ -490,40 +491,40 @@ const renovations = [
   {
     id: 146207066,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -531,7 +532,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -539,10 +540,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -550,7 +551,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -558,25 +559,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -584,7 +585,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -592,10 +593,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -603,7 +604,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -613,40 +614,40 @@ const renovations = [
   {
     id: 941557853,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -654,7 +655,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -662,10 +663,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -673,7 +674,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -681,25 +682,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -707,7 +708,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -715,10 +716,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -726,7 +727,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -736,40 +737,40 @@ const renovations = [
   {
     id: 413876972,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -777,7 +778,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -785,10 +786,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -796,7 +797,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -804,25 +805,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -830,7 +831,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -838,10 +839,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -849,7 +850,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -860,22 +861,22 @@ const renovations = [
   {
     id: 884608829,
     type: "checkbox",
-    label: "How extensive is the work ?",
+    label: "Quelle est l'ampleur des travaux ?",
     options: [
       {
         id: 146207066,
-        label: "Comprehensive bathroom renovation",
-        des: "Replace the bathroom and everything associated with it (e.g. tiles, floor, ceiling, electrics)",
+        label: "Rénovation complète de salle de bain",
+        des: "Remplacer la salle de bain et tout ce qui y est associé (par exemple, le carrelage, le sol, le plafond, l'électricité)",
       },
       {
         id: 941557853,
-        label: "Replacing a bathroom",
-        des: "Replace the bathroom without tiles, floor, electrics, etc.",
+        label: "Remplacement d'une salle de bain",
+        des: "Remplacer la salle de bain sans carrelage, plancher, électricité, etc.",
       },
       {
         id: 413876972,
-        label: "Smaller jobs",
-        des: "Replace only one fitting, e.g. shower or bathtub",
+        label: "Petits travaux",
+        des: "Remplacer un seul équipement, par exemple une douche ou une baignoire",
       },
     ],
   },
@@ -883,40 +884,40 @@ const renovations = [
   {
     id: 146207066,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -924,7 +925,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -932,10 +933,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -943,7 +944,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -951,25 +952,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -977,7 +978,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -985,10 +986,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -996,7 +997,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1006,40 +1007,40 @@ const renovations = [
   {
     id: 941557853,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1047,7 +1048,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1055,10 +1056,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1066,7 +1067,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1074,25 +1075,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1100,7 +1101,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1108,10 +1109,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1119,7 +1120,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1129,40 +1130,40 @@ const renovations = [
   {
     id: 413876972,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1170,7 +1171,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1178,10 +1179,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1189,7 +1190,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1197,25 +1198,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1223,7 +1224,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1231,10 +1232,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1242,7 +1243,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1255,23 +1256,23 @@ const renovations = [
   {
     id: 953718027,
     type: "checkbox",
-    label: "What kind of bathroom ?",
+    label: "Quel type de salle de bain ?",
     options: [
       {
         id: 458925628,
-        label: "Main bathroom",
+        label: "Salle de bain principale",
       },
       {
         id: 880710682,
-        label: "private bathroom",
+        label: "salle de bain privée",
       },
       {
         id: 884608829,
-        label: "Guest bathroom",
+        label: "Salle de bain pour invités",
       },
       {
         id: 797322370,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -1279,22 +1280,22 @@ const renovations = [
   {
     id: 458925628,
     type: "checkbox",
-    label: "How extensive is the work ?",
+    label: "Quelle est l'ampleur des travaux ?",
     options: [
       {
         id: 146207066,
-        label: "Comprehensive bathroom renovation",
-        des: "Replace the bathroom and everything associated with it (e.g. tiles, floor, ceiling, electrics)",
+        label: "Rénovation complète de salle de bain",
+        des: "Remplacer la salle de bain et tout ce qui y est associé (par exemple, le carrelage, le sol, le plafond, l'électricité)",
       },
       {
         id: 941557853,
-        label: "Replacing a bathroom",
-        des: "Replace the bathroom without tiles, floor, electrics, etc.",
+        label: "Remplacement d'une salle de bain",
+        des: "Remplacer la salle de bain sans carrelage, plancher, électricité, etc.",
       },
       {
         id: 413876972,
-        label: "Smaller jobs",
-        des: "Replace only one fitting, e.g. shower or bathtub",
+        label: "Petits travaux",
+        des: "Remplacer un seul équipement, par exemple une douche ou une baignoire",
       },
     ],
   },
@@ -1302,40 +1303,40 @@ const renovations = [
   {
     id: 146207066,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1343,7 +1344,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1351,10 +1352,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1362,7 +1363,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1370,25 +1371,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1396,7 +1397,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1404,10 +1405,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1415,7 +1416,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1425,40 +1426,40 @@ const renovations = [
   {
     id: 941557853,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1466,7 +1467,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1474,10 +1475,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1485,7 +1486,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1493,25 +1494,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1519,7 +1520,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1527,10 +1528,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1538,7 +1539,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1548,40 +1549,40 @@ const renovations = [
   {
     id: 413876972,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1589,7 +1590,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1597,10 +1598,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1608,7 +1609,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1616,25 +1617,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1642,7 +1643,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1650,10 +1651,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1661,7 +1662,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1672,22 +1673,22 @@ const renovations = [
   {
     id: 880710682,
     type: "checkbox",
-    label: "How extensive is the work ?",
+    label: "Quelle est l'ampleur des travaux ?",
     options: [
       {
         id: 146207066,
-        label: "Comprehensive bathroom renovation",
-        des: "Replace the bathroom and everything associated with it (e.g. tiles, floor, ceiling, electrics)",
+        label: "Rénovation complète de salle de bain",
+        des: "Remplacer la salle de bain et tout ce qui y est associé (par exemple, le carrelage, le sol, le plafond, l'électricité)",
       },
       {
         id: 941557853,
-        label: "Replacing a bathroom",
-        des: "Replace the bathroom without tiles, floor, electrics, etc.",
+        label: "Remplacement d'une salle de bain",
+        des: "Remplacer la salle de bain sans carrelage, plancher, électricité, etc.",
       },
       {
         id: 413876972,
-        label: "Smaller jobs",
-        des: "Replace only one fitting, e.g. shower or bathtub",
+        label: "Petits travaux",
+        des: "Remplacer un seul équipement, par exemple une douche ou une baignoire",
       },
     ],
   },
@@ -1695,40 +1696,40 @@ const renovations = [
   {
     id: 146207066,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1736,7 +1737,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1744,10 +1745,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1755,7 +1756,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1763,25 +1764,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1789,7 +1790,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1797,10 +1798,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1808,7 +1809,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1818,40 +1819,40 @@ const renovations = [
   {
     id: 941557853,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1859,7 +1860,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1867,10 +1868,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1878,7 +1879,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1886,25 +1887,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1912,7 +1913,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1920,10 +1921,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1931,7 +1932,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1941,40 +1942,40 @@ const renovations = [
   {
     id: 413876972,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -1982,7 +1983,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -1990,10 +1991,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2001,7 +2002,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2009,25 +2010,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2035,7 +2036,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2043,10 +2044,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2054,7 +2055,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2065,22 +2066,22 @@ const renovations = [
   {
     id: 884608829,
     type: "checkbox",
-    label: "How extensive is the work ?",
+    label: "Quelle est l'ampleur des travaux ?",
     options: [
       {
         id: 146207066,
-        label: "Comprehensive bathroom renovation",
-        des: "Replace the bathroom and everything associated with it (e.g. tiles, floor, ceiling, electrics)",
+        label: "Rénovation complète de salle de bain",
+        des: "Remplacer la salle de bain et tout ce qui y est associé (par exemple, le carrelage, le sol, le plafond, l'électricité)",
       },
       {
         id: 941557853,
-        label: "Replacing a bathroom",
-        des: "Replace the bathroom without tiles, floor, electrics, etc.",
+        label: "Remplacement d'une salle de bain",
+        des: "Remplacer la salle de bain sans carrelage, plancher, électricité, etc.",
       },
       {
         id: 413876972,
-        label: "Smaller jobs",
-        des: "Replace only one fitting, e.g. shower or bathtub",
+        label: "Petits travaux",
+        des: "Remplacer un seul équipement, par exemple une douche ou une baignoire",
       },
     ],
   },
@@ -2088,40 +2089,40 @@ const renovations = [
   {
     id: 146207066,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2129,7 +2130,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2137,10 +2138,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2148,7 +2149,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2156,25 +2157,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2182,7 +2183,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2190,10 +2191,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2201,7 +2202,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2211,40 +2212,40 @@ const renovations = [
   {
     id: 941557853,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2252,7 +2253,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2260,10 +2261,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2271,7 +2272,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2279,25 +2280,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2305,7 +2306,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2313,10 +2314,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2324,7 +2325,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2334,40 +2335,40 @@ const renovations = [
   {
     id: 413876972,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 381456876,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 133670142,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 381456876,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2375,7 +2376,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2383,10 +2384,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2394,7 +2395,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2402,25 +2403,25 @@ const renovations = [
   {
     id: 133670142,
     type: "checkbox",
-    label: "Does the contract involve major construction work ?",
+    label: "Le contrat implique-t-il des travaux de construction importants ?",
     options: [
       {
         id: 725552152,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 697053991,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 725552152,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2428,7 +2429,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2436,10 +2437,10 @@ const renovations = [
   {
     id: 697053991,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2447,7 +2448,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2461,40 +2462,40 @@ const renovations = [
     id: 677229573,
     type: "multibox",
     mainId: 465519550,
-    label: "Which fittings need to be replaced ?",
+    label: "Quels accessoires doivent être remplacés ?",
     options: [
       {
-        label: "Bathtub",
+        label: "Baignoire",
       },
       {
-        label: "Shower",
+        label: "Douche",
       },
       {
-        label: "Shower cubicle",
+        label: "Cabine de douche",
       },
       {
-        label: "toilet",
+        label: "toilettes",
       },
       {
-        label: "Bathroom sink",
+        label: "Lavabo de salle de bain",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 465519550,
     type: "checkbox",
-    label: "Do you need additional work ?",
+    label: "Avez-vous besoin de travaux supplémentaires ?",
     options: [
       {
         id: 239743071,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 745496635,
-        label: "No",
+        label: "Non",
       },
     ],
   },
@@ -2502,13 +2503,13 @@ const renovations = [
     id: 239743071,
     type: "checkbox",
     label:
-      "Are sanitary facilities, tiles, etc. (materials) already in place ?",
+      "Les sanitaires, carrelages, etc. (matériaux) sont-ils déjà en place ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
@@ -2516,13 +2517,13 @@ const renovations = [
     id: 745496635,
     type: "checkbox",
     label:
-      "Are sanitary facilities, tiles, etc. (materials) already in place ?",
+      "Les sanitaires, carrelages, etc. (matériaux) sont-ils déjà en place ?",
     options: [
       {
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
@@ -2533,25 +2534,25 @@ const renovations = [
     id: 465519550,
     type: "checkbox",
     label:
-      "Are sanitary facilities, tiles, etc. (materials) already in place ?",
+      "Les sanitaires, carrelages, etc. (matériaux) sont-ils déjà en place ?",
     options: [
       {
         id: 561008128,
-        label: "Yes, already exists.",
+        label: "Oui, ça existe déjà.",
       },
       {
         id: 559758229,
-        label: "No, still need to be procured.",
+        label: "Non, il faut encore se le procurer.",
       },
     ],
   },
   {
     id: 561008128,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2559,7 +2560,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2567,10 +2568,10 @@ const renovations = [
   {
     id: 559758229,
     type: "checkbox",
-    label: "Approximate bathroom size:",
+    label: "Taille approximative de la salle de bain :",
     options: [
       {
-        label: "up to 5m2",
+        label: "jusqu'à 5m2",
         credit: 10,
       },
       {
@@ -2578,7 +2579,7 @@ const renovations = [
         credit: 15,
       },
       {
-        label: "10m2 or more",
+        label: "10m2 ou plus",
         credit: 25,
       },
     ],
@@ -2589,22 +2590,22 @@ const renovations = [
   {
     id: 324202133,
     type: "checkbox",
-    label: "What kind of panel work do you need ?",
+    label: "De quel type de travaux de panneau avez-vous besoin ?",
     options: [
       {
-        label: "Re-laying / replacing tiles",
+        label: "Repose/remplacement de carrelage",
         credit: 20,
       },
       {
-        label: "Repair tiles",
+        label: "Réparation de tuiles",
         credit: 10,
       },
       {
-        label: "Re-grouting",
+        label: "Rejointoiement",
         credit: 10,
       },
       {
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],

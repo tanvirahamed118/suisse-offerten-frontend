@@ -85,12 +85,7 @@ function CommunicationTab({ id, sellerId }) {
   }
   if (!isLoading && !isError && data?.length > 0) {
     content = messages.map((msg, index) => {
-      // Create a Date object from the input string
-
-      // Create a Date object from the input string
       const date = new Date(msg?.date);
-
-      // Extract day, month, and year
       const day = date.getUTCDate();
       const monthNames = [
         "Jan",
@@ -106,10 +101,9 @@ function CommunicationTab({ id, sellerId }) {
         "Nov",
         "Dec",
       ];
+
       const month = monthNames[date.getUTCMonth()];
       const year = date.getUTCFullYear();
-
-      // Format the date
       const formattedDate = `${day} ${month} ${year}`;
 
       return (

@@ -133,13 +133,13 @@ const excavationEartworks = [
     label: "What point foundation work do you need ?",
     options: [
       {
-        label: "Excavation for a pool",
+        label: "pouring the foundation",
       },
       {
-        label: "Excavation for another structure",
+        label: "digging earth for the foundation",
       },
       {
-        label: "Disposal of excavated soil",
+        label: "dispose of excavated soil",
       },
       {
         label: "Other",
@@ -152,13 +152,16 @@ const excavationEartworks = [
     label: "Which floor slab or strip foundation work do you need ?",
     options: [
       {
-        label: "Excavation for a pool",
+        label: "pouring the foundation",
       },
       {
-        label: "Excavation for another structure",
+        label: "digging earth for the foundation",
       },
       {
-        label: "Disposal of excavated soil",
+        label: "insulating the foundation",
+      },
+      {
+        label: "dispose of excavated soil",
       },
       {
         label: "Other",

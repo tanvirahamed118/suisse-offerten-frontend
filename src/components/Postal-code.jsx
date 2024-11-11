@@ -9,6 +9,7 @@ function PostalCode({
   postalCodeValid,
 }) {
   const { t } = useTranslation();
+
   return (
     <div className="flex gap-5 items-center">
       <div className="flex flex-col gap-3">

@@ -86,12 +86,7 @@ function ClientNews({ jobId, sellerId }) {
   }
   if (!isLoading && !isError && data?.length > 0) {
     content = messages.map((msg, index) => {
-      // Create a Date object from the input string
-
-      // Create a Date object from the input string
       const date = new Date(msg?.date);
-
-      // Extract day, month, and year
       const day = date.getUTCDate();
       const monthNames = [
         "Jan",
@@ -109,8 +104,6 @@ function ClientNews({ jobId, sellerId }) {
       ];
       const month = monthNames[date.getUTCMonth()];
       const year = date.getUTCFullYear();
-
-      // Format the date
       const formattedDate = `${day} ${month} ${year}`;
 
       return (
@@ -189,8 +182,8 @@ function ClientNews({ jobId, sellerId }) {
               disabled={message.length === 0}
               className={
                 message.length > 0
-                  ? "bg-[#ff7100] w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-normal text-center hover:bg-[#F25900] flex items-center gap-2"
-                  : "bg-gray-500 w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-normal text-center cursor-not-allowed flex gap-2 items-center"
+                  ? "bg-[#FFAA00] w-full md:w-60 px-10 py-3 rounded-md justify-center text-black text-base font-bold text-center flex items-center gap-2"
+                  : "bg-gray-500 w-full md:w-60 px-10 py-3 rounded-md justify-center text-white text-base font-bold text-center cursor-not-allowed flex gap-2 items-center"
               }
             >
               {isCreatLoading ? (
@@ -218,7 +211,6 @@ function ClientNews({ jobId, sellerId }) {
           </form>
         </div>
       </div>
-
       <Toaster />
     </div>
   ) : null;

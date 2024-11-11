@@ -12,9 +12,11 @@ function PerticipationTab({ setActiveTab, activeTab }) {
   const filterRejected = data?.filter(
     (item) => item?.offerRejected && item.sellerId === id
   );
+
   const filterRequest = data?.filter(
     (item) => item?.offerRequestedNotify && item.sellerId === id
   );
+
   return (
     <ul className="flex border-b border-gray-300 my-10">
       <li

@@ -9,7 +9,7 @@ const repair = [
   {
     id: 128976166,
     type: "checkbox",
-    label: "Quel type de toiture souhaitez-vous installer ?",
+    label: "Quel type de toiture souhaitez-vous réparation ?",
     options: what_type_want_to_install(
       234305256,
       378755402,

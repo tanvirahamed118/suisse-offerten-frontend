@@ -27,7 +27,7 @@ function Offering({ activeTab }) {
   const [load, setLoad] = useState(null);
   const [isShow, setIsShow] = useState(false);
   const [isPropShow, setIsPropShow] = useState(false);
-  const limit = 20;
+  const limit = 10;
   const { data, isError, isLoading, isSuccess, error, refetch } =
     useGetAllOfferQuery({
       page,
@@ -59,40 +59,33 @@ function Offering({ activeTab }) {
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
-
-    // Get date in the format MM/DD/YYYY
     const formattedDate = date.toLocaleDateString("en-US", {
       month: "numeric",
       day: "numeric",
       year: "numeric",
     });
-
-    // Get time in the format HH:MM
     const formattedTime = date.toLocaleTimeString("en-US", {
       hour: "2-digit",
       minute: "2-digit",
-      hour12: false, // Use `true` if you want 12-hour format with AM/PM
+      hour12: false,
     });
-
     return `${formattedDate} ${formattedTime}`;
   };
-  const totalItems = data?.totalJobs || 0;
+
+  const totalItems = data?.totalOffers || 0;
   useEffect(() => {
     refetch();
   }, [activeTab, refetch]);
 
   const filterBy = (a, b) => {
     if (offer === "time of receipt") {
-      // Sort by creation date (most recent first)
       return new Date(b?.createdAt) - new Date(a?.createdAt);
     } else if (offer === "most review") {
-      // Sort by the total number of reviews (most reviews first)
       return b?.sellerData?.totalReview - a?.sellerData?.totalReview;
     } else if (offer === "best rating") {
-      // Sort by the best rating (highest rating first)
       return b?.sellerData?.reviewRating - a?.sellerData?.reviewRating;
     }
-    return 0; // No sorting if no filter is selected
+    return 0;
   };
 
   const handlePopup = (id) => {
@@ -172,18 +165,12 @@ function Offering({ activeTab }) {
             className="flex flex-col gap-2"
           >
             <div className="flex items-center gap-5">
-              <div className="flex gap-2 items-center w-full">
-                <Link
-                  to={`/proposal/seller/${_id}/${jobId}`}
-                  className="hover:underline text-base font-bold text-[#3097d1] capitalize"
-                >
+              <div className="flex gap-2 items-center w-full flex-wrap">
+                <p className=" text-base font-bold text-[#3097d1] capitalize">
                   {companyName}
-                </Link>
+                </p>
                 <StarRating rating={reviewRating} />
-                <Link
-                  to={`/proposal/seller/${_id}/${jobId}`}
-                  className="hover:underline text-base font-normal text-[#3097d1]"
-                >
+                <p className="text-base font-normal text-[#3097d1]">
                   ({totalReview ? totalReview : 0} reviews,{" "}
                   {floorReviewPercent >= 80
                     ? `${floorReviewPercent}% ${t("positive")}`
@@ -191,7 +178,7 @@ function Offering({ activeTab }) {
                     ? `${floorReviewPercent}% ${t("avarage")}`
                     : `${floorReviewPercent}% ${t("poor")}`}
                   )
-                </Link>
+                </p>
                 <span className="flex gap-1 items-center">
                   {emailVerify ? (
                     <i className="fa-solid fa-envelope-circle-check text-xm text-purple-500"></i>
@@ -228,13 +215,13 @@ function Offering({ activeTab }) {
           <div className="flex flex-col gap-3 w-full md:w-auto">
             <button
               onClick={() => handlePopup(id)}
-              className="bg-[#19be10] hover:bg-[#16A60E] w-full md:w-52 py-2 rounded-md text-center text-white text-base font-normal"
+              className="bg-[#19be10] hover:bg-[#16A60E] w-full md:w-52 py-2 rounded-md text-center text-white text-base font-bold"
             >
               {t("request_offer")}
             </button>
             <Link
               to={`/proposal/seller/${_id}/${jobId}`}
-              className="bg-[#3056a7] hover:bg-[#274789] w-full md:w-52 py-2 rounded-md text-center text-white text-base font-normal"
+              className="bg-[#3056a7] hover:bg-[#274789] w-full md:w-52 py-2 rounded-md text-center text-white text-base font-bold"
             >
               {t("view_details")}
             </Link>
@@ -243,8 +230,8 @@ function Offering({ activeTab }) {
               disabled={offerRejected || offerAccepted}
               className={
                 offerRejected || offerAccepted
-                  ? "bg-gray-400 w-full md:w-52 py-2 rounded-md text-center text-white text-base font-normal flex gap-2 justify-center"
-                  : "bg-[#FFAA00] hover:bg-[#D6A135] w-full md:w-52 py-2 rounded-md text-center text-white text-base font-normal flex gap-2 justify-center"
+                  ? "bg-gray-400 w-full md:w-52 py-2 rounded-md text-center text-white text-base font-bold flex gap-2 justify-center"
+                  : "bg-[#FFAA00] w-full md:w-52 py-2 rounded-md text-center text-black text-base font-bold flex gap-2 justify-center"
               }
             >
               {load === id && getIdLoading ? (
@@ -276,7 +263,7 @@ function Offering({ activeTab }) {
                 className={
                   offerAccepted
                     ? "bg-gray-300 w-full md:w-52 py-2 rounded-md text-center text-black text-base font-normal"
-                    : "bg-red-500 hover:bg-red-600 w-full md:w-52 py-2 rounded-md text-center text-white text-base font-normal"
+                    : "bg-red-500 hover:bg-red-600 w-full md:w-52 py-2 rounded-md text-center text-white text-base font-bold"
                 }
               >
                 {offerAccepted ? t("offer_accepted") : t("offer_accept")}
@@ -293,7 +280,7 @@ function Offering({ activeTab }) {
     <div>
       <ShortFilter bid={placeBid} type={"Interested"} />
       <div className="flex flex-col gap-5 py-5">{content}</div>
-      {totalItems?.length > 20 && (
+      {totalItems > limit && (
         <Pagination
           handlePageChange={handlePageChange}
           page={page}

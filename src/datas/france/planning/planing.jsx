@@ -16,26 +16,26 @@ const planingCat = [
     options: [
       {
         id: 256319551,
-        label: "Architecture, planning, statics",
+        label: "Architecture, planification, statique",
         img: architectureImg,
       },
       {
         id: 3793680715,
-        label: "Solar, photovoltaics",
+        label: "Solaire, photovoltaïque",
         img: solarImg,
       },
       {
         id: 375609626,
-        label: "Heating, ventilation, air conditioning, refrigeration",
+        label: "Chauffage, ventilation, climatisation, réfrigération",
         img: heatingImg,
       },
       {
         id: 8709238135,
-        label: "Gardener, Horticulture",
+        label: "Jardinier, Horticulture",
         img: gardenerImg,
       },
       {
-        label: "Other work",
+        label: "Autres travaux",
         img: other,
         credit: 10,
       },

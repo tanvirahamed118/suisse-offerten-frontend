@@ -88,7 +88,7 @@ function PerticipationArchived() {
             <div className="flex flex-col gap-3 items-end">
               <Link
                 to={`/search-job/${jobId}`}
-                className="bg-white py-3 w-52 rounded-md text-center text-black font-normal border border-gray-200 hover:border-gray-300 text-base"
+                className="bg-white py-3 w-52 rounded-md text-center text-black font-bold border border-gray-200 hover:border-gray-300 text-base"
               >
                 {t("view_advertisement")}
               </Link>

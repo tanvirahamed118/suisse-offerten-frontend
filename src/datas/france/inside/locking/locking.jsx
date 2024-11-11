@@ -2,19 +2,19 @@ const locking = [
   {
     id: 651345501,
     type: "checkbox",
-    label: "What is it about ?",
+    label: "De quoi s'agit-il ?",
     options: [
       {
         id: 281814497,
-        label: "Lock / locking system",
+        label: "Serrure / système de verrouillage",
       },
       {
         id: 968315362,
-        label: "Alarm system",
+        label: "Système d'alarme",
       },
       {
         id: 963603582,
-        label: "Other",
+        label: "Autre",
         credit: 10,
       },
     ],
@@ -22,45 +22,47 @@ const locking = [
   {
     id: 281814497,
     type: "checkbox",
-    label: "What needs to be done regarding the lock/locking system ?",
+    label:
+      "Que faut-il faire concernant le système de verrouillage/de verrouillage ?",
     options: [
       {
         id: 305845067,
-        label: "Substitute",
+        label: "Remplaçante",
       },
       {
         id: 984231320,
-        label: "Just install",
+        label: "Il suffit d'installer",
       },
       {
         id: 233725275,
-        label: "Repair",
+        label: "Réparation",
       },
       {
         id: 824789368,
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 305845067,
     type: "checkbox",
-    label: "Can the lock still be opened normally with an existing key ?",
+    label:
+      "La serrure peut-elle encore être ouverte normalement avec une clé existante ?",
     options: [
       {
         id: 480951931,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 998265082,
-        label: "No, it has to be drilled out",
+        label: "Non, il faut le percer",
       },
     ],
   },
   {
     id: 480951931,
     type: "checkbox",
-    label: "How many locking cylinders ?",
+    label: "Combien de cylindres de fermeture ?",
     options: [
       {
         id: 392701936,
@@ -79,7 +81,7 @@ const locking = [
       },
       {
         id: 437732148,
-        label: "4 or more",
+        label: "4 ou plus",
         credit: 20,
       },
     ],
@@ -87,7 +89,7 @@ const locking = [
   {
     id: 392701936,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -95,74 +97,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 960157259,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -170,74 +172,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 173450538,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -245,74 +247,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 437732148,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -320,67 +322,67 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
@@ -406,7 +408,7 @@ const locking = [
       },
       {
         id: 437732148,
-        label: "4 or more",
+        label: "4 ou plus",
         credit: 20,
       },
     ],
@@ -414,7 +416,7 @@ const locking = [
   {
     id: 392701936,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -422,74 +424,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 960157259,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -497,74 +499,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 173450538,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -572,74 +574,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 437732148,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -647,67 +649,67 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
@@ -734,7 +736,7 @@ const locking = [
       },
       {
         id: 437732148,
-        label: "4 or more",
+        label: "4 ou plus",
         credit: 20,
       },
     ],
@@ -742,7 +744,7 @@ const locking = [
   {
     id: 392701936,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -750,74 +752,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 960157259,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -825,74 +827,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 173450538,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -900,74 +902,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 437732148,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -975,67 +977,67 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
@@ -1061,7 +1063,7 @@ const locking = [
       },
       {
         id: 437732148,
-        label: "4 or more",
+        label: "4 ou plus",
         credit: 20,
       },
     ],
@@ -1069,7 +1071,7 @@ const locking = [
   {
     id: 392701936,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1077,74 +1079,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 960157259,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1152,74 +1154,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 173450538,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1227,74 +1229,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 437732148,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1302,82 +1304,83 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 233725275,
     type: "checkbox",
-    label: "Can the lock still be opened normally with an existing key ?",
+    label:
+      "La serrure peut-elle encore être ouverte normalement avec une clé existante ?",
     options: [
       {
         id: 480951931,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 998265082,
-        label: "No, it has to be drilled out",
+        label: "Non, il faut le percer",
       },
     ],
   },
@@ -1403,7 +1406,7 @@ const locking = [
       },
       {
         id: 437732148,
-        label: "4 or more",
+        label: "4 ou plus",
         credit: 20,
       },
     ],
@@ -1411,7 +1414,7 @@ const locking = [
   {
     id: 392701936,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1419,74 +1422,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 960157259,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1494,74 +1497,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 173450538,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1569,74 +1572,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 437732148,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1644,67 +1647,67 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
@@ -1730,7 +1733,7 @@ const locking = [
       },
       {
         id: 437732148,
-        label: "4 or more",
+        label: "4 ou plus",
         credit: 20,
       },
     ],
@@ -1738,7 +1741,7 @@ const locking = [
   {
     id: 392701936,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1746,74 +1749,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 960157259,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1821,74 +1824,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 173450538,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1896,74 +1899,74 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 437732148,
     type: "checkbox",
-    label: "How many keys do you need in total ?",
+    label: "De combien de clés avez-vous besoin au total ?",
     options: [
       {
         id: 805065718,
@@ -1971,67 +1974,67 @@ const locking = [
       },
       {
         id: 115662489,
-        label: "2 to 3",
+        label: "2 à 3",
       },
       {
         id: 824496715,
-        label: "4 to 6",
+        label: "4 à 6",
       },
       {
         id: 231242192,
-        label: "7 or more",
+        label: "7 ou plus",
       },
     ],
   },
   {
     id: 805065718,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 115662489,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 824496715,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
   {
     id: 231242192,
     type: "checkbox",
-    label: "Is the required material available ?",
+    label: "Le matériel requis est-il disponible ?",
     options: [
       {
-        label: "Yes, it already exists",
+        label: "Oui, il existe déjà",
       },
       {
-        label: "No, it still needs to be procured",
+        label: "Non, il faut encore l'acquérir",
       },
     ],
   },
@@ -2039,49 +2042,50 @@ const locking = [
     id: 968315362,
     type: "multibox",
     mainId: 493693693,
-    label: "Which functions should be available ?",
+    label: "Quelles fonctions devraient être disponibles ?",
     options: [
       {
-        label: "Motion detector",
+        label: "Détecteur de mouvement",
       },
       {
-        label: "Glass break detector",
+        label: "Détecteur de bris de verre",
       },
       {
-        label: "Fire/smoke detector",
+        label: "Détecteur d'incendie/de fumée",
       },
       {
-        label: "Video surveillance",
+        label: "Surveillance vidéo",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 493693693,
     type: "checkbox",
-    label: "How large is the area that should be covered by the alarm system ?",
+    label:
+      "Quelle est la taille de la zone qui doit être couverte par le système d'alarme ?",
     options: [
       {
-        label: "Small",
-        des: "Up to 19 m2",
+        label: "Petite",
+        des: "Jusqu'à 19 m2",
         credit: 5,
       },
       {
-        label: "Medium",
-        des: "20 to 49 m2",
+        label: "Moyen",
+        des: "20 à 49 m2",
         credit: 10,
       },
       {
-        label: "Large",
-        des: "50 to 99 m2",
+        label: "Grande",
+        des: "50 à 99 m2",
 
         credit: 15,
       },
       {
-        label: "Very large",
-        des: "100 m2 or more",
+        label: "Très grand",
+        des: "100 m2 ou plus",
         credit: 20,
       },
     ],

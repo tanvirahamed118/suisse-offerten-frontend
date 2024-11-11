@@ -130,7 +130,7 @@ const blindsRoller = [
   {
     id: 403175916,
     type: "checkbox",
-    label: "Jalousien und Fenster reinigen ?",
+    label: "Wie viele Fenster sollen geputzt werden ?",
     options: how_many_be_cleaned(502391050, 117385925, 685137619, 601813141),
   },
   {

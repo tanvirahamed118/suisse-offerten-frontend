@@ -2,41 +2,41 @@ const kitchen = [
   {
     id: 348659292,
     type: "checkbox",
-    label: "What kitchen construction services do you need ?",
+    label: "De quels services de construction de cuisine avez-vous besoin ?",
     options: [
       {
         id: 817713234,
-        label: "Assembling a kitchen",
+        label: "Assemblage d'une cuisine",
         credit: 25,
       },
       {
         id: 104535911,
-        label: "Adapt / renovate kitchen",
+        label: "Adapter/rénover la cuisine",
         credit: 20,
       },
       {
         id: 538785140,
-        label: "Kitchen planning",
+        label: "Planification de cuisine",
         credit: 35,
       },
       {
         id: 398274967,
-        label: "Kitchen furniture and worktops",
+        label: "Meubles de cuisine et plans de travail",
         credit: 20,
       },
       {
         id: 819300304,
-        label: "Kitchen appliances (oven, dishwasher, etc.)",
+        label: "Appareils de cuisine (four, lave-vaisselle, etc.)",
         credit: 10,
       },
       {
         id: 589518180,
-        label: "Minor repairs",
+        label: "Réparations mineures",
         credit: 8,
       },
       {
         id: 285903068,
-        label: "Other",
+        label: "Autre",
         credit: 5,
       },
     ],
@@ -44,15 +44,15 @@ const kitchen = [
   {
     id: 817713234,
     type: "checkbox",
-    label: "Is the kitchen already there ?",
+    label: "La cuisine est déjà là ?",
     options: [
       {
         id: 824336378,
-        label: "Yes, the kitchen is already there",
+        label: "Oui, la cuisine est déjà là",
       },
       {
         id: 208200826,
-        label: "No, the kitchen is not available yet",
+        label: "Non, la cuisine n'est pas encore disponible",
       },
     ],
   },
@@ -60,31 +60,31 @@ const kitchen = [
     id: 824336378,
     type: "multibox",
     mainId: 333233651,
-    label: "What services should be provided during assembly ?",
+    label: "Quels services doivent être fournis lors du montage ?",
     options: [
       {
-        label: "Assembly of the kitchen",
+        label: "Montage de la cuisine",
       },
       {
-        label: "Kitchen planning",
+        label: "Planification de cuisine",
       },
       {
-        label: "Adjust / assemble worktop",
+        label: "Ajuster/assembler le plan de travail",
       },
       {
-        label: "Dismantling old kitchen",
+        label: "Démontage d'une ancienne cuisine",
       },
       {
-        label: "Disposal of old kitchen",
+        label: "Élimination de l'ancienne cuisine",
       },
       {
-        label: "Transport of the kitchen",
+        label: "Transport de la cuisine",
       },
       {
-        label: "Connections electrical devices",
+        label: "Connexions d'appareils électriques",
       },
       {
-        label: "Sanitary connections",
+        label: "Raccordements sanitaires",
       },
     ],
   },
@@ -92,40 +92,40 @@ const kitchen = [
     id: 333233651,
     type: "checkbox",
     label:
-      "Are other construction works necessary (demolishing walls, laying tiles, painting, etc.) ?",
+      "D'autres travaux de construction sont-ils nécessaires (démolition de murs, pose de carrelage, peinture, etc.) ?",
     options: [
       {
         id: 337001323,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 217037466,
-        label: "No",
+        label: "Non",
       },
     ],
   },
   {
     id: 337001323,
     type: "checkbox",
-    label: "What kind of construction work is involved ?",
+    label: "De quels types de travaux de construction s'agit-il ?",
     options: [
       {
-        label: "Demolish / remove load-bearing wall",
+        label: "Démolir / enlever le mur porteur",
       },
       {
-        label: "Demolish / remove non-load-bearing wall",
+        label: "Démolir / enlever un mur non porteur",
       },
       {
-        label: "Flooring work",
+        label: "Travaux de revêtement de sol",
       },
       {
-        label: "Panel work",
+        label: "Travail du panneau",
       },
       {
-        label: "Painting work",
+        label: "Travaux de peinture",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -133,32 +133,32 @@ const kitchen = [
     id: 208200826,
     type: "multibox",
     mainId: 333233651,
-    label: "What services should be provided during assembly ?",
+    label: "Quels services doivent être fournis lors du montage ?",
     options: [
       {
         id: 333233651,
-        label: "Assembly of the kitchen",
+        label: "Montage de la cuisine",
       },
       {
-        label: "Kitchen planning",
+        label: "Planification de cuisine",
       },
       {
-        label: "Adjust / assemble worktop",
+        label: "Ajuster/assembler le plan de travail",
       },
       {
-        label: "Dismantling old kitchen",
+        label: "Démontage d'une ancienne cuisine",
       },
       {
-        label: "Disposal of old kitchen",
+        label: "Élimination de l'ancienne cuisine",
       },
       {
-        label: "Transport of the kitchen",
+        label: "Transport de la cuisine",
       },
       {
-        label: "Connections electrical devices",
+        label: "Connexions d'appareils électriques",
       },
       {
-        label: "Sanitary connections",
+        label: "Raccordements sanitaires",
       },
     ],
   },
@@ -166,15 +166,15 @@ const kitchen = [
     id: 333233651,
     type: "checkbox",
     label:
-      "Are other construction works necessary (demolishing walls, laying tiles, painting, etc.) ?",
+      "D'autres travaux de construction sont-ils nécessaires (démolition de murs, pose de carrelage, peinture, etc.) ?",
     options: [
       {
         id: 337001323,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 217037466,
-        label: "No",
+        label: "Non",
       },
     ],
   },
@@ -182,134 +182,135 @@ const kitchen = [
     id: 337001323,
     type: "multibox",
     mainId: 333233651,
-    label: "What services should be provided during assembly ?",
+    label: "Quels services doivent être fournis lors du montage ?",
     options: [
       {
-        label: "Demolish / remove load-bearing wall",
+        label: "Démolir / enlever le mur porteur",
       },
       {
-        label: "Demolish / remove non-load-bearing wall",
+        label: "Démolir / enlever un mur non porteur",
       },
       {
-        label: "Flooring work",
+        label: "Travaux de revêtement de sol",
       },
       {
-        label: "Panel work",
+        label: "Travail du panneau",
       },
       {
-        label: "Painting work",
+        label: "Travaux de peinture",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 398274967,
     type: "checkbox",
-    label: "Do you need services for kitchen furniture or worktops ?",
+    label:
+      "Avez-vous besoin de services pour des meubles de cuisine ou des plans de travail ?",
     options: [
       {
         id: 716275113,
-        label: "Kitchen furniture",
+        label: "Meubles de cuisine",
       },
       {
         id: 183478947,
-        label: "Worktops",
+        label: "Plans de travail",
       },
       {
         id: 793727632,
-        label: "Kitchen furniture and worktops",
+        label: "Meubles de cuisine et plans de travail",
       },
     ],
   },
   {
     id: 183478947,
     type: "checkbox",
-    label: "Which worktop material do you want ?",
+    label: "Quel matériau de plan de travail désirez-vous ?",
     options: [
       {
-        label: "Natural stone",
+        label: "Pierre naturelle",
       },
       {
-        label: "Artificial stone / quartz composite",
+        label: "Pierre artificielle / composite de quartz",
       },
       {
-        label: "Laminat",
+        label: "Stratifié",
       },
       {
-        label: "Ceramics / Tiles",
+        label: "Céramiques / Carreaux",
       },
       {
-        label: "Wood",
+        label: "Bois",
       },
       {
-        label: "stainless steel",
+        label: "Acier inoxydable",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
       {
-        label: "I am not sure / need advice",
+        label: "Je ne suis pas sûr/j'ai besoin de conseils",
       },
     ],
   },
   {
     id: 793727632,
     type: "checkbox",
-    label: "Which worktop material do you want ?",
+    label: "Quel matériau de plan de travail désirez-vous ?",
     options: [
       {
-        label: "Natural stone",
+        label: "Pierre naturelle",
       },
       {
-        label: "Artificial stone / quartz composite",
+        label: "Pierre artificielle / composite de quartz",
       },
       {
-        label: "Laminat",
+        label: "Stratifié",
       },
       {
-        label: "Ceramics / Tiles",
+        label: "Céramiques / Carreaux",
       },
       {
-        label: "Wood",
+        label: "Bois",
       },
       {
-        label: "stainless steel",
+        label: "Acier inoxydable",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
       {
-        label: "I am not sure / need advice",
+        label: "Je ne suis pas sûr/j'ai besoin de conseils",
       },
     ],
   },
   {
     id: 819300304,
     type: "checkbox",
-    label: "What kind of kitchen appliance is it ?",
+    label: "De quel type d'appareil de cuisine s'agit-il ?",
     options: [
       {
-        label: "oven",
+        label: "Four",
       },
       {
-        label: "Dishwasher",
+        label: "Lave-vaisselle",
       },
       {
-        label: "Refrigerator / freezer",
+        label: "Réfrigérateur / congélateur",
       },
       {
-        label: "Steam extractor",
+        label: "Extracteur de vapeur",
       },
       {
         label: "lavabo",
       },
       {
-        label: "Kitchen fittings",
+        label: "Aménagement de cuisine",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },

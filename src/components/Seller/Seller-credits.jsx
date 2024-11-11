@@ -9,10 +9,8 @@ function SellerCredits() {
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
   const id = seller?.seller?._id;
-
   const [isShow, setIsShow] = useState(false);
   const { data } = useGetOneSellerQuery(id);
-
   const { memberShip, memberShipStatus, credits, uidVerify, locationVerify } =
     data || {};
   const { plan, title, credit, currentPrice, existPrice, savePrice } =
@@ -61,23 +59,21 @@ function SellerCredits() {
                     {memberShip ? (
                       <button
                         onClick={() => setIsShow(true)}
-                        className="flex gap-1 items-center text-white text-base font-normal bg-[#111111] py-2 w-full justify-center rounded-md"
+                        className="flex gap-1 items-center text-black text-base font-bold bg-[#FFAA00] py-2 w-full justify-center rounded-md"
                       >
-                        <i className="fa-solid fa-circle-xmark text-white"></i>
                         <p>{t("close_membership")}</p>
                       </button>
                     ) : (
                       <button
                         disabled={!uidVerify || !locationVerify}
-                        className={`text-white text-base font-normal py-2 w-full justify-center rounded-md ${
+                        className={`text-black text-base font-bold py-2 w-full justify-center rounded-md ${
                           !uidVerify || !locationVerify
                             ? "bg-gray-400 cursor-not-allowed"
-                            : "bg-[#111111] cursor-pointer"
+                            : "bg-[#FFAA00] cursor-pointer"
                         }`}
                       >
                         {!uidVerify || !locationVerify ? (
                           <div className="flex gap-1 items-center justify-center">
-                            <i className="fa fa-shopping-cart text-white"></i>
                             <p>{t("member_cerdits_text_11")}</p>
                           </div>
                         ) : (
@@ -85,7 +81,6 @@ function SellerCredits() {
                             to="/seller-dashboard/membership/buy"
                             className="flex gap-1 items-center justify-center"
                           >
-                            <i className="fa fa-shopping-cart text-white"></i>
                             <p>{t("member_cerdits_text_11")}</p>
                           </Link>
                         )}
@@ -116,23 +111,23 @@ function SellerCredits() {
                   <td className="p-5 align-top text-left w-64">
                     <button
                       disabled={!uidVerify || !locationVerify}
-                      className={`text-white text-base font-normal py-2 w-full justify-center rounded-md ${
+                      className={`text-black text-base font-bold py-2 w-full justify-center rounded-md ${
                         !uidVerify || !locationVerify
                           ? "bg-gray-400 cursor-not-allowed"
-                          : "bg-[#111111] cursor-pointer"
+                          : "cursor-pointer"
                       }`}
                     >
                       {!uidVerify || !locationVerify ? (
                         <div className="flex gap-1 items-center justify-center">
-                          <i className="fa fa-shopping-cart text-white"></i>
+                          <i className="fa fa-shopping-cart text-black"></i>
                           <p>{t("member_cerdits_text_8")}</p>
                         </div>
                       ) : (
                         <Link
                           to="/seller-dashboard/seller-credit"
-                          className="flex gap-1 items-center text-white text-base font-normal bg-[#111111] py-2 w-full justify-center rounded-md"
+                          className="flex gap-1 items-center text-black text-base font-bold bg-[#FFAA00] py-2 w-full justify-center rounded-md"
                         >
-                          <i className="fa fa-shopping-cart text-white"></i>
+                          <i className="fa fa-shopping-cart text-black font-bold"></i>
                           <p>{t("member_cerdits_text_8")}</p>
                         </Link>
                       )}

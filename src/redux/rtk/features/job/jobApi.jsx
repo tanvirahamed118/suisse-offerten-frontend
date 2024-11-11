@@ -12,18 +12,14 @@ export const contactApi = apiSlice.injectEndpoints({
     }),
     getAllJob: builder.query({
       query: ({ page, limit, category, location }) => {
-        const encodedCategory = category ? encodeURIComponent(category) : "";
-
-        // Construct the query string with correct parameter joining
         const queryParams = [
-          encodedCategory && `category=${encodedCategory}`,
+          category && `category=${category}`,
           location && `location=${location}`,
           `page=${page}`,
           `limit=${limit}`,
         ]
-          .filter(Boolean) // Removes any empty parameters
-          .join("&"); // Join with '&' instead of using multiple '?'
-
+          .filter(Boolean)
+          .join("&");
         return {
           url: `/auth/job?${queryParams}`,
           method: "GET",

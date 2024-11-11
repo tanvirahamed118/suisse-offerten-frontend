@@ -10,6 +10,7 @@ function AllCeatgories() {
   const handleSelectId = (id) => {
     dispatch(choseId(id));
   };
+
   return (
     <section className="border-t border-gray-300 pt-28">
       <div className="container pb-10">
@@ -19,6 +20,7 @@ function AllCeatgories() {
         <div className="py-14">
           <div className="flex flex-col gap-5">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+              {/* outside */}
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(1004884940)}
@@ -157,6 +159,9 @@ function AllCeatgories() {
                   {t("conversion_total_renovation_extension")}
                 </p>
               </Link>
+              {/* outside */}
+
+              {/* inside */}
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(1006566593)}
@@ -201,6 +206,36 @@ function AllCeatgories() {
                   {t("bricklayer_plaster_concrete_joints")}
                 </p>
               </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1006566593)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("blinds_roller_shutters_awnings")}
+                </p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1006566593)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("conversion_total_renovation_extension")}
+                </p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1006566593)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("demolition_breakthrough_dismantling")}
+                </p>
+              </Link>
 
               <Link
                 to="/enter-request"
@@ -210,6 +245,16 @@ function AllCeatgories() {
                 <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
                 <p className="hover:underline">
                   {t("carpentry_timber_construction")}
+                </p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1006566593)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("glass_construction_glazing")}
                 </p>
               </Link>
               <Link
@@ -262,13 +307,7 @@ function AllCeatgories() {
                 <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
                 <p className="hover:underline">{t("foils_labels")}</p>
               </Link>
-              <Link
-                to="/enter-request"
-                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
-              >
-                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
-                <p className="hover:underline">{t("upholstery_saddlery")}</p>
-              </Link>
+
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(1006566593)}
@@ -285,8 +324,26 @@ function AllCeatgories() {
                 className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
               >
                 <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">{t("upholstery_saddlery")}</p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1006566593)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
                 <p className="hover:underline">
                   {t("heating_conditioning_refrigeration")}
+                </p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1006566593)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("metal_construction_metalworking_blacksmithing")}
                 </p>
               </Link>
               <Link
@@ -317,9 +374,12 @@ function AllCeatgories() {
                 <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
                 <p className="hover:underline">{t("pest_control")}</p>
               </Link>
+              {/* inside */}
+
+              {/* planing */}
               <Link
                 to="/enter-request"
-                onClick={() => handleSelectId(1006566593)}
+                onClick={() => handleSelectId(1008649487)}
                 className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
               >
                 <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
@@ -327,7 +387,36 @@ function AllCeatgories() {
                   {t("architecture_planning_statics")}
                 </p>
               </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1008649487)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">{t("solar_photovoltaics")}</p>
+              </Link>
 
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1008649487)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("heating_conditioning_refrigeration")}
+                </p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1008649487)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">{t("gardener_horticulture")}</p>
+              </Link>
+              {/* planing */}
+
+              {/* car */}
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(1009692966)}
@@ -346,6 +435,16 @@ function AllCeatgories() {
                   {t("motorcycle_vespa_scooter")}
                 </p>
               </Link>
+
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1009692966)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">{t("foils_labels")}</p>
+              </Link>
+
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(1009692966)}
@@ -366,7 +465,20 @@ function AllCeatgories() {
                   {t("transports_small_transports")}
                 </p>
               </Link>
+              {/* car */}
 
+              {/* moving */}
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(3290426656)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">{t("moving_moving_house")}</p>
+              </Link>
+              {/* moving */}
+
+              {/* cleaning */}
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(1014170444)}
@@ -385,6 +497,19 @@ function AllCeatgories() {
                 <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
                 <p className="hover:underline">{t("cleaner_other_cleaning")}</p>
               </Link>
+              {/* cleaning */}
+
+              {/* transport */}
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(6972719352)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("transports_small_transports")}
+                </p>
+              </Link>
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(6972719352)}
@@ -393,6 +518,9 @@ function AllCeatgories() {
                 <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
                 <p className="hover:underline">{t("disposal_clearing_out")}</p>
               </Link>
+              {/* transport */}
+
+              {/* other */}
               <Link
                 to="/enter-request"
                 onClick={() => handleSelectId(1017268119)}
@@ -403,6 +531,33 @@ function AllCeatgories() {
                   {t("telephone_Internet_Multimedia")}
                 </p>
               </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1017268119)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">
+                  {t("glass_construction_glazing")}
+                </p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1017268119)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">{t("foils_labels")}</p>
+              </Link>
+              <Link
+                to="/enter-request"
+                onClick={() => handleSelectId(1017268119)}
+                className="text-[#111] hover:text-[#4C6DB2] text-lg font-bold flex items-center gap-3"
+              >
+                <i className="fa-solid fa-arrow-right text-[#4C6DB2]"></i>
+                <p className="hover:underline">{t("other")}</p>
+              </Link>
+              {/* other */}
             </div>
           </div>
         </div>

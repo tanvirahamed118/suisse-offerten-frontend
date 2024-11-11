@@ -12,7 +12,6 @@ function ProfileReview() {
   const { data } = useGetOneSellerQuery(id);
   const sellerAuth = localStorage.getItem("seller");
   const seller = JSON.parse(sellerAuth);
-
   const {
     companyName,
     totalReview,
@@ -24,7 +23,9 @@ function ProfileReview() {
     reviewPercent,
     reviewRating,
   } = data || {};
+
   const floorReviewPercent = parseFloat(reviewPercent?.toFixed(1));
+
   const handleBack = () => {
     if (location.state?.from === "seller-dashboard") {
       navigate("/seller-dashboard");
@@ -61,7 +62,7 @@ function ProfileReview() {
               alt=""
               className="absolute top-0 left-0 w-full h-full object-cover rounded-md"
             />
-            <div className="bg-[#00000080] w-full flex flex-col lg:flex-row rounded-b-md rounded-l-md items-start justify-between py-4 px-5 absolute bottom-0 left-0 gap-3 md:gap-0">
+            <div className="bg-[#00000080] w-full flex flex-col lg:flex-row rounded-b-md rounded-l-md items-center justify-between py-4 px-5 absolute bottom-0 left-0 gap-3 md:gap-0">
               <div className="flex gap-5 items-center">
                 {companyLogo ? (
                   <img

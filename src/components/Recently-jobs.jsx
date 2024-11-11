@@ -12,7 +12,6 @@ function RecentlyJobs() {
 
   //   decide what to render
   let content;
-
   if (isLoading) {
     content = (
       <div className="w-full">

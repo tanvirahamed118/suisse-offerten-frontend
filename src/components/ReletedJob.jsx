@@ -68,9 +68,9 @@ function ReletedJob({ category, id }) {
                 />
               </div>
               <div className="flex flex-col gap-2 items-start w-full md:w-8/12">
-                <a href="" className="text-[#3097d1] text-base font-normal">
+                <p className="text-[#3097d1] text-base font-normal">
                   {jobTitle?.slice(0, 60)}...
-                </a>
+                </p>
                 <p className="text-[#666] text-base font-normal">
                   {jobDescription.slice(0, 100)}...
                 </p>

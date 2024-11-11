@@ -3,25 +3,25 @@ const bricklayer = [
     id: 939997513,
     type: "multibox",
     mainId: 234212078,
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Wall",
+        label: "Mur",
       },
       {
-        label: "Floor",
+        label: "Sol",
       },
       {
-        label: "Window Doors",
+        label: "Portes-fenêtres",
       },
       {
-        label: "Facade",
+        label: "Façade",
       },
       {
-        label: "Balcony / Winter Garden",
+        label: "Balcon / Jardin d'hiver",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
@@ -29,73 +29,73 @@ const bricklayer = [
     id: 234212078,
     type: "multibox",
     mainId: 448580108,
-    label: "What should be done ?",
+    label: "Que faut-il faire ?",
     options: [
       {
-        label: "Casting / concreting",
+        label: "Coulée / bétonnage",
       },
       {
-        label: "Abrasion / Plaster",
+        label: "Abrasion / Plâtre",
       },
       {
-        label: "Joints",
+        label: "Articulations",
       },
       {
-        label: "Rebuild",
+        label: "Reconstruire",
       },
       {
-        label: "Demolition / breakthrough",
+        label: "Démolition / percée",
       },
       {
-        label: "Drill",
+        label: "Percer",
       },
       {
-        label: "Repair",
+        label: "Réparation",
       },
       {
-        label: "Other",
+        label: "Autre",
       },
     ],
   },
   {
     id: 448580108,
     type: "checkbox",
-    label: "Do you have to bring the building material yourself ?",
+    label: "Devez-vous apporter vous-même le matériel de construction ?",
     options: [
       {
         id: 727159075,
-        label: "Yes",
+        label: "Oui",
       },
       {
         id: 673821165,
-        label: "No",
+        label: "Non",
       },
-      { id: 359208739, label: "I do not know" },
+      { id: 359208739, label: "Je ne sais pas" },
     ],
   },
   {
     id: 727159075,
     type: "checkbox",
-    label: "What is the approximate size of the affected area ?",
+    label: "Quelle est la taille approximative de la zone touchée ?",
     options: [
       {
-        label: "Small",
-        des: "E.g. part of a wall etc.",
+        label: "Petite",
+        des: "Par exemple une partie d’un mur, etc.",
         credit: 10,
       },
       {
-        label: "Medium",
-        des: "E.g. whole wall, room, floor etc.",
+        label: "Moyen",
+        des: "Par exemple, un mur entier, une pièce, un sol, etc.",
         credit: 15,
       },
       {
-        label: "Larg",
-        des: "E.g. garage, extension, basement, apartment etc.",
+        label: "Grande",
+        des: "Par exemple, garage, extension, sous-sol, appartement, etc.",
         credit: 25,
       },
       {
-        label: "Very larg",
-        des: "E.g. whole house etc.",
+        label: "Très grand",
+        des: "Par exemple, toute la maison, etc.",
         credit: 35,
       },
     ],
@@ -106,23 +106,23 @@ const bricklayer = [
     label: "What is the approximate size of the affected area ?",
     options: [
       {
-        label: "Small",
-        des: "E.g. part of a wall etc.",
+        label: "Petite",
+        des: "Par exemple une partie d’un mur, etc.",
         credit: 10,
       },
       {
-        label: "Medium",
-        des: "E.g. whole wall, room, floor etc.",
+        label: "Moyen",
+        des: "Par exemple, un mur entier, une pièce, un sol, etc.",
         credit: 15,
       },
       {
-        label: "Larg",
-        des: "E.g. garage, extension, basement, apartment etc.",
+        label: "Grande",
+        des: "Par exemple, garage, extension, sous-sol, appartement, etc.",
         credit: 25,
       },
       {
-        label: "Very larg",
-        des: "E.g. whole house etc.",
+        label: "Très grand",
+        des: "Par exemple, toute la maison, etc.",
         credit: 35,
       },
     ],
@@ -133,23 +133,23 @@ const bricklayer = [
     label: "What is the approximate size of the affected area ?",
     options: [
       {
-        label: "Small",
-        des: "E.g. part of a wall etc.",
+        label: "Petite",
+        des: "Par exemple une partie d’un mur, etc.",
         credit: 10,
       },
       {
-        label: "Medium",
-        des: "E.g. whole wall, room, floor etc.",
+        label: "Moyen",
+        des: "Par exemple, un mur entier, une pièce, un sol, etc.",
         credit: 15,
       },
       {
-        label: "Larg",
-        des: "E.g. garage, extension, basement, apartment etc.",
+        label: "Grande",
+        des: "Par exemple, garage, extension, sous-sol, appartement, etc.",
         credit: 25,
       },
       {
-        label: "Very larg",
-        des: "E.g. whole house etc.",
+        label: "Très grand",
+        des: "Par exemple, toute la maison, etc.",
         credit: 35,
       },
     ],

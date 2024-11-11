@@ -99,40 +99,130 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
-    id: 775228686,
+    id: 1991391364,
+    type: "inputBox",
+    mainId: 690514271,
+    label: "Wie groß ist die Dachfläche ungefähr ?",
+    options: [{ label: "m2" }],
+  },
+  {
+    id: 6957287128,
+    type: "inputBox",
+    mainId: 690514271,
+    label: "Wie groß ist die Dachfläche ungefähr ?",
+    options: [{ label: "m2" }],
+  },
+  {
+    id: 6723915385,
+    type: "inputBox",
+    mainId: 690514271,
+    label: "Wie groß ist die Dachfläche ungefähr ?",
+    options: [{ label: "m2" }],
+  },
+  {
+    id: 4850754476,
+    type: "inputBox",
+    mainId: 690514271,
+    label: "Wie groß ist die Dachfläche ungefähr ?",
+    options: [{ label: "m2" }],
+  },
+  {
+    id: 6968947188,
+    type: "inputBox",
+    mainId: 690514271,
+    label: "Wie groß ist die Dachfläche ungefähr ?",
+    options: [{ label: "m2" }],
+  },
+  {
+    id: 5176338482,
+    type: "inputBox",
+    mainId: 690514271,
+    label: "Wie groß ist die Dachfläche ungefähr ?",
+    options: [{ label: "m2" }],
+  },
+  {
+    id: 9456237818,
     type: "inputBox",
     mainId: 690514271,
     label: "Wie groß ist die Dachfläche ungefähr ?",
@@ -204,37 +294,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -313,37 +451,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -422,37 +608,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -531,37 +765,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -640,37 +922,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -749,37 +1079,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -858,37 +1236,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -967,37 +1393,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,
@@ -1076,37 +1550,85 @@ const solarPhotovoltaics = [
     id: 448976889,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 716023639,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 817738360,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 875522887,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 477007408,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 313475640,
     type: "checkbox",
     label: "Wann wurde das Gebäude gebaut ?",
-    options: what_material_roof_made_of(775228686),
+    options: what_material_roof_made_of(
+      1991391364,
+      6957287128,
+      6723915385,
+      4850754476,
+      6968947188,
+      5176338482,
+      9456237818
+    ),
   },
   {
     id: 775228686,

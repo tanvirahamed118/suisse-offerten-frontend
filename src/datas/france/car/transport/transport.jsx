@@ -4,36 +4,36 @@ const transport = [
   {
     id: 659664297,
     type: "checkbox",
-    label: "What kind of transport do you need ?",
+    label: "De quel type de transport avez-vous besoin ?",
     options: [
       {
         id: 120679971,
-        label: "Piano transport",
+        label: "Transport de pianos",
         credit: 5,
       },
       {
         id: 613357797,
-        label: "Car / motorcycle transport",
+        label: "Transport de voiture / moto",
         credit: 8,
       },
       {
         id: 760736843,
-        label: "Furniture transport",
+        label: "Transport de meubles",
         credit: 3,
       },
       {
         id: 270341747,
-        label: "Delivery and collection",
+        label: "Livraison et enlèvement",
         credit: 4,
       },
       {
         id: 709022107,
-        label: "Removal and disposal",
+        label: "Enlèvement et élimination",
         credit: 5,
       },
       {
         id: 939344768,
-        label: "Others",
+        label: "Autres",
         credit: 3,
       },
     ],
@@ -41,7 +41,7 @@ const transport = [
   {
     id: 120679971,
     type: "checkbox",
-    label: "How far is the transport ?",
+    label: "A quelle distance se trouve le transport ?",
     options: how_far_the_transport(
       399206890,
       782293155,
@@ -54,32 +54,32 @@ const transport = [
     id: 399206890,
     type: "doubleInput",
     mainId: 686111495,
-    label: "Where is the transport from and to ?",
-    options: [{ width: "From:", height: "Until:" }],
+    label: "D'où partent les transports et où vont-ils ?",
+    options: [{ width: "Depuis:", height: "Jusqu'à:" }],
   },
   {
     id: 686111495,
     type: "multibox",
     mainId: 713783365,
-    label: "Which parts are involved ?",
+    label: "Quelles sont les pièces concernées ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -89,35 +89,35 @@ const transport = [
   {
     id: 713783365,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 726372277 },
-      { label: "No", id: 640061636 },
+      { label: "Oui", id: 726372277 },
+      { label: "Non", id: 640061636 },
     ],
   },
   {
     id: 726372277,
     type: "multibox",
     mainId: 459406632,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -127,32 +127,32 @@ const transport = [
   {
     id: 459406632,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 640061636,
     type: "multibox",
     mainId: 363012132,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -162,13 +162,13 @@ const transport = [
   {
     id: 363012132,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 613357797,
     type: "checkbox",
-    label: "How far is the transport ?",
+    label: "A quelle distance se trouve le transport ?",
     options: how_far_the_transport(
       399206890,
       782293155,
@@ -181,32 +181,32 @@ const transport = [
     id: 399206890,
     type: "doubleInput",
     mainId: 686111495,
-    label: "Where is the transport from and to ?",
-    options: [{ width: "From:", height: "Until:" }],
+    label: "D'où partent les transports et où vont-ils ?",
+    options: [{ width: "Depuis:", height: "Jusqu'à:" }],
   },
   {
     id: 686111495,
     type: "multibox",
     mainId: 644565051,
-    label: "Which parts are involved ?",
+    label: "Quelles sont les pièces concernées ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -216,35 +216,35 @@ const transport = [
   {
     id: 644565051,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 726372277 },
-      { label: "No", id: 640061636 },
+      { label: "Oui", id: 726372277 },
+      { label: "Non", id: 640061636 },
     ],
   },
   {
     id: 726372277,
     type: "multibox",
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     mainId: 147386648,
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -254,32 +254,32 @@ const transport = [
   {
     id: 147386648,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 640061636,
     type: "multibox",
     mainId: 944599198,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -289,13 +289,13 @@ const transport = [
   {
     id: 944599198,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 760736843,
     type: "checkbox",
-    label: "How far is the transport ?",
+    label: "A quelle distance se trouve le transport ?",
     options: how_far_the_transport(
       399206890,
       782293155,
@@ -308,32 +308,32 @@ const transport = [
     id: 399206890,
     type: "doubleInput",
     mainId: 686111495,
-    label: "Where is the transport from and to ?",
-    options: [{ width: "From:", height: "Until:" }],
+    label: "D'où partent les transports et où vont-ils ?",
+    options: [{ width: "Depuis:", height: "Jusqu'à:" }],
   },
   {
     id: 686111495,
     type: "multibox",
     mainId: 713783365,
-    label: "Which parts are involved ?",
+    label: "Quelles sont les pièces concernées ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -343,35 +343,35 @@ const transport = [
   {
     id: 713783365,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 726372277 },
-      { label: "No", id: 640061636 },
+      { label: "Oui", id: 726372277 },
+      { label: "Non", id: 640061636 },
     ],
   },
   {
     id: 726372277,
     type: "multibox",
     mainId: 420190695,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -381,32 +381,32 @@ const transport = [
   {
     id: 420190695,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 640061636,
     type: "multibox",
     mainId: 839428265,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -416,13 +416,13 @@ const transport = [
   {
     id: 839428265,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 270341747,
     type: "checkbox",
-    label: "How far is the transport ?",
+    label: "A quelle distance se trouve le transport ?",
     options: how_far_the_transport(
       399206890,
       782293155,
@@ -435,32 +435,32 @@ const transport = [
     id: 399206890,
     type: "doubleInput",
     mainId: 686111495,
-    label: "Where is the transport from and to ?",
-    options: [{ width: "From:", height: "Until:" }],
+    label: "D'où partent les transports et où vont-ils ?",
+    options: [{ width: "Depuis:", height: "Jusqu'à:" }],
   },
   {
     id: 686111495,
     type: "multibox",
     mainId: 441617407,
-    label: "Which parts are involved ?",
+    label: "Quelles sont les pièces concernées ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -470,35 +470,35 @@ const transport = [
   {
     id: 441617407,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 726372277 },
-      { label: "No", id: 640061636 },
+      { label: "Oui", id: 726372277 },
+      { label: "Non", id: 640061636 },
     ],
   },
   {
     id: 726372277,
     type: "multibox",
     mainId: 160216962,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -508,32 +508,32 @@ const transport = [
   {
     id: 160216962,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 640061636,
     type: "multibox",
     mainId: 106299203,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -543,13 +543,13 @@ const transport = [
   {
     id: 106299203,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 709022107,
     type: "checkbox",
-    label: "How far is the transport ?",
+    label: "A quelle distance se trouve le transport ?",
     options: how_far_the_transport(
       399206890,
       782293155,
@@ -562,32 +562,32 @@ const transport = [
     id: 399206890,
     type: "doubleInput",
     mainId: 686111495,
-    label: "Where is the transport from and to ?",
-    options: [{ width: "From:", height: "Until:" }],
+    label: "D'où partent les transports et où vont-ils ?",
+    options: [{ width: "Depuis:", height: "Jusqu'à:" }],
   },
   {
     id: 686111495,
     type: "multibox",
     mainId: 819648441,
-    label: "Which parts are involved ?",
+    label: "Quelles sont les pièces concernées ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -597,35 +597,35 @@ const transport = [
   {
     id: 819648441,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 726372277 },
-      { label: "No", id: 640061636 },
+      { label: "Oui", id: 726372277 },
+      { label: "Non", id: 640061636 },
     ],
   },
   {
     id: 726372277,
     type: "multibox",
     mainId: 222000770,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -635,32 +635,32 @@ const transport = [
   {
     id: 222000770,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 640061636,
     type: "multibox",
     mainId: 293350647,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -670,13 +670,13 @@ const transport = [
   {
     id: 293350647,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 939344768,
     type: "checkbox",
-    label: "How far is the transport ?",
+    label: "A quelle distance se trouve le transport ?",
     options: how_far_the_transport(
       399206890,
       782293155,
@@ -689,32 +689,32 @@ const transport = [
     id: 399206890,
     type: "doubleInput",
     mainId: 686111495,
-    label: "Where is the transport from and to ?",
-    options: [{ width: "From:", height: "Until:" }],
+    label: "D'où partent les transports et où vont-ils ?",
+    options: [{ width: "Depuis:", height: "Jusqu'à:" }],
   },
   {
     id: 686111495,
     type: "multibox",
     mainId: 441568963,
-    label: "Which parts are involved ?",
+    label: "Quelles sont les pièces concernées ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -724,35 +724,35 @@ const transport = [
   {
     id: 441568963,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up location ?",
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
     options: [
-      { label: "Yes", id: 726372277 },
-      { label: "No", id: 640061636 },
+      { label: "Oui", id: 726372277 },
+      { label: "Non", id: 640061636 },
     ],
   },
   {
     id: 726372277,
     type: "multibox",
     mainId: 335344367,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -762,32 +762,32 @@ const transport = [
   {
     id: 335344367,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
   {
     id: 640061636,
     type: "multibox",
     mainId: 914344424,
-    label: "On which floors is the destination ?",
+    label: "A quels étages se trouve la destination ?",
     options: [
       {
-        label: "cellar",
+        label: "Cave",
       },
       {
-        label: "Ground floor",
+        label: "Rez-de-chaussée",
       },
       {
-        label: "1st floor",
+        label: "1er étage",
       },
       {
-        label: "2nd floor",
+        label: "2e étage",
       },
       {
-        label: "3rd floor",
+        label: "3ème étage",
       },
       {
-        label: "4th floor",
+        label: "4ème étage",
       },
       {
         label: "5th floor or higher",
@@ -797,8 +797,8 @@ const transport = [
   {
     id: 914344424,
     type: "checkbox",
-    label: "Is there a lift available at the pick-up destination ?",
-    options: [{ label: "Yes" }, { label: "No" }],
+    label: "Y a-t-il un ascenseur disponible au lieu de prise en charge ?",
+    options: [{ label: "Oui" }, { label: "Non" }],
   },
 ];
 

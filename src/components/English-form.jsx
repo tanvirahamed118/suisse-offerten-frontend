@@ -78,7 +78,7 @@ function EnglishForm() {
     lastname: "",
     phone: "",
   });
-  console.log("enform:", formData);
+
   useStepManager(steps, setSteps, currentQuestion, formData);
 
   const validateEmail = (email) => {
@@ -136,7 +136,6 @@ function EnglishForm() {
           let updatedJobSubCategories = [...prevFormData.jobSubCategories];
           if (previousQuestion.type === "radio") {
             updatedJobSubCategories.pop();
-            // Remove the last item added
           }
           const updatedCredits =
             prevFormData.credits > 0 ? 0 : prevFormData.credits;
@@ -300,7 +299,7 @@ function EnglishForm() {
           <div className="w-full">
             <div className="w-full h-4 bg-[#d4dbe0] rounded-md overflow-hidden mb-5">
               <div
-                className="bg-[#3097d1] h-full transition-all rounded-md duration-300 ease-in-out"
+                className="bg-[#FFAA00] h-full transition-all rounded-md duration-300 ease-in-out"
                 style={{ width: `${percentage.toFixed(0)}%` }}
               ></div>
             </div>
