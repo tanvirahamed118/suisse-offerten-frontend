@@ -282,10 +282,10 @@ input::-webkit-inner-spin-button {
     background-size: 2%;
   }
   .is-post-invalid {
-    background-size: 5%;
+    background-size: 7%;
   }
   .is-post-valid {
-    background-size: 5%;
+    background-size: 7%;
   }
   .is-email-invalid {
     background-size: 2%;
