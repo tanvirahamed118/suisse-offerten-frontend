@@ -17,7 +17,7 @@ function SubscribeTab() {
       {!seller?.sellerToken && (
         <Link
           to="/enter-request"
-          className="bg-[#FFAA00] text-black font-semibold rounded-2xl hover:bg-[#ffaa00e5] text-xl md:text-3xl py-3 md:py-6 px-10 text-center"
+          className="bg-[#FFAA00] text-black font-semibold rounded-2xl hover:bg-[#ffaa00e5] text-base md:text-3xl py-2 md:py-6 px-10 text-center"
         >
           {t("describe_now_your_project")}
         </Link>

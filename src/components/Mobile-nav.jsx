@@ -13,7 +13,18 @@ function MobileNav({
   headerlogo,
 }) {
   const { t, i18n } = useTranslation();
-
+  const handleLanguageChange = (e) => {
+    const lng = e.target.value;
+    if (lng === "en") {
+      i18n.changeLanguage(lng);
+    }
+    if (lng === "gr") {
+      i18n.changeLanguage(lng);
+    }
+    if (lng === "fr") {
+      i18n.changeLanguage(lng);
+    }
+  };
   return (
     <section
       className={
@@ -181,6 +192,18 @@ function MobileNav({
                 </li>
               </>
             )}
+            <li className="w-8/12">
+              <select
+                name=""
+                id=""
+                onChange={handleLanguageChange}
+                className="border border-gray-200 px-1 py-1 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-2 md:px-4 w-full"
+              >
+                <option value="gr">German</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+              </select>
+            </li>
           </ul>
         </div>
       </div>

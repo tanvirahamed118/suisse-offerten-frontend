@@ -288,7 +288,7 @@ function EnterRequest() {
 
   return (
     <section>
-      <div className="w-11/12 xl:w-9/12 2xl:w-6/12 m-auto py-10">
+      <div className="w-[96%] xl:w-9/12 2xl:w-6/12 m-auto py-10">
         <div className="flex flex-col gap-2">
           <h2 className="text-black text-md md:text-xl font-bold">
             {t("enter_your_request")}
@@ -308,13 +308,13 @@ function EnterRequest() {
             <div>
               <form
                 onSubmit={(e) => e.preventDefault()}
-                className="bg-[#F5F8FA] border border-gray-300 p-5"
+                className="bg-[#F5F8FA] border border-gray-300 p-3 sm:p-5 box-border"
               >
                 <div>
                   <div
                     className={
                       currentQuestion?.type === "radio"
-                        ? "grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5"
+                        ? "grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5 py-5"
                         : currentQuestion?.type === "checkbox"
                         ? "flex flex-col gap-3 py-5"
                         : currentQuestion?.type === "multibox"

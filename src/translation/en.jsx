@@ -27,6 +27,11 @@ const en = {
   // footer menu
 
   // seller dasgboard
+  check_inbox: "Check your email inbox.",
+  code_send: "We have sent you a code.",
+  confirm_req: "Click the link or enter the code to confirm your request.",
+  verify_notify:
+    "Did not receive an email? Check your spam folder or write to us at suisseofferten@gmail.com",
   form_post_code: "Postal code",
   image_mainnote:
     "Select your files here to click browse file (Only Approve JPG, JPEG, PNG Format)",

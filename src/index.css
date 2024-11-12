@@ -95,61 +95,61 @@ body {
   background-image: url("./assets/images/download.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-num-not-valid {
   background-image: url("./assets/images/check.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-req-valid {
   background-image: url("./assets/images/download.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-post-valid {
   background-image: url("./assets/images/download.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 5%;
+  background-size: 8%;
 }
 .is-post-invalid {
   background-image: url("./assets/images/check.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 5%;
+  background-size: 8%;
 }
 .is-email-valid {
   background-image: url("./assets/images/download.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-email-invalid {
   background-image: url("./assets/images/check.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-req-invalid {
   background-image: url("./assets/images/check.svg");
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-other-invalid {
   background-image: url("./assets/images/check.svg");
   background-repeat: no-repeat;
   background-position: 99% 5%;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-other-valid {
   background-image: url("./assets/images/download.svg");
   background-repeat: no-repeat;
   background-position: 99% 5%;
-  background-size: 2%;
+  background-size: 4%;
 }
 .is-invalid-codes {
   background-image: url("./assets/images/download.svg");
@@ -265,6 +265,39 @@ input::-webkit-inner-spin-button {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .is-req-invalid {
+    background-size: 2%;
+  }
+  .is-req-valid {
+    background-size: 2%;
+  }
+  .is-other-invalid {
+    background-size: 2%;
+  }
+  .is-other-valid {
+    background-size: 2%;
+  }
+  .is-post-invalid {
+    background-size: 5%;
+  }
+  .is-post-valid {
+    background-size: 5%;
+  }
+  .is-email-invalid {
+    background-size: 2%;
+  }
+  .is-email-valid {
+    background-size: 2%;
+  }
+  .is-num-not-valid {
+    background-size: 2%;
+  }
+  .is-num-valid {
+    background-size: 2%;
   }
 }
 

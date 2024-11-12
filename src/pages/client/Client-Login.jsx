@@ -45,9 +45,9 @@ function ClientLogin() {
   }, [isError, isSuccess, data, error, navigate]);
 
   return (
-    <section className="w-10/12 lg:w-[400px] xl:w-[500px]">
+    <section className="w-[96%] lg:w-[400px] xl:w-[500px]">
       <div className="w-full">
-        <div className="border p-10 border-gray-400 rounded-xl bg-[#EBEBEB] h-auto m-auto my-10 flex flex-col gap-5">
+        <div className="border p-5 md:p-10 border-gray-400 rounded-xl bg-[#EBEBEB] h-auto my-5 md:my-10 flex flex-col gap-5">
           <h2 className="text-black text-xl font-bold text-center border-b-2 pb-3 border-gray-600">
             {t("login_suisse_offerten_client")}
           </h2>

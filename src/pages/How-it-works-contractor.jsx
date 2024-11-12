@@ -17,7 +17,7 @@ function HowItWorksContractor() {
       <div className="pt-10">
         <div className="flex flex-col gap-5">
           <div className="bg-white py-20 flex flex-col gap-20 container">
-            <h2 className="text-black text-5xl font-normal text-center">
+            <h2 className="text-black text-3xl md:text-5xl font-normal text-center">
               {t("contractor_title")}
             </h2>
             <h2 className="text-black text-3xl font-semibold underline">

@@ -12,8 +12,8 @@ function AllCeatgories() {
   };
 
   return (
-    <section className="border-t border-gray-300 pt-28">
-      <div className="container pb-10">
+    <section className="border-t border-gray-300 pt-10 md:pt-28">
+      <div className="container pb-0 md:pb-10">
         <h2 className="text-black text-2xl font-bold text-center md:text-4xl">
           {t("all_categories")}
         </h2>

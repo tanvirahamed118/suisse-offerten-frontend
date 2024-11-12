@@ -37,7 +37,7 @@ function OrderBook() {
               )}
             </div>
           </div>
-          <div className="flex gap-5 lg:gap-10 items-center mt-5">
+          <div className="flex md:flex-row flex-col gap-1 md:gap-5 lg:gap-10 items-center mt-5">
             <span className="flex gap-2 items-center">
               <i className="fa-solid fa-check text-[#FFAA00] text-xl"></i>
               <h2 className="text-black font-black text-base">

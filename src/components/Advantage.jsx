@@ -67,7 +67,7 @@ function Advantage() {
           {!seller?.sellerToken && (
             <Link
               to="/enter-request"
-              className="bg-[#FFAA00] text-black font-semibold rounded-2xl hover:bg-[#ffaa00e5] text-xl md:text-3xl py-3 md:py-6 w-9/12 md:w-5/12 m-auto text-center"
+              className="bg-[#FFAA00] text-black font-semibold rounded-2xl hover:bg-[#ffaa00e5] text-base md:text-3xl py-3 md:py-6 w-10/12 md:w-5/12 m-auto text-center"
             >
               {t("get_your_offer")}
             </Link>

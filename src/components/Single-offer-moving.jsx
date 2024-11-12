@@ -236,7 +236,7 @@ function SingleOfferMoving({ data, isLoading, isSuccess }) {
                       {t("participate_tender")}
                     </Link>
                   ) : (
-                    <div className="bg-[#f5f8fa] border border-gray-200 px-10 py-4 rounded-lg text-black text-base font-normal text-center cursor-not-allowed block">
+                    <div className="bg-[#f5f8fa] border border-gray-200 px-10 py-2 md:py-4 rounded-lg text-black text-sm md:text-base font-normal text-center cursor-not-allowed block">
                       {t("participate_tender")}
                     </div>
                   )}

@@ -8,7 +8,7 @@ function About() {
       <div className="container py-5">
         <div>
           <div>
-            <h2 className="text-5xl text-black font-normal text-center py-10">
+            <h2 className="text-2xl md:text-5xl text-black font-normal text-center py-10">
               <span className="text-red-500">
                 {t("about_title_span") + " "}
               </span>

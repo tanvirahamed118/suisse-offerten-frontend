@@ -27,6 +27,12 @@ const en = {
   // footer menu
 
   // seller dasgboard
+  check_inbox: "Vérifiez votre boîte de réception.",
+  code_send: "Nous vous avons envoyé un code.",
+  confirm_req:
+    "Cliquez sur le lien ou entrez le code pour confirmer votre demande.",
+  verify_notify:
+    "Vous n'avez pas reçu d'e-mail ? Vérifiez votre dossier spam ou écrivez-nous à suisseofferten@gmail.com",
   form_post_code: "Code Postal",
   image_mainnote:
     "Sélectionnez vos fichiers ici pour cliquer sur Parcourir le fichier (approuver uniquement les formats JPG, JPEG, PNG)",

@@ -51,7 +51,7 @@ function JobDescription({ data }) {
               <img
                 src={selectedImage}
                 alt="Full Size"
-                className="w-full xl:w-[1000px] h-[600px] object-cover rounded-md"
+                className="w-full xl:w-[1000px] h-full lg:h-[600px] object-cover rounded-md"
               />
               <button
                 onClick={handleClosePopup}

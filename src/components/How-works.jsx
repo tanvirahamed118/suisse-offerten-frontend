@@ -10,7 +10,7 @@ function HowWorks() {
   const seller = JSON.parse(sellerAuth);
 
   return (
-    <section className="bg-white py-20 mb-10">
+    <section className="bg-white py-10 md:py-20 mb-0 md:mb-10">
       <div className="py-10 m-auto w-full xl:w-[1230px] flex flex-col gap-20 items-center">
         <h2 className="text-xl text-black font-bold text-center md:text-5xl">
           {t("how_works")}
@@ -53,7 +53,7 @@ function HowWorks() {
         {!seller?.sellerToken && (
           <Link
             to="/enter-request"
-            className="bg-[#E9E9E9] text-black font-semibold text-xl md:text-3xl py-4 px-10"
+            className="bg-[#E9E9E9] text-black font-semibold text-base md:text-3xl md:py-4 py-2 px-10 rounded-md"
           >
             {t("enter_now_your_request")}
           </Link>

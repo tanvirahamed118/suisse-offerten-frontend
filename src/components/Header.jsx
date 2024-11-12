@@ -63,18 +63,17 @@ function Header() {
           <i className="fa-solid fa-bars"></i>
         </button>
         <Link to="/">
-          <img src={Logo} alt="" className="w-48 sm:w-60 rounded-lg" />
+          <img src={Logo} alt="" className="w-40 sm:w-60 rounded-lg" />
         </Link>
-        <select
-          name=""
-          id=""
-          onChange={handleLanguageChange}
-          className="border border-gray-200 px-1 py-1 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-2 md:px-4"
-        >
-          <option value="gr">German</option>
-          <option value="en">English</option>
-          <option value="fr">French</option>
-        </select>
+        {seller?.sellerToken ? (
+          <Link to="/seller-dashboard">
+            <i className="fa-solid fa-user"></i>
+          </Link>
+        ) : client?.clientToken ? (
+          <Link to="/client-dashboard">
+            <i className="fa-solid fa-user"></i>
+          </Link>
+        ) : null}
       </div>
       <div
         className={

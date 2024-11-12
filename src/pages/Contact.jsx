@@ -49,10 +49,9 @@ function Contact() {
   return (
     <section>
       <div className="container py-5">
-        <div className="md:w-7/12 m-auto w-full py-20">
-          <h1 className="text-black text-5xl font-semibold text-center">
+        <div className="md:w-7/12 m-auto w-full py-5 md:py-20">
+          <h1 className="text-black text-2xl lg:text-5xl font-semibold text-center">
             {t("contact_title")}
-            {/* {t("")} */}
           </h1>
           <p className="text-black text-base font-normal mt-20 ">
             {t("contact_text_1")}
@@ -173,11 +172,11 @@ function Contact() {
           </h2>
         </div>
       </div>
-      <div>
+      <div className="h-[200px] lg:h-[600px]">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2711.7377324281515!2d7.557824876821235!3d47.182571317162086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e2839ab349a3d%3A0x80d02d8ecbdf0883!2sHauptstrasse%2022%2C%204562%20Biberist%2C%20Switzerland!5e0!3m2!1sen!2sbd!4v1721985393844!5m2!1sen!2sbd"
           width="100%"
-          height="600"
+          height="100%"
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

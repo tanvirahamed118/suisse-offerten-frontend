@@ -8,7 +8,7 @@ function Imprint() {
       <div className="container py-5">
         <div className="py-10">
           <div>
-            <h2 className="text-5xl text-black font-normal text-center capitalize mb-10">
+            <h2 className="text-3xl md:text-5xl text-black font-normal text-center capitalize mb-10">
               {t("imprint_title")}
             </h2>
             <h3 className="text-xl font-bold text-[#111]">

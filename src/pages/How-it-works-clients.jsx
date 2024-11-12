@@ -15,8 +15,8 @@ function HowItWorksClient() {
     <section>
       <div className="pt-10">
         <div className="flex flex-col gap-5">
-          <div className="bg-white py-20 flex flex-col gap-20 container">
-            <h2 className="text-black text-5xl font-normal text-center">
+          <div className="bg-white py-5 md:py-20 flex flex-col gap-20 container">
+            <h2 className="text-black text-3xl md:text-5xl font-normal text-center">
               {t("client_title")}
             </h2>
             <h2 className="text-black text-3xl font-semibold underline">

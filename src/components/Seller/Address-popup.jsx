@@ -87,14 +87,14 @@ function AddressPopup({ setIsShow, data, isShow }) {
 
   return (
     <section>
-      <div className="py-10 flex justify-center items-center w-full h-screen absolute bg-[#000000e1] top-0 right-0">
+      <div className="py-10 flex justify-center items-center w-full h-full absolute bg-[#000000e1] top-0 right-0 overflow-y-scroll">
         <div
           className={`relative w-[95%] m-auto md:w-[600px] h-auto rounded-md  bg-white p-5 ${
             isShow ? "zoom-animation" : ""
           }`}
         >
           <div>
-            <h2 className="text-xl font-bold text-black border-b border-gray-300 pb-5 mb-5">
+            <h2 className="text-xl font-bold text-black border-b border-gray-300 py-8 mb-5">
               {t("update_address")}
             </h2>
           </div>
@@ -220,7 +220,7 @@ function AddressPopup({ setIsShow, data, isShow }) {
           </div>
           <i
             onClick={() => setIsShow(false)}
-            className="fa-solid fa-xmark absolute top-5 right-5 text-black border border-gray-300 p-2 rounded-full cursor-pointer hover:bg-gray-300"
+            className="fa-solid fa-xmark absolute top-2 right-2 text-black border border-gray-300 p-2 rounded-full cursor-pointer hover:bg-gray-300"
           ></i>
         </div>
       </div>

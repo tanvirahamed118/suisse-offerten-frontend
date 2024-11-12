@@ -3,8 +3,10 @@ import verify from "../../assets/verify-email.png";
 import { useVerifyClientMutation } from "../../redux/rtk/features/auth/client/authApi";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function ClientVerify() {
+  const { t } = useTranslation();
   const [code, setCode] = useState(["", "", "", "", "", ""]);
   const inputsRef = useRef([]);
   const [verifyClient, { data, isSuccess, isError, error, isLoading }] =
@@ -50,7 +52,7 @@ function ClientVerify() {
         duration: 800,
       });
       setTimeout(() => {
-        navigate("/client-login");
+        navigate("/auth-login");
       }, 1500);
     }
     if (isError) {
@@ -63,13 +65,13 @@ function ClientVerify() {
       <div className="flex flex-col gap-2 items-center justify-center w-11/12 md:w-4/12 border border-gray-300 p-10 rounded-md">
         <img src={verify} alt="" className="w-24 h-auto" />
         <h2 className="text-2xl font-normal text-[#111111]">
-          Check your email inbox.
+          {t("check_inbox")}
         </h2>
         <p className="text-base font-normal text-[#111111] pt-5">
-          We have sent you a code.
+          {t("code_send")}
         </p>
         <p className="text-base font-normal text-[#111111] p-0">
-          Click the link or enter the code to confirm your request.
+          {t("confirm_req")}
         </p>
         <form className="flex gap-2 items-center verify-input">
           {code.map((digit, index) => (
@@ -104,8 +106,7 @@ function ClientVerify() {
           )}
         </div>
         <p className="text-base font-normal text-[#111111] text-center pt-10">
-          Did not receive an email? Check your spam folder or write to us at
-          suisseofferten@gmail.com
+          {t("verify_notify")}
         </p>
       </div>
       <Toaster />
