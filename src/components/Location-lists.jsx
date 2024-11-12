@@ -44,7 +44,7 @@ function LocationLists() {
     content = <p>{error}</p>;
   }
   if (!isLoading && !isError && data?.sellers?.length === 0) {
-    content = <p>No Data Found!</p>;
+    content = <p>{t("no_data_found")}</p>;
   }
   if (!isLoading && !isError && isSuccess && data?.sellers?.length > 0) {
     content = data?.sellers?.map((item) => {
@@ -168,7 +168,7 @@ function LocationLists() {
           <div className="w-full">
             <div className="flex flex-col gap-5">{content}</div>
             <h2 className="text-black text-base font-normal py-3">
-              {t("total_orders")}: {totalItems}
+              {t("total_locations")}: {totalItems}
             </h2>
             {totalItems > limit && (
               <Pagination

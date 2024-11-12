@@ -530,6 +530,7 @@ const sw = {
   your_category: "Ihre Kategorie:",
   your_location: "Ihr Standort:",
   total_orders: "Arbeitsplätze insgesamt",
+  total_locations: "Gesamtunternehmen",
   next: "Nächste",
   back: "zurück",
   select_option: "Wählen Sie eine Option",

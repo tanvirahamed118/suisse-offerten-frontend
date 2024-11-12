@@ -534,6 +534,7 @@ const en = {
   your_category: "Votre catégorie :",
   your_location: "Votre emplacement:",
   total_orders: "Nombre total d'emplois",
+  total_locations: "Entreprise totale",
   next: "Suivant",
   back: "Précédent",
   select_option: "Sélectionnez une option",
