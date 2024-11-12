@@ -524,6 +524,7 @@ const en = {
   fill_order_des_2: "Vous êtes Artisan et pas encore inscrit ?",
   learn_more: "Apprendre encore plus",
   on_this_page_craftsmen_the_area: "Rechercher des emplois dans :",
+  location_filter_title: "Rechercher une entreprise:",
   seek: "Chercher",
   active_order_only: "Commande active uniquement",
   order_only_des:

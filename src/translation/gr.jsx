@@ -520,6 +520,7 @@ const sw = {
   fill_order_des_2: "Du bist Handwerker/in und noch nicht registriert?",
   learn_more: "Erfahren Sie mehr",
   on_this_page_craftsmen_the_area: "Suche nach Jobs in:",
+  location_filter_title: "Suche nach Unternehmen:",
   seek: "Suchen",
   active_order_only: "Nur aktive Bestellung",
   order_only_des:

@@ -28,7 +28,7 @@ function LocationFilter() {
     <section className="w-full lg:w-3/12">
       <div className="md:py-6 py-2">
         <h2 className="text-black font-bold text-4xl md:text-2xl md:block hidden">
-          {t("on_this_page_craftsmen_the_area")}
+          {t("location_filter_title")}
         </h2>
 
         <form action="" className="py-5 flex flex-col gap-2 w-full">

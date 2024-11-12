@@ -466,6 +466,7 @@ const en = {
   fill_order_des_2: "You are Handworker and not yet registered ?",
   learn_more: "Register Now",
   on_this_page_craftsmen_the_area: "Search for jobs in:",
+  location_filter_title: "Search for company:",
   seek: "Seek",
   active_order_only: "Active order only",
   order_only_des:
