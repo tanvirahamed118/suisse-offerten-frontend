@@ -10,7 +10,7 @@ const roomOne = [
       },
       {
         id: 2565858296,
-        label: "Une voiture pleine",
+        label: "Une charge de transport",
       },
       {
         id: 2977804117,

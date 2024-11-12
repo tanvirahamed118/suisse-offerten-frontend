@@ -12,7 +12,7 @@ const en = {
 
   // enter requests
   submit: "Soumettre",
-  further: "Plus loin",
+  further: "Suivant",
   // enter requests
 
   // footer menu
@@ -533,8 +533,8 @@ const en = {
   your_category: "Votre catégorie :",
   your_location: "Votre emplacement:",
   total_orders: "Nombre total d'emplois",
-  next: "Suivante",
-  back: "dos",
+  next: "Suivant",
+  back: "Précédent",
   select_option: "Sélectionnez une option",
   //   search job page
 

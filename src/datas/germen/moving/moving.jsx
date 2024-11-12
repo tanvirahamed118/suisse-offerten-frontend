@@ -159,17 +159,17 @@ const movingCat = [
         credit: 5,
       },
       {
-        id: 9185699424,
+        id: 8222222426,
         label: "2 bis 3,5 Zimmer",
         credit: 8,
       },
       {
-        id: 9185699424,
+        id: 2162331403,
         label: "4 bis 5,5 Zimmer",
         credit: 13,
       },
       {
-        id: 9185699424,
+        id: 6018510549,
         label: "6 oder mehr Zimmer",
         credit: 25,
       },

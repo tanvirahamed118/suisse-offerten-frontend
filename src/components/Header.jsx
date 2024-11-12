@@ -94,7 +94,7 @@ function Header() {
               <img
                 src={Logo}
                 alt=""
-                className={i18n.languages[0] === "fr" ? "w-60" : "w-40 xl:w-60"}
+                className={i18n.languages[0] === "fr" ? "w-64" : "w-40 xl:w-64"}
               />
             </Link>
             <div className="">

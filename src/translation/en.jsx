@@ -474,8 +474,8 @@ const en = {
   your_category: "Your Category:",
   your_location: "Your Location:",
   total_orders: "Total Jobs",
-  next: "Next",
-  back: "back",
+  next: "Following",
+  back: "Previous",
   select_option: "Select a option",
   //   search job page
 

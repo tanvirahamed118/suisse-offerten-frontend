@@ -306,13 +306,13 @@ function EnglishForm() {
             <div>
               <form
                 onSubmit={(e) => e.preventDefault()}
-                className="bg-[#F5F8FA] border border-gray-300 p-5"
+                className="bg-[#F5F8FA] border border-gray-300 p-3 sm:p-5 box-border"
               >
                 <div>
                   <div
                     className={
                       currentQuestion?.type === "radio"
-                        ? "grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5 py-5"
+                        ? "grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-5 py-5"
                         : currentQuestion?.type === "checkbox"
                         ? "flex flex-col gap-3 py-5"
                         : currentQuestion?.type === "multibox"
