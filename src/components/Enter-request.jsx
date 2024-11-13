@@ -247,7 +247,7 @@ function EnterRequest() {
     setIsPostalCodeValid,
     formData
   );
-  console.log(currentQuestion.id);
+
   useEffect(() => {
     if (currentQuestion?.type === "emailbox") {
       setFinalStep(true);
