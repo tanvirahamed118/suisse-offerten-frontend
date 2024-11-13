@@ -63,6 +63,7 @@ const useQuestionChange = (
             ?.options.find((option) => option.id === state.id);
           if (filteredData) {
             updatedFormData.jobCategoryCode = filteredData.label || "";
+            updatedFormData.jobCategoryId = filteredData.mainCatId || "";
           }
         }
         return updatedFormData;
