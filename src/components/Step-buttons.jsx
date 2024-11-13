@@ -90,7 +90,7 @@ function StepButtons({
         <button
           className={
             finalStep
-              ? "bg-[#ff7100] text-white font-bold rounded-md hover:bg-[#F25900] text-sm md:text-base py-2 md:py-3 px-5 flex gap-2 items-center cursor-pointer"
+              ? "bg-[#FFAA00] text-black font-bold rounded-md text-sm md:text-base py-2 md:py-3 px-5 flex gap-2 items-center cursor-pointer"
               : "bg-[#cccccc] text-[#666666] font-bold rounded-md text-sm md:text-base py-2 md:py-3 px-5 flex gap-2 items-center cursor-not-allowed"
           }
           onClick={handleSubmit}
