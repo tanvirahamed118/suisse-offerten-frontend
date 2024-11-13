@@ -25,11 +25,12 @@ const useQuestionChange = (
             .join("_");
           updatedFormData.jobCategoryCode = updatevalue;
           updatedFormData.jobCategoryId = code;
-          if (value === "Moving, moving house") {
+          if (code === 3777511571) {
             const updatevalue = value
               .split(/\s*[,.&\s]+\s*/g)
               .filter(Boolean)
               .join("_");
+
             updatedFormData.jobSubCategories = [
               ...prevFormData.jobSubCategories,
               updatevalue,
@@ -61,8 +62,22 @@ const useQuestionChange = (
           const filteredData = questions
             ?.find((item) => item.label === "main_services_categories")
             ?.options.find((option) => option.id === state.id);
+          const updatevalue = filteredData.label
+            .split(/\s*[,.&\s]+\s*/g)
+            .filter(Boolean)
+            .join("_");
+          if (filteredData.mainCatId === 3777511571) {
+            const updateSubvalue = filteredData.label
+              .split(/\s*[,.&\s]+\s*/g)
+              .filter(Boolean)
+              .join("_");
+            updatedFormData.jobSubCategories = [
+              ...prevFormData.jobSubCategories,
+              updateSubvalue,
+            ];
+          }
           if (filteredData) {
-            updatedFormData.jobCategoryCode = filteredData.label || "";
+            updatedFormData.jobCategoryCode = updatevalue || "";
             updatedFormData.jobCategoryId = filteredData.mainCatId || "";
           }
         }
