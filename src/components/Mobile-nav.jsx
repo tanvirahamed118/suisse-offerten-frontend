@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/Logo-text.png";
+import Logo from "../assets/suisse-offerten.svg";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
 

@@ -215,7 +215,7 @@ function ClientPersonalInfo() {
             </label>
             <span>
               <input
-                type="tel"
+                type="number"
                 placeholder={placeholder}
                 className={
                   tel.length > 8

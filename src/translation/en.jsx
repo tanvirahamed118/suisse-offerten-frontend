@@ -127,7 +127,7 @@ const en = {
   membership_purchase_notify_fail:
     "You have failed to purchase membership. Please try again and make another payment.",
   membership_credit_fail:
-    "Your payment is not complete. Once it is complete, you have received credits.",
+    "Your payment is not complete. Once it is complete, you have received membership and credits.",
   membership_credit_fail_notify:
     "You have failed to purchase credits. Please try again and make another purchase credits.",
   you_have_chose: "You have chosen",
@@ -217,6 +217,8 @@ const en = {
     "If you don't receive any email. Please do not leave or reload this page. You can resend the OTP after 2 minute letter.",
   reset_otp: "Resend Otp",
   recive_email: "Receive email?, Check OTP",
+  member_purches_notify:
+    "Once you click on the Choose button, you are redirected to the payment page. If you do not pay and close the payment tab, you are not eligible to purchase again, and you need to contact the support team.",
   // seller dasgboard
 
   // dashboard menu
@@ -418,6 +420,35 @@ const en = {
     "Services from us are trusted, reliable and professional.",
   category_text_ten: "Send a request",
   // main category
+
+  //  categories
+  inside_the_house: "Inside the house",
+  fireplace_chimney: "Fireplace, stove, chimney",
+  house_technic: "Building services",
+  heating_ventilation: "Heating, ventilation, air conditioning, cooling",
+  plumbing_work_processing: "Plumbing work, sheet metal transformation",
+  metal_construction_wood_construction:
+    "Metal construction and wood construction",
+  metal_construction_blacksmith_shop:
+    "Metal construction, metalworking, forging",
+  outside_the_house: "Outside the house",
+  excavation_pit_earthworks_foundation: "Excavations, earthworks, foundations",
+  isolation_sealing_insulation: "Insulation, sealing, insulation",
+  paving_work_paths_streets: "Paving works, paths, streets",
+  bricklayers_plastering_concrete_joints:
+    "Masons, plastering, concrete, joints",
+  scaffolding_scaffolding: "Scaffolding, scaffolding",
+  windows_doors: "Windows, doors",
+  conversion_total_renovation: "Transformation & total renovation",
+  cleaning_transport: "Cleaning & transport",
+  cleaning_staff_other_cleaning: "Cleaning staff, other cleaning services",
+  transport_small_transport: "Transport, small transport",
+  motor_vehicle: "Motor vehicle",
+  consulting_Architecture: "Consulting & Architecture",
+  telephone_Internet: "Telephone and Internet",
+  renewable_energy: "Renewable energy",
+  other_work: "Other work",
+  //  categories
 
   // home page
   are_looking_craftsman: "Are you looking for a craftsman?",

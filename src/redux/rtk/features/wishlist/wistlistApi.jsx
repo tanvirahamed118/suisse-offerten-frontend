@@ -1,21 +1,21 @@
 import { apiSlice } from "../api/apiSlice";
 
 export const wishlistApi = apiSlice.injectEndpoints({
-  tagTypes: ["update"],
+  tagTypes: ["wishlist"],
   endpoints: (builder) => ({
     getOneWishlist: builder.query({
       query: ({ saverId, jobId }) => ({
         url: `/auth/wishlist/one?saverId=${saverId}&jobId=${jobId}`,
         method: "GET",
       }),
-      providesTags: ["update"],
+      providesTags: ["wishlist"],
     }),
     getAllWishlist: builder.query({
       query: ({ page, limit, sellerId }) => ({
         url: `/auth/wishlist?sellerId=${sellerId}&page=${page}&limit=${limit}`,
         method: "GET",
       }),
-      providesTags: ["update"],
+      providesTags: ["wishlist"],
     }),
 
     createWishlist: builder.mutation({
@@ -24,21 +24,21 @@ export const wishlistApi = apiSlice.injectEndpoints({
         method: "POST",
         body: formData,
       }),
-      invalidatesTags: ["update"],
+      invalidatesTags: ["wishlist"],
     }),
     updateWishlistStatus: builder.mutation({
       query: (id) => ({
         url: `/auth/wishlist/${id}`,
         method: "PATCH",
       }),
-      invalidatesTags: ["update"],
+      invalidatesTags: ["wishlist"],
     }),
     deleteWishlist: builder.mutation({
       query: (id) => ({
         url: `/auth/wishlist/${id}`,
         method: "DELETE",
       }),
-      invalidatesTags: ["update"],
+      invalidatesTags: ["wishlist"],
     }),
   }),
 });

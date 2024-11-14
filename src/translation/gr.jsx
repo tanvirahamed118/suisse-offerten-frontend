@@ -131,7 +131,7 @@ const sw = {
   membership_purchase_notify_fail:
     "Der Erwerb der Mitgliedschaft ist fehlgeschlagen. Bitte versuchen Sie es erneut und tätigen Sie eine weitere Zahlung.",
   membership_credit_fail:
-    "Ihre Zahlung ist noch nicht abgeschlossen. Sobald sie abgeschlossen ist, haben Sie Guthaben erhalten.",
+    "Ihre Zahlung ist noch nicht abgeschlossen. Sobald sie abgeschlossen ist, haben Sie die Mitgliedschaft und Guthaben erhalten.",
   membership_credit_fail_notify:
     "Der Kauf von Credits ist fehlgeschlagen. Bitte versuchen Sie es erneut und kaufen Sie weitere Credits.",
   you_have_chose: "Sie haben gewählt",
@@ -225,6 +225,8 @@ const sw = {
     "Wenn Sie keine E-Mail erhalten, verlassen Sie diese Seite bitte nicht und laden Sie sie nicht neu. Sie können den OTP-Code nach 2 Minuten erneut senden.",
   reset_otp: "OTP erneut senden",
   recive_email: "E-Mail erhalten?, OTP prüfen",
+  member_purches_notify:
+    "Sobald Sie auf die Schaltfläche „Auswählen“ klicken, werden Sie zur Zahlungsseite weitergeleitet. Wenn Sie nicht bezahlen und die Registerkarte „Zahlung“ schließen, sind Sie nicht zum erneuten Kauf berechtigt und müssen sich an das Support-Team wenden.",
   // seller dasgboard
 
   // dashboard menu
@@ -395,7 +397,6 @@ const sw = {
   submit_address_change: "Adressänderung übermitteln",
   contact_deltails_seller_dash: "KONTAKTDETAILS",
   Confirm_password: "Bestätige das Passwort",
-
   member_cerdits_title: "Mitglied & Credits",
   member_cerdits_text_1: "Übersicht",
   member_cerdits_text_2: "Mitgliedschaft",
@@ -434,43 +435,28 @@ const sw = {
 
   //  categories
   inside_the_house: "Im Haus",
-
   fireplace_chimney: "Kamin, Kaminofen, Schornstein",
-
   house_technic: "Haustechnik",
-
   heating_ventilation: "Heizung, Lüftung, Klima, Kühlung",
   plumbing_work_processing: "Klempnerarbeiten, Blechbearbeitung",
-
   metal_construction_wood_construction: "Metallbau & Holzbau",
   metal_construction_blacksmith_shop: "Metallbau, Schlosserei, Schmiede",
-
   outside_the_house: "Außerhalb des Hauses",
   excavation_pit_earthworks_foundation: "Baugrube, Erdarbeiten, Fundament",
-
   isolation_sealing_insulation: "Isolierung, Abdichtung, Dämmung",
   paving_work_paths_streets: "Pflasterarbeiten, Wege, Straßen",
   bricklayers_plastering_concrete_joints: "Maurer, Verputzer, Beton, Fugen",
-
   scaffolding_scaffolding: "Gerüstbau, Gerüstbau",
-
   windows_doors: "Fenster, Türen",
   conversion_total_renovation: "Umbau & Gesamtsanierung",
-
   cleaning_transport: "Reinigung & Transport",
   cleaning_staff_other_cleaning: "Reinigungskräfte, sonstige Reinigungskräfte",
-
   transport_small_transport: "Transport, Kleintransport",
   motor_vehicle: "Kraftfahrzeug",
-
   consulting_Architecture: "Beratung & Architektur",
-
   telephone_Internet: "Telefon & Internet",
-
   renewable_energy: "Erneuerbare Energie",
-
   other_work: "Andere Arbeit",
-
   //  categories
 
   // home page

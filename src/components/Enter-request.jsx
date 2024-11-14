@@ -468,13 +468,15 @@ function EnterRequest() {
                         className={
                           "mt-2 py-2 px-5 rounded-md w-full text-base text-black font-normal outline-[#19BE10] focus:outline outline-1"
                         }
+                        defaultValue=""
                       >
-                        <option disabled selected>
+                        <option disabled value="">
                           {t("select_option")}
                         </option>
                         {currentQuestion.options.map((optionItem, index) => {
                           const itemId =
                             optionItem.id ?? `fallback-key-${index}`;
+
                           return (
                             <option key={itemId} value={optionItem.label}>
                               {optionItem.label}

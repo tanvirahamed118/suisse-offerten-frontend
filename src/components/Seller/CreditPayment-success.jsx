@@ -8,14 +8,14 @@ function CreditPaymentSuccess() {
   const seller = JSON.parse(sellerAuth);
   const id = seller?.seller?._id;
   const { data } = useGetOneSellerQuery(id);
-  const { pendingCredits, credits } = data || {};
+  const { pendingCredits } = data || {};
 
   return (
     <div className="w-full h-[500px] flex flex-col gap-5 justify-center items-center">
       <i className="fa-solid fa-circle-check text-[60px] text-green-500"></i>
       <p className="text-xl font-medium text-black">{t("credit_purchase")}</p>
-      {credits === pendingCredits + credits && (
-        <div className="flex gap-2 items-center w-8/12 lg:w-full bg-[#FFFADF] p-5 rounded-md my-5">
+      {pendingCredits > 0 && (
+        <div className="flex gap-2 items-center w-full lg:w-full bg-[#FFFADF] p-5 rounded-md my-5">
           <i className="fa-solid fa-circle-exclamation text-2xl text-red-500"></i>
           <p className="text-sm text-[#111]">{t("membership_credit_fail")}</p>
         </div>

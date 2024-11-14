@@ -43,22 +43,6 @@ export const paymentApi = apiSlice.injectEndpoints({
       }),
       invalidatesTags: ["update"],
     }),
-    updatePaymentMembership: builder.mutation({
-      query: (formData) => ({
-        url: "/auth/payment/membership",
-        method: "PATCH",
-        body: formData,
-      }),
-      invalidatesTags: ["update"],
-    }),
-    updatePaymentCredit: builder.mutation({
-      query: (formData) => ({
-        url: "/auth/payment/credit",
-        method: "PATCH",
-        body: formData,
-      }),
-      invalidatesTags: ["update"],
-    }),
 
     deletePayment: builder.mutation({
       query: (id) => ({
@@ -75,7 +59,5 @@ export const {
   useGetAllPaymentQuery,
   useCreatePaymentMutation,
   useCreateCreditsPaymentMutation,
-  useUpdatePaymentMembershipMutation,
-  useUpdatePaymentCreditMutation,
   useDeletePaymentMutation,
 } = paymentApi;

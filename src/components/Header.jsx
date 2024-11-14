@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "../assets/suisse-offerten-logo.png";
+import Logo from "../assets/suisse-offerten.svg";
 import MobileNav from "./Mobile-nav";
 import { useEffect, useRef, useState } from "react";
 import ProfileNav from "./Profile-nav";
@@ -17,6 +17,13 @@ function Header() {
   const [search, setSearch] = useState(false);
   const menuref = useRef();
   const searchref = useRef();
+
+  useEffect(() => {
+    document.body.style.overflow = menu ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menu]);
 
   useEffect(() => {
     let handeler = (e) => {

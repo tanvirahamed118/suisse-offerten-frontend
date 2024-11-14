@@ -19,7 +19,7 @@ function SellerCredits() {
   return (
     <div className="">
       <div className="py-10">
-        {memberShip && memberShipStatus === "not-complete" && (
+        {memberShipStatus === "not-complete" && (
           <div className="flex gap-2 items-center w-full bg-[#FFFADF] p-5 rounded-md my-5">
             <i className="fa-solid fa-circle-exclamation text-2xl text-red-500"></i>
             <p className="text-sm text-[#111]">{t("membership_credit_fail")}</p>
@@ -50,8 +50,7 @@ function SellerCredits() {
                   <td className="p-5 align-top border-b border-black text-left">
                     <div className="flex gap-2 items-center">
                       <p className="text-black font-normal text-base">
-                        {memberShipStatus &&
-                          `${t("current_credit")} ${credits}`}
+                        {`${t("current_credit")} ${credits}`}
                       </p>
                     </div>
                   </td>

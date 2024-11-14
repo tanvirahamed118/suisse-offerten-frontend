@@ -130,7 +130,7 @@ const en = {
   membership_purchase_notify_fail:
     "Vous n'avez pas pu acheter votre abonnement. Veuillez réessayer et effectuer un autre paiement.",
   membership_credit_fail:
-    "Votre paiement n'est pas encore finalisé. Une fois finalisé, vous avez reçu des crédits.",
+    "Votre paiement n'est pas encore terminé. Une fois terminé, vous avez reçu votre adhésion et vos crédits.",
   membership_credit_fail_notify:
     "Vous n'avez pas réussi à acheter des crédits. Veuillez réessayer et effectuer un autre achat de crédits.",
   you_have_chose: "Vous avez choisi",
@@ -223,6 +223,8 @@ const en = {
     "Si vous ne recevez pas d'e-mail, veuillez ne pas quitter ou recharger cette page. Vous pouvez renvoyer l'OTP après 2 minutes de courrier.",
   reset_otp: "Renvoyer OTP",
   recive_email: "Recevoir un e-mail ?, Vérifier OTP",
+  member_purches_notify:
+    "Une fois que vous avez cliqué sur le bouton Choisir, vous êtes redirigé vers la page de paiement. Si vous ne payez pas et fermez l'onglet de paiement, vous ne pourrez plus acheter et vous devrez contacter l'équipe d'assistance.",
   // seller dasgboard
 
   // dashboard menu
@@ -434,46 +436,31 @@ const en = {
 
   //  categories
   inside_the_house: "À l'intérieur de la maison",
-
-  fireplace_chimney: "Cheminée, cheminée, cheminée",
-
+  fireplace_chimney: "Cheminée, poêle, cheminée",
   house_technic: "Tapisserie, sellerie",
-
   heating_ventilation: "Chauffage, ventilation, climatisation, refroidissement",
   plumbing_work_processing: "Travaux de plomberie, transformation de tôle",
-
   metal_construction_wood_construction:
     "Construction métallique et construction en bois",
   metal_construction_blacksmith_shop:
     "Construction métallique, travail des métaux, forge",
-
   outside_the_house: "En dehors de la maison",
   excavation_pit_earthworks_foundation: "Fouilles, terrassements, fondations",
-
   isolation_sealing_insulation: "Isolation, étanchéité, isolation",
   paving_work_paths_streets: "Travaux de pavage, chemins, rues",
   bricklayers_plastering_concrete_joints: "Maçons, plâtrerie, béton, joints",
-
   scaffolding_scaffolding: "Échafaudage, échafaudage",
-
   windows_doors: "Fenêtres, portes",
   conversion_total_renovation: "Transformation & rénovation totale",
-
   cleaning_transport: "Nettoyage & transport",
   cleaning_staff_other_cleaning:
     "Personnel de nettoyage, autres services de nettoyage",
-
   transport_small_transport: "Transports, petits transports",
   motor_vehicle: "Véhicule à moteur",
-
   consulting_Architecture: "Conseil & Architecture",
-
   telephone_Internet: "Téléphone et Internet",
-
   renewable_energy: "Énergie renouvelable",
-
   other_work: "Autre travail",
-
   //  categories
 
   // home page

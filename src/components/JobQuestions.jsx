@@ -14,9 +14,13 @@ function JobQuestions({ data }) {
           if (Array.isArray(value)) {
             displayValue = value.join(", ");
           } else if (typeof value === "object" && value !== null) {
-            displayValue = Object.entries(value).map(([subKey, subValue]) => (
-              <div key={subKey}>{`${subKey}: ${subValue}`}</div>
-            ));
+            displayValue = (
+              <div>
+                {Object.entries(value).map(([subKey, subValue]) => (
+                  <div key={subKey}>{`${subKey}: ${subValue}`}</div>
+                ))}
+              </div>
+            );
           } else {
             displayValue = value;
           }
@@ -26,16 +30,19 @@ function JobQuestions({ data }) {
               <h3 className="text-black text-base font-medium capitalize">
                 {key.replace(/_/g, " ")}
               </h3>
-              <p className="text-black text-base font-normal capitalize">
+              {/* Display the value */}
+              <div className="text-black text-base font-normal capitalize">
                 {displayValue}
-              </p>
+              </div>
             </li>
           );
         })}
     </ul>
   );
 }
+
 JobQuestions.propTypes = {
   data: PropTypes.object,
 };
+
 export default JobQuestions;
