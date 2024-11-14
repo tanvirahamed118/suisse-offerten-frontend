@@ -31,7 +31,7 @@ function LocationAction() {
               {!seller && !client && (
                 <Link
                   className="bg-[#FFAA00] text-black font-bold text-md md:text-xl py-2 px-10 text-center rounded-lg"
-                  to="/company-register"
+                  to="/enter-request"
                 >
                   {t("location_text_4")}
                 </Link>

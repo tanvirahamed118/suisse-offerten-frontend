@@ -49,7 +49,7 @@ function ClientVerify() {
   useEffect(() => {
     if (isSuccess) {
       toast.success(data?.message, {
-        duration: 800,
+        duration: 1000,
       });
       setTimeout(() => {
         navigate("/auth-login");
