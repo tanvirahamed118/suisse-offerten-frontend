@@ -37,7 +37,7 @@ const en = {
   image_mainnote:
     "Sélectionnez vos fichiers ici pour cliquer sur Parcourir le fichier (approuver uniquement les formats JPG, JPEG, PNG)",
   image_sortNote:
-    "Veuillez télécharger uniquement les fichiers approuvés et approuver votre travail.",
+    "Vous pouvez télécharger un maximum de 5 images et la taille totale de ces images est de 10 Mo. Veuillez télécharger uniquement les fichiers approuvés et approuver votre travail.",
   browse_file: "Parcourir le fichier",
   optional_offer: "Ajoutez éventuellement un commentaire à votre offre ici.",
   note_on_offer: "Note sur l'offre",

@@ -8,16 +8,43 @@ function ImageBox({ setFormData }) {
   const [images, setImages] = useState([]);
   const [files, setFiles] = useState([]);
   const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
+  const maxTotalSizeMB = 10;
+  const maxImageCount = 5;
 
   const handleFileInputChange = (event) => {
     const selectedFiles = Array.from(event.target.files);
     const validFiles = selectedFiles.filter((file) =>
       allowedTypes.includes(file.type)
     );
-    const newImageUrls = validFiles.map((file) => URL.createObjectURL(file));
+
+    // Check total number of files after adding new ones
+    if (files.length + validFiles.length > maxImageCount) {
+      toast.error(`You can upload a maximum of ${maxImageCount} images.`);
+      return;
+    }
+
+    // Calculate total file size for the selected files and existing files
+    const totalSizeMB = validFiles.reduce(
+      (acc, file) => acc + file.size / (1024 * 1024),
+      0
+    );
+    const currentSizeMB = files.reduce(
+      (acc, file) => acc + file.size / (1024 * 1024),
+      0
+    );
+
+    if (totalSizeMB + currentSizeMB > maxTotalSizeMB) {
+      toast.error(`Total file size should not exceed ${maxTotalSizeMB}MB.`);
+      return;
+    }
+
+    // Filter out unsupported files and show a message if any were filtered
     if (validFiles.length < selectedFiles.length) {
       toast.error("Only JPG, JPEG, or PNG files are allowed.");
     }
+
+    // Update state with valid files and their previews
+    const newImageUrls = validFiles.map((file) => URL.createObjectURL(file));
     setImages((prevImages) => [...prevImages, ...newImageUrls]);
     setFiles((prevFiles) => [...prevFiles, ...validFiles]);
 
@@ -81,7 +108,7 @@ function ImageBox({ setFormData }) {
           </div>
         ))}
       </div>
-      <p className="text-xs mt-3 font-normal text-black">
+      <p className="text-xs mt-3 font-normal text-black text-center w-10/12 m-auto lg:w-6/12">
         {t("image_sortNote")}
       </p>
       <Toaster />
