@@ -34,9 +34,9 @@ const en = {
     "Did not receive an email? Check your spam folder or write to us at suisseofferten@gmail.com",
   form_post_code: "Postal code",
   image_mainnote:
-    "Select your files here to click browse file (Only Approve JPG, JPEG, PNG Format)",
+    "Drag and Drop Files or select your files (Only Approve JPG, JPEG, PNG Format)",
   image_sortNote:
-    "You can upload maximum 5 images and total size of those images is 10MB. Please upload only approved files and approve your job.",
+    "You can upload maximum 10 images and total size of those images is 30MB. Please upload only approved files and approve your job.",
   browse_file: "Browse File",
   optional_offer: "Optionally add a comment to your offer here.",
   note_on_offer: "Note on the offer",

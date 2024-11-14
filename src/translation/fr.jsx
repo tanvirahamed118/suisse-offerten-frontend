@@ -35,9 +35,9 @@ const en = {
     "Vous n'avez pas reçu d'e-mail ? Vérifiez votre dossier spam ou écrivez-nous à suisseofferten@gmail.com",
   form_post_code: "Code Postal",
   image_mainnote:
-    "Sélectionnez vos fichiers ici pour cliquer sur Parcourir le fichier (approuver uniquement les formats JPG, JPEG, PNG)",
+    "Faites glisser et déposez des fichiers ou sélectionnez vos fichiers (approuvez uniquement les formats JPG, JPEG, PNG)",
   image_sortNote:
-    "Vous pouvez télécharger un maximum de 5 images et la taille totale de ces images est de 10 Mo. Veuillez télécharger uniquement les fichiers approuvés et approuver votre travail.",
+    "Vous pouvez télécharger un maximum de 10 images et la taille totale de ces images est de 30 Mo. Veuillez télécharger uniquement les fichiers approuvés et approuver votre travail.",
   browse_file: "Parcourir le fichier",
   optional_offer: "Ajoutez éventuellement un commentaire à votre offre ici.",
   note_on_offer: "Note sur l'offre",

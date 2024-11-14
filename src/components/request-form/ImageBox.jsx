@@ -8,11 +8,13 @@ function ImageBox({ setFormData }) {
   const [images, setImages] = useState([]);
   const [files, setFiles] = useState([]);
   const allowedTypes = ["image/jpeg", "image/jpg", "image/png"];
-  const maxTotalSizeMB = 10;
-  const maxImageCount = 5;
+  const maxTotalSizeMB = 30;
+  const maxImageCount = 10;
 
   const handleFileInputChange = (event) => {
-    const selectedFiles = Array.from(event.target.files);
+    const selectedFiles = Array.from(
+      event.target.files || event.dataTransfer.files
+    );
     const validFiles = selectedFiles.filter((file) =>
       allowedTypes.includes(file.type)
     );
@@ -65,6 +67,26 @@ function ImageBox({ setFormData }) {
     }));
   };
 
+  // Drag-and-drop handlers
+  const handleDragOver = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    event.currentTarget.classList.add("drag-over");
+  };
+
+  const handleDragLeave = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    event.currentTarget.classList.remove("drag-over");
+  };
+
+  const handleDrop = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    event.currentTarget.classList.remove("drag-over");
+    handleFileInputChange(event);
+  };
+
   return (
     <div className="bg-[#F4F4F4] p-5 w-full h-auto flex flex-col gap-3 items-center justify-center upContainer">
       <h2 className="text-sm md:text-xl font-normal text-black">
@@ -73,12 +95,15 @@ function ImageBox({ setFormData }) {
       <label
         htmlFor="upproduct"
         className="dropContainer h-24 md:h-52 cursor-pointer"
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
       >
         <i className="fa-solid fa-upload"></i>
         <p>
           {files.length > 0
             ? `${files.length} file(s) selected`
-            : "Browse File"}
+            : "Browse or Drag & Drop Files"}
         </p>
         <input
           type="file"

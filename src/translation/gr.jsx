@@ -35,9 +35,9 @@ const sw = {
     "Keine E-Mail erhalten? Überprüfen Sie Ihren Spam-Ordner oder schreiben Sie uns an suisseofferten@gmail.com",
   form_post_code: "Postleitzahl",
   image_mainnote:
-    "Wählen Sie hier Ihre Dateien aus, um auf „Datei durchsuchen“ zu klicken (Nur JPG-, JPEG- und PNG-Format genehmigen).",
+    "Ziehen Sie Dateien per Drag & Drop oder wählen Sie Ihre Dateien aus (nur JPG-, JPEG- und PNG-Format zulässig)",
   image_sortNote:
-    "Sie können maximal 5 Bilder hochladen und die Gesamtgröße dieser Bilder beträgt 10 MB. Bitte laden Sie nur genehmigte Dateien hoch und genehmigen Sie Ihren Auftrag.",
+    "Sie können maximal 10 Bilder hochladen und die Gesamtgröße dieser Bilder beträgt 30 MB. Bitte laden Sie nur genehmigte Dateien hoch und genehmigen Sie Ihren Auftrag.",
   browse_file: "Datei durchsuchen",
   optional_offer:
     "Fügen Sie hier optional einen Kommentar zu Ihrem Angebot hinzu.",

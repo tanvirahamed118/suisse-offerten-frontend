@@ -200,6 +200,10 @@ body {
   background: #eee;
   border-color: #111;
 }
+.dropContainer.drag-over {
+  border-color: blue;
+  background: #dddcdc;
+}
 .upContainer input[type="file"]::file-selector-button {
   display: none;
 }
