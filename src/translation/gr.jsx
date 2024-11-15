@@ -227,6 +227,11 @@ const sw = {
   recive_email: "E-Mail erhalten?, OTP prüfen",
   member_purches_notify:
     "Sobald Sie auf die Schaltfläche „Auswählen“ klicken, werden Sie zur Zahlungsseite weitergeleitet. Wenn Sie nicht bezahlen und die Registerkarte „Zahlung“ schließen, sind Sie nicht zum erneuten Kauf berechtigt und müssen sich an das Support-Team wenden.",
+  my_offer: "Mein Angebot",
+  added_about: "hinzugefügt über",
+  confirm_offer: "Angebot wurde bestätigt",
+  offer_notify_1: "Ihr Angebot wurde vom Kunden bestätigt.",
+  offer_notify_2: "Kontaktdaten der Kunden:",
   // seller dasgboard
 
   // dashboard menu

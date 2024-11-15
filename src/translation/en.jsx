@@ -220,6 +220,12 @@ const en = {
   recive_email: "Receive email?, Check OTP",
   member_purches_notify:
     "Once you click on the Choose button, you are redirected to the payment page. If you do not pay and close the payment tab, you are not eligible to purchase again, and you need to contact the support team.",
+  my_offer: "My Offer",
+  added_about: "added about",
+  confirm_offer: "Offer has been confirmed",
+  offer_notify_1: "Your offer has been confirmed by the client.",
+  offer_notify_2: "Contact details of the clients:",
+
   // seller dasgboard
 
   // dashboard menu

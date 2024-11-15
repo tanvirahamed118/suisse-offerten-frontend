@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import moment from "moment";
 import { useGetAllOfferQuery } from "../redux/rtk/features/offer/offerApi";
+import { useTranslation } from "react-i18next";
 
 function SellerOffer({ id, sellerId }) {
+  const { t } = useTranslation();
   const page = 1;
   const limit = 20;
   const { data } = useGetAllOfferQuery({ id: id, page, limit, sellerId });
@@ -27,9 +29,9 @@ function SellerOffer({ id, sellerId }) {
             </h2>
           )}
           <span>
-            <h2 className="text-black text-lg font-medium">My Offer</h2>
+            <h2 className="text-black text-lg font-medium">{t("my_offer")}</h2>
             <p className="text-sm text-gray-300 font-normal">
-              added about {lastDate} ago
+              {t("added_about")} {lastDate} {t("ago")}
             </p>
           </span>
         </div>

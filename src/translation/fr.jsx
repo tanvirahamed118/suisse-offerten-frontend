@@ -225,6 +225,11 @@ const en = {
   recive_email: "Recevoir un e-mail ?, Vérifier OTP",
   member_purches_notify:
     "Une fois que vous avez cliqué sur le bouton Choisir, vous êtes redirigé vers la page de paiement. Si vous ne payez pas et fermez l'onglet de paiement, vous ne pourrez plus acheter et vous devrez contacter l'équipe d'assistance.",
+  my_offer: "Mon offre",
+  added_about: "ajouté à propos",
+  confirm_offer: "L'offre a été confirmée",
+  offer_notify_1: "Votre offre a été confirmée par le client.",
+  offer_notify_2: "Coordonnées des clients :",
   // seller dasgboard
 
   // dashboard menu
