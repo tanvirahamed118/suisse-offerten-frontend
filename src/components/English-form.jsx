@@ -260,6 +260,8 @@ function EnglishForm() {
     }
   }, [setFinalStep, formData, currentQuestion, clientAuth]);
 
+  const email = formData.jobEmail;
+
   useEffect(() => {
     if (isError && !hasShownSuccess) {
       toast.error(error?.data?.message);
@@ -274,6 +276,7 @@ function EnglishForm() {
     }
 
     if (data?.message && !clientAuth) {
+      localStorage.setItem("email", email);
       setTimeout(() => {
         navigate("/verify-email");
       }, 2000);
@@ -283,7 +286,16 @@ function EnglishForm() {
         navigate("/client-dashboard");
       }, 2000);
     }
-  }, [isError, isSuccess, data, error, navigate, clientAuth, hasShownSuccess]);
+  }, [
+    isError,
+    isSuccess,
+    data,
+    error,
+    navigate,
+    clientAuth,
+    hasShownSuccess,
+    email,
+  ]);
   return (
     <section>
       <div className="w-11/12 xl:w-9/12 2xl:w-6/12 m-auto py-10">
