@@ -175,7 +175,7 @@ function Rejected({ activeTab }) {
 
   return (
     <div>
-      <ShortFilter bid={rejectBid} type={"Rejected"} />
+      <ShortFilter bid={rejectBid} type={t("rejected")} />
       <div className="flex flex-col gap-5 py-5">{content}</div>
       {totalItems > limit && (
         <Pagination

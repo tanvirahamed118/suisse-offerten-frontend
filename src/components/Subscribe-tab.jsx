@@ -8,7 +8,7 @@ function SubscribeTab() {
 
   return (
     <div className="flex justify-center flex-col py-10 md:pt-20 gap-5 items-center border-t border-gray-300">
-      <h2 className="text-black text-base font-normal text-center capitalize">
+      <h2 className="text-black text-base font-normal text-center">
         {t("get_multiple_offers")}
       </h2>
       <h2 className="text-black text-2xl font-bold text-center md:text-4xl">

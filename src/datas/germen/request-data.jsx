@@ -18,9 +18,9 @@ import other from "./other/other";
 const questions = [
   {
     id: 392164430,
-    label: "Bestelltitel",
+    label: "Titel des Auftrages",
     type: "orderTitle",
-    des: "Z.B.: 4,5 Zimmerwohnung streichen",
+    des: "Z.B.: Umzug 5.5 Zimmerwohnung",
     options: [{ id: 608571324 }],
   },
   {
@@ -30,7 +30,7 @@ const questions = [
     options: [
       {
         id: 1004884940,
-        label: "Draußen",
+        label: "Draussen",
         img: outside,
         mainCatId: 8309555449,
       },

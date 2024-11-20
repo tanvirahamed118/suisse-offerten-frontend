@@ -212,7 +212,6 @@ function CompanyProfile() {
             type="file"
             name="companyLogo"
             id="companyLogo"
-            required
             accept=".jpg, .jpeg, .png"
             className="border border-gray-200 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 md:px-4 w-full"
             onChange={handleFileChange}
@@ -281,7 +280,6 @@ function CompanyProfile() {
           <input
             type="file"
             name="companyCover"
-            required
             accept=".jpg, .jpeg, .png"
             id="companyCover"
             className="border border-gray-200 px-2 py-3 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 md:px-4 w-full"
@@ -432,14 +430,14 @@ function CompanyProfile() {
             className="border border-gray-200 px-2 py-2 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4 md:px-4 w-full"
           />
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 w-full">
           <div className="bg-[#f5f8fa] p-5 border border-gray-300 flex flex-col gap-5 items-start rounded-md w-full">
             <p className="text-black text-lg font-bold">
               {t("enter_company_info")}
               <span className="text-gray-500 text-sm"> ({t("optional")})</span>
             </p>
             <div className="flex justify-between mt-5 gap-5 lg:flex-row flex-col">
-              <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 items-center w-full justify-between">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 items-center w-full justify-between">
                 {services?.map((item, index) => (
                   <li key={index} className="flex gap-2 items-start">
                     <input

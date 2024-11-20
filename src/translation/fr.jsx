@@ -3,8 +3,8 @@ const en = {
   enter_new_job: "Entrez un nouvel emploi",
   search_job: "Rechercher un emploi",
   cost_schedule: "Barème des coûts",
-  register_as_client: "S'inscrire comme client",
-  register_as_company: "S'inscrire en tant qu'entreprise",
+  register_as_client: "S'inscrire en tant que client",
+  register_as_company: "S'inscrire en tant qu'entrepreneur",
   login: "Se connecter",
   logout: "Se déconnecter",
   account: "compte",
@@ -23,10 +23,12 @@ const en = {
   how_does_client: "Comment ça marche? - Client",
   imprint: "Imprimer",
   data_protection: "Protection des données",
-  locations: "Emplacements",
+  locations: "Artisan/entreprise",
   // footer menu
 
   // seller dasgboard
+  resend_note:
+    "Si vous ne recevez aucun code, vous pouvez renvoyer le code de vérification.",
   check_inbox: "Vérifiez votre boîte de réception.",
   code_send: "Nous vous avons envoyé un code.",
   confirm_req:
@@ -75,7 +77,7 @@ const en = {
   vat_number: "T.V.A.",
   verifications: "Vérifications",
   preview_profile: "Aperçu du profil",
-  can_not_able: "je ne peux pas changer",
+  can_not_able: "ne peut pas être modifié",
   close_membership: "Fermer l'adhésion",
   payment_status: "Statut de paiement",
   membership_title: "Titre de membre",
@@ -97,6 +99,7 @@ const en = {
   reject_offer: "Rejeter l'offre",
   undo_rejection: "Annuler le rejet",
   providers: "Fournisseurs",
+  interested: "Intéressé",
   sort_by: "Trier par",
   offering: "Offre",
   rejected: "Rejetée",
@@ -105,8 +108,8 @@ const en = {
   description: "Description",
   questions: "Questions",
   category: "Catégorie",
-  possible_to_visit: "Est-il possible de visiter le lieu de la commande",
-  duration_of_tender: "Durée de l'appel d'offres",
+  possible_to_visit: "Où doit-on exécuter la commande ?",
+  duration_of_tender: "Publication",
   desired_start_of_work: "Début des travaux souhaité",
   back_offers: "retour à toutes les offres",
   previous_communication: "Historique des communications antérieures",
@@ -146,7 +149,7 @@ const en = {
   non_binding_free: "Sans engagement et gratuit",
   cover_photo: "Photo de couverture",
   not_create_job: "Vous n'avez créé aucun emploi",
-  create_new_job: "Créer un nouvel emploi",
+  create_new_job: "Saisir une nouvelle commande",
   job_post_in: "Offre d'emploi en",
   ago: "il y a",
   request_proposal: "Accepter la proposition",
@@ -270,7 +273,7 @@ const en = {
   order_title: "Titre de la commande",
   status: "Statut",
   activity: "Activité",
-  view_order: "Voir l'ordre",
+  view_order: "Voir la commande",
   interested_offerers: "Soumissionnaires intéressés:",
   offers_requested: "Offres demandées:",
   reviews_from_other_customers: "Avis d'autres clients",
@@ -287,8 +290,8 @@ const en = {
   short_distance_first: "Courte distance d'abord",
   big_orders_first: "Les grosses commandes d'abord",
   published_on: "Publié le:",
-  appointment_request: "Demande de rendez-vous",
-  place_of_execution: "Lieu d'exécution",
+  appointment_request: "exécution de l'ordre sur",
+  place_of_execution: "Lieu de commande",
   all: "Toute",
   archive: "Archivé",
   conact_request: "Demande de contact",
@@ -337,7 +340,7 @@ const en = {
   area_of_activity_text_6: "Informez-nous des nouvelles commandes par email",
   area_of_activity_text_7:
     "Informez-nous par e-mail des commandes en cours sans candidature",
-  area_of_activity_text_8: "sauvegarder",
+  area_of_activity_text_8: "Sauvegarder",
   company_profile_MietExpress: "Profil de l'entreprise MietExpress Küçük",
   company_profile_perspective:
     "Profil de l'entreprise du point de vue des utilisateurs:",
@@ -384,7 +387,7 @@ const en = {
   legal_form: "forme juridique",
   founding_year: "année de fondation",
   founding_optional: "facultative",
-  website: "site Internet (optionnel)",
+  website: "site Internet",
   UID_number: "UNuméro UID",
   find_your_UID_number: "Trouvez votre numéro UID",
   invoice_recipient: "Destinataire de la facture",
@@ -471,7 +474,7 @@ const en = {
   // home page
   are_looking_craftsman: "Vous recherchez un artisan ?",
   receive_free_offers:
-    "Avec Suisse-Offerings, vous recevez des offres gratuites d'artisans locaux de votre région",
+    "Avec Suisse-Offerten, vous recevez des offres gratuites d'artisans locaux de votre région",
   get_offer: "Obtenez une offre",
   craft: "Artisanat",
   planing_services: "Planification et services",
@@ -490,9 +493,9 @@ const en = {
   reasob_des_3: "Vous recevez des devis facilement et sans trop d'effort",
   get_your_offer: "Obtenez votre offre",
   how_works: "Comment fonctionne Suisse-Offerten",
-  work_title_1: "1. Fournisseurs vérifiés",
+  work_title_1: "1. Saisir la demande",
   work_title_2: "2. Comparez les offres",
-  work_title_3: "3. Choisis le meilleur",
+  work_title_3: "3. Choisissez la meilleure offre",
   work_des_1:
     "Utilisez le formulaire en ligne pour décrire au mieux les travaux afin que les artisans puissent vous proposer une offre basée sur ceux-ci.",
   work_des_2:
@@ -511,8 +514,7 @@ const en = {
   home: "Maison",
   fill_your_order: "Vous recherchez un emploi dans une catégorie spécifique ?",
   fill_your_order_2: "Ou dans une région spécifique ?",
-  fill_order_des:
-    "Avec Suisse-Offerten, vous trouverez toujours le meilleur emploi pour vous !",
+  fill_order_des: "Vous êtes artisan et pas encore inscrit ?",
   fill_order_des_2: "Vous êtes Artisan et pas encore inscrit ?",
   learn_more: "Apprendre encore plus",
   on_this_page_craftsmen_the_area: "Rechercher des emplois dans :",
@@ -547,7 +549,7 @@ const en = {
 
   //   enter job page
   enter_your_request:
-    "Entrez votre demande maintenant et recevez plusieurs offres - gratuitement et sans engagement.",
+    "Veuillez indiquer les travaux à réaliser de manière aussi détaillée que possible. 100% gratuit et sans engagement",
   describe_the_work_to_be_done:
     "Décrivez ici le travail à effectuer. Essayez de fournir des informations aussi détaillées que possible.",
   suisse_Offerten_advantage: "Avantages de Suisse-Offerten",
@@ -566,9 +568,9 @@ const en = {
   phone: "Téléphone",
   only_visible_select:
     "Visible uniquement par les personnes que vous sélectionnez.",
-  phone_2: "Téléphone 2:(facultatif)",
-  email_address: "Adresse e-mail:",
-  prefered_username: "Nom d'utilisateur préféré:",
+  phone_2: "Téléphone 2:",
+  email_address: "Adresse e-mail",
+  prefered_username: "Nom d'utilisateur préféré",
   username_condition:
     "Seules les lettres et les chiffres sont autorisés. min 3 caractères",
   number_condition: "Sélectionnez d’abord le code du pays",
@@ -638,7 +640,7 @@ const en = {
   // reset page
 
   //   about page
-  about_title: "Suisse-Offerten",
+  about_title: "À propos Suisse-Offerten",
   about_title_span: "À propos",
   about_text_1: "Bienvenue chez Suisse-Offerings!",
   about_text_2:
@@ -662,14 +664,14 @@ const en = {
   contact_text_2: "L'équipe Ihr Suisse-Offerten",
   contact_text_3: "Suisse-Offerten GmbH Hauptstrasse 22 4562 Biberist",
   form_title: "Formulaire",
-  form_text_1: "Avis",
+  form_text_1: "Note",
   form_text_2: "Nom et surnom",
   form_text_3: "E-mail",
   form_text_4: "Numéro de téléphone",
   form_text_5: "Zone de service",
-  form_text_6: "Vous êtes",
-  form_text_7: "Cliente",
-  form_text_8: "Entreprise/Bricoleur",
+  form_text_6: "Tu es",
+  form_text_7: "Pourrait",
+  form_text_8: "Artisans/entreprises",
   form_text_9: "Soumettre",
   // contact page
 
@@ -678,15 +680,15 @@ const en = {
   how_it_works: "Comment ça marche?",
   how_it_work_contractor_title_1: "1. Registre",
   how_it_work_contractor_title_2: "2. Recevoir des demandes",
-  how_it_work_contractor_title_3: "3. Entrez votre offre/bit",
+  how_it_work_contractor_title_3: "3. Saisissez votre offre",
   how_it_work_contractor_title_4: "4. Attendez",
-  how_it_work_contractor_title_5: "5. Obtenir un avis",
+  how_it_work_contractor_title_5: "5. Recevoir un avis",
   how_it_work_contractor_des_1:
-    "Inscrivez-vous en tant qu'entreprise/salarié et souscrivez un abonnement au prix mensuel de 99fr",
+    "Inscrivez-vous en tant qu'entreprises/artisans et souscrivez un abonnement au prix mensuel de 99fr",
   how_it_work_contractor_des_2:
-    "Après vous être inscrit et avoir précisé votre zone de desserte, vous recevrez par e-mail les demandes régionales correspondant à votre zone et à votre région.",
+    "Après vous être inscrit et spécifié votre zone de service, vous recevrez par e-mail des demandes de renseignements régionales correspondant à votre zone de service et à votre région.",
   how_it_work_contractor_des_3:
-    "Une fois que vous avez reçu les demandes, vous pouvez calculer une offre sur la base des informations fournies et la saisir sur Suisse-Offerten.",
+    "Une fois que vous avez reçu vos demandes, vous pouvez calculer une offre sur la base des informations fournies et la saisir sur Suisse-Offers.",
   how_it_work_contractor_des_4:
     "Après avoir saisi l'offre, le client peut accepter ou refuser l'offre.",
   how_it_work_contractor_des_5:
@@ -697,16 +699,16 @@ const en = {
   client_title: "Clientèle",
   how_it_work_client_title_1: "1. Saisir la demande",
   how_it_work_client_title_2: "2. Comparez les offres",
-  how_it_work_client_title_3: "3. Choisis le meilleur",
+  how_it_work_client_title_3: "3. Choisissez le meilleur",
   how_it_work_client_title_4: "4. Évaluer le travail",
   how_it_work_client_des_1:
     "Utilisez le formulaire en ligne pour décrire au mieux les travaux afin que les artisans puissent vous proposer une offre basée sur ceux-ci.",
   how_it_work_client_des_2:
-    "Vous recevrez plusieurs offres d'artisans locaux. Vous pouvez les comparer en fonction du prix, de l'offre et des avis.",
+    "Vous recevrez plusieurs offres de commerçants de votre région. Vous pouvez les comparer en fonction du prix, de l'offre et de la note.",
   how_it_work_client_des_3:
     "Sélectionnez maintenant l'artisan dont l'offre correspond à votre budget et à vos idées.",
   how_it_work_client_des_4:
-    "Une fois les travaux terminés, vous pourrez évaluer l’entrepreneur choisi. Cela aidera nos membres à trouver et à choisir de bons fournisseurs.",
+    "Une fois les travaux terminés, vous pouvez évaluer l'entrepreneur sélectionné. Cela permet à nos clients de rechercher et de sélectionner plus facilement les bons fournisseurs.",
   client_start: "Commencer",
   // how it works client
 

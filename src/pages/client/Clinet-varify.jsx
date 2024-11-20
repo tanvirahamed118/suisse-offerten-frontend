@@ -1,6 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import verify from "../../assets/verify-email.png";
-import { useVerifyClientMutation } from "../../redux/rtk/features/auth/client/authApi";
+import {
+  useResendVerifyCodeMutation,
+  useVerifyClientMutation,
+} from "../../redux/rtk/features/auth/client/authApi";
 import toast, { Toaster } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -8,9 +11,20 @@ import { useTranslation } from "react-i18next";
 function ClientVerify() {
   const { t } = useTranslation();
   const [code, setCode] = useState(["", "", "", "", "", ""]);
+  const email = localStorage.getItem("email");
   const inputsRef = useRef([]);
   const [verifyClient, { data, isSuccess, isError, error, isLoading }] =
     useVerifyClientMutation();
+  const [
+    resendVerifyCode,
+    {
+      data: sendData,
+      isSuccess: sendSuccess,
+      isError: sendIsError,
+      error: sendError,
+      isLoading: sendLoading,
+    },
+  ] = useResendVerifyCodeMutation();
   const navigate = useNavigate();
   const handleInputChange = (e, index) => {
     const value = e.target.value;
@@ -48,6 +62,7 @@ function ClientVerify() {
 
   useEffect(() => {
     if (isSuccess) {
+      localStorage.removeItem("email");
       toast.success(data?.message, {
         duration: 1000,
       });
@@ -59,6 +74,19 @@ function ClientVerify() {
       toast.error(error?.data?.message);
     }
   }, [error, isError, isSuccess, data, navigate]);
+
+  useEffect(() => {
+    if (sendSuccess) {
+      toast.success(sendData?.message);
+    }
+    if (sendIsError) {
+      toast.error(sendError?.data?.message);
+    }
+  }, [sendError, sendIsError, sendSuccess, sendData]);
+
+  const handleResend = () => {
+    resendVerifyCode(email);
+  };
 
   return (
     <div className="my-10 flex justify-center w-full">
@@ -108,6 +136,37 @@ function ClientVerify() {
         <p className="text-base font-normal text-[#111111] text-center pt-10">
           {t("verify_notify")}
         </p>
+        <p className="text-base font-bold text-[#111111] text-center pt-10">
+          {t("resend_note")}
+        </p>
+        {email && (
+          <button
+            onClick={handleResend}
+            className="border-0 text-blue-400 text-lg font-bold hover:underline flex gap-2 items-center"
+          >
+            {sendLoading ? (
+              <>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6 animate-spin"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
+                  />
+                </svg>
+                <p>{t("loading")}</p>
+              </>
+            ) : (
+              t("send")
+            )}
+          </button>
+        )}
       </div>
       <Toaster />
     </div>

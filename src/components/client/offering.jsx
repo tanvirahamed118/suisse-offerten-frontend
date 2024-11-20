@@ -278,7 +278,7 @@ function Offering({ activeTab }) {
 
   return (
     <div>
-      <ShortFilter bid={placeBid} type={"Interested"} />
+      <ShortFilter bid={placeBid} type={t("interested")} />
       <div className="flex flex-col gap-5 py-5">{content}</div>
       {totalItems > limit && (
         <Pagination

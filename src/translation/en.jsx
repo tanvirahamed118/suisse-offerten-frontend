@@ -3,8 +3,8 @@ const en = {
   enter_new_job: "Enter new job",
   search_job: "Search job",
   cost_schedule: "Cost schedule",
-  register_as_client: "Register as Client",
-  register_as_company: "Register as company",
+  register_as_client: "Register as a client",
+  register_as_company: "Register as a contractor",
   login: "Login",
   logout: "Logout",
   account: "Account",
@@ -23,10 +23,11 @@ const en = {
   how_does_client: "How Does It Work? - Client",
   imprint: "Imprint",
   data_protection: "Data Protection",
-  locations: "Locations",
+  locations: "Craftsmen/Businesses",
   // footer menu
 
   // seller dasgboard
+  resend_note: "If you don't receive any code, you can resend verify code.",
   check_inbox: "Check your email inbox.",
   code_send: "We have sent you a code.",
   confirm_req: "Click the link or enter the code to confirm your request.",
@@ -74,7 +75,7 @@ const en = {
   vat_number: "VAT",
   verifications: "Verifications",
   preview_profile: "Preview Profile",
-  can_not_able: "can not able to change",
+  can_not_able: "cannot be changed",
   close_membership: "Close Membership",
   payment_status: "Payment Status",
   membership_title: "Membership Title",
@@ -95,6 +96,7 @@ const en = {
   reject_offer: "Reject Offer",
   undo_rejection: "Undo rejection",
   providers: "Providers",
+  interested: "Interested",
   sort_by: "sort by",
   offering: "Offering",
   rejected: "Rejected",
@@ -103,8 +105,8 @@ const en = {
   description: "Description",
   questions: "Questions",
   category: "Category",
-  possible_to_visit: "Is it possible to visit the order location",
-  duration_of_tender: "Duration of tender",
+  possible_to_visit: "Where should the order be carried out?",
+  duration_of_tender: "Publication",
   desired_start_of_work: "Desired start of work",
   back_offers: "back to all offers",
   previous_communication: "Previous communication history",
@@ -144,7 +146,7 @@ const en = {
   non_binding_free: "Non-binding & free",
   cover_photo: "Cover Photo",
   not_create_job: "You did not create any job",
-  create_new_job: "Create new job",
+  create_new_job: "Enter new order",
   job_post_in: "Job post in",
   ago: "ago",
   request_proposal: "Accept Proposal",
@@ -283,8 +285,8 @@ const en = {
   short_distance_first: "Short distance first",
   big_orders_first: "Big orders first",
   published_on: "Published on:",
-  appointment_request: "Appointment Request",
-  place_of_execution: "Place of execution",
+  appointment_request: "Order execution on",
+  place_of_execution: "Place of work",
   all: "All",
   archive: "Archived",
   conact_request: "Contact request",
@@ -460,7 +462,7 @@ const en = {
   // home page
   are_looking_craftsman: "Are you looking for a craftsman?",
   receive_free_offers:
-    "With Suisse-Offerings you receive free offers from local craftsmen in your region",
+    "With Suisse-Offerten you receive free offers from local craftsmen in your region",
   get_offer: "Get an Offer",
   craft: "Craft",
   planing_services: "Planing & Services",
@@ -478,9 +480,9 @@ const en = {
   reasob_des_3: "You receive quotes easily and without much effort",
   get_your_offer: "Get Your Offer",
   how_works: "How Suisse-Offerten works",
-  work_title_1: "1. Verified Providers",
+  work_title_1: "1. Enter request",
   work_title_2: "2. Compare Offers",
-  work_title_3: "3. Choose The Best",
+  work_title_3: "3. Choose the best offer",
   work_des_1:
     "Use the online form to describee the work as best as you can so that the craftsmen can provide you with an offer based on it.",
   work_des_2:
@@ -499,9 +501,8 @@ const en = {
   home: "Home",
   fill_your_order: "Are you searching for a job in a specific category ?",
   fill_your_order_2: "Or in a specific region ?",
-  fill_order_des:
-    "With Suisse-Offerten you will always find the best job for you!",
-  fill_order_des_2: "You are Handworker and not yet registered ?",
+  fill_order_des: "With Suisse-Offerten you will always find the right job",
+  fill_order_des_2: "Are you a craftsman and not yet registered?",
   learn_more: "Register Now",
   on_this_page_craftsmen_the_area: "Search for jobs in:",
   location_filter_title: "Search for company:",
@@ -532,7 +533,7 @@ const en = {
 
   //   enter job page
   enter_your_request:
-    "Enter your request now and receive several offers - free of charge and without obligation.",
+    "Please enter the work to be carried out in as much detail as possible. 100% free and non-binding",
   describe_the_work_to_be_done:
     "Describe the work to be done here. Try to provide as detailed information as possible.",
   suisse_Offerten_advantage: "Suisse-Offerten advantages",
@@ -549,9 +550,9 @@ const en = {
   last_name: "Last Name",
   phone: "Phone",
   only_visible_select: "Only visible to people you select.",
-  phone_2: "Phone 2:(optional)",
-  email_address: "E-mail address:",
-  prefered_username: "Prefered username:",
+  phone_2: "Phone 2:",
+  email_address: "E-mail address",
+  prefered_username: "Prefered username",
   username_condition: "Only letters and number allowed. min 3 Characters",
   number_condition: "First select country code",
   seven_day_triel: "7 Days Free Trial",
@@ -618,7 +619,7 @@ const en = {
   // reset page
 
   //   about page
-  about_title: "Suisse-Offerten",
+  about_title: "About Suisse-Offerten",
   about_title_span: "About",
   about_text_1: "Welcome to Suisse-Offerings!",
   about_text_2:
@@ -642,14 +643,14 @@ const en = {
   contact_text_2: "Ihr Suisse-Offerten Team",
   contact_text_3: "Suisse-Offerten GmbH Hauptstrasse 22 4562 Biberist",
   form_title: "Form",
-  form_text_1: "Notice",
+  form_text_1: "Note",
   form_text_2: "Name & surname",
   form_text_3: "E-mail",
   form_text_4: "Phone number",
   form_text_5: "Service Area",
   form_text_6: "Your Are",
   form_text_7: "Client",
-  form_text_8: "Company/Handyman",
+  form_text_8: "Craftsmen/companies",
   form_text_9: "Submit",
   // contact page
 
@@ -658,15 +659,15 @@ const en = {
   how_it_works: "How does it work?",
   how_it_work_contractor_title_1: "1. Register",
   how_it_work_contractor_title_2: "2. Receive requests",
-  how_it_work_contractor_title_3: "3. Enter your offer/bit",
+  how_it_work_contractor_title_3: "3. Enter your offer",
   how_it_work_contractor_title_4: "4. Wait",
-  how_it_work_contractor_title_5: "5. Get Review",
+  how_it_work_contractor_title_5: "5. Received a review",
   how_it_work_contractor_des_1:
-    "Register as a company/employee and take out a subscription for a monthly price of 99fr",
+    "Register as a companies/craftsmen and subscribe for the monthly price of 99fr",
   how_it_work_contractor_des_2:
-    "After registering and specifying your service area, you will receive regional requests by e-mail corresponding to your area and your region",
+    "After registering and specifying your service area, you will receive regional inquiries by email that correspond to your service area and region",
   how_it_work_contractor_des_3:
-    "Once you have received the inquiries, you can calculate an offer based on the information provided and enter it on Suisse-Offerten.",
+    "Once we have received your enquiries, you can calculate an offer based on the information provided and enter it on Suisse-Offerten.",
   how_it_work_contractor_des_4:
     "After entering the offer, the client can accept or reject the offer.",
   how_it_work_contractor_des_5:
@@ -682,11 +683,11 @@ const en = {
   how_it_work_client_des_1:
     "Use the online form to describee the work as best as you can so that the craftsmen can provide you with an offer based on it.",
   how_it_work_client_des_2:
-    "You will receive several offers from local craftsmen. You can compare these based on price, offer and reviews.",
+    "You will receive several offers from tradesmen in your area. You can compare them based on price, offer and rating.",
   how_it_work_client_des_3:
     "Now select the tradesman with the offer that suits your budget and ideas.",
   how_it_work_client_des_4:
-    "After the work has been completed, you can rate the choosen contractor. This will help our Members finding and choosing good providers.",
+    "After the work is completed, you can rate the selected contractor. This makes it easier for our customers to find and select good suppliers.",
   client_start: "Start",
   // how it works client
 

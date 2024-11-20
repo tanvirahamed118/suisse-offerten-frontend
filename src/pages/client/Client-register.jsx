@@ -89,6 +89,7 @@ function ClientRegister() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (phone?.length <= 11) {
       toast.error("Phone Number not valid");
       return;
@@ -105,7 +106,11 @@ function ClientRegister() {
     if (isError) {
       toast.error(error?.data?.message);
     }
+  }, [isError, error]);
+
+  useEffect(() => {
     if (isSuccess) {
+      localStorage.setItem("email", email);
       toast.success(data?.message);
       setClient({
         salutation: "",
@@ -123,7 +128,7 @@ function ClientRegister() {
       setTel("");
       navigate("/verify-email");
     }
-  }, [isError, isSuccess, data, error, navigate]);
+  }, [isSuccess, data, navigate, email]);
 
   return (
     <section>
@@ -302,7 +307,7 @@ function ClientRegister() {
                   </label>
                   <span>
                     <input
-                      type="tel"
+                      type="number"
                       name="secondPhone"
                       className="w-full border border-gray-400 px-2 py-1.5 rounded-lg text-black text-base font-normal outline-[#C3DEED] focus:outline outline-4"
                       value={secondPhone}

@@ -3,8 +3,8 @@ const sw = {
   enter_new_job: "Neuen Job eintragen",
   search_job: "Job suchen",
   cost_schedule: "Kostenplan",
-  register_as_client: "Als Kunde registrieren",
-  register_as_company: "Als Firma registrieren",
+  register_as_client: "Als Auftraggeber registrieren",
+  register_as_company: "Als Auftragnehmer registrieren",
   login: "Anmeldung",
   logout: "Abmelden",
   account: "Konto",
@@ -23,10 +23,12 @@ const sw = {
   how_does_client: "Wie funktioniert es? - Kunde",
   imprint: "Impressum",
   data_protection: "Datenschutz",
-  locations: "Standorte",
+  locations: "Handwerker/unternehmen",
   // footer menu
 
   // seller dasgboard
+  resend_note:
+    "Wenn Sie keinen Code erhalten, können Sie den Bestätigungscode erneut senden.",
   check_inbox: "Überprüfen Sie Ihren E-Mail-Posteingang.",
   code_send: "Wir haben Ihnen einen Code gesendet.",
   confirm_req:
@@ -76,7 +78,7 @@ const sw = {
   vat_number: "Umsatzsteuer",
   verifications: "Überprüfungen",
   preview_profile: "Profilvorschau",
-  can_not_able: "kann nicht ändern",
+  can_not_able: "kann nicht geändert werden",
   close_membership: "Mitgliedschaft schließen",
   payment_status: "Zahlungsstatus",
   membership_title: "Titel der Mitgliedschaft",
@@ -98,16 +100,17 @@ const sw = {
   reject_offer: "Angebot ablehnen",
   undo_rejection: "Ablehnung rückgängig machen",
   providers: "Anbieter",
+  interested: "Interessierte",
   sort_by: "Sortieren nach",
   offering: "Angebot",
-  rejected: "Abgelehnt",
+  rejected: "Abgelehnte",
   job_description: "Stellenbeschreibung",
   images_files: "Bilder/Dateien",
   description: "Beschreibung",
   questions: "Fragen",
   category: "Kategorie",
-  possible_to_visit: "Ist es möglich, den Bestellort zu besuchen",
-  duration_of_tender: "Duration of tender",
+  possible_to_visit: "Wo soll der Auftrag ausgeführt werden?",
+  duration_of_tender: "Veröffentlichung",
   desired_start_of_work: "Gewünschter Arbeitsbeginn",
   back_offers: "zurück zu allen Angeboten",
   previous_communication: "Bisheriger Kommunikationsverlauf",
@@ -147,7 +150,7 @@ const sw = {
   non_binding_free: "Unverbindlich & kostenlos",
   cover_photo: "Titelbild",
   not_create_job: "Sie haben keinen Job erstellt",
-  create_new_job: "Neuen Auftrag anlegen",
+  create_new_job: "Neuen Auftrag eingeben",
   job_post_in: "Stellenangebot in",
   ago: "vor",
   request_proposal: "Vorschlag annehmen",
@@ -270,10 +273,10 @@ const sw = {
   // footer text
 
   //   dashboard
-  order_title: "Bestelltitel",
+  order_title: "Auftragstitel",
   status: "Status",
   activity: "Aktivität",
-  view_order: "Bestellung anzeigen",
+  view_order: "Auftrag anzeigen",
   interested_offerers: "Interessierte Anbieter:",
   offers_requested: "Angebote erwünscht:",
   reviews_from_other_customers: "Bewertungen anderer Kunden",
@@ -290,12 +293,12 @@ const sw = {
   short_distance_first: "Kurze Distanz zuerst",
   big_orders_first: "Große Aufträge zuerst",
   published_on: "Veröffentlicht auf:",
-  appointment_request: "Terminanfrage",
-  place_of_execution: "Place of execution",
+  appointment_request: "Auftragsausführung am",
+  place_of_execution: "Auftragsort",
   all: "Alle",
   archive: "Archiviert",
   conact_request: "Kontaktanfrage",
-  order_number: "Bestellnummer",
+  order_number: "Auftragsnummer",
   request_made_on: "Anfrage gestellt am:",
   order_status: "Status",
   update_offer: "Angebot aktualisieren",
@@ -334,14 +337,14 @@ const sw = {
     "Für die Teilnahme an folgenden Kategorien benötigen wir zur Freischaltung noch zusätzliche Unterlagen von Ihnen: Endreinigung, Umzugsreinigung, Reinigungskraft, sonstige Reinigung.",
   area_of_activity_text_2: "Mehr Informationen",
   area_of_activity_text_3:
-    "Wählen Sie die Regionen aus, in denen Sie Bestellungen annehmen.",
+    "Wählen Sie die Regionen aus, in denen Sie Auftrage annehmen.",
   area_of_activity_text_4: "und zusätzlich",
   area_of_activity_text_5: "km rund um Biberist",
   area_of_activity_text_6:
     "Benachrichtigen Sie uns über neue Bestellungen per E-Mail",
   area_of_activity_text_7:
     "Benachrichtigen Sie uns per E-Mail über laufende Bestellungen ohne Bewerbung",
-  area_of_activity_text_8: "sauvegarder",
+  area_of_activity_text_8: "Speichern",
   company_profile_MietExpress: "Firmenprofil MietExpress Küçük",
   company_profile_perspective: "Firmenprofil aus Anwendersicht:",
   company_profile_text_1: "Sicht",
@@ -379,14 +382,14 @@ const sw = {
   rating_text_9: "Offene Bewertungen",
   contact_person: "Ansprechpartner",
   managing_director: "Geschäftsführer",
-  company_info: "FIRMENINFO",
+  company_info: "Firmeninformation",
   company_name: "Name der Firma",
   Submit_company_name_change: "Firmennamenänderung übermitteln",
   via_email: "per Email",
   legal_form: "Rechtsform",
   founding_year: "Gründungsjahr",
   founding_optional: "Optional",
-  website: "Webseite (optional)",
+  website: "Webseite",
   UID_number: "UID-Nummer",
   find_your_UID_number: "Finden Sie Ihre UID-Nummer",
   invoice_recipient: "Rechnungsempfänger",
@@ -396,11 +399,11 @@ const sw = {
     "Möchten Sie Ihre Rechnungen auch automatisch an Ihren Treuhänder oder Assistenten versenden lassen? Tragen Sie hier Ihre E-Mail-Adresse ein.",
   iban: "IBAN",
   seller_dash_address: "ADRESSE",
-  street_No: "Straße + Nr.",
+  street_No: "Strasse + Nr.",
   postal_code: "Postleitzahl",
   seller_location: "Standort",
   submit_address_change: "Adressänderung übermitteln",
-  contact_deltails_seller_dash: "KONTAKTDETAILS",
+  contact_deltails_seller_dash: "Kontaktdetails",
   Confirm_password: "Bestätige das Passwort",
   member_cerdits_title: "Mitglied & Credits",
   member_cerdits_text_1: "Übersicht",
@@ -467,7 +470,7 @@ const sw = {
   // home page
   are_looking_craftsman: "Sie suchen einen Handwerker?",
   receive_free_offers:
-    "Mit Suisse-Offerings erhalten Sie kostenlose Angebote von lokalen Handwerkern in Ihrer Region",
+    "Mit Suisse-Offerten erhalten Sie kostenlose Angebote von lokalen Handwerkern in Ihrer Region",
   get_offer: "Erhalten Sie ein Angebot",
   craft: "Handwerk",
   planing_services: "Planung & Leistungen",
@@ -485,9 +488,9 @@ const sw = {
   reasob_des_3: "Sie erhalten einfach und ohne großen Aufwand Angebote",
   get_your_offer: "Holen Sie sich Ihr Angebot",
   how_works: "So funktionieren Suisse-Offerten",
-  work_title_1: "1. Verifizierte Anbieter",
+  work_title_1: "1. Anfrage eingeben",
   work_title_2: "2. Angebote vergleichen",
-  work_title_3: "3. Wähle das beste aus",
+  work_title_3: "3. Wähle Sie das beste Angebot aus",
   work_des_1:
     "Beschreiben Sie die Arbeiten möglichst genau im Online-Formular, damit Ihnen der Handwerker darauf basierend ein Angebot unterbreiten kann.",
   work_des_2:
@@ -506,9 +509,8 @@ const sw = {
   home: "Heim",
   fill_your_order: "Suchen Sie nach einem Job in einer bestimmten Kategorie?",
   fill_your_order_2: "Oder in einer bestimmten Region?",
-  fill_order_des:
-    "Mit Suisse-Offerten finden Sie immer den passenden Job für sich!",
-  fill_order_des_2: "Du bist Handwerker/in und noch nicht registriert?",
+  fill_order_des: "Mit Suisse-Offerten finden Sie immer den passenden Job",
+  fill_order_des_2: "Sind Sie Handwerker/in und noch nicht registriert?",
   learn_more: "Erfahren Sie mehr",
   on_this_page_craftsmen_the_area: "Suche nach Jobs in:",
   location_filter_title: "Suche nach Unternehmen:",
@@ -541,7 +543,7 @@ const sw = {
 
   //   enter job page
   enter_your_request:
-    "Geben Sie jetzt Ihre Anfrage ein und erhalten Sie mehrere Angebote – kostenlos und unverbindlich.",
+    "Bitte geben sie die auszuführende Arbeit möglichst detailliert ein. 100% kostenlos and unverbindluch",
   describe_the_work_to_be_done:
     "Beschreiben Sie hier die auszuführenden Arbeiten. Versuchen Sie, möglichst detaillierte Informationen anzugeben.",
   suisse_Offerten_advantage: "Vorteile von Suisse-Offerten",
@@ -553,15 +555,15 @@ const sw = {
   no_obligations:
     "Keine Verpflichtungen. Sie erhalten eine 7-tägige kostenlose Testmitgliedschaft.",
   salutation: "Anrede",
-  mister: "Mister",
+  mister: "Herr",
   woman: "Frau",
   first_name: "Vorname",
   last_name: "Familienname, Nachname",
   phone: "Telefon",
   only_visible_select: "Nur für die von Ihnen ausgewählten Personen sichtbar.",
-  phone_2: "Telefon 2: (optional)",
-  email_address: "E-Mail-Adresse:",
-  prefered_username: "Bevorzugter Benutzername:",
+  phone_2: "Telefon 2:",
+  email_address: "E-Mail-Adresse",
+  prefered_username: "Bevorzugter Benutzername",
   username_condition: "Nur Buchstaben und Zahlen erlaubt. Mindestens 3 Zeichen",
   number_condition: "Wählen Sie zuerst die Landesvorwahl",
   seven_day_triel: "7 Tage kostenlos testen",
@@ -629,21 +631,20 @@ const sw = {
   // reset page
 
   //   about page
-  about_title: "Suisse-Offerten",
-  about_title_span: "Um",
-  about_text_1: "Willkommen bei Suisse-Offerings!",
+  about_title: "Über Suisse-Offerten",
+  about_text_1: "Herzlich Willkommen bei Suisse-Offerings!",
   about_text_2:
-    "Suisse-Offerten wurde 2024 gegründet, um eine benutzerfreundliche Online-Plattform zu schaffen, auf der Kunden in der Schweiz qualifizierte Handwerker und Unternehmen in ihrer Region finden können. Unser Ziel ist es, unseren Kunden Zeit und Mühe zu ersparen, indem wir ihnen helfen, die besten und am besten geeigneten Fachleute für ihre Projekte zu finden, ohne stundenlang suchen zu müssen.",
+    "Suisse-Offerten wurde im Jahr 2024 gegründet, um eine benutzerfreundliche Online-Plattform zu schaffen, auf der Kunden in der Schweiz qualifizierte Handwerker und Unternehmen in ihrer Region finden können. Unser Ziel ist es, unseren Kunden Zeit und Mühe zu ersparen, indem wir ihnen helfen, die besten und am besten geeigneten Fachleute für ihre Projekte zu finden, ohne stundenlang suchen zu müssen.",
   about_text_3:
-    "Bei Suisse-Offerten legen wir grössten Wert auf Kundenzufriedenheit, Zuverlässigkeit und Transparenz. Unsere Mission ist es, unseren Kunden dabei zu helfen, die besten und am besten geeigneten Handwerker und Unternehmen für ihre Bedürfnisse und Projekte zu finden, ohne dass sie mühsam und stundenlang suchen müssen.",
+    "Bei Suisse-Offerten legen wir grossen Wert auf Kundenzufriedenheit, Zuverlässigkeit und Transparenz. Unsere Mission ist es, unseren Kunden dabei zu helfen, die besten und günstisten Hanfwerker/Unternehmen für ihre Anliegen und Projekte zu finden, ohne grossen Aufwand und stundenlanges Suchen",
   about_text_4:
-    "Wir sind ein junges Team mit langjähriger Erfahrung in der Vermittlung von Handwerkern und Firmen. Unser Team besteht aus engagierten Profis, die darauf spezialisiert sind, die Wünsche unserer Kunden bestmöglich zu erfüllen.",
+    "Wir sind ein junges Team mit langjähriger Erfahrung in der Vermittlung von Handwerkern/Firmen. Unser Team besteht aus engagierten Profis, die darauf spezialisiert sind, die Wünsche unserer Kunden bestmöglich zu erfüllen.",
   about_text_5:
     "Bei Suisse-Offerten stehen unsere Kunden immer an erster Stelle. Wir sind bestrebt, unseren Kunden einen erstklassigen Service zu bieten und sie bei jedem Schritt zu unterstützen.",
   about_text_6:
     "Für Fragen und weitere Informationen stehen wir Ihnen gerne zur Verfügung.",
-  about_text_7: "Wir sind hier, um dir zu helfen!",
-  about_text_8: "unser Suisse-Offerten-Team",
+  about_text_7: "Wir sind hier, um Ihnen zu helfen!",
+  about_text_8: "Ihr Suisse-Offerten Team",
   //   about page
 
   // contact page
@@ -653,14 +654,14 @@ const sw = {
   contact_text_2: "Ihr Suisse-Offerten Team",
   contact_text_3: "Suisse-Offerten GmbH Hauptstrasse 22 4562 Biberist",
   form_title: "Bilden",
-  form_text_1: "Beachten",
+  form_text_1: "Notiz",
   form_text_2: "Name und Nachname",
-  form_text_3: "Email",
+  form_text_3: "E-mail",
   form_text_4: "Telefonnummer",
   form_text_5: "Service Bereich",
-  form_text_6: "Ihr seid",
-  form_text_7: "Klientin",
-  form_text_8: "Firma/Handwerker",
+  form_text_6: "Sie seid",
+  form_text_7: "Kunde",
+  form_text_8: "Handwerker/Unternehmen",
   form_text_9: "Einreichen",
   // contact page
 
@@ -669,15 +670,15 @@ const sw = {
   how_it_works: "Wie funktioniert es?",
   how_it_work_contractor_title_1: "1. Registrieren",
   how_it_work_contractor_title_2: "2. Anfragen erhalten",
-  how_it_work_contractor_title_3: "3. Geben Sie Ihr Angebot/Gebot ein",
+  how_it_work_contractor_title_3: "3. Geben Sie Ihr Angebot ein",
   how_it_work_contractor_title_4: "4. Warten",
-  how_it_work_contractor_title_5: "5. Bewertung abrufen",
+  how_it_work_contractor_title_5: "5. Bewertung erhalten",
   how_it_work_contractor_des_1:
-    "Registrieren Sie sich als Unternehmen/Mitarbeiter und schließen Sie ein Abonnement zum monatlichen Preis von 99fr ab",
+    "Registrieren Sie sich als companies/craftsmen und schließen Sie ein Abonnement zum monatlichen Preis von 99fr ab",
   how_it_work_contractor_des_2:
-    "Nach der Registrierung und Angabe Ihres Servicebereichs erhalten Sie regionale Anfragen per E-Mail, die Ihrem Gebiet und Ihrer Region entsprechen",
+    "Nach der Registrierung und Angabe Ihres Servicebereichs erhalten Sie regionale Anfragen per E-Mail, die Ihrem Servicevereich und Ihrer Region entsprechen",
   how_it_work_contractor_des_3:
-    "Nach Eingang der Anfragen können Sie anhand der gemachten Angaben eine Offerte kalkulieren und auf Suisse-Offerten erfassen.",
+    "Nach Eingang der Anfragen können Sie anhand der vorliegenden Angaben eine Offerte kalkulieren und auf Suisse-Offerten erfassen.",
   how_it_work_contractor_des_4:
     "Nach Abgabe des Angebots kann der Auftraggeber dieses annehmen oder ablehnen.",
   how_it_work_contractor_des_5:
@@ -688,16 +689,16 @@ const sw = {
   client_title: "Kunden",
   how_it_work_client_title_1: "1. Anfrage eingeben",
   how_it_work_client_title_2: "2. Angebote vergleichen",
-  how_it_work_client_title_3: "3. Wähle das beste aus",
+  how_it_work_client_title_3: "3. Wählen Sie das besten aus",
   how_it_work_client_title_4: "4. Bewerten Sie die Arbeit",
   how_it_work_client_des_1:
     "Beschreiben Sie die Arbeiten möglichst genau im Online-Formular, damit Ihnen der Handwerker darauf basierend ein Angebot unterbreiten kann.",
   how_it_work_client_des_2:
-    "Du erhältst mehrere Angebote von Handwerkern in Deiner Nähe. Diese kannst Du anhand von Preis, Angebot und Bewertungen vergleichen.",
+    "Sie erhalten mehrere Angebote von Handwerkern in ihrer Nähe. Sie konnen diese anhand von Preis, Angebot und Bewertung vergleichen.",
   how_it_work_client_des_3:
     "Wählen Sie jetzt den Handwerker mit dem Angebot aus, das zu Ihrem Budget und Ihren Vorstellungen passt.",
   how_it_work_client_des_4:
-    "Nach der Fertigstellung der Arbeiten können Sie den ausgewählten Auftragnehmer bewerten. Dies erleichtert unseren Mitgliedern die Suche und Auswahl guter Anbieter.",
+    "Nach der Fertigstellung der Arbeiten können Sie den ausgewählten Auftragnehmer bewerten. Dies erleichtert unseren Kunden die Suche und Auswahl guter Anbieter.",
   client_start: "Start",
 
   // how it works client
@@ -761,7 +762,7 @@ const sw = {
   // single offer
 
   // sub categories
-  outside: "Draußen",
+  outside: "Draussen",
   inside: "Innen",
   planning_consulting: "Planung & Beratung",
   car_vehicles: "Auto / Fahrzeuge",
@@ -813,7 +814,7 @@ const sw = {
   // sub categories
 
   // order aggrement page
-  order_aggrement: "Bestellvereinbarung",
+  order_aggrement: "Auftragsvereinbarung",
   order_aggrement_title_1: "Auftragsverarbeitungsvertrag:",
   order_aggrement_title_2:
     "Suisse Offerten Internet GmbH, Hauptstrasse 22 4562 Biberist (nachfolgend Auftragsnehmer)",

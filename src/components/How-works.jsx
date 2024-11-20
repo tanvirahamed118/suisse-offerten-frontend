@@ -20,7 +20,7 @@ function HowWorks() {
             <a href="">
               <img src={Verify} alt="" className="w-24" />
             </a>
-            <h2 className="text-xl font-bold text-black text-center capitalize">
+            <h2 className="text-xl font-bold text-black text-center">
               {t("work_title_1")}
             </h2>
             <p className="text-base text-black text-center font-normal w-8/12">
@@ -31,7 +31,7 @@ function HowWorks() {
             <a href="">
               <img src={Review} alt="" className="w-24" />
             </a>
-            <h2 className="text-xl font-bold text-black text-center capitalize">
+            <h2 className="text-xl font-bold text-black text-center">
               {t("work_title_2")}
             </h2>
             <p className="text-base text-black text-center font-normal w-8/12">
@@ -42,7 +42,7 @@ function HowWorks() {
             <a href="">
               <img src={Offer} alt="" className="w-24" />
             </a>
-            <h2 className="text-xl font-bold text-black text-center capitalize">
+            <h2 className="text-xl font-bold text-black text-center">
               {t("work_title_3")}
             </h2>
             <p className="text-base text-black text-center font-normal w-8/12">

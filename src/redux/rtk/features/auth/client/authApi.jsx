@@ -41,6 +41,13 @@ export const userAuthApi = apiSlice.injectEndpoints({
         body: { code },
       }),
     }),
+    resendVerifyCode: builder.mutation({
+      query: (email) => ({
+        url: "/auth/client/resend",
+        method: "POST",
+        body: { email },
+      }),
+    }),
     updateClient: builder.mutation({
       query: ({ client, id }) => ({
         url: `/auth/client/${id}`,
@@ -119,6 +126,7 @@ export const {
   useGetOneClientByIdQuery,
   useGetAllClientQuery,
   useRegisterClientMutation,
+  useResendVerifyCodeMutation,
   useVerifyClientMutation,
   useLoginClientMutation,
   useSendOTPClientMutation,

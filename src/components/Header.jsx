@@ -246,9 +246,9 @@ function Header() {
                     onChange={handleLanguageChange}
                     className="border border-gray-200 px-2 py-1 rounded-md text-black text-base font-normal outline-[#C3DEED] focus:outline outline-2 md:px-4"
                   >
-                    <option value="gr">German</option>
+                    <option value="gr">Deutsch</option>
+                    <option value="fr">Français</option>
                     <option value="en">English</option>
-                    <option value="fr">France</option>
                   </select>
                 </li>
               </ul>

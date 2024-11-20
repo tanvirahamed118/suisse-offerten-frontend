@@ -102,7 +102,7 @@ function ClientRequest() {
             </Link>
           </td>
           <td className="p-3 align-top w-3/12">
-            <span className="text-black text-base font-normal">
+            <span className="text-black text-base font-normal capitalize">
               <i className="fa fa-clock"></i> {status}
             </span>
             <p className="text-red-500">

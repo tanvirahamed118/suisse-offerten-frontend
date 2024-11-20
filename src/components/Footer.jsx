@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/suisse-offerten-logo.png";
+import Logo from "../assets/suisse-offerten.svg";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
@@ -22,7 +22,7 @@ function Footer() {
               <li>
                 <Link
                   to="/about"
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                 >
                   {t("about_us")}
                 </Link>
@@ -30,7 +30,7 @@ function Footer() {
               <li>
                 <Link
                   to="/contact"
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                 >
                   {t("contact")}
                 </Link>
@@ -41,7 +41,7 @@ function Footer() {
               <li>
                 <Link
                   to="/condition"
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                 >
                   {t("condition")}
                 </Link>
@@ -49,7 +49,7 @@ function Footer() {
               <li>
                 <Link
                   to="/how-it-works-contractor"
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                 >
                   {t("how_does_contractor")}
                 </Link>
@@ -60,7 +60,7 @@ function Footer() {
               <li>
                 <Link
                   to="/imprint"
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                 >
                   {t("imprint")}
                 </Link>
@@ -68,7 +68,7 @@ function Footer() {
               <li>
                 <Link
                   to="/how-it-works-client"
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                 >
                   {t("how_does_client")}
                 </Link>
@@ -78,7 +78,7 @@ function Footer() {
             <ul className="flex flex-col gap-2">
               <li>
                 <Link
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                   to="/data-protection"
                 >
                   {t("data_protection")}
@@ -86,7 +86,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                   to="/order-aggrement"
                 >
                   {t("order_aggrement")}
@@ -94,7 +94,7 @@ function Footer() {
               </li>
               <li>
                 <Link
-                  className="text-black text-base font-semibold hover:underline capitalize"
+                  className="text-black text-base font-semibold hover:underline"
                   to="/location"
                 >
                   {t("locations")}

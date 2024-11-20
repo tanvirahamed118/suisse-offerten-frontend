@@ -371,7 +371,7 @@ function PersonalInfo() {
               </div>
               <div className="flex flex-col gap-1">
                 <label htmlFor="" className="text-black text-base font-normal">
-                  {t("UID_number")}
+                  {t("UID_number")}:
                 </label>
                 <input
                   name="UIDNumber"
@@ -533,7 +533,10 @@ function PersonalInfo() {
             </div>
             <div>
               <label htmlFor="" className="text-black text-base font-normal">
-                {t("phone_2")}
+                {t("phone_2")}{" "}
+                <span className="text-gray-400">
+                  ({t("founding_optional")})
+                </span>
               </label>
               <input
                 type="tel"

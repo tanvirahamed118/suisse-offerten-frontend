@@ -9,9 +9,6 @@ function About() {
         <div>
           <div>
             <h2 className="text-2xl md:text-5xl text-black font-normal text-center py-10">
-              <span className="text-red-500">
-                {t("about_title_span") + " "}
-              </span>
               {t("about_title")}
             </h2>
             <div className="flex flex-col gap-8 py-5 md:w-8/12 w-full m-auto">
